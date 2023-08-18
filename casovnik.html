@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js"></script>
+        <link rel="icon" type="image/svg+xml" href="JPZ.svg">
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .timer {
+            text-align: center;
+        }
+
+        .row {
+            margin: 10px;
+            font-size: 24px;
+        }
+        .center-text {
+            text-align: center;
+        }
+
+    </style>
+    <title>Časovnik</title>
+</head>
+<body>
+ <p class="center-text">Star sem:</p>   
+    <div class="timer">
+        <div class="row" id="yearsRow">Število let, dni, ur in minut</div>
+        <div class="row" id="daysRow">Število dni, ur in minut</div>
+        <div class="row" id="hoursRow">Število ur in minut</div>
+        <div class="row" id="minutesRow">Število minut</div>
+    </div>
+    <script>
+function addThousandSeparators(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
+function updateTimer() {
+    // Set the start date and time to 25. 7. 2006 at 10:40
+    let startDate = new Date(Date.UTC(2006, 6, 25, 10, 40));
+
+    // Calculate elapsed seconds
+    let elapsedSeconds = Math.floor((Date.now() - startDate) / 1000);
+
+    // Calculate elapsed years (including leap years)
+    let elapsedYears = Math.floor((elapsedSeconds / (60 * 60 * 24 * 365))+leapYears*(60 * 60 * 24));
+
+    // Calculate remaining seconds after elapsed years
+    let remainingSeconds = elapsedSeconds - (elapsedYears * 365.25 * 24 * 60 * 60);
+
+    // Calculate days, hours, and minutes from remaining seconds
+    let days = Math.floor(remainingSeconds / (60 * 60 * 24));
+    let hours = Math.floor((remainingSeconds % (60 * 60 * 24)) / (60 * 60));
+    let minutes = Math.floor((remainingSeconds % (60 * 60)) / 60);
+
+    document.getElementById("yearsRow").innerText = `Star sem: ${addThousandSeparators(elapsedYears)} let, ${addThousandSeparators(days)} dni, ${addThousandSeparators(hours)} ur in ${addThousandSeparators(minutes)} minut`;
+    document.getElementById("daysRow").innerText = `Oz.: ${addThousandSeparators(days+elapsedYears/365.24)} dni, ${addThousandSeparators(hours)} ur in ${addThousandSeparators(minutes)} minut`;
+    document.getElementById("hoursRow").innerText = `Oz.: ${addThousandSeparators(hours)} ur in ${addThousandSeparators(minutes)} minut`;
+    document.getElementById("minutesRow").innerText = `Oz.: ${addThousandSeparators(elapsedSeconds / 60)} minut`;
+}
+
+setInterval(updateTimer, 1000);
+updateTimer(); // Initialize the timer immediately
+
+/*IZRAČUN ŠTEVILA PRESTOPNIH LET*/
+// Function to calculate the number of leap years between two dates
+function countLeapYears(startDate, endDate) {
+    let num1 = calNum(endDate.getFullYear());
+    let num2 = calNum(startDate.getFullYear() - 1); // Uporabite -1, da se izognete upoštevanju tudi leta "endDate"
+    return num1 - num2;
+}
+
+let startDate = new Date("2006-07-25T10:40:00");
+let currentDate = new Date();
+let leapYears = countLeapYears(startDate, currentDate);
+    </script>
+
+<p>star sem:</p>
+<iframe src="https://free.timeanddate.com/countdown/i8z4pqx3/n736/cf12/cm0/cu3/ct0/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw576/szh243/iso2006-07-25T10:40" allowtransparency="true" frameborder="0" width="147" height="50"></iframe>
+
+</body>
+</html>
+
