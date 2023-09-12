@@ -1,9 +1,67 @@
 body {
-    background-color: #121212;
+    --accent-color: Lime;
+    --background-color: #121212;
+    --text-color: #FFFFFF;
+    --transition-delay: 0.5s;
+
+    transition: var(--transition-delay);
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: "Times New Roman", Times, Georgia, Garamond, serif;
-    color: #FFFFFF;
     opacity: 0.87;
-    font-size: 16px;
+}
+body.light {
+  --accent-color: Lime;
+  --background-color: white;
+  --text-color: black;
+}
+/*TEMEN-SVETEL NAČIN*/
+.theme-toggle-button {
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+
+    height: 24px;
+    width: 24px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: .1em 1em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: var(--transition-delay);
+    transform: scale(1);
+    margin-right: 0;
+}
+.theme-toggle-button:hover,
+.theme-toggle-button:focus {
+  transform: scale(1.1);
+}
+
+
+.poudarjeno {
+    fill: white;
+    color: white;
+}
+.light-mode{
+    color:black;
+    background: white;
+    fill: black;
+    color: black;
+}
+.button-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+    width: 20px;
+    height: 20px;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    padding: 1px;
 }
 /*SCROLLBAR*/
     html {
@@ -25,6 +83,13 @@ body {
     html::-webkit-scrollbar-track {
       background-color: #5555;
     }
+.zamaknjeno {
+    padding-left: 10px;
+}
+.velikosredinsko {
+ text-align: center;
+ font-variant: small-caps;
+ }
 
 .scribd {
     padding: none;
@@ -41,6 +106,21 @@ body {
     border: 0;
     position: middle;
 }
+.kazalo-strani {
+    position: -webkit-sticky;
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+    left: auto;
+    padding: 5px;
+    max-width: 10rem;
+    max-height: 100vh;
+    padding: 1rem;
+    justify-content: left;
+    align-items: flex-end;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 body.ura {
     padding: 16px;
     background-color: #121212;
@@ -54,18 +134,8 @@ body.ura {
     overflow: hidden; /*hides scrollbar*/
     margin: auto;
 }
-
-path {
-    fill: white;
-}
-path.light_mode{
-    fill: black;
-}
 svg{
     padding-top: 1rem;
-}
-svg.light_mode{
-    fill: black;
 }
   @media (prefers-color-scheme: dark) {
     path { fill: #white; }
@@ -146,7 +216,7 @@ li {
  margin-top: 6px;
  }
 a {
- color: red;
+ color: Lime;
  text-decoration: none;
  }
 ul.s {
@@ -304,7 +374,7 @@ body {
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem /*1rem odmika kazala od ikone*/); /*odmik od vrha strani na podlagi prostora, ki ga zavzame ikona*/
   background-color: var(--foreground);
   color: var(--background);
-  max-width: 10rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
+  max-width: 20rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
   height: 100vh; /*najmanjša višina polja kazala strani, 1vh = 1% višine zaslona*/
   position: fixed;
 }
@@ -329,7 +399,10 @@ body {
     /* oblikuje puščico */
     .caret {
       cursor: pointer;
-      user-select: none; /* prepreči izbiro besedila */
+      -webkit-user-select: none; /* Safari 3.1+ */
+      -moz-user-select: none; /* Firefox 2+ */
+      -ms-user-select: none; /* IE 10+ */
+      user-select: none;/* prepreči izbiro besedila */
     }
 
     /* ustvari puščico z Unicode in jo oblikuje */
@@ -342,7 +415,9 @@ body {
 
     /* zavrti puščico, ko pritisneš nanjo */
     .caret-down::before {
-      transform: rotate(90deg);
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: rotate(90deg); /* Safari */'
+      transform: rotate(90deg);  
     }
 
     /* prikrije ugnezden seznam */
@@ -355,26 +430,6 @@ body {
       display: block;
     }
 
-/*TEMEN-SVETEL NAČIN*/
-    .light-mode {
-        background-color: white;
-        color: black;
-    }
-    button {
-        width: 20px;
-        height: 20px;
-        position: center;
-        background: none;
-        border: none;
-    }
-    .button_right {
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin: 16px;
-        width: 20px;
-        height: 20px;
-    }
 /*ASTRONOMSKA URA:*/
      *, *::after, *::before {
       box-sizing: border-box;
@@ -382,8 +437,8 @@ body {
     }
 
     .clock {
-      width: 600px;
-      height: 600px;z
+      width: 50vmin;
+      height: 50vmin;
       background-color: #121212;
       border-radius: 50%;
       border: 2px solid #FFFFFF;
@@ -397,7 +452,7 @@ body {
       height: 100%;
       text-align: center;
       transform: rotate(var(--rotation));
-      font-size: 1.5rem;
+      font-size: 1rem;
       color: #FFFFFF;
     }
 
