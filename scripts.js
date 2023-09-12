@@ -25,27 +25,25 @@ script.onload = function () {
     document.getElementById("myNav").style.width = "0%";
   }
 
-/*     function myFunction(x) {
-  x.classList.toggle("change");
-}
-*/
-
 /*DEJAVEN UGNEZDEN SEZNAM:*/
-  var toggler = document.getElementsByClassName("caret");
-  var i;
+var toggler = document.getElementsByClassName("caret");
+var i;
 
-  for (i = 0; i < toggler.length; i++) {
-    toggler[i].addEventListener("click", function() {
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
     this.parentElement.querySelector(".nested").classList.toggle("active");
-      this.classList.toggle("caret-down");
-    });
-  }
+    this.classList.toggle("caret-down");
+  });
+}
+
 
 /*SVETLI NAČIN*/
     function myFunction() {
         var element = document.body;
         element.classList.toggle("light-mode");
     }
+document.querySelector('.theme-toggle-button').addEventListener('click', () => {
+  document.body.classList.toggle('dark')
 
 /*ASTRONOMSKA URA*/
   setInterval(setClock, 1000)
@@ -60,13 +58,16 @@ script.onload = function () {
     const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
     const hoursRatio = (minutesRatio + currentDate.getHours()) / 24
 
-    setRotation(secondHand, secondsRatio)
-    setRotation(minuteHand, minutesRatio)
-    setRotation(hourHand, hoursRatio)
+    setRotation(secondHand, secondsRatio);
+    setRotation(minuteHand, minutesRatio);
+    setRotation(hourHand, hoursRatio);
+
+    requestAnimationFrame(animateClock);
   }
 
   function setRotation(element, rotationRatio) {
     element.style.setProperty('--rotation', rotationRatio * -360 - 180);
   }
 
-  setClock()
+    setClock()
+    animateClock();
