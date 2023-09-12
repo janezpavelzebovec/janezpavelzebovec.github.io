@@ -1,79 +1,101 @@
- <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ura</title>
-          <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
-        <link rel="icon" type="image/svg+xml" href="JPZ.svg">
-          <style>
-            body {
-              background-color: #121212;
-              display: flex;
-              min-height: 100vh;
-              overflow: hidden; /*hides scrollbar*/
-              justify-content: center;
-            }
-          </style>
-    </head>
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1FD0790Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-TR1FD0790Y');
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Ura 2</title>
+    <style>
+        body {
+            background: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            color: white;
+            margin: 0;
+            font-family: Times New Roman, serif;
+        }
 
-  <body>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-          <a href="knjiznica.html">Knjižnica</a>
-          <a href="ura.html">Ura</a>
-      </div>
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        .astronomskaura {
+            position: relative;
+            width: 90vmin;
+            height: 90vmin;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
 
-    <div class="clock";>
-      <div class="hand hour" data-hour-hand></div>
-      <div class="hand minute" data-minute-hand></div>
-      <div class="hand second" data-second-hand></div>
-      <div class="number number1"><div class="sub1">1</div></div>
-      <div class="number number2"><div class="sub2">2</div></div>
-      <div class="number number3"><div class="sub3">3</div></div>
-      <div class="number number4"><div class="sub4">4</div></div>
-      <div class="number number5"><div class="sub5">5</div></div>
-      <div class="number number6"><div class="sub6">6</div></div>
-      <div class="number number7"><div class="sub7">7</div></div>
-      <div class="number number8"><div class="sub8">8</div></div>
-      <div class="number number9"><div class="sub9">9</div></div>
-      <div class="number number10"><div class="sub10">10</div></div>
-      <div class="number number11"><div class="sub11">11</div></div>
-      <div class="number number12"><div class="sub12">12</div></div>
-      <div class="number number13"><div class="sub13">13</div></div>
-      <div class="number number14"><div class="sub14">14</div></div>
-      <div class="number number15"><div class="sub15">15</div></div>
-      <div class="number number16"><div class="sub16">16</div></div>
-      <div class="number number17"><div class="sub17">17</div></div>
-      <div class="number number18"><div class="sub18">18</div></div>
-      <div class="number number19"><div class="sub19">19</div></div>
-      <div class="number number20"><div class="sub20">20</div></div>
-      <div class="number number21"><div class="sub21">21</div></div>
-      <div class="number number22"><div class="sub22">22</div></div>
-      <div class="number number23"><div class="sub23">23</div></div>
-      <div class="number number24"><div class="sub24">24</div></div>
+        .sonce {
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .dnevnaura {
+            width: 40%;
+            height: 40%;
+            background-color: blue;
+            position: absolute;
+        }
+
+        .clock {
+            width: 100%;
+            height: 100%;
+            background-color: #121212;
+            border-radius: 50%;
+            border: 1.5px solid white;
+            position: relative;
+        }
+
+        /* ... ostali stili ... */
+    </style>
+    <script>
+        setInterval(setClock, 1000);
+
+        const hourHand = document.querySelector('[data-hour-hand]');
+        const minuteHand = document.querySelector('[data-minute-hand]');
+        const secondHand = document.querySelector('[data-second-hand]');
+
+        function setClock() {
+            const currentDate = new Date();
+            const secondsRatio = currentDate.getSeconds() / 60;
+            const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
+            const hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
+            setRotation(secondHand, secondsRatio);
+            setRotation(minuteHand, minutesRatio);
+            setRotation(hourHand, hoursRatio);
+        }
+
+        function setRotation(element, rotationRatio) {
+            element.style.setProperty('--rotation', rotationRatio * 360);
+        }
+
+        setClock();
+    </script>
+</head>
+<body>
+    <p id="demo"></p>
+    <div class="astronomskaura">
+        <div class="sonce"></div>
+        <div class="dnevnaura">
+            <div class="clock">
+                <!-- Kazalci, številke, itd. -->
+            </div>
+        </div>
     </div>
-    <iframe
-        src="https://free.timeanddate.com/clock/i8ybvcpw/n736/tlsi26/fn15/fs16/fcfff/tc000/pc000/ftb/tt0/tw1/tm1/th1/ta1/tb4"
-        frameborder="0"
-        width="124"
-        height="39"
-        align="top"
-        align="right">
-    </iframe>
-  </body>
+</body>
 </html>
