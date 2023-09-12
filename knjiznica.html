@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Knjižnica</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js"></script>
+    </head>
+
+    <body>
+
+        <label class="hamburger-menu">
+          <input type="checkbox" />
+        </label>
+        <aside class="sidebar">
+          <nav>
+            <div><a href="ura.html">Ura</a></div></div>
+          </nav>
+        </aside>
+
+        <div class="content">
+            <h1>KNJIŽNICA</h1>
+            <p>Tu je zbirka raznovrstnega znanja, ki pa je bolj osredotočena na področja mojega zanimanja - to pomeni na teme, ki so zanimanja vredne.</p>
+            <hr>
+
+            <ul class="s">
+                 <li>Jezikoslovje
+                    <ul class="s">
+                        <li><a href="glasoslovje.html">Glasoslovje</a></li>
+                         <li>Jeziki
+                            <ul class="s">
+                                <li><a href="slovenscina.html">Slovenščina</a></li>
+                                    <ul class="s">
+                                        <li><a href="SlovenskaSlovnica.html">Jože Toporišič: Slovenska Slovnica</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="anglescina.html">Angleščina</a></li>
+                                <li><a href="nemscina.html">Nemščina</a></li>
+                                <li><a href="latinscina.html">Latinščina</a></li>
+                            </ul>
+                        </li>
+                         <li>Pisave
+                            <ul class="s">
+                                <li><a href="gotica.html">Gotica</a></li>
+                                <li><a href="cirilica.html">Cirilica</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                 <li><a href="znanost.html">Znanost</a>
+                    <ul class="s">
+                        <li><a href="fizika.html">Fizika</a></li>
+                        <li><a href="biologija.html">Biologija</a></li>
+                    </ul>
+                </li>
+                 <li><a href="rodoslovje.html">Rodoslovje</a>
+                    <ul class="s">
+                        <li><a href="zgodovinsko-zemljepisje.html">Zgodovinsko zemljepisje</a></li>
+                        <li><a href="maticne-knjige.html">Matične knjige</a></li>
+                        <li><a href="rodoslovni-slovar.html">Rodoslovni slovar</a></li>
+                    </ul>
+                </li>
+                 <li>Umetnost
+                    <ul class="s">
+                         <li>Književnost
+                            <ul class="s">
+                                 <li><a href="JohnRonaldReuelTolkien.html">John Ronald Reuel Tolkien</a>
+                                    <ul class="s">
+                                        <li><a href="TheHobbit.html">J. R. R. Tolkien: The Hobbit</a></li>
+                                        <li><a href="TheLordOfTheRings.html">J. R. R. Tolkien: The Lord of the Rings</a></li>
+                                        <li><a href="TheSilmarillion.html">J. R. R. Tolkien: The Silmarillion</a></li>
+                                    </ul>
+                                </li>
+                                 <li><a href="JamesGurney.html">James Gurney</a>
+                                    <ul>
+                                        <li><a href="Dinotopia.html">J. Gurney: Dinotopia</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <hr>
+
+            <ul id="myUL">
+                <li><span class="caret">Jezikoslovje</span>
+                    <ul class="nested">
+                        <li>Glasoslovje</li>
+                        <li><span class="caret">Jeziki</span>
+                            <ul class="nested">
+                                <li><a href="slovenscina.html">Slovenščina</a></li>
+                                    <ul class="nested">
+                                        <li><a href="SlovenskaSlovnica.html">Jože Toporišič: Slovenska Slovnica</a></li>
+                                    </ul>
+                                </li>
+                                <li>Angleščina</li>
+                                <li>Nemščina</li>
+                                <li>Latinščina</li>
+                            </ul>
+                        </li>
+                        <li><span class="caret">Pisave</span>
+                            <ul class="nested">
+                                <li>Gotica</li>
+                                <li>Cirilica</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="caret">Znanost</span>
+                    <ul class="nested">
+                        <li>Fizika</li>
+                        <li>Biologija</li>
+                    </ul>
+                </li>
+                <li><span class="caret">Rodoslovje</span>
+                    <ul class="nested">
+                        <li><a href="zgodovinsko-zemljepisje.html">Zgodovinsko zemljepisje</a></li>
+                        <li>Matične knjige</li>
+                        <li>Slovar</li>
+                    </ul>
+                </li>
+                <li><span class="caret">Umetnost</span>
+                    <ul class="nested">
+                        <li><span class="caret">Književnost</span>
+                            <ul class="nested">
+                                <li><span class="caret">John Ronald Reuel Tolkien</span>
+                                    <ul class="nested">
+                                        <li><a href="TheHobbit.html">J. R. R. Tolkien: The Hobbit</a></li>
+                                        <li><a href="TheLordOfTheRings.html">J. R. R. Tolkien: The Lord of the Rings</a></li>
+                                        <li><a href="TheSilmarillion.html">J. R. R. Tolkien: The Silmarillion</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class="caret">James Gurney</span>
+                                    <ul class="nested">
+                                        <li>J. Gurney: Dinotopia</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </body>
+</html>
