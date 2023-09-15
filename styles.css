@@ -1,7 +1,14 @@
+:root {
+    --izrazito: Lime;
+    --mehka-crna: #121212;
+    --bela: #ffffff;
+    --pisava:"Times New Roman", Times, Georgia, Garamond, serif
+}
+
 body {
-    --accent-color: Lime;
-    --background-color: #121212;
-    --text-color: #FFFFFF;
+    --accent-color: var(--izrazito);
+    --background-color: var(--mehka-crna);
+    --text-color: var(--bela);
     --transition-delay: 0.5s;
 
     transition: var(--transition-delay);
@@ -11,38 +18,13 @@ body {
     opacity: 0.87;
 }
 body.light {
-  --accent-color: Lime;
+  --accent-color: var(--izrazito);
   --background-color: white;
   --text-color: black;
 }
-/*TEMEN-SVETEL NAČIN*/
-.theme-toggle-button {
-  background-color: var(--accent-color);
-  color: var(--button-text-color);
-
-    height: 24px;
-    width: 24px;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: .1em 1em;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    transition: var(--transition-delay);
-    transform: scale(1);
-    margin-right: 0;
-}
-.theme-toggle-button:hover,
-.theme-toggle-button:focus {
-  transform: scale(1.1);
-}
-
-
-.poudarjeno {
-    fill: white;
-    color: white;
+.zamrznjeno {
+    color: var(--bela);
+    opacity: 0.4;
 }
 .light-mode{
     color:black;
