@@ -1,1 +1,1 @@
-# janezpavelzebovec.github.io
+# janezpavelzebovec.net
