@@ -1,51 +1,24 @@
 <!doctype html>
 <html>
     <head>
-        <title>Zgodovinsko zemljepisje</title>
-        <link rel="stylesheet" href="styles1.css" type="text/css">
-        <script src="scripts1.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Zgodovinsko zemljepisje</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js"></script>
     </head>
     <body>
-<div id="myNav" class="overlay">
- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-
-        <ul id="myUL">
-            <li><span class="caret">"<a href="knjiznica1.html">Knjižnica</a></span>
-                <ul class="nested">
-                    <li><span class="caret">Jezikoslovje</span>
-                        <ul class="nested">
-                            <li>Glasoslovje</li>
-                            <li>Jeziki</li>
-                            <li><span class="caret">Pisave</span>
-                                <ul class="nested">
-                                    <li>Gotica</li>
-                                </ul>>
-                            </li>
-                        </ul>
-                    </li>  
-                </ul>
-            </li>
-            <li><span class="caret">Znanost</span>
-                <ul class="nested">
-                    <li>Fizika</li>
-                    <li>Biologija</li> 
-                </ul>
-            </li>
-            <li><span class="caret">Umetnost</span>
-                <ul class="nested">
-                    <li><span class="caret">Književnost</span>
-                        <ul class="nested">
-                            <li>John Ronald Reuel Tolkien</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
+        <label class="hamburger-menu">
+          <input type="checkbox" />
+        </label>
+        <aside class="sidebar">
+          <nav>
+            <div><a href="./">Domov</a></div></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+            <div><a href="./ura">Ura</a></div></div>
+          </nav>
+        </aside>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
