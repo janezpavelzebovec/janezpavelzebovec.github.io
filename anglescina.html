@@ -10,14 +10,16 @@
     </head>
 
     <body>
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="knjiznica">Knjižnica</a>
-                <a href="ura">Ura</a>
-            </div>
-        </div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <label class="hamburger-menu">
+          <input type="checkbox" />
+        </label>
+        <aside class="sidebar">
+          <nav>
+            <div><a href="./">Domov</a></div></div>        
+            <div><a href="./knjiznica">Knjižnica</a></div></div>
+            <div><a href="ura">Ura</a></div></div>
+          </nav>
+        </aside>
 
         <div class="content">
             <h1>Angleščina</h1>
