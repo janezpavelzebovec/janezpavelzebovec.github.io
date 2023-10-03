@@ -77,7 +77,7 @@ body.light {
     padding: none;
     background-color: white;
     font-family: "Times New Roman", Times, Georgia, Garamond, serif;
-    font-size: 16px;
+    font-size: 1rem;
     overflow: hidden; /* skrije drsnik */
     justify-content: center;
     align-items: center;
@@ -104,11 +104,11 @@ body.light {
 }
 
 body.ura {
-    padding: 16px;
+    padding: 1rem;
     background-color: #121212;
     font-family: "Times New Roman", Times, Georgia, Garamond, serif;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #121212;
     display: flex;
     align-items: center;
@@ -119,83 +119,76 @@ body.ura {
 svg{
     padding-top: 1rem;
 }
-  @media (prefers-color-scheme: dark) {
-    path { fill: #white; }
-  }
-  @media (prefers-color-scheme: light) {
-    path { fill: #black; }
-  }
-
 
 .content {
-    max-width: 900px;
+    max-width: 120ch;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
 }
 h1 {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 60px;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+    font-size: 3.8rem;
     font-variant: small-caps;
 }
 h2 {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 45px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 3.0rem;
     font-variant: small-caps;
 }
 h3 {
  text-align: center;
- margin-top: 18px;
- margin-bottom: 18px;
- font-size: 35px;
+ margin-top: 1.1rem;
+ margin-bottom: 1.1rem;
+ font-size: 2.2rem;
  font-variant: small-caps;
  }
 h4 {
  text-align: center;
- margin-top: 16px;
- margin-bottom: 16px;
- font-size: 24px;
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+ font-size: 1.8rem;
  }
 h5 {
  text-align: left;
- margin-top: 14px;
- margin-bottom: 14px;
- font-size: 22px;
+ margin-top: 0.9rem;
+ margin-bottom: 0.9rem;
+ font-size: 1.6rem;
  }
 h6 {
  text-align: left;
- margin-top: 12px;
- margin-bottom: 12px;
- font-size: 20px;
+ margin-top: 0.8rem;
+ margin-bottom: 0.8rem;
+ font-size: 1.4rem;
  }
 h7 {
  text-align: left;
- margin-top: 12px;
- margin-bottom: 12px;
- font-size: 18px;
+ margin-top: 0.7rem;
+ margin-bottom: 0.7rem;
+ font-size: 1.2rem;
  font-weight: bold;
  }
 p {
  text-align: justify;
- font-size: 16px;
+ font-size: 1rem;
  margin-left: ;
- margin-top: 6px;
+ margin-top: 0.5rem;
  }
 p.capitals {
  text-align: justify;
- font-size: 16px;
- margin-top: 6px;
+ font-size: 1rem;
+ margin-top: 0.5rem;
  font-variant: small-caps;
 }
 li {
  text-align: justify;
- font-size: 16px;
+ font-size: 1rem;
  margin-left: ;
- margin-top: 6px;
+ margin-top: 0.5rem;
  }
 a {
  color: Lime;
@@ -203,58 +196,52 @@ a {
  }
 ul.s {
   list-style-type: square;
-  color: #FFFFFF; 
-} 
+  color: #FFFFFF;
+}
 hr {
- margin-top: 20px;
- margin-bottom: 20px
+ margin-top: 1.2rem;
+ margin-bottom: 1.2rem
  }
-table { 
-    border-collapse: collapse; 
+table {
+    border-collapse: collapse;
     border-style: hidden;
-    margin: 12px;
+    margin: 0.7rem;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
-table.capital { 
-    border-collapse: collapse; 
+table.capital {
+    border-collapse: collapse;
     border-style: hidden;
-    margin: 12px;
+    margin: 0.7rem;
     margin-left: 12px;
     margin-right: auto;
 }
-table.list { 
-    border-collapse: collapse; 
+table.list {
+    border-collapse: collapse;
     border-style: hidden;
-    margin: 12px;
+    margin: 0.7rem;
     margin-left: 100px;
     margin-right: auto;
-}   
+}
     table tr { border: none; }
-    table td { 
+    table td {
     border-right: 1px solid white;
-    padding: 10px; 
+    padding: 10px;
     text-align: left;
     font-weight: none;
     }
     table th {
     border-bottom: 1px solid white;
-        padding: 10px; 
+        padding: 10px;
         text-align: center;
     border-right: 1px solid white;
     }
     tr:first-child td,
     tr td:first-child {
         font-weight: bold;
-    } 
+    }
 
-@media screen and (max-width: 768px) {
-  /* Slogi za manjše zaslone */
-  body {
-    font-size: 14px;
-  }
-}
 .image-center {
  display: flex;
  justify-content: center;
@@ -273,13 +260,13 @@ body {
 }
 
 :root {
-  --bar-width: 30px;
-  --bar-height: 3px;
-  --hamburger-gap: 6px;
+  --bar-width: 2rem;
+  --bar-height: 0.18rem;
+  --hamburger-gap: 0.38rem;
   --foreground: rgba(0, 0, 0, 0.5); /*barva polja kazala, zadnja vrednost je za prosojnost*/
   --background: white;
-  --hamburger-color: white;  
-  --hamburger-margin: 6px;
+  --hamburger-color: white;
+  --hamburger-margin: 0.38rem;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
 }
@@ -399,7 +386,7 @@ body {
     .caret-down::before {
       -ms-transform: rotate(90deg); /* IE 9 */
       -webkit-transform: rotate(90deg); /* Safari */'
-      transform: rotate(90deg);  
+      transform: rotate(90deg);
     }
 
     /* prikrije ugnezden seznam */
@@ -412,167 +399,20 @@ body {
       display: block;
     }
 
-/*ASTRONOMSKA URA:*/
-     *, *::after, *::before {
-      box-sizing: border-box;
-      font-family: Times New Roman, sans-serif;
+@media (max-width: 500px) /* Slog za manjše zaslone */ {
+  body {
+    font-size: 1rem;
+  }
+}
+@media print /*slog za tiskanje*/ {
+    body {
+        color: black;
     }
-
-    .clock {
-      width: 50vmin;
-      height: 50vmin;
-      background-color: #121212;
-      border-radius: 50%;
-      border: 2px solid #FFFFFF;
-      position: relative;
-    }
-
-    .clock .number {
-      --rotation: 0;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transform: rotate(var(--rotation));
-      font-size: 1rem;
-      color: #FFFFFF;
-    }
-
-        .sub13 {
-      transform: rotate(15deg);
-        }
-        .sub14 {
-      transform: rotate(30deg);
-        }
-        .sub15 {
-      transform: rotate(45deg);
-        }
-        .sub16 {
-      transform: rotate(60deg);
-        }
-        .sub17 {
-      transform: rotate(75deg);
-        }
-        .sub18 {
-      transform: rotate(90deg);
-        }
-        .sub19 {
-      transform: rotate(105deg);
-        }
-        .sub20 {
-      transform: rotate(120deg);
-        }
-        .sub21 {
-      transform: rotate(135deg);
-        }
-        .sub22 {
-      transform: rotate(150deg);
-        }
-        .sub23 {
-      transform: rotate(165deg);
-        }
-        .sub24 {
-      transform: rotate(180deg);
-        }
-        .sub1 {
-      transform: rotate(195deg);
-        }
-        .sub2 {
-      transform: rotate(210deg);
-        }
-        .sub3 {
-      transform: rotate(225deg);
-        }
-        .sub4 {
-      transform: rotate(240deg);
-        }
-        .sub5 {
-      transform: rotate(255deg);
-        }
-        .sub6 {
-      transform: rotate(270deg);
-        }
-        .sub7 {
-      transform: rotate(285deg);
-        }
-        .sub8 {
-      transform: rotate(300deg);
-        }
-        .sub9 {
-      transform: rotate(315deg);
-        }
-        .sub10 {
-      transform: rotate(330deg);
-        }
-        .sub11 {
-      transform: rotate(345deg);
-        }
-
-    .clock .number13 { --rotation: 345deg; }
-    .clock .number14 { --rotation: 330deg; }
-    .clock .number15 { --rotation: 315deg; }
-    .clock .number16 { --rotation: 300deg; }
-    .clock .number17 { --rotation: 285deg; }
-    .clock .number18 { --rotation: 270deg; }
-    .clock .number19 { --rotation: 255deg; }
-    .clock .number20 { --rotation: 240deg; }
-    .clock .number21 { --rotation: 225deg; }
-    .clock .number22 { --rotation: 210deg; }
-    .clock .number23 { --rotation: 195deg; }
-    .clock .number24 { --rotation: 180deg; }
-    .clock .number1 { --rotation: 165deg; }
-    .clock .number2 { --rotation: 150deg; }
-    .clock .number3 { --rotation: 135deg; }
-    .clock .number4 { --rotation: 120deg; }
-    .clock .number5 { --rotation: 105deg; }
-    .clock .number6 { --rotation: 90deg; }
-    .clock .number7 { --rotation: 75deg; }
-    .clock .number8 { --rotation: 60deg; }
-    .clock .number9 { --rotation: 45deg; }
-    .clock .number10 { --rotation: 30deg; }
-    .clock .number11 { --rotation: 15deg; }
-
-    .clock .hand {
-      --rotation: 0;
-      position: absolute;
-      bottom: 50%;
-      left: 50%;
-      border: 1px solid #FFFFFF;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      transform-origin: bottom;
-      z-index: 10;
-      transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
-    }
-
-    .clock::before{
-      content: '';
-      position: absolute;
-      background-color: #FFFFFF;
-      z-index: 11;
-      width: 15px;
-      height: 15px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-    }
-
-    .clock .hand.second {
-      width: 2px;
-      height: 45%;
-      background-color: red;
-    }
-
-    .clock .hand.minute {
-      width: 6px;
-      height: 42%;
-      background-color: #121212;
-      border: 2px solid #FFFFFF;
-    }
-
-    .clock .hand.hour {
-      width: 10px;
-      height: 42%;
-      background-color: #FFFFFF;
-    }
+}
+@media (orientation: portrait) /*slog za zaslon v ležečem načinu*/  and (max-width: 500px){
+}
+  @media (prefers-color-scheme: dark) {
+    path { fill: #white; }
+  }
+  @media (prefers-color-scheme: light) {
+  }
