@@ -191,13 +191,23 @@ li {
  margin-top: 0.5rem;
  }
 a {
- color: Lime;
- text-decoration: none;
+    color: Lime;
+    text-decoration: none;
+    cursor: pointer
  }
 ul.s {
   list-style-type: square;
   color: #FFFFFF;
 }
+ul {
+    list-style: none;
+}
+ul.ugn1 {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
 hr {
  margin-top: 1.2rem;
  margin-bottom: 1.2rem
@@ -352,52 +362,6 @@ body {
   translate: 0;
 }
 
-
-/*DEJAVEN UGNEZDEN SEZNAM:*/
-    /* odtrani privzete znake seznama */
-    ul, #myUL {
-      list-style-type: none;
-    }
-
-    /* Remove margins and padding from the parent ul */
-    #myUL {
-      margin: 0;
-      padding: 0;
-    }
-
-    /* oblikuje puščico */
-    .caret {
-      cursor: pointer;
-      -webkit-user-select: none; /* Safari 3.1+ */
-      -moz-user-select: none; /* Firefox 2+ */
-      -ms-user-select: none; /* IE 10+ */
-      user-select: none;/* prepreči izbiro besedila */
-    }
-
-    /* ustvari puščico z Unicode in jo oblikuje */
-    .caret::before {
-      content: "\25B6";
-      color: black;
-      display: inline-block;
-      margin-right: 6px;
-    }
-
-    /* zavrti puščico, ko pritisneš nanjo */
-    .caret-down::before {
-      -ms-transform: rotate(90deg); /* IE 9 */
-      -webkit-transform: rotate(90deg); /* Safari */'
-      transform: rotate(90deg);
-    }
-
-    /* prikrije ugnezden seznam */
-    .nested {
-      display: none;
-    }
-
-    /* prikaže ugnezden seznam ko pritisneš na puščico */
-    .active {
-      display: block;
-    }
 
 @media (max-width: var(--vsebina)) {
     .kazalo-strani {
