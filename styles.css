@@ -100,7 +100,6 @@ body.light {
     max-width: var(--vsebina);
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
 }
 
 body.ura {
@@ -117,7 +116,7 @@ body.ura {
     margin: auto;
 }
 svg{
-    padding-top: 1rem;
+    stroke:#111111;
 }
 
 h1 {
@@ -221,25 +220,22 @@ table {
     margin-right: auto;
 }
 table.capital {
-    border-collapse: collapse;
-    border-style: hidden;
-    margin: 0.7rem;
     margin-left: 12px;
-    margin-right: auto;
 }
 table.list {
-    border-collapse: collapse;
-    border-style: hidden;
-    margin: 0.7rem;
     margin-left: 100px;
-    margin-right: auto;
 }
-    table tr { border: none; }
+table.sredinsko th,
+table.sredinsko td {
+    text-align:center;
+}
+    table tr {
+        border: none;
+    }
     table td {
     border-right: 1px solid white;
     padding: 10px;
     text-align: left;
-    font-weight: none;
     }
     table th {
     border-bottom: 1px solid white;
@@ -247,9 +243,18 @@ table.list {
         text-align: center;
     border-right: 1px solid white;
     }
-    tr:first-child td,
-    tr td:first-child {
+    table th.brezdrob,
+    table td.brezdrob {
+        border-right: none;
+    }
+    /* Krepko za prvi stolpec v navadni tabeli */
+    table:not(.zgornja) tr td:first-child {
         font-weight: bold;
+    }
+
+    /* Odstranitev krepke pisave za prvi stolpec v tabeli razreda "zgornja" */
+    table.zgornja tr td:first-child {
+        font-weight: ;
     }
 
 .image-center {
