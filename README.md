@@ -2,6 +2,6 @@
 
 To je moja osebna spletna stran, kjer hranim tudi znanja o svojih zanimanjih.
 
-Stran je še v zgodnjem nastajanju, zato več stvari še ne deluje, kot bi morale; mrvtvih je tudi veliko povezav v Knjižnici.
+Stran je še v zgodnjem nastajanju, zato več stvari še ne deluje, kot bi morale; mrvtvih je tudi veliko povezav v [Knjižnici](https://janezpavelzebovec.net/knjiznica).
 
-Največji, oz. najzahtevnejši, a hkrati tudi najzanimivejši in najbolj edinstven je projekt [Zvezdoslovne (astronomske) ure](https://janezpavelzebovec.net/zvezdoslovna_ura), Zvezdoslovne (astronomske) ure, ki zahteva veliko dela s programskimi jeziki - zaenkrat so uporabljeni: HTML, CSS, Javascript in Python, s katerim so izrisani nekateri zahtevnejših SVG-jev. Kar zadeva Python je koda delo Filipa Žebovca.
+Največji, oz. najzahtevnejši, a hkrati tudi najzanimivejši in najbolj edinstven je projekt [Zvezdoslovne (astronomske) ure](https://janezpavelzebovec.net/zvezdoslovna_ura), ki zahteva veliko dela s programskimi jeziki - zaenkrat so uporabljeni: HTML, CSS, Javascript in Python, s katerim so izrisani nekateri zahtevnejših SVG-jev. Kar zadeva Python je koda delo Filipa Žebovca.
