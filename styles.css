@@ -40,24 +40,24 @@ body.light {
     border: none;
     padding: 1px;
 }
-/*SCROLLBAR*/
+/*DRSNIK*/
     html {
       scrollbar-width: normal;
       scrollbar-color: #777 #5555;
     }
 
-    html::-webkit-scrollbar {
+    ::-webkit-scrollbar {
       width: 1vw;
     }
 
-    html::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-thumb {
       background-color: #7775;
     }
-    html::-webkit-scrollbar-thumb:hover /*barva, ko si z miško gor*/ {
+    ::-webkit-scrollbar-thumb:hover /*barva, ko si z miško gor*/ {
       background-color: #777;
     }
 
-    html::-webkit-scrollbar-track {
+    ::-webkit-scrollbar-track {
       background-color: #5555;
     }
 .zamaknjeno {
@@ -100,6 +100,7 @@ body.light {
     max-width: var(--vsebina);
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
 }
 
 body.ura {
@@ -115,8 +116,15 @@ body.ura {
     overflow: hidden; /*hides scrollbar*/
     margin: auto;
 }
-svg{
-    stroke:#111111;
+
+svg text {
+    fill: #fff;
+    font-family: Times New Roman Serif;
+    stroke: #fff;
+}
+svg text tspan {
+    stroke: #fff;
+    fill: #fff;
 }
 
 h1 {
@@ -183,6 +191,55 @@ p.capitals {
  margin-top: 0.5rem;
  font-variant: small-caps;
 }
+.besedilosred {
+    text-align: center;
+}
+.deli {
+    max-height: 12rem;
+    max-width: 12rem;
+}
+.lunadel {
+    height: 6rem;
+    width: 6rem;
+}
+.dnevnecrte {
+    transform: rotate(90deg);
+    fill: none;
+    stroke-width: 6px;
+    stroke-opacity: 0.6;
+    stroke-width: 5px;
+}
+.kazalka {
+    --odmik: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: ;
+    border: 0.1vmin solid yellow;
+    position: absolute;
+}
+.poldnevnica {
+    width: 100%;
+    height: 0.1vmin;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.obrocek{
+    position: absolute;
+    z-index: 4; /*visoka plast, da prekrije kazalce*/
+    width: 4vmin;
+    height: 4vmin;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*postavimo središče elemnta (ne pa kot) v središče polja*/
+    border-radius: 50%; /*krog iz kvadrata*/
+    border: 1px solid white;
+}
 li {
  text-align: justify;
  font-size: 1rem;
@@ -224,6 +281,11 @@ table.capital {
 }
 table.list {
     margin-left: 100px;
+}
+.pšv {
+    width: 100vw;
+    overflow: scroll;
+    overflow-y: hidden;
 }
 table.sredinsko th,
 table.sredinsko td {
@@ -361,6 +423,7 @@ body {
   max-width: 20rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
   height: 100vh; /*najmanjša višina polja kazala strani, 1vh = 1% višine zaslona*/
   position: fixed;
+  overflow: auto;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
@@ -381,7 +444,6 @@ body {
     }
     a {
         color: black;
-        opacity: 0.6;
     }
     ul {
         color: black;
@@ -391,7 +453,7 @@ body {
     }
     .zamrznjeno {
         color: black;
-        opacity: 0.4;
+        opacity: 0.6;
     }
     .kazalo-strani {
         display: none;
@@ -401,6 +463,34 @@ body {
     }
     .sidebar {
         display: none;
+    }
+
+    svg{
+        stroke: black;
+    }
+    svg path{
+        fill: black;
+        stroke: black;
+    }
+    svg g {
+        fill: black;
+    }
+    svg text {
+        fill: black;
+        font-family: Times New Roman Serif;
+        stroke: black;
+    }
+    svg text tspan {
+        stroke: black;
+        fill: black;
+    }
+
+    table td {
+        border-right: 1px solid black;
+    }
+    table th {
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
     }
 }
 @media (orientation: portrait) /*slog za zaslon v pokončnem načinu*/  and (max-width: 500px){
