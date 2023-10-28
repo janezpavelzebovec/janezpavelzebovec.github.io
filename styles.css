@@ -203,7 +203,6 @@ p.capitals {
     width: 6rem;
 }
 .dnevnecrte {
-    transform: rotate(90deg);
     fill: none;
     stroke-width: 6px;
     stroke-opacity: 0.6;
@@ -222,12 +221,12 @@ p.capitals {
     position: absolute;
 }
 .poldnevnica {
-    width: 100%;
-    height: 0.1vmin;
+    width: 0.1vmin;
+    height: 100%;
     background-color: yellow;
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 0;
+    left: 50%;
 }
 .obrocek{
     position: absolute;
