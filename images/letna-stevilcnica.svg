@@ -2,12 +2,13 @@
 <svg
    version="1.1"
    id="svg3"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
    display="flex"
    float="center"
    position="absolute"
-   viewbox="0 0 840 840">
+   viewbox="0 0 840 840"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs7" />
   <g
@@ -26,24 +27,24 @@
        id="path3525" />
     <text
        xml:space="preserve"
-       style="font-size:13.33333333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
        id="text103573"><textPath
          xlink:href="#path190852"
          startOffset="50%"
          id="textPath191082"><tspan
            id="tspan103571"
            dy="-6"
-           style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;-inkscape-font-specification:'Times New Roman Serif, Normal';font-family:'Times New Roman Serif';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.33333333px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">SVEČAN</tspan></textPath></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">SVEČAN</tspan></textPath></text>
     <text
        xml:space="preserve"
-       style="font-size:13.33333333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
        id="text109335"><textPath
          xlink:href="#path191000"
          startOffset="50%"
          id="textPath192970"><tspan
            id="tspan109333"
            dy="-6"
-           style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;-inkscape-font-specification:'Times New Roman Serif, Normal';font-family:'Times New Roman Serif';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.33333333px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">SUŠEC</tspan></textPath></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">SUŠEC</tspan></textPath></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
@@ -106,44 +107,44 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">KIMAVEC</tspan></textPath></text>
     <text
        xml:space="preserve"
-       style="font-size:13.33333333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
        id="text151359"><textPath
          xlink:href="#path41181"
          startOffset="50%"
          id="textPath41263"><tspan
            id="tspan151357"
            dy="-6"
-           style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;-inkscape-font-specification:'Times New Roman Serif, Normal';font-family:'Times New Roman Serif';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.33333333px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">VINOTOK</tspan></textPath></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">VINOTOK</tspan></textPath></text>
     <text
        xml:space="preserve"
-       style="font-size:13.33333333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
        id="text156041"><textPath
          xlink:href="#path41299"
          startOffset="50%"
          id="textPath41381"><tspan
            id="tspan156039"
-           style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;-inkscape-font-specification:'Times New Roman Serif, Normal';font-family:'Times New Roman Serif';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.33333333px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
            dy="-6">LISTOPAD</tspan></textPath></text>
     <text
        xml:space="preserve"
-       style="font-size:13.33333333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
        id="text161347"><textPath
          xlink:href="#path1768"
          startOffset="50%"
          id="textPath40990"><tspan
            id="tspan161345"
            dy="-6"
-           style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;-inkscape-font-specification:'Times New Roman Serif, Normal';font-family:'Times New Roman Serif';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.33333333px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">GRUDEN</tspan></textPath></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">GRUDEN</tspan></textPath></text>
     <text
        xml:space="preserve"
-       style="font-size:13.33333333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
        id="text172026"><textPath
          xlink:href="#path3525"
          startOffset="50%"
          id="textPath186842"><tspan
            id="tspan172024"
            dy="-6"
-           style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;-inkscape-font-specification:'Times New Roman Serif, Normal';font-family:'Times New Roman Serif';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.33333333px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">PROSINEC</tspan></textPath></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Times New Roman Serif';-inkscape-font-specification:'Times New Roman Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">PROSINEC</tspan></textPath></text>
     <path
        style="opacity:0;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 618.26299,755.82645 5.74785,-3.46019 5.68747,-3.55856 5.62542,-3.65586 5.56171,-3.75209 5.49633,-3.84721 5.42934,-3.94119 5.36074,-4.034 5.29056,-4.12561 5.2188,-4.21602 5.14551,-4.30516 5.07069,-4.39304 4.99437,-4.47962 4.91657,-4.56486 4.83732,-4.64877 4.75664,-4.73128 4.67454,-4.81242 4.59108,-4.89211 4.50624,-4.97036 4.42007,-5.04714 4.3326,-5.12243 4.24384,-5.1962 4.15383,-5.26843 4.06258,-5.33911 3.97015,-5.4082 3.87652,-5.4757 3.78176,-5.54157 3.68587,-5.6058 3.58885,-5.66833"
