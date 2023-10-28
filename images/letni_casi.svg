@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    display="flex"
+    float="center"
+    position="absolute"
+    viewBox="0 0 180 180">
+
+    <g transform="translate(10 9.9874)">
+        <path
+            d="m79.999-9.9874-6.99e-4 180"
+            style="fill:none;stroke-width:.25684;stroke:#fff"/>
+        <path
+            d="m-10 80.008 180-6.94e-4"
+            style="fill:none;stroke-width:.25684;stroke:#fff"/>
+        <path
+            d="m143.64 143.65-127.28-127.28"
+            style="fill:none;stroke-width:.25684;stroke:#fff"/>
+        <path
+            d="m143.64 16.376-127.28 127.28"
+            style="fill:none;stroke-width:.25684;stroke:#fff"/>
+        <path
+            id="path1401-2"
+            d="m23.697 23.505a79.798 79.797 0 0 1 112.85 0"
+            style="opacity:0;stroke-width:.26699"/>
+        <path
+            id="path1401"
+            d="m136.54 23.506a79.633 79.632 0 0 1 0 112.62"
+            style="opacity:0;stroke-width:.26643"/>
+        <path
+            id="path1401-4"
+            d="m23.505 136.54a79.633 79.632 0 0 0 112.62 0"
+            style="opacity:0;stroke-width:.26643"/>
+        <text style="font-family:'Times New Roman Serif';font-size:8.526px;line-height:1.25;stroke-width:.26643;stroke:#ffffff"
+            xml:space="preserve">
+            <textPath
+                startOffset="50%"
+                style="font-size:8.526px;stroke-width:.26643;stroke:#ffffff"
+                    xlink:href="#path1401">
+                    <tspan
+                        dy="5"
+                        style="fill:#ffffff;font-family:'Latin Modern Roman Caps';font-size:8.526px;stroke-width:.26643;stroke:#ffffff;text-align:center;text-anchor:middle">
+                            pomlad
+                    </tspan>
+            </textPath>
+        </text>
+        <text style="font-family:'Times New Roman Serif';font-size:8.526px;line-height:1.25;stroke-width:.26643;stroke:#ffffff"
+            xml:space="preserve">
+            <textPath
+                startOffset="50%"
+                style="font-size:8.526px;stroke-width:.26643;stroke:#ffffff"
+                    xlink:href="#path1401-2">
+                    <tspan
+                        dy="5"
+                        rotate="0 0 0 0 0 0 0 0"
+                        style="fill:#ffffff;font-family:'Latin Modern Roman Caps';font-size:8.526px;stroke-width:.26643;stroke:#ffffff;text-align:center;text-anchor:middle">
+                            poletje
+                    </tspan>
+            </textPath>
+        </text>
+        <path
+            id="path1401-2-1"
+            d="m23.505 136.54a79.798 79.797 0 0 1 0-112.85"
+            style="opacity:0;stroke-width:.26699"/>
+        <text style="font-family:'Times New Roman Serif';font-size:8.526px;line-height:1.25;stroke-width:.26643;stroke:#ffffff"
+            xml:space="preserve">
+            <textPath
+                startOffset="50%"
+                style="font-size:8.526px;stroke-width:.26643;stroke:#ffffff"
+                    xlink:href="#path1401-2-1">
+                    <tspan
+                        dy="5"
+                        rotate="0 0 0 0 0 0"
+                        style="fill:#ffffff;font-family:'Latin Modern Roman Caps';font-size:8.526px;stroke-width:.26643;stroke:#ffffff;text-align:center;text-anchor:middle">
+                            jesen
+                    </tspan>
+            </textPath>
+        </text>
+        <text style="font-family:'Times New Roman Serif';font-size:8.526px;line-height:1.25;stroke-width:.26643;stroke:#ffffff"
+            xml:space="preserve">
+            <textPath
+                startOffset="50%"
+                style="font-size:8.526px;stroke-width:.26643;stroke:#ffffff"
+                xlink:href="#path1401-4">
+                <tspan
+                    dy="0"
+                    style="fill:#ffffff;font-family:'Latin Modern Roman Caps';font-size:8.526px;stroke-width:.26643;stroke:#ffffff;text-align:center;text-anchor:middle">
+                        zima
+                </tspan>
+            </textPath>
+        </text>
+    </g>
+</svg>
