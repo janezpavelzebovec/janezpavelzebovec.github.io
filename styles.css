@@ -39,7 +39,7 @@ body {
 }
 .Tengwar {
     font-family: 'Tengwar';
-    font-size: rem;
+    font-size: 1.5rem;
     font-variant-ligatures: discretionary-ligatures;
 }
 @font-face {
