@@ -28,6 +28,7 @@ body {
 .PisanaGotica {
     font-family: 'PisanaGotica';
     font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
 }
 
 body.light {
