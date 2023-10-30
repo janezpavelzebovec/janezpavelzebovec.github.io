@@ -31,6 +31,18 @@ body {
     font-variant-ligatures: discretionary-ligatures;
 }
 @font-face {
+    font-family: 'Tengwar';
+    src: url('fonts/Tengwar/tengwar_slo-webfont.woff2') format('woff2'),
+         url('fonts/Tengwar/tengwar_slo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Tengwar {
+    font-family: 'Tengwar';
+    font-size: rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+@font-face {
     font-family: 'Dinotopia';
     src: url('fonts/dinotopia/dinotopia_james_gurney-webfont.woff2') format('woff2'),
          url('fonts/dinotopia/dinotopia_james_gurney-webfont.woff') format('woff');
