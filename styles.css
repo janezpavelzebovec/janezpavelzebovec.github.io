@@ -336,33 +336,40 @@ table.sredinsko th,
 table.sredinsko td {
     text-align:center;
 }
-    table tr {
-        border: none;
-    }
-    table td {
+table.vodčrte td {
+    border-bottom: 1px solid #ffffff34;
+}
+table tr {
+    border: none;
+}
+table td {
     border-right: 1px solid white;
     padding: 10px;
     text-align: left;
-    }
-    table th {
+}
+table th {
     border-bottom: 1px solid white;
-        padding: 10px;
-        text-align: center;
+    padding: 10px;
+    text-align: center;
     border-right: 1px solid white;
-    }
-    table th.brezdrob,
-    table td.brezdrob {
-        border-right: none;
-    }
-    /* Krepko za prvi stolpec v navadni tabeli */
-    table:not(.zgornja) tr td:first-child {
-        font-weight: bold;
-    }
+}
+table th.brezdrob,
+table td.brezdrob {
+    border-right: none;
+}
+table th.brezsrob,
+table td.brezsrob {
+    border-bottom: none;
+}
+/* Krepko za prvi stolpec v navadni tabeli */
+table:not(.zgornja) tr td:first-child {
+    font-weight: bold;
+}
 
-    /* Odstranitev krepke pisave za prvi stolpec v tabeli razreda "zgornja" */
-    table.zgornja tr td:first-child {
-        font-weight: ;
-    }
+/* Odstranitev krepke pisave za prvi stolpec v tabeli razreda "zgornja" */
+table.zgornja tr td:first-child {
+    font-weight: ;
+}
 
 .image-center {
  display: flex;
