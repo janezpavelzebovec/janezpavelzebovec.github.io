@@ -1,7 +1,7 @@
 :root {
     --izrazito: Lime;
     --mehka-crna: #121212;
-    --bela: #ffffff;
+    --bela: #eee;
     --pisava:"Times New Roman", Times, Georgia, Garamond, serif;
     --vsebina: 120ch;
 }
@@ -21,15 +21,14 @@ body {
 @font-face {
     font-family: 'PisanaGotica';
     src: url('fonts/pisana_gotica/pisana_gotica-webfont.woff2') format('woff2'),
-         url('fonts/pisana_gotica/pisana_gotica-webfont.woff') format('woff'),
-         url('fonts/pisana_gotica/pisana_gotica-webfont.ttf') format('truetype');
+         url('fonts/pisana_gotica/pisana_gotica-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 .PisanaGotica {
     font-family: 'PisanaGotica';
     font-size: 1.5rem;
-    font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: normal;
 }
 @font-face {
     font-family: 'Tengwar';
@@ -52,8 +51,11 @@ body {
 }
 .Dinotopia {
     font-family: 'Dinotopia';
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-variant-ligatures: discretionary-ligatures;
+}
+.dve {
+    font-size: 2rem;
 }
 
 body.light {
@@ -145,7 +147,7 @@ body.ura {
     padding: 1rem;
     background-color: #121212;
     font-family: "Times New Roman", Times, Georgia, Garamond, serif;
-    color: #FFFFFF;
+    color: #eee;
     font-size: 1rem;
     background-color: #121212;
     display: flex;
@@ -169,52 +171,54 @@ h1 {
     text-align: center;
     margin-top: 1.3rem;
     margin-bottom: 1.3rem;
-    font-size: 4.4rem;
+    font-size: 4rem;
     font-variant: small-caps;
 }
 h2 {
     text-align: center;
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-variant: small-caps;
 }
 h3 {
  text-align: center;
  margin-top: 1.1rem;
  margin-bottom: 1.1rem;
- font-size: 2.4rem;
+ font-size: 2.2rem;
  font-variant: small-caps;
  }
 h4 {
- text-align: center;
+ text-align: left;
  margin-top: 1rem;
  margin-bottom: 1rem;
- font-size: 1.8rem;
+ font-size: 1.7rem;
+    margin-left: 0rem;
+    margin-right: auto;
  }
 h5 {
  text-align: left;
  margin-top: 0.9rem;
  margin-bottom: 0.9rem;
- font-size: 1.6rem;
-    margin-left: 0rem;
+ font-size: 1.5rem;
+    margin-left: 1rem;
     margin-right: auto;
  }
 h6 {
  text-align: left;
  margin-top: 0.8rem;
  margin-bottom: 0.8rem;
- font-size: 1.4rem;
-    margin-left: 1rem;
+ font-size: 1.3rem;
+    margin-left: 2rem;
     margin-right: auto;
  }
 h7 {
  text-align: left;
  margin-top: 0.7rem;
  margin-bottom: 0.7rem;
- font-size: 1.2rem;
+ font-size: 1.1rem;
  font-weight: bold;
-    margin-left: 2rem;
+    margin-left: 3rem;
     margin-right: auto;
  }
 p {
@@ -283,13 +287,15 @@ li {
  margin-top: 0.5rem;
  }
 a {
-    color: Lime;
+    color: #809fff;
     text-decoration: none;
     cursor: pointer
  }
+a.arh {
+    color: lightblue;
+}
 ul.s {
   list-style-type: square;
-  color: #FFFFFF;
 }
 ul {
     list-style: none;
