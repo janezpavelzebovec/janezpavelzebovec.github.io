@@ -233,6 +233,10 @@ p.capitals {
  margin-top: 0.5rem;
  font-variant: small-caps;
 }
+p.podnaslov {
+    text-align: center;
+    font-size: 3rem;
+}
 .besedilosred {
     text-align: center;
 }
