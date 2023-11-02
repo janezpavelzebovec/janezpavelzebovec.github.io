@@ -43,6 +43,22 @@ body {
     font-variant-ligatures: discretionary-ligatures;
 }
 @font-face {
+    font-family: 'metelcica';
+    src: url('./fonts/metelcica/metelcica-webfont.eot');
+    src: url('./fonts/metelcica/metelcica-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/metelcica/metelcica-webfont.woff2') format('woff2'),
+         url('./fonts/metelcica/metelcica-webfont.woff') format('woff'),
+         url('./fonts/metelcica/metelcica-webfont.ttf') format('truetype'),
+         url('./fonts/metelcica/metelcica-webfont.svg#metel_icaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.metelcica {
+    font-family: 'metelcica';
+    font-size: 1.5rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+@font-face {
     font-family: 'Dinotopia';
     src: url('fonts/dinotopia/dinotopia_james_gurney-webfont.woff2') format('woff2'),
          url('fonts/dinotopia/dinotopia_james_gurney-webfont.woff') format('woff');
@@ -56,6 +72,11 @@ body {
 }
 .dve {
     font-size: 2rem;
+}
+.dol-gor /*smer pisave* (npr. ogamska)*/ {
+  transform-origin: left center 0;
+  transform: rotate(-90deg);
+  position: absolute;
 }
 
 body.light {
