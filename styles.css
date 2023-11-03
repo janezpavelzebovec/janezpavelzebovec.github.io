@@ -264,6 +264,7 @@ p.podnaslov {
 .deli {
     max-height: 12rem;
     max-width: 12rem;
+    position: relative;
 }
 .lunadel {
     height: 6rem;
