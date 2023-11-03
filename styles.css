@@ -397,9 +397,11 @@ table.zgornja tr td:first-child {
 }
 
 .image-center {
- display: flex;
- justify-content: center;
- align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
  }
 
 /*KAZALO SPLETNE STRANI*/
