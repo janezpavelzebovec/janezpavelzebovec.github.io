@@ -1,21 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg display="flex" float="center" position="absolute" version="1.1" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <g transform="translate(10 9.9874)">
-  <path d="m79.999-9.9874-6.99e-4 180" style="fill:none;stroke-width:.25684;stroke:#fff"/>
-  <path d="m-10 80.008 180-6.94e-4" style="fill:none;stroke-width:.25684;stroke:#fff"/>
-  <path d="M 143.64,143.65 16.36,16.37" style="fill:none;stroke-width:.25684;stroke:#fff"/>
-  <path d="m143.64 16.376-127.28 127.28" style="fill:none;stroke-width:.25684;stroke:#fff"/>
-  <path id="path1401-2" d="m23.697 23.505a79.798 79.797 0 0 1 112.85 0" style="opacity:0;stroke-width:.26699"/>
-  <path id="path1401" d="m136.54 23.506a79.633 79.632 0 0 1 0 112.62" style="opacity:0;stroke-width:.26643"/>
-  <path id="path1401-4" d="m23.505 136.54a79.633 79.632 0 0 0 112.62 0" style="opacity:0;stroke-width:.26643"/>
-  <text style="font-family:'Times New Roman Serif';font-size:8.526px;line-height:1.25;stroke-width:.26643;stroke:#ffffff" xml:space="preserve">             <textPath startOffset="50%" style="font-size:8.526px;stroke-width:.26643;stroke:#ffffff" xlink:href="#path1401">                     <tspan dy="5" style="fill:#ffffff;font-family:'Latin Modern Roman Caps';font-size:8.526px;stroke-width:.26643;stroke:#ffffff;text-align:center;text-anchor:middle">
-    pomlad                    </tspan>            </textPath>        </text>
-  <text style="font-family:'Times New Roman Serif';font-size:8.526px;line-height:1.25;stroke-width:.26643;stroke:#ffffff" xml:space="preserve">             <textPath startOffset="50%" style="font-size:8.526px;stroke-width:.26643;stroke:#ffffff" xlink:href="#path1401-2">                     <tspan dy="5" rotate="0 0 0 0 0 0 0 0" style="fill:#ffffff;font-family:'Latin Modern Roman Caps';font-size:8.526px;stroke-width:.26643;stroke:#ffffff;text-align:center;text-anchor:middle">
-    poletje                    </tspan>            </textPath>        </text>
-  <path id="path1401-2-1" d="m23.505 136.54a79.798 79.797 0 0 1 0-112.85" style="opacity:0;stroke-width:.26699"/>
-  <text style="font-family:'Times New Roman Serif';font-size:8.526px;line-height:1.25;stroke-width:.26643;stroke:#ffffff" xml:space="preserve">             <textPath startOffset="50%" style="font-size:8.526px;stroke-width:.26643;stroke:#ffffff" xlink:href="#path1401-2-1">                     <tspan dy="5" rotate="0 0 0 0 0 0" style="fill:#ffffff;font-family:'Latin Modern Roman Caps';font-size:8.526px;stroke-width:.26643;stroke:#ffffff;text-align:center;text-anchor:middle">
-    jesen                    </tspan>            </textPath>        </text>
-  <text style="font-family:'Times New Roman Serif';font-size:8.526px;line-height:1.25;stroke-width:.26643;stroke:#ffffff" xml:space="preserve">             <textPath startOffset="50%" style="font-size:8.526px;stroke-width:.26643;stroke:#ffffff" xlink:href="#path1401-4">                 <tspan dy="0" style="fill:#ffffff;font-family:'Latin Modern Roman Caps';font-size:8.526px;stroke-width:.26643;stroke:#ffffff;text-align:center;text-anchor:middle">
-    zima                </tspan>            </textPath>        </text>
- </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   display="flex"
+   float="center"
+   position="absolute"
+   version="1.1"
+   viewBox="0 0 180 180"
+   id="svg40"
+   width="180"
+   height="180"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs44" />
+  <g
+     transform="translate(10,9.9874005)"
+     id="g38">
+    <path
+       d="m 79.999,-9.9874 -6.99e-4,180"
+       style="display:none;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2" />
+    <path
+       d="m -10,80.008 180,-6.94e-4"
+       style="display:none;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4" />
+    <path
+       d="M 143.64,143.65 16.36,16.37"
+       style="display:none;fill:none;stroke:#ffffff;stroke-width:0.25684"
+       id="path6" />
+    <path
+       d="M 143.64,16.376 16.36,143.656"
+       style="display:none;fill:none;stroke:#ffffff;stroke-width:0.25684"
+       id="path8" />
+    <g
+       id="g115652"
+       transform="matrix(1.125786,0,0,1.125786,-10.063298,-10.137924)">
+      <path
+         id="path1401-2"
+         d="m 23.697,23.505 a 79.798,79.797 0 0 1 112.85,0"
+         style="opacity:0;stroke-width:0.26699" />
+      <path
+         id="path1401"
+         d="m 136.54,23.506 a 79.633,79.632 0 0 1 0,112.62"
+         style="opacity:0;stroke-width:0.26643" />
+      <path
+         id="path1401-4"
+         d="m 23.505,136.54 a 79.633,79.632 0 0 0 112.62,0"
+         style="opacity:0;stroke-width:0.26643" />
+      <text
+         style="font-size:6px;line-height:1.25;font-family:'Times New Roman Serif';stroke:#ffffff;stroke-width:0.26643"
+         xml:space="preserve"
+         id="text17"><textPath
+           startOffset="50%"
+           style="font-size:6px;stroke:#ffffff;stroke-width:0.26643"
+           xlink:href="#path1401"
+           id="textPath15"><tspan
+             dy="5"
+             style="font-size:6px;font-family:'Latin Modern Roman Caps';text-align:center;text-anchor:middle;fill:#ffffff;stroke:#ffffff;stroke-width:0.26643"
+             id="tspan13">pomlad</tspan></textPath></text>
+      <text
+         style="font-size:6px;line-height:1.25;font-family:'Times New Roman Serif';stroke:#ffffff;stroke-width:0.26643"
+         xml:space="preserve"
+         id="text23"><textPath
+           startOffset="50%"
+           style="font-size:6px;stroke:#ffffff;stroke-width:0.26643"
+           xlink:href="#path1401-2"
+           id="textPath21"><tspan
+             dy="5"
+             rotate="0 0 0 0 0 0 0 0"
+             style="font-size:6px;font-family:'Latin Modern Roman Caps';text-align:center;text-anchor:middle;fill:#ffffff;stroke:#ffffff;stroke-width:0.26643"
+             id="tspan19">poletje</tspan></textPath></text>
+      <path
+         id="path1401-2-1"
+         d="m 23.505,136.54 a 79.798,79.797 0 0 1 0,-112.85"
+         style="opacity:0;stroke-width:0.26699" />
+      <text
+         style="font-size:6px;line-height:1.25;font-family:'Times New Roman Serif';stroke:#ffffff;stroke-width:0.26643"
+         xml:space="preserve"
+         id="text30"><textPath
+           startOffset="50%"
+           style="font-size:6px;stroke:#ffffff;stroke-width:0.26643"
+           xlink:href="#path1401-2-1"
+           id="textPath28"><tspan
+             rotate="0 0 0 0 0 0"
+             style="font-size:6px;font-family:'Latin Modern Roman Caps';text-align:center;text-anchor:middle;fill:#ffffff;stroke:#ffffff;stroke-width:0.26643"
+             id="tspan26"
+             dy="5">jesen</tspan></textPath></text>
+      <text
+         style="font-size:6px;line-height:1.25;font-family:'Times New Roman Serif';stroke:#ffffff;stroke-width:0.26643"
+         xml:space="preserve"
+         id="text36"><textPath
+           startOffset="50%"
+           style="font-size:6px;stroke:#ffffff;stroke-width:0.26643"
+           xlink:href="#path1401-4"
+           id="textPath34"><tspan
+             style="font-size:6px;font-family:'Latin Modern Roman Caps';text-align:center;text-anchor:middle;fill:#ffffff;stroke:#ffffff;stroke-width:0.26643"
+             id="tspan32"
+             dy="0">zima</tspan></textPath></text>
+    </g>
+    <path
+       d="m 79.995337,-1.9873804 -0.01396,7.9996509"
+       style="fill:none;stroke:#ffffff;stroke-width:0.307327;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2-3" />
+    <path
+       d="m 80.012261,154.01295 -0.01396,7.99965"
+       style="fill:none;stroke:#ffffff;stroke-width:0.307327;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2-3-1" />
+    <path
+       d="M 5.99965,80.02196 -2,80.008"
+       style="fill:none;stroke:#ffffff;stroke-width:0.307327;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2-3-0" />
+    <path
+       d="M 154.00034,79.993306 162,80.007306"
+       style="fill:none;stroke:#ffffff;stroke-width:0.307327;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2-3-3" />
+  </g>
 </svg>
