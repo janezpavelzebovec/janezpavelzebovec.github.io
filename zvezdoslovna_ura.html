@@ -471,6 +471,7 @@
                 align-items: center;
                 justify-content: center;
                 overflow: hidden;
+                border: 1px solid white;
             }
                 .del {
                     --premermene: 0;
@@ -822,9 +823,11 @@
             željenkot = kotnizasuk - 270;
         }
 
+    const željenkotrad = željenkot * Math.PI / 180
     const sinkota = Math.sin(željenkot * Math.PI / 180)
     const rlune = premerlune/2
-    const premermene = rlune*sinkota + rlune*Math.tan((90 - 2*(Math.atan(sinkota))) *Math.PI/180)
+    const rad = Math.PI / 180
+    const premermene = rlune * Math.sin(željenkotrad) + rlune * Math.tan(90 - (2 * (Math.atan(Math.sin(željenkotrad)))))
     //  const premermene = premerlune / (Math.sin(2* Math.atan((premerlune / 2) / (premerlune * Math.sin(željenkot * Math.PI / 180)))))
     //  const odmikmene = (premerlune / 2) - ((premerlune /2) * Math.sin(željenkot * Math.PI / 180)) + (premermene/2)
     let stranmene;
@@ -840,23 +843,23 @@
     const odmikmene = (rlune - rlune*sinkota + (premermene/2 - rlune))*stranmene
     let barvamene;
         if (0 < kotnizasuk && kotnizasuk < 90) { //če je kotni zasuk med 0 in 90 stopinj...
-            barvamene = "white"; //...je mena črna
+            barvamene = "black"; //...je mena črna
         } else if (90 < kotnizasuk && kotnizasuk < 180) {
-            barvamene = "black";
-        } else if (180 < kotnizasuk && kotnizasuk < 270) {
-            barvamene = "black";
-        } else {
             barvamene = "white";
+        } else if (180 < kotnizasuk && kotnizasuk < 270) {
+            barvamene = "white";
+        } else {
+            barvamene = "black";
         }
         let barvalune;
         if (0 < kotnizasuk && kotnizasuk < 90) { //če je kotni zasuk med 0 in 90 stopinj...
-            barvalune = "black"; //...je luna bela (in mena črna)
+            barvalune = "white"; //...je luna bela (in mena črna)
         } else if (90 < kotnizasuk && kotnizasuk < 180) {
-            barvalune = "white";
-        } else if (180 < kotnizasuk && kotnizasuk < 270) {
-            barvalune = "white";
-        } else {
             barvalune = "black";
+        } else if (180 < kotnizasuk && kotnizasuk < 270) {
+            barvalune = "black";
+        } else {
+            barvalune = "white";
         }
 
         zasukaj(sekundniKazalec, sekundnoRazmerje) /*Kliče funkcijo zasukaj za kazalec sekundniKazalec, da posodobi njegove rotacije na osnovi izračunanih razmerij*/
