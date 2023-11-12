@@ -3,27 +3,73 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>J. R. R. Tolkien</title>
-          <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
         <script src="scripts.js"></script>
-    </head>
-    <body>
 
+        <title>J. R. R. Tolkien</title>
+        <meta name="description" content="O Johnu Ronaldu Reuelu Tolkienu, o njegovem delu, ter o njegovi zapuščini." /> <!--opis spletnega mesta-->
+        <meta name="keywords" content="Tolkien, Srednji svet" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name content="J. R. R. Tolkien (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" content="J. R. R. Tolkien"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" content="O Johnu Ronaldu Reuelu Tolkienu, o njegovem delu, ter o njegovi zapuščini."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="O Johnu Ronaldu Reuelu Tolkienu, o njegovem delu, ter o njegovi zapuščini."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
+    </head>
+
+    <body>
         <label class="hamburger-menu">
           <input type="checkbox" />
         </label>
         <aside class="sidebar">
           <nav>
             <div><a href="./">Domov</a></div></div>
-            <div><a href="./knjiznica">Knjižnica</a></div></div>
-            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="knjiznica">Knjižnica</a></div>
+            <div><a href="zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
             <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
+          </nav>
         </aside>
 
         <div class="content">
-            <h1 class="Tengwar">John Ronald Reuel Tolkien</h1>
+            <h1>John Ronald Reuel Tolkien</h1>
+            <h3>Zunanje povezave in viri</h3>
+            <ul class="s">
+                <li><a href="https://www.tolkienestate.com/" target="_blank" rel="noopener noreferrer">The Tolkien Estate - The official site of the Tolkien estate</a></li>
+                <li><a href="https://www.youtube.com/watch?v=rre7zQGcldI" target="_blank" rel="noopener noreferrer">YouTube - BBC: 1968, Release - Tolkien on Lord of the Rings</a> (posnetek)</li>
+                <li><a href="https://www.youtube.com/@TalkingAboutTolkien/videos" target="_blank" rel="noopener noreferrer">YouTube - Talking About Tolkien</a> (YouTube kanal)</li>
+                <li><a href="https://sl.wikipedia.org/wiki/John_Ronald_Reuel_Tolkien" target="_blank" rel="noopener noreferrer">Wikipedija: John Ronald Reuel Tolkien</a></li>
+                <li><a href="https://commons.wikimedia.org/wiki/Category:J._R._R._Tolkien" target="_blank" rel="noopener noreferrer">Category:J. R. R. Tolkien</a></li>
+                <li><a href="https://sl.wikiquote.org/wiki/John_Ronald_Reuel_Tolkien" target="_blank" rel="noopener noreferrer">Wikinavedek: John Ronald Reuel Tolkien</a></li>
+                <br>
+                <li><a href="https://tolkien.ro/text/JRR%20Tolkien%20-%20Guide%20to%20the%20Names%20in%20The%20Lord%20of%20the%20Rings.pdf" target="_blank" rel="noopener noreferrer">Guide to the Names in The Lord of the Rings</a> (pdf)</li>
+                <br>
+                <li><a href="https://www.drustvogil-galad.si/" target="_blank" rel="noopener noreferrer">Gil-Galad</a> (uradna spletna stran slovenskega tolkienovega društva)</li>
+                <br>
+                <li><a href="https://tolkiengateway.net/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Tolkien Gateway</a> (enciklopedija)</li>
+                <li><a href="https://www.glyphweb.com/arda/default.asp" target="_blank" rel="noopener noreferrer">The Encyclopedia of Arda</a> (enciklopedija)</li>
+                <li><a href="https://lotr.fandom.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer">The Lord of the Rings Wiki</a> (enciklopedija)</li>
+                <li><a href="https://sl.wikipedia.org/wiki/Kategorija:Tolkienova_mitologija" target="_blank" rel="noopener noreferrer">Wikipedija - kategorija:Tolkienova mitologija</a></li>
+                <li><a href="https://www.forodrim.org/daeron/mdtci.html" target="_blank" rel="noopener noreferrer">Forodrim: The Mellonath Daeron Index
+of Tengwa Specimina (DTS)</a></li>
+                <li><a href="https://www.forodrim.org/bibliography/tbchron.html" target="_blank" rel="noopener noreferrer">Forodrim: A Chronological Bibliography of the Writings of J.R.R. Tolkien, compiled by Åke Bertenstam</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/J._R._R._Tolkien_bibliography" target="_blank" rel="noopener noreferrer">Wikipedia: J. R. R. Tolkien bibliography</a></li>
+                <li><a href="https://sites.google.com/view/ainulindale" target="_blank" rel="noopener noreferrer">Ainulindalë</a></li>
+            </ul>
+
         </div>
     </body>
 </html>
