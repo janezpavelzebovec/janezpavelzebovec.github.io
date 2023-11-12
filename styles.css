@@ -403,6 +403,7 @@ table.zgornja tr td:first-child {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 1rem;
  }
 img.obrnjena {
     filter: invert(100%);
