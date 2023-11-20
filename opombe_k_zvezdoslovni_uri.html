@@ -3,14 +3,32 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Opombe k zvezdoslovni uri</title>
-          <link rel="shortcut icon" type="image/png" href="favicon.png">
-        <meta name="description" content="Opis uporabe in sestavin, ter pomankljivosti ure" />
-        <meta name="keywords" content="zvezdoslovna ura, zvezdoslovje, uporaba" />
-        <meta name="copyright" content="Janez Pavel Žebovec" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
         <script src="scripts.js"></script>
+
+        <title>Opombe k zvezdoslovni uri</title>
+        <meta name="description" content="Opombe k zvezdoslovni uri - vodič, pojasnila, vhodni podatki, viri, enačbe." /> <!--opis spletnega mesta-->
+        <meta name="keywords" content="zvezdoslovna ura" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name content="Opombe k zvezdoslovni uri (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" content="Opombe k zvezdoslovni uri"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" content="Opombe k zvezdoslovni uri - vodič, pojasnila, vhodni podatki, viri, enačbe."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="Opombe k zvezdoslovni uri - vodič, pojasnila, vhodni podatki, viri, enačbe."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
     <body>
 
@@ -27,7 +45,7 @@
         </aside>
 
         <div class="content">
-            <h4>Opombe k zvezdoslovni uri</h4>
+            <h1>Opombe k zvezdoslovni uri</h1>
             <p class="besedilosred"><a href="./zvezdoslovna_ura"><i>Zvezdoslovna ura</i></a></p>
             <h5>Vhodni podatki / viri</h5>
             <p>
@@ -37,6 +55,8 @@
                     <li id="dolžina luninega meseca">Privzeta dolžina luninega meseca je 29 dni, 12 ur, 44 minut in 2.9 sekund.</li>
                     <li>Podatki za sončni vzhod in zahod so povzeti po <a href="https://www.timeanddate.com/sun/slovenia/ljubljana?month=1&year=2000" target="_blank" rel="noopener noreferrer"><i>Time and Date</i></a> za Ljubljano, za leto 2000.</li>
                     <li>Enačba za izračun dneva prehoda na zimski/poletni čas je povzeta po članku <a href="https://sl.wikipedia.org/wiki/Poletni_%C4%8Das#Datumi_sprememb" target="_blank" rel="noopener noreferrer"><i>Poletni čas (Wikipedija).</i></a></li>
+                    <br><i>nedelja (31 - (celi del(((5 * leto) / 4) + 4) mod 7)). marec ob 02.00</i>
+                    <br><i>nedelja (31 - (celi del(((5 * leto) / 4) + 1) mod 7)). oktober ob 02.00</i>
                     <li>Podatki za datum, uro in zemljepisni položaj so pridobljeni z naprave in so odvisni od nastavitev, oz. zmogljivosti naprave (računalniki običajno nimajo GPS-a, zato ima naprava določen položaj glede na središče nastavljene države v nastavitvah naprave).</li>
                 </ul>
             </p>
@@ -82,7 +102,7 @@
             <p>Kakor je seveda razumljivo, skupina štirih krivulj na desni predstavlja sončni vzhod, skupina na levi pa zahod.
                 <ul class="s">
                     <li>Zgornji rumeni krivulji predstavljata pravi sončni vzhod/zahod.</li>
-                    <li>Rdeči krivulji pod rumenimi predstavljata t.i. meščanski mrak: del dneva po sončnem zahodu in pred sončnim vzhodom, ko je Sonce pod obzorjem od 0° do 6°</li>
+                    <li>Rdeči krivulji pod rumenimi predstavljata t.i. meščanski mrak: del dneva po sončnem zahodu in pred sončnim vzhodom, ko je Sonce pod obzorjem od 0° do 6° in je že/še svetlo zaradi sipanja svetlobe, vidne pa so še/že najsvetlejša zvezdna telesa.</li>
                     <li>Rdeči krivulji v sredini predstavljata pomorski (<i class="zamrznjeno">navtični</i>) mrak: del dneva po sončnem zahodu in pred sončnim vzhodom, ko je Sonce pod obzorjem od 6° do 12°</li>
                     <li>Spodnji rdeči krivulji predstavljata vesoljeslovski (<i class="zamrznjeno">astronomski</i>) mrak: del dneva po sončnem zahodu in pred sončnim vzhodom, ko je Sonce pod obzorjem od 12° do 16°/18°</li>
                 </ul>
@@ -126,6 +146,11 @@
             <p><i>2R=2r/(sin(2*tan<sup>-1</sup>(r/(2*r*sinφ))))</i></p>
             <p>Za odmik kroga mene od roba lune pa se uporabi enačba:</p>
             <p><i>x=r-r*sinφ</i></p>
+            <h3>Zunanje povezave in viri</h3>
+            <ul class="s">
+                <li><a href="https://www.timeanddate.com/astronomy/different-types-twilight.html" target="_blank" rel="noopener noreferrer">Time and Date: Twilight, Dawn, and Dusk</a> [<a class="arh" href="https://web.archive.org/web/20231117102810/https://www.timeanddate.com/astronomy/different-types-twilight.html" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
+                <li><a href="https://sl.wikipedia.org/wiki/Poletni_%C4%8Das" target="_blank" rel="noopener noreferrer">Wikipedija: Poletni čas</a> [<a class="arh" href="https://web.archive.org/web/20231018060327/https://sl.wikipedia.org/wiki/Poletni_%C4%8Das" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
+            </ul>
         </div>
     </body>
 </html>
