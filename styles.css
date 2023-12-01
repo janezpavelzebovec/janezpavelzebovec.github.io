@@ -17,6 +17,7 @@ body {
     color: var(--text-color);
     font-family: "Times New Roman", Times, Georgia, Garamond, serif;
     opacity: 0.87;
+    padding: 1rem;
 }
 @font-face {
     font-family: 'PisanaGotica';
@@ -125,9 +126,9 @@ body.light {
     padding-left: 10px;
 }
 .velikosredinsko {
- text-align: center;
- font-variant: small-caps;
- }
+    text-align: center;
+    font-variant: small-caps;
+}
 
 .scribd {
     padding: none;
@@ -149,7 +150,6 @@ body.light {
     top: clamp(1rem, 3.5vw, 5rem);
     right: 1rem;
     left: auto;
-    padding: 5px;
     max-width: 10rem;
     max-height: 100vh;
     padding: 1rem;
@@ -411,7 +411,64 @@ img {
 img.obrnjena {
     filter: invert(100%);
 }
-
+.vodoravne {
+    display: flex;
+    flex-wrap: wrap;
+}
+.stransko-d {
+    position: absolute;
+    width: calc((100vw - 120ch)/2);
+    right: 0;
+    justify-content: left;
+    align-items: flex-end;
+    padding: 1rem;
+}
+.stransko-l {
+    position: absolute;
+    width: calc((100vw - 120ch)/2);
+    left: 0;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem;
+}
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+figcaption {
+    width: 0;
+    min-width: 100%;
+}
+figcaption p {
+    padding: 0.5rem;
+    border: 0;
+    margin: 0;
+}
+figure img {
+    padding: 0.2rem;
+    padding-bottom: 1rem;
+}
+@media (max-width: calc(160ch)) {
+    .stransko-d {
+        position: static;
+        min-width: 15rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .stransko-l {
+        position: static;
+        min-width: 15rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .vodoravne2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /*KAZALO SPLETNE STRANI*/
 *,
 *::after,
@@ -445,7 +502,7 @@ body {
   position: fixed;
   top: var(--hamburger-margin);
   left: var(--hamburger-margin);
-  z-index: 2;
+  z-index: 101;
   cursor: pointer; /*kazalec spremeni obliko, ko se zapelješ nanj - dejaven*/
 }
 
@@ -511,6 +568,7 @@ body {
   height: 100vh; /*najmanjša višina polja kazala strani, 1vh = 1% višine zaslona*/
   position: fixed;
   overflow: auto;
+  z-index: 100;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
