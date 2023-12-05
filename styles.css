@@ -435,6 +435,7 @@ figure {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    align-content: flex-start;
 }
 figcaption {
     width: 0;
@@ -444,12 +445,13 @@ figcaption p {
     padding: 0.5rem;
     border: 0;
     margin: 0;
+    width: 100%;
 }
 figure img {
     padding: 0.2rem;
     padding-bottom: 1rem;
 }
-@media (max-width: calc(160ch)) {
+@media (max-width: 160ch) {
     .stransko-d {
         position: static;
         min-width: 15rem;
@@ -468,6 +470,20 @@ figure img {
         justify-content: center;
         align-items: center;
     }
+}
+@media (max-width: 40rem) {
+    .presežek {
+        display:none;
+    }
+    .vodoravne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    figcaption {
+    width: calc(100vw - 2rem);
+    min-width: 0;
+}
 }
 /*KAZALO SPLETNE STRANI*/
 *,
