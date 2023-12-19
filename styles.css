@@ -162,6 +162,12 @@ body.light {
     margin-right: auto;
     padding: 1rem;
 }
+.content /*začasni dvojnik*/ {
+    max-width: var(--vsebina);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
 
 body.ura {
     padding: 1rem;
