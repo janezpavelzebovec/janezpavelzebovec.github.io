@@ -42,79 +42,108 @@
             <div><a href="./">Domov</a></div>
             <div><a href="./knjiznica">Knjižnica</a></div>
             <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div>
+            <hr>
+            <div id="prikazaneopombe" class="opombe">
+                <p> <time class="datum" id="resultCZZ" style="font-size: large">čas in datum</time><br>
+                    <span><time id="resultCBZ">čas</time> - brez premika na poletni čas</span><br>
+                    <br>
+                    <time id="resultPP">prehod: nedelja, DD. mesec LLLL ob 2:00</time><br>
+                    <time id="resultDP">prehod: nedelja, DD. mesec LLLL ob 2:00</time></p>
+                <p>
+                    privzeti položaj: Slovenija, 46 ° g. š., 15 ° g. d.
+                <br>
+                    <button class="gumblok" onclick="requestLocationPermission()">
+                        <span id="demo"><i class="gumb">tvoj trenutni položaj</i></span>
+                    </button>
+                </p>
+                <table>
+                    <tr>
+                        <td>vesoljeslovski sončni vzhod: </td>
+                        <td><span id="resultAsSonVzh"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>pomorski sončni vzhod: </td>
+                        <td><span id="resultPoSonVzh"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>meščanski sončni vzhod: </td>
+                        <td><span id="resultMeSonVzh"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>sončni vzhod: </td>
+                        <td><span id="resultSonVzh"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>poldne: </td>
+                        <td><span id="resultPoldne"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>sončni zahod: </td>
+                        <td><span id="resultSonZah"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>meščanski sončni zahod: </td>
+                        <td><span id="resultMeSonZah"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>pomorski sončni zahod: </td>
+                        <td><span id="resultPoSonZah"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>vesoljeslovski sončni zahod: </td>
+                        <td><span id="resultAsSonZah"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>dolžina dneva: </td>
+                        <td><span id="resultDan"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>kot Lune: </td>
+                        <td><span id="resultKotLune"><i>napaka</i></span> stopinj od mlaja</td>
+                    </tr>
+                    <tr>
+                        <td>osvetljenost Lune: </td>
+                        <td><span id="resultOsvLune"><i>napaka</i></span></td>
+                    </tr>
+                </table>
+                <p align="right"><a href="./opombe_k_zvezdoslovni_uri.html" class="help">opombe k uri</a></p>
+            </div>
           </nav>
         </aside>
 
-        <div class="opombe">
-            <p style="font-size: small"> <time class="datum" id="resultCZZ" style="font-size: large">čas in datum</time><br>
-                <time id="resultCBZ">čas</time> - brez premika na poletni čas<br>
-                <time id="resultPP">prehod: nedelja, DD. mesec LLLL ob 2:00</time><br>
-                <time id="resultDP">prehod: nedelja, DD. mesec LLLL ob 2:00</time></p>
-            <p style="font-size: small">
-                privzeti položaj: Slovenija, 46 ° g. š., 15 ° g. d.<br>
-
-                <button class="gumblok" onclick="requestLocationPermission()">
-                    <span id="demo" style="font-size: small"><i style="font-size: small" class="gumb">tvoj trenutni položaj</i></span>
-                </button>
-                    <script>
-                    const x = document.getElementById("demo");
-                    function requestLocationPermission() {
-                        if (navigator.geolocation && navigator.permissions) {
-                            navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
-                                if (result.state === 'granted' || result.state === 'prompt') {
-                                    navigator.geolocation.watchPosition(showPosition);
-                                } else {
-                                    x.innerHTML = "Dovolite nam dostop do vašega zemljepisnega položaja, da ga lahko prikažemo.";
-                                }
-                            });
-                        } else {
-                            x.innerHTML = "Ta brskalnik ne podpira pridobivanja zemljepisnega položaja.";
-                        }
-                    }
-                    function showPosition(position) {
-                        x.innerHTML = "tvoj položaj: " + position.coords.latitude + " ° g. š., " + position.coords.longitude + " ° g. d.";
-                    }
-                    </script>
-
-            </p>
-            <p><span id="resultSonVzh" style="font-size: small">sončni vzhod: napaka</span>
-            </p>
-            <p align="right" style="font-size: small"><a href="./opombe_k_zvezdoslovni_uri.html" class="help">opombe k uri</a></p>
-        </div>
-        <div class="astronomskaura">
-            <div class="kazaleczamika"></div>
-            <div class="letničasi">
+        <div class="zvezdoslovnaUra" data-napravi>
+            <div class="letniČasi">
                         <img
                             src="./images/letni_casi.svg"
                             width="100%"
                             height="100%"/>
             </div>
-            <div class="letnastevilcnica" data-letnastevilcnica>
+            <div class="letnaStevilcnica" data-letnaStevilcnica>
                         <img
-                            src="/images/letna_stevilcnica.svg"
+                            src="./images/letna_stevilcnica.svg"
                             width="100%"
                             height="100%"/>
             </div>
-            <div class="dnevnaura" data-dnevnaura>
+            <div class="dnevnaUra" data-dnevnaUra>
                 <div class="sonce"></div>
                 <div class="lunadiv" data-lunazasuk><div class="luna" data-mena data-lunabarva><div class="del" data-lunamenapremer data-lunamenaodmik data-menabarva></div></div></div>
-                <div class="luninastevilcnica">
+                <div class="luninaŠtevilcnica" data-lunadnevi>
                     <img
-                        src="/images/lunina_stevilcnica.svg"
+                        src="./images/lunina_stevilcnica.svg"
                         width="100%"
                         height="100%"/>
                 </div>
                 <div class="letnikazalec"></div>
                 <div class="urica">
-                    <div class="urnastevilcnica">
+                    <div class="urnaŠtevilcnica">
                         <img
-                            src="/images/urna_stevilcnica.svg"
+                            src="./images/urna_stevilcnica.svg"
                             width="100%"
                             height="100%"/>
                     </div>
-                    <div class="dnevnecrte">
+                    <div class="dnevneČrte">
                         <img
-                            src="/images/dnevne_crte.svg"
+                            src="./images/dnevne_crte.svg"
                             width="100%"
                             height="100%"/>
                     </div>
@@ -130,769 +159,31 @@
                 </div>
             </div>
         </div>
-        <style>
-            :root {
-                --mehkacrna: #121212;
-                --mehkabela: rgba(255, 255, 255, 0.87);
-                --načrtnomodra: #69A9E3;
-                --poudarjeno: #809fff;
-                --sončna: yellow;
-
-                --aastura: 98vmin;
-                --asonce: 4vmin;
-                --adnevnaura: 86vmin;
-                --aluna: 6vmin;
-                --aurica: calc(var(--adnevnaura) - (2 *var(--aluna) + 2*var(--asonce)));
-                --aobrocek: 9.5vmin;
-
-                /*mesni krof: */
-                --bar-width: 30px;
-                --bar-height: 3px;
-                --hamburger-gap: 6px;
-                --foreground: rgba(0, 0, 0, 0.5); /*barva polja kazala, zadnja vrednost je za prosojnost*/
-                --background: white;
-                --hamburger-color: white;
-                --hamburger-margin: 6px;
-                --animation-timing: 200ms ease-in-out;
-                --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
-            }
-
-            body {
-              background: var(--mehkacrna);
-              display: flex;
-              height: 100vh; /*polje dnevnaura naj bo visoko za višino zaslona, zato da bo lahko align-items poravnano na sredino zaslona*/
-              overflow: hidden; /*skrijemo, kar presega mejo; zato tudi ne more biti drsnika*/
-              color: var(--mehkabela);
-              box-sizing: border-box;
-              margin: 0;
-            }
-            a {
-                color: #809fff;
-                text-decoration: none;
-                cursor: pointer
-            }
-            .help {cursor: help;}
-
-            /*KAZALO SPLETNE STRANI*/
-            *,
-            *::after,
-            *::before {
-              box-sizing: border-box;
-            }
-
-            body {
-              margin: 0;
-            }
-
-            :root {
-              --bar-width: 2rem;
-              --bar-height: 0.18rem;
-              --hamburger-gap: 0.38rem;
-              --foreground: rgba(0, 0, 0, 0.5); /*barva polja kazala, zadnja vrednost je za prosojnost*/
-              --background: white;
-              --hamburger-color: white;
-              --hamburger-margin: 0.38rem;
-              --animation-timing: 200ms ease-in-out;
-              --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
-            }
-
-            .hamburger-menu {
-              --x-width: calc(var(--hamburger-height) * 1.41421356237);/*izračun širine ikone x; število je koren od 2*/
-
-              display: flex;
-              flex-direction: column;
-              gap: var(--hamburger-gap);
-              width: max-content; /*okno je široko, kolikor je vsebina*/
-              position: fixed;
-              top: var(--hamburger-margin);
-              left: var(--hamburger-margin);
-              z-index: 2;
-              cursor: pointer; /*kazalec spremeni obliko, ko se zapelješ nanj - dejaven*/
-            }
-
-            .hamburger-menu:has(input:checked) {
-              --foreground: white;
-              --background: #333;
-            }
-
-            .hamburger-menu:has(input:focus-visible)::before,
-            .hamburger-menu:has(input:focus-visible)::after,
-            .hamburger-menu input:focus-visible {
-              border: 1px solid var(--background); /*obroba, ko je ikona izbrana pri delu brez kazalca, barve background*/
-              box-shadow: 0 0 0 1px var(--foreground);
-            }
-
-            .hamburger-menu::before,
-            .hamburger-menu::after,
-            .hamburger-menu input {
-              content: "";
-              width: var(--bar-width);
-              height: var(--bar-height);
-              background-color: var(--hamburger-color);
-              border-radius: 9999px;
-              transform-origin: left center; /*središče sukanja je na levi*/
-              transition: opacity var(--animation-timing), width var(--animation-timing),
-                rotate var(--animation-timing), translate var(--animation-timing),
-                background-color var(--animation-timing); /*dolžina trajanj animacij za vse spremembe*/
-            }
-
-            .hamburger-menu input {
-              appearance: none;
-              padding: 0;
-              margin: 0;
-              outline: none;
-              pointer-events: none;
-            }
-
-            .hamburger-menu:has(input:checked)::before {
-              rotate: 45deg; /*obračanje zgornje črtice*/
-              width: var(--x-width);
-              translate: 0 calc(var(--bar-height) / -2);
-            }
-
-            .hamburger-menu:has(input:checked)::after {
-              rotate: -45deg;/*obračanje spodnje črtice*/
-              width: var(--x-width);
-              translate: 0 calc(var(--bar-height) / 2);
-            }
-
-            .hamburger-menu input:checked { /*ob kliku je počekirana sredinska črta - ob tem pa izgine*/
-              opacity: 0;
-              width: 0;
-            }
-
-            .sidebar /*kazalo stran*/ {
-              transition: translate var(--animation-timing); /*čas, da se prikaže kazalo*/
-              translate: -100%; /*kazalo strani je privzeto skrito izven strani*/
-              padding: 0.5rem 1rem;
-              padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem /*1rem odmika kazala od ikone*/); /*odmik od vrha strani na podlagi prostora, ki ga zavzame ikona*/
-              background-color: var(--foreground);
-              color: var(--background);
-              max-width: 20rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
-              height: 100vh; /*najmanjša višina polja kazala strani, 1vh = 1% višine zaslona*/
-              position: fixed;
-            }
-
-            .hamburger-menu:has(input:checked) + .sidebar {
-              translate: 0;
-            }
-
-
-            @media (max-width: var(--aastura)) {
-                .kazalo-strani {
-                    position: absolute;
-                }
-            }
-            @media print /*slog za tiskanje*/ {
-                body {
-                    color: black;
-                    background: white;
-                    background-color: white;
-                }
-                a {
-                    color: black;
-                }
-                ul {
-                    color: black;
-                }
-                ul.s {
-                    color: black;
-                }
-                .zamrznjeno {
-                    color: black;
-                    opacity: 0.6;
-                }
-                .kazalo-strani {
-                    display: none;
-                }
-                .hamburger-menu {
-                    display: none;
-                }
-                .sidebar {
-                    display: none;
-                }
-
-                svg{
-                    stroke: black;
-                    stroke: black;
-                }
-                svg path{
-                    fill: black;
-                    stroke: black;
-                }
-                svg g {
-                    fill: black;
-                    stroke: black;
-                }
-                svg text {
-                    fill: black;
-                    font-family: Times New Roman Serif;
-                    stroke: black;
-                }
-                svg text tspan {
-                    stroke: black;
-                    fill: black;
-                }
-
-                table td {
-                    border-right: 1px solid black;
-                }
-                table th {
-                    border-bottom: 1px solid black;
-                    border-right: 1px solid black;
-                }
-            }
-            @media (orientation: portrait) /*slog za zaslon v pokončnem načinu*/  and (max-width: 500px){
-            }
-            @media (orientation: landscape) /*slog za zaslon v ležečem načinu*/  and (max-width: 500px){
-            }
-            @media (prefers-color-scheme: dark) {
-                path { fill: #white; }
-            }
-            @media (prefers-color-scheme: light) {
-            }
-            /*konec lastnosti kazala strani*/
-
-            .gumblok {
-              background-color: transparent;
-              border: none;
-              padding: 0;
-              margin: 0;
-              color: white;
-              text-align: center;
-              display: inline-block;
-              font-size: 1rem;
-              text-decoration: none;
-              cursor: pointer;
-            }
-            .gumb {
-                color: #ffffff90;
-            }
-            .gumb:hover {
-                color: #809fff;
-            }
-
-            .opombe {
-                right: 0;
-                position: fixed;
-                padding: 1rem;
-                }
-            .datum {
-                position: flex;
-                left: 0;
-            }
-            .astronomskaura {
-              width: var(--aastura);
-              height: var(--aastura);
-              background-color: none;
-              border: 1.5px ;
-              display: flex;
-              position: relative; /*nadrejen položaj glede na */
-              border-radius: 50%;
-              left: 0;
-              top: calc((100vh - var(--aastura))) / 2);
-            }
-            .sonce {
-                width: var(--asonce);
-                height: var(--asonce);
-                border-radius: 50%;
-                border: ;
-                background-color: yellow;
-                position: absolute;
-                transform: translate(-50%, 0%); /*postavimo središče elemnta (ne pa kot) v središče polja*/
-                top: 0;
-                left: 50%;
-            }
-            .letnastevilcnica {
-                --rotation: 0;
-                border: ;
-                width: var(--aastura);
-                height: var(--aastura);
-                border-radius: 50%;
-                position: flex;
-                transform: rotate(calc(var(--rotation) * -1deg));
-            }
-            .letničasi {
-                --aletničasi: 87vmin;
-                width: var(--aletničasi);
-                height: var(--aletničasi);
-                border-radius: 50%;
-                position: absolute;
-                left: calc((var(--aastura) - var(--aletničasi)) / 2);
-                right: calc((var(--aastura) - var(--aletničasi)) / 2);
-                top: calc((var(--aastura) - var(--aletničasi)) / 2);
-                bottom: calc((var(--aastura) - var(--aletničasi)) / 2);
-            }
-            .kazaleczamika {
-                position: absolute;
-                height: 8vmin;
-                width: 1px;
-                left: 50vmin;
-                bottom: 0;
-                transform: translate(-50%, -50%); /*postavimo središče elemnta (ne pa kot) v središče polja*/
-                /*background-color: var(--mehkabela);*/
-            }
-
-            .dnevnaura {
-              --rotation: 0;
-              transform-origin: middle;
-              width: calc(var(--adnevnaura) - (2 *var(--aluna) + 2*var(--asonce)));
-              height: var(--adnevnaura);
-              position: absolute;
-              top: calc((var(--aastura) - var(--adnevnaura)) / 2);
-              left: 50%;
-              transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
-              text-align: center;
-            }
-            .lunadiv {
-                --rotation: 0;
-                transform-origin: 50% top;
-                width: var(--aluna);
-                height: calc(var(--aurica)/2 + var(--aluna));
-                position: absolute;
-                bottom: calc(var(--adnevnaura)/2 - (var(--aurica)/2 + var(--aluna)));
-                left: 50%;
-                transform: translate(-50%) /*postavimo središče elemnta (ne pa kot) v središče polja*/ rotate(calc(var(--rotation) * 1deg - 180deg));
-                left: 50%;
-            }
-            .luna {
-                --rotation: 0;
-                --barva: white;
-                width: var(--aluna);
-                height: var(--aluna);
-                border-radius: 50%;
-                background-color: var(--barva);
-                position: absolute;
-                transform: translate(-50%, -100%) /*postavimo središče elemnta (ne pa kot) v središče polja*/;
-                top: 100%;
-                left: 50%;
-                z-index: 5;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                overflow: hidden;
-                border: 1px solid white;
-            }
-                .del {
-                    --premermene: 0;
-                    --odmikmene: 0;
-                    --barva: black;
-                    height: calc(var(--premermene) * 1vmin);
-                    width: calc(var(--premermene) * 1vmin);
-                    border-radius: 50%;
-                    background-color: var(--barva);
-                    transform: translateX(calc(var(--odmikmene)*1vmin));
-                    /*border: 1px solid white;*/
-                    position: absolute;
-                    margin: calc((var(--premermene) - var(--aluna)) / 2vmin * -1);
-                    z-index: 8;
-                }
-            .luninastevilcnica {
-                width: calc(var(--aurica) + 3vmin);
-                height: calc(var(--aurica) + 3vmin);
-                position: absolute;
-                top:calc(var(--aluna) + var(--asonce) - 1.5vmin);
-                right: -1.5vmin;
-                z-index: 6;
-            }
-
-
-            .urica {
-              width: var(--aurica);
-              height: var(--aurica);
-              left: 0;
-              /*background: 	rgb(18, 18, 18);*/
-              border-radius: 50%;
-              border: ;
-              transform: translate(0, 50%); /*postavimo središče elemnta (ne pa kot) v središče polja*/
-              position: absolute; /*nadrejen položaj glede na kazalce*/
-              bottom: 50%;
-            }
-            .urnastevilcnica {
-              width: var(--aurica);
-              height: var(--aurica);
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              z-index: 2;
-            }
-            .urnastevilcnicaSVG {
-                stroke-width: 0.2px;
-                font-size:0.2px
-            }
-            svg path, svg line {
-                vector-effect: non-scaling-stroke;
-            }
-            .Zemlja {
-                width: var(--aobrocek);
-                height: var(--aobrocek);
-                transform: translate(calc(-50% + 0.3vmin), -50%);
-                z-index: 10;
-                filter: invert(100%);
-            }
-            .obrocek{
-                --rotation: 0;
-                position: absolute;
-                z-index: 0;
-                width: var(--aobrocek);
-                height: var(--aobrocek);
-                top: 50%;
-                left: 50%;
-                transform-origin: 50%, 50%;
-                transform: translate(-50%, -50%) rotate(calc(var(--rotation) * 1deg));
-                border-radius: 50%; /*krog iz kvadrata*/
-                border: 4px solid black;
-                /*background-color: rgb(0, 204, 153);*/
-            }
-            .dnevnecrte {
-                --crteodroba: 0vmin;
-                width: calc(var(--aurica) - 2 * var(--crteodroba));
-                height: calc(var(--aurica) - 2 * var(--crteodroba));
-                position: absolute;
-                bottom: var(--crteodroba);
-                left: var(--crteodroba);
-                z-index: 12;
-                fill: none;
-                stroke-width: 6px;
-                stroke: var(--sončna);
-                stroke-opacity: 0.6;
-            }
-            .letnikazalec {
-              width: 0.1vmin;
-              height: calc(var(--aastura) - 7vmin);
-              background-color: var(--sončna);
-              position: absolute;
-              left: 50%;
-              top: 0;
-              z-index: 0;
-            }
-
-            *, *::after, *::before {
-              box-sizing: border-box;
-              font-family: Times New Roman, serif;
-            }
-
-            .urica .kazalec {
-              --rotation: 0;
-              position: absolute;
-              bottom: 50%;
-              left: 50%;
-              height: calc(var(--aurica) / 2);
-              transform-origin: 50% top; /*izvor preoblikovanja, za nas sukanja*/
-              z-index: 2; /*visoka plast, večja od številke, da prekrije številko*/
-              transform: translateX(-50%) translateY(100%)/*kazalec prestavimo za polovico v levo, da je poravnan s sredino številk in celega dol, da je zamaknjen za 180°*/ rotate(calc(var(--rotation) * 1deg));
-            }
-
-            .urica::after /*krogec na sredini*/{
-              content: ''; /*da lahko ustvarimo nov element*/
-              position: absolute;
-              background-color: red;
-              z-index: 11;
-              width: 2px;
-              height: 2px;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%); /*postavimo središče elemnta (ne pa kot) v središče polja*/
-              border-radius: 50%; /*krog iz kvadrata*/
-              /*border: 1.5px solid var(--mehkabela);*/
-              display: none;
-            }
-
-            .urica .kazalec.sekundni {
-              width: 0.2vmin;
-              /*height: 17vmin;*/
-              background-color: var(--mehkabela); /*barva kazalca*/
-              z-index: 0;
-            }
-
-            .urica .kazalec.minutni {
-              width: 0.4vmin;
-              /*height: 17vmin;*/
-              background-color: var(--mehkabela); /*barva kazalca*/
-              z-index: 0;
-            }
-
-            .urica .kazalec.urni {
-              width: 0.6vmin;
-              /*height: 17vmin;*/
-              background-color: blue; /*barva kazalca*/
-              /*border: 1.5px solid var(--mehkabela);*/
-              z-index: 9;
-            }
-            .kazalka {
-                --odmik: 0;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                width: calc((var(--aurica) - var(--aobrocek)/2) * (var(--odmik) / 183) + var(--aobrocek)/2);
-                height: calc((var(--aurica) - var(--aobrocek)/2) * (var(--odmik) / 183) + var(--aobrocek)/2);
-                border-radius: 50%;
-                border: 0.1vmin solid var(--sončna);
-                position: absolute;
-                z-index: 4;
-            }
-        </style>
-        <script>
-            setInterval(nastaviUro, 1000)/* s setInterval vsako sekundo (1000 milisekund) kličemo funkcijo nastaviUro*/
-
-            const urniKazalec = document.querySelector('[data-urni-kazalec]') /*izbere vrstico, ki ima atribut data-urni-kazalec*/
-            const minutniKazalec = document.querySelector('[data-minutni-kazalec]') /*izbere vrstico, ki ima atribut data-minutni-kazalec*/
-        const sekundniKazalec = document.querySelector('[data-sekundni-kazalec]') /*izbere vrstico, ki ima atribut data-sekundni-kazalec*/
-            const dnevnaura = document.querySelector('[data-dnevnaura]')
-    const lunazasuk = document.querySelector('[data-lunazasuk]')
-    const lunamenaodmik = document.querySelector('[data-lunamenaodmik]')
-    const lunamenapremer = document.querySelector('[data-lunamenapremer]')
-    const menabarva = document.querySelector('[data-menabarva]')
-    const lunabarva = document.querySelector('[data-lunabarva]')
-            const letnastevilcnica = document.querySelector('[data-letnastevilcnica]')
-            const kazalka = document.querySelector('[data-kazalka]')
-
-            const resultElementCZZ = document.getElementById("resultCZZ") /*ura, dan in datum z upoštevanjem poletnega zamika ure*/
-            const resultElementCBZ = document.getElementById("resultCBZ") /*ura, dan in datum brez upoštevanja poletnega zamika ure*/
-            const resultElementPP = document.getElementById("resultPP") /*čas prvega premika ure*/
-            const resultElementDP = document.getElementById("resultDP") /*čas drugega premika ure*/
-
-
-            const resultElementSonVzh = document.getElementById("resultSonVzh") /*čas sončnega vzhoda*/
-
-/*PRIDOBIVANJE ASTRONOMSKIH POSATKOV*/
-
-    function requestLocationPermission() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            const API_KEY = '195dd7c77f8a48cb8fe5b256f341b12e';
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-            const apiUrl = `https://api.ipgeolocation.io/astronomy?apiKey=${API_KEY}&lat=${latitude}&long=${longitude}`;
-
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-                    // Tukaj obdelam pridobljene podatke
-                    console.log(data); //izpis poročila
-                    const vzhodSonca = data.sunrise;
-                    const zahodSonca = data.sunset;
-                    const položajSonca = data.sun_status;
-                    const opoldneSonca = data.solar_noon;
-                    const dolžinadneva = data.day_length;
-                    const višinaSonca = data.sun_altitude;
-                    const oddaljenostSonca = data.sun_distance;
-                    const azimutSonca = data.sun_azimuth;
-                    const vzhodLune = data.moonrise;
-                    const zahodLune = data.moonset;
-                    const položajLune = data.moon_status;
-                    const višinaLune = data.moon_altitude;
-                    const oddaljenostLune = data.moon_distance;
-                    const azimutLune = data.moon_azimuth;
-                    const paralaktičnikotLune = data.moon_parallactic_angle;
-
-                    SonVzh = `sončni vzhod: ${vzhodSonca}`;
-                    resultElementSonVzh.textContent = `${SonVzh}`;
-
-                })
-                .catch(error => {
-                    console.error('Napaka pri pridobivanju podatkov:', error);
-                });
-        }, function (error) {
-            console.error('Napaka pri pridobivanju zemljepisnega položaja:', error);
-        });
-    } else {
-        console.error('Ta brskalnik ne podpira pridobivanja zemljepisnega položaja.');
-    }
-}
-
-
-
-            Date.prototype.getDayOfYear = function() {
-                const startOfYear = new Date(this.getFullYear(), 0, 0);
-                const diff = this - startOfYear;
-                const oneDay = 1000 * 60 * 60 * 24;
-                return Math.floor(diff / oneDay);
-            };
-
-            function ugotoviprestopnost(year) {
-                return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
-            }
-
-            function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korake:*/ {
-
-
-            const trenutnikrajevničas = Date.now();
-            const zamikpasu = new Date().getTimezoneOffset();
-            const trenutniUTC = trenutnikrajevničas - zamikpasu * 1000 * 60;
-            const trenutno = new Date() /*ustvari element Date, ki predstavlja trenutni datum in čas*/
-
-
-        const sekundnoRazmerje = trenutno.getSeconds() / 60 /*Izračuna razmerje sekundnega kazalca (v obliki razmerja sekund od 0 do 59)*/
-            const minutnoRazmerje = (sekundnoRazmerje + trenutno.getMinutes()) / 60 /*Izračuna razmerje minutnega kazalca (v obliki razmerja minut od 0 do 59 + sekundno razmerje)*/
-            const urebrezpolzamika = (trenutno.getUTCHours() + 1) % 24
-            const urnoRazmerje = (minutnoRazmerje + urebrezpolzamika) / 24 /*Izračuna razmerje urnega kazalca (v obliki razmerja ur od 0 do 23 + minutno razmerje)*/
-
-            const trenutnoleto = new Date().getFullYear();
-            const dnevno = 360 / 365.2425 /*stopinjski obrat v enem dnevu*/;
-            const letnazamuda = ((trenutnoleto * (0.2425 * dnevno) - Math.floor((trenutnoleto - 1) / 4) * dnevno + Math.floor((trenutnoleto - 1) / 100) * dnevno - Math.floor((trenutnoleto - 1) / 400) * dnevno) - (11 * dnevno)) / 360;
-
-            const dolžinaLeta = ugotoviprestopnost(trenutno.getFullYear()) ? 366 : 365; // Poglejte, ali je trenutno leto prestopno
-            const dnevnizasuk = (trenutno.getDayOfYear() + urnoRazmerje) / dolžinaLeta;
-
-            const prviDanLeta = new Date(trenutno.getFullYear(), 0, 1); // 1. januar trenutnega leta
-            const razlika = (trenutno - prviDanLeta)/ (1000 * 60 * 60 * 24) + 11
-            const razmerje = razlika / 365.2425
-            const dnevnoRazmerje = razmerje
-
-            const zimObrat = new Date (trenutno.getFullYear(), 11, 21); //21. december tega leta - zimski sončev obrat
-            const razlikazačetka = Date.UTC(2001, 0, 1) - Date.UTC(2000, 11, 21)
-                let milisekundnarazlika; /*čas med zdaj in zimskim sončnim obratom, v milisekundah*/
-                    if (trenutno >= zimObrat) {
-                        milisekundnarazlika = trenutno - zimObrat;
-                    } else {
-                        milisekundnarazlika = trenutno - prviDanLeta + razlikazačetka;
-                    }
-            const dan366 = Math.floor(milisekundnarazlika / (24 * 60 * 60 * 1000)) + 1; //delite s številom milisekund na dan (24 * 60 * 60 * 1000) in zaokrožite rezultat navzdol. Na koncu dodate 1, saj štejemo dneve od 1 do 366.
-                let dan183;
-                    if (dan366 <= 183) {
-                        dan183 = dan366;
-                    } else {
-                        dan183 = 183 - (dan366 % 183);
-                    }
-
-            const dnevitedna = ["nedelja","ponedeljek","torek","sreda","četrtek","petek","sobota"];
-
-            const sekunde = new Date().getSeconds().toString().padStart(2, '0');
-            const minute = new Date().getMinutes().toString().padStart(2, '0');
-            const ure = new Date().getHours().toString().padStart(2, '0');
-            const dantedna = dnevitedna[new Date().getDay()];
-            const danmeseca = new Date().getDate();
-            const mesec = (new Date().getMonth() + 1) % 12;
-            const leto = new Date().getFullYear();
-
-            resultElementCZZ.textContent = `${ure}:${minute}:${sekunde}, ${dantedna}, ${danmeseca}. ${mesec}. ${leto}`;
-            resultElementCBZ.textContent = `${urebrezpolzamika}:${minute}:${sekunde}`;
-
-            const poletniprehod = (31 - (Math.floor(((5 * leto) / 4) + 4) % 7));
-            const zimskiprehod = (31 - (Math.floor(((5 * leto) / 4) + 1) % 7));
-                let poletni;
-                let letop;
-                    if ((Date.UTC(leto, 2, poletniprehod)) >= trenutno) {
-                        poletni = poletniprehod;
-                        letop = leto;
-                    } else {
-                        poletni = (31 - (Math.floor(((5 * (leto + 1)) / 4) + 4) % 7));
-                        letop = leto + 1;
-                    }
-                let zimski;
-                let letoz;
-                    if ((Date.UTC(leto, 9, zimskiprehod)) >= trenutno) {
-                        zimski = zimskiprehod;
-                        letoz = leto;
-                    } else {
-                        zimski = (31 - (Math.floor(((5 * (leto + 1)) / 4) + 1) % 7));
-                        letoz = leto + 1;
-                    }
-                let prehod1;
-                let prehod2;
-                    if ((Date.UTC(letoz, 9, zimski)) > (Date.UTC(letop, 2, poletni))) {
-                        prehod1 = `prehod na poletni čas: nedelja, ${poletni}. marec ${letop} ob 2:00`;
-                        prehod2 = `prehod na zimski čas: nedelja, ${zimski}. oktober ${letoz} ob 2:00`;
-                    } else {
-                        prehod1 = `prehod na zimski čas: nedelja, ${zimski}. oktober ${letoz} ob 2:00`;
-                        prehod2 = `prehod na poletni čas: nedelja, ${poletni}. marec ${letop} ob 2:00`;
-                    }
-            resultElementPP.textContent = `${prehod1}`;
-            resultElementDP.textContent = `${prehod2}`;
-
-    const juldan = 0
-    const T = (juldan - 2451545)/36525  //2451545 = 1. januar 2000
-
-    const astmesec = (29 * 24 * 60 * 60 *1000) + (12 * 60 * 60 * 1000) + (44 * 60 *1000) + (2.8016 * 1000) /*29 dni, 12 ur, 44 minut in 2.9 sekund v milisekundah */
-    const časmlaja = Date.UTC(2023, 0, 21, 21, 53); /*čas nekega mlaja, 21. jan. 2023, 21:53*/
-    const časrazlika = trenutniUTC - časmlaja;
-    const luninpoložaj = (časrazlika % astmesec)/astmesec /*celoštevilski (milisekundni) ostanek pri deljenju z dolžino meseca*/
-    const premerlune = 6
-    const kotnizasuk = luninpoložaj * 360
-
-    let željenkot; //željen kot mora biti med 0 in 90 stopinj
-        if (0 < kotnizasuk && kotnizasuk < 90) { //če je kotni zasuk med 0 in 90 stopinj...
-            željenkot = 90 - kotnizasuk; //...je željen kot razlika med kotnim zasukom in 90 stopinj.
-        } else if (90 < kotnizasuk && kotnizasuk < 180) {
-            željenkot = kotnizasuk - 90;
-        } else if (180 < kotnizasuk && kotnizasuk < 270) {
-            željenkot = 90 - (kotnizasuk - 180);
-        } else {
-            željenkot = kotnizasuk - 270;
-        }
-
-    const željenkotrad = željenkot * Math.PI / 180
-    const sinkota = Math.sin(željenkot * Math.PI / 180)
-    const rlune = premerlune/2
-    const rad = Math.PI / 180
-    const premermene = rlune * Math.sin(željenkotrad) + rlune * Math.tan(90 - (2 * (Math.atan(Math.sin(željenkotrad)))))
-    //  const premermene = premerlune / (Math.sin(2* Math.atan((premerlune / 2) / (premerlune * Math.sin(željenkot * Math.PI / 180)))))
-    //  const odmikmene = (premerlune / 2) - ((premerlune /2) * Math.sin(željenkot * Math.PI / 180)) + (premermene/2)
-    let stranmene;
-        if (0 < kotnizasuk && kotnizasuk < 90) { //če je kotni zasuk med 0 in 90 stopinj...
-            stranmene = -1; //...je mena na desni
-        } else if (90 < kotnizasuk && kotnizasuk < 180) {
-            stranmene = 1;
-        } else if (180 < kotnizasuk && kotnizasuk < 270) {
-            stranmene = -1;
-        } else {
-            stranmene = 1;
-        }
-    const odmikmene = (rlune - rlune*sinkota + (premermene/2 - rlune))*stranmene
-    let barvamene;
-        if (0 < kotnizasuk && kotnizasuk < 90) { //če je kotni zasuk med 0 in 90 stopinj...
-            barvamene = "black"; //...je mena črna
-        } else if (90 < kotnizasuk && kotnizasuk < 180) {
-            barvamene = "white";
-        } else if (180 < kotnizasuk && kotnizasuk < 270) {
-            barvamene = "white";
-        } else {
-            barvamene = "black";
-        }
-        let barvalune;
-        if (0 < kotnizasuk && kotnizasuk < 90) { //če je kotni zasuk med 0 in 90 stopinj...
-            barvalune = "white"; //...je luna bela (in mena črna)
-        } else if (90 < kotnizasuk && kotnizasuk < 180) {
-            barvalune = "black";
-        } else if (180 < kotnizasuk && kotnizasuk < 270) {
-            barvalune = "black";
-        } else {
-            barvalune = "white";
-        }
-
-        zasukaj(sekundniKazalec, sekundnoRazmerje) /*Kliče funkcijo zasukaj za kazalec sekundniKazalec, da posodobi njegove rotacije na osnovi izračunanih razmerij*/
-            zasukaj(minutniKazalec, minutnoRazmerje) /*Kliče funkcijo zasukaj za kazalec minutniKazalec, da posodobi njegove rotacije na osnovi izračunanih razmerij*/
-            zasukaj(urniKazalec, urnoRazmerje) /*Kliče funkcijo zasukaj za kazalec urniKazalec, da posodobi njegove rotacije na osnovi izračunanih razmerij*/
-            zasukaj(dnevnaura, dnevnoRazmerje)
-            zasukaj(letnastevilcnica, letnazamuda)
-            zasukaj(lunazasuk, luninpoložaj)
-            setPolletje(kazalka, dan183)
-    meneodmik(lunamenaodmik, odmikmene)
-    menepremer(lunamenapremer, premermene)
-    barva(menabarva, barvamene)
-    barva(lunabarva, barvalune)
-            }
-
-            function zasukaj(element, rotationRatio) /*funkcija, ki posodablja rotacijo določenega elementa (kazalca)*/ {
-                element.style.setProperty ('--rotation', rotationRatio * -360)
-            } /*V tem primeru se uporablja CSS spremenljivka --rotation, ki določa stopnjo rotacije elementa. Spremenljivka rotationRatio je razmerje, ki ga prejme funkcija nastaviUro za vsak kazalec. Ta razmerja so pomnožena z -360, ker se CSS rotacija izvaja v stopinjah, negativna vrednost pa pomeni sukanje v nasprotni smeri urinega kazalca*/
-
-            function setPolletje(element, razmerje) /*funkcija, ki posodablja rotacijo določenega elementa (kazalca)*/ {
-                element.style.setProperty ('--odmik', razmerje)
-            }
-    function meneodmik(element, razmerje) /*funkcija, ki posodablja rotacijo določenega elementa (kazalca)*/ {
-        element.style.setProperty ('--odmikmene', razmerje)
-    }
-    function menepremer(element, razmerje) /*funkcija, ki posodablja rotacijo določenega elementa (kazalca)*/ {
-        element.style.setProperty ('--premermene', razmerje)
-    }
-        function barva(element, izbira) /*funkcija, ki posodablja barvo elementa*/ {
-        element.style.setProperty ('--barva', izbira)
-    }
-
-            nastaviUro() /*kliče funkcijo nastaviUro takoj po nalaganju strani, da se zagotovi, da se ure in kazalci pravilno nastavijo na začetku*/
-        </script>
+        <div class="zvezde" data-napravi>
+            <div class="pogled-leto" data-zvezdeleto
+                style="position: absolute; z-index: 12">
+                <img
+                    src="./images/urna_stevilcnica-zvezdna.svg"
+                    width="100%"
+                    height="100%"/>
+                <div class="pogled-dan" data-zvezdedan>
+                    <img
+                        src="./images/zemljevid_zvezdnega_neba-obzorje.svg"
+                        width="90%"
+                        height="90%"
+                        position="absolute"
+                        style="position: absolute; left: 5%; top: 5%"/>
+                </div>
+            </div>
+            <img
+                src="./images/zemljevid_zvezdnega_neba-zvezde.svg"
+                width="90%"
+                height="90%"
+                position="absolute"
+                style="position: absolute; border-radius: 50%; border: none; z-index: 0; left: 5%; top: 5%"/>
+        </div>
     </body>
 </html>
+
+<link href="styles-ura.css" rel="stylesheet">
+<script src="scripts-ura.js"></script>
