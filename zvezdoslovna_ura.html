@@ -58,52 +58,108 @@
                 </p>
                 <table>
                     <tr>
-                        <td>vesoljeslovski sončni vzhod: </td>
-                        <td><span id="resultAsSonVzh"><i>napaka</i></span></td>
+                        <td id="nadiropis1">najtemnejši del noči: </td>
+                        <td id="nadiropis1"><span id="resultNadir1"><i>napaka</i></span></td>
                     </tr>
                     <tr>
-                        <td>pomorski sončni vzhod: </td>
-                        <td><span id="resultPoSonVzh"><i>napaka</i></span></td>
+                        <td>konec noči: </td>
+                        <td><span id="resultNočKon"><i>napaka</i></span></td>
                     </tr>
                     <tr>
-                        <td>meščanski sončni vzhod: </td>
-                        <td><span id="resultMeSonVzh"><i>napaka</i></span></td>
+                        <td>pomorska zora: </td>
+                        <td><span id="resultPomZora"><i>napaka</i></span></td>
                     </tr>
                     <tr>
-                        <td>sončni vzhod: </td>
+                        <td>zora: </td>
+                        <td><span id="resultZora"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>začetek sončnega vzhoda: </td>
                         <td><span id="resultSonVzh"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>konec sončnega vzhoda: </td>
+                        <td><span id="resultSonVzhKon"><i>napaka</i></span></td>
                     </tr>
                     <tr>
                         <td>poldne: </td>
                         <td><span id="resultPoldne"><i>napaka</i></span></td>
                     </tr>
                     <tr>
-                        <td>sončni zahod: </td>
+                        <td>začetek sončnega vzhoda: </td>
+                        <td><span id="resultSonZahZač"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>konec sončnega vzhoda: </td>
                         <td><span id="resultSonZah"><i>napaka</i></span></td>
                     </tr>
                     <tr>
-                        <td>meščanski sončni zahod: </td>
-                        <td><span id="resultMeSonZah"><i>napaka</i></span></td>
+                        <td>mrak: </td>
+                        <td><span id="resultMrak"><i>napaka</i></span></td>
                     </tr>
                     <tr>
-                        <td>pomorski sončni zahod: </td>
-                        <td><span id="resultPoSonZah"><i>napaka</i></span></td>
+                        <td>pomorski mrak: </td>
+                        <td><span id="resultPomMrak"><i>napaka</i></span></td>
                     </tr>
                     <tr>
-                        <td>vesoljeslovski sončni zahod: </td>
-                        <td><span id="resultAsSonZah"><i>napaka</i></span></td>
+                        <td>začetek noči: </td>
+                        <td><span id="resultNoč"><i>napaka</i></span></td>
                     </tr>
                     <tr>
-                        <td>dolžina dneva: </td>
-                        <td><span id="resultDan"><i>napaka</i></span></td>
+                        <td id="nadiropis2">najtemnejši del noči: </td>
+                        <td id="nadiropis2"><span id="resultNadir2"><i>napaka</i></span></td>
+                    </tr>
+                    <tr class="zgorajrob">
+                        <td>začetek <i>zlate ure</i>: </td>
+                        <td><span id="resultZlataUra"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>konec <i>zlate ure</i>: </td>
+                        <td><span id="resultZlataUraKon"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>višina Sonca nad obzorjem: </td>
+                        <td><span id="resultVišinaSonca"><i>napaka</i></span> °</td>
+                    </tr>
+                    <tr">
+                        <td>azimut Sonca od juga: </td>
+                        <td><span id="resultAzimutSonca"><i>napaka</i></span> °</td>
+                    </tr>
+                    <tr class="zgorajrob">
+                        <td>višina Lune nad obzorjem: </td>
+                        <td><span id="resultVišinaLune"><i>napaka</i></span> °</td>
+                    </tr>
+                    <tr>
+                        <td>azimut Lune od juga: </td>
+                        <td><span id="resultAzimutLune"><i>napaka</i></span> °</td>
+                    </tr>
+                    <tr>
+                        <td>oddaljenost Lune: </td>
+                        <td><span id="resultOddalLune"><i>napaka</i></span> km</td>
+                    </tr>
+                    <tr>
+                        <td>paralaktični kot Lune: </td>
+                        <td><span id="resultParLune"><i>napaka</i></span> °</td>
                     </tr>
                     <tr>
                         <td>kot Lune: </td>
-                        <td><span id="resultKotLune"><i>napaka</i></span> stopinj od mlaja</td>
+                        <td><span id="resultKotLune"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>mena Lune: </td>
+                        <td><span id="resultMenaLune"><i>napaka</i></span></td>
                     </tr>
                     <tr>
                         <td>osvetljenost Lune: </td>
                         <td><span id="resultOsvLune"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>vzhod Lune: </td>
+                        <td><span id="resultVzhLune"><i>napaka</i></span></td>
+                    </tr>
+                    <tr>
+                        <td>zahod Lune: </td>
+                        <td><span id="resultZahLune"><i>napaka</i></span></td>
                     </tr>
                 </table>
                 <p align="right"><a href="./opombe_k_zvezdoslovni_uri.html" class="help">opombe k uri</a></p>
@@ -185,5 +241,6 @@
     </body>
 </html>
 
+<script src="suncalc.js"></script>
 <link href="styles-ura.css" rel="stylesheet">
 <script src="scripts-ura.js"></script>
