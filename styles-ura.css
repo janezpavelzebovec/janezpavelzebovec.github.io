@@ -69,107 +69,147 @@ a {
     text-decoration: none;
     cursor: pointer
 }
+
+table {
+  border-collapse: collapse;
+}
+tr:hover {
+    background-color: dimgrey;
+}
+.zgorajrob td {
+    border-top: 1px solid white;
+}
+
 .help {cursor: help;}
+
+/*DRSNIK*/
+    html {
+      scrollbar-width: normal;
+      scrollbar-color: #777 #5555;
+    }
+
+    ::-webkit-scrollbar {
+      width: 1vw;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #7775;
+    }
+    ::-webkit-scrollbar-thumb:hover /*barva, ko si z miško gor*/ {
+      background-color: #777;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #5555;
+    }
 
 /*KAZALO SPLETNE STRANI*/
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 :root {
-    --bar-width: 2rem;
-    --bar-height: 0.18rem;
-    --hamburger-gap: 0.38rem;
-    --foreground: rgba(0, 0, 0, 0.7); /*barva polja kazala, zadnja vrednost je za prosojnost*/
-    --background: white;
-    --hamburger-color: white;
-    --hamburger-margin: 0.38rem;
-    --animation-timing: 200ms ease-in-out;
-    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
+  --bar-width: 2rem;
+  --bar-height: 0.18rem;
+  --hamburger-gap: 0.38rem;
+  --foreground: rgba(0, 0, 0, 0.7); /*barva polja kazala, zadnja vrednost je za prosojnost*/
+  --background: white;
+  --hamburger-color: white;
+  --hamburger-margin: 0.38rem;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
 }
 
 .hamburger-menu {
-    --x-width: calc(var(--hamburger-height) * 1.41421356237);/*izračun širine ikone x; število je koren od 2*/
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);/*izračun širine ikone x; število je koren od 2*/
 
-    display: flex;
-    flex-direction: column;
-    gap: var(--hamburger-gap);
-    width: max-content; /*okno je široko, kolikor je vsebina*/
-    position: fixed;
-    top: var(--hamburger-margin);
-    left: var(--hamburger-margin);
-    z-index: 15;
-    cursor: pointer; /*kazalec spremeni obliko, ko se zapelješ nanj - dejaven*/
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content; /*okno je široko, kolikor je vsebina*/
+  position: fixed;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
+  z-index: 101;
+  cursor: pointer; /*kazalec spremeni obliko, ko se zapelješ nanj - dejaven*/
 }
 
 .hamburger-menu:has(input:checked) {
-    --foreground: white;
-    --background: #333;
+  --foreground: white;
+  --background: #333;
 }
 
 .hamburger-menu:has(input:focus-visible)::before,
 .hamburger-menu:has(input:focus-visible)::after,
 .hamburger-menu input:focus-visible {
-    border: 1px solid var(--background); /*obroba, ko je ikona izbrana pri delu brez kazalca, barve background*/
-    box-shadow: 0 0 0 1px var(--foreground);
+  border: 1px solid var(--background); /*obroba, ko je ikona izbrana pri delu brez kazalca, barve background*/
+  box-shadow: 0 0 0 1px var(--foreground);
 }
 
 .hamburger-menu::before,
 .hamburger-menu::after,
 .hamburger-menu input {
-    content: "";
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--hamburger-color);
-    border-radius: 9999px;
-    transform-origin: left center; /*središče sukanja je na levi*/
-    transition: opacity var(--animation-timing), width var(--animation-timing),
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--hamburger-color);
+  border-radius: 9999px;
+  transform-origin: left center; /*središče sukanja je na levi*/
+  transition: opacity var(--animation-timing), width var(--animation-timing),
     rotate var(--animation-timing), translate var(--animation-timing),
     background-color var(--animation-timing); /*dolžina trajanj animacij za vse spremembe*/
 }
 
 .hamburger-menu input {
-    appearance: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    pointer-events: none;
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
 }
 
 .hamburger-menu:has(input:checked)::before {
-    rotate: 45deg; /*obračanje zgornje črtice*/
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
+  rotate: 45deg; /*obračanje zgornje črtice*/
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
 }
 
 .hamburger-menu:has(input:checked)::after {
-    rotate: -45deg;/*obračanje spodnje črtice*/
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
+  rotate: -45deg;/*obračanje spodnje črtice*/
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
 }
 
 .hamburger-menu input:checked { /*ob kliku je počekirana sredinska črta - ob tem pa izgine*/
-    opacity: 0;
-    width: 0;
+  opacity: 0;
+  width: 0;
 }
 
 .sidebar /*kazalo stran*/ {
-    transition: translate var(--animation-timing); /*čas, da se prikaže kazalo*/
-    translate: -100%; /*kazalo strani je privzeto skrito izven strani*/
-    padding: 0.5rem 1rem;
-    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem /*1rem odmika kazala od ikone*/); /*odmik od vrha strani na podlagi prostora, ki ga zavzame ikona*/
-    background-color: var(--foreground);
-    color: var(--background);
-    max-width: 100vw;
-    height: 100vh; /*najmanjša višina polja kazala strani, 1vh = 1% višine zaslona*/
-    position: fixed;
-    z-index: 14;
+  transition: translate var(--animation-timing); /*čas, da se prikaže kazalo*/
+  translate: -100%; /*kazalo strani je privzeto skrito izven strani*/
+  padding: 0.5rem 1rem;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem /*1rem odmika kazala od ikone*/); /*odmik od vrha strani na podlagi prostora, ki ga zavzame ikona*/
+  background-color: var(--foreground);
+  color: var(--background);
+  max-width: 30rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
+  height: 100vh; /*najmanjša višina polja kazala strani, 1vh = 1% višine zaslona*/
+  position: fixed;
+  overflow: auto;
+  z-index: 100;
+}
+.sidebar li {
+  text-align: left;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
-    translate: 0;
+  translate: 0;
 }
 
 .gumblok {

@@ -1,3 +1,6 @@
+const GSSš = 46.11994444; //Geometrično Središče Slovenije - zemljepisna širina/višina
+const GSSd = 14.81533333; //Geometrično Središče Slovenije - zemljepisna dolžina
+
 const x = document.getElementById("demo");
 function requestLocationPermission() {
     if (navigator.geolocation && navigator.permissions) {
@@ -41,241 +44,11 @@ const zvezdedan = document.querySelector('[data-zvezdedan]')
 
 const napravi = document.querySelectorAll('[data-napravi]')
 
-/*PRIDOBIVANJE ASTRONOMSKIH POSATKOV s AstronomyAPI*/
-const apiUrl = "https://api.astronomyapi.com/api/v2/bodies/positions";
-const params = {
-  longitude: 46.11994444,
-  latitude: 14.81533333,
-  elevation: 1,
-  from_date: "2023-12-26",
-  to_date: "2023-12-26",
-  time: "21:19:47",
-};
-
-const queryString = new URLSearchParams(params).toString();
-
-fetch(`${apiUrl}?${queryString}`, {
-  method: "GET",
-  headers: {
-    "Authorization": "Basic NzI4M2RiNWMtNGZlZS00YzQ1LWI3MWUtNGMyNDg3MDAxZjAwOjI5Y2UyYmIzZDQ3MGVlMjRhMTU1OWM2OWYwNjE4Y2E3OWUwNzRlMTFlYWIzYzA0NWQyZjFhYjI2NTA4MjA2MjQ2MzdlOWFhYzg0ZTkwOTQ1YTU4YjIyNzYzYWRmODQ1ZTI1ZDlkNjI2M2FkZmNmYTg1YTI0MWYzNDJhNDExZWFjNWIxMjViMTJmYzBlY2VmMDg2MzJmMjRkYjMzNzY3Zjg4MGRlNTFmOWRlMDZkOWFjNGQ2NDVjYWRiYzQ3OWRmMGJjZTQwMGYxZDVlZTQzZTMwODY0YjZkYWEyY2M0Y2E0",
-  },
-})
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-    // Tukaj obdelate pridobljene podatke
-
-    const moonPhaseAngle = data.data.table.rows[1].cells[0].extraInfo.phase.angel;
-        const kotnizasuk = moonPhaseAngle/360
-        document.getElementById("resultKotLune").innerHTML = moonPhaseAngle;
-    const moonPhaseFraction = data.data.table.rows[1].cells[0].extraInfo.phase.fraction;
-        document.getElementById("resultOsvLune").innerHTML = moonPhaseFraction;
-
-    console.log(`kot lunine mene: ${moonPhaseAngle}`);
-    console.log(`delež lunine mene: ${moonPhaseFraction}`);
-  })
-  .catch(error => {
-    console.error('Napaka pri pridobivanju podatkov:', error);
-  });
-
-/*PRIDOBIVANJE ASTRONOMSKIH POSATKOV s Sunrise-Sunset.org*/
-const latitude = 46.11994444;
-const longitude = 14.81533333;
-
-// Uporaba Fetch API za pošiljanje GET zahtevka na API
-fetch(`https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${longitude}&formatted=0&tzld=Europe/Ljubljana`)
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-
-    // Tukaj lahko obdelate pridobljene podatke
-    let sunrise = data.results.sunrise;
-        sunrise = new Date(sunrise)
-        sunriseure = sunrise.getHours().toString().padStart(2, '0')
-        sunriseminute = sunrise.getMinutes().toString().padStart(2, '0')
-        document.getElementById("resultSonVzh").innerHTML = `${sunriseure}:${sunriseminute}`;
-    let sunset = data.results.sunset;
-        sunset = new Date(sunset)
-        sunseture = sunset.getHours().toString().padStart(2, '0')
-        sunsetminute = sunset.getMinutes().toString().padStart(2, '0')
-        document.getElementById("resultSonZah").innerHTML = `${sunseture}:${sunsetminute}`;
-    /*const solar_noon = data.results.solar_noon;*/
-    let solar_noon = data.results.solar_noon;
-        solar_noon = new Date(solar_noon)
-        solar_noonure = solar_noon.getHours().toString().padStart(2, '0')
-        solar_noonminute = solar_noon.getMinutes().toString().padStart(2, '0')
-        document.getElementById("resultPoldne").innerHTML = `${solar_noonure}:${solar_noonminute}`;
-    let day_length = data.results.day_length;
-        day_length = new Date(day_length*1000)
-        console.log(day_length)
-        day_lengthure = day_length.getHours().toString().padStart(2, '0')
-        day_lengthminute = day_length.getMinutes().toString().padStart(2, '0')
-        document.getElementById("resultDan").innerHTML = `${day_lengthure}:${day_lengthminute}`;
-    let civil_twilight_begin = data.results.civil_twilight_begin;
-        civil_twilight_begin = new Date(civil_twilight_begin)
-        civil_twilight_beginure = civil_twilight_begin.getHours().toString().padStart(2, '0')
-        civil_twilight_beginminute = civil_twilight_begin.getMinutes().toString().padStart(2, '0')
-        document.getElementById("resultMeSonVzh").innerHTML = `${civil_twilight_beginure}:${civil_twilight_beginminute}`;
-    let civil_twilight_end = data.results.civil_twilight_end;
-        civil_twilight_end = new Date(civil_twilight_end)
-        civil_twilight_endure = civil_twilight_end.getHours().toString().padStart(2, '0')
-        civil_twilight_endminute = civil_twilight_end.getMinutes().toString().padStart(2, '0')
-        document.getElementById("resultMeSonZah").innerHTML = `${civil_twilight_endure}:${civil_twilight_endminute}`;
-    let nautical_twilight_begin = data.results.nautical_twilight_begin;
-        nautical_twilight_begin = new Date(nautical_twilight_begin)
-        nautical_twilight_beginure = nautical_twilight_begin.getHours().toString().padStart(2, '0')
-        nautical_twilight_beginminute = nautical_twilight_begin.getMinutes().toString().padStart(2, '0')
-        document.getElementById("resultPoSonVzh").innerHTML = `${nautical_twilight_beginure}:${nautical_twilight_beginminute}`;
-    let nautical_twilight_end = data.results.nautical_twilight_end;
-        nautical_twilight_end = new Date(nautical_twilight_end)
-        nautical_twilight_endure = nautical_twilight_end.getHours().toString().padStart(2, '0')
-        nautical_twilight_endminute = nautical_twilight_end.getMinutes().toString().padStart(2, '0')
-        document.getElementById("resultPoSonZah").innerHTML = `${nautical_twilight_endure}:${nautical_twilight_endminute}`;
-    let astronomical_twilight_begin = data.results.astronomical_twilight_begin;
-        astronomical_twilight_begin = new Date(astronomical_twilight_begin)
-        astronomical_twilight_beginure = astronomical_twilight_begin.getHours().toString().padStart(2, '0')
-        astronomical_twilight_beginminute = astronomical_twilight_begin.getMinutes().toString().padStart(2, '0')
-        document.getElementById("resultAsSonVzh").innerHTML = `${astronomical_twilight_beginure}:${astronomical_twilight_beginminute}`;
-    let astronomical_twilight_end = data.results.astronomical_twilight_end;
-        astronomical_twilight_end = new Date(astronomical_twilight_end)
-        astronomical_twilight_endure = astronomical_twilight_end.getHours().toString().padStart(2, '0')
-        astronomical_twilight_endminute = astronomical_twilight_end.getMinutes().toString().padStart(2, '0')
-        document.getElementById("resultAsSonZah").innerHTML = `${astronomical_twilight_endure}:${astronomical_twilight_endminute}`;
-
-    console.log(`sončni vzhod: ${sunrise}`);
-    console.log(`sončni zahod: ${sunset}`);
-    console.log(`sončno opoldne: ${solar_noon}`);
-    console.log(`dolžina dneva: ${day_length}`);
-    console.log(`začetek meščanskega svitanja: ${civil_twilight_begin}`);
-    console.log(`konec meščanskega mraka: ${civil_twilight_end}`);
-    console.log(`začetek pomorskega svitanja: ${nautical_twilight_begin}`);
-    console.log(`konec pomorskega mraka: ${nautical_twilight_end}`);
-    console.log(`začetek zvezdoslovnega svitanja: ${astronomical_twilight_begin}`);
-    console.log(`konec zvezdoslovnega mraka: ${astronomical_twilight_end}`);
-  })
-  .catch(error => {
-    console.error('Napaka pri pridobivanju podatkov:', error);
-  });
-
-/*PRIDOBIVANJE ASTRONOMSKIH PODATKOV z IPGeolocation*//*
-const apiKey = '2cff6d02877a4aa0a6cd34c937a2f8b4';
-
-const latitude3 = 46.11994444;
-const longitude3 = 14.81533333;
-
-const apiUrl3 = `https://api.ipgeolocation.io/astronomy?apiKey=${apiKey}&lat=${latitude3}&long=${longitude3}`;
-
-fetch(apiUrl3)
-  .then(response => {
-    // Preveri, ali je odgovor uspešen (status code 200)
-    if (!response.ok) {
-      throw new Error(`Napaka pri pridobivanju podatkov: ${response.status}`);
-    }
-
-    // Pretvori odgovor v JSON
-    return response.json();
-  })
-  .then(data => {
-    // Tukaj obdelate pridobljene podatke
-    console.log(data);
-        const vzhodSonca = data.sunrise;
-        const zahodSonca = data.sunset;
-        const položajSonca = data.sun_status;
-        const opoldneSonca = data.solar_noon;
-        const dolžinadneva = data.day_length;
-        const višinaSonca = data.sun_altitude;
-        const oddaljenostSonca = data.sun_distance;
-        const azimutSonca = data.sun_azimuth;
-        const vzhodLune = data.moonrise;
-        const zahodLune = data.moonset;
-        const položajLune = data.moon_status;
-        const višinaLune = data.moon_altitude;
-        const oddaljenostLune = data.moon_distance;
-        const azimutLune = data.moon_azimuth;
-        const paralaktičnikotLune = data.moon_parallactic_angle;
-  })
-  .catch(error => {
-    console.error('Napaka pri pridobivanju podatkov:', error);
-  });*/
-
-
-/*PRIDOBIVANJE ASTRONOMSKIH POSATKOV z RapidAPI*//*
-const url = 'https://moon-phase.p.rapidapi.com/advanced?lat=51.4768&lon=-0.0004';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'aa09649f8dmsh592bf854d98fbd5p1949a6jsn57ae4d5641e6',
-		'X-RapidAPI-Host': 'moon-phase.p.rapidapi.com'
-	}
-};
-
-const queryString2 = new URLSearchParams(options).toString();
-
-fetch(`${url}?${queryString2}`, {
-  method: "GET",
-  headers: {
-    'X-RapidAPI-Key': 'aa09649f8dmsh592bf854d98fbd5p1949a6jsn57ae4d5641e6',
-	'X-RapidAPI-Host': 'moon-phase.p.rapidapi.com'
-  },
-})
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-    // Tukaj obdelate pridobljene podatke
-  })
-  .catch(error => {
-    console.error('Napaka pri pridobivanju podatkov:', error);
-  });*/
-
-/*PRIDOBIVANJE ASTRONOMSKIH PODATKOV z IPGeolocation*/
-function getastronomicaldatas() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            const API_KEY = '2cff6d02877a4aa0a6cd34c937a2f8b4';
-            const latitude = position.coords.latitude; /*46.11994444*/
-            const longitude = position.coords.latitude; /*14.81533333*/
-
-            const apiUrl = `https://api.ipgeolocation.io/astronomy?apiKey=${API_KEY}&lat=${latitude}&long=${longitude}`;
-
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-                    // Tukaj obdelam pridobljene podatke
-                    console.log(data); //izpis poročila
-                    const vzhodSonca = data.sunrise;
-                    const zahodSonca = data.sunset;
-                    const položajSonca = data.sun_status;
-                    const opoldneSonca = data.solar_noon;
-                    const dolžinadneva = data.day_length;
-                    const višinaSonca = data.sun_altitude;
-                    const oddaljenostSonca = data.sun_distance;
-                    const azimutSonca = data.sun_azimuth;
-                    const vzhodLune = data.moonrise;
-                    const zahodLune = data.moonset;
-                    const položajLune = data.moon_status;
-                    const višinaLune = data.moon_altitude;
-                    const oddaljenostLune = data.moon_distance;
-                    const azimutLune = data.moon_azimuth;
-                    const paralaktičnikotLune = data.moon_parallactic_angle;
-                })
-                .catch(error => {
-                    console.error('Napaka pri pridobivanju podatkov:', error);
-                });
-        }, function (error) {
-            console.error('Napaka pri pridobivanju zemljepisnega položaja:', error);
-        });
-    } else {
-        console.error('Ta brskalnik ne podpira pridobivanja zemljepisnega položaja.');
-    }
-}
-
-
-
 
 Date.prototype.getDayOfYear = function() {
     const startOfYear = new Date(this.getFullYear(), 0, 0);
     const diff = this - startOfYear;
-    const oneDay = 1000 * 60 * 60 * 24;
+    const oneDay = 1000 * 60 * 60 * 24; //1 dan v milisekundah
     return Math.floor(diff / oneDay);
 };
 
@@ -283,38 +56,182 @@ function ugotoviprestopnost(year) {
     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 }
 
-function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korake:*/ {
-    const trenutnikrajevničas = Date.now();
-    const zamikpasu = new Date().getTimezoneOffset();
-    const trenutniUTC = trenutnikrajevničas - zamikpasu * 1000 * 60;
-    const trenutno = new Date() /*ustvari element Date, ki predstavlja trenutni datum in čas*/
+    /*PRIDOBIVANJE ASTRONOMSKIH POSATKOV s AstronomyAPI (https://astronomyapi.com/; https://docs.astronomyapi.com/)*/
+    const apiUrl = "https://api.astronomyapi.com/api/v2/bodies/positions";
+    const params = {
+      longitude: 46.11994444,
+      latitude: 14.81533333,
+      elevation: 1,
+      from_date: "2023-12-26",
+      to_date: "2023-12-26",
+      time: "21:19:47",
+    };
 
-    const sekundnoRazmerje = trenutno.getSeconds() / 60 /*Izračuna razmerje sekundnega kazalca (v obliki razmerja sekund od 0 do 59)*/
-    const minutnoRazmerje = (sekundnoRazmerje + trenutno.getMinutes()) / 60 /*Izračuna razmerje minutnega kazalca (v obliki razmerja minut od 0 do 59 + sekundno razmerje)*/
-    const urebrezpolzamika = (trenutno.getUTCHours() + 1) % 24
+    const queryString = new URLSearchParams(params).toString();
+
+    fetch(`${apiUrl}?${queryString}`, {
+      method: "GET",
+      headers: {
+        "Authorization": "Basic NzI4M2RiNWMtNGZlZS00YzQ1LWI3MWUtNGMyNDg3MDAxZjAwOjI5Y2UyYmIzZDQ3MGVlMjRhMTU1OWM2OWYwNjE4Y2E3OWUwNzRlMTFlYWIzYzA0NWQyZjFhYjI2NTA4MjA2MjQ2MzdlOWFhYzg0ZTkwOTQ1YTU4YjIyNzYzYWRmODQ1ZTI1ZDlkNjI2M2FkZmNmYTg1YTI0MWYzNDJhNDExZWFjNWIxMjViMTJmYzBlY2VmMDg2MzJmMjRkYjMzNzY3Zjg4MGRlNTFmOWRlMDZkOWFjNGQ2NDVjYWRiYzQ3OWRmMGJjZTQwMGYxZDVlZTQzZTMwODY0YjZkYWEyY2M0Y2E0",
+      },
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        // Tukaj obdelate pridobljene podatke
+
+        /*const moonPhaseAngle = data.data.table.rows[1].cells[0].extraInfo.phase.angel;
+            const kotnizasuk = moonPhaseAngle/360
+            document.getElementById("resultKotLune").innerHTML = moonPhaseAngle;
+        const moonPhaseFraction = data.data.table.rows[1].cells[0].extraInfo.phase.fraction;
+            document.getElementById("resultOsvLune").innerHTML = moonPhaseFraction;
+
+        console.log(`kot lunine mene: ${moonPhaseAngle}`);
+        console.log(`delež lunine mene: ${moonPhaseFraction}`);*/
+      })
+      .catch(error => {
+        console.error('Napaka pri pridobivanju podatkov:', error);
+      });
+
+    var data
+    var časi
+    var polSonca
+    var polLune
+    var VzhZahLune
+    var OsvLune
+function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korake:*/ {
+
+    const msČas = Date.now(); //število milisekund od 1. januarja 1970
+    const zamikpasu = new Date().getTimezoneOffset(); //zamik časovnega pasu od UTC v minutah
+    const trenutniUTC = msČas - zamikpasu * 1000 * 60; //trenutni stanradni (UTC) čas
+    const trSLOčas = new Date()
+        trSLOčas.setHours(new Date().getHours() + 1) //trenutni čas v Sloveniji brez poletnega premika ure
+    const trSLOčasP = new Date()// trenutni čas v Sloveniji z vključenim poletnim premikom ure
+
+
+    /*PRIDOBIVANJE ASTRONOMSKIH PODATKOV z SunCalc (https://github.com/mourner/suncalc/tree/master) resultPoSonVzh*/
+    časi = SunCalc.getTimes(trSLOčas, GSSš, GSSd);
+        var Zora = časi.dawn
+            Zora = new Date(Zora)
+            document.getElementById("resultZora").innerHTML = `${Zora.getHours().toString().padStart(2, '0')}:${Zora.getMinutes().toString().padStart(2, '0')}:${Zora.getSeconds().toString().padStart(2, '0')}`;
+        var Mrak = časi.dusk
+            Mrak = new Date(Mrak)
+            document.getElementById("resultMrak").innerHTML = `${Mrak.getHours().toString().padStart(2, '0')}:${Mrak.getMinutes().toString().padStart(2, '0')}:${Mrak.getSeconds().toString().padStart(2, '0')}`;
+        var PomZora = časi.nauticalDawn
+            PomZora = new Date(PomZora)
+            document.getElementById("resultPomZora").innerHTML = `${PomZora.getHours().toString().padStart(2, '0')}:${PomZora.getMinutes().toString().padStart(2, '0')}:${PomZora.getSeconds().toString().padStart(2, '0')}`;
+        var PomMrak = časi.nauticalDusk
+            PomMrak = new Date(PomMrak)
+            document.getElementById("resultPomMrak").innerHTML = `${PomMrak.getHours().toString().padStart(2, '0')}:${PomMrak.getMinutes().toString().padStart(2, '0')}:${PomMrak.getSeconds().toString().padStart(2, '0')}`;
+        var zlataUra = časi.goldenHour
+            zlataUra = new Date(zlataUra)
+            document.getElementById("resultZlataUra").innerHTML = `${zlataUra.getHours().toString().padStart(2, '0')}:${zlataUra.getMinutes().toString().padStart(2, '0')}:${zlataUra.getSeconds().toString().padStart(2, '0')}`;
+        var zlataUraKon = časi.goldenHourEnd
+            zlataUraKon = new Date(zlataUraKon)
+            document.getElementById("resultZlataUraKon").innerHTML = `${zlataUraKon.getHours().toString().padStart(2, '0')}:${zlataUraKon.getMinutes().toString().padStart(2, '0')}:${zlataUraKon.getSeconds().toString().padStart(2, '0')}`;
+
+        var Nadir = časi.nadir;
+            Nadir = new Date(Nadir);
+            const resultNadir1 = document.getElementById("resultNadir1");
+            const resultNadir2 = document.getElementById("resultNadir2");
+            const nadiropis1 = document.getElementById("nadiropis1");
+            const nadiropis2 = document.getElementById("nadiropis2");
+
+            if (Nadir < new Date(Nadir.getFullYear(), Nadir.getMonth(), Nadir.getDate(), 12, 0, 0)) {
+                resultNadir1.innerHTML = `${Nadir.getHours().toString().padStart(2, '0')}:${Nadir.getMinutes().toString().padStart(2, '0')}:${Nadir.getSeconds().toString().padStart(2, '0')}`;
+                resultNadir2.style.display = 'none';
+                nadiropis2.style.display = 'none';
+            } else {
+                resultNadir2.innerHTML = `${Nadir.getHours().toString().padStart(2, '0')}:${Nadir.getMinutes().toString().padStart(2, '0')}:${Nadir.getSeconds().toString().padStart(2, '0')}`;
+                resultNadir1.style.display = 'none';
+                nadiropis1.style.display = 'none';
+            }
+        var Noč = časi.night
+            Noč = new Date(Noč)
+            document.getElementById("resultNoč").innerHTML = `${Noč.getHours().toString().padStart(2, '0')}:${Noč.getMinutes().toString().padStart(2, '0')}:${Noč.getSeconds().toString().padStart(2, '0')}`;
+        var NočKon = časi.nightEnd
+            NočKon = new Date(NočKon)
+            document.getElementById("resultNočKon").innerHTML = `${NočKon.getHours().toString().padStart(2, '0')}:${NočKon.getMinutes().toString().padStart(2, '0')}:${NočKon.getSeconds().toString().padStart(2, '0')}`;
+        var Poldne = časi.solarNoon
+            Poldne = new Date(Poldne)
+            document.getElementById("resultPoldne").innerHTML = `${Poldne.getHours().toString().padStart(2, '0')}:${Poldne.getMinutes().toString().padStart(2, '0')}:${Poldne.getSeconds().toString().padStart(2, '0')}`;
+        var SonVzh = časi.sunrise
+            SonVzh = new Date(SonVzh)
+            document.getElementById("resultSonVzh").innerHTML = `${SonVzh.getHours().toString().padStart(2, '0')}:${SonVzh.getMinutes().toString().padStart(2, '0')}:${SonVzh.getSeconds().toString().padStart(2, '0')}`;
+        var SonVzhKon = časi.sunriseEnd
+            SonVzhKon = new Date(SonVzhKon)
+            document.getElementById("resultSonVzhKon").innerHTML = `${SonVzhKon.getHours().toString().padStart(2, '0')}:${SonVzhKon.getMinutes().toString().padStart(2, '0')}:${SonVzhKon.getSeconds().toString().padStart(2, '0')}`;
+        var SonZah = časi.sunset
+            SonZah = new Date(SonZah)
+            document.getElementById("resultSonZah").innerHTML = `${SonZah.getHours().toString().padStart(2, '0')}:${SonZah.getMinutes().toString().padStart(2, '0')}:${SonZah.getSeconds().toString().padStart(2, '0')}`;
+        var SonZahZač = časi.sunsetStart
+            SonZahZač = new Date(SonZahZač)
+            document.getElementById("resultSonZahZač").innerHTML = `${SonZahZač.getHours().toString().padStart(2, '0')}:${SonZahZač.getMinutes().toString().padStart(2, '0')}:${SonZahZač.getSeconds().toString().padStart(2, '0')}`;
+
+    polSonca = SunCalc.getPosition(trSLOčas, GSSš, GSSd) //Položaj Sonca
+        const višinaSonca = polSonca.altitude
+            const višinaSoncaStop = višinaSonca * 180 / Math.PI
+            document.getElementById("resultVišinaSonca").innerHTML = (višinaSoncaStop).toFixed(4);
+        const azimutSonca = polSonca.azimuth
+            const azimutSoncaStop = azimutSonca * 180 / Math.PI
+            document.getElementById("resultAzimutSonca").innerHTML = (azimutSoncaStop).toFixed(4);
+
+    polLune = SunCalc.getMoonPosition(trSLOčas, GSSš, GSSd) //Položaj Lune
+        const višinaLune = polLune.altitude
+            const višinaLuneStop = višinaLune * 180 / Math.PI
+            document.getElementById("resultVišinaLune").innerHTML = (višinaLuneStop).toFixed(4);
+        const azimutLune = polLune.azimuth
+            const azimutLuneStop = azimutLune * 180 / Math.PI
+            document.getElementById("resultAzimutLune").innerHTML = (azimutLuneStop).toFixed(4);
+        const oddalLune = polLune.distance //Oddaljenost Lune
+            document.getElementById("resultOddalLune").innerHTML = (oddalLune).toFixed(4);
+        const parLune = polLune.parallacticAngle //Nagnjenost ravnine Luninega kroženja glede na navpičnico položaja opazovanja
+            const parLuneStop = parLune * 180 / Math.PI
+            document.getElementById("resultParLune").innerHTML = (parLuneStop).toFixed(4);
+
+    OsvLune = SunCalc.getMoonIllumination(trSLOčas)
+        const osvLune = OsvLune.fraction
+            document.getElementById("resultOsvLune").innerHTML = (osvLune*100).toFixed(4) + "%";
+        const kotLune = OsvLune.angle
+            document.getElementById("resultKotLune").innerHTML = (kotLune).toFixed(4);
+        const menaLune = OsvLune.phase
+            document.getElementById("resultMenaLune").innerHTML = (menaLune).toFixed(4);
+
+    VzhZahLune = SunCalc.getMoonTimes(trSLOčas, GSSš, GSSd)
+        var VzhLune = VzhZahLune.rise
+            VzhLune = new Date(VzhLune)
+            document.getElementById("resultVzhLune").innerHTML = `${VzhLune.getHours().toString().padStart(2, '0')}:${VzhLune.getMinutes().toString().padStart(2, '0')}:${VzhLune.getSeconds().toString().padStart(2, '0')}`;
+        var ZahLune = VzhZahLune.set
+            ZahLune = new Date(ZahLune)
+            document.getElementById("resultZahLune").innerHTML = `${ZahLune.getHours().toString().padStart(2, '0')}:${ZahLune.getMinutes().toString().padStart(2, '0')}:${ZahLune.getSeconds().toString().padStart(2, '0')}`;
+
+
+    const sekundnoRazmerje = trSLOčas.getSeconds() / 60 /*Izračuna razmerje sekundnega kazalca (v obliki razmerja sekund od 0 do 59)*/
+    const minutnoRazmerje = (sekundnoRazmerje + trSLOčas.getMinutes()) / 60 /*Izračuna razmerje minutnega kazalca (v obliki razmerja minut od 0 do 59 + sekundno razmerje)*/
+    const urebrezpolzamika = (trSLOčas.getUTCHours()) % 24
     const urnoRazmerje = (minutnoRazmerje + urebrezpolzamika) / 24 /*Izračuna razmerje urnega kazalca (v obliki razmerja ur od 0 do 23 + minutno razmerje)*/
 
-    const trenutnoleto = new Date().getFullYear();
+    const trenutnoleto = trSLOčas.getFullYear();
     const dnevno = 360 / 365.2425 /*stopinjski obrat v enem dnevu*/;
     const letnazamuda = ((trenutnoleto * (0.2425 * dnevno) - Math.floor((trenutnoleto - 1) / 4) * dnevno + Math.floor((trenutnoleto - 1) / 100) * dnevno - Math.floor((trenutnoleto - 1) / 400) * dnevno) - (11 * dnevno)) / 360;
 
-    const dolžinaLeta = ugotoviprestopnost(trenutno.getFullYear()) ? 366 : 365; // Poglejte, ali je trenutno leto prestopno
-    const dnevnizasuk = (trenutno.getDayOfYear() + urnoRazmerje) / dolžinaLeta;
+    const dolžinaLeta = ugotoviprestopnost(trSLOčas.getFullYear()) ? 366 : 365; // Poglejte, ali je trenutno leto prestopno
+    const dnevnizasuk = (trSLOčas.getDayOfYear() + urnoRazmerje) / dolžinaLeta;
 
-    const prviDanLeta = new Date(trenutno.getFullYear(), 0, 1); // 1. januar trenutnega leta
-    const razlika = (trenutno - prviDanLeta)/ (1000 * 60 * 60 * 24) + 11
+    const prviDanLeta = new Date(trSLOčas.getFullYear(), 0, 1); // 1. januar trenutnega leta
+    const razlika = (trSLOčas - prviDanLeta)/ (1000 * 60 * 60 * 24) + 11
     const razmerje = razlika / 365.2425
     const dnevnoRazmerje = razmerje
 
-    const letozvezde = ((trenutno - prviDanLeta)/ (1000 * 60 * 60 * 24) + 11)/365.2425*(-1)
+    const letozvezde = razlika / 365.2425 * (-1)
 
-    const zimObrat = new Date (trenutno.getFullYear(), 11, 21); //21. december tega leta - zimski sončev obrat
+    const zimObrat = new Date (trSLOčas.getFullYear(), 11, 21); //21. december tega leta - zimski sončev obrat
     const razlikazačetka = Date.UTC(2001, 0, 1) - Date.UTC(2000, 11, 21)
     let milisekundnarazlika; /*čas med zdaj in zimskim sončnim obratom, v milisekundah*/
-        if (trenutno >= zimObrat) {
-            milisekundnarazlika = trenutno - zimObrat;
+        if (trSLOčas >= zimObrat) {
+            milisekundnarazlika = trSLOčas - zimObrat;
         } else {
-            milisekundnarazlika = trenutno - prviDanLeta + razlikazačetka;
+            milisekundnarazlika = trSLOčas - prviDanLeta + razlikazačetka;
         }
     const dan366 = Math.floor(milisekundnarazlika / (24 * 60 * 60 * 1000)) + 1; //delite s številom milisekund na dan (24 * 60 * 60 * 1000) in zaokrožite rezultat navzdol. Na koncu dodate 1, saj štejemo dneve od 1 do 366.
     let dan183;
@@ -327,23 +244,25 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     const dnevitedna = ["nedelja","ponedeljek","torek","sreda","četrtek","petek","sobota"];
     const meseci = ["prosinec (1.)", "svečan (2.)", "sušec (3.)", "mali traven (4.)", "veliki traven (5.)", "rožnik (6.)", "mali srpan (7.)", "veliki srpan (8.)", "kimavec (9.)", "vinotok (10.)", "listopad (11.)", "gruden (12.)"];
 
-    const sekunde = new Date().getSeconds().toString().padStart(2, '0');
-    const minute = new Date().getMinutes().toString().padStart(2, '0');
-    const ure = new Date().getHours().toString().padStart(2, '0');
-    const dantedna = dnevitedna[new Date().getDay()];
-    const danmeseca = new Date().getDate();
-    /*const mesec = (new Date().getMonth() + 1) % 12 || 12;*/
-    const mesec = meseci[new Date().getMonth()];
-    const leto = new Date().getFullYear();
+    const sekunde = trSLOčasP.getSeconds().toString().padStart(2, '0');
+    const sekundeB = trSLOčas.getSeconds().toString().padStart(2, '0');
+    const minute = trSLOčasP.getMinutes().toString().padStart(2, '0');
+    const minuteB = trSLOčas.getMinutes().toString().padStart(2, '0');
+    const ure = trSLOčasP.getHours().toString().padStart(2, '0');
+    const dantedna = dnevitedna[trSLOčasP.getDay()];
+    const danmeseca = trSLOčasP.getDate();
+    /*const mesec = (trSLOčas.getMonth() + 1) % 12 || 12;*/
+    const mesec = meseci[trSLOčasP.getMonth()];
+    const leto = trSLOčas.getFullYear();
 
     resultElementCZZ.textContent = `${ure}:${minute}:${sekunde}, ${dantedna}, ${danmeseca}. ${mesec} ${leto}`;
-    resultElementCBZ.textContent = `${urebrezpolzamika}:${minute}:${sekunde}`;
+    resultElementCBZ.textContent = `${urebrezpolzamika}:${minuteB}:${sekundeB}`;//prikaz ure brez poletnega zamika
 
     const poletniprehod = (31 - (Math.floor(((5 * leto) / 4) + 4) % 7));
     const zimskiprehod = (31 - (Math.floor(((5 * leto) / 4) + 1) % 7));
     let poletni;
     let letop;
-        if ((Date.UTC(leto, 2, poletniprehod)) >= trenutno) {
+        if ((Date.UTC(leto, 2, poletniprehod)) >= trSLOčas) {
             poletni = poletniprehod;
             letop = leto;
         } else {
@@ -352,7 +271,7 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
         }
     let zimski;
     let letoz;
-        if ((Date.UTC(leto, 9, zimskiprehod)) >= trenutno) {
+        if ((Date.UTC(leto, 9, zimskiprehod)) >= trSLOčas) {
             zimski = zimskiprehod;
             letoz = leto;
         } else {
@@ -449,6 +368,12 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     zasukaj(zvezdeleto, letozvezde)
     zasukaj(zvezdedan, urnoRazmerje)
 }
+nastaviUro() /*kliče funkcijo nastaviUro takoj po nalaganju strani, da se zagotovi, da se ure in kazalci pravilno nastavijo na začetku*/
+    console.log(časi);
+    console.log(polSonca);
+    console.log(polLune);
+    console.log(VzhZahLune);
+    console.log(OsvLune);
 
 function zasukaj(element, rotationRatio) /*funkcija, ki posodablja rotacijo določenega elementa (kazalca)*/ {
     element.style.setProperty ('--rotation', rotationRatio * -360)
@@ -488,5 +413,3 @@ zaslon(napravi);
 window.addEventListener("resize", function() {
     zaslon(napravi);
 });
-
-nastaviUro() /*kliče funkcijo nastaviUro takoj po nalaganju strani, da se zagotovi, da se ure in kazalci pravilno nastavijo na začetku*/
