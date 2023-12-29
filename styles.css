@@ -30,6 +30,20 @@ body {
     font-size: 1.5rem;
     font-variant-ligatures: normal;
 }
+
+@font-face {
+    font-family: 'Valmarska';
+    src: url('fonts/valmarska/ValmaricEldamar.woff2') format('woff2'),
+         url('fonts/valmarska/ValmaricEldamar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Valmarska {
+    font-family: 'Valmarska';
+    font-size: 1.5rem;
+    font-variant-ligatures: normal;
+}
+
 @font-face {
     font-family: 'Tengwar';
     src: url('fonts/Tengwar/tengwar_slo-webfont.woff2') format('woff2'),
@@ -162,7 +176,7 @@ body.light {
     margin-right: auto;
     padding: 1rem;
 }
-.content /*začasni dvojnik*/ {
+.content {
     max-width: var(--vsebina);
     margin-left: auto;
     margin-right: auto;
@@ -341,14 +355,30 @@ hr {
  margin-top: 1.2rem;
  margin-bottom: 1.2rem
  }
+
+/*slogi za preglednice*/
 table {
     border-collapse: collapse;
     border-style: hidden;
     margin: 0.7rem;
-    text-align: left;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+tr:hover {
+    background-color: dimgrey;
+}
+td.mrtva {/*prazne, prepovedane celice*/
+    background-color: #ffffff34;
+}
+table.leva {
+    left: 0;
+    margin-left: 0;
+}
+table.visoka {
+    display: none;
+}
+
 table.capital {
     margin-left: 12px;
 }
@@ -361,28 +391,31 @@ table.list {
     overflow-y: hidden;
 }
 tr.spodajrob {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffffff34;
+}
+tr.zgorajrob {
+    border-top: 1px solid #ffffff34;
 }
 table.sredinsko th,
 table.sredinsko td {
     text-align:center;
 }
-table.vodčrte td {
+table.vodčrte td, tr.vodčrte td {
     border-bottom: 1px solid #ffffff34;
 }
 table tr {
     border: none;
 }
 table td {
-    border-right: 1px solid white;
+    border-right: 1px solid #ffffff34;
     padding: 10px;
     text-align: left;
 }
 table th {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffffff34;
     padding: 10px;
     text-align: center;
-    border-right: 1px solid white;
+    border-right: 1px solid #ffffff34;
 }
 table th.brezdrob,
 table td.brezdrob {
@@ -401,7 +434,12 @@ table:not(.zgornja) tr td:first-child {
 table.zgornja tr td:first-child {
     font-weight: ;
 }
+tr.ničta {
+    height:0;
+    margin:0;
+}
 
+/*slogi za slike*/
 img {
     max-width: 100%;
 }
@@ -521,7 +559,7 @@ body {
   --bar-width: 2rem;
   --bar-height: 0.18rem;
   --hamburger-gap: 0.38rem;
-  --foreground: rgba(0, 0, 0, 0.5); /*barva polja kazala, zadnja vrednost je za prosojnost*/
+  --foreground: rgba(0, 0, 0, 0.7); /*barva polja kazala, zadnja vrednost je za prosojnost*/
   --background: white;
   --hamburger-color: white;
   --hamburger-margin: 0.38rem;
@@ -601,11 +639,14 @@ body {
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem /*1rem odmika kazala od ikone*/); /*odmik od vrha strani na podlagi prostora, ki ga zavzame ikona*/
   background-color: var(--foreground);
   color: var(--background);
-  max-width: 20rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
+  max-width: 30rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
   height: 100vh; /*najmanjša višina polja kazala strani, 1vh = 1% višine zaslona*/
   position: fixed;
   overflow: auto;
   z-index: 100;
+}
+.sidebar li {
+  text-align: left;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
@@ -666,7 +707,6 @@ body {
         stroke: black;
         fill: black;
     }
-
     table td {
         border-right: 1px solid black;
     }
@@ -675,12 +715,20 @@ body {
         border-right: 1px solid black;
     }
 }
+@media (max-width: 120ch) and (100vw < 100vh){
+    table.visoka {
+        display: block;
+    }
+    table.široka {
+        display: none;
+    }
+}
 @media (orientation: portrait) /*slog za zaslon v pokončnem načinu*/  and (max-width: 500px){
 }
 @media (orientation: landscape) /*slog za zaslon v ležečem načinu*/  and (max-width: 500px){
 }
 @media (prefers-color-scheme: dark) {
-    path { fill: #white; }
+    path { fill: white; }
 }
 @media (prefers-color-scheme: light) {
 }

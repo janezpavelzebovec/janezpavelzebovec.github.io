@@ -7,11 +7,11 @@ document.head.appendChild(script);
 // Počakamo, da se skripta naloži, nato nastavimo konfiguracijo
 script.onload = function () {
   window.dataLayer = window.dataLayer || [];
-  
+
   function gtag() {
     dataLayer.push(arguments);
   }
-  
+
   gtag('js', new Date());
   gtag('config', 'G-TR1FD0790Y');
 };
@@ -70,4 +70,4 @@ document.querySelector('.theme-toggle-button').addEventListener('click', () => {
   }
 
     setClock()
-    animateClock();
+    animateClock()
