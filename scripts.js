@@ -25,17 +25,6 @@ script.onload = function () {
     document.getElementById("myNav").style.width = "0%";
   }
 
-/*DEJAVEN UGNEZDEN SEZNAM:*/
-var toggler = document.getElementsByClassName("caret");
-var i;
-
-for (i = 0; i < toggler.length; i++) {
-  toggler[i].addEventListener("click", function() {
-    this.parentElement.querySelector(".nested").classList.toggle("active");
-    this.classList.toggle("caret-down");
-  });
-}
-
 
 /*SVETLI NAČIN*/
     function myFunction() {
