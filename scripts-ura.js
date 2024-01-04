@@ -184,16 +184,18 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
             const azimutLuneStop = azimutLune * 180 / Math.PI
             document.getElementById("resultAzimutLune").innerHTML = (azimutLuneStop).toFixed(4);
         const oddalLune = polLune.distance //Oddaljenost Lune
-            document.getElementById("resultOddalLune").innerHTML = (oddalLune).toFixed(4);
+            document.getElementById("resultOddalLune").innerHTML = (oddalLune).toFixed(0);
         const parLune = polLune.parallacticAngle //Nagnjenost ravnine Luninega kroženja glede na navpičnico položaja opazovanja
             const parLuneStop = parLune * 180 / Math.PI
             document.getElementById("resultParLune").innerHTML = (parLuneStop).toFixed(4);
 
     OsvLune = SunCalc.getMoonIllumination(trSLOčas)
         const osvLune = OsvLune.fraction
-            document.getElementById("resultOsvLune").innerHTML = (osvLune*100).toFixed(4) + "%";
+            document.getElementById("resultOsvLune").innerHTML = (osvLune*100).toFixed(0) + "%";
         const kotLune = OsvLune.angle
             document.getElementById("resultKotLune").innerHTML = (kotLune).toFixed(4);
+            const kotLuneStop = kotLune * 180 / Math.PI
+            document.getElementById("resultKotLuneStop").innerHTML = (kotLuneStop).toFixed(4);
         const menaLune = OsvLune.phase
             document.getElementById("resultMenaLune").innerHTML = (menaLune).toFixed(4);
 
@@ -296,13 +298,14 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     const astmesec = (29 * 24 * 60 * 60 *1000) + (12 * 60 * 60 * 1000) + (44 * 60 *1000) + (2.8016 * 1000) /*29 dni, 12 ur, 44 minut in 2.9 sekund v milisekundah */
     const časmlaja = Date.UTC(2023, 0, 21, 21, 53); /*čas nekega mlaja, 21. jan. 2023, 21:53*/
     const časrazlika = trenutniUTC - časmlaja;
-    const luninpoložaj = (časrazlika % astmesec)/astmesec /*celoštevilski (milisekundni) ostanek pri deljenju z dolžino meseca*/
+    /*const luninpoložaj = (časrazlika % astmesec)/astmesec /*celoštevilski (milisekundni) ostanek pri deljenju z dolžino meseca*/
+    const luninpoložaj = menaLune
     const premerlune = 6
     const kotnizasuk = luninpoložaj * 360
 
     let željenkot; //željen kot mora biti med 0 in 90 stopinj
         if (0 < kotnizasuk && kotnizasuk < 90) { //če je kotni zasuk med 0 in 90 stopinj...
-            željenkot = 90 - kotnizasuk; //...je željen kot razlika med kotnim zasukom in 90 stopinj.
+            željenkot = kotnizasuk; //...je željen kot razlika med kotnim zasukom in 90 stopinj.
         } else if (90 < kotnizasuk && kotnizasuk < 180) {
             željenkot = kotnizasuk - 90;
         } else if (180 < kotnizasuk && kotnizasuk < 270) {
@@ -310,6 +313,7 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
         } else {
             željenkot = kotnizasuk - 270;
         }
+        console.log(željenkot);
 
     const željenkotrad = željenkot * Math.PI / 180
     const sinkota = Math.sin(željenkot * Math.PI / 180)

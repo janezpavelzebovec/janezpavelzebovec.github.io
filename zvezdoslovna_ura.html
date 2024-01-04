@@ -43,6 +43,7 @@
             <div><a href="./knjiznica">Knjižnica</a></div>
             <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div>
             <hr>
+            <p><a href="./opombe_k_zvezdoslovni_uri.html" class="help">Opombe k uri</a></p>
             <div id="prikazaneopombe" class="opombe">
                 <p> <time class="datum" id="resultCZZ" style="font-size: large">čas in datum</time><br>
                     <span><time id="resultCBZ">čas</time> - brez premika na poletni čas</span><br>
@@ -143,7 +144,7 @@
                     </tr>
                     <tr>
                         <td>kot Lune: </td>
-                        <td><span id="resultKotLune"><i>napaka</i></span></td>
+                        <td><span id="resultKotLune"><i>napaka</i></span> rd / <span id="resultKotLuneStop"><i>napaka</i></span> °</td>
                     </tr>
                     <tr>
                         <td>mena Lune: </td>
@@ -162,7 +163,6 @@
                         <td><span id="resultZahLune"><i>napaka</i></span></td>
                     </tr>
                 </table>
-                <p align="right"><a href="./opombe_k_zvezdoslovni_uri.html" class="help">opombe k uri</a></p>
             </div>
           </nav>
         </aside>
@@ -236,11 +236,12 @@
                 width="90%"
                 height="90%"
                 position="absolute"
-                style="position: absolute; border-radius: 50%; border: none; z-index: 0; left: 5%; top: 5%"/>
+                style="position: absolute; border: none; z-index: 0; left: 5%; top: 5%"/>
         </div>
     </body>
 </html>
 
 <script src="suncalc.js"></script>
+<script src="LuninaMena1.js"></script>
 <link href="styles-ura.css" rel="stylesheet">
 <script src="scripts-ura.js"></script>
