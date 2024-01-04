@@ -7,7 +7,6 @@
    viewBox="0 0 159.79001 159.79001"
    version="1.1"
    id="svg2818"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
@@ -15,9 +14,9 @@
     <filter
        style="color-interpolation-filters:sRGB"
        id="filter1376"
-       x="-0.0023305872"
+       x="0"
        y="0"
-       width="1.0046494"
+       width="1"
        height="1">
       <feColorMatrix
          type="hueRotate"
@@ -32,8 +31,8 @@
     <filter
        style="color-interpolation-filters:sRGB;"
        id="filter4145"
-       x="-0.0023305872"
-       y="-0.0026405075"
+       x="-0.0023305873"
+       y="-0.0026405073"
        width="1.0046494"
        height="1.0052882">
       <feColorMatrix
@@ -74,7 +73,17 @@
       <feColorMatrix
          id="feColorMatrix4601"
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2" />
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1500" />
+      <feColorMatrix
+         id="feColorMatrix1502"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB;"
@@ -90,8 +99,18 @@
          id="feColorMatrix4165" />
       <feColorMatrix
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
+         result="fbSourceGraphic"
          id="feColorMatrix4167" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1472" />
+      <feColorMatrix
+         id="feColorMatrix1474"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB;"
@@ -107,8 +126,18 @@
          id="feColorMatrix4171" />
       <feColorMatrix
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
+         result="fbSourceGraphic"
          id="feColorMatrix4173" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1476" />
+      <feColorMatrix
+         id="feColorMatrix1478"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB;"
@@ -124,8 +153,18 @@
          id="feColorMatrix4177" />
       <feColorMatrix
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
+         result="fbSourceGraphic"
          id="feColorMatrix4179" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1480" />
+      <feColorMatrix
+         id="feColorMatrix1482"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB;"
@@ -141,8 +180,18 @@
          id="feColorMatrix4183" />
       <feColorMatrix
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
+         result="fbSourceGraphic"
          id="feColorMatrix4185" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1484" />
+      <feColorMatrix
+         id="feColorMatrix1486"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB;"
@@ -158,8 +207,18 @@
          id="feColorMatrix4189" />
       <feColorMatrix
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
+         result="fbSourceGraphic"
          id="feColorMatrix4191" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1488" />
+      <feColorMatrix
+         id="feColorMatrix1490"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB;"
@@ -175,8 +234,18 @@
          id="feColorMatrix4195" />
       <feColorMatrix
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
+         result="fbSourceGraphic"
          id="feColorMatrix4197" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1492" />
+      <feColorMatrix
+         id="feColorMatrix1494"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB;"
@@ -192,8 +261,18 @@
          id="feColorMatrix4201" />
       <feColorMatrix
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
+         result="fbSourceGraphic"
          id="feColorMatrix4203" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1496" />
+      <feColorMatrix
+         id="feColorMatrix1498"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB;"
@@ -209,700 +288,167 @@
          id="feColorMatrix4213" />
       <feColorMatrix
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
+         result="fbSourceGraphic"
          id="feColorMatrix4215" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1504" />
+      <feColorMatrix
+         id="feColorMatrix1506"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
     </filter>
   </defs>
   <g
      id="layer1">
     <g
-       transform="matrix(0.19,0,0,0.19,79.894791,79.433577)"
-       id="g1030"
-       style="display:inline;filter:url(#filter79138)">
-      <g
-         id="contentGenerated-3"
-         style="display:none">
-        <g
-           id="frontGraphics"
-           style="display:none">
-          <path
-             id="pinMark"
-             d="M -8.4,940.8 H 8.4 M 0,932.4 v 16.8"
-             class="pinMark"
-             style="display:none" />
-          <g
-             id="scales"
-             style="display:none">
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(-105,-145.0248,189)"
-               id="g729">
-              <g
-                 id="g727">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path723" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text725">7</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(-90,-189,189)"
-               id="g737">
-              <g
-                 id="g735">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path731" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text733">6</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(-75,-246.3096,189)"
-               id="g745">
-              <g
-                 id="g743">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path739" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text741">5</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(-60,-327.3576,189)"
-               id="g753">
-              <g
-                 id="g751">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path747" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text749">4</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(-45,-456.28636,189)"
-               id="g761">
-              <g
-                 id="g759">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path755" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text757">3</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(-30,-705.3576,189)"
-               id="g769">
-              <g
-                 id="g767">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path763" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text765">2</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(-15,-1435.5975,189)"
-               id="g777">
-              <g
-                 id="g775">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path771" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text773">1</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="translate(0,-378)"
-               id="g785">
-              <g
-                 id="g783">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path779" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text781">0</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(15,1435.5975,189)"
-               id="g793">
-              <g
-                 id="g791">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path787" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text789">23</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(30,705.3576,189)"
-               id="g801">
-              <g
-                 id="g799">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path795" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text797">22</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(45,456.28636,189)"
-               id="g809">
-              <g
-                 id="g807">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path803" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text805">21</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(60,327.3576,189)"
-               id="g817">
-              <g
-                 id="g815">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path811" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text813">20</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(75,246.3096,189)"
-               id="g825">
-              <g
-                 id="g823">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path819" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text821">19</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(90,189,189)"
-               id="g833">
-              <g
-                 id="g831">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path827" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text829">18</text>
-              </g>
-            </g>
-            <g
-               class="dialHoursMarkerMajor"
-               transform="rotate(105,145.0248,189)"
-               id="g841">
-              <g
-                 id="g839">
-                <path
-                   d="M 0,0 -22.17,38.4 H 22.17 Z"
-                   stroke="none"
-                   id="path835" />
-                <text
-                   y="30"
-                   x="0"
-                   id="text837">17</text>
-              </g>
-            </g>
-            <g
-               id="use843"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(112.5,126.28576,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82726" />
-            </g>
-            <g
-               id="use845"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(97.5,165.74855,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82730" />
-            </g>
-            <g
-               id="use847"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(82.5,215.5132,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82734" />
-            </g>
-            <g
-               id="use849"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(67.5,282.85849,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82738" />
-            </g>
-            <g
-               id="use851"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(52.5,383.25409,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82742" />
-            </g>
-            <g
-               id="use853"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(37.5,556.77605,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82746" />
-            </g>
-            <g
-               id="use855"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(22.5,950.16716,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82750" />
-            </g>
-            <g
-               id="use857"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(7.5,2883.5828,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82754" />
-            </g>
-            <g
-               id="use859"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(-7.5,-2883.5828,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82758" />
-            </g>
-            <g
-               id="use861"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(-22.5,-950.16716,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82762" />
-            </g>
-            <g
-               id="use863"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(-37.5,-556.77605,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82766" />
-            </g>
-            <g
-               id="use865"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(-52.5,-383.25409,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82770" />
-            </g>
-            <g
-               id="use867"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(-67.5,-282.85849,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82774" />
-            </g>
-            <g
-               id="use869"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(-82.5,-215.5132,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82778" />
-            </g>
-            <g
-               id="use871"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(-97.5,-165.74855,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82782" />
-            </g>
-            <g
-               id="use873"
-               class="dialHoursMarkerHalf"
-               style="fill:#000000"
-               transform="rotate(-112.5,-126.28576,189)">
-              <path
-                 d="M 0,0 -4.434,7.68 H 4.434 Z"
-                 stroke="none"
-                 id="path82786" />
-            </g>
-            <path
-               d="m 249.2,0 10.7,-6.6 m 11.4,198.4 12,3.8 M 0,373.8 v 12.6 m -271.3,-194.6 -12,3.8 M -249.2,0 -259.9,-6.6 m 124.3,-89.3 -5.4,-11.4 M 0,-124.6 v -12.6 m 135.6,41.3 5.4,-11.4"
-               class="cardinalPointTick"
-               id="path875" />
-            <path
-               id="cid0"
-               d="M 53.5,-123.9 C 189.1,-123.9 299,-14 299,121.5 299,257.1 189.1,367 53.5,367 -82,367 -191.9,257.1 -191.9,121.5 -191.9,-14 -82,-123.9 53.5,-123.9"
-               class="invisible" />
-            <text
-               id="text880"><textPath
-                 xlink:href="#cid0"
-                 startOffset="16.2%"
-                 class="cardinalPointLabel"
-                 id="textPath878">Z</textPath></text>
-            <path
-               id="cid1"
-               d="m 38,-155.2 c -150.9,0 -273.2,122.4 -273.2,273.3 0,150.9 122.3,273.2 273.2,273.2 150.9,0 273.2,-122.3 273.2,-273.2 0,-150.9 -122.3,-273.3 -273.2,-273.3"
-               class="invisible" />
-            <text
-               id="text885"><textPath
-                 xlink:href="#cid1"
-                 startOffset="70.099998%"
-                 class="cardinalPointLabel"
-                 id="textPath883">JZ</textPath></text>
-            <path
-               id="cid2"
-               d="m 0,-256.2 c -181.9,0 -329.3,147.4 -329.3,329.3 0,181.8 147.4,329.3 329.3,329.3 181.9,0 329.3,-147.5 329.3,-329.3 0,-181.9 -147.4,-329.3 -329.3,-329.3"
-               class="invisible" />
-            <text
-               id="text890"><textPath
-                 xlink:href="#cid2"
-                 startOffset="50%"
-                 class="cardinalPointLabel"
-                 id="textPath888">J</textPath></text>
-            <path
-               id="cid3"
-               d="m -38,-155.2 c -150.9,0 -273.2,122.4 -273.2,273.3 0,150.9 122.3,273.2 273.2,273.2 150.9,0 273.2,-122.3 273.2,-273.2 0,-150.9 -122.3,-273.3 -273.2,-273.3"
-               class="invisible" />
-            <text
-               id="text895"><textPath
-                 xlink:href="#cid3"
-                 startOffset="29.899999%"
-                 class="cardinalPointLabel"
-                 id="textPath893">JV</textPath></text>
-            <path
-               id="cid4"
-               d="M -53.5,-123.9 C 82,-123.9 191.9,-14 191.9,121.5 191.9,257.1 82,367 -53.5,367 -189.1,367 -299,257.1 -299,121.5 -299,-14 -189.1,-123.9 -53.5,-123.9"
-               class="invisible" />
-            <text
-               id="text900"><textPath
-                 xlink:href="#cid4"
-                 startOffset="83.800006%"
-                 class="cardinalPointLabel"
-                 id="textPath898">V</textPath></text>
-            <path
-               id="cid5"
-               d="m -10,-138.8 c 173,0 313.3,140.3 313.3,313.4 0,173 -140.3,313.3 -313.3,313.3 -173.1,0 -313.4,-140.3 -313.4,-313.3 0,-173.1 140.3,-313.4 313.4,-313.4"
-               class="invisible" />
-            <text
-               id="text905"><textPath
-                 xlink:href="#cid5"
-                 startOffset="93.099999%"
-                 class="cardinalPointLabel"
-                 id="textPath903">SV</textPath></text>
-            <path
-               id="cid6"
-               d="M 0,-139.7 C 195.8,-139.7 354.6,19 354.6,214.8 354.6,410.6 195.8,569.4 0,569.4 -195.8,569.4 -354.6,410.6 -354.6,214.8 -354.6,19 -195.8,-139.7 0,-139.7"
-               class="invisible" />
-            <g
-               transform="rotate(180,0,214.8338)"
-               id="g912">
-              <text
-                 id="text910"><textPath
-                   xlink:href="#cid6"
-                   startOffset="50%"
-                   class="cardinalPointLabel"
-                   id="textPath908">S</textPath></text>
-            </g>
-            <path
-               id="cid7"
-               d="m 10,-138.8 c 173.1,0 313.4,140.3 313.4,313.4 0,173 -140.3,313.3 -313.4,313.3 -173,0 -313.3,-140.3 -313.3,-313.3 0,-173.1 140.3,-313.4 313.3,-313.4"
-               class="invisible" />
-            <text
-               id="text917"><textPath
-                 xlink:href="#cid7"
-                 startOffset="6.8999998%"
-                 class="cardinalPointLabel"
-                 id="textPath915">SZ</textPath></text>
-          </g>
-          <g
-             id="mapAreaBorder"
-             style="display:none;fill:none">
-            <path
-               id="use920"
-               d="m 249.2,0 5.7,9.4 5.3,9.9 4.9,10.4 4.5,10.8 3.9,11.3 3.4,11.8 2.8,12.3 2.1,12.8 1.4,13.3 0.6,13.9 -0.3,14.3 -1.4,14.7 -2.4,15.3 -3.5,15.6 -4.9,16 -6.3,16.3 -7.8,16.5 -9.4,16.6 -11.1,16.5 -13,16.3 -14.8,15.9 -16.8,15.3 -18.6,14.3 -20.6,13.3 -22.3,11.8 -24,10.1 -25.3,8.2 -26.5,6 -27.2,3.7 -27.6,1.2 -27.6,-1.2 -27.2,-3.7 -26.5,-6 -25.3,-8.2 -24,-10.1 -22.3,-11.8 -20.6,-13.3 -18.6,-14.3 -16.8,-15.3 -14.8,-15.9 -13,-16.3 -11.1,-16.5 -9.4,-16.6 -7.8,-16.5 -6.3,-16.3 -4.9,-16 -3.5,-15.6 -2.4,-15.3 -1.4,-14.7 -0.3,-14.3 0.6,-13.9 1.4,-13.3 2.1,-12.8 2.8,-12.3 3.4,-11.8 3.9,-11.3 4.5,-10.8 4.9,-10.4 5.3,-9.9 5.7,-9.4 6,-9 6.4,-8.6 6.6,-8.2 6.9,-7.8 7.1,-7.4 7.4,-7 7.5,-6.6 7.7,-6.3 7.9,-6 8.1,-5.6 8.1,-5.3 8.3,-5 8.4,-4.7 8.5,-4.3 8.7,-4.1 8.6,-3.8 8.8,-3.5 8.9,-3.2 8.9,-3 8.9,-2.6 9,-2.4 9.1,-2.2 9.1,-1.9 9.1,-1.6 9.2,-1.4 9.1,-1.1 9.2,-0.9 9.3,-0.6 9.2,-0.4 9.2,-0.1 9.2,0.1 9.2,0.4 9.3,0.6 9.2,0.9 9.1,1.1 9.2,1.4 9.1,1.6 9.1,1.9 9.1,2.2 9,2.4 8.9,2.6 8.9,3 8.9,3.2 8.8,3.5 8.6,3.8 8.7,4.1 8.5,4.3 8.4,4.7 8.3,5 8.1,5.3 8.1,5.6 7.9,6 7.7,6.3 7.5,6.6 7.4,7 7.1,7.4 6.9,7.8 6.6,8.2 6.4,8.6 z"
-               style="display:none;fill:none;stroke:#000000;stroke-width:3" />
-          </g>
-          <g
-             id="g3018"
-             transform="matrix(1,0,0,-1,-789.45169,952.89047)"
-             style="display:none">
-            <path
-               id="pinMark-1"
-               d="m 781.05169,952.89047 h 16.8 m -8.4,-8.4 v 16.8"
-               class="pinMark"
-               style="display:inline;stroke:#ff8080;stroke-width:1;stroke-linecap:round;stroke-opacity:1" />
-          </g>
-        </g>
-      </g>
-      <g
-         id="g1000"
-         transform="matrix(5.2631581,0,0,5.2631581,-405.67895,-406.82943)"
-         style="display:inline;filter:url(#filter1376)">
-        <g
-           transform="matrix(0.2248,-0.10938,0.10938,0.2248,-41.114,45.036)"
-           id="g8"
-           style="filter:url(#filter4217)">
-          <path
-             d="m 308.46,201.87 v 9.576"
-             style="fill:none;stroke:#ffffff;stroke-width:2"
-             id="path2" />
-          <text
-             x="297.3255"
-             y="199.55194"
-             style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-             xml:space="preserve"
-             id="text6"><tspan
-               x="297.3255"
-               y="199.55194"
-               style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-               id="tspan4">SV</tspan></text>
-        </g>
-        <path
-           d="m 77.086,53.408 c -17.571,-0.0525 -35.84,7.3368 -46.197,21.957 -8.2483,11.432 -9.9924,27.052 -4.6227,40.061 5.8633,15.029 19.575,26.177 34.943,30.487 16.202,4.5969 34.403,1.8513 48.295,-7.7528 12.727,-8.6097 21.634,-23.331 21.501,-38.902 0.0286,-13.753 -7.4207,-26.883 -18.525,-34.797 -10.178,-7.4226 -22.86,-11.045 -35.394,-11.052 z"
-           style="color:#000000;fill:none;stroke:#fffeff;stroke-width:0.5;stroke-opacity:0.99983001;filter:url(#filter4145)"
-           id="path10" />
-        <g
-           transform="matrix(0.25,0,0,0.25,-3.5467e-4,0.51928)"
-           id="g18"
-           style="filter:url(#filter4205)">
-          <path
-             d="m 308.46,201.87 v 9.576"
-             style="fill:none;stroke:#ffffff;stroke-width:2"
-             id="path12" />
-          <text
-             x="303.32339"
-             y="199.55194"
-             style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-             xml:space="preserve"
-             id="text16"><tspan
-               x="303.32339"
-               y="199.55194"
-               style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-               id="tspan14">S</tspan></text>
-        </g>
-        <g
-           transform="matrix(0.12962,0.21377,-0.2138,0.12957,125.37,-69.053)"
-           id="g26"
-           style="filter:url(#filter4199)">
-          <path
-             d="m 497.85,296.56 v 9.576"
-             style="fill:none;stroke:#fffff6;stroke-width:2"
-             id="path20" />
-          <text
-             x="492.71539"
-             y="294.24792"
-             style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-             xml:space="preserve"
-             id="text24"><tspan
-               x="492.71539"
-               y="294.24792"
-               style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-               id="tspan22">Z</tspan></text>
-        </g>
-        <g
-           transform="matrix(0.22598,0.10692,-0.10692,0.22598,53.841,-22.612)"
-           id="g34"
-           style="filter:url(#filter4193)">
-          <path
-             d="m 316.64,201.01 v 9.576"
-             style="fill:none;stroke:#ffffff;stroke-width:2"
-             id="path28" />
-          <text
-             x="306.4082"
-             y="198.67459"
-             style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-             xml:space="preserve"
-             id="text32"><tspan
-               x="306.4082"
-               y="198.67459"
-               style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-               id="tspan30">SZ</tspan></text>
-        </g>
-        <g
-           transform="matrix(-0.075232,0.23841,-0.23841,-0.075232,239.1,17.836)"
-           id="g42"
-           style="filter:url(#filter4187)">
-          <path
-             d="m 497.85,296.56 v 9.576"
-             style="fill:none;stroke:#ffffff;stroke-width:2"
-             id="path36" />
-          <text
-             x="490.13501"
-             y="294.24792"
-             style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-             xml:space="preserve"
-             id="text40"><tspan
-               x="490.13501"
-               y="294.24792"
-               style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-               id="tspan38">JZ</tspan></text>
-        </g>
-        <g
-           transform="matrix(-0.25,0,0,-0.25,155.28,201.76)"
-           id="g50"
-           style="filter:url(#filter4181)">
-          <path
-             d="m 312.68,205.14 v 9.576"
-             style="fill:none;stroke:#fffff7;stroke-width:2"
-             id="path44" />
-          <text
-             x="310.1254"
-             y="200.70932"
-             style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-             xml:space="preserve"
-             id="text48"><tspan
-               x="310.1254"
-               y="200.70932"
-               style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-               id="tspan46">J</tspan></text>
-        </g>
-        <g
-           transform="matrix(0.12772,-0.21491,0.21491,0.12772,-55.052,116.33)"
-           id="g58"
-           style="filter:url(#filter4175)">
-          <path
-             d="m 308.46,201.87 v 9.576"
-             style="fill:none;stroke:#fffffc;stroke-width:2"
-             id="path52" />
-          <text
-             x="303.32339"
-             y="199.55194"
-             style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-             xml:space="preserve"
-             id="text56"><tspan
-               x="303.32339"
-               y="199.55194"
-               style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-               id="tspan54">V</tspan></text>
-        </g>
-        <g
-           transform="matrix(-0.07906,-0.23717,0.23717,-0.07906,-0.20245,203.34)"
-           id="g66"
-           style="filter:url(#filter4169)">
-          <path
-             d="m 308.46,201.87 v 9.576"
-             style="fill:none;stroke:#ffffff;stroke-width:2"
-             id="path60" />
-          <text
-             x="300.06433"
-             y="199.55194"
-             style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-             xml:space="preserve"
-             id="text64"><tspan
-               x="300.06433"
-               y="199.55194"
-               style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-               id="tspan62">JV</tspan></text>
-        </g>
-      </g>
+       transform="matrix(0.2248,-0.10938,0.10938,0.2248,-38.298209,47.171985)"
+       id="g8"
+       style="display:inline;filter:url(#filter4217)">
+      <path
+         d="m 308.46,201.87 v 9.576"
+         style="fill:none;stroke:#ffffff;stroke-width:2"
+         id="path2" />
+      <text
+         x="297.3255"
+         y="199.55194"
+         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+         xml:space="preserve"
+         id="text6"><tspan
+           x="297.3255"
+           y="199.55194"
+           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           id="tspan4">SV</tspan></text>
+    </g>
+    <path
+       d="m 79.901791,55.543985 c -17.571001,-0.0525 -35.840001,7.3368 -46.197001,21.957 -8.2483,11.432 -9.9924,27.052005 -4.6227,40.061005 5.8633,15.029 19.575,26.177 34.943,30.487 16.202001,4.5969 34.403,1.8513 48.295,-7.7528 12.727,-8.6097 21.634,-23.331 21.501,-38.902 0.0286,-13.753005 -7.4207,-26.883005 -18.525,-34.797005 -10.178,-7.4226 -22.859999,-11.045 -35.394,-11.052 z"
+       style="color:#000000;display:inline;fill:none;stroke:#fffeff;stroke-width:0.5;stroke-opacity:0.99983;filter:url(#filter4145)"
+       id="path10" />
+    <g
+       transform="matrix(0.25,0,0,0.25,2.8154358,2.6552653)"
+       id="g18"
+       style="display:inline;filter:url(#filter4205)">
+      <path
+         d="m 308.46,201.87 v 9.576"
+         style="fill:none;stroke:#ffffff;stroke-width:2"
+         id="path12" />
+      <text
+         x="303.32339"
+         y="199.55194"
+         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+         xml:space="preserve"
+         id="text16"><tspan
+           x="303.32339"
+           y="199.55194"
+           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           id="tspan14">S</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.12962,0.21377,-0.2138,0.12957,128.18579,-66.917015)"
+       id="g26"
+       style="display:inline;filter:url(#filter4199)">
+      <path
+         d="m 497.85,296.56 v 9.576"
+         style="fill:none;stroke:#fffff6;stroke-width:2"
+         id="path20" />
+      <text
+         x="492.71539"
+         y="294.24792"
+         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+         xml:space="preserve"
+         id="text24"><tspan
+           x="492.71539"
+           y="294.24792"
+           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           id="tspan22">Z</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.22598,0.10692,-0.10692,0.22598,56.65679,-20.476015)"
+       id="g34"
+       style="display:inline;filter:url(#filter4193)">
+      <path
+         d="m 316.64,201.01 v 9.576"
+         style="fill:none;stroke:#ffffff;stroke-width:2"
+         id="path28" />
+      <text
+         x="306.4082"
+         y="198.67459"
+         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+         xml:space="preserve"
+         id="text32"><tspan
+           x="306.4082"
+           y="198.67459"
+           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           id="tspan30">SZ</tspan></text>
+    </g>
+    <g
+       transform="matrix(-0.075232,0.23841,-0.23841,-0.075232,241.91579,19.971985)"
+       id="g42"
+       style="display:inline;filter:url(#filter4187)">
+      <path
+         d="m 497.85,296.56 v 9.576"
+         style="fill:none;stroke:#ffffff;stroke-width:2"
+         id="path36" />
+      <text
+         x="490.13501"
+         y="294.24792"
+         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+         xml:space="preserve"
+         id="text40"><tspan
+           x="490.13501"
+           y="294.24792"
+           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           id="tspan38">JZ</tspan></text>
+    </g>
+    <g
+       transform="matrix(-0.25,0,0,-0.25,158.09579,203.89599)"
+       id="g50"
+       style="display:inline">
+      <path
+         d="m 312.68,174.50768 0,39.22933"
+         style="fill:none;stroke:#0000ff;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path44" />
+    </g>
+    <g
+       transform="matrix(0.12772,-0.21491,0.21491,0.12772,-52.236209,118.46599)"
+       id="g58"
+       style="display:inline;filter:url(#filter4175)">
+      <path
+         d="m 308.46,201.87 v 9.576"
+         style="fill:none;stroke:#fffffc;stroke-width:2"
+         id="path52" />
+      <text
+         x="303.32339"
+         y="199.55194"
+         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+         xml:space="preserve"
+         id="text56"><tspan
+           x="303.32339"
+           y="199.55194"
+           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           id="tspan54">V</tspan></text>
+    </g>
+    <g
+       transform="matrix(-0.07906,-0.23717,0.23717,-0.07906,2.6133405,205.47599)"
+       id="g66"
+       style="display:inline;filter:url(#filter4169)">
+      <path
+         d="m 308.46,201.87 v 9.576"
+         style="fill:none;stroke:#ffffff;stroke-width:2"
+         id="path60" />
+      <text
+         x="300.06433"
+         y="199.55194"
+         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+         xml:space="preserve"
+         id="text64"><tspan
+           x="300.06433"
+           y="199.55194"
+           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           id="tspan62">JV</tspan></text>
     </g>
   </g>
 </svg>
