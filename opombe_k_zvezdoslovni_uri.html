@@ -41,13 +41,48 @@
             <div><a href="./knjiznica">Knjižnica</a></div></div>
             <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
             <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
+
+            <hr>
+                <p>KAZALO</p>
+                    <ul class="ugn1">
+                        <li><a href="#Vhodni podatki">Vhodni podatki / viri</a></li>
+                        <li><details><summary><a href="#Sončna ura">Sončna ura</a></summary>
+                            <ul>
+                                <li><a href="#Letna številčnica">Letna številčnica</a></li>
+                                <li><a href="#Urna številčnica">Urna številčnica</a></li>
+                                <li><a href="#Deli dneva">Deli dneva</a></li>
+                                <li><a href="#Luna">Luna</a></li>
+                            </ul>
+                        </details></li>
+                        <li><details><summary><a href="#Stransko okno">Stransko okno</a></summary>
+                            <ul>
+                                <li><a href="#Zlata ura">Zlata ura</a></li>
+                                <li><a href="#Višina Sonca in Lune">Višina Sonca in Lune</a></li>
+                                <li><a href="#Azimut Sonca in Lune">Azimut Sonca in Lune</a></li>
+                                <li><a href="#Paralaktični kot Lune">Paralaktični kot Lune</a></li>
+                                <li><a href="#Kot Lune">Kot Lune</a></li>
+                                <li><a href="#Mena Lune">Mena Lune</a></li>
+                            </ul>
+                        </details></li>
+                        <li><details><summary><a href="#Zemljevid zvezdnega neba">Zemljevid zvezdnega neba</a></summary>
+                            <ul>
+                                <li><a href="#Obzorje">Obzorje</a></li>
+                                <li><a href="#Ravnina osončja">Ravnina osončja</a></li>
+                                <li><a href="#Letna številčnica Z">Letna številčnica</a></li>
+                                <li><a href="#Urna številčnica Z">Urna številčnica</a></li>
+                                <li><a href="#Mreža">Mreža</a></li>
+                                <li><a href="#Rimska cesta">Rimska cesta</a></li>
+                            </ul>
+                        </details></li>
+                        <li><a href="#Zunanje povezave in viri">Zunanje povezave in viri</a></li>
+                    </ul>
           </nav>
         </aside>
 
         <div class="content">
             <h1>Opombe k zvezdoslovni uri</h1>
             <p class="besedilosred"><a href="./zvezdoslovna_ura"><i>Zvezdoslovna ura</i></a></p>
-            <h5>Vhodni podatki / viri</h5>
+            <h5 id="Vhodni podatki">Vhodni podatki / viri</h5>
             <p>
                 <ul class="s">
                     <li>Privzeti zemljepisni položaj, za katerega veljajo podatki prikazani na uri je Slovenija (Ljubljana, 46° g.š., 15° g.d.).</li>
@@ -58,11 +93,11 @@
                     <br><i>nedelja (31 - (celi del(((5 * leto) / 4) + 4) mod 7)). marec ob 02.00</i>
                     <br><i>nedelja (31 - (celi del(((5 * leto) / 4) + 1) mod 7)). oktober ob 02.00</i>
                     <li>Podatki za datum, uro in zemljepisni položaj so pridobljeni z naprave in so odvisni od nastavitev, oz. zmogljivosti naprave (računalniki običajno nimajo GPS-a, zato ima naprava določen položaj glede na središče nastavljene države v nastavitvah naprave).</li>
-                    <li>Številski podatki o vzhodih, zahodih, dolžini dneva, poldnevu so pridobljeni z API od <a href="https://sunrise-sunset.org/api" target="_blank" rel="noopener noreferrer"><i>Sunrise Sunset - Sunset and sunrise times API</i></a></li>
-                    <li>Številski podatki o kotu in osvetljenosti Lune so pridobljeni z API od <a href="https://astronomyapi.com/" target="_blank" rel="noopener noreferrer"><i>Astronomy API</i></a></li>
+                    <li>Številski podatki o položajih planetov, Sonca in Lune, ki so prikazani v konzoli (pod <i>data</i>; posodobijo se le ob naložitvi, oz. osvežitvi strani), so pridobljeni z API od <a href="https://astronomyapi.com/" target="_blank" rel="noopener noreferrer"><i>Astronomy API</i></a></li>
+                    <li>Podatki, prikazani v stranskem oknu, so izračunani z Javascriptom <a href="https://github.com/mourner/suncalc" target="_blank" rel="noopener noreferrer"><i>SunCalcom Volodymyrja Agafonkina</i></a> (GitHub) [<a  class="arh" href="https://web.archive.org/web/20231204202613/https://github.com/mourner/suncalc" target="_blank" rel="noopener noreferrer"><i>arhivirano</i></a>]</li>
                 </ul>
             </p>
-            <h5 id="Sestavni deli">Sestavni deli</h5>
+            <h5 id="Sončna ura">Sončna ura</h5>
             <h6 id="Letna številčnica">Letna številčnica</h6>
             <div class="deli">
                 <img
@@ -72,7 +107,7 @@
             <p><a href="#dolžina leta">Leto</a> je razdeljeno na 12 mesecev, zapisanih s <a href="./nova_stara_slovenscina#Slovenski meseci">slovenskimi poimenovanji</a>.
             </p>
             <p>
-                Notranji trak črtic označuje dni in meje mesecev za navadno leto, zunanji pa za prestopno, ki ima en dan konec februarja več, zato so tudi dnevi od tam naprej zamaknjeni za enega napre in se leto konča po mestu, kjer se začne to prestopno leto.<br>
+                Notranji trak črtic označuje dni in meje mesecev za navadno leto, zunanji pa za prestopno, ki ima en dan konec februarja več, zato so tudi dnevi od tam naprej zamaknjeni za enega naprej in se leto konča po mestu, kjer se začne to prestopno leto.<br>
                 Prestopno je vsako leto, ki je deljivo s 4 (vsako 4. leto), razen če je deljivo tudi s 100. Če pa je deljivo tudi s 400, je ponovno prestopno.
             </p>
             <p>
@@ -87,8 +122,11 @@
                     width="100%"
                     height="100%"/>
             </div>
-            <p>Urni prikaz je 24-uren, kar mora biti, ker urni kazalec pravzaprav prikazuje vrtenje Zemlje okoli svoje osi, oz. naš položaj na Zemlji glede na Sonce. Ker se Zemlja vrti v pozitivni smeri, oz. nasprotni smeri (običajnega) urnega kazalca, se tudi kazalci na tej uri vrtijo v pozitivni smeri.<br>
-                Napisana je vsaka druga ura, kar olajša razbiranje minut - med vsako napisano uro je 5 minut, tako kot pri običajni 12-urni uri. 60 (minut) deljeno 12 (ur) je namreč 5 (minut). Enako kot za minute velja tudi za sekunde.<br>
+            <p>Urni prikaz je 24-uren, kar mora biti, ker urni kazalec pravzaprav prikazuje vrtenje Zemlje okoli svoje osi, oz. naš položaj na Zemlji glede na Sonce. Ker se Zemlja vrti v pozitivni smeri, oz. nasprotni smeri (običajnega) urnega kazalca, se tudi kazalci na tej uri vrtijo v pozitivni smeri.
+            </p>
+            <p>Urni kazalec je modri, minutni srednje široki in sekundni kazalec ozki.
+            </p>
+            <p>Napisana je vsaka druga ura, kar olajša razbiranje minut - med vsako napisano uro je 5 minut, tako kot pri običajni 12-urni uri. 60 (minut) deljeno 12 (ur) je namreč 5 (minut). Enako kot za minute velja tudi za sekunde.<br>
                 Z daljšimi črtnimi oznakami so označene še preostale (nenapisane) ure; s krajšimi črtnimi oznakami pa minute.
             </p>
             <h7 id="Deli dneva">Deli dneva</h7>
@@ -101,16 +139,16 @@
                     width="100%"
                     height="100%"/>
             </div>
-            <p>Kakor je seveda razumljivo, skupina štirih krivulj na desni predstavlja sončni vzhod, skupina na levi pa zahod.
+            <p>Skupina štirih rdečih krivulj na desni predstavlja sončni vzhod, skupina na levi pa zahod.
                 <ul class="s">
-                    <li>Zgornji rumeni krivulji predstavljata pravi sončni vzhod/zahod.</li>
-                    <li>Rdeči krivulji pod rumenimi predstavljata t.i. meščanski mrak: del dneva po sončnem zahodu in pred sončnim vzhodom, ko je Sonce pod obzorjem od 0° do 6° in je že/še svetlo zaradi sipanja svetlobe, vidne pa so še/že najsvetlejša zvezdna telesa.</li>
-                    <li>Rdeči krivulji v sredini predstavljata pomorski (<i class="zamrznjeno">navtični</i>) mrak: del dneva po sončnem zahodu in pred sončnim vzhodom, ko je Sonce pod obzorjem od 6° do 12°</li>
+                    <li>Zgornji krivulji predstavljata <i>pravi</i>/običajni sončni vzhod/zahod.</li>
+                    <li>Drugi krivulji od zgorajpredstavljata (t.i. meščansko) zoro/mrak: del dneva po sončnem zahodu in pred sončnim vzhodom, ko je Sonce pod obzorjem od 0° do 6° in je že/še na večini kopnega svetlo zaradi sipanja svetlobe, vidne pa so še/že najsvetlejša zvezdna telesa.</li>
+                    <li>Krivulji v sredini predstavljata pomorsko (<i class="zamrznjeno">navtični</i>) zoro/mrak: del dneva pred sončnim vzhodom, oz. po sončnem zahodu ko je Sonce pod obzorjem od 6° do 12°. Takrat je zaradi sipanja svetlobe že/še svetlo na morju, kjer je obzorje najnižje in nižje kot na večini kopnega.</li>
                     <li>Spodnji rdeči krivulji predstavljata vesoljeslovski (<i class="zamrznjeno">astronomski</i>) mrak: del dneva po sončnem zahodu in pred sončnim vzhodom, ko je Sonce pod obzorjem od 12° do 16°/18°</li>
                 </ul>
                 Navpična črta je letni kazalec, ki na <a href="#Letna številčnica">letni številčnici</a> kaže mesec in dan; hkrati pa razpolavlja dan, oz. označuje poldne in polnoč.
             </p>
-            <p>Rumen krog predstavlja našo dnevno tirnico. Njegov polmer je odvisen od tega, v katerem delu leta se nahajamo; njegov obod niha od manjšega belega kroga v sredini do oboda <a href="#Urna številčnica">urne številčnice</a>. Ob poletnem obratu, ko je dan najdaljši, je polmer kroga večji (leži na obodu urne številčnice), saj je dan daljši in smo glede na Sonce na nižji zemljepisni širini; ob zimskem obratu pa je polmer kroga manjši (leži na manjšem belem krogu v sredini), saj je dan krajši in smo glede na Sonce na višji zemljepisni širini. Presečišča kroga in krivulj tako povedo čase mraka/vzhoda/zahoda.
+            <p>Rumen krog predstavlja našo dnevno tirnico (oblika  in velikost sta  prilagojeni za lažje branje in izdelavo). Njegov polmer je odvisen od tega, v katerem delu leta se nahajamo; njegov obod niha od manjšega belega kroga v sredini do oboda <a href="#Urna številčnica">urne številčnice</a>. Ob poletnem obratu, ko je dan najdaljši, je polmer kroga večji (leži na obodu urne številčnice), saj je dan daljši in smo glede na Sonce na nižji zemljepisni širini; ob zimskem obratu pa je polmer kroga manjši (leži na manjšem belem krogu v sredini), saj je dan krajši in smo glede na Sonce na višji zemljepisni širini. Presečišča kroga in krivulj tako povedo čase mraka/vzhoda/zahoda.
             </p>
             <h6 id="Luna">Luna</h6>
             <div class="lunadel" height="6rem">
@@ -148,7 +186,79 @@
             <p><i>2R=2r/(sin(2*tan<sup>-1</sup>(r/(2*r*sinφ))))</i></p>
             <p>Za odmik kroga mene od roba lune pa se uporabi enačba:</p>
             <p><i>x=r-r*sinφ</i></p>
-            <h3>Zunanje povezave in viri</h3>
+            <h5 id="Stransko okno">Stransko okno</h5>
+            <p id="Zlata ura"><b>Zlata ura</b> (prevod je dobeseden iz ang. <i>Golden hour</i>): obdobje dneva kmalu po sončnem vzhodu ali pred sončnim zahodom, ko je naravna svetloba bolj rdeča in mehka kot takrat, ko je sonce višje na nebu. Je večjega pomena za fotografijo.
+            </p>
+            <p id="Višina Sonca in Lune"><b>Višina Sonca in Lune</b>: kot med premicama izhodišče - obzorje in izhodišče - položaj Sonca/Lune. Ko je opazovano telo na obzorju je kot enak 0°, ko je v nadglavišču 90°; ko opazovano telo ni vidno (za Sonce je to ponoči), je kot višine negativen.
+            </p>
+            <p id="Azimut Sonca in Lune"><b>Azimut Sonca in Lune</b>: ker se nahajamo na severni polobli, Sonce vidimo vedno na južni polovici obzorja, zato je za izhodišče azimuta vzet jug, ne sever. Na jugu je torej azimut 0°, proti vzhodu je pozitiven, proti zahodu pa negativen.
+            </p>
+            <p id="Paralaktični kot Lune"><b>Paralaktični kot Lune</b>: kot med pravokotnico na Zemljino površje v gledišču in ravnino Luninega kroženja. Kot je tako enak 0°, ko gre Luna skozi nadglavišče.
+            </p>
+            <p id="Kot Lune"><b>Kot Lune</b>: središčni kot osvetljenega kraka lune, računano vzhodno od severne točke diska; luna je rastoča, če je kot negativen, in pojemajoča, če je pozitiven
+            </p>
+            <p id="Mena Lune"><b>Mena Lune</b>: lunina faza; giblje se od 0,0 do 1,0:
+                <table>
+                    <tr><td>0</td><td>mlaj</td></tr>
+                    <tr><td></td><td>rastoči srp</td></tr>
+                    <tr><td>0.25</td><td>prvi krajec</td></tr>
+                    <tr><td></td><td>rastoča Luna</td></tr>
+                    <tr><td>0.5</td><td>ščip / polna luna</td></tr>
+                    <tr><td></td><td>upadajoča Luna</td></tr>
+                    <tr><td>0.75</td><td>zadnji krajec</td></tr>
+                    <tr><td></td><td>upadajoči srp</td></tr>
+                </table>
+            </p>
+            <h5 id="Zemljevid zvezdnega neba">Zemljevid zvezdnega neba</h5>
+            <p id="Obzorje"><b>Obzorje</b> trenutno vidnega neba (v Sloveniji) je označeno z belim ovalom, kjer so označene tudi strani neba.
+            </p>
+            <div class="deli">
+                <img
+                    src="/images/zemljevid_zvezdnega_neba-obzorje2.svg"
+                    width="100%"
+                    height="100%"/>
+            </div>
+            <p id="Ravnina osončja"><b>Ravnina osončja</b> je označena z rdečim krogom.
+            </p>
+            <div class="deli">
+                <img
+                    src="/images/zemljevid_zvezdnega_neba-zvezde-ravnina_osončja.svg"
+                    width="100%"
+                    height="100%"/>
+            </div>
+            <p id="Letna številčnica Z"><b>Letna številčnica</b> označuje, kje je jug obzorja ob 12-ih tistega dne.
+            </p>
+            <div class="deli">
+                <img
+                    src="/images/zemljevid_zvezdnega_neba-zvezde-letna_stevilcnica.svg"
+                    width="100%"
+                    height="100%"/>
+            </div>
+            <p id="Urna številčnica Z"><b>Urna številčnica</b> se obrača glede na zgoraj omenjeno pravilo. Kaže, kje je trenutno jug obzorja trenutnega dne.
+            </p>
+            <div class="deli">
+                <img
+                    src="/images/urna_stevilcnica.svg"
+                    width="100%"
+                    height="100%"/>
+            </div>
+            <p id="Mreža">Na <b>mreži</b> so označeni Zemljin ekvator (0°) vzporedniki in poldnevniki oreslikani na nebesno kroglo. Kot središča točka je označena Zemljina os, okoli katere se (navidezno) vrti nebo.
+            </p>
+            <div class="deli">
+                <img
+                    src="/images/zemljevid_zvezdnega_neba-zvezde-mreža.svg"
+                    width="100%"
+                    height="100%"/>
+            </div>
+            <p id="Rimska cesta"><b>Rimska cesta</b> je označena s temejšo sivo.
+            </p>
+            <div class="deli">
+                <img
+                    src="/images/zemljevid_zvezdnega_neba-zvezde-rimska_cesta.svg"
+                    width="100%"
+                    height="100%"/>
+            </div>
+            <h3 id="Zunanje povezave in viri">Zunanje povezave in viri</h3>
             <ul class="s">
                 <li><a href="https://www.timeanddate.com/astronomy/different-types-twilight.html" target="_blank" rel="noopener noreferrer">Time and Date: Twilight, Dawn, and Dusk</a> [<a class="arh" href="https://web.archive.org/web/20231117102810/https://www.timeanddate.com/astronomy/different-types-twilight.html" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
                 <li><a href="https://sl.wikipedia.org/wiki/Poletni_%C4%8Das" target="_blank" rel="noopener noreferrer">Wikipedija: Poletni čas</a> [<a class="arh" href="https://web.archive.org/web/20231018060327/https://sl.wikipedia.org/wiki/Poletni_%C4%8Das" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
