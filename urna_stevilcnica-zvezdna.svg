@@ -1,0 +1,179 @@
+<?xml
+    version="1.0"
+    encoding="UTF-8"?>
+<svg
+    display="flex"
+    float="center"
+    position="absolute"
+    version="1.1"
+    viewBox="0 0 105.83 105.83"
+    viewbox="0 0 106 106"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+        <circle
+            cx="52.917"
+            cy="52.917"
+            r="52.718"
+            style="fill:none;stroke-linejoin:round;stroke-opacity:.87;stroke-width:0.2px;stroke:#fff"/>
+        <path
+            d="m52.915-1.5e-8 -1e-6 2.1167m-5.5306-1.8273 0.22125 2.1051m-5.6913-1.2392 0.44008 2.0704m-5.7897-0.6375 0.65408 2.0131m-5.8246-0.028823 0.86092 1.9337m-5.7957 0.58017 1.0583 1.8331m-5.7033 1.1828 1.2441 1.7124m-5.5484 1.7725 1.4163 1.573m-5.3328 2.3428 1.573 1.4163m-5.0587 2.8873 1.7124 1.2441m-4.7291 3.4003 1.8331 1.0583m-4.3478 3.876 1.9337 0.86093m-3.9188 4.3092 2.0131 0.65409m-3.4469 4.6953 2.0704 0.44008m-2.9373 5.0298 2.1051 0.22125m-2.3954 5.3093 2.1167 1e-6m-1.8273 5.5306 2.1051-0.22125m-1.2392 5.6913 2.0704-0.44008m-0.6375 5.7897 2.0131-0.65408m-0.028823 5.8246 1.9337-0.86092m0.58017 5.7957 1.8331-1.0583m1.1828 5.7033 1.7124-1.2441m1.7725 5.5484 1.573-1.4163m2.3428 5.3328 1.4163-1.573m2.8873 5.0587 1.2441-1.7124m3.4003 4.7291 1.0583-1.8331m3.876 4.3478 0.86093-1.9337m4.3092 3.9188 0.65409-2.0131m4.6953 3.4469 0.44008-2.0704m5.0298 2.9373 0.22125-2.1051m5.3093 2.3954v-2.1167m5.5306 1.8273-0.22125-2.1051m5.6913 1.2392-0.44008-2.0704m5.7897 0.6375-0.65408-2.0131m5.8246 0.0288-0.86092-1.9337m5.7957-0.58017-1.0583-1.8331m5.7033-1.1828-1.2441-1.7124m5.5484-1.7725-1.4163-1.573m5.3328-2.3428-1.573-1.4163m5.0587-2.8873-1.7124-1.2441m4.7291-3.4003-1.8331-1.0583m4.3478-3.876-1.9337-0.86093m3.9188-4.3092-2.0131-0.65409m3.4469-4.6953-2.0704-0.44008m2.9373-5.0298-2.1051-0.22125m2.3954-5.3093-2.1167-1e-6m1.8273-5.5306-2.1051 0.22125m1.2392-5.6913-2.0704 0.44008m0.6375-5.7897-2.0131 0.65408m0.0288-5.8246-1.9337 0.86092m-0.58017-5.7957-1.8331 1.0583m-1.1828-5.7033-1.7124 1.2441m-1.7725-5.5484-1.573 1.4163m-2.3428-5.3328-1.4163 1.573m-2.8873-5.0587-1.2441 1.7124m-3.4003-4.7291-1.0583 1.8331m-3.876-4.3478-0.86093 1.9337m-4.3092-3.9188-0.65409 2.0131m-4.6953-3.4469-0.44008 2.0704m-5.0298-2.9373-0.22125 2.1051"
+            style="fill:none;stroke-opacity:.87;stroke-width:.39687;stroke:#fff"/>
+        <path
+            d="m65.244 7.0076 1.3675-5.2049m-25.971 5.1876-1.4182-5.1913m-19.898 17.478-3.8238-3.7867m-8.4929 25.085-5.2049-1.3675m5.1876 25.971-5.1913 1.4182m17.478 19.898-3.7867 3.8238m25.085 8.4929-1.3675 5.2049m25.971-5.1876 1.4182 5.1913m19.898-17.478 3.8238 3.7867m8.4929-25.085 5.2049 1.3675m-5.1876-25.971 5.1913-1.4182m-17.478-19.898 3.7867-3.8238"
+            style="fill:none;stroke-opacity:.87;stroke-width:.40018;stroke:#fff"/>
+        <path
+            id="path6560"
+            d="m58.308 1.605-5.3934-0.2821-5.3933 0.2832"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path6694"
+            d="m83.244 11.174-4.5298-2.941-4.8124-2.4514"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path6842"
+            d="m100.05 31.929-2.4524-4.8119-2.9419-4.5292"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path6957"
+            d="m104.23 58.308 0.2821-5.3934-0.2832-5.3933"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path6959"
+            d="m94.666 83.244 2.941-4.5298 2.4514-4.8124"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path6961"
+            d="m73.911 100.05 4.8119-2.4524 4.5292-2.9419"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path6996"
+            d="m47.532 104.23 5.3934 0.2821 5.3933-0.2832"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path7111"
+            d="m22.596 94.666 4.5298 2.941 4.8124 2.4514"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path7226"
+            d="m5.7859 73.911 2.4524 4.8119 2.9419 4.5292"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path7341"
+            d="m1.605 47.532-0.2821 5.3934 0.2832 5.3933"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path7456"
+            d="m11.174 22.596-2.941 4.5298-2.4514 4.8124"
+            style="opacity:0;stroke-width:.26458px"/>
+        <path
+            id="path7571" d="m31.929 5.7859-4.8119 2.4524-4.5292 2.9419"
+            style="opacity:0;stroke-width:.26458px"/>
+        <text
+            style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-opacity:.87;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                    startOffset="50%"
+                    xlink:href="#path6961"><tspan
+                        dy="-1"
+                        style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-opacity:.87;stroke-width:.26458;text-align:center;text-anchor:middle">10</tspan></textPath>
+        </text>
+        <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                    startOffset="50%"
+                    xlink:href="#path6959"><tspan
+                        dy="-1"
+                        style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">8</tspan></textPath>
+        </text>
+        <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                    startOffset="50%"
+                    xlink:href="#path6957"><tspan
+                        dy="-1"
+                        style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">6</tspan></textPath>
+        </text>
+        <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                startOffset="50%"
+                xlink:href="#path6842"><tspan
+                    dy="-1"
+                    style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">4</tspan></textPath>
+        </text>
+        <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                startOffset="50%"
+                xlink:href="#path6694"><tspan
+                    dy="-1"
+                    style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">2</tspan></textPath>
+        </text>
+        <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                startOffset="50%"
+                xlink:href="#path6560"><tspan
+                    dy="-1"
+                    style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">24</tspan></textPath>
+        </text>
+        <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                startOffset="50%"
+                xlink:href="#path7571"><tspan
+                    dy="-1"
+                    style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">22</tspan></textPath>
+        </text>
+        <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                startOffset="50%"
+                xlink:href="#path7456"><tspan
+                    dy="-1"
+                    style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">20</tspan></textPath>
+        </text>
+        <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                startOffset="50%"
+                xlink:href="#path7341"><tspan
+                    dy="-1"
+                    style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">18</tspan></textPath>
+        </text>
+        <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                startOffset="50%"
+                xlink:href="#path7226"><tspan
+                    dy="-1"
+                    style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">16</tspan></textPath>
+        </text>
+        <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                startOffset="50%"
+                xlink:href="#path7111"><tspan
+                    dy="-1"
+                    style="fill-opacity:.87;fill:#ffffff;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">14</tspan></textPath>
+        </text>
+            <text
+            style="font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;stroke-width:.26458"
+            xml:space="preserve">
+                <textPath
+                startOffset="50%"
+                xlink:href="#path6996"><tspan
+                    dy="-1"
+                    style="fill-opacity:.87;fill:#fff6f6;font-family:'Times New Roman Serif';font-size:3px;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:.26458;text-align:center;text-anchor:middle">12</tspan></textPath>
+        </text>
+</svg>
