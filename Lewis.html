@@ -1,12 +1,34 @@
 <!doctype html>
-<html>
+<html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Narnija</title>
-          <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" vsebina="IE=edge" />
+        <meta name="viewport" vsebina="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
         <script src="scripts.js"></script>
+
+        <title>C. S. Lewis</title>
+        <meta name="description" vsebina="O Clivu Staplesu Lewisu in njegovem delu, Zgodbah iz Narnije." /> <!--opis spletnega mesta-->
+        <meta name="keywords" vsebina="Lewis, Clive Staples Lewis" />
+        <meta name="copyright" vsebina="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name vsebina="C. S. Lewis (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor vsebina=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color vsebina=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" vsebina="C. S. Lewis"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" vsebina="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" vsebina="O Clivu Staplesu Lewisu in njegovem delu, Zgodbah iz Narnije."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" vsebina="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" vsebina="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" vsebina="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" vsebina="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" vsebina="O Clivu Staplesu Lewisu in njegovem delu, Zgodbah iz Narnije."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" vsebina="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
 
     <body>
@@ -15,36 +37,88 @@
         </label>
         <aside class="sidebar">
           <nav>
-            <div><a href="knjiznica.html">Knjižnica</a></div>
-            <div><a href="ura.html">Ura</a></div></div>
+            <div><a href="./">Domov</a></div></div>
+            <div><a href="knjiznica">Knjižnica</a></div>
+            <div><a href="zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
           </nav>
         </aside>
 
+        <div class="vodoravne2">
+            <span class="stransko st-l">
+                <img
+                    content-visibility="auto"
+                    alt="J. R. R. Tolkien v srednjih letih"
+                    src="./images/Lewis2.jpg"
+                    width="100%"/>
+            </span>
+            <span class="stransko st-d">
+                <img
+                    content-visibility="auto"
+                    alt="Clive Staples Lewis"
+                    src="./images/Lewis.jpeg"
+                    width="100%"/>
+            </span>
+        </div>
+
         <div class="content">
             <h1>Clive Staples Lewis</h1>
-            <h2>Zgodbe iz Narnije</h2>
+            <p class="podnaslov2">29. listopad 1898 - 22. listopad 1963</p>
+                <img
+                    content-visibility="auto"
+                    loading="lazy"
+                    src="./images/Lewis-podpis.svg"
+                    class="image-center obrnjena"
+                    height="60px"/>
+            <h2 id="Dela">Dela</h2>
+            <h3>Zgodbe iz Narnije</h3>
             <p class="velikosredinsko"><i>(The Chronicles of Narnia)</i></p>
-            <p>Vrstni red izdaj (1950 - 1956), oz. pisanja:<br>
-                <ol>
-                    <li>Lev, čarovnica in omara (<i>The Lion, the Witch and the Wardrobe</i>)</li>
-                    <li>Princ Kaspijan (<i>Prince Caspian</i>)</li>
-                    <li>Potovanje Potepuške zarje (<i>The Voyage of the Dawn Treader</i>)</li>
-                    <li>Srebrni stol (<i>The Silver Chair</i>)</li>
-                    <li>Konj in njegov deček (<i>The Horse and His Boy</i>)</li>
-                    <li>Čarovnikov nečak (<i>The Magician's Nephew</i>)</li>
-                    <li>Zadnja bitka (<i>The Last Battle</i>)</li>
-                </ol><br>
+            <p>Vrstni red izdaj pisanja, oz. izdaj (1950 - 1956):<br>
+                <ul class="s">
+                    <li>1950: <i><b>The Lion, the Witch and the Wardrobe</b></i> (<i>Lev, čarovnica in omara</i>)</li>
+                    <li>1951: <i><b>Prince Caspian</b> - The Return to Narnia</i> (<i>Princ Kaspijan</i>)</li>
+                    <li>1952: <i><b>The Voyage of the Dawn Treader</b></i> (<i>Potovanje Potepuške zarje</i>)</li>
+                    <li>1953: <i><b>The Silver Chair</b></i> (<i>Srebrni stol</i>)</li>
+                    <li>1954: <i><b>The Horse and His Boy</b></i> (<i>Konj in njegov deček</i>)</li>
+                    <li>1955: <i><b>The Magician's Nephew</b></i> (<i>Čarovnikov nečak</i>)</li>
+                    <li>1956: <i><b>The Last Battle</b></i> (<i>Zadnja bitka</i>)</li>
+                </ul><br>
             Vrstni red knjig, glede na tok pripovedi:<br>
                 <ol>
                     <li>Čarovnikov nečak</li>
                     <li>Lev, čarovnica in omara</li>
-                    <li class="zamaknjeno">Konj in njegov deček (dogaja se proti koncu zgodbe <i>Lev, čarovnica in omara</i>)</li>
+                    <li class="zamaknjeno">Konj in njegov deček (dogaja na koncu zgodbe <i>Lev, čarovnica in omara</i>)</li>
                     <li>Princ Kaspijan</li>
                     <li>Potovanje Potepuške zarje</li>
                     <li>Srebrni stol</li>
                     <li>Zadnja bitka</li>
                 </ol>
+            <h4 id="Slovenski prevodi">Slovenski prevodi</h4>
+                <ul class="s">
+                    <li>1994: Čarovnikov nečak - Del 1 (Miriam Drev)</li>
+                    <li>1994: Lev, čarovnica in omara - Del 2 (Miriam Drev)</li>
+                    <li>1997: Konj in njegov deček - Del 3 (Jakob Emeršič)</li>
+                    <li>1997: Princ Kaspijan - Del 4 (Jakob Emeršič)</li>
+                    <li>1997: Potovanje jutranje zarje - Del 5 (Jakob Emeršič)</li>
+                    <li>1997: Srebrni stol - Del 6 (Jakob Emeršič)</li>
+                    <li>1997: Poslednji boj - Del 7 (Jakob Emeršič)</li>
+                    <br>
+                    <li>2005: Lev, čarovnica in omara (Miriam Drev; ponatisi: 1.- 2006, 2.-2009)</li>
+                    <li>2006: Čarovnikov nečak (Miriam Drev; ponatisi: 1.-2009)</li>
+                    <li>2007: Konj in njegov fantič (Miriam Drev; 2. izdaja; ponatisi: 2.-2009)</li>
+                    <li>2007: Potovanje Potepuške zarje  (Miriam Drev; 1. izdaja)</li>
+                    <li>2007: Princ Kaspijan  (Miriam Drev; 1. izdaja; ponatisi: 1.-2009)</li>
+                    <li>2008: Srebrni stol  (Miriam Drev; 1. izdaja)</li>
+                    <li>2008: Zadnja bitka  (Miriam Drev; 1. izdaja)</li>
+                </ul>
             </p>
-        </div>       
+            <h2 id="Zunanje povezave in viri">Zunanje povezave in viri</h2>
+            <ul class="s">
+                <li><a href="https://www.cslewis.com" target="_blank" rel="noopener noreferrer">Clive Staples Lewis</a> (uradna spletna stran)</li>
+                <li><a href="https://sl.wikipedia.org/wiki/Clive_Staples_Lewis" target="_blank" rel="noopener noreferrer">Wikipedija: Clive Staples Lewis</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/C._S._Lewis_bibliography" target="_blank" rel="noopener noreferrer">Wikipedia: C. S. Lewis bibliography</a></li>
+                <li><a href="https://archive.org/search?query=%28%28subject%3A%22Lewis%2C+Clive+Staples%22+OR+subject%3A%22Lewis%2C+Clive+S.%22+OR+subject%3A%22Lewis%2C+C.+S.%22+OR+subject%3A%22Clive+Staples+Lewis%22+OR+subject%3A%22Clive+S.+Lewis%22+OR+subject%3A%22C.+S.+Lewis%22+OR+creator%3A%22Clive+Staples+Lewis%22+OR+creator%3A%22Clive+S.+Lewis%22+OR+creator%3A%22C.+S.+Lewis%22+OR+creator%3A%22C.+Staples+Lewis%22+OR+creator%3A%22Lewis%2C+Clive+Staples%22+OR+creator%3A%22Lewis%2C+Clive+S.%22+OR+creator%3A%22Lewis%2C+C.+S.%22+OR+creator%3A%22Lewis%2C+C.+Staples%22+OR+title%3A%22Clive+Staples+Lewis%22+OR+title%3A%22Clive+S.+Lewis%22+OR+title%3A%22C.+S.+Lewis%22+OR+description%3A%22Clive+Staples+Lewis%22+OR+description%3A%22Clive+S.+Lewis%22+OR+description%3A%22C.+S.+Lewis%22+OR+description%3A%22Lewis%2C+Clive+Staples%22+OR+description%3A%22Lewis%2C+Clive+S.%22%29+OR+%28%221898-1963%22+AND+Lewis%29%29+AND+%28-mediatype%3Asoftware%29" target="_blank" rel="noopener noreferrer">Internet Archive: C. S. Lewis</a></li>
+            </ul>
+        </div>
     </body>
 </html>

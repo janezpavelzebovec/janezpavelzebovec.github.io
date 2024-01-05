@@ -19,44 +19,18 @@ script.onload = function () {
 /*KAZALO SPLETNEGA MESTA:*/
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
-  }
+  };
 
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-  }
+  };
 
 
-/*SVETLI NAČIN*/
+/*SVETLI NAČIN*//*
     function myFunction() {
         var element = document.body;
         element.classList.toggle("light-mode");
-    }
-document.querySelector('.theme-toggle-button').addEventListener('click', () => {
-  document.body.classList.toggle('dark')
-
-/*ASTRONOMSKA URA*/
-  setInterval(setClock, 1000)
-
-  const hourHand = document.querySelector('[data-hour-hand]')
-  const minuteHand = document.querySelector('[data-minute-hand]')
-  const secondHand = document.querySelector('[data-second-hand]')
-
-  function setClock() {
-    const currentDate = new Date()
-    const secondsRatio = currentDate.getSeconds() / 60
-    const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
-    const hoursRatio = (minutesRatio + currentDate.getHours()) / 24
-
-    setRotation(secondHand, secondsRatio);
-    setRotation(minuteHand, minutesRatio);
-    setRotation(hourHand, hoursRatio);
-
-    requestAnimationFrame(animateClock);
-  }
-
-  function setRotation(element, rotationRatio) {
-    element.style.setProperty('--rotation', rotationRatio * -360 - 180);
-  }
-
-    setClock()
-    animateClock()
+    };
+    document.querySelector('.theme-toggle-button').addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });*/

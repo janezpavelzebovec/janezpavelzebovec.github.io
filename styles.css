@@ -174,13 +174,11 @@ body.light {
     max-width: var(--vsebina);
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
 }
 .content {
     max-width: var(--vsebina);
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
 }
 
 body.ura {
@@ -277,6 +275,10 @@ p.podnaslov {
     text-align: center;
     font-size: 3rem;
 }
+p.podnaslov2 {
+    text-align: center;
+    font-size: 2rem;
+}
 .besedilosred {
     text-align: center;
 }
@@ -368,6 +370,9 @@ table {
 tr:hover {
     background-color: dimgrey;
 }
+tr.raz:hover {
+    background-color: initial;
+}
 td.mrtva {/*prazne, prepovedane celice*/
     background-color: #ffffff34;
 }
@@ -442,6 +447,7 @@ tr.ničta {
 /*slogi za slike*/
 img {
     max-width: 100%;
+    content-visibility: auto;
 }
 main img {
     /* Only render when in viewport */
@@ -467,6 +473,7 @@ figure {
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
+    min-width: 20rem;
 }
 figcaption {
     width: 0;
@@ -487,9 +494,8 @@ figure img {
     display: flex;
     position: absolute;
     width: calc((100vw - var(--vsebina))/2);
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
     max-width: 15rem;
 }
     .st-l {
@@ -507,17 +513,15 @@ img .stransko {
         position: static;
         width: calc(100vw/2);
         justify-content: center;
-        padding: 1rem;
     }
     .vodoravne2 {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 100vw;
         left: 0;
         right: 0;
-        padding: 1rem;
     }
     .st-l {
         left: auto;
@@ -529,20 +533,15 @@ img .stransko {
     }
 }
 @media (max-width: 30rem) {
-    .stransko {
-        padding: 0;
-    }
-}
-@media (max-width: 30rem) {
     .vodoravne {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     figcaption {
         width: calc(100vw - 2rem);
         min-width: 0;
-}
+    }
 }
 /*KAZALO SPLETNE STRANI*/
 *,
