@@ -2,19 +2,21 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="114.19168mm"
-   height="138.35823mm"
-   viewBox="0 0 114.19168 138.35823"
+   width="114.19mm"
+   height="138.36mm"
    version="1.1"
-   id="svg5"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   viewBox="0 0 114.19 138.36"
+   id="svg188"
    sodipodi:docname="sorodstvena_razmerja-krvna.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs192" />
   <sodipodi:namedview
-     id="namedview7"
+     id="namedview190"
      pagecolor="#505050"
      bordercolor="#eeeeee"
      borderopacity="1"
@@ -22,595 +24,486 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
-     showgrid="true"
-     inkscape:zoom="2"
-     inkscape:cx="210.5"
-     inkscape:cy="265.75"
+     showgrid="false"
+     inkscape:zoom="1.6694222"
+     inkscape:cx="185.09399"
+     inkscape:cy="277.04197"
      inkscape:window-width="1920"
      inkscape:window-height="1022"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g166780"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid8727"
-       originx="13.36167"
-       originy="-352.43714" />
-  </sodipodi:namedview>
-  <defs
-     id="defs2">
-    <filter
-       style="color-interpolation-filters:sRGB"
-       inkscape:label="Invert"
-       id="filter200353"
-       x="0"
-       y="0"
-       width="1.0036976"
-       height="1.0030556">
-      <feColorMatrix
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="fbSourceGraphic"
-         id="feColorMatrix200351" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix200373" />
-      <feColorMatrix
-         id="feColorMatrix200375"
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="fbSourceGraphic"
-         in="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix200395" />
-      <feColorMatrix
-         id="feColorMatrix200397"
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="fbSourceGraphic"
-         in="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix200417" />
-      <feColorMatrix
-         id="feColorMatrix200419"
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
-         in="fbSourceGraphic" />
-    </filter>
-  </defs>
+     inkscape:current-layer="g182" />
   <g
-     inkscape:label="Plast 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     sodipodi:insensitive="true"
-     transform="translate(13.361669,-352.43715)">
+     transform="translate(13.362,-352.44)"
+     id="g186"
+     style="display:inline">
     <g
-       id="g166806"
-       inkscape:label="kolena"
-       style="display:inline;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       transform="matrix(12.147253,0,0,12.147253,148.94588,-3928.7042)">
+       transform="matrix(12.147,0,0,12.147,148.95,-3928.7)"
+       style="display:inline;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+       id="g40"
+       inkscape:label="kolena">
       <g
-         id="g165745"
-         style="stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none">
+         style="stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+         id="g38">
         <path
-           style="fill:none;stroke:#00ff00;stroke-width:0.02178133;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.17425064,0.17425064;stroke-dashoffset:0;stroke-opacity:1"
-           d="m -11.90625,355.86458 v 5.29167"
-           id="path141181"
-           sodipodi:nodetypes="cc" />
+           d="m -11.906,355.86 v 5.2917"
+           style="fill:none;stroke:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.174251, 0.174251"
+           id="path2" />
         <text
-           xml:space="preserve"
-           style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            x="-11.916834"
            y="355.33151"
-           id="text21908-09-6-9"><tspan
-             sodipodi:role="line"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+           xml:space="preserve"
+           id="text6"><tspan
              x="-11.916834"
              y="355.33151"
-             id="tspan72163-6-4">1. koleno</tspan></text>
-      </g>
-      <g
-         id="g165750"
-         style="stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none">
+             style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+             id="tspan4">1. koleno</tspan></text>
         <path
-           style="fill:none;stroke:#00ff00;stroke-width:0.02178133;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.17425064,0.17425064;stroke-dashoffset:0;stroke-opacity:1"
-           d="m -10.583333,354.54167 v 7.9375"
-           id="path141183"
-           sodipodi:nodetypes="cc" />
+           d="m -10.583,354.54 v 7.9375"
+           style="fill:none;stroke:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.174251, 0.174251"
+           id="path8" />
         <text
-           xml:space="preserve"
-           style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            x="-10.587037"
            y="354.00861"
-           id="text21908-09-6-9-9"><tspan
-             sodipodi:role="line"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+           xml:space="preserve"
+           id="text12"><tspan
              x="-10.587037"
              y="354.00861"
-             id="tspan72163-6-4-1">2. koleno</tspan></text>
-      </g>
-      <g
-         id="g165755"
-         style="stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none">
+             style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+             id="tspan10">2. koleno</tspan></text>
         <path
-           style="fill:none;stroke:#00ff00;stroke-width:0.02178133;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.17425064,0.17425064;stroke-dashoffset:0;stroke-opacity:1"
-           d="m -9.2604167,353.21875 v 10.58333"
-           id="path141185"
-           sodipodi:nodetypes="cc" />
+           d="m -9.2604,353.22 v 10.583"
+           style="fill:none;stroke:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.174251, 0.174251"
+           id="path14" />
         <text
-           xml:space="preserve"
-           style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            x="-9.2627096"
            y="352.68182"
-           id="text21908-09-6-9-7"><tspan
-             sodipodi:role="line"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+           xml:space="preserve"
+           id="text18"><tspan
              x="-9.2627096"
              y="352.68182"
-             id="tspan72163-6-4-0">3. koleno</tspan></text>
-      </g>
-      <g
-         id="g165760"
-         style="stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none">
+             style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+             id="tspan16">3. koleno</tspan></text>
         <path
-           style="fill:none;stroke:#00ff00;stroke-width:0.02178133;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.17425064,0.17425064;stroke-dashoffset:0;stroke-opacity:1"
-           d="m -7.9375,354.54167 v 7.9375"
-           id="path141187"
-           sodipodi:nodetypes="cc" />
+           d="m -7.9375,354.54 v 7.9375"
+           style="fill:none;stroke:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.174251, 0.174251"
+           id="path20" />
         <text
-           xml:space="preserve"
-           style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            x="-7.4081573"
            y="353.98361"
-           id="text21908-09-6-9-6"><tspan
-             sodipodi:role="line"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+           xml:space="preserve"
+           id="text24"><tspan
              x="-7.4081573"
              y="353.98361"
-             id="tspan72163-6-4-08">4. koleno</tspan></text>
-      </g>
-      <g
-         id="g165765"
-         style="stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none">
+             style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+             id="tspan22">4. koleno</tspan></text>
         <path
-           style="fill:none;stroke:#00ff00;stroke-width:0.02178133;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.17425064,0.17425064;stroke-dashoffset:0;stroke-opacity:1"
-           d="m -6.6145833,355.86458 v 7.9375"
-           id="path141189"
+           d="m -6.6146,355.86 1.499e-4,5.29155"
+           style="fill:none;stroke:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.174251, 0.174251"
+           id="path26"
            sodipodi:nodetypes="cc" />
         <text
-           xml:space="preserve"
-           style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            x="-6.6182876"
            y="355.30264"
-           id="text21908-09-6-9-5"><tspan
-             sodipodi:role="line"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+           xml:space="preserve"
+           id="text30"><tspan
              x="-6.6182876"
              y="355.30264"
-             id="tspan72163-6-4-3">5. koleno</tspan></text>
-      </g>
-      <g
-         id="g166780"
-         style="stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none">
+             style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+             id="tspan28">5. koleno</tspan></text>
         <path
-           style="fill:none;stroke:#00ff00;stroke-width:0.02178133;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.17425064,0.17425064;stroke-dashoffset:0;stroke-opacity:1"
-           d="m -5.2916667,357.1875 v 5.29167"
-           id="path141189-3"
+           d="m -5.2917,357.19 v 2.6459"
+           style="fill:none;stroke:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.174251, 0.174251"
+           id="path32"
            sodipodi:nodetypes="cc" />
         <text
-           xml:space="preserve"
-           style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            x="-5.2939601"
            y="356.62555"
-           id="text21908-09-6-9-5-4"><tspan
-             sodipodi:role="line"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+           xml:space="preserve"
+           id="text36"><tspan
              x="-5.2939601"
              y="356.62555"
-             id="tspan72163-6-4-3-7">6. koleno</tspan></text>
+             style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#00ff00;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+             id="tspan34">6. koleno</tspan></text>
       </g>
     </g>
     <g
-       id="g166814"
-       style="display:inline;stroke:#ffffff;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:label="crte"
-       transform="matrix(12.147253,0,0,12.147253,148.94588,-3928.7042)">
+       transform="matrix(12.147,0,0,12.147,148.95,-3928.7)"
+       style="display:inline;stroke:#ffffff;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+       id="g60"
+       inkscape:label="črte">
       <path
-         style="fill:none;stroke:#ffffff;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m -9.2604167,362.47917 -3.9687503,-3.96876 1.322917,-1.32291 c 2.204868,2.20485 3.0868071,3.08681 5.2916667,5.29167"
-         id="path9171"
+         d="m -9.2604,362.48 -3.9688,-3.9688 1.3229,-1.3229 c 2.2049,2.2048 1.7639,1.7639 3.9688,3.9688"
+         style="fill:none;stroke:#ffffff;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+         id="path42"
          sodipodi:nodetypes="cccc" />
       <path
-         style="fill:none;stroke:#ffffff;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m -11.90625,357.1875 1.322917,-1.32292 c 2.6458368,2.64583 2.6458341,2.64584 5.2916663,5.29167"
-         id="path9206"
+         d="m -11.906,357.19 1.3229,-1.3229 3.9688,3.9688"
+         style="fill:none;stroke:#ffffff;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+         id="path44"
          sodipodi:nodetypes="ccc" />
       <path
-         style="fill:none;stroke:#ffffff;stroke-width:0.0217813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m -10.583333,355.86458 1.3229164,-1.32292 c 3.0868078,3.08681 0.8819452,0.88195 3.9687499,3.96876"
-         id="path9208"
-         sodipodi:nodetypes="ccc" />
+         d="m -10.583,355.86 1.3229,-1.3229 c 3.0868,3.0868 0.88195,0.88195 3.9687,3.9688"
+         style="fill:none;stroke:#ffffff;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round"
+         id="path46" />
       <g
-         id="g168530"
-         inkscape:label="nadaljevanje_crt"
-         style="stroke:#ffffff;stroke-width:0.0217813;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.0435627, 0.0435627;stroke-dashoffset:0;stroke-opacity:1">
+         style="display:inline;stroke:#ffffff;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.0435627, 0.0435627"
+         id="g58"
+         inkscape:label="nadaljevanja">
         <path
-           style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.0217813;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.0435627, 0.0435627;stroke-dashoffset:0;stroke-opacity:1"
-           d="M -9.2604167,354.54167 -7.9375,353.21875"
-           id="path196859" />
+           d="m -9.2604,354.54 1.3229,-1.3229"
+           style="fill:none;stroke:#ff0000;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.0435627, 0.0435627;stroke-opacity:1"
+           id="path48" />
         <path
-           style="fill:none;stroke:#ffffff;stroke-width:0.0217813;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.0435627, 0.0435627;stroke-dashoffset:0;stroke-opacity:1"
-           d="m -9.2604166,362.47916 1.3229167,1.32292"
-           id="path166986" />
+           d="m -9.2604,362.48 1.3229,1.3229"
+           style="fill:none;stroke:#ff0014;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.0435627, 0.0435627;stroke-opacity:1"
+           id="path50" />
         <path
-           style="fill:none;stroke:#ffffff;stroke-width:0.0217813;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.0435627, 0.0435627;stroke-dashoffset:0;stroke-opacity:1"
-           d="m -5.2916666,358.51041 1.3229166,1.32292"
-           id="path168329" />
+           d="m -5.2917,358.51 1.3229,1.3229"
+           style="fill:none;stroke:#ffffff;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.0435627, 0.0435627"
+           id="path52" />
         <path
-           style="fill:none;stroke:#ffffff;stroke-width:0.0217813;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.0435627, 0.0435627;stroke-dashoffset:0;stroke-opacity:1"
-           d="m -5.2916666,361.15625 1.3229166,1.32291"
-           id="path168331" />
+           d="m -6.6143,359.8359 1.3229,1.3229"
+           style="fill:none;stroke:#ffffff;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.0435627, 0.0435627"
+           id="path54" />
         <path
-           style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.02178133;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.04356266,0.04356266;stroke-dashoffset:0;stroke-opacity:1"
-           d="m -6.6145832,362.47916 1.3229166,1.32292"
-           id="path168333" />
+           d="m -7.9375,361.1571 1.3229,1.3229"
+           style="fill:none;stroke:#ffffff;stroke-width:0.021781;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.0435627, 0.0435627"
+           id="path56" />
       </g>
     </g>
+    <path
+       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 36.46392,474.34456 -11.745092,426.13555 36.46392,377.89738"
+       id="path1174"
+       inkscape:label="ravna_crta" />
     <g
-       id="g165740"
-       inkscape:label="pike_sorodnikov"
+       transform="matrix(12.147,0,0,12.147,148.95,-3928.7)"
        style="display:inline;stroke-linecap:round;stroke-linejoin:round"
-       transform="matrix(12.147253,0,0,12.147253,148.94588,-3928.7042)">
+       id="g96"
+       inkscape:label="pike">
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-4"
-         cx="-5.2916665"
-         cy="361.15625"
-         r="0.13249999" />
+         cx="-11.906"
+         cy="359.82999"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle64" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0"
-         cx="-11.90625"
-         cy="359.83334"
-         r="0.13249999" />
+         cx="-10.583"
+         cy="358.51001"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle66" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44"
-         cx="-10.583333"
-         cy="358.51041"
-         r="0.13249999" />
+         cx="-11.906"
+         cy="357.19"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle68" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0"
-         cx="-11.90625"
-         cy="357.1875"
-         r="0.13249999" />
+         cx="-10.583"
+         cy="355.85999"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle70" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0-0"
-         cx="-10.583333"
-         cy="355.86459"
-         r="0.13249999" />
+         cx="-9.2603998"
+         cy="357.19"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle72" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0-9"
-         cx="-9.260417"
-         cy="357.1875"
-         r="0.13249999" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0-9-8"
          cx="-7.9375"
-         cy="355.86459"
-         r="0.13249999" />
+         cy="355.85999"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle74" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0-9-85"
-         cx="-9.260417"
-         cy="354.54166"
-         r="0.13249999" />
+         cx="-9.2603998"
+         cy="354.54001"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle76" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0-9-84"
-         cx="-6.6145835"
-         cy="357.1875"
-         r="0.13249999" />
+         cx="-6.6146002"
+         cy="357.19"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle78" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0-9-3"
-         cx="-5.2916665"
-         cy="358.51041"
-         r="0.13249999" />
+         cx="-5.2916999"
+         cy="358.51001"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle80" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0-7"
          cx="-7.9375"
-         cy="358.51041"
-         r="0.13249999" />
+         cy="358.51001"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle82" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0-5"
          cx="-7.9375"
-         cy="361.15625"
-         r="0.13249999" />
+         cy="361.16"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle84" />
+      <ellipse
+         cx="-6.6146002"
+         cy="359.82999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle86"
+         rx="0.13246068"
+         ry="0.13249999" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0-97"
-         cx="-6.6145835"
-         cy="359.83334"
-         r="0.13249999" />
+         cx="-10.583"
+         cy="361.16"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle90" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-44-0-8"
-         cx="-6.6145835"
-         cy="362.47916"
-         r="0.13249999" />
+         cx="-9.2603998"
+         cy="359.82999"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle92" />
       <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-4-9"
-         cx="-10.583333"
-         cy="361.15625"
-         r="0.13249999" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-0-9"
-         cx="-9.260417"
-         cy="359.83334"
-         r="0.13249999" />
-      <circle
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path9881-9-3"
-         cx="-9.260417"
-         cy="362.47916"
-         r="0.13249999" />
+         cx="-9.2603998"
+         cy="362.48001"
+         r="0.13249999"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+         id="circle94" />
     </g>
     <g
-       id="g168757"
-       inkscape:label="poimenovanja"
-       style="display:inline;fill:#809fff;fill-opacity:1"
-       transform="matrix(12.147253,0,0,12.147253,148.94588,-3928.7042)">
+       transform="matrix(12.147,0,0,12.147,148.95,-3928.7)"
+       style="display:inline;fill:#809fff;stroke-linecap:round"
+       id="g182"
+       inkscape:label="pomenovanja">
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-9.2553024"
          y="354.93875"
-         id="text21908-09-2-2"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text102"><tspan
            x="-9.2553024"
            y="354.93875"
-           id="tspan97769-9">pradedek/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan98">pradedek/</tspan><tspan
            x="-9.2553024"
            y="355.39603"
-           id="tspan127830">prababica</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan100">prababica</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-11.906426"
          y="357.56412"
-         id="text21908"><tspan
-           sodipodi:role="line"
-           id="tspan21906"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text108"><tspan
            x="-11.906426"
-           y="357.56412">oče/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           y="357.56412"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan104">oče/</tspan><tspan
            x="-11.906426"
            y="358.02139"
-           id="tspan69287">mati</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan106">mati</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-10.586156"
          y="358.9075"
-         id="text21908-5"><tspan
-           sodipodi:role="line"
-           id="tspan21906-2"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text114"><tspan
            x="-10.586156"
            y="358.9075"
-           dy="0">brat/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           dy="0"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan110">brat/</tspan><tspan
            x="-10.586156"
            y="359.36478"
-           id="tspan50101">sestra</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan112">sestra</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-9.2630634"
          y="360.23044"
-         id="text21908-0"><tspan
-           sodipodi:role="line"
-           id="tspan21906-29"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text120"><tspan
            x="-9.2630634"
-           y="360.23044">nečak/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           y="360.23044"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan116">nečak/</tspan><tspan
            x="-9.2630634"
            y="360.68771"
-           id="tspan65079">nečakinja</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan118">nečakinja</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-11.902017"
          y="360.23044"
-         id="text21908-09"><tspan
-           sodipodi:role="line"
-           id="tspan21906-9"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text126"><tspan
            x="-11.902017"
-           y="360.23044">sin/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           y="360.23044"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan122">sin/</tspan><tspan
            x="-11.902017"
            y="360.68771"
-           id="tspan72163">hči</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan124">hči</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-9.2561836"
          y="357.58459"
-         id="text21908-09-3"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text132"><tspan
            x="-9.2561836"
            y="357.58459"
-           id="tspan72163-3">stric/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan128">stric/</tspan><tspan
            x="-9.2561836"
            y="358.04187"
-           id="tspan86015">teta</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan130">teta</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-6.6101742"
          y="357.58459"
-         id="text21908-09-3-4"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text138"><tspan
            x="-6.6101742"
            y="357.58459"
-           id="tspan72163-3-6">mrzli stric/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan134">mrzli stric/</tspan><tspan
            x="-6.6101742"
            y="358.04187"
-           id="tspan86015-37">mrzla teta</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan136">mrzla teta</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-7.932385"
          y="356.26169"
-         id="text21908-09-3-7"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text144"><tspan
            x="-7.932385"
            y="356.26169"
-           id="tspan72163-3-1">prastric/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan140">prastric/</tspan><tspan
            x="-7.932385"
            y="356.71896"
-           id="tspan86015-3">prateta</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan142">prateta</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-7.932385"
          y="358.9075"
-         id="text21908-09-8"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text150"><tspan
            x="-7.932385"
            y="358.9075"
-           id="tspan72163-1">bratranec/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan146">bratranec/</tspan><tspan
            x="-7.932385"
            y="359.36478"
-           id="tspan88143">sestrična</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan148">sestrična</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-5.2872572"
          y="358.9075"
-         id="text21908-09-8-7"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text156"><tspan
            x="-5.2872572"
            y="358.9075"
-           id="tspan72163-1-5">mali bratranec/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan152">mrzli bratranec/</tspan><tspan
            x="-5.2872572"
            y="359.36478"
-           id="tspan88143-6">mala sestrična</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan154">mrzla sestrična</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-10.579276"
          y="356.26169"
-         id="text21908-09-6"><tspan
-           sodipodi:role="line"
-           id="tspan21906-9-7"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text162"><tspan
            x="-10.579276"
-           y="356.26169">dedek/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           y="356.26169"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan158">dedek/</tspan><tspan
            x="-10.579276"
            y="356.71896"
-           id="tspan72163-6">babica</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan160">babica</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-7.9394407"
          y="361.55334"
-         id="text21908-4"><tspan
-           sodipodi:role="line"
-           id="tspan21906-5"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text168"><tspan
            x="-7.9394407"
-           y="361.55334">pranečak/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           y="361.55334"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan164">pranečak/</tspan><tspan
            x="-7.9394407"
            y="362.01062"
-           id="tspan77051">pranečakinja</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan166">pranečakinja</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-10.583686"
          y="361.55334"
-         id="text21908-1"><tspan
-           sodipodi:role="line"
-           id="tspan21906-0"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text174"><tspan
            x="-10.583686"
-           y="361.55334">vnuk/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           y="361.55334"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan170">vnuk/</tspan><tspan
            x="-10.583686"
            y="362.01062"
-           id="tspan75585">vnukinja</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan172">vnukinja</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-size:0.352778px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
          x="-9.2623577"
          y="362.87625"
-         id="text21908-1-6"><tspan
-           sodipodi:role="line"
-           id="tspan21906-0-0"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text180"><tspan
            x="-9.2623577"
-           y="362.87625">pravnuk/</tspan><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.352778px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;fill-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.01, 0.01;stroke-dashoffset:0"
+           y="362.87625"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan176">pravnuk/</tspan><tspan
            x="-9.2623577"
            y="363.33353"
-           id="tspan75585-4">pravnukinja</tspan></text>
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan178">pravnukinja</tspan></text>
+      <text
+         x="-6.6172466"
+         y="360.22708"
+         style="font-size:0.35278px;line-height:1.25;font-family:'DejaVu Serif';display:inline;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+         xml:space="preserve"
+         id="text120-4"><tspan
+           x="-6.6172466"
+           y="360.22708"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan116-0">mrzli nečak/</tspan><tspan
+           x="-6.6172466"
+           y="360.68436"
+           style="font-size:0.35278px;font-family:'Latin Modern Roman';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#809fff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.01, 0.01"
+           id="tspan118-0">mrzla nečakinja</tspan></text>
     </g>
     <circle
-       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.21473;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.121473, 0.121473;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path9881"
-       cx="-11.752158"
-       cy="426.2124"
-       r="1.6095109"
+       cx="-11.752"
+       cy="426.20999"
+       r="1.6095001"
+       style="display:inline;fill:#0000ff;fill-rule:evenodd;stroke-linecap:round;paint-order:markers fill stroke"
+       id="circle184"
        inkscape:label="izhodišče" />
   </g>
 </svg>
