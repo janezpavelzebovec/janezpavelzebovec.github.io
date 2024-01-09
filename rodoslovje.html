@@ -2,33 +2,34 @@
 <html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" vsebina="IE=edge" />
-        <meta name="viewport" vsebina="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="/scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
 
         <title>Rodoslovje</title>
-        <meta name="description" vsebina="Uporabni viri rodoslovnih podatkov, matične knjige, zgodovinska imena krajev, osebna imena." /> <!--opis spletnega mesta-->
-        <meta name="keywords" vsebina="rodoslovje, družinsko drevo, matične knjige, zgodovinska krajevna imena" />
-        <meta name="copyright" vsebina="Janez Pavel Žebovec" />
+        <meta name="description" content="Uporabni viri rodoslovnih podatkov, matične knjige, zgodovinska imena krajev, osebna imena." /> <!--opis spletnega mesta-->
+        <meta name="keywords" content="rodoslovje, družinsko drevo, matične knjige, zgodovinska krajevna imena" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
 
         <link rel="shortcut icon" type="image/png" href="images/icon.png">
         <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
         <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
-        <meta name=application-name vsebina="Rodoslovje (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
-        <meta name=msapplication-TileColor vsebina=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
-        <meta name=theme-color vsebina=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+        <meta name=application-name content="Rodoslovje (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
 
-        <meta property="og:title" vsebina="Rodoslovje"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
-        <meta property="og:image" vsebina="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
-        <meta property="og:description" vsebina="Uporabni viri rodoslovnih podatkov, matične knjige, zgodovinska imena krajev, osebna imena."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
-        <meta property="og:site_name" vsebina="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+        <meta property="og:title" content="Rodoslovje"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" content="Uporabni viri rodoslovnih podatkov, matične knjige, zgodovinska imena krajev, osebna imena."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
 
-        <meta name="twitter:card" vsebina="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
-        <meta name="twitter:creator" vsebina="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
-        <meta name="twitter:title" vsebina="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
-        <meta name="twitter:description" vsebina="Uporabni viri rodoslovnih podatkov, matične knjige, zgodovinska imena krajev, osebna imena."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
-        <meta name="twitter:image:src" vsebina="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="Uporabni viri rodoslovnih podatkov, matične knjige, zgodovinska imena krajev, osebna imena."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
 
     <body>
@@ -64,7 +65,11 @@
                 </details></li>
                 <li><details><summary><a href="#Zunanje povezave in viri">Zunanje povezave in viri</a></summary>
                     <ul>
-                        <li><a href="#Orodja za družinska drevesa P">Orodja za družinska drevesa</a></li>
+                        <li><details><summary><a href="#Orodja za družinska drevesa P">Orodja za družinska drevesa</a></summary>
+                            <ul>
+                                <li><a href="#Brez povezave P">Brez povezave</a></li>
+                            </ul>
+                        </details></li>
                         <li><a href="#Matične knjige P">Matične knjige</a></li>
                         <li><a href="#Pokopališča P">Pokopališča</a></li>
                         <li><details><summary><a href="#Imenoslovje P">Imenoslovje</a></summary>
@@ -788,6 +793,8 @@
             <h2 id="Zunanje povezave in viri">Zunanje povezave in viri</h2>
             <ul class="s">
                 <li><a href="https://rodoslovje.si/" target="_blank" rel="noopener noreferrer">Slovensko rodoslovno društvo</a></li>
+                <li><a href="https://www2.arnes.si/~rzjtopl/rod/rod.htm" target="_blank" rel="noopener noreferrer">mag. Janez Toplišek: Slovensko rodoslovje</a></li>
+                <li><a href="https://www.facebook.com/groups/183735961660531/permalink/7017123671655025/" target="_blank" rel="noopener noreferrer">Facebook - Slovenian Genealogy (Genealogy2000)</a></li>
             </ul>
             <h5 id="Orodja za družinska drevesa P">Orodja za družinska drevesa</h5>
             <ul class="s">
@@ -803,13 +810,17 @@
                 <br>
                 <li><a href="https://www.wikitree.com/" target="_blank" rel="noopener noreferrer">WikiTree</a></li>
             </ul>
-            <h5 id="Brez povezave P">Brez povezave</h5>
+            <h6 id="Brez povezave P">Brez povezave</h6>
                 <ul class="s">
                     <li><a href="https://www.mackiev.com/ftm/" target="_blank" rel="noopener noreferrer">Mackiev: Family Tree Maker</a></li>
                     <li><a href="https://gramps-project.org/" target="_blank" rel="noopener noreferrer">Gramps</a></li>
                 </ul>
-            <ul class="s">
-            </ul>
+            <h6 id="DNK P">DNK</h6>
+                <ul class="s">
+                    <li><a href="https://www.ancestry.com/dna" target="_blank" rel="noopener noreferrer">Ancestry - DNA</a></li>
+                    <li><a href="https://mytrueancestry.com" target="_blank" rel="noopener noreferrer">My True Ancestry</a></li>
+                    <li><a href="https://www.23andme.com/" target="_blank" rel="noopener noreferrer">23andMe</a></li>
+                    <li><a href="https://www.gedmatch.com/" target="_blank" rel="noopener noreferrer">GEDmatch</a></li>
             <h5 id="Matične knjige P">Matične knjige</h5>
             <ul class="s">
                 <li><a href="https://rodoslovje.si/index.php/maticne-knjige" target="_blank" rel="noopener noreferrer">Slovensko rodoslovno društvo: Matične knjige</a></li>
@@ -829,6 +840,7 @@
                         <li><a href="https://rodoslovje.uocepek.si/index.php/Nomen" target="_blank" rel="noopener noreferrer">PriRod - Nomen</a> (pregled pojavljanja priimkov v rodoslovnih virih)</li>
                     </ul>
                 </li>
+                <li><a href="file:///home/janezpavel/Prenosi/VODNIK_2023_230404_153859.pdf" target="_blank" rel="noopener noreferrer">Igor Filipič: Vodnik po matičnem gradivu in zapisnikih duš v Nadškofijskem arhivu Maribor</a> (pdf)</li>
             </ul>
             <h5 id="Pokopališča P">Pokopališča</h5>
             <ul class="s">
@@ -841,13 +853,16 @@
                 <li><a href="https://apps.wikitree.com/apps/harris5439/cemeteries/" target="_blank" rel="noopener noreferrer">WikiTree: Cemetries</a> (projekt zemljevida pokopališč po svetu)</li>
                 <br>
                 <li><a href="https://www.najdigrob.si/slovenski-grobovi/" target="_blank" rel="noopener noreferrer">Slovenski grobovi</a> (znani Slovenci)</li>
-                <li><a href="https://gis.iobcina.si/DDModuli/iskalnik_grobov/Default.aspx" target="_blank" rel="noopener noreferrer">I-Pokopališča</a> (21 slovenskih občin)</li>
+                <li><a href="https://gis.iobcina.si/DDModuli/iskalnik_grobov/Default.aspx" target="_blank" rel="noopener noreferrer">I-Pokopališče - Iskalnik grobov</a> (21 slovenskih občin)</li>
                 <li><a href="https://grobovi.zale.si/" target="_blank" rel="noopener noreferrer">Iskalnik grobov Žale</a> (širša okolica Ljubljane: Žale, Šentvid, Vič, Štepanja vas, Bizovik, Sostro, Polje, Stožice, Dravlje, Rudnik, Šmartno pod Šmarno goro, Črnuče, Šentjakob, Janče, Prežganje, Javor, Mali Lipoglav, Šentpavel, Navlje)</li>
                 <li><a href="https://pp-mb.si/pokopalisca-v-mariboru/iskanje-pokojnikov/iskalnik-pokojnikov.aspx" target="_blank" rel="noopener noreferrer">Iskalnik pokojnikov Maribor</a> (območje Maribora)</li>
                 <li><a href="https://www.pokopalisca.si/" target="_blank" rel="noopener noreferrer">Pokopališča.si</a> (Grosuplje: Mestno pok. Resje Grosuplje, Pok. Šmarje - Sap, Pok. Št. Jurij; Ivančna Gorica: Pok. Ivančna Gorica)</li>
                 <li><a href="https://slopokopalisca.si/iskalnik/r/1" target="_blank" rel="noopener noreferrer">Pokopališča.si</a> (Koper, Piran)</li>
             </ul>
             <h5 id="Imenoslovje P">Imenoslovje</h5>
+                <ul class="s">
+                    <li><a href="file:///home/janezpavel/Prenosi/Notes_230628_084957.pdf" target="_blank" rel="noopener noreferrer">Franc Jakopin: Kdo so bili udje Mohorjeve družbe v letih 1868-1877</a> (pdf; besedje, ki določa poklic, stan ali položaj)</li>
+                </ul>
                 <h6 id="Osebna imena in priimki P">Osebna imena in priimki</h5>
                     <ul class="s">
                         <li><a href="https://www.rodoslovje.com/" target="_blank" rel="noopener noreferrer">Leksikon priimkov</a></li>
@@ -862,9 +877,14 @@
                     </ul>
                 <h6 id="Zgodovinska krajevna imena P">Zgodovinska krajevna imena</h5>
                     <ul class="s">
-                        <li><a href="https://sl.wikipedia.org/wiki/Seznam_nem%C5%A1kih_imen_krajev_v_Sloveniji" target="_blank" rel="noopener noreferrer">Wikipedija: Seznam nemških imen krajev v Sloveniji</a></li>
+                        <li><a href="https://www.e-prostor.gov.si/projekt/fileadmin/user_upload/gradiva/Dediscina_katastrov_na_Slovenskem.pdf" target="_blank" rel="noopener noreferrer">Geodetska uprava RS: Dediščina katastrov na Slovenskem</a> (pdf) [<a class="arh" href="https://web.archive.org/web/20240109184504/https://www.e-prostor.gov.si/projekt/fileadmin/user_upload/gradiva/Dediscina_katastrov_na_Slovenskem.pdf" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
+                        <li><a href="https://sl.wikipedia.org/wiki/Seznam_nem%C5%A1kih_imen_krajev_v_Sloveniji" target="_blank" rel="noopener noreferrer">Wikipedija: Seznam nemških imen krajev v Sloveniji</a>
+                            <ul class="s">
+                                <li><a href="https://en.wikipedia.org/wiki/List_of_German_names_for_places_in_Slovenia" target="_blank" rel="noopener noreferrer">Wikipedia: List of German names for places in Slovenia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.legacytree.com/blog/historical-maps-europe" target="_blank" rel="noopener noreferrer">Legacy Tree: Mapire - A Free Tool for Historical Maps of Europe</a></li>
                         <li><a href="https://feefhs.org/resource/slovenia-gazetteer" target="_blank" rel="noopener noreferrer">FEEFHS: Slovenian vs. Austrian Place Name Gazetteer</a></li>
-                        <li><a href="https://www.e-prostor.gov.si/projekt/fileadmin/user_upload/gradiva/Dediscina_katastrov_na_Slovenskem.pdf" target="_blank" rel="noopener noreferrer">Geodetska uprava Republike Slovenije: Dediščina katastrov na Slovenskem</a> (pdf)</li>
                         <li><a href="https://www.sistory.si/popis" target="_blank" rel="noopener noreferrer">SiStory - Zgodovina Slovenije: Popisi</a></li>
                         <br>
                         <li><a href="https://maps.arcanum.com/en/map/europe-18century-firstsurvey/?layers=163%2C165&bbox=1600027.0546066638%2C5782828.595562247%2C1630257.8992934509%2C5794427.914604521" target="_blank" rel="noopener noreferrer">Arcanum: Europe in the XVIII. century</a></li>
@@ -874,6 +894,7 @@
                         <li><a href="https://maps.arcanum.com/en/map/secondsurvey-illyria/?layers=60&bbox=1595080.511596977%2C5781194.492002803%2C1640331.2323418015%2C5800724.152729665" target="_blank" rel="noopener noreferrer">Arcanum: Illyria (1829–1835) - Second military survey of the Habsburg Empire</a></li>
                         <li><a href="https://maps.flurnamen.at/" target="_blank" rel="noopener noreferrer">Slovenska ledinska imena</a></li>
                         <br>
+                        <li><a href="https://www.geopedia.world/#T46_x1648660.708454431_y5739119.006078752_s9_b2345" target="_blank" rel="noopener noreferrer">Geopedia - Historical maps</a></li>
                         <li><a href="https://earth.google.com/web/@46.20896411,14.95865481,804.56143565a,229814.57979541d,30y,0h,0t,0r/data=MigKJgokCiAxR1JQb21RRzF5TlN0YWVwVE9NSDNkSDRVRWd6N29UWSACOgMKATA" target="_blank" rel="noopener noreferrer">Hišne številke in hišna imena</a> (Google Earth; moj lasten projekt)</li>
                         <li><a href="https://www.google.com/maps/d/embed?mid=18jPdN0puetXeLFPqZ6Y8DsmGngQ6QSek&ehbc=2E312F" target="_blank" rel="noopener noreferrer">Vodice 1828</a> (Google zemljevidi; stare hišne številke)</li>
                     </ul>
@@ -882,6 +903,7 @@
                 <li><a href="https://www2.arnes.si/~rzjtopl/rod/metode/r-slovar.htm" target="_blank" rel="noopener noreferrer">Slovensko rodoslovno društvo: Rodoslovni slovar</a></li>
                 <br>
                 <li><a href="https://wiki.genealogy.net/Kategorie:Krankheitsbezeichnung,_Medizinischer_Begriff" target="_blank" rel="noopener noreferrer">GenWiki: Kategorie: Krankheitsbezeichnung, Medizinischer Begriff</a> (imena bolezni in medicinski izrazi v nemščini)</li>
+                <li><a href="https://www.familia-austria.at/index.php/forschung-und-service/kronlaender-seiten/78-oesterreichische-laender/niederoesterreich/464-wiener-krankheiten-lexikon" target="_blank" rel="noopener noreferrer">Familia Austria: Wiener Krankheiten - Lexikon</a> (imena bolezni in medicinski izrazi v nemščini)</li>
                 <br>
                 <li><a href="https://www.online-latin-dictionary.com/" target="_blank" rel="noopener noreferrer">Latin Dictionary</a></li>
                 <li><a href="https://www.latin-is-simple.com/en/" target="_blank" rel="noopener noreferrer">Latin is Simple</a></li>
@@ -889,6 +911,10 @@
             </ul>
             <h5 id="Ostalo P">Ostalo</h5>
             <ul class="s">
+                <li><a href="https://www.compgen.de/" target="_blank" rel="noopener noreferrer">CompGen</a> (nemško Združenje za računalniško rodoslovje)</li>
+                <li><a href="https://www.sistory.si/" target="_blank" rel="noopener noreferrer">SIStory (Zgodovina Slovenije)</a></li>
+                <li><a href="https://zv1.sistory.si/" target="_blank" rel="noopener noreferrer">SIStory (Zgodovina Slovenije) - Vojaške žrtve 1. svetovne vojne na Slovenskem</a></li>
+                <li><a href="https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23253,232262,233134,358998,359002" target="_blank" rel="noopener noreferrer">Virtualna arhivska čitalnica (Slovenske javne arhivske službe)</a></li>
                 <li><a href="https://www.dlib.si/" target="_blank" rel="noopener noreferrer">Digitalna knjižnica Slovenije (dlib)</a></li>
                 <li><a href="https://www.kamra.si/" target="_blank" rel="noopener noreferrer">Kamra - digitalizirana kulturna dediščina slovenskih pokrajin</a></li>
                 <li><a href="https://www.dlib.si/details/URN:NBN:SI:DOC-5TDZOJZP" target="_blank" rel="noopener noreferrer">Dlib: Gradivo za historično topografijo predjožefinskih župnij na Slovenskem : Kranjska</a></li>
