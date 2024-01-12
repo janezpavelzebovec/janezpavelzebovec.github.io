@@ -2,33 +2,34 @@
 <html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" vsebina="IE=edge" />
-        <meta name="viewport" vsebina="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="/scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
 
         <title>J. R. R. Tolkien</title>
-        <meta name="description" vsebina="O Johnu Ronaldu Reuelu Tolkienu, o njegovem delu, ter o njegovi zapuščini." /> <!--opis spletnega mesta-->
-        <meta name="keywords" vsebina="Tolkien, Srednji svet" />
-        <meta name="copyright" vsebina="Janez Pavel Žebovec" />
+        <meta name="description" content="O Johnu Ronaldu Reuelu Tolkienu, o njegovem delu, ter o njegovi zapuščini." /> <!--opis spletnega mesta-->
+        <meta name="keywords" content="Tolkien, Srednji svet" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
 
         <link rel="shortcut icon" type="image/png" href="images/icon.png">
         <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
         <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
-        <meta name=application-name vsebina="J. R. R. Tolkien (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
-        <meta name=msapplication-TileColor vsebina=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
-        <meta name=theme-color vsebina=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+        <meta name=application-name content="J. R. R. Tolkien (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
 
-        <meta property="og:title" vsebina="J. R. R. Tolkien"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
-        <meta property="og:image" vsebina="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
-        <meta property="og:description" vsebina="O Johnu Ronaldu Reuelu Tolkienu, o njegovem delu, ter o njegovi zapuščini."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
-        <meta property="og:site_name" vsebina="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+        <meta property="og:title" content="J. R. R. Tolkien"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" content="O Johnu Ronaldu Reuelu Tolkienu, o njegovem delu, ter o njegovi zapuščini."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
 
-        <meta name="twitter:card" vsebina="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
-        <meta name="twitter:creator" vsebina="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
-        <meta name="twitter:title" vsebina="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
-        <meta name="twitter:description" vsebina="O Johnu Ronaldu Reuelu Tolkienu, o njegovem delu, ter o njegovi zapuščini."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
-        <meta name="twitter:image:src" vsebina="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="O Johnu Ronaldu Reuelu Tolkienu, o njegovem delu, ter o njegovi zapuščini."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
 
     <body>
@@ -88,14 +89,12 @@
         <div class="vodoravne2">
             <span class="stransko st-l">
                 <img
-                    content-visibility="auto"
                     alt="J. R. R. Tolkien v srednjih letih"
                     src="./images/Tolkien1obrezan.jpg"
                     width="100%"/>
             </span>
             <span class="stransko st-d">
                 <img
-                    content-visibility="auto"
                     alt="J. R. R. Tolkien v starejših letih"
                     src="./images/Tolkien.jpg"
                     width="100%"/>
@@ -709,6 +708,7 @@
                 <li><a href="https://sites.google.com/view/ainulindale" target="_blank" rel="noopener noreferrer">Ainulindalë</a></li>
                 <li><a href="http://arda-maps.org/" target="_blank" rel="noopener noreferrer">Arda Maps</a> (zemljevidi, potovanja, družinsko drevo, časovnice) [<a class="arh" href="https://web.archive.org/web/20230711224241/http://arda-maps.org/" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
             <h5 id="Jeziki in pisave P">Jeziki in pisave</h5>
+                <li><a href="https://www.jrrvf.com/hisweloke/sindar/" target="_blank" rel="noopener noreferrer">JRRVF - Hiswelókë: A Sindarin and Noldorin dictionary</a> [<a class="arh" href="https://web.archive.org/web/20230323130509/https://www.jrrvf.com/hisweloke/sindar/" target="_blank" rel="noopener noreferrer">arhivirano</a>] ali <a href="https://omikhleia.github.io/sindict/dict-sd.html" target="_blank" rel="noopener noreferrer">Omikhleia - Hiswelókë: A Sindarin and Noldorin dictionary</a> (GitHub spletna stran)</li>
                 <li><a href="https://www.forodrim.org/daeron/mdtci.html" target="_blank" rel="noopener noreferrer">Forodrim: The Mellonath Daeron Index of Tengwa Specimina (DTS)</a></li>
                 <li><a href="https://www.tecendil.com/" target="_blank" rel="noopener noreferrer">Tecendil</a> (prepisovalec besedila v tengvar)
                     <ul class="s">
