@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="/scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
 
         <title>Nova stara slovenščina</title>
         <meta name="description" content="O slovenščini, kakršna bi morala biti, seznam nekaterih ustreznih slovenskih besed, ki bi nadomestile prevzete, pa tudi moj seznam »predlogov« za nekatere druge."/> <!--opis spletnega mesta-->
@@ -59,14 +60,24 @@
                 </details></li>
                 <li><details><summary><a href="#Novejša slovenščina">Novejša slovenščina</a></summary>
                     <ul>
-                        <li><a href="#Možne slovenske ustreznice">Možne slovenske ustreznice</a></li>
+                        <li><a href="#Možne ustreznice na Franu">Možne ustreznice na Franu</a></li>
+                        <li><a href="#Moje možne ustreznice">Moje možne ustreznice</a></li>
                     </ul>
                 </details></li>
+                <li><a href="#Zunanje povezave in viri">Zunanje povezave in viri</a></li>
             </ul>
           </nav>
         </aside>
 
-        <div class="content">
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
+        <div class="vsebina">
             <h1 id="Nova stara slovenščina">Nova stara slovenščina</h1>
             <p>Slovenščina že nekaj časa zaskrbljujoče propada. Pridobila ni nobenih pravih novih slovenskih besed, uporablja pa se vedno več tujk, ki celo v vedno večji meri nadomeščajo že obstoječe slovenske. Nekdaj so se uporabljale nemške (in predvsem skozi nemščino še latinske in grške), dandanes pa angleške besede; nekdaj smo bili namreč del večje nemško govoreče države, danes pa del svetovne angleško govoreče družbe.</p>
             <p>Če pogledamo v Slovar slovenskega knjižnega jezika, opazimo, da je veliko besed označenih kot <i>starinske</i> ali celo <i>zastarele</i>. Čeprav je oznaka dokaj nepristranskega značaja, to samo krepi splošno mnenje, da naj se teh besed ne bi uporabljalo, da so le še stvar zgodovine; a bi moralo biti ravno obratno, saj bi bilo potrebno te besede obuditi s ponovno rabo. Zato bi morala oznako <i>starinsko</i> nadomestiti oznaka <i>staro</i>,  oznako <i>zastarelo</i> oznaka <i>pozabljeno</i>; prevzete/tuje besede pa bi morale imeti vidno oznako, ki bi jih ločevala od domačih (zdaj je izvor besede moč razbrati le v izvoroslovnem slovarju).</p>
@@ -78,25 +89,26 @@
                     <li><strong><i>zvenečnost</i> tujih jezikov in razkazovanje <i>razgledanosti</i></strong> kot razlog, je med najnizkotnejšimi in neupravičenimi; z vpeljevanjem tujih izrazov naj bi izpadel bolj izobražen, razgledan, oziroma ugleden, kar je veljalo predvsem v preteklosti za višje sloje; čeprav ima to danes malenkost manjši pomen, tuje izrazje še vedno velja za strokovno in naj bi se zato uporaljalo v v krogih izobražencev, znanstvenikov.</li>
                 </ul>
             <p>Od drugih jezikov ne prevzemamo le besed, ampak tudi predpone (npr. <i>ekso-, multi-, poli-,</i> ...), končnice (npr. <i>-ist, -er,</i> ...), medmete ter večbesedne skladnje (npr. <i>narediti posnetek zaslona</i> namesto <i>posneti/slikati zaslon</i> ...).</p>
-            <p>Znotraj spletnega mesta so tuje besede napisane v oklepaju, ležeče in zatemnjeno za lepšimi slovenskimi ustreznicami: „ustreznica (<i class="zamrznjeno">tujka</i>)“. Tujke so vključene, da bi več ljudi te tujke povezali z ustreznicami, s katerimi naj jih nadomestijo; tujke pa so vključene tudi zaraddi tistih, ki bi morda iskali pod takim geslom.</p>
+            <p>Čisto zgrešen (a zelo pogost) pristop k prevajanju, oz. iskanju/ustvarjanju slovenskih ustreznic tujim izrazom je dobesedno prevajanje. Taki prevodi so običajno pomensko zgrešeni.</p>
+            <p>Znotraj spletnega mesta so tuje besede napisane v oklepaju, ležeče in zatemnjeno za lepšimi slovenskimi ustreznicami: „ustreznica (<i class="zamrznjeno">tujka</i>)“. Tujke so vključene, da bi več ljudi te tujke povezali z ustreznicami, s katerimi naj jih nadomestijo; tujke pa so vključene tudi zaradi tistih, ki bi morda iskali pod takim geslom.</p>
             <h2 id="Starejša slovenščina">Starejša slovenščina</h2>
             <p>Precej pozabljene prave slovenske besede:</p>
             <h3 id="Slovensko - slovensko">Ustreznice slovenskim izrazom</h3>
             <p>Starejše (slovenske) sopomenke bolj uveljavljenim (slovenskim)  izrazom.
             </p>
                 <ul class="s">
-                    <li><b>davi</b> - danes zjutraj</li>
+                    <li><b>davi</b> ← danes zjutraj</li>
                         <ul class="s">
-                            <li><b>davišnji</b> - ki je bil danes zjutraj</li>
+                            <li><b>davišnji</b> ← ki je bil danes zjutraj</li>
                         </ul>
-                    <li><b>sinoči</b> - včeraj zvečer</li>
-                    <li><b>zarana</b> - zgodaj zjutraj; zgodaj (splošna raba)</li>
-                    <li><b>drevi</b> - danes zvečer</li>
-                    <li><b>nocoj</b> - v noči ali večeru: ki še traja / ki bo še prišel / ki je minil</li>
+                    <li><b>sinoči</b> ← včeraj zvečer</li>
+                    <li><b>zarana</b> ← zgodaj zjutraj; zgodaj (splošna raba)</li>
+                    <li><b>drevi</b> ← danes zvečer</li>
+                    <li><b>nocoj</b> ← v noči ali večeru: ki še traja / ki bo še prišel / ki je minil</li>
                     <li><b>često</b> - pogosto, velikokrat</li>
                     <li><b>okolnost</b> - okoliščina</li>
-                    <li><b>kališče</b> - prostor ali posoda, kjer seme kali; mlaka, luža ← S kal= mlaka; kalež; mlada, iz kalčka razvijajoča se rastlinica; prvi pojav tega, kar se začenja razvijati ali ima možnosti za razvoj, zametek; klica</li>
-                    <li><b>dobrava</b> - valovit ravninski svet, deloma porasel z drevjem</li>
+                    <li><b>kališče</b> ← prostor ali posoda, kjer seme kali; mlaka, luža ← S kal= mlaka; kalež; mlada, iz kalčka razvijajoča se rastlinica; prvi pojav tega, kar se začenja razvijati ali ima možnosti za razvoj, zametek; klica</li>
+                    <li><b>dobrava</b> ← valovit ravninski svet, deloma porasel z drevjem</li>
                     <li><b>zèl</b> - hudoben, zloben</li>
                     <li><b>zemljína</b> (←zemlja) - celina; zemlja, prst</li>
                     <li><b>priróda</b> - narava
@@ -107,65 +119,99 @@
                 </ul>
             <h3 id="Ustreznice prevzetim izrazom">Ustreznice prevzetim izrazom</h3>
             <ul class="s">
-                <li><b>vseučilíšče</b> - univerza</li>
-                <li><b>bogoslovje</b> - teologija</li>
-                <li><b>ustroj</b> - sistem</li>
-                <li><b>(vse)splošnost</b> - univerzalnost</li>
-                <li><b>somernost</b> - simetrija</li>
-                <li><b>družboslovje</b> - sociologija</li>
-                <li><b>zemljepis</b> - geografija</li>
-                <li><b>konec tedna</b> - vikend</li>
-                <li><b>telovadba</b> - šport (nem. Sport ← ang. sport ← disport = uživati, zabavati se ← srfrc. desporter ← srlat. deportare = obnašati se, uživati ← klas. lat. dē = od + portāre= nesti)</li>
-                <li><b>učilišče</b> - šola (srvnem. schoule ← vlat. scōla ← klas. lat. schola = šola, nauk, učena razprava ← gr. skholḗ = prosti čas, počitek, kar kdo dela v prostem času, predavanje, učen pogovor, šola)</li>
-                <li><b>osvétje, megleníca</b> - galaksija</li>
-                <li><b>izstrélek</b> - raketa (nem. Rakete ← it. rocchetto = motek, tuljava za navijanje niti ← rocca = preslica kot del kolovrata (oblika prvotnih raket je namreč spominjala na obliko motka za navijanje niti)))</li>
+                <li><b>kolíčnik</b> ← koeficient</li>
+                <li><b>spregátev (jezikoslovno); zvéza, združítev;</b> ← konjugácija</li>
+                <li><b>véznik (jezikoslovno)</b> ← konjúnkcija</li>
+                <li><b>sestávni dél, sestavína, dél</b> ← komponênta</li>
+                <li><b>pravílni štírikótnik, štirják</b> ← kvadrȃt</li>
+                <li><b></b> ← parábola</li>
+                <li><b></b> ← logarítem</li>
+                <li><b>zmožnost, zmogljivost; ? (matematično)</b> ← poténca</li>
+                <li><b></b> ← eksponènt</li>
+                <li><b>zamenljívost</b> ← komutatívnost (matematično)</li>
+                <li><b>družílnost</b> ← asociatívnost (matematično)</li>
+                <li><b></b> ← distributívnost (matematično)</li>
+                <li><b>odvísna spremenljívka?</b> ← (npr. matematična) fúnkcija</li>
+                <li><b>vseučilíšče</b> ← univerza</li>
+                <li><b>bogoslovje</b> ← teologija</li>
+                <li><b>ustroj</b> ← sistem</li>
+                <li><b>(vse)splošnost</b> ← univerzalnost</li>
+                <li><b>somernost</b> ← simetrija</li>
+                <li><b>družboslovje</b> ← sociologija</li>
+                <li><b>zemljepis</b> ← geografija</li>
+                <li><b>konec tedna</b> ← vikend</li>
+                <li><b>telovadba</b> ← šport (nem. Sport ← ang. sport ← disport = uživati, zabavati se ← srfrc. desporter ← srlat. deportare = obnašati se, uživati ← klas. lat. dē = od + portāre= nesti)</li>
+                <li><b>učilišče</b> ← šola (srvnem. schoule ← vlat. scōla ← klas. lat. schola = šola, nauk, učena razprava ← gr. skholḗ = prosti čas, počitek, kar kdo dela v prostem času, predavanje, učen pogovor, šola)</li>
+                <li><b>osvétje, megleníca</b> ← galaksija</li>
+                <li><b>izstrélek</b> ← raketa (nem. Rakete ← it. rocchetto = motek, tuljava za navijanje niti ← rocca = preslica kot del kolovrata (oblika prvotnih raket je namreč spominjala na obliko motka za navijanje niti))</li>
+                <li><b>samodŕštvo</b> ← avtokracíja</li>
+                <li><b>nèodvísnost, samostójnost, sámoupráva</b> ← avtonomíja</li>
+                <li><b>dvóvládje</b> ← dualízem</li>
+                <li><b>zrelostni izpit</b> ← matúra</li>
             </ul>
             <h4 id="Slovenski meseci">Slovenski meseci</h4>
                 <ul class="s">
-                    <li><b>prosinec</b> - januar</li>
-                    <li><b>svečan</b> - februar</li>
-                    <li><b>sušec</b> - marec</li>
-                    <li><b>mali traven</b> - april</li>
-                    <li><b>veliki traven</b> - maj</li>
-                    <li><b>rožnik</b> - junij</li>
-                    <li><b>mali srpan</b> - julij</li>
-                    <li><b>veliki srpan</b> - avgust</li>
-                    <li><b>kimavec</b> - september</li>
-                    <li><b>vinotok</b> - oktober</li>
-                    <li><b>listopad</b> - november</li>
-                    <li><b>gruden</b> - december</li>
+                    <li><b>prosinec</b> ← januar</li>
+                    <li><b>svečan</b> ← februar</li>
+                    <li><b>sušec</b> ← marec</li>
+                    <li><b>mali traven</b> ← april</li>
+                    <li><b>veliki traven</b> ← maj</li>
+                    <li><b>rožnik</b> ← junij</li>
+                    <li><b>mali srpan</b> ← julij</li>
+                    <li><b>veliki srpan</b> ← avgust</li>
+                    <li><b>kimavec</b> ← september</li>
+                    <li><b>vinotok</b> ← oktober</li>
+                    <li><b>listopad</b> ← november</li>
+                    <li><b>gruden</b> ← december</li>
                 </ul>
             <h2 id="Novejša slovenščina">Novejša slovenščina</h2>
-            <p>Novejše, manj uveljavljene ustreznice, predlagane s strani jezikoslovcev; predvsem ustreznice angleškim prevzetim izrazom govorice mladih</p>
+            <p>Novejše, precej uveljavljene slovenske ustreznice; večinoma angleškim izrazom.</p>
             <ul class="s">
-                <li><b>mesni krof</b> - hamburger</li>
-                <li><b>sebek</b> - selfi</li>
-                <li><b>všeček</b> - lajk</li>
+                <li><b>mêsni krôf</b> ← hamburger</li>
+                <li><b>sébek</b> ← selfi</li>
+                <li><b>všéček ~ všéčkati</b> ← lajk (<i>like</i>) ~ lajkati</li>
+                <li><b>preglédna plôšča</b> ← <i>dashboard</i></li>
             </ul>
-            <h3 id="Možne slovenske ustreznice">Možne slovenske ustreznice</h3>
+            <h3 id="Možne ustreznice na Franu">Možne ustreznice na Franu</h3>
+            <p>Seznam boljših predlogov (večinoma kot zamenjava angleškim izrazom) na <a href="https://fran.si/ustreznice" target="_blank" rel="noopener noreferrer"><i>Fran - Predlagajte nove slovenske ustreznice</i></a>.
+            <ul class="s">
+                <li><b>známčenje</b> ← <i>branding</i></li>
+                <li><b>jádranje</b> ← <i>coasting</i></li>
+                <li><b>oglásničar, oglásopísec</b> ← <i>copywriter</i></li>
+                <li><b>sodélo</b> ← <i>coworking</i></li>
+                <li><b>ženomòr </b> ← femicíd</li>
+                <li><b><del>sledíti</del>, spremljati </b> ← fôlovati, followati</li>
+                <li><b>zelênjenje</b> ← <i>greenwashing</i></li>
+                <li><b>hranúša</b> ← <i>junk food</i></li>
+                <li><b>koláček</b> ← mafin</li>
+            </ul>
+            <h3 id="Moje možne ustreznice">Moje možne ustreznice / predlogi</h3>
             <p>Krajši seznam nekaterih predlogov zamenjave prevzetih besed z ustreznejšimi slovenskimi besedami. V večini gre za tvorjenke, oz. besede, sestavljene iz že obstoječih besed. Predlogi zagotovo niso dokončni, niti niso vsi dovolj sprejemljivi, predvsem zaradi svoje okornosti.</p>
             <ul class="s">
-                <li><b>gôn</b> - energija (nem. Energie ← fran. énergie ← poznolat. energīa; gr. enérgeia = delo, delovanje, moč)</li>
-                <li><b>narávoslôvje, stvárnoslôvje</b> - fizika (nem. Physik ← lat. physica ← gr.physikḗ = naravoslovje, naraven, ki zadeva naravo ← gr.phýsis = narava, stvarstvo, rast, rojstvo ← gr. glagol phýomai = nastanem; phýō = storim, da kaj nastane, rodim)</li>
-                <li><b>žívoslôvje</b> - biologija (nem. Biologie; fran. biologie ← bíos =življenje; gr. lógos = beseda, znanost, govor)</li>
-                <li><b>snôvoslôvje</b> - kemija (srlat. chemia; pozno gr. khymeía, khēmeía = umetnost mešanja sokov, spreminjanja kovin; gr. Khēmía = Egipt; kopt. Kēme, Khemi = Egipt, dobesedno »črna dežela«, »dežela črncev« ≈ domnevno je prvotno pomenilo egipčansko umetnost, egipčansko znanost)</li>
-                <li><b>prostóroslôvje</b> - geometrija (nem. Geometrie; frc. géométrie; angl. geometry; lat.  geōmetria ← gr. geōmetría = zemljemerstvo ← geōmétrēs = zemljemerec ← gē̃ = zemlja + metréō = merim)</li>
-                <li><b>dâljvíd, slíkonôs</b> - televizija (ang. television; fran. télévision ← tē̃le = daleč, v daljavi; lat. vīsiō = pogled, gledanje)</li>
-                <li><b>gôvornôs/dáljgôvor/dáljglás</b> - telefon ( nem. Telephon; fran. téléphone; ang. telephone ← gr. tē̃le = daleč, v daljavi; phōnḗ = glas, zvok)</li>
-                <li><b>sámogôn</b> - avtomobil/avto (nem. Auto/Automobil; fran. auto/automobile ← gr. autós = sam, lat. mōbilis = premičen)</li>
-                <li><b>vêlcésta</b> - avtocesta</li>
-                <li><b>mnógovôz</b> - avtobus</li>
-                <li><b>návlec</b> - pulover (nem. Pullover ← ang. pull + over)</li>
-                <li><b>zvókosprêjm</b> - mikrofon</li>
-                <li><b>zemlják</b> - krompir</li>
-                <li><b>prékvlék, prevzgíb; vzgíb</b> - <i>muscle up; pull up</li>
+                <li><b>gôn</b> ← energija (nem. Energie ← fran. énergie ← poznolat. energīa; gr. enérgeia = delo, delovanje, moč)</li>
+                <li><b>kràtkič</b> ← (npr. <i>Youtube</i>) <i>short</i></li>
+                <li><b>narávoslôvje, stvárnoslôvje</b> ← fizika (nem. Physik ← lat. physica ← gr.physikḗ = naravoslovje, naraven, ki zadeva naravo ← gr.phýsis = narava, stvarstvo, rast, rojstvo ← gr. glagol phýomai = nastanem; phýō = storim, da kaj nastane, rodim)</li>
+                <li><b>žívoslôvje</b> ← biologija (nem. Biologie; fran. biologie ← bíos =življenje; gr. lógos = beseda, znanost, govor)</li>
+                <li><b>snôvoslôvje</b> ← kemija (srlat. chemia; pozno gr. khymeía, khēmeía = umetnost mešanja sokov, spreminjanja kovin; gr. Khēmía = Egipt; kopt. Kēme, Khemi = Egipt, dobesedno »črna dežela«, »dežela črncev« ≈ domnevno je prvotno pomenilo egipčansko umetnost, egipčansko znanost)</li>
+                <li><b>prostóroslôvje</b> ← geometrija (nem. Geometrie; frc. géométrie; angl. geometry; lat.  geōmetria ← gr. geōmetría = zemljemerstvo ← geōmétrēs = zemljemerec ← gē̃ = zemlja + metréō = merim)</li>
+                <li><b>dâljvíd, slíkonôs</b> ← televizija (ang. television; fran. télévision ← tē̃le = daleč, v daljavi; lat. vīsiō = pogled, gledanje)</li>
+                <li><b>gôvornôs/dáljgôvor/dáljglás</b> ← telefon ( nem. Telephon; fran. téléphone; ang. telephone ← gr. tē̃le = daleč, v daljavi; phōnḗ = glas, zvok)</li>
+                <li><b>sámogôn</b> ← avtomobil/avto (nem. Auto/Automobil; fran. auto/automobile ← gr. autós = sam, lat. mōbilis = premičen)</li>
+                <li><b>vêlcésta</b> ← avtocesta</li>
+                <li><b>mnógovôz</b> ← avtobus</li>
+                <li><b>návlec</b> ← pulover (nem. Pullover ← ang. pull + over)</li>
+                <li><b>zvókosprêjm</b> ← mikrofon</li>
+                <li><b>zemlják</b> ← krompir</li>
+                <li><b>prékvlék, prevzgíb; vzgíb</b> ← <i>muscle up; pull up</i></li>
             </ul>
             <h2 id="Zunanje povezave in viri">Zunanje povezave in viri</h2>
             <ul class="s">
                 <li><a href="https://www.fran.si/" target="_blank" rel="noopener noreferrer">Fran - Slovarji Inštituta za slovenski jezik Frana Ramovša ZRC SAZU</a></li>
                 <br>
-                <li><a href="https://www.delo.si/mnenja/pisma-bralcev/razmisljanje-o-slovenscini-in-anglescini-in-krizarskih-vojnah/" target="_blank" rel="noopener noreferrer">Delo - dr. Borut Vrščaj: Razmišljanje o slovenščini in angleščini – in križarskih vojnah</a> [<a class="arh" href="https://web.archive.org/web/20240112202949/https%3A%2F%2Fwww.delo.si%2Fmnenja%2Fpisma-bralcev%2Frazmisljanje-o-slovenscini-in-anglescini-in-krizarskih-vojnah%2F" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
-                <li><a href="https://www.delo.si/mnenja/gostujoce-pero/koliko-je-danes-v-resnici-se-vredna-slovenscina/" target="_blank" rel="noopener noreferrer">Delo - Majda M. Lesjak: Koliko je danes v resnici še vredna slovenščina?</a> [<a class="arh" href="https://web.archive.org/web/20240112203130/https%3A%2F%2Fwww.delo.si%2Fmnenja%2Fgostujoce-pero%2Fkoliko-je-danes-v-resnici-se-vredna-slovenscina%2F" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
+                <li><a href="https://www.fran.si/ustreznice" target="_blank" rel="noopener noreferrer">Fran - Predlagajte nove slovenske ustreznice</a></li>
+                <br>
+                <li><a href="https://www.delo.si/mnenja/pisma-bralcev/razmisljanje-o-slovenscini-in-anglescini-in-krizarskih-vojnah/" target="_blank" rel="noopener noreferrer">Delo - dr. Borut Vrščaj: Razmišljanje o slovenščini in angleščini – in križarskih vojnah</a> <span class="arh">[<a href="https://web.archive.org/web/20240112202949/https%3A%2F%2Fwww.delo.si%2Fmnenja%2Fpisma-bralcev%2Frazmisljanje-o-slovenscini-in-anglescini-in-krizarskih-vojnah%2F" target="_blank" rel="noopener noreferrer">arhivirano</a>]</span></li>
+                <li><a href="https://www.delo.si/mnenja/gostujoce-pero/koliko-je-danes-v-resnici-se-vredna-slovenscina/" target="_blank" rel="noopener noreferrer">Delo - Majda M. Lesjak: Koliko je danes v resnici še vredna slovenščina?</a> <span class="arh">[<a href="https://web.archive.org/web/20240112203130/https%3A%2F%2Fwww.delo.si%2Fmnenja%2Fgostujoce-pero%2Fkoliko-je-danes-v-resnici-se-vredna-slovenscina%2F" target="_blank" rel="noopener noreferrer">arhivirano</a>]</span></li>
             </ul>
         </div>
     </body>

@@ -1,22 +1,52 @@
 :root {
-    --izrazito: Lime;
-    --mehka-crna: #121212;
-    --bela: #eee;
+    --barvaPoudarka: rgba(153, 178, 255, 1);
+    --barvaPoudarkaNaprej: rgba(173, 216, 230, 1);
+    --barvaOzadja: #121212;
+    --barvaOzadjaProsojno: rgba(0, 0, 0, 0.7);
+    --barvaOzadjaNaprej: rgba(36, 36, 36, 1);
+    --barvaOzadjaPoudarek: rgba(128, 159, 255, 0.4);
+    --barvaOspredja: #eee;
+    --barvaNazaj: rgba(255, 255, 255, 0.4);
     --pisava:"Times New Roman", Times, Georgia, Garamond, serif;
     --vsebina: 120ch;
+    --prehodČas: 0.5s;
 }
-
+.svetliNačin {
+    --barvaPoudarka: blue;
+    --barvaPoudarkaNaprej: #4169E1;
+    --barvaOzadja: white;
+    --barvaOzadjaProsojno: rgba(220, 220, 220, 0.7);
+    --barvaOzadjaNaprej: rgba(240, 240, 240, 0.5);
+    --barvaOspredja: black;
+    --barvaNazaj: rgba(0, 0, 0, 0.4);
+}
 body {
-    --accent-color: var(--izrazito);
-    --background-color: var(--mehka-crna);
-    --text-color: var(--bela);
-    --transition-delay: 0.5s;
-
-    transition: var(--transition-delay);
-    background-color: var(--background-color);
-    color: var(--text-color);
+    transition: all 0.5s ease;
+    background-color: var(--barvaOzadja);
+    color: var(--barvaOspredja);
     font-family: "Times New Roman", Times, Georgia, Garamond, serif;
     opacity: 0.87;
+    accent-color: var(--barvaPoudarka);
+}
+
+.stikaloNačina {
+  position: fixed;
+  z-index: 100;
+  top: 0.5rem;
+  right: 1em;
+  color: var(--barvaOspredja);
+  border: 0;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+.belsvg {
+    stroke: white;
+    fill: white;
+    color: white;
 }
 @font-face {
     font-family: 'PisanaGotica';
@@ -56,6 +86,88 @@ body {
     font-size: 1.5rem;
     font-variant-ligatures: discretionary-ligatures;
 }
+
+@font-face {
+    font-family: 'SaratiLD';
+    src: url('fonts/Sarati/SaratiEldamarLTR.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarLTR.woff') format('woff');
+         /*url('fonts/Sarati/sarael__.ttf') format('ttf');*/
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiLD {
+    font-family: 'SaratiLD';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiLDč';
+    src: url('fonts/Sarati/SaratiEldamarLTRBar.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarLTRBar.woff') format('woff');
+         /*url('fonts/Sarati/saraelb_.ttf') format('ttf');*/
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiLDč {
+    font-family: 'SaratiLDč';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiDL';
+    src: url('fonts/Sarati/SaratiEldamarRTL.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarRTL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiDL {
+    font-family: 'SaratiDL';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiDLč';
+    src: url('fonts/Sarati/SaratiEldamarRTLBar.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarRTLBar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiDLč {
+    font-family: 'SaratiDLč';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiN';
+    src: url('fonts/Sarati/SaratiEldamarVertical.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarVertical.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiN {
+    font-family: 'SaratiN';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiNč';
+    src: url('fonts/Sarati/SaratiEldamarVerticalBar.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarVerticalBar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiNč {
+    font-family: 'SaratiLD';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+
 @font-face {
     font-family: 'metelcica';
     src: url('./fonts/metelcica/metelcica-webfont.eot');
@@ -93,14 +205,18 @@ body {
   position: absolute;
 }
 
-body.light {
-  --accent-color: var(--izrazito);
-  --background-color: white;
-  --text-color: black;
-}
 .zamrznjeno {
-    color: var(--bela);
+    color: var(--barvaOspredja);
     opacity: 0.4;
+}
+.zatemnjeno {
+    color: #656565;
+}
+.nevidno {
+    opacity: 0;
+}
+.desno {
+    text-align: right;
 }
 .button-right {
     position: absolute;
@@ -174,11 +290,13 @@ body.light {
     max-width: var(--vsebina);
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
 }
 .content {
     max-width: var(--vsebina);
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
 }
 
 body.ura {
@@ -259,10 +377,13 @@ h7 {
     margin-left: 3rem;
     margin-right: auto;
  }
+h8 {
+ font-size: 1rem;
+ font-weight: bold;
+ }
 p {
  text-align: justify;
  font-size: 1rem;
- margin-left: ;
  margin-top: 0.5rem;
  }
 p.capitals {
@@ -282,50 +403,33 @@ p.podnaslov2 {
 .besedilosred {
     text-align: center;
 }
+.obvestilo {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    background-color: var(--barvaOzadjaPoudarek);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
 .deli {
-    max-height: 12rem;
-    max-width: 12rem;
+    max-height: 18rem;
+    width: 18rem;
     position: relative;
+    float: left;
+    margin: 1rem;
+}
+.prelom {/*besedilo bo prelomljeno pod sliko ki "plava"*/
+    clear: both;
+    display:block;
+}
+.deli.okroglo {
+    shape-outside: circle();
+    border-radius: 50%;
 }
 .lunadel {
     height: 6rem;
     width: 6rem;
-}
-.dnevnecrte {
-    fill: none;
-    stroke-width: 6px;
-    stroke-opacity: 0.6;
-    stroke-width: 5px;
-}
-.kazalka {
-    --odmik: 0;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: 60%;
-    border-radius: 50%;
-    border: 0.1vmin solid yellow;
-    position: absolute;
-}
-.poldnevnica {
-    width: 0.1vmin;
-    height: 100%;
-    background-color: yellow;
-    position: absolute;
-    top: 0;
-    left: 50%;
-}
-.obrocek{
-    position: absolute;
-    z-index: 4; /*visoka plast, da prekrije kazalce*/
-    width: 4vmin;
-    height: 4vmin;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /*postavimo središče elemnta (ne pa kot) v središče polja*/
-    border-radius: 50%; /*krog iz kvadrata*/
-    border: 1px solid white;
 }
 li {
  text-align: justify;
@@ -333,13 +437,109 @@ li {
  margin-left: ;
  margin-top: 0.5rem;
  }
-a {
-    color: #809fff;
+
+ .gumb {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: var(--barvaNazaj);
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
     text-decoration: none;
-    cursor: pointer
- }
-a.arh {
-    color: lightblue;
+    cursor: pointer;
+}
+.gumb:hover {
+    color: var(--barvaPoudarka);
+}
+ul, li {
+    list-style-position: inside;
+}
+ul.drevesni {
+    list-style: none; /*prepreči morebitne pikce seznama*/
+    line-height: 1em;
+    padding-inline-start: 40px;
+}
+    ul.drevesni summary {
+        cursor: pointer;
+    }
+        ul.drevesni summary::marker {
+            display: none;
+            content: '';
+        }
+        ul.drevesni summary::-webkit-details-marker {
+            display: none;
+        }
+    ul.drevesni li {
+        margin-top: 0; /*uniči slog od prej*/
+        position: relative;
+        /*outline: 1px solid white;*/
+    }
+    ul.drevesni li::before {
+        position: absolute;
+        left: -10px;
+        top: 0px;
+        border-left: 2px solid gray;
+        border-bottom: 2px solid gray;
+        content: "";
+        width: 8px;
+        height: 0.5em;
+    }
+    ul.drevesni li::after {
+        position: absolute;
+        left: -10px;
+        bottom: 0px;
+        border-left: 2px solid gray;
+        content: "";
+        width: 8px;
+        height: 100%;
+    }
+    ul.drevesni li:last-child::after {
+        display: none;
+    }
+    ul.drevesni summary:hover {
+        font-size: 1.05rem;
+    }
+    ul.drevesni > li:after, ul.drevesni > li:before {
+        display:none
+    }
+
+a {
+    color: var(--barvaPoudarka);
+    cursor: pointer;
+    text-decoration: none;
+}
+    a:link {
+        color: var(--barvaPoudarka);
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    /*a:visited {
+        color: lightblue;
+        text-decoration: none;
+    }*/
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /*a:active {
+        color: yellow;
+        text-decoration: underline;
+    }*/
+samp {/*opredeli kot sporočilo računalnika*/
+    font-family: monospace;
+}
+code {
+    font-size: 0.9rem;
+    font-family: monospace;
+    text-decoration: none;
+    text-align: left;
+}
+.arh {
+    color: var(--barvaPoudarkaNaprej);
 }
 ul.s {
   list-style-type: square;
@@ -368,13 +568,13 @@ table {
     margin-right: auto;
 }
 tr:hover {
-    background-color: dimgrey;
+    background-color: var(--barvaOzadjaNaprej);
 }
 tr.raz:hover {
     background-color: initial;
 }
 td.mrtva {/*prazne, prepovedane celice*/
-    background-color: #ffffff34;
+    background-color: var(--barvaNazaj);
 }
 table.leva {
     left: 0;
@@ -396,31 +596,36 @@ table.list {
     overflow-y: hidden;
 }
 tr.spodajrob {
-    border-bottom: 1px solid #ffffff34;
+    border-bottom: 1px solid var(--barvaNazaj);
 }
 tr.zgorajrob {
-    border-top: 1px solid #ffffff34;
+    border-top: 1px solid var(--barvaNazaj);
 }
 table.sredinsko th,
 table.sredinsko td {
     text-align:center;
 }
 table.vodčrte td, tr.vodčrte td {
-    border-bottom: 1px solid #ffffff34;
+    border-bottom: 1px solid var(--barvaNazaj);
+}
+table.samovodčrte td, tr.samovodčrte td {
+    border-bottom: 1px solid var(--barvaNazaj);
+    border-left: none;
+    border-right: none;
 }
 table tr {
     border: none;
 }
 table td {
-    border-right: 1px solid #ffffff34;
+    border-right: 1px solid var(--barvaNazaj);
     padding: 10px;
     text-align: left;
 }
 table th {
-    border-bottom: 1px solid #ffffff34;
+    border-bottom: 1px solid var(--barvaNazaj);
     padding: 10px;
     text-align: center;
-    border-right: 1px solid #ffffff34;
+    border-right: 1px solid var(--barvaNazaj);
 }
 table th.brezdrob,
 table td.brezdrob {
@@ -443,6 +648,12 @@ tr.ničta {
     height:0;
     margin:0;
 }
+table.osnovna td {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    font-weight: normal;
+}
 
 /*slogi za slike*/
 img {
@@ -464,20 +675,22 @@ main img {
 img.obrnjena {
     filter: invert(100%);
 }
+.svetliNačin .obrnjena {
+    filter: invert(0%);
+}
 .vodoravne {
     display: flex;
     flex-wrap: wrap;
 }
 figure {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    min-width: 20rem;
+    align-items: center;
+    float: left;
+    width: 100vw;
+    margin: 0;
+    padding: 1rem;
 }
 figcaption {
-    width: 0;
-    min-width: 100%;
 }
 figcaption p {
     padding: 0.5rem;
@@ -485,9 +698,12 @@ figcaption p {
     margin: 0;
     width: 100%;
 }
+figcaption img {
+    left: auto;
+    right: auto;
+}
 figure img {
-    padding: 0.2rem;
-    padding-bottom: 1rem;
+    padding-right: 0.5rem;
 }
 
 .stransko {
@@ -558,9 +774,6 @@ body {
   --bar-width: 2rem;
   --bar-height: 0.18rem;
   --hamburger-gap: 0.38rem;
-  --foreground: rgba(0, 0, 0, 0.7); /*barva polja kazala, zadnja vrednost je za prosojnost*/
-  --background: white;
-  --hamburger-color: white;
   --hamburger-margin: 0.38rem;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
@@ -581,15 +794,15 @@ body {
 }
 
 .hamburger-menu:has(input:checked) {
-  --foreground: white;
-  --background: #333;
+  --foreground: var(--barvaOspredja);
+  --background: var(--barvaOzadja);
 }
 
 .hamburger-menu:has(input:focus-visible)::before,
 .hamburger-menu:has(input:focus-visible)::after,
 .hamburger-menu input:focus-visible {
-  border: 1px solid var(--background); /*obroba, ko je ikona izbrana pri delu brez kazalca, barve background*/
-  box-shadow: 0 0 0 1px var(--foreground);
+  border: 1px solid var(--barvaOspredja); /*obroba, ko je ikona izbrana pri delu brez kazalca, barve background*/
+  box-shadow: 0 0 0 1px var(--barvaOzadja);
 }
 
 .hamburger-menu::before,
@@ -598,7 +811,7 @@ body {
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
-  background-color: var(--hamburger-color);
+  background-color: var(--barvaOspredja);
   border-radius: 9999px;
   transform-origin: left center; /*središče sukanja je na levi*/
   transition: opacity var(--animation-timing), width var(--animation-timing),
@@ -636,13 +849,18 @@ body {
   translate: -100%; /*kazalo strani je privzeto skrito izven strani*/
   padding: 0.5rem 1rem;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem /*1rem odmika kazala od ikone*/); /*odmik od vrha strani na podlagi prostora, ki ga zavzame ikona*/
-  background-color: var(--foreground);
-  color: var(--background);
+  padding-bottom: 2rem;
+  background-color: var(--barvaOzadjaProsojno);
+  color: var(--barvaOspredja);
   max-width: 30rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
   height: 100vh; /*najmanjša višina polja kazala strani, 1vh = 1% višine zaslona*/
   position: fixed;
   overflow: auto;
   z-index: 100;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
 }
 .sidebar li {
   text-align: left;
@@ -660,18 +878,24 @@ body {
 }
 @media print /*slog za tiskanje*/ {
     body {
-        color: black;
-        background: white;
-        background-color: white;
+        --barvaPoudarka: blue;
+        --barvaPoudarkaNaprej: #0096FF;
+        --barvaOzadja: white;
+        --barvaOzadjaProsojno: rgba(240, 240, 240, 1);
+        --barvaOzadjaNaprej: rgba(240, 240, 240, 0.5);
+        --barvaOspredja: black;
     }
     a {
         color: black;
     }
+    .arh {
+        display: none;
+    }
     ul {
         color: black;
     }
-    ul.s {
-        color: black;
+    details {
+        open: true;
     }
     .zamrznjeno {
         color: black;
@@ -686,7 +910,6 @@ body {
     .sidebar {
         display: none;
     }
-
     svg{
         stroke: black;
     }
@@ -694,7 +917,7 @@ body {
         fill: black;
         stroke: black;
     }
-    svg g {
+    svg {
         fill: black;
     }
     svg text {
@@ -725,9 +948,9 @@ body {
 @media (orientation: portrait) /*slog za zaslon v pokončnem načinu*/  and (max-width: 500px){
 }
 @media (orientation: landscape) /*slog za zaslon v ležečem načinu*/  and (max-width: 500px){
-}
+}/*
 @media (prefers-color-scheme: dark) {
     path { fill: white; }
 }
 @media (prefers-color-scheme: light) {
-}
+}*/

@@ -1,7 +1,7 @@
 const GSSš = 46.11994444; //Geometrično Središče Slovenije - zemljepisna širina/višina
 const GSSd = 14.81533333; //Geometrično Središče Slovenije - zemljepisna dolžina
 
-const x = document.getElementById("demo");
+const x = document.getElementById("položaj"); //izberem element z ID-jem "položaj"
 function requestLocationPermission() {
     if (navigator.geolocation && navigator.permissions) {
         navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
@@ -19,16 +19,17 @@ function showPosition(position) {
     x.innerHTML = "tvoj položaj: " + position.coords.latitude + " ° g. š., " + position.coords.longitude + " ° g. d.";
 }
 
-setInterval(nastaviUro, 1000)/* s setInterval vsako sekundo (1000 milisekund) kličemo funkcijo nastaviUro*/
+setInterval(nastaviUro, 1000)// s funkcijo setInterval vsako sekundo (1000 milisekund) kličemo funkcijo nastaviUro
 
 const urniKazalec = document.querySelector('[data-urni-kazalec]') /*izbere vrstico, ki ima atribut data-urni-kazalec*/
 const minutniKazalec = document.querySelector('[data-minutni-kazalec]') /*izbere vrstico, ki ima atribut data-minutni-kazalec*/
 const sekundniKazalec = document.querySelector('[data-sekundni-kazalec]') /*izbere vrstico, ki ima atribut data-sekundni-kazalec*/
 const dnevnaUra = document.querySelector('[data-dnevnaUra]')
 const lunazasuk = document.querySelector('[data-lunazasuk]')
-const lunamenaodmik = document.querySelector('[data-lunamenaodmik]')
+//const lunamenaodmik = document.querySelector('[data-lunamenaodmik]')
 const lunamenapremer = document.querySelector('[data-lunamenapremer]')
-const menabarva = document.querySelector('[data-menabarva]')
+const polluna = document.querySelector('[data-stranPollune]')
+//const menabarva = document.querySelector('[data-menabarva]')
 const lunabarva = document.querySelector('[data-lunabarva]')
 const dnevilune = document.querySelector('[data-lunadnevi]')
 const letnaStevilcnica = document.querySelector('[data-letnaStevilcnica]')
@@ -56,7 +57,7 @@ function ugotoviprestopnost(year) {
     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 }
 
-    /*PRIDOBIVANJE ASTRONOMSKIH POSATKOV s AstronomyAPI (https://astronomyapi.com/; https://docs.astronomyapi.com/)*/
+    /*PRIDOBIVANJE ASTRONOMSKIH PODATKOV z AstronomyAPI (https://astronomyapi.com/; https://docs.astronomyapi.com/)*/
     const apiUrl = "https://api.astronomyapi.com/api/v2/bodies/positions";
     const params = {
       longitude: 46.11994444,
@@ -109,8 +110,9 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     const trSLOčasP = new Date()// trenutni čas v Sloveniji z vključenim poletnim premikom ure
 
 
-    /*PRIDOBIVANJE ASTRONOMSKIH PODATKOV z SunCalc (https://github.com/mourner/suncalc/tree/master) resultPoSonVzh*/
+    //PRIDOBIVANJE ASTRONOMSKIH PODATKOV s SunCalc (https://github.com/mourner/suncalc/tree/master)
     časi = SunCalc.getTimes(trSLOčas, GSSš, GSSd);
+    console.log(časi);
         var Zora = časi.dawn
             Zora = new Date(Zora)
             document.getElementById("resultZora").innerHTML = `${Zora.getHours().toString().padStart(2, '0')}:${Zora.getMinutes().toString().padStart(2, '0')}:${Zora.getSeconds().toString().padStart(2, '0')}`;
@@ -190,13 +192,15 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
             document.getElementById("resultParLune").innerHTML = (parLuneStop).toFixed(4);
 
     OsvLune = SunCalc.getMoonIllumination(trSLOčas)
+        console.log(OsvLune);
         const osvLune = OsvLune.fraction
-            document.getElementById("resultOsvLune").innerHTML = (osvLune*100).toFixed(0) + "%";
+            document.getElementById("resultOsvLune").innerHTML = (osvLune*100).toFixed(1) + "%";
         const kotLune = OsvLune.angle
             document.getElementById("resultKotLune").innerHTML = (kotLune).toFixed(4);
             const kotLuneStop = kotLune * 180 / Math.PI
             document.getElementById("resultKotLuneStop").innerHTML = (kotLuneStop).toFixed(4);
-        const menaLune = OsvLune.phase
+        var menaLune = OsvLune.phase
+        console.log(menaLune);
             document.getElementById("resultMenaLune").innerHTML = (menaLune).toFixed(4);
 
     VzhZahLune = SunCalc.getMoonTimes(trSLOčas, GSSš, GSSd)
@@ -299,8 +303,7 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     const časmlaja = Date.UTC(2023, 0, 21, 21, 53); /*čas nekega mlaja, 21. jan. 2023, 21:53*/
     const časrazlika = trenutniUTC - časmlaja;
     /*const luninpoložaj = (časrazlika % astmesec)/astmesec /*celoštevilski (milisekundni) ostanek pri deljenju z dolžino meseca*/
-    const luninpoložaj = menaLune
-    const premerlune = 6
+    /*const premerlune = 6
     const kotnizasuk = luninpoložaj * 360
 
     let željenkot; //željen kot mora biti med 0 in 90 stopinj
@@ -318,21 +321,48 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     const željenkotrad = željenkot * Math.PI / 180
     const sinkota = Math.sin(željenkot * Math.PI / 180)
     const rlune = premerlune/2
-    const rad = Math.PI / 180
-    const premermene = rlune * Math.sin(željenkotrad) + rlune * Math.tan(90 - (2 * (Math.atan(Math.sin(željenkotrad)))))
+    const rad = Math.PI / 180*/
+    //const premermene = rlune * Math.sin(željenkotrad) + rlune * Math.tan(90 - (2 * (Math.atan(Math.sin(željenkotrad)))))
     //  const premermene = premerlune / (Math.sin(2* Math.atan((premerlune / 2) / (premerlune * Math.sin(željenkot * Math.PI / 180)))))
     //  const odmikmene = (premerlune / 2) - ((premerlune /2) * Math.sin(željenkot * Math.PI / 180)) + (premermene/2)
+
+    const željenKot = 2*menaLune //kot med 0 in 90 stopinj v radianih
+        console.log(željenKot);
+    let premermene;
+        if (menaLune === 0) { //nova Luna
+            premermene = 1;
+        } else if (0 <= menaLune && menaLune <= 0.25) {
+            premermene = Math.cos(željenKot);
+        } else if (menaLune === 0.25) { //prvi krajec
+            premermene = 0;
+        } else if (0.25 <= menaLune && menaLune <= 0.5) {
+            premermene = Math.cos(Math.PI - željenKot);
+        } else if (menaLune === 0.5) { //polna luna / ščip
+            premermene = 1;
+        } else if (0.5 <= menaLune && menaLune <= 0.75) {
+            premermene = Math.cos(željenKot - Math.PI);
+        } else if (menaLune === 0.75) { //zadnji krajec
+            premermene = 0;
+        } else if (0.75 <= menaLune && menaLune <= 1) {
+            premermene = Math.cos(2*Math.PI - željenKot)
+        } else if (menaLune === 1) { //mlaj
+            premermene = 1;
+        }
+        //document.querySelector(".del").style.width = premermene;
+        console.log(premermene);
+
     let stranmene;
-        if (0 < kotnizasuk && kotnizasuk < 90) { //če je kotni zasuk med 0 in 90 stopinj...
-            stranmene = -1; //...je mena na desni
-        } else if (90 < kotnizasuk && kotnizasuk < 180) {
+        if (0 <= menaLune && menaLune <= 0.25) { //če je kotni zasuk med 0 in 90 stopinj...
+            stranmene = -1; //...je mena (srp) na desni
+        } else if (0.25 <= menaLune && menaLune <= 0.5) {
             stranmene = 1;
-        } else if (180 < kotnizasuk && kotnizasuk < 270) {
+        } else if (0.5 <= menaLune && menaLune <= 0.75) {
             stranmene = -1;
-        } else {
+        } else if (0.75 <= menaLune && menaLune <= 1) {
             stranmene = 1;
         }
-    const odmikmene = (rlune - rlune*sinkota + (premermene/2 - rlune))*stranmene
+        console.log(stranmene);
+    /*const odmikmene = (rlune - rlune*sinkota + (premermene/2 - rlune))*stranmene
     let barvamene;
         if (0 < kotnizasuk && kotnizasuk < 90) { //če je kotni zasuk med 0 in 90 stopinj...
             barvamene = "black"; //...je mena črna
@@ -342,19 +372,20 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
             barvamene = "white";
         } else {
             barvamene = "black";
-        }
+        }*/
     let barvalune;
-        if (0 < kotnizasuk && kotnizasuk < 90) { //če je kotni zasuk med 0 in 90 stopinj...
-            barvalune = "white"; //...je luna bela (in mena črna)
-        } else if (90 < kotnizasuk && kotnizasuk < 180) {
-            barvalune = "black";
-        } else if (180 < kotnizasuk && kotnizasuk < 270) {
-            barvalune = "black";
-        } else {
+        if (0 <= menaLune && menaLune < 0.25) { //če je kotni zasuk med 0 in 90 stopinj...
+            barvalune = "black"; //...je luna bela (in mena črna)
+        } else if (0.25 < menaLune && menaLune <= 0.5) {
             barvalune = "white";
+        } else if (0.5 < menaLune && menaLune < 0.75) {
+            barvalune = "white";
+        } else if (0.75 < menaLune && menaLune <= 1) {
+            barvalune = "black";
         }
+        console.log(barvalune);
 
-    const prvilunindan = (luninpoložaj /*= celoštevilski (milisekundni) ostanek pri deljenju časa od nekega mlaja do trenutno z dolžino meseca*/ % (24*60*60*1000)/*1 dan v ms*/)/*ostanek pri deljenju mesta Lune v meni z 1 dnevom - vrednost je manjša od 1 dneva*/ / astmesec
+    const prvilunindan = (menaLune  % (24*60*60*1000)/*1 dan v ms*/)/*ostanek pri deljenju mesta Lune v meni z 1 dnevom - vrednost je manjša od 1 dneva*/ / astmesec
 
 
     zasukaj(sekundniKazalec, sekundnoRazmerje) /*Kliče funkcijo zasukaj za kazalec sekundniKazalec, da posodobi njegove rotacije na osnovi izračunanih razmerij*/
@@ -362,15 +393,17 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     zasukaj(urniKazalec, urnoRazmerje) /*Kliče funkcijo zasukaj za kazalec urniKazalec, da posodobi njegove rotacije na osnovi izračunanih razmerij*/
     zasukaj(dnevnaUra, dnevnoRazmerje)
     zasukaj(letnaStevilcnica, letnazamuda)
-    zasukaj(lunazasuk, luninpoložaj)
+    zasukaj(lunazasuk, menaLune)
     setPolletje(kazalka, dan183)
-    meneodmik(lunamenaodmik, odmikmene)
+    //meneodmik(lunamenaodmik, odmikmene)
     menepremer(lunamenapremer, premermene)
-    barva(menabarva, barvamene)
+    //barva(menabarva, barvamene)
     barva(lunabarva, barvalune)
     zasukaj(dnevilune, prvilunindan)
     zasukaj(zvezdeleto, letozvezde)
     zasukaj(zvezdedan, urnoRazmerje)
+
+    stranPollune(polluna, stranmene)
 }
 nastaviUro() /*kliče funkcijo nastaviUro takoj po nalaganju strani, da se zagotovi, da se ure in kazalci pravilno nastavijo na začetku*/
     console.log(časi);
@@ -391,6 +424,9 @@ function meneodmik(element, razmerje) /*funkcija, ki posodablja rotacijo določe
 }
 function menepremer(element, razmerje) /*funkcija, ki posodablja rotacijo določenega elementa (kazalca)*/ {
     element.style.setProperty ('--premermene', razmerje)
+}
+function stranPollune(element, stran) /*funkcija, ki posodablja rotacijo določenega elementa (kazalca)*/ {
+    element.style.setProperty ('--stranPollune', stran)
 }
 function barva(element, izbira) /*funkcija, ki posodablja barvo elementa*/ {
     element.style.setProperty ('--barva', izbira)
@@ -417,3 +453,43 @@ zaslon(napravi);
 window.addEventListener("resize", function() {
     zaslon(napravi);
 });
+
+//SVETLI NAČIN
+    // check for saved 'svetliNačin' in localStorage
+/*    let svetliNačin = localStorage.getItem('svetliNačin');
+
+    const svetliNačinToggle = document.querySelector('#stikaloNačina');
+
+    const enablesvetliNačin = () => {
+      // 1. Add the class to the body
+      document.body.classList.add('svetliNačin');
+      // 2. Update svetliNačin in localStorage
+      localStorage.setItem('svetliNačin', 'enabled');
+    }
+
+    const disablesvetliNačin = () => {
+      // 1. Remove the class from the body
+      document.body.classList.remove('svetliNačin');
+      // 2. Update svetliNačin in localStorage
+      localStorage.setItem('svetliNačin', null);
+    }
+
+    // If the user already visited and enabled svetliNačin
+    // start things off with it on
+    if (svetliNačin === 'enabled') {
+      enablesvetliNačin();
+    }
+
+    // When someone clicks the button
+    svetliNačinToggle.addEventListener('click', () => {
+      // get their svetliNačin setting
+      svetliNačin = localStorage.getItem('svetliNačin');
+
+      // if it not current enabled, enable it
+      if (svetliNačin !== 'enabled') {
+        enablesvetliNačin();
+      // if it has been enabled, turn it off
+      } else {
+        disablesvetliNačin();
+      }
+    });*/

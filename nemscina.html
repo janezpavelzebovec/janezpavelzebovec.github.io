@@ -2,12 +2,33 @@
 <html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nemščina</title>
-          <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta http-equiv="X-UA-Compatible" vsebina="IE=edge" />
+        <meta name="viewport" vsebina="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
         <script src="scripts.js"></script>
+
+        <title>Nemščina</title>
+        <meta name="description" vsebina="Nemščina - germanski jezik; glasoslovje, oblikoslovje, pravorečje." /> <!--opis spletnega mesta-->
+        <meta name="keywords" vsebina="nemščina" />
+        <meta name="copyright" vsebina="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name vsebina="Nemščina (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor vsebina=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color vsebina=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" vsebina="Nemščina"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" vsebina="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" vsebina="Nemščina - germanski jezik; glasoslovje, oblikoslovje, pravorečje."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" vsebina="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" vsebina="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" vsebina="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" vsebina="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" vsebina="Nemščina - germanski jezik; glasoslovje, oblikoslovje, pravorečje."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" vsebina="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
     <body>
 
@@ -17,16 +38,43 @@
         <aside class="sidebar">
           <nav>
             <div><a href="./">Domov</a></div></div>
-            <div><a href="./knjiznica">Knjižnica</a></div>
+            <div><a href="./knjiznica">Knjižnica</a></div></div>
             <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
+
+            <hr>
+                <p>KAZALO</p>
+                    <ul class="ugn1">
+                        <li><details><summary><a href="#Oblikoslovje">Oblikoslovje</a></summary>
+                            <ul>
+                                <li><details><summary><a href="#Besedne vrste">Besedne vrste</a></summary>
+                                    <ul>
+                                        <li><a href="#Členi in končnice">Členi in končnice</a></li>
+                                        <li><details><summary><a href="#Samostalniška beseda">Samostalniška beseda</a></summary>
+                                            <ul>
+                                                <li><details><summary><a href="#Zaimki">Zaimki</a></summary>
+                                                    <ul>
+                                                        <li><a href="#Osebni zaimki">Osebni zaimki</a></li>
+                                                        <li><a href="#Povratni osebni zaimki">Povratni osebni zaimki</a></li>
+                                                        <li><a href="#Svojilni zaimki">Svojilni zaimki</a></li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                    </ul>
+                                </details></li>
+                            </ul>
+                        </details></li>
+                        <li><a href="#Pravorečje">Pravorečje</a></li>
+                    </ul>
           </nav>
         </aside>
 
         <div class="vsebina">
             <h1>Deutsche (nemščina)</h1>
-            <h2>Oblikoslovje</h2>
-            <h3>Besedne vrste</h3>
-            <h5>Členi (Artikels) in končnice/sklanjatve</h5>
+            <h2 id="Oblikoslovje">Oblikoslovje</h2>
+            <h3 id="Besedne vrste">Besedne vrste</h3>
+            <h5 id="Členi in končnice">Členi (Artikels) in končnice/sklanjatve</h5>
             <ul class="s">
                 <li>Bestimmter Artikel (določni člen) šibka (/določna) pridevniška sklanjatev</li>
                 <li>Unbestimmter Artikel (nedoločni člen) / Negativartikel (negativni člen)  mešana (/nedoločna) pridevniška končnica</li>
@@ -35,44 +83,60 @@
             <table class="capital">
                     <tr>
                         <th>sklon (Fall) \ spol,število</th>
-                        <th>moški ednine</th>
-                        <th>srednji ednine</th>
-                        <th>ženski ednine</th>
-                        <th>množina</th>
+                        <th colspan="2">moški ednine</th>
+                        <th colspan="2">srednji ednine</th>
+                        <th colspan="2">ženski ednine</th>
+                        <th colspan="2">množina</th>
                     </tr>
                     <tr>
                         <td>imenovalnik (Nominativ)</td>
-                        <td>der_-e<br>ein/kein_-er<br>_-ø</td>
-                        <td>das_-e<br>ein/kein_-es<br>_-ø</td>
-                        <td>die_-e<br>eine/keine_-e<br>_-ø</td>
-                        <td>die_-en<br>ø/keine_-e<br>_-ø</td>
+                        <td class="brezdrob">der _-e<br>ein/kein _-er</td>
+                         <td>_-ø</td>
+                        <td class="brezdrob">das _-e<br>ein/kein _-es</td>
+                         <td>_-ø</td>
+                        <td class="brezdrob">die _-e<br>eine/keine _-e</td>
+                         <td>_-ø</td>
+                        <td class="brezdrob">die _-en<br>ø/keine _-e</td>
+                         <td>_-ø</td>
                     </tr>
                     <tr>
                         <td>rodilnik (Genitiv)</td>
-                        <td>des_-en<br>eines/keines_-en<br>_-(e)s</td>
-                        <td>des_-en<br>eines/keines_-en<br>_-(e)s</td>
-                        <td>der_-en<br>einer/keiner_-en<br>_-ø</td>
-                        <td>der_-en<br>ø/keiner_-er<br>_-ø</td>
+                        <td class="brezdrob">des _-en<br>eines/keines _-en</td>
+                         <td>_-(e)s</td>
+                        <td class="brezdrob">des _-en<br>eines/keines _-en</td>
+                         <td>_-(e)s</td>
+                        <td class="brezdrob">der _-en<br>einer/keiner _-en</td>
+                         <td>_-ø</td>
+                        <td class="brezdrob">der _-en<br>ø/keiner _-er</td>
+                         <td>_-ø</td>
                     </tr>
                     <tr>
                         <td>dajalnik (Dativ)</td>
-                        <td>dem_-en<br>einem/keinem_-en<br>_-ø</td>
-                        <td>dem_-en<br>einem/keinem_-en<br>_-ø</td>
-                        <td>der_-en<br>einer/keiner_-en<br>_-ø</td>
-                        <td>den_-en<br>ø/keinen_-en<br>_-n</td>
+                        <td class="brezdrob">dem _-en<br>einem/keinem _-en</td>
+                         <td>_-ø</td>
+                        <td class="brezdrob">dem _-en<br>einem/keinem _-en</td>
+                         <td>_-ø</td>
+                        <td class="brezdrob">der _-en<br>einer/keiner _-en</td>
+                         <td>_-ø</td>
+                        <td class="brezdrob">den _-en<br>ø/keinen _-en</td>
+                         <td>_-n</td>
                     </tr>
                     <tr>
                         <td>tožilnik (Akkusativ)</td>
-                        <td>den_-en<br>einen/keinen_-en<br>_-ø</td>
-                        <td>das_-e<br>ein/kein_-es<br>_-ø</td>
-                        <td>die_-e<br>eine/keine_-e<br>_-ø</td>
-                        <td>die_-en<br>ø/keine_-e<br>_-ø</td>
+                        <td class="brezdrob">den _-en<br>einen/keinen _-en</td>
+                         <td>_-ø</td>
+                        <td class="brezdrob">das _-e<br>ein/kein _-es</td>
+                         <td>_-ø</td>
+                        <td class="brezdrob">die _-e<br>eine/keine _-e</td>
+                         <td>_-ø</td>
+                        <td class="brezdrob">die _-en<br>ø/keine _-e</td>
+                         <td>_-ø</td>
                     </tr>
                 </tbody>
             </table>
-            <h4>Samostalniška beseda</h4>
-            <h5>Zaimki (Pronomen)</h5>
-            <h6>Osebni zaimki (Personalpronomen)</h6>
+            <h4 id="Samostalniška beseda">Samostalniška beseda</h4>
+            <h5 id="Zaimki">Zaimki (Pronomen)</h5>
+            <h6 id="Osebni zaimki">Osebni zaimki (Personalpronomen)</h6>
             <table class="capital">
                     <tr>
                         <th>sklon (Fall) \ os., št., sp.</th>
@@ -124,7 +188,7 @@
                     </tr>
                 </tbody>
             </table>
-            <h6>Povratni osebni zaimki (Reflexivpronomen)</h6>
+            <h6 id="Povratni osebni zaimki">Povratni osebni zaimki (Reflexivpronomen)</h6>
             <table class="capital">
                     <tr>
                         <th>sklon (Fall) \ os., št.</th>
@@ -155,8 +219,7 @@
                     </tr>
                 </tbody>
             </table>
-            <h6>Povratni osebni zaimki (Reflexivpronomen)</h6>
-            <h6>Svojilni zaimki (Possessivpronomen)</h6>
+            <h6 id="Svojilni zaimki">Svojilni zaimki (Possessivpronomen)</h6>
             <table class="capital">
                     <tr>
                         <th>osebni zaimek \ sp., št.</th>
@@ -223,12 +286,14 @@
                     </tr>
                 </tbody>
             </table>
-            <h2>Pravorečje</h2>
+            <h2 id="Pravorečje">Pravorečje</h2>
+            <p>Opomba: pravila za izgovorjavo črk na začetku in koncu besede veljajo tudi, če so te besede združene v sestavljankah. Za izgovor je torej vedeti, če je beseda sestavljenka.
+            </p>
                 <table class="capital">
                     <tr>
                         <th>zapis sklopa</th>
                         <th>izgovorjava sklopa</th>
-                        <th>primer</th>
+                        <th>primeri besed</th>
                     </tr>
                     <tr>
                         <td>-ch-</td>
@@ -257,7 +322,7 @@
                     </tr>
                     <tr>
                         <td>h-<br>-h- / -h</td>
-                        <td>/h/ [h] (na začetku besede, tudi znotraj sestavljank)<br>// []</td>
+                        <td>/h/ [h]<br>// []</td>
                         <td><i><b>H</b>aus, <b>h</b>ier, <b>H</b>offnung; <b>H</b>och<b>h</b>aus, Wolfs<b>h</b>unger<br>ge<b>h</b>en, Ra<b>h</b>men, na<b>h</b></i></td>
                     </tr>
                     <tr>
@@ -291,9 +356,14 @@
                         <td><i>E<b>ss</b>en, Wi<b>ss</b>en</i></td>
                     </tr>
                     <tr>
-                        <td>sp-, st-</td>
-                        <td>/šp/ [[ʃp], /št/ [[ʃt]</td>
-                        <td><i><b>Sp</b>ort; <b>St</b>udent</i></td>
+                        <td>sp-</td>
+                        <td>/šp/ [ʃp]</td>
+                        <td><i><b>Sp</b>ort</i></td>
+                    </tr>
+                    <tr>
+                        <td>st-</td>
+                        <td>/št/ [ʃt]</td>
+                        <td><i><b>St</b>udent</i></td>
                     </tr>
                     <tr>
                         <td>-sch-</td>
@@ -332,8 +402,8 @@
                     </tr>
                     <tr>
                         <td>-y-</td>
-                        <td>/ü/ [ʏ] ali /j/ [j]</td>
-                        <td><i>s<b>y</b>mpathisch (/ü/), <b>Y</b>oga (/j/)</i></td>
+                        <td>zaokrožen /u/ (kot <i>ü</i>) [ʏ]<br>ali /j/ [j]</td>
+                        <td><i>s<b>y</b>mpathisch (/ü/),<br><b>Y</b>oga (/j/)</i></td>
                     </tr>
                     <tr>
                         <td>-z-</td>
@@ -347,12 +417,12 @@
                     </tr>
                     <tr>
                         <td>-ö-</td>
-                        <td>okrogel /e/ [ɶ]</td>
+                        <td>zaokrožen /e/ [ɶ]</td>
                         <td><i>K<b>ö</b>ln, k<b>ö</b>nnen</i></td>
                     </tr>
                     <tr>
                         <td>-ü-</td>
-                        <td>našobljen /i/ [ʏ]</td>
+                        <td>zaokrožen /i/ [ʏ]</td>
                         <td><i>M<b>ü</b>ller, M<b>ü</b>nchen</i></td>
                     </tr>
                     <tr>

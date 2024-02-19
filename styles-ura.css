@@ -57,6 +57,7 @@
 body {
     background: var(--mehkacrna);
     height: 100vh; /*polje dnevnaUra naj bo visoko za višino zaslona, zato da bo lahko align-items poravnano na sredino zaslona*/
+    width: 100vw;
     overflow: hidden; /*skrijemo, kar presega mejo; zato tudi ne more biti drsnika*/
     color: var(--mehkabela);
     margin: 0;
@@ -68,6 +69,9 @@ a {
     color: #809fff;
     text-decoration: none;
     cursor: pointer
+}
+samp {/*opredeli kot sporočilo računalnika*/
+  font-family: monospace;
 }
 
 table {
@@ -247,16 +251,40 @@ body {
     border-radius: 50%;
     left: 0;
     top: calc((100vh - var(--aastura))) / 2);
+    overflow: hidden;
 }
-.sonce {
+/*.sonce {
     width: 4%;
     height: 4%;
     border-radius: 50%;
     background-color: yellow;
     position: absolute;
-    transform: translate(-50%, 0%); /*postavimo središče elemnta (ne pa kot) v središče polja*/
+    transform: translate(-50%, 0%);
     top: 6%;
     left: 50%;
+}*/
+.zaSonce {
+    position: absolute;
+    height: 88.5%;
+    width: 88.5%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left:50%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: linear-gradient(to top, rgba(255,255,0,0), rgba(255,255,0,0.2));
+}
+.sonce {
+    position: absolute;
+    width: 100%;
+    height: 4%;
+    background-color: yellow;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 0;
+    left: 50%;
+    z-index: 0;
+    box-shadow: 0 0 100px 24px yellow;
 }
 .letnaStevilcnica {
     --rotation: 0;
@@ -265,6 +293,7 @@ body {
     border-radius: 50%;
     position: flex;
     transform: rotate(calc(var(--rotation) * -1deg));
+    z-index: 16;
 }
 .letniČasi {
     width: 88%;
@@ -273,6 +302,7 @@ body {
     position: absolute;
     left: 6%;
     top: 6%;
+    z-index: 16;
 }
 
 .dnevnaUra {
@@ -292,42 +322,44 @@ body {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%) /*postavimo središče elemnta (ne pa kot) v središče polja*/ rotate(calc(var(--rotation) * 1deg - 180deg));
-    left: 50%;
+    transform: translate(-50%) /*postavimo središče elemnta (ne pa kot) v središče polja*/ rotate(calc(-180deg + var(--rotation)*1deg));
 }
 .luna {
     --rotation: 0;
-    --barva: white;
+    --stranPollune: 1;
     width: 100%;
     height: 6%;
     border-radius: 50%;
-    background-color: black;
     /*background-color: var(--barva);*/
     position: absolute;
-    transform: translate(0, -100%) /*postavimo središče elemnta (ne pa kot) v središče polja*/;
+    transform: translate(0, -100%) rotate(calc((1 - var(--stranPollune))*90deg))/*postavimo središče elemnta (ne pa kot) v središče polja*/;
     top: 90%;
     z-index: 5;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    border: 1px solid gray;
+    border: 0.1vmin solid gray;
 }
 .del {
-    --premermene: 0;
-    --odmikmene: 0;
-    --barva: black;
-    height: calc((var(--premermene)/6)* 100%);
-    width: calc((var(--premermene)/6)* 100%);
+    --premermene: 1;
+    /*--odmikmene: 0;*/
+    --barva: white;
+    /*height: calc((var(--premermene)/6)* 100%);
+    width: calc((var(--premermene)/6)* 100%);*/
+    width: calc(var(--premermene)*100%);
     border-radius: 50%;
-    /*background-color: red;*/
     background-color: var(--barva);
-    transform: translateX(calc((var(--odmikmene)/6)*100%));
+    /*transform: translateX(calc((var(--odmikmene)/6)*100%));*/
     /*border: 1px solid white;*/
     position: absolute;
-    margin: calc((var(--premermene) - var(--aluna)) / 2 * -1vmin);
-    z-index: 8;
+    /*margin: calc((var(--premermene) - var(--aluna)) / 2 * -1vmin);*/
+    z-index: 20;
     }
+.polluna {
+    position: absolute;
+    z-index: 1;
+    /*background-color: purple;*/
+}
 .luninaŠtevilcnica {
     --rotation: 0;
     width: 71%;
@@ -363,38 +395,6 @@ body {
 svg path, svg line {
     vector-effect: non-scaling-stroke;
 }
-.Zemlja {
-    position: absolute;
-    width: var(--aobrocek);
-    height: var(--aobrocek);
-    transform: translate(50%, -50%);
-    z-index: 10;
-    filter: invert(100%);
-}
-.obrocek{
-    position: absolute;
-    z-index: 0;
-    width: var(--aobrocek);
-    height: var(--aobrocek);
-    top: 50%;
-    left: 50%;
-    transform-origin: 50%, 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%; /*krog iz kvadrata*/
-    border: 1px solid purple;
-    /*background-color: rgb(0, 204, 153);*/
-}
-.dnevneČrte {
-    --crteodroba: 0vmin;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 12;
-    fill: none;
-    stroke-width: 6px;
-    stroke: var(--sončna);
-    stroke-opacity: 0.6;
-}
 .letnikazalec {
     width: 0.1vmin;
     height: 100%;
@@ -422,8 +422,8 @@ svg path, svg line {
     transform: translateX(-50%) translateY(100%)/*kazalec prestavimo za polovico v levo, da je poravnan s sredino številk in celega dol, da je zamaknjen za 180°*/ rotate(calc(var(--rotation) * 1deg));
 }
 
-.urica::after /*krogec na sredini*/{
-    content: ''; /*da lahko ustvarimo nov element*/
+/*.urica::after /*krogec na sredini*//*{
+    content: ''; /*da lahko ustvarimo nov element*//*
     position: absolute;
     background-color: red;
     z-index: 11;
@@ -431,11 +431,10 @@ svg path, svg line {
     height: 2px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /*postavimo središče elemnta (ne pa kot) v središče polja*/
-    border-radius: 50%; /*krog iz kvadrata*/
-    /*border: 1.5px solid var(--mehkabela);*/
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
     display: none;
-}
+}*/
 
 .urica .kazalec.sekundni {
     width: 0.1%;
@@ -445,18 +444,51 @@ svg path, svg line {
 }
 
 .urica .kazalec.minutni {
-    width: 0.7%;
+    width: 0.4%;
     /*height: 17vmin;*/
     background-color: var(--mehkabela); /*barva kazalca*/
     z-index: 0;
 }
 
 .urica .kazalec.urni {
-    width: 1.2%;
-    /*height: 17vmin;*/
+    width: 0.8%;
     background-color: blue; /*barva kazalca*/
     /*border: 1px solid var(--mehkabela);*/
-    z-index: 9;
+    z-index: 12;
+}
+.Zemlja {
+    position: absolute;
+    height: 14%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    z-index: 12;
+    filter: invert(100%);
+}
+.dnevneČrte {
+    --crteodroba: 0vmin;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 12;
+    fill: none;
+    stroke-width: 6px;
+    stroke: var(--sončna);
+    stroke-opacity: 0.6;
+    transform: rotate(180deg) /*da je prav obrnjeno*/ scaleX(-1) /*ker sončni žarek prečka črte na desni strani*/;
+}
+.nadglavišče {
+    --rotation: 0;
+    transform-origin: 50% 50%;
+    transform: rotate(calc(var(--rotation) * 1deg));
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /*background: 	rgb(18, 18, 18);*/
+    border-radius: 50%;
+    position: absolute; /*nadrejen položaj glede na kazalce*/
+    z-index: 12;
+    /*background-color:  rgba(0, 255, 0, 0.2);*/
 }
 .kazalka {
     --odmik: 0;
@@ -469,6 +501,33 @@ svg path, svg line {
     border: 0.1vmin solid var(--sončna);
     position: absolute;
     z-index: 13;
+}
+.obrocek{/*Za preverjanje var(--aobrocek), ki se uporablja za .kazalko*/
+    position: absolute;
+    display: none;/*vključi, če preverjaš*/
+    z-index: 0;
+    width: var(--aobrocek);
+    height: var(--aobrocek);
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; /*krog iz kvadrata*/
+    /*border: 1px solid purple;
+    background-color: rgb(0, 204, 153);*/
+}
+.enakonočje{/*Za preverjanje var(--aobrocek), ki se uporablja za .kazalko*/
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; /*krog iz kvadrata*/
+    border: 0.1vmin solid gray;
+    /*background-color: rgb(0, 204, 153);*/
 }
 /*@media (min-width: 100vh) and (max-width: calc(98vh + 41ch)), (min-height: 100vw) {
     .zvezdoslovnaUra, .opombe {
