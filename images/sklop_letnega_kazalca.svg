@@ -9,9 +9,31 @@
    id="svg92"
    width="133.86107"
    height="133.86107"
+   sodipodi:docname="sklop_letnega_kazalca.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview62"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="6.5216871"
+     inkscape:cx="67.007202"
+     inkscape:cy="67.007202"
+     inkscape:window-width="1920"
+     inkscape:window-height="1024"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg92" />
   <defs
      id="defs96">
     <linearGradient
@@ -35,7 +57,29 @@
        y2="33.464916"
        spreadMethod="pad"
        gradientTransform="matrix(1.3014706,0,0,1.3014706,5.6300534,-110.48414)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1348"
+       id="linearGradient2059"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3014706,0,0,1.3014706,5.6300534,-110.48414)"
+       x1="-4.3259163"
+       y1="33.464916"
+       x2="48.99844"
+       y2="33.464916"
+       spreadMethod="pad" />
   </defs>
+  <circle
+     style="display:inline;opacity:0.63;mix-blend-mode:screen;fill:url(#linearGradient2059);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.650735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     id="path1342"
+     cx="66.930534"
+     cy="-66.930534"
+     r="66.605164"
+     transform="rotate(90)" />
+  <path
+     id="path901"
+     style="opacity:1;fill:#000002;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;paint-order:markers fill stroke"
+     d="m 119.75053,66.932518 a 52.818002,52.818002 0 0 1 -26.408998,45.741742 52.818002,52.818002 0 0 1 -52.817998,0 52.818002,52.818002 0 0 1 -26.408999,-45.741742" />
   <circle
      cx="66.932533"
      cy="66.932533"
@@ -246,15 +290,8 @@
      style="display:inline;fill:none;stroke:#ffec00;stroke-width:0.562332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 66.930534,-1.3720704e-7 V 133.86107"
      id="path974" />
-  <circle
-     style="opacity:0.909651;mix-blend-mode:screen;fill:url(#linearGradient1497);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.650735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-     id="path1342"
-     cx="66.930534"
-     cy="-66.930534"
-     r="66.605164"
-     transform="rotate(90)" />
   <path
      id="path2060"
-     style="mix-blend-mode:screen;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     style="display:inline;mix-blend-mode:screen;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
      d="M 41.065298,5.2949219 H 92.795771 A 66.605164,66.605164 0 0 0 66.795771,0 66.605164,66.605164 0 0 0 41.065298,5.2949219 Z" />
 </svg>

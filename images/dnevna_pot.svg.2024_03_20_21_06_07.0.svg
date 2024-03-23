@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000.0001"
+   height="1000.0001"
+   viewBox="0 0 264.58334 264.58335"
+   version="1.1"
+   id="svg3217"
+   sodipodi:docname="dnevna_pot.svg.2024_03_20_21_06_07.0.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="2"
+     inkscape:cx="523.25"
+     inkscape:cy="715"
+     inkscape:window-width="1920"
+     inkscape:window-height="1024"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3217" />
+  <defs
+     id="defs3214">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1139"
+       x="-0.0014426881"
+       y="-0.0015724427"
+       width="1.0028854"
+       height="1.0031449">
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         id="feColorMatrix1137" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1139-1"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix1137-1" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix2406" />
+      <feColorMatrix
+         id="feColorMatrix2408"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
+    </filter>
+  </defs>
+  <path
+     id="path846"
+     style="display:none;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     d="M 264.58334,132.29167 A 132.29167,132.29167 0 0 1 132.29167,264.58334 132.29167,132.29167 0 0 1 0,132.29167 132.29167,132.29167 0 0 1 132.29167,0 132.29167,132.29167 0 0 1 264.58334,132.29167 Z" />
+  <ellipse
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.529167;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;filter:url(#filter1139)"
+     id="path1880"
+     cx="132.29167"
+     cy="94.36171"
+     rx="91.698097"
+     ry="84.131363" />
+  <path
+     id="path1880-8"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.52916698;paint-order:markers fill stroke;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 264.58336,132.29169 c 0,43.3632 -25.21465,83.43244 -66.14584,105.11404 -40.93119,21.6816 -91.36049,21.68159 -132.291672,-1e-5 C 25.214668,215.72412 1.9165981e-5,175.65488 1.5258789e-5,132.29169"
+     sodipodi:nodetypes="cssc" />
+  <ellipse
+     style="display:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     id="path1880-8-1"
+     cx="132.29169"
+     cy="132.29169"
+     rx="132.29167"
+     ry="121.37524" />
+  <ellipse
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.52916667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     id="path1880-0"
+     cx="-132.29167"
+     cy="94.36171"
+     rx="52.471203"
+     ry="48.128899"
+     transform="scale(-1,1)" />
+  <ellipse
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.529166;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     id="path1880-0-4"
+     cx="-111.62299"
+     cy="-132.29169"
+     transform="matrix(0,-1,-1,0,0,0)"
+     rx="111.35841"
+     ry="121.37392" />
+  <ellipse
+     style="fill:#000006;fill-opacity:1;fill-rule:evenodd;stroke:#000005;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     id="path4877"
+     cx="132.29167"
+     cy="94.36171"
+     rx="2.3650398"
+     ry="2.3650339" />
+  <ellipse
+     style="fill:#ff0006;fill-opacity:1;fill-rule:evenodd;stroke:#000005;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     id="path4877-3"
+     cx="132.29167"
+     cy="132.29169"
+     rx="2.3650398"
+     ry="2.3650339" />
+  <ellipse
+     style="display:inline;opacity:0.3;fill:#000006;fill-opacity:1;fill-rule:evenodd;stroke:#ff0003;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     id="path4877-1"
+     cx="132.29167"
+     cy="-170.22162"
+     rx="2.3650398"
+     ry="2.3650339"
+     transform="scale(1,-1)" />
+  <text
+     xml:space="preserve"
+     style="font-size:7.05556px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';stroke-width:0.264583"
+     id="text5941"><textPath
+       xlink:href="#path1880-0-4"
+       startOffset="50%"
+       id="textPath1238"><tspan
+         style="font-size:7.05556px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan25018"
+         dy="-1.4">EKVATOR </tspan></textPath></text>
+</svg>

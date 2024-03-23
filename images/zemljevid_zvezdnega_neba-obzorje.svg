@@ -7,8 +7,31 @@
    viewBox="0 0 159.79001 159.79001"
    version="1.1"
    id="svg2818"
+   sodipodi:docname="zemljevid_zvezdnega_neba-obzorje.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview142"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="23.12848"
+     inkscape:cx="298.61452"
+     inkscape:cy="566.31478"
+     inkscape:window-width="1440"
+     inkscape:window-height="868"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g5696" />
   <defs
      id="defs2815">
     <filter
@@ -29,12 +52,12 @@
          id="feColorMatrix1374" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter4145"
-       x="-0.0023305873"
-       y="-0.0026405073"
-       width="1.0046494"
-       height="1.0052882">
+       x="-0.0012332473"
+       y="-0.0013972667"
+       width="1.0024603"
+       height="1.0027983">
       <feColorMatrix
          type="hueRotate"
          values="180"
@@ -86,7 +109,7 @@
          in="fbSourceGraphic" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter4169"
        x="-inf"
        y="0"
@@ -113,7 +136,7 @@
          in="fbSourceGraphic" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter4175"
        x="-inf"
        y="0"
@@ -140,11 +163,9 @@
          in="fbSourceGraphic" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter4181"
-       x="-inf"
        y="0"
-       width="inf"
        height="1">
       <feColorMatrix
          type="hueRotate"
@@ -167,7 +188,7 @@
          in="fbSourceGraphic" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter4187"
        x="-inf"
        y="0"
@@ -194,7 +215,7 @@
          in="fbSourceGraphic" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter4193"
        x="-inf"
        y="0"
@@ -221,7 +242,7 @@
          in="fbSourceGraphic" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter4199"
        x="-inf"
        y="0"
@@ -248,7 +269,7 @@
          in="fbSourceGraphic" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter4205"
        x="-inf"
        y="0"
@@ -275,7 +296,7 @@
          in="fbSourceGraphic" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter4217"
        x="-inf"
        y="0"
@@ -301,154 +322,430 @@
          result="color2"
          in="fbSourceGraphic" />
     </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4217-8"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix4213-7" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix4215-0" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1504-8" />
+      <feColorMatrix
+         id="feColorMatrix1506-6"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4145-2"
+       x="-0.0012332473"
+       y="-0.0013972667"
+       width="1.0024603"
+       height="1.0027983">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix4141-4" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix4143-7" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix4207-9" />
+      <feColorMatrix
+         id="feColorMatrix4209-3"
+         type="hueRotate"
+         values="180"
+         result="color1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix4211-9"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix4597-2" />
+      <feColorMatrix
+         id="feColorMatrix4599-8"
+         type="hueRotate"
+         values="180"
+         result="color1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix4601-3"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1500-0" />
+      <feColorMatrix
+         id="feColorMatrix1502-1"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4205-7"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix4201-8" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix4203-9" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1496-1" />
+      <feColorMatrix
+         id="feColorMatrix1498-5"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4199-4"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix4195-9" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix4197-2" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1492-5" />
+      <feColorMatrix
+         id="feColorMatrix1494-7"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4193-4"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix4189-9" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix4191-9" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1488-4" />
+      <feColorMatrix
+         id="feColorMatrix1490-5"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4187-9"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix4183-3" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix4185-5" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1484-7" />
+      <feColorMatrix
+         id="feColorMatrix1486-0"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4175-8"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix4171-1" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix4173-9" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1476-9" />
+      <feColorMatrix
+         id="feColorMatrix1478-7"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4169-8"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix4165-2" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix4167-5" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1472-3" />
+      <feColorMatrix
+         id="feColorMatrix1474-4"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
+    </filter>
   </defs>
   <g
      id="layer1">
     <g
-       transform="matrix(0.2248,-0.10938,0.10938,0.2248,-38.298209,47.171985)"
-       id="g8"
-       style="display:inline;filter:url(#filter4217)">
-      <path
-         d="m 308.46,201.87 v 9.576"
-         style="fill:none;stroke:#ffffff;stroke-width:2"
-         id="path2" />
-      <text
-         x="297.3255"
-         y="199.55194"
-         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-         xml:space="preserve"
-         id="text6"><tspan
+       id="g5696"
+       transform="matrix(0.88783035,0,0,0.88783035,8.9652491,16.120633)">
+      <g
+         transform="matrix(-0.25,0,0,-0.40973126,158.09579,231.29126)"
+         id="g50"
+         style="display:inline;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:1.24004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99983">
+        <path
+           d="m 312.68,169.60401 v 44.133"
+           style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:1.24004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99983"
+           id="path44" />
+      </g>
+      <g
+         id="g5096"
+         transform="matrix(7.5871922,0,0,7.5871922,-554.72183,-967.80803)">
+        <path
+           id="rect1496"
+           style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;paint-order:markers fill stroke"
+           d="m 83.790531,147.63762 h -0.286597 l 0.143299,0.26994 z" />
+      </g>
+    </g>
+    <g
+       id="g3928"
+       transform="matrix(0.89074697,0,0,0.89074697,8.7287477,9.885857)">
+      <g
+         transform="matrix(0.2248,-0.10938,0.10938,0.2248,-38.298209,47.171985)"
+         id="g8"
+         style="display:inline;filter:url(#filter4217)">
+        <path
+           d="m 308.46,201.87 v 9.576"
+           style="fill:none;stroke:#ffffff;stroke-width:1.05834;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2" />
+        <text
            x="297.3255"
            y="199.55194"
-           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-           id="tspan4">SV</tspan></text>
-    </g>
-    <path
-       d="m 79.901791,55.543985 c -17.571001,-0.0525 -35.840001,7.3368 -46.197001,21.957 -8.2483,11.432 -9.9924,27.052005 -4.6227,40.061005 5.8633,15.029 19.575,26.177 34.943,30.487 16.202001,4.5969 34.403,1.8513 48.295,-7.7528 12.727,-8.6097 21.634,-23.331 21.501,-38.902 0.0286,-13.753005 -7.4207,-26.883005 -18.525,-34.797005 -10.178,-7.4226 -22.859999,-11.045 -35.394,-11.052 z"
-       style="color:#000000;display:inline;fill:none;stroke:#fffeff;stroke-width:0.5;stroke-opacity:0.99983;filter:url(#filter4145)"
-       id="path10" />
-    <g
-       transform="matrix(0.25,0,0,0.25,2.8154358,2.6552653)"
-       id="g18"
-       style="display:inline;filter:url(#filter4205)">
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           xml:space="preserve"
+           id="text6"><tspan
+             x="297.3255"
+             y="199.55194"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+             id="tspan4">SV</tspan></text>
+      </g>
       <path
-         d="m 308.46,201.87 v 9.576"
-         style="fill:none;stroke:#ffffff;stroke-width:2"
-         id="path12" />
-      <text
-         x="303.32339"
-         y="199.55194"
-         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-         xml:space="preserve"
-         id="text16"><tspan
+         d="m 79.901791,55.543985 c -17.571001,-0.0525 -35.840001,7.3368 -46.197001,21.957 -8.2483,11.432 -9.9924,27.052005 -4.6227,40.061005 5.8633,15.029 19.575,26.177 34.943,30.487 16.202001,4.5969 34.403,1.8513 48.295,-7.7528 12.727,-8.6097 21.634,-23.331 21.501,-38.902 0.0286,-13.753005 -7.4207,-26.883005 -18.525,-34.797005 -10.178,-7.4226 -22.859999,-11.045 -35.394,-11.052 z"
+         style="color:#000000;display:inline;fill:none;stroke:#fffeff;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99983;filter:url(#filter4145)"
+         id="path10" />
+      <g
+         transform="matrix(0.25,0,0,0.25,2.8154358,2.6552653)"
+         id="g18"
+         style="display:inline;filter:url(#filter4205)">
+        <path
+           d="m 308.46,201.87 v 9.576"
+           style="fill:none;stroke:#ffffff;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path12" />
+        <text
            x="303.32339"
            y="199.55194"
-           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-           id="tspan14">S</tspan></text>
-    </g>
-    <g
-       transform="matrix(0.12962,0.21377,-0.2138,0.12957,128.18579,-66.917015)"
-       id="g26"
-       style="display:inline;filter:url(#filter4199)">
-      <path
-         d="m 497.85,296.56 v 9.576"
-         style="fill:none;stroke:#fffff6;stroke-width:2"
-         id="path20" />
-      <text
-         x="492.71539"
-         y="294.24792"
-         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-         xml:space="preserve"
-         id="text24"><tspan
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           xml:space="preserve"
+           id="text16"><tspan
+             x="303.32339"
+             y="199.55194"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+             id="tspan14">S</tspan></text>
+      </g>
+      <g
+         transform="matrix(0.12962,0.21377,-0.2138,0.12957,128.18579,-66.917015)"
+         id="g26"
+         style="display:inline;filter:url(#filter4199)">
+        <path
+           d="m 497.85,296.56 v 9.576"
+           style="fill:none;stroke:#fffff6;stroke-width:1.05834;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path20" />
+        <text
            x="492.71539"
            y="294.24792"
-           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-           id="tspan22">Z</tspan></text>
-    </g>
-    <g
-       transform="matrix(0.22598,0.10692,-0.10692,0.22598,56.65679,-20.476015)"
-       id="g34"
-       style="display:inline;filter:url(#filter4193)">
-      <path
-         d="m 316.64,201.01 v 9.576"
-         style="fill:none;stroke:#ffffff;stroke-width:2"
-         id="path28" />
-      <text
-         x="306.4082"
-         y="198.67459"
-         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-         xml:space="preserve"
-         id="text32"><tspan
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           xml:space="preserve"
+           id="text24"><tspan
+             x="492.71539"
+             y="294.24792"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+             id="tspan22">Z</tspan></text>
+      </g>
+      <g
+         transform="matrix(0.22598,0.10692,-0.10692,0.22598,56.65679,-20.476015)"
+         id="g34"
+         style="display:inline;filter:url(#filter4193)">
+        <path
+           d="m 316.64,201.01 v 9.576"
+           style="fill:none;stroke:#ffffff;stroke-width:1.05834;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path28" />
+        <text
            x="306.4082"
            y="198.67459"
-           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-           id="tspan30">SZ</tspan></text>
-    </g>
-    <g
-       transform="matrix(-0.075232,0.23841,-0.23841,-0.075232,241.91579,19.971985)"
-       id="g42"
-       style="display:inline;filter:url(#filter4187)">
-      <path
-         d="m 497.85,296.56 v 9.576"
-         style="fill:none;stroke:#ffffff;stroke-width:2"
-         id="path36" />
-      <text
-         x="490.13501"
-         y="294.24792"
-         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-         xml:space="preserve"
-         id="text40"><tspan
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           xml:space="preserve"
+           id="text32"><tspan
+             x="306.4082"
+             y="198.67459"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+             id="tspan30">SZ</tspan></text>
+      </g>
+      <g
+         transform="matrix(-0.075232,0.23841,-0.23841,-0.075232,241.91579,19.971985)"
+         id="g42"
+         style="display:inline;filter:url(#filter4187)">
+        <path
+           d="m 497.85,296.56 v 9.576"
+           style="fill:none;stroke:#ffffff;stroke-width:1.05834;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path36" />
+        <text
            x="490.13501"
            y="294.24792"
-           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-           id="tspan38">JZ</tspan></text>
-    </g>
-    <g
-       transform="matrix(-0.25,0,0,-0.25,158.09579,203.89599)"
-       id="g50"
-       style="display:inline">
-      <path
-         d="m 312.68,174.50768 0,39.22933"
-         style="fill:none;stroke:#0000ffff;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path44" />
-    </g>
-    <g
-       transform="matrix(0.12772,-0.21491,0.21491,0.12772,-52.236209,118.46599)"
-       id="g58"
-       style="display:inline;filter:url(#filter4175)">
-      <path
-         d="m 308.46,201.87 v 9.576"
-         style="fill:none;stroke:#fffffc;stroke-width:2"
-         id="path52" />
-      <text
-         x="303.32339"
-         y="199.55194"
-         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-         xml:space="preserve"
-         id="text56"><tspan
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           xml:space="preserve"
+           id="text40"><tspan
+             x="490.13501"
+             y="294.24792"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+             id="tspan38">JZ</tspan></text>
+      </g>
+      <g
+         transform="matrix(0.12772,-0.21491,0.21491,0.12772,-52.236209,118.46599)"
+         id="g58"
+         style="display:inline;filter:url(#filter4175)">
+        <path
+           d="m 308.46,201.87 v 9.576"
+           style="fill:none;stroke:#fffffc;stroke-width:1.05834;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path52" />
+        <text
            x="303.32339"
            y="199.55194"
-           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-           id="tspan54">V</tspan></text>
-    </g>
-    <g
-       transform="matrix(-0.07906,-0.23717,0.23717,-0.07906,2.6133405,205.47599)"
-       id="g66"
-       style="display:inline;filter:url(#filter4169)">
-      <path
-         d="m 308.46,201.87 v 9.576"
-         style="fill:none;stroke:#ffffff;stroke-width:2"
-         id="path60" />
-      <text
-         x="300.06433"
-         y="199.55194"
-         style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-         xml:space="preserve"
-         id="text64"><tspan
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           xml:space="preserve"
+           id="text56"><tspan
+             x="303.32339"
+             y="199.55194"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+             id="tspan54">V</tspan></text>
+      </g>
+      <g
+         transform="matrix(-0.07906,-0.23717,0.23717,-0.07906,2.6133405,205.47599)"
+         id="g66"
+         style="display:inline;filter:url(#filter4169)">
+        <path
+           d="m 308.46,201.87 v 9.576"
+           style="fill:none;stroke:#ffffff;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path60" />
+        <text
            x="300.06433"
            y="199.55194"
-           style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
-           id="tspan62">JV</tspan></text>
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+           xml:space="preserve"
+           id="text64"><tspan
+             x="300.06433"
+             y="199.55194"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.0583"
+             id="tspan62">JV</tspan></text>
+      </g>
     </g>
+    <ellipse
+       style="display:none;opacity:0.298376;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path4927"
+       cx="79.894997"
+       cy="79.895004"
+       rx="79.45121"
+       ry="79.451218" />
+    <ellipse
+       style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path4927-6"
+       cx="79.913002"
+       cy="101.52885"
+       rx="0.66571724"
+       ry="0.6657173" />
   </g>
 </svg>
