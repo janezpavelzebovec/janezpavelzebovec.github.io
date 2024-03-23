@@ -1,4 +1,4 @@
-const GSSš = 46.11994444; //Geometrično Središče Slovenije - zemljepisna širina/višina
+const GSSs = 46.11994444; //Geometrično Središče Slovenije - zemljepisna širina/višina
 const GSSd = 14.81533333; //Geometrično Središče Slovenije - zemljepisna dolžina
 
 const x = document.getElementById("položaj"); //izberem element z ID-jem "položaj"
@@ -22,6 +22,7 @@ function showPosition(position) {
 setInterval(nastaviUro, 1000)// s funkcijo setInterval vsako sekundo (1000 milisekund) kličemo funkcijo nastaviUro
 
 const urniKazalec = document.querySelector('[data-urni-kazalec]') /*izbere vrstico, ki ima atribut data-urni-kazalec*/
+    const zemljevid = document.querySelector('[data-zemljevid]')
 const minutniKazalec = document.querySelector('[data-minutni-kazalec]') /*izbere vrstico, ki ima atribut data-minutni-kazalec*/
 const sekundniKazalec = document.querySelector('[data-sekundni-kazalec]') /*izbere vrstico, ki ima atribut data-sekundni-kazalec*/
 const dnevnaUra = document.querySelector('[data-dnevnaUra]')
@@ -111,7 +112,7 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
 
 
     //PRIDOBIVANJE ASTRONOMSKIH PODATKOV s SunCalc (https://github.com/mourner/suncalc/tree/master)
-    časi = SunCalc.getTimes(trSLOčas, GSSš, GSSd);
+    časi = SunCalc.getTimes(trSLOčas, GSSs, GSSd);
     console.log(časi);
         var Zora = časi.dawn
             Zora = new Date(Zora)
@@ -170,7 +171,7 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
             SonZahZač = new Date(SonZahZač)
             document.getElementById("resultSonZahZač").innerHTML = `${SonZahZač.getHours().toString().padStart(2, '0')}:${SonZahZač.getMinutes().toString().padStart(2, '0')}:${SonZahZač.getSeconds().toString().padStart(2, '0')}`;
 
-    polSonca = SunCalc.getPosition(trSLOčas, GSSš, GSSd) //Položaj Sonca
+    polSonca = SunCalc.getPosition(trSLOčas, GSSs, GSSd) //Položaj Sonca
         const višinaSonca = polSonca.altitude
             const višinaSoncaStop = višinaSonca * 180 / Math.PI
             document.getElementById("resultVišinaSonca").innerHTML = (višinaSoncaStop).toFixed(4);
@@ -178,7 +179,7 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
             const azimutSoncaStop = azimutSonca * 180 / Math.PI
             document.getElementById("resultAzimutSonca").innerHTML = (azimutSoncaStop).toFixed(4);
 
-    polLune = SunCalc.getMoonPosition(trSLOčas, GSSš, GSSd) //Položaj Lune
+    polLune = SunCalc.getMoonPosition(trSLOčas, GSSs, GSSd) //Položaj Lune
         const višinaLune = polLune.altitude
             const višinaLuneStop = višinaLune * 180 / Math.PI
             document.getElementById("resultVišinaLune").innerHTML = (višinaLuneStop).toFixed(4);
@@ -203,7 +204,7 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
         console.log(menaLune);
             document.getElementById("resultMenaLune").innerHTML = (menaLune).toFixed(4);
 
-    VzhZahLune = SunCalc.getMoonTimes(trSLOčas, GSSš, GSSd)
+    VzhZahLune = SunCalc.getMoonTimes(trSLOčas, GSSs, GSSd)
         var VzhLune = VzhZahLune.rise
             VzhLune = new Date(VzhLune)
             document.getElementById("resultVzhLune").innerHTML = `${VzhLune.getHours().toString().padStart(2, '0')}:${VzhLune.getMinutes().toString().padStart(2, '0')}:${VzhLune.getSeconds().toString().padStart(2, '0')}`;
@@ -228,6 +229,8 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     const razlika = (trSLOčas - prviDanLeta)/ (1000 * 60 * 60 * 24) + 11
     const razmerje = razlika / 365.2425
     const dnevnoRazmerje = razmerje
+
+    const razmerjeZemlje = dnevnoRazmerje + urnoRazmerje
 
     const letozvezde = razlika / 365.2425 * (-1)
 
@@ -326,24 +329,27 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     //  const premermene = premerlune / (Math.sin(2* Math.atan((premerlune / 2) / (premerlune * Math.sin(željenkot * Math.PI / 180)))))
     //  const odmikmene = (premerlune / 2) - ((premerlune /2) * Math.sin(željenkot * Math.PI / 180)) + (premermene/2)
 
-    const željenKot = 2*menaLune //kot med 0 in 90 stopinj v radianih
+    const željenKot = menaLune*2*Math.PI //kot med 0 in 360 stopinj v radianih (mena krat 360 stopinj v radianih)
         console.log(željenKot);
+    const željenKot2 = željenKot % (Math.PI / 2)
+        console.log(željenKot2);
+    /*const premermene = Math.cos(željenKot % (Math.PI / 2));*/
     let premermene;
         if (menaLune === 0) { //nova Luna
             premermene = 1;
-        } else if (0 <= menaLune && menaLune <= 0.25) {
+        } else if (0 < menaLune && menaLune < 0.25) {
             premermene = Math.cos(željenKot);
         } else if (menaLune === 0.25) { //prvi krajec
             premermene = 0;
-        } else if (0.25 <= menaLune && menaLune <= 0.5) {
+        } else if (0.25 < menaLune && menaLune < 0.5) {
             premermene = Math.cos(Math.PI - željenKot);
         } else if (menaLune === 0.5) { //polna luna / ščip
             premermene = 1;
-        } else if (0.5 <= menaLune && menaLune <= 0.75) {
+        } else if (0.5 < menaLune && menaLune < 0.75) {
             premermene = Math.cos(željenKot - Math.PI);
         } else if (menaLune === 0.75) { //zadnji krajec
             premermene = 0;
-        } else if (0.75 <= menaLune && menaLune <= 1) {
+        } else if (0.75 < menaLune && menaLune < 1) {
             premermene = Math.cos(2*Math.PI - željenKot)
         } else if (menaLune === 1) { //mlaj
             premermene = 1;
@@ -352,7 +358,12 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
         console.log(premermene);
 
     let stranmene;
-        if (0 <= menaLune && menaLune <= 0.25) { //če je kotni zasuk med 0 in 90 stopinj...
+        if (0 <= menaLune && menaLune < 0.5) { //če je kotni zasuk med 0 in 90 stopinj...
+            stranmene = 1; //...je mena (srp) na desni
+        } else if (0.5 <= menaLune && menaLune <= 1) {
+            stranmene = -1;
+        }
+        /*if (0 <= menaLune && menaLune <= 0.25) { //če je kotni zasuk med 0 in 90 stopinj...
             stranmene = -1; //...je mena (srp) na desni
         } else if (0.25 <= menaLune && menaLune <= 0.5) {
             stranmene = 1;
@@ -360,7 +371,7 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
             stranmene = -1;
         } else if (0.75 <= menaLune && menaLune <= 1) {
             stranmene = 1;
-        }
+        }*/
         console.log(stranmene);
     /*const odmikmene = (rlune - rlune*sinkota + (premermene/2 - rlune))*stranmene
     let barvamene;
@@ -376,11 +387,9 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     let barvalune;
         if (0 <= menaLune && menaLune < 0.25) { //če je kotni zasuk med 0 in 90 stopinj...
             barvalune = "black"; //...je luna bela (in mena črna)
-        } else if (0.25 < menaLune && menaLune <= 0.5) {
+        } else if (0.25 <= menaLune && menaLune < 0.75) {
             barvalune = "white";
-        } else if (0.5 < menaLune && menaLune < 0.75) {
-            barvalune = "white";
-        } else if (0.75 < menaLune && menaLune <= 1) {
+        } else if (0.75 <= menaLune && menaLune <= 1) {
             barvalune = "black";
         }
         console.log(barvalune);
@@ -391,6 +400,7 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     zasukaj(sekundniKazalec, sekundnoRazmerje) /*Kliče funkcijo zasukaj za kazalec sekundniKazalec, da posodobi njegove rotacije na osnovi izračunanih razmerij*/
     zasukaj(minutniKazalec, minutnoRazmerje) /*Kliče funkcijo zasukaj za kazalec minutniKazalec, da posodobi njegove rotacije na osnovi izračunanih razmerij*/
     zasukaj(urniKazalec, urnoRazmerje) /*Kliče funkcijo zasukaj za kazalec urniKazalec, da posodobi njegove rotacije na osnovi izračunanih razmerij*/
+        zasukaj(zemljevid, razmerjeZemlje)
     zasukaj(dnevnaUra, dnevnoRazmerje)
     zasukaj(letnaStevilcnica, letnazamuda)
     zasukaj(lunazasuk, menaLune)
@@ -404,6 +414,7 @@ function nastaviUro() /*funkcija seurica, ki se kliče zgoraj ima tu svoje korak
     zasukaj(zvezdedan, urnoRazmerje)
 
     stranPollune(polluna, stranmene)
+
 }
 nastaviUro() /*kliče funkcijo nastaviUro takoj po nalaganju strani, da se zagotovi, da se ure in kazalci pravilno nastavijo na začetku*/
     console.log(časi);

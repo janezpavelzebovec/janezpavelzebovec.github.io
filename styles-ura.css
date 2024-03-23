@@ -28,9 +28,9 @@
     bottom: 0;
     position: fixed;
     align-items: center;
-    border-radius: 50%;
     overflow: hidden;
     background: var(--mehkacrna);
+    z-index: -1;
 }
 .pogled-leto {
     width: 100%;
@@ -271,8 +271,7 @@ body {
     top: 50%;
     left:50%;
     border-radius: 50%;
-    overflow: hidden;
-    background-image: linear-gradient(to top, rgba(255,255,0,0), rgba(255,255,0,0.2));
+    /*background-image: linear-gradient(to top, rgba(255,255,0,0), rgba(255,255,0,0.2));*/
 }
 .sonce {
     position: absolute;
@@ -295,6 +294,17 @@ body {
     transform: rotate(calc(var(--rotation) * -1deg));
     z-index: 16;
 }
+.dnevnaPot {
+    width: 68%;
+    height: 68%;
+    left: 16%;
+    top: 16%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+    filter: invert(100%);
+}
 .letniČasi {
     width: 88%;
     height: 88%;
@@ -311,7 +321,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    transform: rotate(calc(var(--rotation) * 1deg));
+    transform: rotate(calc(var(--rotation) * 1deg + 360/365.2425*1deg));
     text-align: center;
 }
 .lunadiv {
@@ -326,13 +336,12 @@ body {
 }
 .luna {
     --rotation: 0;
-    --stranPollune: 1;
     width: 100%;
     height: 6%;
     border-radius: 50%;
     /*background-color: var(--barva);*/
     position: absolute;
-    transform: translate(0, -100%) rotate(calc((1 - var(--stranPollune))*90deg))/*postavimo središče elemnta (ne pa kot) v središče polja*/;
+    transform: translate(0, -100%) /*postavimo središče elemnta (ne pa kot) v središče polja*/;
     top: 90%;
     z-index: 5;
     display: flex;
@@ -344,9 +353,8 @@ body {
     --premermene: 1;
     /*--odmikmene: 0;*/
     --barva: white;
-    /*height: calc((var(--premermene)/6)* 100%);
-    width: calc((var(--premermene)/6)* 100%);*/
     width: calc(var(--premermene)*100%);
+    height: 100%;
     border-radius: 50%;
     background-color: var(--barva);
     /*transform: translateX(calc((var(--odmikmene)/6)*100%));*/
@@ -354,9 +362,12 @@ body {
     position: absolute;
     /*margin: calc((var(--premermene) - var(--aluna)) / 2 * -1vmin);*/
     z-index: 20;
-    }
+}
 .polluna {
+    --stranPollune: -1;
     position: absolute;
+    transform: rotate(calc((1 + var(--stranPollune))*90deg));
+    height: 100%;
     z-index: 1;
     /*background-color: purple;*/
 }
@@ -383,7 +394,7 @@ body {
     position: absolute; /*nadrejen položaj glede na kazalce*/
     bottom: 50%;
 }
-.urnaŠtevilcnica {
+.urnaŠtevilčnica {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -395,14 +406,14 @@ body {
 svg path, svg line {
     vector-effect: non-scaling-stroke;
 }
-.letnikazalec {
+.letniKazalec {
     width: 0.1vmin;
-    height: 100%;
+    height: 94.25%;
     background-color: var(--sončna);
     position: absolute;
     transform: translate(-50%, 0);
     left: 50%;
-    top: 0;
+    bottom: 0;
     z-index: 0;
 }
 
@@ -463,6 +474,25 @@ svg path, svg line {
     top: 50%;
     z-index: 12;
     filter: invert(100%);
+}
+.zaZemljevid {
+    position: absolute;
+    height: 200%;
+    top: 40%;
+    left: -50%;
+    right: auto;
+    z-index: 0;
+    opacity: 0.2;
+    filter: invert(100%);
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%) rotateX(23.439281deg);
+}
+.Zemljevid {
+    --rotation: 0;
+    transform-origin: 50% 50%;
+    transform: rotateZ(calc(var(--rotation) * 1deg + 0deg));
+    position: absolute;
+    height: 100%;
 }
 .dnevneČrte {
     --crteodroba: 0vmin;
