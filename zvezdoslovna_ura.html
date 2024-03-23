@@ -44,17 +44,15 @@
             <div><a href="./knjiznica">Knjižnica</a></div>
             <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div>
             <hr>
-            <p><a href="./opombe_k_zvezdoslovni_uri" class="help">Opombe k uri</a></p>
+            <p><a href="./opombe_k_zvezdoslovni_uri">Opombe k uri</a></p>
             <div id="prikazaneopombe" class="opombe">
                 <p> <time class="datum" id="resultCZZ" style="font-size: large">čas in datum</time><br>
                     <span><time id="resultCBZ">čas</time> - brez premika na poletni čas</span><br>
                     <br>
                     <time id="resultPP">prehod: nedelja, DD. mesec LLLL ob 2:00</time><br>
                     <time id="resultDP">prehod: nedelja, DD. mesec LLLL ob 2:00</time></p>
-                <p>
-                    privzeti položaj: Slovenija, 46 ° g. š., 15 ° g. d.
-                <br>
-                    <button class="gumblok" onclick="requestLocationPermission()">
+                <p>privzeti položaj: Slovenija, 46 ° g. š., 15 ° g. d.
+                <br><button class="gumblok" onclick="requestLocationPermission()">
                         <span id="položaj"><i class="gumb">tvoj trenutni položaj</i></span>
                     </button>
                 </p>
@@ -84,8 +82,16 @@
                         <td><span id="resultSonVzhKon"><samp>napaka</samp></span></td>
                     </tr>
                     <tr>
+                        <td>konec fotografske <i>zlate ure</i>: </td>
+                        <td><span id="resultZlataUraKon"><samp>napaka</samp></span></td>
+                    </tr>
+                    <tr>
                         <td>poldne: </td>
                         <td><span id="resultPoldne"><samp>napaka</samp></span></td>
+                    </tr>
+                    <tr>
+                        <td>začetek fotografske <i>zlate ure</i>: </td>
+                        <td><span id="resultZlataUra"><samp>napaka</samp></span></td>
                     </tr>
                     <tr>
                         <td>začetek sončnega vzhoda: </td>
@@ -112,14 +118,6 @@
                         <td id="nadiropis2"><span id="resultNadir2"><samp>napaka</samp></span></td>
                     </tr>
                     <tr class="zgorajrob">
-                        <td>začetek fotografske <i>zlate ure</i>: </td>
-                        <td><span id="resultZlataUra"><samp>napaka</samp></span></td>
-                    </tr>
-                    <tr>
-                        <td>konec fotografske <i>zlate ure</i>: </td>
-                        <td><span id="resultZlataUraKon"><samp>napaka</samp></span></td>
-                    </tr>
-                    <tr>
                         <td>višina Sonca nad obzorjem: </td>
                         <td><span id="resultVišinaSonca"><samp>napaka</samp></span> °</td>
                     </tr>
@@ -180,14 +178,28 @@
                             width="100%"
                             height="100%"/>
             </div>
+            <div style="display: none"  class="dnevnaPot">
+                        <img
+                            src="./images/dnevna_pot.svg"
+                            width="100%"
+                            height="100%"/>
+            </div>
+            <div style="display: none" class="zaZemljevid">
+                <img data-zemljevid
+                    class="Zemljevid"
+                    src="./images/Zemlja.svg"/>
+            </div>
             <div class="dnevnaUra" data-dnevnaUra>
                 <div class="zaSonce">
-                    <div class="sonce"></div>
+                    <img
+                        src="./images/Sonce.svg"
+                        width="100%"
+                        height="100%"/>
                 </div>
                 <div class="lunadiv" data-lunazasuk>
-                    <div class="luna" data-mena data-stranPollune>
+                    <div class="luna" data-mena>
                         <div class="del" data-lunamenapremer data-lunabarva></div>
-                        <div class="polluna"><img
+                        <div class="polluna" data-stranPollune><img
                             src="./images/polluna.svg"
                             width="100%"
                             height="100%"/></div>
@@ -199,14 +211,20 @@
                         width="100%"
                         height="100%"/>
                 </div>
-                <div class="letnikazalec"></div>
+                <div class="letniKazalec"></div>
                 <div class="urica">
-                    <div class="urnaŠtevilcnica">
+                    <div class="urnaŠtevilčnica">
                         <img
                             src="./images/urna_stevilcnica.svg"
                             width="100%"
                             height="100%"/>
                     </div>
+                    <!--<div class="Zemljevid urnoG" data-urni-kazalec>
+                        <img
+                            src="./images/Zemlja.svg"
+                            width="100%"
+                            height="100%"/>
+                    </div>-->
                     <div class="nadglavišče" data-urni-kazalec>
                         <div class="kazalec urni"></div>
                         <img
@@ -236,10 +254,10 @@
                 <div class="pogled-dan" data-zvezdedan>
                     <img
                         src="./images/zemljevid_zvezdnega_neba-obzorje.svg"
-                        width="90%"
-                        height="90%"
+                        width="100%"
+                        height="100%"
                         position="absolute"
-                        style="position: absolute; left: 5%; top: 5%"/>
+                        style="position: absolute"/>
                 </div>
             </div>
             <img
