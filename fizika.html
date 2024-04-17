@@ -1,242 +1,323 @@
 <!doctype html>
-<html>
+<html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Cache-control" content="public">
+
         <title>Fizika</title>
-          <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <meta name="title" content="Fizika">
+        <meta name="description" content="Fizikalne stalnice, enote, enačbe in drugo fizikalno."> <!--opis spletnega mesta-->
+        <meta name="keywords" content="fizika, fizikalne enačbe, fizikalne enote, fizikalne konstante" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name content="Nova stara slovenščina (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name="apple-mobile-web-app-title" content="Janez Pavel Žebovec">
+        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+        <link rel=canonical href=https://janezpavelzebovec.net/> <!--kanonični URL, kar pomeni, da določa glavni in preferiran naslov spletne strani, kar je pomembno za SEO (optimizacijo za iskalnike)-->
+
+        <meta property="og:title" content="Nova stara slovenščina (JPŽ)"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:type" content="website"><!--določa vrsto objekta, ki se deli na družabnih omrežjih. V tem primeru gre za spletno stran-->
+        <meta property="og:image" content="images/JPŽ-drevo.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:url" content="https://www.janezpavelzebovec.net/"><!--določa URL naslov spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:description" content="Fizikalne stalnice, enote, enačbe in drugo fizikalno."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Nova stara slovenščina (JPŽ)"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Nova stara slovenščina (JPŽ)"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="Fizikalne stalnice, enote, enačbe in drugo fizikalno."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
 
     <body>
+
+
         <label class="hamburger-menu">
           <input type="checkbox" />
         </label>
         <aside class="sidebar">
           <nav>
             <div><a href="./">Domov</a></div></div>
-            <div><a href="knjiznica.html">Knjižnica</a></div>
-            <div><a href="zvezdoslovna_ura.html">Zvezdoslovna ura</a></div></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
           </nav>
         </aside>
+
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
 
         <div class="content">
             <h1>Fizika</h1>
         </div>
-        <img
-        src="./images/periodni_sistem_elementov.svg"
-        width="100%"/>
         <div class="content">
             <h3>Osnovne enote</h3>
-                <table class="capital">
+        </div>
+                <table class="poDve drugSred">
                     <tr>
                         <th>veličina</th>
-                        <th>ime</th>
-                        <th>oznaka</th>
+                        <th>oznaka veličine</th>
+                        <th>ime enote</th>
+                        <th>oznaka enote</th>
                     </tr>
                     <tr id="m">
                         <td>dolžina</td>
+                        <td>l, d, s</td>
                         <td>meter</td>
                         <td>m</td>
                     </tr>
                     <tr id="kg">
                         <td>masa</td>
+                        <td>m</td>
                         <td>kilogram</td>
                         <td>kg</td>
                     </tr>
                     <tr id="s">
                         <td>čas</td>
+                        <td>t</td>
                         <td>sekunda</td>
                         <td>s</td>
                     </tr>
                     <tr id="A">
                         <td>električni tok</td>
+                        <td>I</td>
                         <td>amper</td>
                         <td>A</td>
                     </tr>
                     <tr id="K">
                         <td>termodinamična temperatura</td>
+                        <td>T (Θ)</td>
                         <td>kelvin</td>
                         <td>K</td>
                     </tr>
                     <tr id="mol">
                         <td>množina snovi</td>
+                        <td>n</td>
                         <td>mol</td>
                         <td>mol</td>
                     </tr>
                     <tr id="cd">
                         <td>svetilnost</td>
+                        <td>J</td>
                         <td>kandela</td>
                         <td>cd</td>
                     </tr>
                 </tbody>
             </table>
-            <h3>Izpeljane enote s posebnim imenom in oznako</h3>
-            <table>
+        <div class="content">
+            <h3>Dopolnilne enote</h3>
+            <p>Brez razsežnosti/velikosti, ampak razmerja.</p>
+        </div>
+                <table class="poDve sredinsko">
+                    <tr>
+                        <th>veličina</th>
+                        <th>oznaka veličine</th>
+                        <th>ime enote</th>
+                        <th>oznaka enote</th>
+                        <th>izrazitev z osnovnimi enotami</th>
+                    </tr>
+                    <tr id="rad" class="zgorajrob">
+                        <td>ravninski kot</td>
+                        <td>α</td>
+                        <td>radian</td>
+                        <td>rad</td>
+                        <td>m/m</td>
+                    </tr>
+                    <tr id="sr">
+                        <td>prostorski kot</td>
+                        <td>Ω</td>
+                        <td>steradian</td>
+                        <td>sr</td>
+                        <td>m<sup>2</sup>/m<sup>2</sup></td>
+                </tr>
+                </tbody>
+            </table>
+        <div class="content">
+            <h3>Izpeljane enote</h3>
+        </div>
+            <table class="poDve drugSred">
                 <tr>
-                    <th>ime enote SI</th>
-                    <th>oznaka za enoto SI</th>
-                    <th>fizikalna količina</th>
+                    <th>izpeljana veličina</th>
+                    <th>oznaka veličine</th>
+                    <th>ime enote</th>
+                    <th>oznaka enote</th>
                     <th>izrazitev z drugimi enotami</th>
-                    <th>izrazitev z osnovnimi enotami SI</th>
+                    <th>izrazitev z osnovnimi enotami</th>
                 </tr>
-                <tr id="Hz">
-                    <td>hertz</td>
-                    <td>Hz</td>
+                <tr">
                     <td>frekvenca</td>
+                    <td>f</td>
+                    <td>herc (hertz)</td>
+                    <td id="Hz">Hz</td>
                     <td></td>
-                    <td>1 / s</td>
+                    <td>\[\frac{1}{s}\]</td>
                 </tr>
-                <tr id="N">
-                    <td>newton</td>
-                    <td>N</td>
+                <tr>
                     <td>sila</td>
+                    <td>F</td>
+                    <td>njuten (newton)</td>
+                    <td id="N">N</td>
                     <td></td>
-                    <td>kg m / s<sup>2</sup></td>
+                    <td>\[\frac{kg\cdot m}{s^2}\]</td>
                 </tr>
-                <tr id="Pa">
-                    <td>pascal</td>
-                    <td>Pa</td>
-                    <td>tlak, pritisk</td>
-                    <td>N / m<sup>2</sup></td>
-                    <td>kg / m s<sup>2</sup></td>
+                <tr>
+                    <td>tlak, pritisk, mehanska napetost</td>
+                    <td>p, σ</td>
+                    <td>paskal (pascal)</td>
+                    <td id="Pa">Pa</td>
+                    <td>\[\frac{N}{m^2}=Pa\cdot m^3\]</td>
+                    <td>\[\frac{kg}{m\cdot s^2}\]</td>
                 </tr>
-                <tr id="J">
-                    <td>joule</td>
-                    <td>J</td>
+                <tr>
                     <td>energija, delo, toplota, entalpija</td>
-                    <td>N m</td>
-                    <td>kg m<sup>s</sup> / s<sup>2</sup></td>
+                    <td>W, E, A, Q, H</td>
+                    <td>džul (joule)</td>
+                    <td id="J">J</td>
+                    <td>\[N\cdot m\]</td>
+                    <td>\[\frac{kg\cdot m^2}{s^2}\]</td>
                 </tr>
-                <tr id="W">
-                    <td>vat</td>
-                    <td>W</td>
-                    <td>moč  </td>
+                <tr>
+                    <td>moč</td>
+                    <td>P</td>
+                    <td>vat (watt)</td>
+                    <td id="W">W</td>
                     <td>J / s</td>
                     <td>kg m<sup>s</sup> / s</td>
                 </tr>
-                <tr id="C">
-                    <td>coulomb</td>
-                    <td>C</td>
+                <tr>
                     <td>električni naboj</td>
+                    <td>Q</td>
+                    <td>coulomb</td>
+                    <td id="C">C</td>
                     <td></td>
                     <td>A s</td>
                 </tr>
-                <tr id="V">
+                <tr>
+                    <td>električna napetost (električni potencial), jakost električnega polja</td>
+                    <td>U</td>
                     <td>volt</td>
-                    <td>V</td>
-                    <td>električni potencial, električna napetost</td>
-                    <td>J / C</td>
+                    <td id="V">V</td>
+                    <td>J / C<br>W / A</td>
                     <td>m<sup>2</sup> kg / s<sup>3</sup> A</td>
                 </tr>
-                <tr id="Ω">
-                    <td>ohm</td>
-                    <td>Ω</td>
+                <tr>
                     <td>električni upor (električna upornost), impedanca, reaktanca</td>
+                    <td>R</td>
+                    <td>om (ohm)</td>
+                    <td id="Ω">Ω</td>
                     <td>V / A</td>
                     <td>m<sup>2</sup> kg / s<sup>3</sup> A<sup>2</sup></td>
                 </tr>
-                <tr id="S">
-                    <td>simens</td>
-                    <td>S</td>
+                <tr>
                     <td>električna prevodnost</td>
-                    <td>A / v</td>
+                    <td>G</td>
+                    <td>simens (siemens)</td>
+                    <td id="S">S</td>
+                    <td>1/Ω = V s = A / v</td>
                     <td>s<sup>3</sup> A<sup>2</sup> / m<sup>2</sup> kg</td>
                 </tr>
-                <tr id="F">
-                    <td>farad</td>
-                    <td>F</td>
+                <tr>
                     <td>kapacitivnost</td>
+                    <td>C</td>
+                    <td>farad</td>
+                    <td id="F">F</td>
                     <td>C / V</td>
                     <td>s<sup>4</sup> A<sup>2</sup> / m<sup>2</sup> kg</td>
                 </tr>
-                <tr id="T">
+                <tr>
+                    <td>gostota magnetnega toka/pretoka (magnetna indukcija)</td>
+                    <td>B</td>
                     <td>tesla</td>
-                    <td>T</td>
-                    <td>gostota magnetnega pretoka</td>
-                    <td>V s / m<sup>2</sup></td>
+                    <td id="T">T</td>
+                    <td>Wb/m<sup>2</sup><br>V s / m<sup>2</sup></td>
                     <td>kg / s<sup>2</sup> A</td>
                 </tr>
-                <tr id="Wb">
-                    <td>weber</td>
-                    <td>Wb</td>
-                    <td>magnetni pretok</td>
+                <tr>
+                    <td>magnetni tok/pretok</td>
+                    <td>Φ<sub>M</sub></td>
+                    <td>veber (weber)</td>
+                    <td id="Wb">Wb</td>
                     <td>V s</td>
                     <td>m<sup>2</sup> kg / s<sup>2</sup> A</td>
                 </tr>
-                <tr id="H">
-                    <td>henry</td>
-                    <td>H</td>
+                <tr>
                     <td>induktivnost</td>
-                    <td>V s / A</td>
+                    <td>L</td>
+                    <td>henri (henry)</td>
+                    <td id="H">H</td>
+                    <td>Wb / A<br>V s / A</td>
                     <td>m<sup>2</sup> kg / s<sup>2</sup> A<sup>2</sup></td>
                 </tr>
-                <tr id="°C">
-                    <td>stopinja Celzija</td>
-                    <td>°C</td>
-                    <td>temperatura</td>
+                <tr>
+                    <td>celzijeva temperatura</td>
+                    <td>t</td>
+                    <td>stopinja celzija</td>
+                    <td id="°C">°C</td>
                     <td></td>
-                    <td></td>
+                    <td>K - 273,15</td>
                 </tr>
-                <tr id="rad">
-                    <td>radian</td>
-                    <td>rad</td>
-                    <td>ravninski kot</td>
-                    <td>1</td>
-                    <td>m / m</td>
-                </tr>
-                <tr id="sr">
-                    <td>steradian</td>
-                    <td>sr</td>
-                    <td>prostorski kot</td>
-                    <td>1</td>
-                    <td>m<sup>2</sup> / m<sup>2</sup></td>
-                </tr>
-                <tr id="lm">
-                    <td>lumen</td>
-                    <td>lm</td>
+                <tr>
                     <td>svetlobni tok</td>
+                    <td>Φ<sub></sub></td>
+                    <td>lumen</td>
+                    <td id="lm">lm</td>
                     <td>cd sr</td>
-                    <td></td>
+                    <td>cd</td>
                 </tr>
-                <tr id="lx">
-                    <td>luks</td>
-                    <td>lx</td>
+                <tr>
                     <td>osvetljenost</td>
-                    <td>cd sr / m<sup>2</sup></td>
-                    <td></td>
+                    <td>E</td>
+                    <td>luks</td>
+                    <td id="lx">lx</td>
+                    <td>lm / m<sup>2</sup> = cd sr / m<sup>2</sup></td>
+                    <td>cd / m<sup>2</sup></td>
                 </tr>
-                <tr id="Bq">
-                    <td>becquerel</td>
-                    <td>Bq</td>
-                    <td>aktivnost (radioaktivnega izotopa)</td>
+                <tr>
+                    <td>radioaktivnost (razpadov na enoto časa)</td>
+                    <td>A</td>
+                    <td>bekerel (becquerel/beckverel)</td>
+                    <td id="Bq">Bq</td>
                     <td></td>
                     <td>1 / s</td>
                 </tr>
-                <tr id="Gy">
-                    <td>gray</td>
-                    <td>Gy</td>
+                <tr>
                     <td>absorbirana doza (ionizirajočega sevanja)</td>
+                    <td>D</td>
+                    <td>grej (gray)</td>
+                    <td id="Gy">Gy</td>
                     <td>J /kg</td>
                     <td>m<sup>2</sup> / s<sup>2</sup></td>
                 </tr>
-                <tr id="Sv">
-                    <td>sievert</td>
-                    <td>Sv</td>
+                <tr>
                     <td>ekvivalentna doza (ionizirajočega sevanja)</td>
+                    <td>H</td>
+                    <td>sivert (sievert)</td>
+                    <td id="Sv">Sv</td>
                     <td>J / kg</td>
                     <td>m<sup>2</sup> / s<sup>2</sup></td>
                 </tr>
-                <tr id="kat">
-                    <td>katal</td>
-                    <td>kat</td>
+                <tr>
                     <td>katalitična aktivnost</td>
+                    <td>Akt k</td>
+                    <td>katal</td>
+                    <td id="kat">kat</td>
                     <td></td>
                     <td>mol / s</td>
                 </tr>
             </table>
+        <div class="content">
             <h3>Ostale enote</h3>
+        </div>
             <table>
                 <tr>
                     <th>ime enote SI</th>
@@ -253,6 +334,98 @@
                     <td>10<sup>5</sup> kg / m s<sup>2</sup></td>
                 </tr>
             </table>
+        <div class="content">
+            <h3>Stalnice</h3>
+        </div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>vrednost</th>
+                </tr>
+                <tr>
+                    <td id="g">težni pospešek</td>
+                    <td>\[g=9,81\frac {m}{s^2}\]</td>
+                </tr>
+                <tr>
+                    <td id="G">težnostna stalnica</td>
+                    <td>\[G=6,67\cdot10^{-11}\frac{N\cdot m^2}{kg^2}\]</td>
+                </tr>
+                <tr>
+                    <td id="c">hitrost svetlobe v praznem prostoru</td>
+                    <td>\[c=2,99792458\cdot 10^8\frac{m}{s}\]</td>
+                </tr>
+                <tr>
+                    <td id="e0">osnovni naboj</td>
+                    <td>\[e_0=1,60\cdot10^{-19}A\cdot s\]</td>
+                </tr>
+                <tr>
+                    <td id="NA">Avogadrovo število</td>
+                    <td>\[N_A=6,02214076\cdot10^{23}\frac{1}{mol}=6,02\cdot10^{26}\frac{1}{kmol}\]</td>
+                </tr>
+                <tr>
+                    <td id="R">splošna plinska stalnica</td>
+                    <td>\[R=8310\frac{J}{kmol\cdot K}=8,31\frac{kPa\cdot l}{mol\cdot K}\]</td>
+                </tr>
+            </table>
+        <div class="content">
+            <h3>Enačbe</h3>
+            <!--<p>\(F_g=mg=\frac{GmM}{r^2}\) ali pa  \[F_g=mg=\frac{GmM}{r^2}\]</p>-->
+        </div>
+            <table class="poDve">
+                <tr>
+                    <th></th>
+                    <th>osnovna enačba / zakon</th>
+                    <th>izpeljave</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>\[F_g=m\cdot\href{#g}g=\frac{\href{#G}G\cdot m\cdot M}{r^2}\]</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="zgorajrob">
+                    <td></td>
+                    <td>\[A=\vec F\cdot \vec s=F\cdot s\cdot \cos\varphi\]</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="zgorajrob">
+                    <td>Boylov zakon</td>
+                    <td>\[p\cdot V=p^{\prime}\cdot V^{\prime}\]</td>
+                    <td rowspan="2">\[\frac{p\cdot V}{T}=n\cdot\href{#R}{R}\]</td>
+                    <td rowspan="2">plinska enačba</td>
+                </tr>
+                <tr>
+                    <td>Charles-Amontsonov zakon</td>
+                    <td>\[T\cdot V=T^{\prime}\cdot V^{\prime}\]</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>\[Q=m\cdot c\cdot \Delta T\]</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">toplotni tok</td>
+                    <td>\[P_t=\frac{Q}{\Delta t}\]</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="display: none"></td>
+                    <td>\[P_t=\lambda\cdot S\frac{\Delta T}{\Delta x}\]</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        <div class="content">
+            <h3>Elementi</h3>
+        </div>
+            <img class="obrnjena"
+                src="./images/periodni_sistem_elementov.svg"
+                width="100%"/>
+        <div class="content">
             <h3>Glej tudi</h3>
             <ul class="s">
                 <li><a href="./kemija">Kemija</a></li>
@@ -264,10 +437,15 @@
             </ul>
             <h3>Zunanje povezave in viri</h3>
             <ul class="s">
-                <li><a href="https://sl.wikipedia.org/wiki/Osnovna_enota_SI">Wikipedija: Osnovna enota SI</a></li>
-                <li><a href="https://sl.wikipedia.org/wiki/Mednarodni_sistem_enot">Wikipedija: Mednarodni sistem enot</a></li>
-                <li><a href="https://sl.wikipedia.org/wiki/Izpeljana_enota_SI">Wikipedija: Izpeljana enota SI</a></li>
+                <li><a href="https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507" target="_blank" rel="noopener noreferrer">The International System of Units (SI; 2019)</a> (PDF)</li>
+                <li><a href="https://sl.wikipedia.org/wiki/Osnovna_enota_SI" target="_blank" rel="noopener noreferrer">Wikipedija: Osnovna enota SI</a></li>
+                <li><a href="https://sl.wikipedia.org/wiki/Mednarodni_sistem_enot" target="_blank" rel="noopener noreferrer">Wikipedija: Mednarodni sistem enot</a></li>
+                <li><a href="https://sl.wikipedia.org/wiki/Izpeljana_enota_SI" target="_blank" rel="noopener noreferrer">Wikipedija: Izpeljana enota SI</a></li>
             </ul>
         </div>
     </body>
+    <link href="styles.css" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </html>

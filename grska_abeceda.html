@@ -1,28 +1,61 @@
 <!doctype html>
-<html>
+<html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Grška abeceda</title>
-          <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" vsebina="IE=edge" />
+        <meta name="viewport" vsebina="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
         <script src="scripts.js"></script>
+
+        <title>Grška abeceda</title>
+        <meta name="description" vsebina="Grška abeceda, kot se uporablja za zapisovanje grščine; izhajajoč iz feničanske abecede." /> <!--opis spletnega mesta-->
+        <meta name="keywords" vsebina="grška abeceda, grška pisava" />
+        <meta name="copyright" vsebina="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name vsebina="Grška abeceda (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor vsebina=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color vsebina=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" vsebina="Grška abeceda"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" vsebina="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" vsebina="Grška abeceda, kot se uporablja za zapisovanje grščine; izhajajoč iz feničanske abecede."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" vsebina="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" vsebina="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" vsebina="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" vsebina="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" vsebina="Grška abeceda, kot se uporablja za zapisovanje grščine; izhajajoč iz feničanske abecede."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" vsebina="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
 
     <body>
+
         <label class="hamburger-menu">
           <input type="checkbox" />
         </label>
         <aside class="sidebar">
           <nav>
             <div><a href="./">Domov</a></div></div>
-            <div><a href="knjiznica">Knjižnica</a></div>
-            <div><a href="zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./knjiznica">Knjižnica</a></div></div>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
           </nav>
         </aside>
 
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
         <div class="content">
             <h1>Grška abeceda</h1>
+            <p class="podnaslov">Ελληνικó αλφάβητο</p>
         </div>
         <table class="sredinsko zgornja vodčrte">
             <thead>
@@ -45,41 +78,37 @@
             <tbody>
                 <tr>
                     <td>Α α</td>
-                    <td>ἄλφα</td>
-                    <td></td>
+                    <td colspan="2">ἄλφα</td>
                     <td>άλφα</td>
                     <td>alfa</td>
                     <td>[a] [aː]</td>
                     <td>[a]</td>
                     <td> alef</td>
-                    <td>a</td>
+                    <td>A a</td>
                     </tr>
                 <tr>
                     <td>Β β</td>
-                    <td>βῆτα</td>
-                    <td></td>
+                    <td colspan="2">βῆτα</td>
                     <td>βήτα</td>
                     <td>beta</td>
                     <td>[b]</td>
                     <td>[v]</td>
                     <td> bet</td>
-                    <td>b</td>
+                    <td>b / v</td>
                     </tr>
                 <tr>
                     <td>Γ γ</td>
-                    <td>γάμμα</td>
-                    <td></td>
+                    <td colspan="2">γάμμα</td>
                     <td>γάμμα</td>
                     <td>gama</td>
-                    <td>[g]</td>
-                    <td>[ɣ~ʝ]</td>
+                    <td>[g]<br>[ŋ]-{γ κ ξ χ (μ)}</td>
+                    <td>[ɣ]-{/a o u/}<br>[ʝ]-{/e i/}<br>([ŋ] ~ [ɲ])</td>
                     <td> gimel</td>
-                    <td>g</td>
+                    <td>g h n{g}</td>
                     </tr>
                 <tr>
                     <td>Δ δ</td>
-                    <td>δέλτα</td>
-                    <td></td>
+                    <td colspan="2">δέλτα</td>
                     <td>γάμα</td>
                     <td>delta</td>
                     <td>[d]</td>
@@ -94,62 +123,57 @@
                     <td>δέλτα</td>
                     <td>epsilon</td>
                     <td>[e]</td>
-                    <td></td>
+                    <td>/ā/</td>
                     <td> he</td>
                     <td>e</td>
                     </tr>
                 <tr>
                     <td>Ζ ζ</td>
-                    <td>ζῆτα</td>
-                    <td></td>
+                    <td colspan="2">ζῆτα</td>
                     <td>έψιλον</td>
                     <td>zeta</td>
-                    <td>[zd]</td>
-                    <td></td>
+                    <td>[zd] ([dz])</td>
+                    <td>[z]</td>
                     <td> zajin</td>
                     <td>dz, z</td>
                     </tr>
                 <tr>
                     <td>Η η</td>
-                    <td>ἦτα</td>
-                    <td></td>
+                    <td colspan="2">ἦτα</td>
                     <td>ζήτα</td>
                     <td>eta</td>
-                    <td>(ali [dz]?)</td>
-                    <td></td>
+                    <td>[ɛː]</td>
+                    <td>[i]</td>
                     <td> het</td>
                     <td>ē</td>
                     </tr>
                 <tr>
                     <td>Θ θ</td>
-                    <td>θῆτα</td>
-                    <td></td>
+                    <td colspan="2">θῆτα</td>
                     <td>ήτα</td>
                     <td>theta</td>
-                    <td>pozneje [zː]</td>
-                    <td>[z]</td>
+                    <td>[tʰ]</td>
+                    <td>[θ]</td>
                     <td> tet</td>
                     <td>th</td>
                     </tr>
                 <tr>
                     <td>Ι ι</td>
-                    <td>ἰῶτα</td>
-                    <td></td>
+                    <td colspan="2">ἰῶτα</td>
                     <td>θήτα</td>
                     <td>jota</td>
-                    <td>[ɛː]</td>
-                    <td>[i]</td>
+                    <td>[i iː]</td>
+                    <td>[i] ([ç ʝ ɲ])</td>
                     <td> jod</td>
                     <td>i, j</td>
                     </tr>
                 <tr>
                     <td>Κ κ</td>
-                    <td>κάππα</td>
-                    <td></td>
+                    <td colspan="2">κάππα</td>
                     <td>ιώτα</td>
                     <td>kapa</td>
-                    <td>[tʰ]</td>
-                    <td>[θ]</td>
+                    <td>[k]</td>
+                    <td>[k ~ c]</td>
                     <td> kaf</td>
                     <td>k</td>
                     </tr>
@@ -159,30 +183,28 @@
                     <td>λάμβδα</td>
                     <td>γιώτα</td>
                     <td>lambda</td>
-                    <td>[i] [iː]</td>
-                    <td>[i], [j]</td>
+                    <td>[l]</td>
+                    <td>[l]</td>
                     <td> lamed</td>
                     <td>l</td>
                     </tr>
                 <tr>
                     <td>Μ μ</td>
-                    <td>μῦ</td>
-                    <td></td>
+                    <td colspan="2">μῦ</td>
                     <td>κάππα</td>
                     <td>mi</td>
-                    <td>[k]</td>
-                    <td>[k~c]</td>
+                    <td>[m]</td>
+                    <td>[m]</td>
                     <td> mem</td>
                     <td>m</td>
                     </tr>
                 <tr>
                     <td>Ν ν</td>
-                    <td>νῦ</td>
-                    <td></td>
+                    <td colspan="2">νῦ</td>
                     <td>κάπα</td>
                     <td>ni</td>
-                    <td>[l]</td>
-                    <td></td>
+                    <td>[n]</td>
+                    <td>[n]</td>
                     <td> nun</td>
                     <td>n</td>
                     </tr>
@@ -192,8 +214,8 @@
                     <td>ξῖ</td>
                     <td>λάμδα</td>
                     <td>ksi</td>
-                    <td>[m]</td>
-                    <td></td>
+                    <td>[ks]</td>
+                    <td>[ks]</td>
                     <td> sameh</td>
                     <td>x</td>
                     </tr>
@@ -203,8 +225,8 @@
                     <td>ὂ μικρόν</td>
                     <td>λάμβδα</td>
                     <td>omikron</td>
-                    <td>[n]</td>
-                    <td></td>
+                    <td>[o]</td>
+                    <td>[o]</td>
                     <td> ajin</td>
                     <td>o</td>
                     </tr>
@@ -214,36 +236,205 @@
                     <td>πῖ</td>
                     <td>μι</td>
                     <td>pi</td>
-                    <td>[ks]</td>
-                    <td></td>
+                    <td>[p]</td>
+                    <td>[p]</td>
                     <td> pe</td>
                     <td>p</td>
                     </tr>
                 <tr>
                     <td>Ρ ρ</td>
-                    <td>ῥῶ</td>
-                    <td></td>
+                    <td colspan="2">ῥῶ</td>
                     <td>μυ</td>
                     <td>ro</td>
-                    <td>[o]</td>
-                    <td></td>
+                    <td>[r r̥]</td>
+                    <td>[r]</td>
                     <td> reš</td>
                     <td>r</td>
                     </tr>
                 <tr>
-                    <td>Σ σ</td>
-                    <td>σῖγμα</td>
-                    <td></td>
+                    <td>Σ σ;<br>-ς</td>
+                    <td colspan="2">σῖγμα</td>
                     <td>νι</td>
                     <td>sigma</td>
-                    <td>[p]</td>
-                    <td></td>
+                    <td>[s]<br>[z]-{β γ μ}</td>
+                    <td>[s]<br>[z]-{β γ μ}</td>
                     <td> šin</td>
                     <td>s</td>
-                    </tr>
+                </tr>
+                <tr>
+                    <td>Τ τ</td>
+                    <td colspan="2">ταῦ</td>
+                    <td>ταυ</td>
+                    <td>tav (tau)</td>
+                    <td>[t]</td>
+                    <td>[t]</td>
+                    <td>tav</td>
+                    <td>t</td>
+                </tr>
+                <tr>
+                    <td>Υ υ</td>
+                    <td>ὗ</td>
+                    <td>ὓ ψιλόν</td>
+                    <td>ύψιλον</td>
+                    <td>ipsilon</td>
+                    <td>[y yː]<br>(prvotno [u uː])</td>
+                    <td>[i]</td>
+                    <td>vav</td>
+                    <td>y</td>
+                </tr>
+                <tr>
+                    <td>Φ φ</td>
+                    <td>φεῖ</td>
+                    <td>φῖ</td>
+                    <td>φι</td>
+                    <td>fi</td>
+                    <td>[pʰ]</td>
+                    <td>[f]</td>
+                    <td>{izvor nejasen}</td>
+                    <td>ph</td>
+                </tr>
+                <tr>
+                    <td>Χ χ</td>
+                    <td>χεῖ</td>
+                    <td>χῖ</td>
+                    <td>χι</td>
+                    <td>hi</td>
+                    <td>[kʰ]</td>
+                    <td>[x ~ ç]</td>
+                    <td>{izvor nejasen}</td>
+                    <td>ch</td>
+                </tr>
+                <tr>
+                    <td>Ψ ψ</td>
+                    <td>ψεῖ</td>
+                    <td>ψῖ</td>
+                    <td>ψι</td>
+                    <td>psi</td>
+                    <td>[ps]</td>
+                    <td>[ps]</td>
+                    <td>{izvor nejasen}</td>
+                    <td>ps</td>
+                </tr>
+                <tr>
+                    <td>Ω ω</td>
+                    <td>ὦ</td>
+                    <td>ὦ μέγα</td>
+                    <td>ωμέγα</td>
+                    <td>omega</td>
+                    <td>[ɔː]</td>
+                    <td>[o]</td>
+                    <td>ajin</td>
+                    <td>ō</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="sredinsko zgornja vodčrte">
+            <thead>
+                <tr>
+                    <th rowspan="2">grška<br>črka</th>
+                    <th colspan="3">ime</th>
+                    <th rowspan="2">izgovorjava</th>
+                    <th rowspan="2">feničanska<br>ustreznica</th>
+                    <th rowspan="2">prečrkovanje</th>
+                </tr>
+                <tr>
+                    <th>starinska grščina</th>
+                    <th>poznejše<br>grško<br>(večtonalno)</th>
+                    <th>slovensko</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ϛ ϛ</td>
+                    <td></td>
+                    <td>στῖγμα</td>
+                    <td>stigma</td>
+                    <td>[st]</td>
+                    <td></td>
+                    <td>st</td>
+                </tr>
+                <tr>
+                    <td>Ϟ ϟ</td>
+                    <td>ϙόππα</td>
+                    <td>κόππα</td>
+                    <td>kopa</td>
+                    <td>[k]</td>
+                    <td>qof</td>
+                    <td>k</td>
+                </tr>
+                <tr>
+                    <td>Ϡ ϡ</td>
+                    <td></td>
+                    <td>σαμπῖ</td>
+                    <td>sampi</td>
+                    <td>[sː ks ts]</td>
+                    <td>sade</td>
+                    <td>ss</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Opuščene črke</h2>
+        <table class="sredinsko zgornja vodčrte">
+            <thead>
+                <tr>
+                    <th rowspan="2">grška<br>črka</th>
+                    <th colspan="3">ime</th>
+                    <th rowspan="2">izgovorjava</th>
+                    <th rowspan="2">feničanska<br>ustreznica</th>
+                    <th rowspan="2">prečrkovanje</th>
+                </tr>
+                <tr>
+                    <th>starinska grščina</th>
+                    <th>poznejše<br>grško<br>(večtonalno)</th>
+                    <th>slovensko</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ϝ ϝ</td>
+                    <td>ϝαῦ</td>
+                    <td>δίγαμμα</td>
+                    <td>digama</td>
+                    <td>[w]</td>
+                    <td>vav</td>
+                    <td>w</td>
+                </tr>
+                <tr>
+                    <td>Ͱ ͱ</td>
+                    <td>ἧτα</td>
+                    <td></td>
+                    <td>heta</td>
+                    <td>[h]</td>
+                    <td>het</td>
+                    <td>h</td>
+                </tr>
+                <tr>
+                    <td>Ϻ ϻ</td>
+                    <td>ϻάν</td>
+                    <td>σάν</td>
+                    <td>san</td>
+                    <td>[s]</td>
+                    <td>sade</td>
+                    <td>s</td>
+                </tr>
+                <tr>
+                    <td>Ϸ ϸ</td>
+                    <td></td>
+                    <td></td>
+                    <td>šo</td>
+                    <td>[ʃ]</td>
+                    <td>šin</td>
+                    <td>š</td>
+                </tr>
             </tbody>
         </table>
         <div class="content">
+            <h3>Zunanje povezave in viri</h2>
+            <ul class="s">
+                <li><a href="https://en.wikipedia.org/wiki/Greek_alphabet" target="_blank" rel="noopener noreferrer">Wikipedia: Greek alphabet</a></li>
+                <li><a href="https://sl.wikipedia.org/wiki/Gr%C5%A1ka_abeceda" target="_blank" rel="noopener noreferrer">Wikipedija: Grška abeceda</a></li>
+            </ul>
         </div>
     </body>
 </html>

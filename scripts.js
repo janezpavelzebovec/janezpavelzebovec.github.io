@@ -27,6 +27,33 @@
         document.getElementById("myNav").style.width = "0%";
       };
 
+
+//ODPRE IN ZAPRE <DETAILS> MED :HOVER
+    //var detailPredmeti = document.querySelectorAll("details, summary, summary::hover");
+    /*var detail = document.querySelectorAll("details");
+
+    document.querySelectorAll("details").forEach(function(detail) {
+        detail.addEventListener("mouseenter", function(event) {
+            if (!this.classList.contains("odprto")) { //če ne vsebuje razreda "odprto"
+                this.setAttribute("open", "open"); // Odpre podrobnosti ob hooverju, če ni bilo kliknjeno nanj
+            }
+        });
+
+        detail.addEventListener("mouseleave", function(event) {
+            if (!this.classList.contains("odprto")) { //če ne vsebuje razreda "odprto"
+                this.removeAttribute("open"); // Zapre podrobnosti ob odhodu miške, če ni bilo kliknjeno nanj
+            }
+        });
+
+        detail.addEventListener("click", function() {
+            if (this.classList.contains("odprto")) { //če vsebuje razreda "odprto"
+                this.classList.remove("odprto"); // Odstrani razred "odprto", če je bil element že kliknjen
+            } else {
+                this.classList.add("odprto"); // Dodaj razred "odprto" ob kliku
+            }
+        });
+    });*/
+
 //ODPRE DREVESNI PRIKAZ
     //function odpriDrevo() {document.getElementById("drevesni").addAttribute("open");}
     function odpriDrevo() {

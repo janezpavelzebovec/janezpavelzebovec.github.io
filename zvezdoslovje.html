@@ -2,10 +2,11 @@
 <html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" vsebina="IE=edge" />
-        <meta name="viewport" vsebina="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
 
         <title>Zvezdoslovje</title>
         <meta name="description" vsebina="O vesolju, metodah zvezdoslovnega opazovanja in zvezdoslovskih pripomočkih." /> <!--opis spletnega mesta-->
@@ -38,17 +39,105 @@
         <aside class="sidebar">
           <nav>
             <div><a href="./">Domov</a></div></div>
-            <div><a href="knjiznica">Knjižnica</a></div>
-            <div><a href="zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
             <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
           </nav>
         </aside>
 
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
         <div class="content">
             <h1>Zvezdoslovje</h1>
-            <h3>Zunanje povezave in viri</h3>
             <ul class="s">
-                <li><a href="https://www.timeanddate.com/" target="_blank" rel="noopener noreferrer">Time and Date</a></li>
+                <li>oddaljenost našega osončja od središča osvetja (<i class="zamrznjeno">galaksije</i>): <b>26.660 svetlobnih let</b></li>
+                <li>polmer Sonca: <b>696.000 km</b> (109x Zemljinega)</li>
+                <li>prostornina Sonca: <b>1.412x10<sup>18</sup> km<sup>3</sup></b></li>
+                <li>masa Sonca: <b>1.9885x10<sup>30</sup> kg</b></li>
+                <li>težni pospešek Sonca: <b>274 <sup>m</sup>/<sub>s<sup>2</sup></sup></b> (28x Zemljinega)</li>
+                <li>osvetno leto: <b>225–250 milijonov let</b> (da enkrat obkroži središče osvetja)</li>
+            </ul>
+            <h3>Zemlja</h3>
+            <ul class="s">
+                <li>oddaljenost Zemlje od Sonca: povp. <b>149.598.023 km</b> (izsrednost: 0.0167086)</li>
+                    <ul class="s">
+                        <li>prisončje (<i class="zamrznjeno">perihelij</i>; pr. 3./4. prosinca; 114,20783°): <b>147.098.450 km</b></li>
+                        <li>prisončje (<i class="zamrznjeno">afelij</i>; pr. 4. malega srpana): <b>152.097.597 km</b></li>
+                    </ul>
+                <li>nagnjenost osi: trenutno <b>23.4392811°</b>; cikel: 41.000 let (trenutno se zaradi privlačnosti Sonca, Lune in drugih večjih teles osončja manjša)</li>
+                    <ul class="s">
+                        <li>največja nagnjenost: <b>22,1°</b></li>
+                        <li>najmanjša nagnjenost: <b>24,5°</b></li>
+                    </ul>
+                <li>polmer Zemlje: povp. polmer <b>6.371,0 km</b> (sploščenost 1 / 298,257222101)</li>
+                    <ul class="s">
+                        <li>na polutniku: polmer <b>6.378,137 km</b>, obseg 40.075,017 km</li>
+                        <li>na tečajih: polmer <b>6.356,752 km</b>, obseg 40.007,86 km</li>
+                    </ul>
+                <li>masa Zemlje: <b>5.972168x10<sup>24</sup></b></li>
+                <li>težni pospešek Zemlje na površju: <b>9.80665 <sup>m</sup>/<sub>s<sup>2</sup></sup></b></li>
+                <li>obhodni čas (pravostrani - <i class="zamrznjeno">sidereal</i>): <b>365.256363004 dni</b></li>
+                <li>pravostrani dan (<i class="zamrznjeno">sidereal</i>): 0.99726968 dneva</li>
+                <li>povprečna tirna hitrost: <b>29.7827 km/s</b></li>
+                <li>povprečen polmer: <b>6.371,0 km</b></li>
+            </ul>
+            <div class="deli">
+                <img
+                    class="obrnjena"
+                    src="./images/vesolje/Zemlja_osnovno.svg"
+                    width="100%"
+                    height="100%"/>
+            </div>
+            <p>Posledica nagnjenosti je oblikovanje 5-ih značilnih vzporednikov:
+                    <ul class="s">
+                        <li>polutnik (<i class="zamrznjeno">ekvator</i>; na 0° zem. v.) - pravokoten na Zemljino os vrtenja;</li>
+                        <li>severni in južni povratnik (na 23,4° zem. v.) - od polutnika do povratnika je Sonce dvakrat na leto v nadglavišču;</li>
+                        <li>severni in južni tečajnik (na 66,6° zem. v.) - od tečaja do tečajnika je enkrat na leto polarni dan/noč.</li>
+                    </ul><p>
+            <p>Zemljina os dodatno v 26.000 letih oriše navidezen krog (glej krožno puščico v zgornjem delu slike), posledično se letni časi v tem ciklu zamaknejo za celo leto.</p>
+            <h4 class="prelom">Luna</h4>
+            <ul class="s">
+                <li>oddaljenost Lune od Zemlje: povp. <b>384.000 km</b></li>
+                <li>polmer Lune: <b>3.474 km</b></li>
+                <li>masa Lune: <b>0,073x10<sup>24</sup></b></li>
+                <li>težni pospešek Lune: <b>0.0253 <sup>m</sup>/<sub>s<sup>2</sup></sup></b> (16,6% Zemljinega)</li>
+            </ul>
+            <div class="deli">
+                <img
+                    src="./images/vesolje/Luna_tir_zgoraj.svg"
+                    width="100%"
+                    height="100%"/>
+            </div>
+            <div class="deli okroglo">
+                <img
+                    src="./images/vesolje/Lunine_mene.svg"
+                    width="100%"
+                    height="100%"/>
+            </div>
+            <div class="deli okroglo">
+                <img
+                    src="./images/vesolje/Lunine_mene_Zemlja.svg"
+                    width="100%"
+                    height="100%"/>
+            </div>
+            <p>Povprečen "pravi" mesec, oz. dan na Luni, je dolg 29 dni, 12 ur in 44 minut, oz. 29.530575 dni.</p>
+            <p>Luna se okoli Zemlje vrti (gledano s severnega tečeja) v pozitivni smeri, oz. obratni mseri urinega kazalca. Luna je od Zemlje oddaljena povprečno 384.000 kilometrov, vendar pa je Lunin tir okoli Zemlje elipsast, zato je Luna enkrat dlje (405.000 km) in je zato na pogled manjša, drugič pa bližje (360.000 km) in je na pogled večja. Ko je Luna bližje Zemlji je plimovanje močnejše.
+            <h3 class="prelom">Zunanje povezave in viri</h3>
+            <ul class="s">
+                <li><a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" target="_blank" rel="noopener noreferrer">NASA - Dr. David R. Williams: Earth Fact Sheet</a></li>
+                <li><a href="https://sl.wikipedia.org/wiki/Zemlja" target="_blank" rel="noopener noreferrer">Wikipedija: Zemlja</a></li>
+                <hr>
+                <li><a href="https://www.timeanddate.com/" target="_blank" rel="noopener noreferrer">Time and Date</a>
+                    <ul class="s">
+                        <li><a href="https://www.timeanddate.com/astronomy/axial-tilt-obliquity.html" target="_blank" rel="noopener noreferrer">Time and Date - Vigdis Hocken: What Is Earth's Axial Tilt or Obliquity?</li>
+                    </ul>
+                </li>
                 <li><a href="https://theskylive.com/" target="_blank" rel="noopener noreferrer">The Sky Live</a></li>
                 <li><a href="https://calgary.rasc.ca/wp/" target="_blank" rel="noopener noreferrer">Calgary Centre - The Royal Astronomical Society of Canada</a></li>
                 <li><a href="https://www.youtube.com/watch?v=ntsczkygeYo" target="_blank" rel="noopener noreferrer">Youtube - Launch Pad Astronomy: The Moon's Orbit and Eclipses</a> [<a class="arh" href="https://web.archive.org/web/20230428185345/https://www.youtube.com/watch?v=ntsczkygeYo">arhivirano</a>]</li>
@@ -63,6 +152,8 @@
                 <li><a href="https://ssd.jpl.nasa.gov/planets/phys_par.html" target="_blank" rel="noopener noreferrer">NASA - Jet Propulsion Laboratory: Planetary Physical Parameters</a></li>
                 <li><a href="http://hinch.me.uk/riset.html" target="_blank" rel="noopener noreferrer">Javascript: Moon and Sun rise and set</a></li>
                 <hr>
+                <li><a href="https://www.wm7d.net/az_proj/az_html/azproj.shtml" target="_blank" rel="noopener noreferrer">WM7D - Online Map Creation using AZ_PROJ v1.1.7</a></li>
+                <li><a href="https://armchairastronautics.blogspot.com/" target="_blank" rel="noopener noreferrer">Olaf Frohn: Arm Chair Astronautics</a></li>
                 <li><a href="https://skyandtelescope.org/interactive-sky-chart/" target="_blank" rel="noopener noreferrer">
 Sky And Telescope: Interactive Sky Chart</a> (interaktivna zvezdna karta)</li>
                 <li><a href="https://drifted.in/planisphere-app/" target="_blank" rel="noopener noreferrer">Drifted.in (Jan Tošovský): Planisphere app</a> (interaktivna zvezdna karta)</li>
