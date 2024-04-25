@@ -2,10 +2,11 @@
 <html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" vsebina="IE=edge" />
-        <meta name="viewport" vsebina="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
 
         <title>Slovenščina</title>
         <meta name="description" vsebina="Slovenščina - slovanski jezik Slovencev; glasoslovje, oblikoslovje, tvorjenje, pravopis, in narečja slovenščine." /> <!--opis spletnega mesta-->
@@ -84,6 +85,14 @@
                     </ul>
           </nav>
         </aside>
+
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
 
         <div class="vsebina">
             <h1>Slovenščina</h1>
@@ -1878,9 +1887,9 @@ Nezvočniški glasniki se v slovenščini pogosto premenjujejo. Najpogosteje pri
                         <li>naslonke praviloma za prvim stavčnim členom</li>
                     </ul>
                 </li>
-                <li><b>prosta stava</b>, oz. členitev po pomembnosti: besede so razvrščeme glede na naslovnikovo poznavanje podatkov:
+                <li><b>prosta stava</b>, oz. členitev po pomembnosti: besede so razvrščeme glede na naslovnikovo poznavanje podatkov (npr. <i>Naša lipa je začela cveteti.</i>):
                     <ul class="s">
-                        <li>začne se z že znanim podatkom - <b>izhodišče</b></li>
+                        <li>začne se z že (najbolj) znanim podatkom - <b>izhodišče</b></li>
                         <li><b>prehod</b> - običajno povedek</li>
                         <li>konča pa z novim podatkom, oz. tistim, ki ga želimo poudariti - <b>jedro</b></li>
                     </ul>
@@ -1888,7 +1897,21 @@ Nezvočniški glasniki se v slovenščini pogosto premenjujejo. Najpogosteje pri
             </ul>
             <h4 id="Stavčni členi">Stavčni členi</h4>
             <ul class="s">
-                <li id="Osebek"><b>Osebek</b> <i class="zamrznjeno">(subjekt)</i>: v imenovalniku, nadrejen povedku; v tvorniku izraža vršilca dejanja ali nosilca stanja, v trpniku pa cilj glagolskega dejanja. Po njem se vprašamo z imenovalniško samostalniško vprašalnico <i>kdo/kaj?</i></li>
+                <li id="Osebek"><b>Osebek</b> <i class="zamrznjeno">(subjekt)</i>: nadrejen povedku; v tvorniku izraža vršilca dejanja ali nosilca stanja, v trpniku pa cilj glagolskega dejanja.
+                    <ul class="s">
+                        <li>v imenovalniku (<i>kdo/kaj?</i>): najpogosteje (npr. <i><b>Janez</b> pase ovce</i>);</li>
+                        <li>v rodilniku (<i>koga/česa?</i>): ob zanikanem polnopomenskem glagolu biti (npr. <i><b>Očeta</b> <u>ni</u> doma.</i>);
+                        <li>z osebno glagolsko obliko (npr. <i>Posekal je drevo.</i>);
+                        <li>logični osebek: v rodilniku, dajalniku, tožilniku; neprehodni glagoli v 3. os. ed. sr. spola (npr. <i><b>Aljažu</b> se je sanjalo.</i> <small>→ <i><u>Aljaž</u> je sanjal</i></small>);</li>
+                        <li>osebka ni: če so v povedku glagoli za dogajanje v naravi (npr. <i>Dežuje.</i>).</li>
+                        <li><b>Osebkov prilastek</b>:
+                            <ul class="s">
+                                <li>levi prilastek: pridevnik, števnik, zaimek (npr. <i><u><b>Sosedov</b> Janez</u> pase ovce.</i>);</li>
+                                <li>desni prilastek: samostalnik, prislov, polstavek (npr. <i>To je <u>mesto <b>Kranj</b></u></i> - mesto ima širše pomensko polje, zato je jedro, <i>Kranj</i> pa prilastek).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li id="Povedek"><b>Povedek</b> <i class="zamrznjeno">(predikat)</i>: stavčni člen, izražen z osebno glagolsko obliko ali z njeno pomočjo. En stavek ima le en povedek. Povedek je lahko iz:
                     <ul class="s">
                         <li>polnopomenskega glagola</li>
@@ -1902,38 +1925,167 @@ Nezvočniški glasniki se v slovenščini pogosto premenjujejo. Najpogosteje pri
                     </li>
                     </ul>
                     <ul class="s">
-                        <li id="Povedkovo določilo"><b>Povedkovo določilo</b></li>
-                        <li id="Povedkov prilastek"><b>Povedkov prilastek</b></li>
+                        <li id="Povedkovo določilo"><b>Povedkovo določilo</b>: polnopomenski glagol, ki stoji ob pomožnih/nepolnopomenskih glagolih (npr. <i>On mora <b>posejati</b> žito.</i>).</li>
+                        <li id="Povedkov prilastek"><b>Povedkov prilastek</b>: kakšen je osebek/vršilec med <i>izvajanjem povedka</i> (npr. <i><b>Navdušen</b> je pripovedoval o svojem podvigu</i> - ne <i>navdušeno</i>, ker bi bil potem to načinovni prislov, se ne bi vprašal, kakšen je osebek, ampak kako je to npr. <i>povedal</i>).</li>
                     </ul>
                 </li>
+                <li id="Prislovno_določilo"><b>Prislovno določilo</b></li>
                 <li id="Predmet"><b>Predmet</b> <i class="zamrznjeno">(objekt)</i>: sklonsko odvisen od povedka, ki izraža, koga ali kaj prizadeva glagolsko dejanje. Po njem se vprašamo s samostalniškimi vprašalnicami za vse sklone razen za imenovalnik (<i>koga/česa, komu/čemu, koga/kaj, (o) kom/čem, (s) kom/čim?</i>)</li>
                 <li id="Prilastek"><b>Prilastek</b> <i class="zamrznjeno">(atribut)</i>: določa odnosnico imenske besedne zveze.</li>
             </ul>
-            <h4 id="Priredje">Priredje</h4>
+            <h4 id="Priredje">Priredja</h4>
             <p>V priredno zloženi povedi sta stavka v enakovrednem razmerju, enako pomembna.</p>
-            <ul class="s">
-                <li><b>Vezalno priredje</b>: opisuje dogodke, ki potekajo hkrati ali eden za drugim.<br>Stavka povezujejo vezniki <b><i>in, pa, ter</i></b>, med njima ni vejice (npr.: <i>Sonce sije <b>in</b> potok žubori.</i>).</li>
-                <li><b>Stopnjevalno priredje</b>: prvi stavek poudarja izrazitost, nepričakovanost dogodka v drugem stavku.<br>Stavka povezujejo vezniki <b><i>ne samo ... ampak tudi, ne le ... temveč tudi, ne samo ... marveč tudi</i></b>, med njima je vejica (npr.: <i>Diamant <b>ni le</b> lep, <b>ampak tudi</b> izjemno redek.</i>).
-                <li><b>Ločno priredje</b>: opisuje dogodke, od katerih se bo uresničil le eden.<br>Stavka povezujejo vezniki <b><i>ali, ali pa, ali ... ali</i></b>, med njima ni vejice (npr.: <i>Ura je dve <b>ali pa</b> štiri.).</i>)</li>
-                <li><b>Protivno priredje</b>: govori o dveh dogodkih, ki sta drug z drugim v nasprotju oz. se med seboj razlikujeta.<br>Stavka povezujejo vezniki <b><i>ampak, toda, temveč, marveč, vendar, pa, ali, a, samo, le</i></b>; med njima stoji vejica (npr.: <i>Najprej je nebo izgledalo mirno, vendar se je kmalu ulilo.</i>).</li>
-                <li><b>Posledično priredje</b>: v drugem stavku opisuje posledico dogodka v prvem stavku.<br>Stavka povezuje veznik <b><i>zato</i></b>, med njima stoji vejica (npr.: <i>Skozi dežne kaplje je posijalo Sonce, <b>zato</b> se je pokazala mavrica.</i>).</li>
-                <li><b>Pojasnjevalno priredje</b>: prvi stavek (trditev) dopolnimo s pojasnilom ali dokazom v drugem stavku.<br>Stavka povezujejo vezniki <b><i>saj, kajti, namreč</i></b>, med njima stoji vejica (npr.: <i>Ptica je v kljunu nosila vejico, <b>saj</b> je gradila gnezdo.</i>).</li>
-                <li><b>Sklepalno priredje</b>: v prvem stavku navaja dejstvo/trditev, v drugem stavku pa pove, kaj na podlagi tega dejstva/trditve sklepamo.<br>Stavka povezujejo vezniki <b><i>torej, zatorej</i></b>, med njima stoji vejica (npr.: <i>Na nebu se zbirajo oblaki, <b>torej</b> bo najverjetneje deževalo.</i>).</li>
-            </ul>
+        </div>
+        <table class="sredinsko prvaLevo">
+            <thead>
+                <tr>
+                    <th>vrsta priredja</th>
+                    <th>izraža</th>
+                    <th>značilni vezniki</th>
+                    <th>primer</th>
+                    <th>vejica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>vezalno</th>
+                    <td>hkratnost, sočasnost, zaporedje</td>
+                    <td><i>in, ter, pa</i></td>
+                    <td><i>Sonce sije <b>in</b> potok žubori.</i></td>
+                    <td>✗</td>
+                </tr>
+                <tr>
+                    <th>stopnjevalno</th>
+                    <td>izrazitost, nepričakovanost, stopnjevalnost</td>
+                    <td><i>ne ... ne; niti ... niti;<br>ne samo/le ... ampak/temveč/marveč tudi</i></td>
+                    <td><i><b>Niti ni</b> močan <b>niti ni</b> okreten.<br>Diamant <b>ni le</b> lep, <b>ampak tudi</b> izjemno redek.</i></td>
+                    <td>✗<br>🗸</td>
+                </tr>
+                <tr>
+                    <th>ločno</th>
+                    <td>zamenjava, izbira, nedoločenost</td>
+                    <td><i>ali ... ali (pa); bodisi ... bodisi</i></td>
+                    <td><i>Ura je dve <b>ali pa</b> štiri.</i></td>
+                    <td>✗</td>
+                </tr>
+                <tr>
+                    <th>protivno</th>
+                    <td>nasprotje, razlika</td>
+                    <td><i>a, toda, vendar, ampak, pa, temveč, marveč, namreč, ali, samo, le</i></td>
+                    <td><i>Najprej je nebo izgledalo mirno, <b>vendar</b> se je kmalu ulilo.</i></td>
+                    <td>🗸</td>
+                </tr>
+                <tr>
+                    <th>pojasnjevalno</th>
+                    <td>(logično) pojasnilo, dokaz</td>
+                    <td><i>saj, kajti, in sicer, namreč</i></td>
+                    <td><i>Ptica je v kljunu nosila vejico, <b>saj</b> je gradila gnezdo.</i></td>
+                    <td>🗸</td>
+                </tr>
+                <tr>
+                    <th>sklepalno</th>
+                    <td>sklep</td>
+                    <td><i>torej, zatorej, potemtakem</i></td>
+                    <td><i>Na nebu se zbirajo oblaki, <b>torej</b> bo najverjetneje deževalo.</i></td>
+                    <td>🗸</td>
+                </tr>
+                <tr>
+                    <th>posledično</th>
+                    <td>posledica</td>
+                    <td><i>zato, pa</i></td>
+                    <td><i>Skozi dežne kaplje je posijalo Sonce, <b>zato</b> se je pokazala mavrica.</i></td>
+                    <td>🗸</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="vsebina">
             <h4 id="Odvisniki">Odvisniki</h4>
             <p>Odvisnik je dodatni stavek in dopolnjuje glavni stavek in mu je torej podrejen in odvisen. Med glavnim in odvisnim stavkom je vedno vejica.</p>
-            <ul class="s">
-                <li><b>Osebkov odvisnik</b>: več pove o osebku, zato se po njem vprašamo z vprašalnico za imenovalnik (<i>kdo/kaj?</i>).<br>Stavka povezujejo vezniki <b><i>kdor, kar, kdo, ali, da, kako</i></b>.</li>
-                <li><b>Predmetni odvisnik</b>: več pove o predmetu, zato se po njem vprašamo za vse sklone, razen imenovalnika (<i>koga/kaj?, komu/čemu?, koga/kaj?, (o)kom/čem?, (s)kom/čim?</i>).<br>Stavka povezujejo vezniki <b><i>kogar, kar, da, ali, kaj, kod, če</i></b>.</li>
-                <li><b>Krajevni odvisnik</b>: več pove o kraju dogajanja, zato se po njem vprašamo <i>kam?, kje?, (od/do) kod?</i>.<br>Stavka povezujejo vezniki <b><i>kjer, kamor, (od/do) koder</i></b>.</li>
-                <li><b>Časovni odvisnik</b>: več pove o času dogajanja, zato se po njem vprašamo <i>(od/do) kdaj?</i>.<br>Stavka povezujejo vezniki <b><i>ko, kadar, dokler, kar, od kdaj, tako dolgo da, medtem ko, takoj ko</i></b>.</li>
-                <li><b>Načinovni odvisnik</b>: več pove o načinu dogajanja, zato se po njem vprašamo <i>kako?, na kakšen način?</i>.<br>Stavka povezujejo vezniki <b><i>ne da, kakor, kakor da, da, ko da, tako da</i></b>.</li>
-                <li><b>Vzročni odvisnik</b>: več pove o vzroku dogajanja, zato se po njem vprašamo z vprašalnico <i>zakaj?</i>.<br>Stavka povezujejo vezniki <b><i>ker, ko, ki</i></b>.</li>
-                <li><b>Namerni odvisnik</b>: več pove o namenu/nameri, zato se po njem vprašamo <i>čemi?, s katerim namenom?</i>.<br>Stavka povezujejo vezniki <b><i>da (bi)</b></i>.</li>
-                <li><b>Pogojni odvisnik</b>: več pove o pogoju za dogajanje, zato se po njem vprašamo <i>pod katerim pogojem?</i>.<br>Stavka povezujejo vezniki <b><i>če, ko, da, ako</i></b>.</li>
-                <li><b>Dopustni odvisnik</b>: več pove o tem, kljub čemer se bo nekaj zgodil, zato se po njem vprašamo <i>kljub čemú?</i>.<br>Stavka povezujejo vezniki <b><i>čeprav, četudi, dasi, kljub temu da</i></b>.</li>
-                <li><b>Prilastkov odvisnik</b>: več pove o pridevniku, o lastnostih, vrsti, svojini, zato se po njem vprašamo <i>kakšen?, kateri?, čigav?</i>.<br>Stavka povezujejo vezniki <b><i>ki, kateri, da, kaj, kam, kot, kakor, koliko, čigar</i></b>.</li>
-            </ul>
+        </div>
+        <table class="sredinsko prvaLevo">
+            <thead>
+                <tr>
+                    <th>vrsta odvisnika</th>
+                    <th>več pove</th>
+                    <th>vprašalnica</th>
+                    <th>značilni vezniki</th>
+                    <th>primer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>osebkov</th>
+                    <td>o osebku</td>
+                    <td>kdo/kaj? (za imenovalnik)</td>
+                    <td><i>kar / kdor/kdo</i></td>
+                    <td><i><b>Kdor</b> veliko bere, veliko ve.</i></td>
+                </tr>
+                <tr>
+                    <th>predmetni</th>
+                    <td>o predmetu</td>
+                    <td>koga/česa?, komu/čemu?, koga/kaj?, ... (za vse sklone, razen imenovalnika)</td>
+                    <td><i>česar/kogar, kar/koga, ... (za vse sklone), da, če, kako, koliko</i></td>
+                    <td><i><b>Kar</b> si obljubil, moraš tudi izpolniti.</i></td>
+                </tr>
+                <tr>
+                    <th>krajevni</th>
+                    <td>o kraju</td>
+                    <td>kje?, kam?, (od/do) kod?</td>
+                    <td><i>kjer, (od/do) koder, kamor</i></td>
+                    <td><i>Hodim po pragozdu, <b>kjer</b> se živali še ne bojijo človeka</i></td>
+                </tr>
+                <tr>
+                    <th>časovni</th>
+                    <td>o času</td>
+                    <td>(od/do) kdaj?</td>
+                    <td><i>ko, kadar, dokler, odkar/kar, potem ko, medtem ko, brž ko, prej ko, takoj ko, od kdaj, tako dolgo da</i></td>
+                    <td><i><b>Ko</b> je Sonce najvišje, si oddahnemo v senci.</i></td>
+                </tr>
+                <tr>
+                    <th>vzročni</th>
+                    <td>o vzroku</td>
+                    <td>zakaj?</td>
+                    <td><i>ker, da</i></td>
+                    <td><i>Zemlja kroži okoli Sonca, <b>ker</b> ga to privlači.</i></td>
+                </tr>
+                <tr>
+                    <th>namerni</th>
+                    <td>o namenu/nameri</td>
+                    <td>čemú? / s katerim namenom?</td>
+                    <td><i>da (bi)</i></td>
+                    <td><i>Posejal bo seme, <b>da</b> bo ga bo lahko požel.</i></td>
+                </tr>
+                <tr>
+                    <th>pogojni</th>
+                    <td>o pogoju</td>
+                    <td>pod katerim pogojem?</td>
+                    <td><i>če, ko bi, ako</i></td>
+                    <td><i><b>Če</b> bi prej premislil, tega ne bi storil.</i></td>
+                </tr>
+                <tr>
+                    <th>dopustni</th>
+                    <td>o tem, kljub čemer nekaj je/bo/je bilo</td>
+                    <td>kljub čemu?</td>
+                    <td><i>četudi, čeprav, dasiravno/dasi</i></td>
+                    <td><i><b>Dasiravno</b> je poznal odgovor, ga je zadržal zase.</i></td>
+                </tr>
+                <tr>
+                    <th>načinovni</th>
+                    <td>o načinu</td>
+                    <td>kako? / na kakšen način?</td>
+                    <td><i>(ne) da bi, kot bi, tako/kakor/kot/ko (da)</i></td>
+                    <td><i><b>Ne da bi</b> dobro pomeril, je zadel v sredino.</i></td>
+                </tr>
+                <tr>
+                    <th>prilastkov</th>
+                    <td>o pridevniku - lastnosti, vrsti, svojini</td>
+                    <td>kakšen/kateri/čigav?</td>
+                    <td><i>ki, kateri, čigar, da</i></td>
+                    <td><i>Sanje, <b>ki</b> so jih mati sanjali prejšnjo noč, so se uresničile.</i></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="vsebina">
             <h4 id="Časi">Časi</h4>
             <p>
                 <ul class="s">
@@ -2096,11 +2248,14 @@ Nezvočniški glasniki se v slovenščini pogosto premenjujejo. Najpogosteje pri
             <h2 id="Zunanje povezave in viri">Zunanje povezave in viri</h2>
             <ul class="s">
                 <li><a target="_blank" rel="noopener noreferrer" href="https://www.fran.si/">Fran SSKJ</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://fran.si/134/slovenski-pravopis/datoteke/Pravopis_Pravila.pdf">Fran: Slovenski pravopis - pravila</a> (pdf)</li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://fran.si/204/sla-slovenski-lingvisticni-atlas/datoteke/SLA_Karta-narecij.pdf">Fran: Karta slovenskih narečij z večjimi naselji</a> (pdf) <span class="arh">[<a href="https://web.archive.org/web/20231024151422/https://fran.si/204/sla-slovenski-lingvisticni-atlas/datoteke/SLA_Karta-narecij.pdf">arhivirano</a>]</span></li>
+                <br>
                 <li><a target="_blank" rel="noopener noreferrer" href="https://sl.wikipedia.org/wiki/Fonologija_slovenskega_knji%C5%BEnega_jezika">Wikipedija: Fonologija slovenskega knjižnega jezika</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://fran.si/204/sla-slovenski-lingvisticni-atlas/datoteke/SLA_Karta-narecij.pdf">Karta slovenskih narečij z večjimi naselji</a> (pdf) [<a class="arh" href="https://web.archive.org/web/20231024151422/https://fran.si/204/sla-slovenski-lingvisticni-atlas/datoteke/SLA_Karta-narecij.pdf">arhivirano</a>]</li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://omp.zrc-sazu.si/zalozba/catalog/download/906/3843/416?inline=1">Barbara Ivančič Kutin: Slovar bovškega govora</a> (pdf) [<a class="arh" href="https://web.archive.org/web/20230401181701/https://omp.zrc-sazu.si/zalozba/catalog/book/906">arhivirano</a>]</li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://omp.zrc-sazu.si/zalozba/catalog/download/906/3843/416?inline=1">Barbara Ivančič Kutin: Slovar bovškega govora</a> (pdf) <span class="arh">[<a href="https://web.archive.org/web/20230401181701/https://omp.zrc-sazu.si/zalozba/catalog/book/906">arhivirano</a>]</span></li>
                 <li><a target="_blank" rel="noopener noreferrer" href="https://sl.wikipedia.org/wiki/Slovenska_nare%C4%8Dja">Wikipedija: Slovenska narečja</a></li>
                 <li><a target="_blank" rel="noopener noreferrer" href="https://ucilnice.arnes.si/mod/book/tool/print/index.php?id=468463">Učilnice Arnes: Pravopis - ločila</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.rtvslo.si/kultura/knjige/veliko-odkritje-v-svetokriskem-rokopisu-najstarejsi-zapis-slovenscine-po-brizinskih-spomenikih/630717">RTVSLO: Veliko odkritje v Svetokriškem rokopisu: najstarejši zapis slovenščine po Brižinskih spomenikih</a></li>
             </ul>
         </div>
     </body>
