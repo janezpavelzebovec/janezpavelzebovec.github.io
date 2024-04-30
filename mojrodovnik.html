@@ -5,7 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="/scripts.js" defer></script>
+        <script src="scripts.js" defer></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
         <meta http-equiv="Cache-control" content="public">
 
         <title>Moj rodovnik</title>
@@ -62,7 +68,7 @@
             <h1>Moj rodovnik</h1>
             <button onclick="odpriDrevo()" class="gumb"><i>Odpri/zapri ves rodovnik.</i></button>
             <ul class="drevesni">
-                <li><details><summary><b>jaz</b></summary>
+                <li><details><summary><b>jaz...</b></summary>
                     <ul>
                         <li><details><summary><b>Iztok Žebovec</b></summary>
                             <ul>
@@ -219,13 +225,197 @@
                     </ul>
                 </details></li>
             </ul>
+        </div>
+            <style>#map { height: 80vh; width: 90vw; left: 5vw; right: 5vw; background-color: lightblue;}</style>
+            <div id="map"></div>
+            <script>
+                var map = L.map('map').setView([46.11994444, 14.81533333],9);
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+                /*var circle = L.circle([46.11994444, 14.81533333], {
+                    color: 'red',
+                    fillColor: '#f03',
+                    fillOpacity: 0.5,
+                    radius: 500
+                }).addTo(map);
+                var popup = L.popup()
+                    .setLatLng([46.11994444, 14.81533333])
+                    .setContent("GEOSS")
+                    .openOn(map);*/
+
+                var Medvode = L.circle([46.14816, 14.410503], {
+                    color: '',
+                    fillColor: 'lightgreen',
+                    fillOpacity: 1,
+                    radius: 800
+                }).addTo(map);
+                    Medvode.bindPopup("<b>Žebovec</b><br>Medvode<hr>1. p - <i>Iztok, Mihelina<br>2. p - <i>Ciril (1932 - 2023), Antonija (1941 - 1994)</i>").closePopup();
+
+                var Polje19 = L.circle([46.16199, 14.49439], {
+                    color: '',
+                    fillColor: 'red',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Polje19.bindPopup("<b>Žebovec</b>, <i>Pri Gregorju</i><br>Polje 19, Vodice<br>1826: Polle 28/29<br>m. knjige: Polje 22<hr>3. p - <i>Franc (1891 - 1967), Frančiška (1901 - 1992)</i><br>4. p - <i>Valentin (1850 - pr. 1906), Uršula (1862-)</i><br>5. p - <i>Gregor (1798 - 1856), Marija (1819 -)</i><br>6. p. - <i>Jurij (1767 - 1839), Jera (1754 - 1829)</i>").closePopup();
+
+                var Suhadole = L.circle([46.188383, 14.548253], {
+                    color: '',
+                    fillColor: 'red',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Suhadole.bindPopup("<b>Žebovec</b><br>Suhadole, Komenda<hr>6. p. - <i>Jurij (1767 - 1839)</i>").closePopup();
+
+                var Povodje = L.circle([46.142495, 14.477181], {
+                    color: '',
+                    fillColor: 'red',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Povodje.bindPopup("<b>Vrtačnik</b><br>Povodje, Ljubljana-Šmartno<br>1826: Poudie, Skarutschna<br>m. knjige: Povodje 2<hr>5. p. - <i>Marija Žebovec (1819 -)</i><br>6. p. - <i>Franc (1789 - 1834), Mina r. Černivec(pr. 1785 -)").closePopup();
+
+                var Adergas5 = L.circle([46.27134, 14.46335], {
+                    color: '',
+                    fillColor: 'red',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Adergas5.bindPopup("<b>Sirc</b>, <i>Pri Peku</i><br>Adergas 5, Cerklje na Gorenjskem<br>1826: Michelstetten 18<hr>2. p. - <i>Antonija Žebovec (1941 - 1994)</i><br>3. p. - <i>Janez (1904- 1965), Angela (1903 - 1982)<i>").closePopup();
+
+                var Primskovo102a = L.circle([46.253348, 14.377662], {
+                    color: '',
+                    fillColor: 'red',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Primskovo102a.bindPopup("<b>Sirc</b><br>Primskovo 102 a, Kranj<br>1826: Primskau 17<hr><i>Jožef (	1832-)<i>").closePopup();
+
+                var Lipa19 = L.circle([46.34652, 15.30675], {
+                    color: '',
+                    fillColor: 'blue',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Lipa19.bindPopup("<b>Podjavoršek</b><br>Lipa 19, Frankolovo<br>1825: Lippa 74/75<hr>1. p. - Mihelina<br>2. p. - <i>Anton (1940 - 2024), Ana (1944)</i><br>3. p. - <i>Dominik Podjavoršek (1901 - 1980), Angela (1906 - 1966)</i>").closePopup();
+
+                var Kozjak80 = L.circle([46.406295, 15.231522], {
+                    color: '',
+                    fillColor: 'blue',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Kozjak80.bindPopup("<b>Podjavoršek</b><br>Kozjak 80, Mislinja<br>Kozjak 64?").closePopup();
+
+                var Lipa24 = L.circle([46.34369, 15.30243], {
+                    color: '',
+                    fillColor: 'blue',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Lipa24.bindPopup("<b>Selčan</b><br>Lipa 24, Frankolovo<br>1825: Lippa 85/86<hr><i>stara mama</i>").closePopup();
+
+                var BeliPotok2 = L.circle([46.344226, 15.32949], {
+                    color: '',
+                    fillColor: 'blue',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    BeliPotok2.bindPopup("<b>Pinter</b><br>Beli potok 2<hr>3. p. - <i>Angela (1906 - 1966)</i><br>4. p. - <i>Frančišek (1863 -), Marija</i>").closePopup();
+
+                var Vizore5 = L.circle([46.321773, 15.26156], {
+                    color: '',
+                    fillColor: 'blue',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Vizore5.bindPopup("<b>Pinter</b><br>Vizore 15?<br>1825: Vizore, Neukirchen 5<hr>4. p. - <i>Frančišek (1863 -)</i><br>5. p - <i>Andrej (1818 -), Agata r. Kraljič (1832 -)").closePopup();
+
+                var Vizore12 = L.circle([46.322919, 15.268171], {
+                    color: '',
+                    fillColor: 'blue',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Vizore12.bindPopup("<b>Kraljič</b><br>Vizore 14<br>1825: Vizore, Neukirchen 12<hr>5. p. - <i>Agata Pinter(1832 -)").closePopup();
+
+                var Selce20 = L.circle([46.355288, 15.292143], {
+                    color: '',
+                    fillColor: 'blue',
+                    fillOpacity: 0.4,
+                    radius: 800
+                }).addTo(map);
+                    Selce20.bindPopup("<b>Selčan</b><br>Selce 20, Nova cerkev<br>1825: Seutze, Lippa 6").closePopup();
+
+                /*var marker = L.marker([46.14816, 14.41051]).addTo(map);
+                    marker.bindPopup("Žebovec").closePopup();
+                var marker1 = L.marker([46.34652, 15.30675]).addTo(map);
+                    marker1.bindPopup("Podjavoršek").closePopup();
+                var marker2 = L.marker([46.27134, 14.46335]).addTo(map);
+                    marker2.bindPopup("Sirc").closePopup();
+                var marker3 = L.marker([46.16199, 14.49439]).addTo(map);
+                    marker3.bindPopup("Žebovec").closePopup();*/
+
+                var polyline = L.polyline([
+                    [46.406295, 15.231522],//Kozjak 80
+                    [46.34652, 15.30675],//Lipa 19
+                    [46.14816, 14.410503]//Zbiljska c. 1
+                ], {color: 'blue'}).addTo(map);
+
+                var polyline = L.polyline([
+                    [46.355288, 15.292143],//Selce 20
+                    [46.34369, 15.30243],//Lipa 24
+                    [46.34652, 15.30675]//Lipa 19
+                ], {color: 'blue'}).addTo(map);
+
+                var polyline = L.polyline([
+                    [46.322919, 15.268171],//Vizore12
+                    [46.321773, 15.26156],//Vizore5
+                    [46.344226, 15.32949],//Beli potok 2
+                    [46.34652, 15.30675]//Lipa 19
+                ], {color: 'blue'}).addTo(map);
+
+
+                var polyline = L.polyline([
+                    [46.188383, 14.548253],//Suhadole pri Komendi
+                    [46.16199, 14.49439],//Polje 20
+                    [46.14816, 14.410503]//Zbiljska c. 1
+                ], {color: 'red'}).addTo(map);
+
+                var polyline = L.polyline([
+                    [46.142495, 14.477181],//Povodje
+                    [46.16199, 14.49439]//Polje 20
+                ], {color: 'red'}).addTo(map);
+
+                var polyline = L.polyline([
+                    [46.253348, 14.377662],//Primskovo 17
+                    [46.27134, 14.46335],//Adergas 5
+                    [46.14816, 14.410503]//Zbiljska c. 1
+                ], {color: 'red'}).addTo(map);
+
+                /*circle.bindPopup("I am a circle.");
+                polygon.bindPopup("I am a polygon.");*/
+
+                var popup = L.popup();
+                function onMapClick(e) {
+                    popup
+                        .setLatLng(e.latlng)
+                        .setContent(/*"Pritisnil si na " + */e.latlng.toString())
+                        .openOn(map);
+                }
+                map.on('click', onMapClick);
+            </script>
+        <div class="vsebina">
             <ul class="s">
-                <li><a href="https://www.geni.com/people/Janez-Pavel-%C5%BDebovec/6000000127187560821" target="_blank" rel="noopener noreferrer">Geni profil</a></li>
+                <li><a href="https://www.geni.com/people/Janez-Pavel-%C5%BDebovec/6000000127187560821" target="_blank" rel="noopener noreferrer">Geni profil</a> (glavno/sredinsko družinsko drevo)</li>
                 <li><a href="https://www.ancestry.com/profile/08ec98de-0006-0000-0000-000000000000" target="_blank" rel="noopener noreferrer">Ancestry profil</a>
-                    <!--<ul class="s">
-                        <li><a href="https://www.ancestry.com/sharing/3119429?mark=7b22746f6b656e223a223279766f6e41576a6962506f506b74353736734a6833756979535a6b436c75535a4635684d46656c67356f3d222c22746f6b656e5f76657273696f6e223a225632227d" target="_blank" rel="noopener noreferrer">Ancestry - moji DNK izvidi</a></li>
-                        <li><a href="https://www.ancestry.com/sharing/3121541?mark=7b22746f6b656e223a22746d644c7a6a3377454f3278333058585442487771394d2b6c6768314e38534c7a5a6770536369495348453d222c22746f6b656e5f76657273696f6e223a225632227d" target="_blank" rel="noopener noreferrer">Ancestry - moji DNK izvidi: kromosomski slikar (AncestryDNA® chromosome painting)</a></li>
-                    </ul>-->
+                    <ul class="s">
+                        <li><a href="https://www.ancestry.com/sharing/3119429?mark=7b22746f6b656e223a223279766f6e41576a6962506f506b74353736734a6833756979535a6b436c75535a4635684d46656c67356f3d222c22746f6b656e5f76657273696f6e223a225632227d" target="_blank" rel="noopener noreferrer">Ancestry - moji DNK izvidi (<i>AncestryDNA® ethnicity estimate</i>)</a></li>
+                        <li><a href="https://www.ancestry.com/sharing/3121541?mark=7b22746f6b656e223a22746d644c7a6a3377454f3278333058585442487771394d2b6c6768314e38534c7a5a6770536369495348453d222c22746f6b656e5f76657273696f6e223a225632227d" target="_blank" rel="noopener noreferrer">Ancestry - moji DNK izvidi: kromosomski slikar (<i>AncestryDNA® chromosome painting</i>)</a></li>
+                        <li><a href="https://www.ancestry.com/sharing/13359207?mark=7b22746f6b656e223a2276623535376e4c73764142496437316768705a6e4d323358473173726f58644345595875523959385238343d222c22746f6b656e5f76657273696f6e223a225632227d" target="_blank" rel="noopener noreferrer">Ancestry - moji DNK izvidi: dedovana narodnost (<i>AncestryDNA® ethnicity inheritance</i>; verjetno dostopno le za nekaj časa)</a></li>
+                    </ul>
                 </li>
                 <!--<li><a href="https://discover.familytreedna.com/y-dna/G-L166/story" target="_blank" rel="noopener noreferrer">Family Tree DNA - Your Haplogroup Story</a></li>-->
                 <li><a href="https://www.myheritage.si/member-1542301122_1230606902/member" target="_blank" rel="noopener noreferrer">My Heritage profil</a></li>
