@@ -1,5 +1,6 @@
 :root {
     --barvaPoudarka: rgba(153, 178, 255, 1);
+    --barvaPoudarkaProsojno: rgba(153, 178, 255, 0.7);
     --barvaPoudarkaNaprej: rgba(173, 216, 230, 1);
     --barvaOzadja: #121212;
     --barvaOzadjaProsojno: rgba(0, 0, 0, 0.7);
@@ -19,11 +20,13 @@
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
 }
 .svetliNačin {
-    --barvaPoudarka: blue;
+    --barvaPoudarka: rgba(49, 99, 255, 1);
+    --barvaPoudarkaProsojno: rgba(49, 99, 255, 0.7);
     --barvaPoudarkaNaprej: #4169E1;
     --barvaOzadja: white;
     --barvaOzadjaProsojno: rgba(220, 220, 220, 0.7);
     --barvaOzadjaNaprej: rgba(240, 240, 240, 0.5);
+    --barvaOzadjaPoudarek: rgba(128, 159, 255, 0.4);
     --barvaOspredja: black;
     --barvaNazaj: rgba(0, 0, 0, 0.4);
 }
@@ -34,6 +37,7 @@ body {
     font-family: "Times New Roman", Times, Georgia, Garamond, serif;
     opacity: 0.87;
     accent-color: var(--barvaPoudarka);
+    margin: 0;
 }
 .footer {
     background-color: var(--barvaOzadjaPoudarek);
@@ -44,8 +48,8 @@ body {
     text-align: center;
     font-style: italic;
     font-weight: bold;
-    background-color: var(--barvaOzadjaPoudarek);
-    color: white;
+    background-color: var(--barvaPoudarkaProsojno);
+    color: var(--barvaOzadja);
     border-radius: 0.5rem;
     padding: 1rem;
 }
@@ -399,6 +403,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
+    /*background-color: #6e563c;*/
 }
 .content {
     max-width: var(--vsebina);
@@ -742,6 +747,9 @@ table.poTri tr>td:not(:nth-child(3n)) { /*prvi stolpec sam, potem po trije brez 
 table.enaPoTri tr>td:not(:nth-child(3n+1)) { /*prvi stolpec sam, potem po trije brez ločilne črte (glej Tolkien - Gondolinske rune)*/
     border-right: none; /*Odstrani desno obrobo*/
 }
+tr.dvojne td{
+    border-right: 1px solid var(--barvaNazaj) !important;
+}
 table.osnovna td { /*brez vseh robov in brez krepkih vrstic/stolpcev*/
     border-bottom: none;
     border-left: none;
@@ -751,6 +759,9 @@ table.osnovna td { /*brez vseh robov in brez krepkih vrstic/stolpcev*/
 table.sredinsko th,
 table.sredinsko td { /*besedilo v preglednici sredinsko poravnano*/
     text-align:center;
+}
+table.prvaLevo th:nth-child(1) { /*glavo prvi stolpec bo poravnalo na levo*/
+    text-align:left;
 }
 table.leviStLevo th { /*glavni je levi stolpec, katerega besedilo naj bo poravnano levo  (če je več besedila)*/
     text-align: left;
@@ -776,8 +787,8 @@ table.samovodčrte td, table.samovodčrte td {
     border-left: none;
     border-right: none;
 }
-table th.brezsrob,
-table td.brezsrob {
+th.brezsrob,
+td.brezsrob {
     border-bottom: none;
 }
 /* Krepko za prvi stolpec v navadni tabeli *//*
@@ -826,6 +837,9 @@ tr.ničta { /*vrstica ničte višine*/
     height:0;
     margin:0;
 }
+td.ničta { /*celica ničte višine*/
+    display: none;
+}
 
 /*SLIKE*/
 img {
@@ -849,6 +863,12 @@ img.obrnjena {
 }
 .svetliNačin .obrnjena {
     filter: invert(0%);
+}
+img.zasenčena {
+    opacity: 0.8;
+}
+.svetliNačin .zasenčena {
+    opacity: 1;
 }
 .vodoravne {
     display: flex;
