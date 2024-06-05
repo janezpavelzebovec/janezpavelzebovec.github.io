@@ -6,6 +6,7 @@
     --barvaOzadjaProsojno: rgba(0, 0, 0, 0.7);
     --barvaOzadjaNaprej: rgba(36, 36, 36, 1);
     --barvaOzadjaPoudarek: rgba(128, 159, 255, 0.4);
+    --barvaOzadjaPoudarekNazaj: rgba(128, 159, 255, 0.2);
     --barvaOspredja: #eee;
     --barvaNazaj: rgba(255, 255, 255, 0.4);
     --pisava:"Times New Roman", Times, Georgia, Garamond, serif;
@@ -272,7 +273,7 @@ body {
 }
 .metelcica {
     font-family: 'metelcica';
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-variant-ligatures: discretionary-ligatures;
 }
 @font-face {
@@ -545,6 +546,9 @@ p.podnaslov {
 p.podnaslov2 {
     text-align: center;
     font-size: 2rem;
+}
+.tujaPisava {
+    font-style: italic;
 }
 .besedilosred {
     text-align: center;
@@ -824,6 +828,12 @@ td.brezlrob {
 }
 td.mrtva {/*prazne, prepovedane celice*/
     background-color: black;
+}
+td.polna {/*uporabljene celice*/
+    background-color: var(--barvaOzadjaPoudarek);
+}
+td.polnaManj {/*uporabljene celice - izjemoma*/
+    background-color: var(--barvaOzadjaPoudarekNazaj);
 }
     .svetliNačin td.mrtva {/*prazne, prepovedane celice*/
         background-color: lightgrey;
