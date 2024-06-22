@@ -7,31 +7,8 @@
    viewBox="0 0 159.79001 159.79001"
    version="1.1"
    id="svg2818"
-   sodipodi:docname="zemljevid_zvezdnega_neba-obzorje.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview142"
-     pagecolor="#505050"
-     bordercolor="#eeeeee"
-     borderopacity="1"
-     inkscape:pageshadow="0"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     showgrid="false"
-     inkscape:zoom="1.44553"
-     inkscape:cx="376.67845"
-     inkscape:cy="267.03009"
-     inkscape:window-width="1920"
-     inkscape:window-height="1024"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
   <defs
      id="defs2815">
     <filter
@@ -353,8 +330,8 @@
        style="color-interpolation-filters:sRGB"
        id="filter4145-2"
        x="-0.0012332473"
-       y="-0.0013972667"
-       width="1.0024603"
+       y="-0.0013972668"
+       width="1.0024602"
        height="1.0027983">
       <feColorMatrix
          type="hueRotate"
@@ -570,26 +547,28 @@
     </filter>
   </defs>
   <g
-     id="layer1">
+     id="layer1"
+     transform="rotate(180,79.895004,79.895004)">
     <g
        id="g5696"
        transform="matrix(0.88783035,0,0,0.88783035,8.9652491,16.120633)"
-       style="display:inline">
+       style="display:inline;fill:#ff0000;fill-opacity:1">
       <g
          transform="matrix(-0.25,0,0,-0.40973126,158.09579,231.29126)"
          id="g50"
-         style="display:inline;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:1.24004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99983">
+         style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.24004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99983">
         <path
            d="m 312.68,169.60401 v 44.133"
-           style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:1.24004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99983"
+           style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.24004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99983"
            id="path44" />
       </g>
       <g
          id="g5096"
-         transform="matrix(7.5871922,0,0,7.5871922,-554.72183,-967.80803)">
+         transform="matrix(7.5871922,0,0,7.5871922,-554.72183,-967.80803)"
+         style="fill:#ff0000;fill-opacity:1">
         <path
            id="rect1496"
-           style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;paint-order:markers fill stroke"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;paint-order:markers fill stroke"
            d="m 83.790531,147.63762 h -0.286597 l 0.143299,0.26994 z" />
       </g>
     </g>
@@ -603,22 +582,22 @@
          style="display:inline;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4217)">
         <path
            d="m 308.46,201.87 v 9.576"
-           style="fill:none;stroke:#ffffff;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+           style="fill:none;stroke:#000001;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path2" />
         <text
            x="297.3255"
            y="199.55194"
-           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#00000c;fill-opacity:1;stroke:#ffffff;stroke-width:0.118815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            xml:space="preserve"
            id="text6"><tspan
              x="297.3255"
              y="199.55194"
-             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#00000c;fill-opacity:1;stroke:#ffffff;stroke-width:0.118815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="tspan4">SV</tspan></text>
       </g>
       <path
          d="m 79.901791,55.543985 c -17.571001,-0.0525 -35.840001,7.3368 -46.197001,21.957 -8.2483,11.432 -9.9924,27.052005 -4.6227,40.061005 5.8633,15.029 19.575,26.177 34.943,30.487 16.202001,4.5969 34.403,1.8513 48.295,-7.7528 12.727,-8.6097 21.634,-23.331 21.501,-38.902 0.0286,-13.753005 -7.4207,-26.883005 -18.525,-34.797005 -10.178,-7.4226 -22.859999,-11.045 -35.394,-11.052 z"
-         style="color:#000000;display:inline;fill:none;stroke:#fffeff;stroke-width:0.445553;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99983;filter:url(#filter4145)"
+         style="color:#000000;display:inline;fill:none;stroke:#000000;stroke-width:0.445553;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99983;filter:url(#filter4145)"
          id="path10" />
       <g
          transform="matrix(0.25,0,0,0.25,2.8154358,2.6552653)"
@@ -626,17 +605,17 @@
          style="display:inline;stroke-width:1.78221;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4205)">
         <path
            d="m 308.46,201.87 v 9.576"
-           style="fill:none;stroke:#ffffff;stroke-width:1.78221;stroke-miterlimit:4;stroke-dasharray:none"
+           style="fill:none;stroke:#000000;stroke-width:1.78221;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path12" />
         <text
            x="303.32339"
            y="199.55194"
-           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78221;stroke-miterlimit:4;stroke-dasharray:none"
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.118814;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            xml:space="preserve"
            id="text16"><tspan
              x="303.32339"
              y="199.55194"
-             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78221;stroke-miterlimit:4;stroke-dasharray:none"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.118814;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="tspan14">S</tspan></text>
       </g>
       <g
@@ -645,17 +624,17 @@
          style="display:inline;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4199)">
         <path
            d="m 497.85,296.56 v 9.576"
-           style="fill:none;stroke:#fffff6;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+           style="fill:none;stroke:#000000;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path20" />
         <text
            x="492.71539"
            y="294.24792"
-           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#000001;fill-opacity:1;stroke:#efffff;stroke-width:0.118815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            xml:space="preserve"
            id="text24"><tspan
              x="492.71539"
              y="294.24792"
-             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#000001;fill-opacity:1;stroke:#efffff;stroke-width:0.118815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="tspan22">Z</tspan></text>
       </g>
       <g
@@ -664,17 +643,17 @@
          style="display:inline;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4193)">
         <path
            d="m 316.64,201.01 v 9.576"
-           style="fill:none;stroke:#ffffff;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+           style="fill:none;stroke:#000009;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path28" />
         <text
            x="306.4082"
            y="198.67459"
-           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#000017;fill-opacity:1;stroke:#fffffe;stroke-width:0.118815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            xml:space="preserve"
            id="text32"><tspan
              x="306.4082"
              y="198.67459"
-             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#000017;fill-opacity:1;stroke:#fffffe;stroke-width:0.118815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="tspan30">SZ</tspan></text>
       </g>
       <g
@@ -683,17 +662,17 @@
          style="display:inline;stroke-width:1.78222;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4187)">
         <path
            d="m 497.85,296.56 v 9.576"
-           style="fill:none;stroke:#ffffff;stroke-width:1.78222;stroke-miterlimit:4;stroke-dasharray:none"
+           style="fill:none;stroke:#000001;stroke-width:1.78222;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path36" />
         <text
            x="490.13501"
            y="294.24792"
-           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78222;stroke-miterlimit:4;stroke-dasharray:none"
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#000004;fill-opacity:1;stroke:#fffffe;stroke-width:0.118815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            xml:space="preserve"
            id="text40"><tspan
              x="490.13501"
              y="294.24792"
-             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78222;stroke-miterlimit:4;stroke-dasharray:none"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#000004;fill-opacity:1;stroke:#fffffe;stroke-width:0.118815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="tspan38">JZ</tspan></text>
       </g>
       <g
@@ -702,17 +681,17 @@
          style="display:inline;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4175)">
         <path
            d="m 308.46,201.87 v 9.576"
-           style="fill:none;stroke:#fffffc;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+           style="fill:none;stroke:#000005;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path52" />
         <text
            x="303.32339"
            y="199.55194"
-           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#000007;fill-opacity:1;stroke:#ffffff;stroke-width:0.118815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            xml:space="preserve"
            id="text56"><tspan
              x="303.32339"
              y="199.55194"
-             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78223;stroke-miterlimit:4;stroke-dasharray:none"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#000007;fill-opacity:1;stroke:#ffffff;stroke-width:0.118815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="tspan54">V</tspan></text>
       </g>
       <g
@@ -721,17 +700,17 @@
          style="display:inline;stroke-width:1.78221;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4169)">
         <path
            d="m 308.46,201.87 v 9.576"
-           style="fill:none;stroke:#ffffff;stroke-width:1.78221;stroke-miterlimit:4;stroke-dasharray:none"
+           style="fill:none;stroke:#000000;stroke-width:1.78221;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path60" />
         <text
            x="300.06433"
            y="199.55194"
-           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78221;stroke-miterlimit:4;stroke-dasharray:none"
+           style="font-size:14.111px;line-height:1.25;font-family:'DejaVu Serif';fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.118814;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            xml:space="preserve"
            id="text64"><tspan
              x="300.06433"
              y="199.55194"
-             style="font-weight:bold;font-family:'DejaVu Serif';fill:#ffffff;stroke-width:1.78221;stroke-miterlimit:4;stroke-dasharray:none"
+             style="font-weight:bold;font-family:'DejaVu Serif';fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.118814;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="tspan62">JV</tspan></text>
       </g>
     </g>
@@ -743,7 +722,7 @@
        rx="79.45121"
        ry="79.451218" />
     <ellipse
-       style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="display:inline;opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path4927-6"
        cx="79.913002"
        cy="101.52885"

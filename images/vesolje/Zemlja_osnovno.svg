@@ -3,8 +3,8 @@
 
 <svg
    width="265.11252mm"
-   height="303.14783mm"
-   viewBox="0 0 265.11251 303.14782"
+   height="311.04453mm"
+   viewBox="0 0 265.11251 311.04452"
    version="1.1"
    id="svg1134"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -234,7 +234,7 @@
   </defs>
   <g
      id="layer1"
-     transform="translate(-403.56807,-11.079255)"
+     transform="translate(-403.56807,-3.1825673)"
      style="display:inline">
     <g
        id="g1508"
@@ -292,6 +292,14 @@
            id="path8679-0-6-9-8" />
         <path
            style="display:inline;fill:none;stroke:#808080;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 483.50239,60.295351 465.23189,18.153446"
+           id="path8679-0-6-9-8-1" />
+        <path
+           style="display:inline;fill:none;stroke:#808080;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 536.12437,49.379177 V 3.447148"
+           id="path8679-0-6-9-8-6" />
+        <path
+           style="display:inline;fill:none;stroke:#808080;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="M 657.49982,234.29282 414.74884,129.04886"
            id="path8679-0-5-6-1" />
         <path
@@ -310,22 +318,29 @@
            style="display:none;fill:none;stroke:#808080;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="M 626.55282,278.2305 403.83266,181.67084"
            id="path9416-5-8-3" />
-        <ellipse
-           style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-           id="path1947"
-           transform="scale(-1,1)"
-           cx="-536.12439"
-           cy="27.910446"
-           rx="66.351562"
-           ry="14.604815" />
+        <g
+           id="g1013">
+          <ellipse
+             style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+             id="path1947"
+             transform="scale(-1,1)"
+             cx="-536.12439"
+             cy="27.910446"
+             rx="66.351562"
+             ry="14.604815" />
+          <path
+             id="rect2178"
+             style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+             d="m 532.40449,11.079252 7.43975,2.226379 -7.43975,2.22638 z" />
+          <path
+             id="rect2178-6"
+             style="display:inline;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+             d="m 539.84424,40.288882 -7.43975,2.226379 7.43975,2.22638 z" />
+        </g>
         <path
-           id="rect2178"
-           style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
-           d="m 539.84424,11.079252 -7.43975,2.226379 7.43975,2.22638 z" />
-        <path
-           id="rect2178-6"
-           style="display:inline;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-           d="m 539.84424,40.288882 -7.43975,2.226379 7.43975,2.22638 z" />
+           style="display:inline;fill:none;stroke:#808080;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 536.12437,26.413163 V 3.447148"
+           id="path8679-0-6-9-8-6-6" />
       </g>
       <g
          id="g1215-3"

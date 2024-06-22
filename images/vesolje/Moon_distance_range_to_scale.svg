@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-75 -281 4215 562">
+ <title>Moon distance range to scale</title>
+ <desc>Minimum, mean and maximum distances of the Moon from Earth with its angular diameter as seen from Earth's surface, to scale by CMG Lee. Data is from http://fourmilab.ch/earthview/moon_ap_per.html .</desc>
+ <defs>
+  <pattern id="pattern_scale_1" patternUnits="userSpaceOnUse" width="20" height="100">
+   <path d="M 0,0 V 25" fill="none" stroke="#000000"/>
+  </pattern>
+  <pattern id="pattern_scale_5" patternUnits="userSpaceOnUse" width="100" height="100">
+   <rect x="0" y="0" width="100" height="100" fill="url(#pattern_scale_1)" stroke="#000000"/>
+  </pattern>
+  <radialGradient id="grad_sphere" cx="50%" cy="50%" r="50%" fx="50%" fy="90%">
+   <stop offset="0%"  stop-color="#000000" stop-opacity="0"/>
+   <stop offset="99%" stop-color="#000000" stop-opacity="0.3"/>
+  </radialGradient>
+  <linearGradient id="grad_highlight" x1="0%" y1="0%" x2="0%" y2="100%">
+   <stop offset="10%" stop-color="#ffffff" stop-opacity="0.9"/>
+   <stop offset="99%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <g id="orb" stroke="none">
+   <circle  cx="0" cy="0" r="100"/>
+   <circle  cx="0" cy="0" r="100" fill="url(#grad_sphere)"/>
+   <ellipse cx="0" cy="-45" rx="70" ry="50" fill="url(#grad_highlight)"/>
+  </g>
+  <g id="moon" stroke="none">
+   <path d="M 0,999 V -1020 M 99,999 V -1020 M -99,999 V -1020" stroke="#000000" stroke-dasharray="40,40"/>
+   <use xlink:href="#orb"/>
+  </g>
+  <g id="orbit">
+   <!-- <ellipse cx="0" cy="-214" rx="3854" ry="3840" fill="none" stroke="#cccccc"/> -->
+   <use xlink:href="#moon" transform="translate(   0, 3626) scale(0.1737) rotate(90)"/>
+   <use xlink:href="#moon" transform="translate(3850,    0) scale(0.1737)"/>
+   <use xlink:href="#moon" transform="translate(   0,-4054) scale(0.1737) rotate(-90)"/>
+  </g>
+  <g id="scale">
+   <path d="M 0,-150 V 150" stroke="#000000" stroke-dasharray="7,7" stroke-width="1"/>
+   <rect x="-1" y="0" width="4082" height="30" fill="url(#pattern_scale_5)" transform="scale(1,-1)"/>
+   <rect x="-1" y="0" width="2542" height="30" fill="url(#pattern_scale_5)" transform="scale(1.609344,1)"/>
+   <text transform="translate(   0,-50)" y="0.7ex"            >0&#8201;km</text>
+   <text transform="translate( 500,-50)" y="0.7ex" >50&#8201;000</text>
+   <text transform="translate(1000,-50)" y="0.7ex">100&#8201;000</text>
+   <text transform="translate(1500,-50)" y="0.7ex">150&#8201;000</text>
+   <text transform="translate(2000,-50)" y="0.7ex">200&#8201;000</text>
+   <text transform="translate(2500,-50)" y="0.7ex">250&#8201;000</text>
+   <text transform="translate(3000,-50)" y="0.7ex">300&#8201;000</text>
+   <text transform="translate(3500,-50)" y="0.7ex">350&#8201;000</text>
+   <text transform="translate(4030,-50)" y="0.7ex">400&#8201;000&#8201;km</text>
+   <text transform="translate(   0, 50)" y="0.7ex"            >0&#8201;mi</text>
+   <text transform="translate( 805, 50)" y="0.7ex" >50&#8201;000</text>
+   <text transform="translate(1609, 50)" y="0.7ex">100&#8201;000</text>
+   <text transform="translate(2414, 50)" y="0.7ex">150&#8201;000</text>
+   <text transform="translate(3218, 50)" y="0.7ex">200&#8201;000</text>
+   <text transform="translate(4023, 50)" y="0.7ex">250&#8201;000&#8201;mi</text>
+  </g>
+ </defs>
+ <circle cx="0" cy="0" r="99999" fill="#ffffff"/>
+ <g font-family="Helvetica,Arial,sans-serif" font-size="40" text-anchor="middle" fill="#000000" stroke="none" stroke-width="4">
+  <path d="M 63.71,0 L 3626,17.37 V -17.37" fill="#ff0000"/>
+  <path d="M 63.71,0 L 4054,17.37 V -17.37" fill="#ffcc00"/>
+  <use xlink:href="#orbit"/>
+  <use xlink:href="#orbit" transform="rotate(90)"/>
+  <use xlink:href="#orbit" transform="rotate(-90)"/>
+  <use xlink:href="#scale" transform="translate(    0,-180)"/>
+  <use xlink:href="#scale" transform="translate(63.71, 180)"/>
+  <use xlink:href="#orb"   transform="scale(0.6371)" fill="#66ccff"/>
+  <circle cx="0" cy="0" r="421.64" fill="none"  stroke="#009900"/>
+  <circle cx="0" cy="0" r="265.51" fill="none"  stroke="#9999ff"/>
+  <circle cx="0" cy="0" r="67.71"  fill="none"  stroke="#cc00ff"/>
+  <path d="M    0, 80 h  425.5"                 stroke="#cc00ff"/>
+  <path d="M    0, 80 h  425.5"                 stroke="#cc00ff"/>
+  <path d="M 3626, 80 h  425.5"                 stroke="#cc00ff"/>
+  <path d="M  500, 80 h 2997.92"                stroke="#0099ff"/>
+  <text transform="translate(1800, 50)" y="0.7ex" fill="#0099ff">1 light-second</text>
+  <text transform="translate( 260,110)" y="0.7ex" fill="#cc00ff">ISS orbit length</text>
+  <text transform="translate(3820,110)" y="0.7ex" fill="#cc00ff">ISS orbit length</text>
+  <text transform="translate( 105,-50)" y="0.7ex" fill="#cc00ff">ISS</text>
+  <text transform="translate( 320,-50)" y="0.7ex" fill="#6666ff">GPS</text>
+  <text transform="translate( 480,-50)" y="0.7ex" fill="#009900">GEO</text>
+  <text transform="translate(3550, 45)" y="0.7ex" fill="#cc0000">33.5&#8242;</text>
+  <text transform="translate(3550,-50)" y="0.7ex">min.</text>
+  <text transform="translate(3760,-50)" y="0.7ex">mean</text>
+  <text transform="translate(3970,-50)" y="0.7ex">max.</text>
+  <text transform="translate(3970, 42)" y="0.7ex" fill="#cc9900">29.43&#8242;</text>
+  <text transform="translate(1200,-99)" y="0.7ex">Distance from Earth centre</text>
+  <text transform="translate(1260,260)" y="0.7ex">Distance from Earth surface</text>
+ </g>
+</svg>
