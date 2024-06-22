@@ -1,9 +1,20 @@
 :root {
-    --mehkacrna: #121212;
-    --mehkabela: rgba(255, 255, 255, 0.87);
-    --načrtnomodra: #69A9E3;
-    --poudarjeno: #809fff;
+    --barvaPoudarka: rgba(153, 178, 255, 1);
+    --barvaPoudarkaNaprej: rgba(173, 216, 230, 1);
+    --barvaPoudarkaProsojno: rgba(153, 178, 255, 0.7);
+    --barvaOzadja: rgba(18, 18, 18, 1);
+    --barvaOzadjaProsojno: rgba(0, 0, 0, 0.8);
+    --barvaOzadjaNaprej: rgba(36, 36, 36, 1);
+    --barvaOzadjaPoudarek: rgba(128, 159, 255, 0.4);
+    --barvaOspredja: #eee;
+    --barvaNazaj: rgba(255, 255, 255, 0.5);
+    --pisava:"Times New Roman", Times, Georgia, Garamond, serif;
+    --vsebina: 120ch;
+    --prehodČas: 0.5s;
+
     --sončna: yellow;
+    --načrtnomodra: #69A9E3;
+    --turkizna: rgba(0, 255, 255);
 
     --aastura: 50vw;
     --asonce: 4vmin;
@@ -12,79 +23,226 @@
     --aurica: calc(var(--adnevnaUra) - (2 *var(--aluna) + 2*var(--asonce)));
     --aobrocek: 14.5%;
 
-    /*mesni krof: */
-    --bar-width: 30px;
-    --bar-height: 3px;
-    --hamburger-gap: 6px;
-    --foreground: rgba(0, 0, 0, 0.5); /*barva polja kazala, zadnja vrednost je za prosojnost*/
-    --background: white;
-    --hamburger-color: white;
-    --hamburger-margin: 6px;
+    --bar-width: 2rem;
+    --bar-height: 0.18rem;
+    --hamburger-gap: 0.38rem;
+    --hamburger-margin: 0.38rem;
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
 }
-.zvezde {
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    align-items: center;
-    overflow: hidden;
-    background: var(--mehkacrna);
-    z-index: -1;
+.svetliNačin {
+    --barvaPoudarka: rgba(100, 100, 255, 1);
+    --barvaPoudarkaNaprej: #4169E1;
+    --barvaOzadja: white;
+    --barvaOzadjaProsojno: rgba(220, 220, 220, 0.9);
+    --barvaOzadjaNaprej: rgba(240, 240, 240, 0.5);
+    --barvaOspredja: black;
+    --barvaNazaj: rgba(0, 0, 0, 0.4);
 }
-.pogled-leto {
-    width: 100%;
-    height: 100%;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    align-items: center;
-    --rotation: 0;
-    transform: rotate(calc(var(--rotation) * 1deg));
-}
-.pogled-dan {
-    width: 100%;
-    height: 100%;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    align-items: center;
-    border-radius: 50%;
-    --rotation: 0;
-    transform: rotate(calc((var(--rotation) * 1deg + 180deg)*(-1)));
-}
-
+html, body { height: 100%;}
 body {
-    background: var(--mehkacrna);
+    background: var(--barvaOzadja);
     height: 100vh; /*polje dnevnaUra naj bo visoko za višino zaslona, zato da bo lahko align-items poravnano na sredino zaslona*/
     width: 100vw;
     overflow: hidden; /*skrijemo, kar presega mejo; zato tudi ne more biti drsnika*/
-    color: var(--mehkabela);
+    color: var(--barvaOspredja);
     margin: 0;
-    justify-content: center;
+    /*justify-content: center;
+    align-items: center;*/
+    font-family: "Times New Roman", serif;
+}
+p {
+    padding: 0.5rem;
+    margin: 0;
+}
+p.footer {
+    position: fixed;
+    width: 90%;
+    background-color: var(--barvaPoudarkaProsojno);
+    padding: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    bottom: 0;
+    color: var(--barvaOzadja);
+    font-size: small;
+}
+footer {
+    position: fixed;
+    width: 90%;
+    background-color: var(--barvaPoudarkaProsojno);
+    padding: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    bottom: 0;
+    color: var(--barvaOzadja);
+    font-size: small;
+}
+button {
+    border: none;
+    background-color: var(--barvaPoudarka);
+    color: var(--barvaOzadja);
+    font-style: italic;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.gumbPrej {
+    background-color: transparent;
+    color: var(--barvaOspredja);
+    font-style: normal;
+    border-radius: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+i.gumbPrej {
+    display: block;
+    background-color: var(--barvaPoudarka);
+    color: var(--barvaOzadja);
+    font-style: italic;
+    padding: 3px;
+}
+.pripis {
+    color: var(--barvaNazaj);
+    font-size: small;
+}
+input {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.inputOznači {
+    display: flex;
     align-items: center;
-    font-family: Times New Roman, serif;
+}
+.vnos {
+    background-color: transparent;
+    border: 1px solid var(--barvaPoudarka);
+    color: var(--barvaOspredja);
+    color-scheme: dark;
+    margin: 0.2rem;
+    height: 1.4rem;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+option {
+    background-color: var(--barvaOzadja);
+    border: 1px solid var(--barvaPoudarka);
+    color: var(--barvaOspredja);
+    color-scheme: dark;
+    margin: 0;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.svetliNačin input.vnos {
+    color-scheme: light;
+}
+    input.vnos:focus {
+        outline: none;
+    }
+    .input-icons {
+        color: var(--barvaOspredja);
+    }
+input.dolgaŠtevilka {
+    width: 16ch;
+}
+#nadVnosPredznak {
+    display: inline-flex;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    width: 2ch;
+}
+#nadVnosPredznak input {
+    display: none;
+}
+
+#nadVnosPredznak span:after {
+    /*border: 1px solid blue;*/
+}
+.odmika {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+img.obrnjena {
+    filter: invert(1);
+}
+.svetliNačin .obrnjena {
+    filter: invert(0%);
+}
+.stikaloNačina {
+    position: fixed;
+    z-index: 100;
+    top: 0.5rem;
+    right: 1em;
+    color: var(--barvaOspredja);
+    border: 0;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
 }
 a {
-    color: #809fff;
+    color: var(--barvaPoudarka);
     text-decoration: none;
     cursor: pointer
 }
 samp {/*opredeli kot sporočilo računalnika*/
-  font-family: monospace;
+    font-family: monospace;
 }
 
 table {
-  border-collapse: collapse;
+    position: static;
+    border-collapse: collapse;
+    margin: 0.5rem;
+    left: auto;
+    right: auto;
 }
 tr:hover {
-    background-color: dimgrey;
+    background-color: var(--barvaOzadjaNaprej);
 }
 .zgorajrob td {
-    border-top: 1px solid white;
+    border-top: 1px solid var(--barvaOspredja);
 }
 
-.help {cursor: help;}
+.teden {
+    position: fixed;
+    width: 50%;
+    left: 25%;
+    aspect-ratio: 1/1;
+}
+    .tedenŠtevilčnica {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .kazalecTedna {
+        position: absolute;
+        background-color: blue;
+        width: 1%;
+        height: 50%;
+        top: 0;
+        bottom: 0;
+        left: calc(50% - 2px);
+        transform-origin: bottom;
+        z-index: 2;
+    }
+.položajSonca {
+    position: absolute;
+    width: 50%;
+    float: right;
+    right: 0;
+    aspect-ratio: 1/1;
+}
 
 /*DRSNIK*/
     html {
@@ -107,27 +265,296 @@ tr:hover {
       background-color: #5555;
     }
 
+/*NAPRAVI***************************************************************/
+.uraSonca {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+#zemljevidStarš {
+    background: white;
+    border-radius: 50%;
+}
+    .letnaŠtSonca {
+        z-index: 3;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform: rotate(calc(360/365.2425 *11 *-1deg))
+    }
+    .letniČasiSonca {
+        --širina: 90%;
+        z-index: -1;
+        position: absolute;
+        height: var(--širina);
+        width: var(--širina);
+        border-radius: 50%;
+        left: calc((100% - var(--širina))/2);
+        right: calc((100% - var(--širina))/2);
+        top: calc((100% - var(--širina))/2);
+        bottom: calc((100% - var(--širina))/2);
+    }
+    .dnevnaPot {
+        --širina: 75%;
+        z-index: 5;
+        position: absolute;
+        height: var(--širina);
+            top: calc((100% - var(--širina))/2);
+            bottom: calc((100% - var(--širina))/2);
+        width: var(--širina);
+            left: calc((100% - var(--širina))/2);
+            right: calc((100% - var(--širina))/2);
+        border-radius: 50%;
+    }
+    .letnoSonca {
+        --širina: 75%;
+        z-index: 4;
+        position: absolute;
+        height: var(--širina);
+            top: calc((100% - var(--širina))/2);
+            bottom: calc((100% - var(--širina))/2);
+        width: var(--širina);
+            left: calc((100% - var(--širina))/2);
+            right: calc((100% - var(--širina))/2);
+        border-radius: 50%;
+        transform: rotate(0deg);
+            transform-origin: center;
+            transition: transform 1s;
+    }
+        .dneviLune {
+            --širina: 104%;
+            position: absolute;
+            z-index: 10;
+            width: var(--širina);
+            height: var(--širina);
+            left: calc((100% - var(--širina))/2);
+            top: calc((100% - var(--širina))/2);
+            transform: rotate(0deg);
+                transform-origin: center;
+                transition: transform 1s;
+        }
+        .sonce {
+            --širina: 115%;
+            position: absolute;
+            z-index: 3;
+            width: var(--širina);
+            height: var(--širina);
+            left: calc((100% - var(--širina))/2);
+            top: calc((100% - var(--širina))/2);
+        }
+        .senca {
+            --širina: 100%;
+            position: absolute;
+            z-index: 4;
+            width: var(--širina);
+            height: var(--širina);
+            left: calc((100% - var(--širina))/2);
+            top: calc((100% - var(--širina))/2);
+            opacity: 0.5;
+        }
+        /*.urnaŠtSo {
+            --širina: 100%;
+            position: absolute;
+            z-index: 6;
+            width: var(--širina);
+            height: var(--širina);
+            left: calc((100% - var(--širina))/2);
+            top: calc((100% - var(--širina))/2);
+        }*/
+        .urnaŠtSo {
+            --širina: 100%;
+            position: absolute;
+            z-index: 6;
+            width: var(--širina);
+            height: var(--širina);
+            left: calc((100% - var(--širina))/2);
+            top: 0;
+        }
+        .prostorUrniK {
+            --širina: 100%;
+            z-index: 40;
+            position: absolute;
+            height: var(--širina);
+                top: calc((100% - var(--širina))/2);
+                bottom: calc((100% - var(--širina))/2);
+            width: var(--širina);
+                left: calc((100% - var(--širina))/2);
+                right: calc((100% - var(--širina))/2);
+            border-radius: 50%;
+            overflow: hidden;
+            transform: rotate(0deg);
+                transition: transform 1s;
+        }
+            .nadUrniKazalec {
+                height: 100%;
+                width: 100%;
+            }
+                .urniKazalec {
+                    --širina: 0.5%;
+                    position: absolute;
+                    z-index: 10;
+                    height: 100%;
+                        top: 35.6%;
+                    width: var(--širina);
+                        left: calc((100% - var(--širina))/2);
+                    transform: rotate(0deg);
+                        transform-origin: top;
+                        transition: transform 1s;
+                    background-color: red;
+                }
+            /*.ukrivljen {
+                --širina: 0.5%;
+                position: absolute;
+                z-index: 10;
+                height: 50%;
+                top: 25%;
+                left: 25%;
+                width: 50%;
+                border-radius: 50%;
+                border-right: 4px solid white;
+                transform: rotateZ(-60deg) rotateX(23.5deg) rotateY(60deg);
+                    transform-origin: center;
+                    transition: transform 1s;
+                background-color: green;
+            }*/
+            .ukrivljen {
+                --širina: 0.5%;
+                position: absolute;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                    top: 0;
+                    bottom: 0;
+                border-radius: 50%;
+                border: 1px solid white;
+                    border-left-color: transparent;
+                    border-top-color: transparent;
+                background-color: green;
+            }
+        .urno {
+            transform: rotate(0deg);
+                transform-origin: center;
+                transition: transform 1s;
+            background-color: var(--barvaOzadja);
+            border-radius: 50%;
+        }
+            .zemljevid {
+                opacity: 0.6;
+            }
+        .lunino {/*lunin kazalec, cela širina*/
+            --višina: 75;
+            z-index: 4;
+            position: absolute;
+            height: 116%;
+                top: -8%;
+                bottom: -8%;
+            width: 8%;
+                left: 46%;
+                right: 46%;
+            transform: rotate(0deg);
+                transform-origin: center;
+            transition: transform 0.5s;
+        }
+            .luna {/*kvadraten div z deli Luninega prikaza*/
+                z-index: 3;
+                position: absolute;
+                height: calc((8*100)/116 *1%);
+                    top: 0;
+                width: 100%;
+                border-radius: 50%;
+                border: 1px solid white;
+                }
+                .del {/*del prikaza, ki spreminja širino glede na meno*/
+                    position: absolute;
+                    z-index: 5;
+                    height: 100%;
+                    top: 0;
+                    border-radius: 50%;
+                    background-color: black;
+                    /*transition: width 1s, transform 1s;*/
+                }
+                .polluna {/*ozadje za prikaz Lune, osnovna razdelitev na osvetljeno in neosvetljeno*/
+                    position: absolute;
+                    z-index: 4;
+                    height: 100%;
+                    top: 0;
+                    border-radius: 50%;
+                    background-color: black;
+                    transition: transform 0.5s;
+                }
+                .pollunaPred {/*dodaten prikaz "od zgoraj"*/
+                    position: absolute;
+                    z-index: 10;
+                    height: 100%;
+                    top: 0;
+                    border-radius: 50%;
+                    background-color: black;
+                    transition: transform 0.5s;
+                }
+#nebo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    /*background-color: blue;*/
+}
+    #neboLetno {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+    }
+        #neboUrna {
+            position: absolute;
+            z-index: 12;
+            width: 100%;
+            height: 100%;
+        }
+        #neboObzorje {
+            position: absolute;
+            z-index: 11;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            transition: transform 0.5s;
+        }
+    #neboZvezde {
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        border: none;
+        z-index: -1;
+        left: 5%;
+        top: 5%
+    }
+@media (max-aspect-ratio: 1/2) /*visoko/ozko okno*/ {
+    .uraSonca {
+        left: 0;
+        top: 0;
+    }
+    .nebo {
+        right: 0;
+        bottom: calc(100vmax - 200vmin);
+    }
+}
+@media (min-aspect-ratio: 2/1) /*nizko/dolgo okno*/ {
+    .uraSonca {
+        left: 0;
+        top: 0;
+    }
+    #nebo {
+        left: 100vmin;
+        bottom: 0;
+    }
+}
+
 /*KAZALO SPLETNE STRANI*/
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-:root {
-  --bar-width: 2rem;
-  --bar-height: 0.18rem;
-  --hamburger-gap: 0.38rem;
-  --foreground: rgba(0, 0, 0, 0.7); /*barva polja kazala, zadnja vrednost je za prosojnost*/
-  --background: white;
-  --hamburger-color: white;
-  --hamburger-margin: 0.38rem;
-  --animation-timing: 200ms ease-in-out;
-  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
 }
 
 .hamburger-menu {
@@ -145,15 +572,15 @@ body {
 }
 
 .hamburger-menu:has(input:checked) {
-  --foreground: white;
-  --background: #333;
+  --foreground: var(--barvaOspredja);
+  --background: var(--barvaOzadja);
 }
 
 .hamburger-menu:has(input:focus-visible)::before,
 .hamburger-menu:has(input:focus-visible)::after,
 .hamburger-menu input:focus-visible {
-  border: 1px solid var(--background); /*obroba, ko je ikona izbrana pri delu brez kazalca, barve background*/
-  box-shadow: 0 0 0 1px var(--foreground);
+  border: 1px solid var(--barvaOspredja); /*obroba, ko je ikona izbrana pri delu brez kazalca, barve background*/
+  box-shadow: 0 0 0 1px var(--barvaOzadja);
 }
 
 .hamburger-menu::before,
@@ -162,7 +589,7 @@ body {
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
-  background-color: var(--hamburger-color);
+  background-color: var(--barvaOspredja);
   border-radius: 9999px;
   transform-origin: left center; /*središče sukanja je na levi*/
   transition: opacity var(--animation-timing), width var(--animation-timing),
@@ -199,14 +626,19 @@ body {
   transition: translate var(--animation-timing); /*čas, da se prikaže kazalo*/
   translate: -100%; /*kazalo strani je privzeto skrito izven strani*/
   padding: 0.5rem 1rem;
-  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem /*1rem odmika kazala od ikone*/); /*odmik od vrha strani na podlagi prostora, ki ga zavzame ikona*/
-  background-color: var(--foreground);
-  color: var(--background);
-  max-width: 30rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
-  height: 100vh; /*najmanjša višina polja kazala strani, 1vh = 1% višine zaslona*/
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin));
+  padding-bottom: 2rem;
+  background-color: var(--barvaOzadjaProsojno);
+  color: var(--barvaOspredja);
+  /*max-width: 30rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
+  height: 100vh;
   position: fixed;
   overflow: auto;
   z-index: 100;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
 }
 .sidebar li {
   text-align: left;
@@ -215,464 +647,3 @@ body {
 .hamburger-menu:has(input:checked) + .sidebar {
   translate: 0;
 }
-
-.gumblok {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    font-size: 1rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-.gumb {
-    color: #ffffff90;
-}
-.gumb:hover {
-    color: #809fff;
-}
-
-.opombe {
-    right: 0;
-    position: relative;
-    }
-.datum {
-    position: flex;
-    left: 0;
-}
-.zvezdoslovnaUra {
-    background-color: none;
-    border: 1.5px ;
-    display: flex;
-    position: relative; /*nadrejen položaj glede na */
-    border-radius: 50%;
-    left: 0;
-    top: calc((100vh - var(--aastura))) / 2);
-    overflow: hidden;
-}
-/*.sonce {
-    width: 4%;
-    height: 4%;
-    border-radius: 50%;
-    background-color: yellow;
-    position: absolute;
-    transform: translate(-50%, 0%);
-    top: 6%;
-    left: 50%;
-}*/
-.zaSonce {
-    position: absolute;
-    height: 88.5%;
-    width: 88.5%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left:50%;
-    border-radius: 50%;
-    /*background-image: linear-gradient(to top, rgba(255,255,0,0), rgba(255,255,0,0.2));*/
-}
-.sonce {
-    position: absolute;
-    width: 100%;
-    height: 4%;
-    background-color: yellow;
-    position: absolute;
-    transform: translate(-50%, 0%);
-    top: 0;
-    left: 50%;
-    z-index: 0;
-    box-shadow: 0 0 100px 24px yellow;
-}
-.letnaStevilcnica {
-    --rotation: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    position: flex;
-    transform: rotate(calc(var(--rotation) * -1deg));
-    z-index: 16;
-}
-.dnevnaPot {
-    width: 68%;
-    height: 68%;
-    left: 16%;
-    top: 16%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.5;
-    filter: invert(100%);
-}
-.letniČasi {
-    width: 88%;
-    height: 88%;
-    border-radius: 50%;
-    position: absolute;
-    left: 6%;
-    top: 6%;
-    z-index: 16;
-}
-
-.dnevnaUra {
-    --rotation: 0;
-    transform-origin: middle;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform: rotate(calc(var(--rotation) * 1deg + 360/365.2425*1deg));
-    text-align: center;
-}
-.lunadiv {
-    --rotation: 0;
-    transform-origin: 50% 50%;
-    width: 6%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%) /*postavimo središče elemnta (ne pa kot) v središče polja*/ rotate(calc(-180deg + var(--rotation)*1deg));
-}
-.luna {
-    --rotation: 0;
-    width: 100%;
-    height: 6%;
-    border-radius: 50%;
-    /*background-color: var(--barva);*/
-    position: absolute;
-    transform: translate(0, -100%) /*postavimo središče elemnta (ne pa kot) v središče polja*/;
-    top: 90%;
-    z-index: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0.1vmin solid gray;
-}
-.del {
-    --premermene: 1;
-    /*--odmikmene: 0;*/
-    --barva: white;
-    width: calc(var(--premermene)*100%);
-    height: 100%;
-    border-radius: 50%;
-    background-color: var(--barva);
-    /*transform: translateX(calc((var(--odmikmene)/6)*100%));*/
-    /*border: 1px solid white;*/
-    position: absolute;
-    /*margin: calc((var(--premermene) - var(--aluna)) / 2 * -1vmin);*/
-    z-index: 20;
-}
-.polluna {
-    --stranPollune: -1;
-    position: absolute;
-    transform: rotate(calc((1 + var(--stranPollune))*90deg));
-    height: 100%;
-    z-index: 1;
-    /*background-color: purple;*/
-}
-.luninaŠtevilcnica {
-    --rotation: 0;
-    width: 71%;
-    height: 71%;
-    position: absolute;
-    top:14.5%;
-    right: 14.5%;
-    z-index: 6;
-    transform: rotate(calc(var(--rotation) * 1deg));
-}
-
-
-.urica {
-    width: 68%;
-    height: 68%;
-    left: 16%;
-    top: 16%;
-    /*background: 	rgb(18, 18, 18);*/
-    border-radius: 50%;
-    border: ;
-    position: absolute; /*nadrejen položaj glede na kazalce*/
-    bottom: 50%;
-}
-.urnaŠtevilčnica {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-}
-svg path, svg line {
-    vector-effect: non-scaling-stroke;
-}
-.letniKazalec {
-    width: 0.1vmin;
-    height: 94.25%;
-    background-color: var(--sončna);
-    position: absolute;
-    transform: translate(-50%, 0);
-    left: 50%;
-    bottom: 0;
-    z-index: 0;
-}
-
-*, *::after, *::before {
-    box-sizing: border-box;
-    font-family: Times New Roman, serif;
-}
-
-.urica .kazalec {
-    --rotation: 0;
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    height: 50%;
-    transform-origin: 50% top; /*izvor preoblikovanja, za nas sukanja*/
-    z-index: 2; /*visoka plast, večja od številke, da prekrije številko*/
-    transform: translateX(-50%) translateY(100%)/*kazalec prestavimo za polovico v levo, da je poravnan s sredino številk in celega dol, da je zamaknjen za 180°*/ rotate(calc(var(--rotation) * 1deg));
-}
-
-/*.urica::after /*krogec na sredini*//*{
-    content: ''; /*da lahko ustvarimo nov element*//*
-    position: absolute;
-    background-color: red;
-    z-index: 11;
-    width: 2px;
-    height: 2px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    display: none;
-}*/
-
-.urica .kazalec.sekundni {
-    width: 0.1%;
-    /*height: 17vmin;*/
-    background-color: var(--mehkabela); /*barva kazalca*/
-    z-index: 0;
-}
-
-.urica .kazalec.minutni {
-    width: 0.4%;
-    /*height: 17vmin;*/
-    background-color: var(--mehkabela); /*barva kazalca*/
-    z-index: 0;
-}
-
-.urica .kazalec.urni {
-    width: 0.8%;
-    background-color: blue; /*barva kazalca*/
-    /*border: 1px solid var(--mehkabela);*/
-    z-index: 12;
-}
-.Zemlja {
-    position: absolute;
-    height: 14%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    z-index: 12;
-    filter: invert(100%);
-}
-.zaZemljevid {
-    position: absolute;
-    height: 200%;
-    top: 40%;
-    left: -50%;
-    right: auto;
-    z-index: 0;
-    opacity: 0.2;
-    filter: invert(100%);
-    transform-origin: 50% 50%;
-    transform: translate(-50%, -50%) rotateX(23.439281deg);
-}
-.Zemljevid {
-    --rotation: 0;
-    transform-origin: 50% 50%;
-    transform: rotateZ(calc(var(--rotation) * 1deg + 0deg));
-    position: absolute;
-    height: 100%;
-}
-.dnevneČrte {
-    --crteodroba: 0vmin;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 12;
-    fill: none;
-    stroke-width: 6px;
-    stroke: var(--sončna);
-    stroke-opacity: 0.6;
-    transform: rotate(180deg) /*da je prav obrnjeno*/ scaleX(-1) /*ker sončni žarek prečka črte na desni strani*/;
-}
-.nadglavišče {
-    --rotation: 0;
-    transform-origin: 50% 50%;
-    transform: rotate(calc(var(--rotation) * 1deg));
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    /*background: 	rgb(18, 18, 18);*/
-    border-radius: 50%;
-    position: absolute; /*nadrejen položaj glede na kazalce*/
-    z-index: 12;
-    /*background-color:  rgba(0, 255, 0, 0.2);*/
-}
-.kazalka {
-    --odmik: 0;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(((50% - var(--aobrocek)/2) * (var(--odmik) / 183) + var(--aobrocek)/2)*2);
-    height: calc(((50% - var(--aobrocek)/2) * (var(--odmik) / 183) + var(--aobrocek)/2)*2);
-    border-radius: 50%;
-    border: 0.1vmin solid var(--sončna);
-    position: absolute;
-    z-index: 13;
-}
-.obrocek{/*Za preverjanje var(--aobrocek), ki se uporablja za .kazalko*/
-    position: absolute;
-    display: none;/*vključi, če preverjaš*/
-    z-index: 0;
-    width: var(--aobrocek);
-    height: var(--aobrocek);
-    top: 50%;
-    left: 50%;
-    transform-origin: 50% 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%; /*krog iz kvadrata*/
-    /*border: 1px solid purple;
-    background-color: rgb(0, 204, 153);*/
-}
-.enakonočje{/*Za preverjanje var(--aobrocek), ki se uporablja za .kazalko*/
-    position: absolute;
-    z-index: 0;
-    width: 50%;
-    height: 50%;
-    top: 50%;
-    left: 50%;
-    transform-origin: 50% 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%; /*krog iz kvadrata*/
-    border: 0.1vmin solid gray;
-    /*background-color: rgb(0, 204, 153);*/
-}
-/*@media (min-width: 100vh) and (max-width: calc(98vh + 41ch)), (min-height: 100vw) {
-    .zvezdoslovnaUra, .opombe {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    background: purple;
-    }
-    .zvezdoslovnaUra {
-    width: var(--aastura);
-    height: var(--aastura);
-    background-color: purple;
-    display: flex;
-    position: relative; /*nadrejen položaj glede na *//*
-    left: auto;
-    right: auto;
-    bottom: 0;
-    }
-}*/
-@media (max-aspect-ratio: 1/2) /*visoko/ozko okno*/ {
-    .zvezde {
-        width: 100vw;
-        height: 100vw;
-        right: 0;
-        top: 100vw;
-        bottom: auto;
-    }
-    .zvezdoslovnaUra {
-        width: 100vw;
-        height: 100vw;
-        left: 0;
-    }
-}
-@media (min-aspect-ratio: 2/1) /*nizko/dolgo okno*/ {
-    .zvezde {
-        width: 100vh;
-        height: 100vh;
-        right: auto;
-        left: 100vh;
-        bottom: 0;
-    }
-    .zvezdoslovnaUra {
-        width: 100vh;
-        height: 100vh;
-        left: 0;
-    }
-}
-
-@media print /*slog za tiskanje*/ {
-    body {
-        color: black;
-        background: white;
-        background-color: white;
-    }
-    a {
-        color: black;
-    }
-    ul {
-        color: black;
-    }
-    ul.s {
-        color: black;
-    }
-    .zamrznjeno {
-        color: black;
-        opacity: 0.6;
-    }
-    .kazalo-strani {
-        display: none;
-    }
-    .hamburger-menu {
-        display: none;
-    }
-    .sidebar {
-        display: none;
-    }
-
-    svg{
-        stroke: black;
-        stroke: black;
-    }
-    svg path{
-        fill: black;
-        stroke: black;
-    }
-    svg g {
-        fill: black;
-        stroke: black;
-    }
-    svg text {
-        fill: black;
-        font-family: Times New Roman Serif;
-        stroke: black;
-    }
-    svg text tspan {
-        stroke: black;
-        fill: black;
-    }
-
-    table td {
-        border-right: 1px solid black;
-    }
-    table th {
-        border-bottom: 1px solid black;
-        border-right: 1px solid black;
-    }
-}
-/*
-@media (orientation: portrait) and (max-width: 500px){
-}
-@media (orientation: landscape) and (max-width: 500px){
-}
-@media (prefers-color-scheme: dark) {
-    path { fill: #white; }
-}
-@media (prefers-color-scheme: light) {
-}
-*/
