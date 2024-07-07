@@ -5,7 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <meta http-equiv="Cache-control" content="public">
 
         <title>Opombe k zvezdoslovni uri</title>
         <meta name="description" content="Opombe k zvezdoslovni uri - vodič, pojasnila, vhodni podatki, viri, enačbe." /> <!--opis spletnega mesta-->
@@ -37,8 +40,8 @@
         </label>
         <aside class="sidebar">
           <nav>
-            <div><a href="index.html">Domov</a></div></div>
-            <div><a href="./knjiznica">Knjižnica</a></div></div>
+            <div><a href="./">Domov</a></div></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
             <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
             <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
 
@@ -79,6 +82,14 @@
           </nav>
         </aside>
 
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
         <div class="content">
             <h1>Opombe k zvezdoslovni uri</h1>
             <p class="besedilosred"><a href="./zvezdoslovna_ura"><i>Zvezdoslovna ura</i></a></p>
@@ -88,21 +99,36 @@
                     <li>Privzeti zemljepisni položaj, za katerega veljajo podatki prikazani na uri je Slovenija (Ljubljana, 46° g.š., 15° g.d.).</li>
                     <li id="dolžina leta">Privzeta dolžina leta: 365.2425 dni.</li>
                     <li id="dolžina luninega meseca">Privzeta dolžina luninega meseca je 29 dni, 12 ur, 44 minut in 2.9 sekund.</li>
-                    <li>Podatki za sončni vzhod in zahod za označbe na uri so povzeti po <a href="https://www.timeanddate.com/sun/slovenia/ljubljana?month=1&year=2000" target="_blank" rel="noopener noreferrer"><i>Time and Date</i></a> za Ljubljano, za leto 2000.</li>
+                    <!--<li>Podatki za sončni vzhod in zahod za označbe na uri so povzeti po <a href="https://www.timeanddate.com/sun/slovenia/ljubljana?month=1&year=2000" target="_blank" rel="noopener noreferrer"><i>Time and Date</i></a> za Ljubljano, za leto 2000.</li>-->
                     <li>Enačba za izračun dneva prehoda na zimski/poletni čas je povzeta po članku <a href="https://sl.wikipedia.org/wiki/Poletni_%C4%8Das#Datumi_sprememb" target="_blank" rel="noopener noreferrer"><i>Poletni čas (Wikipedija).</i></a>
-                        <code><br>nedelja (31 - (celi del(((5 * leto) / 4) + 4) mod 7)). marec ob 02.00
-                        <br>nedelja (31 - (celi del(((5 * leto) / 4) + 1) mod 7)). oktober ob 02.00</code>
+                        <span class="besedilosred"><br>nedelja \((31 - \left(\lfloor \frac{5 \cdot \text{leto}}{4} + 4 \rfloor \mod 7\right))\). marec, 02.00
+                        <br>nedelja \((31 - \left(\lfloor \frac{5 \cdot \text{leto}}{4} + 1 \rfloor \mod 7\right))\). oktober, 02.00</span>
                     </li>
-                    <li>Podatki za datum, uro in zemljepisni položaj so pridobljeni z naprave in so odvisni od nastavitev, oz. zmogljivosti naprave (računalniki običajno nimajo GPS-a, zato ima naprava določen položaj glede na središče nastavljene države v nastavitvah naprave).</li>
-                    <li>Številski podatki o položajih planetov, Sonca in Lune, ki so prikazani v konzoli (pod <i>data</i>), se pridobivajo z API od <a href="https://astronomyapi.com/" target="_blank" rel="noopener noreferrer"><i>Astronomy API</i></a></li>
-                    <li>Podatki v stranskem oknu, ki se uporabijo (za Luno) tudi na uri, so izračunani z Javascriptom <a href="https://github.com/mourner/suncalc" target="_blank" rel="noopener noreferrer"><i>SunCalc Volodymyrja Agafonkina</i></a> (GitHub) [<a  class="arh" href="https://web.archive.org/web/20231204202613/https://github.com/mourner/suncalc" target="_blank" rel="noopener noreferrer"><i>arhivirano</i></a>]</li>
+                    <li>Podatki za datum, uro in zemljepisni položaj so pridobljeni z naprave in so odvisni od nastavitev, oz. zmogljivosti naprave (računalniki običajno nimajo GPS-a, zato ima naprava določen položaj glede na središče nastavljene države v napravi).</li>
+                    <!--<li>Številski podatki o položajih planetov, Sonca in Lune, ki so prikazani v konzoli (pod <i>data</i>), se pridobivajo z API od <a href="https://astronomyapi.com/" target="_blank" rel="noopener noreferrer"><i>Astronomy API</i></a></li>-->
+                    <li>Podatki v stranskem oknu, ki se uporabijo za prikaz ure, so izračunani s knjižnico v javascriptu <a href="https://github.com/mourner/suncalc" target="_blank" rel="noopener noreferrer"><i>SunCalc Volodymyrja Agafonkina</i> (GitHub)</a> [<a class="arh" href="https://web.archive.org/web/20231204202613/https://github.com/mourner/suncalc" target="_blank" rel="noopener noreferrer"><i>arhivirano</i></a>]</li>
+                    <li>Zemljevid za globus je z <a href="https://raw.githubusercontent.com/epistler999/GeoLocation/master/world.json" target="_blank" rel="noopener noreferrer"><i>Swapnil gupta (epistler999): world.json</i> (GitHub)</a> [<a class="arh" href="https://web.archive.org/web/20240608200616/https://raw.githubusercontent.com/epistler999/GeoLocation/master/world.json" target="_blank" rel="noopener noreferrer"><i>arhivirano</i></a>]</li>
+                    <li>Globus (z zemljevidom) je ustvarjen in oblikovan z <a href="https://d3js.org/d3-geo" target="_blank" rel="noopener noreferrer"><i>d3-geo</i></a> [<a class="arh" href="https://web.archive.org/web/20240622190846/https%3A%2F%2Fd3js.org%2Fd3-geo" target="_blank" rel="noopener noreferrer"><i>arhivirano</i></a>]; oz. <a href="https://github.com/d3/d3-geo" target="_blank" rel="noopener noreferrer"><i>d3-geo-projection</i> (GitHub)</a> [<a class="arh" href="https://web.archive.org/web/20240608200116/https://github.com/d3/d3-geo-projection" target="_blank" rel="noopener noreferrer"><i>arhivirano</i></a>]</li>
+                    <li>Zemljevid zvezdnega neba je od <a href="https://drifted.in/planisphere-app" target="_blank" rel="noopener noreferrer"><i>Jan Tošovský: Drifted.in - Planisphere</i></a>
+                        <ul class="s">
+                            <li><a href="https://github.com/drifted-in/planisphere-core" target="_blank" rel="noopener noreferrer">Drifted-In: planisphere-core (GitHub)</a></li>
+                        </ul>
+                    </li>
+                    <li>Zemljevid zvezdnega neba je ustvarjen in oblikovan z <a href="https://github.com/ofrohn/d3-celestial" target="_blank" rel="noopener noreferrer"><i>Olaf Frohn (ofrohn): d3-celestial</i> (GitHub)</a> [<a class="arh" href="https://web.archive.org/web/20240614202604/https://github.com/ofrohn/d3-celestial" target="_blank" rel="noopener noreferrer"><i>arhivirano</i></a>]
+                        <ul class="s">
+                            <li><a href="https://ofrohn.github.io/" target="_blank" rel="noopener noreferrer">ofrohn.github.io projects</a></li>
+                            <li><a href="https://armchairastronautics.blogspot.com/p/skymap.html" target="_blank" rel="noopener noreferrer">ArmChairAstronautics - Interactive Skymap</a></li>
+                            <li><a href="https://ofrohn.github.io/celestial-demo/viewer.html" target="_blank" rel="noopener noreferrer">Ofrohn: Celestial-demo - Viewer</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </p>
             <h5 id="Sončna ura">Sončna ura</h5>
+            <p>Nagnjenost polutnika glede na Sonce, oz. ravnino kroženja (kjer je α letni zasuk z začetkom poletnega sončevega obrata): \[\varphi=\arcsin(\sin23.5^{\circ}\cdot \sin(180^{\circ}-\alpha))\]
             <h6 id="Letna številčnica">Letna številčnica</h6>
             <div class="deli okroglo">
                 <img
-                    src="./images/sklop_leta.svg"
+                    src="./images/vesolje/sklop_leta.svg"
                     width="100%"/>
             </div>
             <p><a href="#dolžina leta">Leto</a> je razdeljeno na 12 mesecev, zapisanih s <a href="./nova_stara_slovenscina#Slovenski meseci">slovenskimi poimenovanji</a>.</p>
@@ -117,7 +143,7 @@
             <h6 id="Letni sklop" class="prelom">Letni sklop</h6>
             <div class="deli okroglo">
                 <img
-                    src="./images/sklop_letnega_kazalca.svg"
+                    src="./images/vesolje/sklop_letnega_kazalca.svg"
                     width="100%"
                     height="100%"/>
             </div>
@@ -130,10 +156,10 @@
                 <br>Krajših črtnih oznak je tako na uri 60; daljše pa označujejo še neoznačene ure, ki padejo med minutne/sekundne oznake (število 60 namreč ni celoštevilsko deljivo s 24).</p>
             <h7 id="Letni kazalec">Sonce in letni kazalec</h7>
             <p>Zgoraj, kjer je ura 12, torej poldne, je Sonce, saj je opoldne to najbolj v nadglavišču. Od Sonca teče rumeni <i>letni kazalec</i> skozi urno številčnico in jo razpolavlja, tako da označuje poldne in polnoč, ter kaže dan v letu na <a href="#Letna številčnica">letni številčnici</a></p>
-            <h7 id="Dnevni sklop" class="prelom">Dnevni sklop</h7>
+            <!--<h7 id="Dnevni sklop" class="prelom">Dnevni sklop</h7>
             <div class="deli okroglo">
                 <img
-                    src="./images/dnevni_sklop.svg"
+                    src="./images/vesolje/dnevni_sklop.svg"
                     width="100%"
                     height="100%"/>
             </div>
@@ -143,7 +169,7 @@
                     <li>Drugi krivulji od zgoraj predstavljata konec pomorske zore in začetek zore (/meščanskega sončnega vzhoda); oz. konec mraka (/meščanskega sončnega zahoda) in začetek pomorskega mraka.</li>
                     <li>Tretji krivulji od zgoraj predstavljata konec zvezdoslovnega sončnega vzhoda in začetek pomorske zore; oz. konec pomorske zore in začetek zvezdoslovnega sončnega vzhoda.</li>
                     <li>Spodnji krivulji predstavljata konec noči in začetek vesoljeslovskega mraka; oz. konec zvezdoslovnega mraka in začetek noči.</li>
-                </ul>
+                </ul>-->
                 <h8 id="Razlaga pojmov">Razlaga pojmov</h8>
                 <ul class="s">
                     <li>Sončni vzhod/zahod - Na začetku sončnega vzhoda, oz. na koncu sončnega zahoda, se zgornji rob Sonca navidezno dotakne obzorja; na koncu sončnega vzhoda, oz. na začetku sončnega zahoda, pa se obzorja navidezno dotakne spodnji rob Sonca.</li>
@@ -157,7 +183,7 @@
             <h6 id="Luna" class="prelom">Luna</h6>
             <div class="deli okroglo" style="height: 4rem; width: 4rem">
                 <img
-                    src="./images/primer_lunine_mene.svg"
+                    src="./images/vesolje/primer_lunine_mene.svg"
                     width="100%"
                     height="100%"/>
             </div>
@@ -166,7 +192,7 @@
             <h7 id="Določitev lunine mene" class="prelom">Določitev lunine mene</h7>
             <div class="deli">
                 <img
-                    src="./images/določitev_mene.svg"
+                    src="./images/vesolje/določitev_mene.svg"
                     width="100%"
                     height="100%"/>
             </div>
@@ -201,7 +227,7 @@
             </p>
             <div class="deli">
                 <img
-                    src="./images/zemljevid_zvezdnega_neba-obzorje2.svg"
+                    src="./images/vesolje/zemljevid_zvezdnega_neba-obzorje2.svg"
                     width="100%"
                     height="100%"/>
             </div>
@@ -209,14 +235,14 @@
             </p>
             <div class="deli">
                 <img
-                    src="./images/zemljevid_zvezdnega_neba-zvezde-ravnina_osončja.svg"
+                    src="./images/vesolje/zemljevid_zvezdnega_neba-zvezde-ravnina_osončja.svg"
                     width="100%"
                     height="100%"/>
             </div>
             <p id="Letna številčnica Z" class="prelom">Na <b>letna številčnici</b> je z rumenim kazalcem označeno, kje je jug obzorja ob 12-ih tistega dne, oz. za kateri dan v letu drži prikazano vidno zvezdno nebo.</p>
             <div class="deli">
                 <img
-                    src="./images/zemljevid_zvezdnega_neba-zvezde-letna_stevilcnica.svg"
+                    src="./images/vesolje/zemljevid_zvezdnega_neba-zvezde-letna_stevilcnica.svg"
                     width="100%"
                     height="100%"/>
             </div>
@@ -224,14 +250,14 @@
             </p>
             <div class="deli">
                 <img
-                    src="./images/urna_stevilcnica.svg"
+                    src="./images/vesolje/urna_stevilcnica.svg"
                     width="100%"
                     height="100%"/>
             </div>
             <p id="Mreža" class="prelom">Na <b>mreži</b> so označeni Zemljin ekvator (0°) vzporedniki in poldnevniki oreslikani na nebesno kroglo. Kot središčna točka je označena Zemljina os, okoli katere se (navidezno) vrti zvezdno nebo.</p>
             <div class="deli">
                 <img
-                    src="./images/zemljevid_zvezdnega_neba-zvezde-mreža.svg"
+                    src="./images/vesolje/zemljevid_zvezdnega_neba-zvezde-mreža.svg"
                     width="100%"
                     height="100%"/>
             </div>
@@ -239,7 +265,7 @@
             </p>
             <div class="deli">
                 <img
-                    src="./images/zemljevid_zvezdnega_neba-zvezde-rimska_cesta.svg"
+                    src="./images/vesolje/zemljevid_zvezdnega_neba-zvezde-rimska_cesta.svg"
                     width="100%"
                     height="100%"/>
             </div>
@@ -251,6 +277,56 @@
                 <li><a href="https://isjfr.zrc-sazu.si/sl/terminologisce/slovarji/geografski/iskalnik?iztocnica=mrak" target="_blank" rel="noopener noreferrer">ZRC SAZU: mrak</a> (opredelitve meščanskega, navtičnega in astronomskega mraka)</li>
                 <li><a href="https://arachnoid.com/lutusp/sunrise/sunhelp.html" target="_blank" rel="noopener noreferrer">Sun Calculator Help</a> <span class="arh">[<a href="https://web.archive.org/web/20230531040319/https://arachnoid.com/lutusp/sunrise/sunhelp.html" target="_blank" rel="noopener noreferrer">arhivirano</a>]</span> (nekatere razlage sončnih vzhodov/zahodov, zor/mrakov...)</li>
                 <li><a href="https://www.timeanddate.com/astronomy/golden-hour.html" target="_blank" rel="noopener noreferrer">Time and Date: The Golden Hour – When Sunlight Turns Magical</a></li>
+                <li><a href="https://github.com/mourner/suncalc" target="_blank" rel="noopener noreferrer">Volodymyr Agafonkin (mourner): SunCalc (GitHub)</a>
+                    <ul class="s">
+                        <li><a href="http://suncalc.net" target="_blank" rel="noopener noreferrer">SunCalc</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://github.com/cosinekitty/astronomy" target="_blank" rel="noopener noreferrer">Don Cross (cosinekitty): Astronomy Engine (GitHub)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Blank_maps" target="_blank" rel="noopener noreferrer">Wikipedia: Blank maps</a>
+                    <ul class="s">
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Worldmap_northern.svg" target="_blank" rel="noopener noreferrer">Wikipedia: File:Worldmap northern.svg</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://momentjscom.readthedocs.io/en/latest/moment/05-query/07-is-daylight-saving-time/" target="_blank" rel="noopener noreferrer">MomentJS.com - moment().isDST()</a></li>
+
+                <h4 id="Druge_programi">Drugi programski viri</h4>
+                <li><a href="https://sunrise-sunset.org/" target="_blank" rel="noopener noreferrer">Sunrise Sunset</a></li>
+                <li><a href="https://github.com/d3/d3-geo-projection" target="_blank" rel="noopener noreferrer">D3 (Data-Driven Documents): d3-geo-projection (GitHub)</a></li>
+                <li><a href="https://armchairastronautics.blogspot.com/p/skymap.html" target="_blank" rel="noopener noreferrer">Olaf Frohn: Arm Chair Astronautics - Interactive Skymap</a>
+                    <ul class="s">
+                        <li><a href="https://github.com/ofrohn/d3-celestial" target="_blank" rel="noopener noreferrer">Olaf Frohn (ofrohn): Celestial map with D3.js (GitHub)</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.webglearth.com/" target="_blank" rel="noopener noreferrer">WebGL Earth</a>
+                    <ul class="s">
+                        <li><a href="https://examples.webglearth.com/" target="_blank" rel="noopener noreferrer">WebGL Earth - Examples</a></li>
+                        <li><a href="https://github.com/webglearth/webglearth2" target="_blank" rel="noopener noreferrer">WebGL Earth (GitHub)</a></li>
+                        <li><a href="https://github.com/webglearth/webglearth2-offline" target="_blank" rel="noopener noreferrer">WebGL Earth offline demo (GitHub)</a></li>
+                    </ul>
+                </li>
+                <h4 id="Druge_ure">Druge Zvezdoslovne ure</h4>
+                <li><a href="https://www.engineeringcommons.org/" target="_blank" rel="noopener noreferrer">Engineering Commons</a>
+                    <ul class="s">
+                        <li><a href="https://www.youtube.com/watch?v=mTsCx0E7YkA" target="_blank" rel="noopener noreferrer">You Tube - Spencer Con: Antikythera Mechanism V2: A Modernized Reproduction</a></li>
+                        <li><a href="https://www.engineeringcommons.org/lost-planetarium" target="_blank" rel="noopener noreferrer">Engineering Commons: Reconstructing the Lost Planetarium of the Antikythera Mechanism</a></li>
+                        <li><a href="https://www.engineeringcommons.org/eclipse-prediction" target="_blank" rel="noopener noreferrer">Engineering Commons: Mechanically Modelling Eclipses</a></li>
+                        <li><a href="https://www.engineeringcommons.org/antikythera-eot" target="_blank" rel="noopener noreferrer">Engineering Commons: Antikythera Equation of Time Correction</a></li>
+                        <li><a href="https://www.engineeringcommons.org/orrery-design" target="_blank" rel="noopener noreferrer">Engineering Commons: Orrery Design</a></li>
+                        <li><a href="https://www.engineeringcommons.org/orrery-resources" target="_blank" rel="noopener noreferrer">Engineering Commons: Orrery Resources</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.my-time-machines.net/astro_index.htm" target="_blank" rel="noopener noreferrer">Astronomical skeleton clock project</a>
+                    <ul class="s">
+                        <li><a href="https://www.youtube.com/@MarkFrankclocks" target="_blank" rel="noopener noreferrer">You Tube - Mark Frank</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=0y-Qxw4DLOY" target="_blank" rel="noopener noreferrer">You Tube - Event Horizon: The Antikythera Mechanism Explained with Dr. Tony Freeth</a></li>
+                <li><a href="https://www.youtube.com/watch?v=6H-niIZi1A8" target="_blank" rel="noopener noreferrer">You Tube - Jay White Creations: "The Moon Wheel" lunar phase calculator by Jay White Creations</a></li>
+                <h5>Spletne</h5>
+                <li><a href="https://www.glyphweb.com/esky/wheel.html" target="_blank" rel="noopener noreferrer">GlyphWeb - Planet Wheel</a></li>
+                <li><a href="https://eucbeniki.sio.si/fizika8/146/index3.html" target="_blank" rel="noopener noreferrer">Interaktivna vrtljiva zvezdna karta</a></li>
+                <li><a href="https://in-the-sky.org/planisphere/" target="_blank" rel="noopener noreferrer">InTheSky - Make your own cardboard planisphere</a></li>
             </ul>
         </div>
     </body>

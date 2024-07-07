@@ -50,6 +50,7 @@ body {
     /*justify-content: center;
     align-items: center;*/
     font-family: "Times New Roman", serif;
+    top: 0;
 }
 p {
     padding: 0.5rem;

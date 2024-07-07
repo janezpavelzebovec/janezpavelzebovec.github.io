@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" vsebina="IE=edge" />
         <meta name="viewport" vsebina="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
 
         <title>Nemščina</title>
         <meta name="description" vsebina="Nemščina - germanski jezik; glasoslovje, oblikoslovje, pravorečje." /> <!--opis spletnega mesta-->
@@ -70,76 +71,932 @@
           </nav>
         </aside>
 
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
         <div class="vsebina">
-            <h1>Deutsche (nemščina)</h1>
+            <h1>Nemščina - <i>Deutsche</i></h1>
+        </div>
+        <table class="enaPoDve sredinsko prvaLevo">
+            <thead>
+                <tr>
+                    <th colspan="2" style="text-align: right; font-weight: normal">kraj →</th>
+                    <th colspan="5">ustnični</th>
+                    <th colspan="10">robni (<i class="zamrznjeno">koronalni</i>)</th>
+                    <th colspan="5">nebni (<i class="zamrznjeno">dorzalni</i>)</th>
+                    <th colspan="4">grlni (<i class="zamrznjeno">laringalni</i>)</th>
+                </tr>
+                <tr>
+                    <th colspan="2" style="text-align: right; font-weight: normal">način ↓</th>
+                    <th colspan="2">dvoustnični</th>
+                    <th colspan="2">zobnoustnični</th>
+                    <th colspan="2">ustničnojezični</th>
+                    <th colspan="2">zobni</th>
+                    <th colspan="2">dlesnični</th>
+                    <th colspan="2">zadlesnični</th>
+                    <th colspan="2">retrofleksni</th>
+                    <th colspan="2">trdonebni</th>
+                    <th colspan="2">mehkonebni</th>
+                    <th colspan="2">uvularni</th>
+                    <th colspan="2">grlni</th>
+                    <th colspan="2">glasilčni</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="2">zapornik</th>
+                    <td class="polna">p</td>
+                    <td class="polna">b</td>
+                    <td>p̪</td>
+                    <td>b̪</td>
+                    <td>t̼</td>
+                    <td>d̼</td>
+                    <td></td>
+                    <td></td>
+                    <td class="polna">t</td>
+                    <td class="polna">d</td>
+                    <td></td>
+                    <td></td>
+                    <td>ʈ</td>
+                    <td>ɖ</td>
+                    <td>c</td>
+                    <td>ɟ</td>
+                    <td class="polna">k</td>
+                    <td class="polna">ɡ</td>
+                    <td>q</td>
+                    <td>ɢ</td>
+                    <td>ʡ</td>
+                    <td class="mrtva"></td>
+                    <td class="polnaManj">ʔ</td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">tresavec</th>
+                    <td>ʙ̥</td>
+                    <td>ʙ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>r̥</td>
+                    <td class="polna">r</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɽ̊r̥</td>
+                    <td>ɽr</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>ʀ̥</td>
+                    <td>ʀ</td>
+                    <td>ʜ</td>
+                    <td>ʢ</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">sičniški pripornik</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td class="polna">s</td>
+                    <td class="polna">z</td>
+                    <td class="polna">ʃ</td>
+                    <td class="polnaManj">ʒ</td>
+                    <td>ʂ</td>
+                    <td>ʐ</td>
+                    <td>ɕ</td>
+                    <td>ʑ</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">nesičniški pripornik</th>
+                    <td>ɸ</td>
+                    <td>β</td>
+                    <td class="polna">f</td>
+                    <td class="polna">v</td>
+                    <td>θ̼</td>
+                    <td>ð̼</td>
+                    <td>θ</td>
+                    <td>ð</td>
+                    <td>θ̠</td>
+                    <td>ð̠</td>
+                    <td>ɹ̠̊˔</td>
+                    <td>ɹ̠˔</td>
+                    <td></td>
+                    <td>ɻ˔</td>
+                    <td class="polna">ç</td>
+                    <td class="polna">ʝ</td>
+                    <td class="polnaManj">x</td>
+                    <td>ɣ</td>
+                    <td>χ</td>
+                    <td>ʁ</td>
+                    <td>ħ</td>
+                    <td>ʕ</td>
+                    <td class="polna">h</td>
+                    <td>ɦ</td>
+                </tr>
+                <tr>
+                    <th colspan="2">nosnik</th>
+                    <td>m̥</td>
+                    <td class="polna">m</td>
+                    <td></td>
+                    <td>ɱ</td>
+                    <td></td>
+                    <td>n̼</td>
+                    <td></td>
+                    <td></td>
+                    <td>n̥</td>
+                    <td class="polna">n</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɳ̊</td>
+                    <td>ɳ</td>
+                    <td>ɲ̊</td>
+                    <td>ɲ</td>
+                    <td>ŋ̊</td>
+                    <td class="polna">ŋ</td>
+                    <td></td>
+                    <td>ɴ</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">tap/flap</th>
+                    <td></td>
+                    <td>ⱱ̟</td>
+                    <td></td>
+                    <td>ⱱ</td>
+                    <td></td>
+                    <td>ɾ̼</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɾ̥</td>
+                    <td>ɾ</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɽ̊</td>
+                    <td>ɽ</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td>ɢ̆</td>
+                    <td></td>
+                    <td>ʡ̆</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">obstranski pripornik</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>ɬ</td>
+                    <td>ɮ</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɭ̊˔</td>
+                    <td>ɭ˔</td>
+                    <td>ʎ̝̊</td>
+                    <td>ʎ̝</td>
+                    <td>ʟ̝̊</td>
+                    <td>ʟ̝</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">obstranski drsnik</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="polna">l</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>ɭ</td>
+                    <td></td>
+                    <td>ʎ</td>
+                    <td></td>
+                    <td>ʟ</td>
+                    <td></td>
+                    <td>ʟ̠</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">obstranski tap/flap</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>ɺ̥</td>
+                    <td>ɺ</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɭ̥̆</td>
+                    <td>ɭ̆</td>
+                    <td></td>
+                    <td>ʎ̆</td>
+                    <td></td>
+                    <td>ʟ̆</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">drsnik</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="polna">ʋ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>ɹ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>ɻ</td>
+                    <td></td>
+                    <td class="polnaManj">j</td>
+                    <td></td>
+                    <td>ɰ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>ʔ̞</td>
+                </tr>
+                <tr class="zgorajrob">
+                    <th colspan="2">sičniški zlitnik</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td class="polna">t͡s</td>
+                    <td class="polnaManj">dz</td>
+                    <td class="polna">t̠ʃ</td>
+                    <td class="polnaManj">d̠ʒ</td>
+                    <td>ʈʂ</td>
+                    <td>ɖʐ</td>
+                    <td>tɕ</td>
+                    <td>dʑ</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">nesičniški zlitnik</th>
+                    <td>pɸ</td>
+                    <td>bβ</td>
+                    <td class="polna">p̪f</td>
+                    <td>b̪v</td>
+                    <td></td>
+                    <td></td>
+                    <td>t̪θ</td>
+                    <td>d̪ð</td>
+                    <td>tɹ̝̊</td>
+                    <td>dɹ̝</td>
+                    <td>t̠ɹ̠̊˔</td>
+                    <td>d̠ɹ̠˔</td>
+                    <td></td>
+                    <td></td>
+                    <td>cç</td>
+                    <td>ɟʝ</td>
+                    <td>kx</td>
+                    <td>ɡɣ</td>
+                    <td>qχ</td>
+                    <td>ɢʁ</td>
+                    <td></td>
+                    <td>ʡʢ</td>
+                    <td>ʔh</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th colspan="2">obstranski zlitnik</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>tɬ</td>
+                    <td>dɮ</td>
+                    <td></td>
+                    <td></td>
+                    <td>ʈɭ̊˔</td>
+                    <td>ɖɭ˔</td>
+                    <td>cʎ̝̊</td>
+                    <td>ɟʎ̝</td>
+                    <td>kʟ̝̊</td>
+                    <td>ɡʟ̝</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="stolpci sredina">
+            <table class="sredinsko prvaLevo">
+                <thead>
+                    <tr>
+                        <th style="text-align: right; font-weight: normal">višina \ globina</th>
+                        <th>zadnji</th>
+                        <th>sredinski</th>
+                        <th>sprednji</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>visok/ozek</td>
+                        <td><table class="osnovna brez">
+                            <td class="pol polna">u</td>
+                            <td class="pol">ɯ</td>
+                        </table></td>
+                        <td><table class="osnovna brez">
+                            <td class="pol">ʉ</td>
+                            <td class="pol">ɨ</td>
+                        </table></td>
+                        <td><table class="osnovna brez">
+                            <td class="pol polna">y</td>
+                            <td class="pol polna">i</td>
+                        </table></td>
+                    </tr>
+                    <tr>
+                        <td>zelo ozek sredinski</td>
+                        <td><table class="osnovna brez">
+                            <td class="pol polna">ʊ</td>
+                            <td class="pol"></td>
+                        </table></td>
+                        <td>ʊ̈</td>
+                        <td><table class="osnovna brez">
+                            <td class="pol polna">ʏ</td>
+                            <td class="pol polna">ɪ</td>
+                        </table></td>
+                    </tr>
+                    <tr>
+                        <td>ozek sredinski</td>
+                        <td><table class="osnovna brez">
+                            <td class="pol polna">o</td>
+                            <td class="pol">ɤ</td>
+                        </table></td>
+                        <td><table class="osnovna brez">
+                            <td class="pol">ɵ</td>
+                            <td class="pol polnaManj">ɘ</td>
+                        </table></td>
+                        <td><table class="osnovna brez">
+                            <td class="pol polna">ø</td>
+                            <td class="pol polna">e</td>
+                        </table></td>
+                    </tr>
+                    <tr>
+                        <td>nevtralni sredinski</td>
+                        <td><table class="osnovna brez">
+                            <td class="pol">o̞</td>
+                            <td class="pol">ɤ̞</td>
+                        </table></td>
+                        <td class="polnaManj">ə</td>
+                        <td><table class="osnovna brez">
+                            <td class="pol">ø̞</td>
+                            <td class="pol">e̞</td>
+                        </table></td>
+                    </tr>
+                    <tr>
+                        <td>široki sredinski</td>
+                        <td><table class="osnovna brez">
+                            <td class="pol polna">ɔ</td>
+                            <td class="pol">ʌ</td>
+                        </table></td>
+                        <td><table class="osnovna brez">
+                            <td class="pol">ɞ</td>
+                            <td class="pol">ɜ</td>
+                        </table></td>
+                        <td><table class="osnovna brez">
+                            <td class="pol polna">œ</td>
+                            <td class="pol polna">ɛ</td>
+                        </table></td>
+                    </tr>
+                    <tr>
+                        <td>zelo široki sredinski</td>
+                        <td><table class="osnovna brez">
+                            <td class="pol">ɒ̝</td>
+                            <td class="pol">ɑ̝</td>
+                        </table></td>
+                        <td class="polnaManj">ɐ</td>
+                        <td><table class="osnovna brez">
+                            <td class="pol">œ̞̈</td>
+                            <td class="pol">æ</td>
+                        </table></td>
+                    </tr>
+                    <tr>
+                        <td>nizki</td>
+                        <td><table class="osnovna brez">
+                            <td class="pol">ɒ</td>
+                            <td class="pol">ɑ</td>
+                        </table></td>
+                        <td><table class="osnovna brez">
+                            <td class="pol">ɒ̈</td>
+                            <td class="pol polnaManj">ä</td>
+                        </table></td>
+                        <td><table class="osnovna brez">
+                            <td class="pol">ɶ</td>
+                            <td class="pol polna">a</td>
+                        </table></td>
+                    </tr>
+                </tbody>
+            </table>
+            <img class="obrnjena" width="300px"
+                src="./images/samoglasniški_trapez_severne_standardne_nemščineZ.svg"
+                alt="Samoglasniški trapez">
+        </div>
+        <div class="vsebina">
+            <h2 id="Pravorečje">Pravorečje</h2>
+            <p>Opomba: pravila za izgovorjavo črk na začetku in koncu besede veljajo tudi, če so te besede združene v sestavljankah. Za pravilen izgovor je torej potrebno vedeti, ali je beseda sestavljenka.
+            </p>
+                <table class="zgornja sredinsko zadnjaPrimer">
+                    <tr>
+                        <th>črka</th>
+                        <th>izgovorjava</th>
+                        <th>primer v besedi</th>
+                    </tr>
+                    <tr>
+                        <td>⟨a⟩</td>
+                        <td>[a]<br>[aː]</td>
+                        <td>Wasser<br>Bahn</td>
+                    </tr>
+                    <tr>
+                        <td>⟨ä⟩</td>
+                        <td>[ɛ]<br>[ɛː] [eː]</td>
+                        <td>Männer<br>Regelmäßig</td>
+                    </tr>
+                    <tr>
+                        <td>b</td>
+                        <td>[b] [b̥]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>c</td>
+                        <td>[k]<br>	[ts]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>d</td>
+                        <td>[d] [d̥]<br>[t]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨e⟩</td>
+                        <td>[ɛ]<br>[ə]<br>[ɐ] [ɛɐ̯]<br>[e]<br>[eː]</td>
+                        <td>Bett<br>Ochse<br>Wasser<br><br>Meer</td>
+                    </tr>
+                    <tr>
+                        <td>f</td>
+                        <td>[f]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>g</td>
+                        <td>[ɡ] [ɡ̊]<br>[ʒ] <span class="pripis">pred ⟨e, i⟩ v fran. prevzetih besedah</span><br>[k]<br>[ç] [k]<br></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>h</td>
+                        <td>[h]<br>[]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨i⟩</td>
+                        <td>[ɪ]<br>[i]<br>[iː]</td>
+                        <td>Mittel<br><br>wir</td>
+                    </tr>
+                    <tr>
+                        <td>j</td>
+                        <td>[j]<br>[ʒ] <span class="pripis">v fran. prevzetih besedah</span></td>
+                        <td><br><b>J</b>ournalist</td>
+                    </tr>
+                    <tr>
+                        <td>k</td>
+                        <td>[k]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>l</td>
+                        <td>[l]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>m</td>
+                        <td>[m]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>n</td>
+                        <td>[n]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨o⟩</td>
+                        <td>[ɔ]<br>[o]<br>[oː]</td>
+                        <td>kommen<br><br>Sohn</td>
+                    </tr>
+                    <tr>
+                        <td>⟨ö⟩</td>
+                        <td>[œ]<br>[ø]<br>[øː]</td>
+                        <td>Göttin<br><br>Österreich</td>
+                    </tr>
+                    <tr>
+                        <td>p</td>
+                        <td>[p]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>r</td>
+                        <td>[ʁ] <span class="pripis">pred samoglasniki / drugače</span><br>[ɐ] <span class="pripis">drugače / za dolgimi sam. razen [aː]</span><br>[r ~ ɾ] <span class="pripis">avstro-bavarsko</span><br>[r] <span class="pripis">švicarsko</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>s</td>
+                        <td>[z] [z̥]<br>[s]<br>[ʃ] <span class="pripis">pred ⟨p, t⟩ na začetku besede ali zloga</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>ß</td>
+                        <td>[s]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>t</td>
+                        <td>[t]<br>[] <span class="pripis">na koncu prevzetih fran. besed</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨u⟩</td>
+                        <td>[ʊ]<br>[u]<br>[uː]</td>
+                        <td>Mutter<br><br>Kuh</td>
+                    </tr>
+                    <tr>
+                        <td>⟨ü⟩</td>
+                        <td>[ʏ]<br>[yː]</td>
+                        <td>Müller<br>Über</td>
+                    </tr>
+                    <tr>
+                        <td>v</td>
+                        <td>[f]<br>[v] <span class="pripis">v izposojenkah na koncu besede</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>w</td>
+                        <td>[v]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td>[ks]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨y⟩</td>
+                        <td>[ʏ]<br>[y]<br>[yː]<br>[j] <span class="pripis">v nekaterih prevzetih besedah</span></td>
+                        <td>Dystrophie<br><br>Psychisch<br><b>Y</b>eti</td>
+                    </tr>
+                    <tr>
+                        <td>z</td>
+                        <td>[ts]</td>
+                        <td><b>Z</b>itrone</td>
+                    </tr>
+                    <tr>
+                        <td>ž</td>
+                        <td>[ʒ]<br>[ʃ]</td>
+                        <td><b>ž</b>ito<br>bele<b>ž</b>ka</td>
+                    </tr>
+                </tbody>
+            </table>
+                <table class="capital">
+                    <tr>
+                        <th>zapis sklopa</th>
+                        <th>izgovorjava sklopa</th>
+                        <th>primeri besed</th>
+                    </tr>
+                    <tr>
+                        <td>⟨ch⟩</td>
+                        <td>[x]<br>[ç]<br>[ç] [k]<br>[tʃ], [ʃ]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨chs⟩</td>
+                        <td>[ks]<br>[çs] [xs]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨ck⟩</td>
+                        <td>[k] <span class="pripis">sledi kratkih sam.</span></td>
+                        <td><i>ba<b>ck</b>en, di<b>ck</b></i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨dsch⟩</td>
+                        <td>[dʒ] [tʃ]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨dt⟩</td>
+                        <td>[t]</td>
+                        <td>Stadt</td>
+                    </tr>
+                    <tr>
+                        <td>⟨ee⟩</td>
+                        <td>/ē/ [eː]</td>
+                        <td><i>Erdb<b>ee</b>re</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨ei⟩</td>
+                        <td>/aj/ [aɪ]</td>
+                        <td><i><b>E</b>is, m<b>ei</b>n</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨eu⟩ / ⟨äu⟩</td>
+                        <td>/oj/ [ɔɪ]</td>
+                        <td><i><b>Eu</b>ropa, Geb<b>äu</b>de</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨h⟩-<br>-⟨h⟩- / -⟨h⟩</td>
+                        <td>/h/ [h]<br>// []</td>
+                        <td><i><b>H</b>aus, <b>h</b>ier, <b>H</b>offnung; <b>H</b>och<b>h</b>aus, Wolfs<b>h</b>unger<br>ge<b>h</b>en, Ra<b>h</b>men, na<b>h</b></i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨ie⟩</td>
+                        <td>/ī/ [iː]</td>
+                        <td><i>L<b>ie</b>be, D<b>ie</b>b</i></td>
+                    </tr>
+                    <tr>
+                        <td>-⟨ig⟩</td>
+                        <td>/ih/ [ɪç͂]</td>
+                        <td><i>lust<b>ig</b>, achtz<b>ig</b></i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨ng⟩</td>
+                        <td>[ŋ]<br>[nɡ] [nɡ̊]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨nk⟩</td>
+                        <td>[ŋk]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨pf⟩</td>
+                        <td>[pf]</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨ph⟩</td>
+                        <td>[f] <span class="pripis">v besedah starogrškega izvora</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨qu⟩</td>
+                        <td>[kv] [kw])</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨rh⟩</td>
+                        <td><span class="pripis">enako, kakor ⟨r⟩; v besedah starogrškega izvora in nekaterih lastnih imenih</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨s⟩-<br>-⟨s⟩<br>-⟨s⟩-</td>
+                        <td>/z/ [z]<br>/s/ [s]<br>/z/ ali /s/ [z]</td>
+                        <td><i><b>S</b>onne, <b>s</b>icher<br>Mau<b>s</b>, Hau<b>s</b><br>Wolf<b>s</b>hunger (/s/), Rei<b>s</b>en (/z/)</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨sch⟩</td>
+                        <td>[ʃ]<br>[sç]</td>
+                        <td><i><b>Sch</b>nee<br>Mäuschen</td>
+                    </tr>
+                    <tr>
+                        <td>⟨ss⟩</td>
+                        <td>[s]</td>
+                        <td><i>E<b>ss</b>en, Wi<b>ss</b>en</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨sp⟩-</td>
+                        <td>/šp/ [ʃp]</td>
+                        <td><i><b>Sp</b>ort</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨st⟩-</td>
+                        <td>/št/ [ʃt]</td>
+                        <td><i><b>St</b>udent</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨th⟩</td>
+                        <td>[t] <span class="pripis">v besedah starogrškega izvora in nekaterih lastnih imenih</span></td>
+                        <td><i>Empa<b>th</b>ie, sympa<b>th</b>isch</i></td>
+                    </tr>
+                    <tr>
+                        <td>-⟨tien⟩</td>
+                        <td>/cien/ [tsiən]</td>
+                        <td><i>Kroa<b>tien</b></i></td>
+                    </tr>
+                    <tr>
+                        <td>-⟨tion⟩</td>
+                        <td>/cion/ [tsjoːn]</td>
+                        <td><i>Na<b>tion</b></i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨tsch⟩</td>
+                        <td>[tʃ]</td>
+                        <td><i>Deu<b>tsch</b>, <b>Tsch</b>üss</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨v⟩-</td>
+                        <td>/f/ [f]</td>
+                        <td><i><b>V</b>ater, <b>v</b>iel</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨w⟩-</td>
+                        <td>/v/ [v]</td>
+                        <td><i><b>W</b>asser, <b>w</b>ieder</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨y⟩</td>
+                        <td>zaokrožen /u/ (kot <i>ü</i>) [ʏ]<br>ali /j/ [j]</td>
+                        <td><i>s<b>y</b>mpathisch (/ü/),<br><b>Y</b>oga (/j/)</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨z⟩-</td>
+                        <td>/c/ [ts]</td>
+                        <td><i><b>Z</b>itrone, Her<b></b>z</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨zsch⟩</td>
+                        <td>[tʃ] <span class="pripis">v nekaterih lastnih imenih</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>⟨ä⟩</td>
+                        <td>/e/ [ɛ]</td>
+                        <td><i>M<b>ä</b>dchen, B<b>ä</b>cker</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨ö⟩</td>
+                        <td>zaokrožen /e/ [ɶ]</td>
+                        <td><i>K<b>ö</b>ln, k<b>ö</b>nnen</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨ü⟩</td>
+                        <td>zaokrožen /i/ [ʏ]</td>
+                        <td><i>M<b>ü</b>ller, M<b>ü</b>nchen</i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨ß⟩</td>
+                        <td>/s/ [s]</td>
+                        <td><i>Stra<b>ß</b>e, schlie<b>ß</b>en</i></td>
+                    </tr>
+                    <tr>
+                        <td>-⟨er⟩</td>
+                        <td>/ə/ [ɐ]</td>
+                        <td><i>Vat<b>er</b>, Hung<b>er</b></i></td>
+                    </tr>
+                    <tr>
+                        <td>⟨ng⟩</td>
+                        <td>/ŋ/ [ŋ]</td>
+                        <td><i>Hu<b>ng</b>er</i></td>
+                    </tr>
+                </tbody>
+            </table>
             <h2 id="Oblikoslovje">Oblikoslovje</h2>
             <h3 id="Besedne vrste">Besedne vrste</h3>
-            <h5 id="Členi in končnice">Členi (Artikels) in končnice/sklanjatve</h5>
+            <h5 id="Členi in končnice">Členi (<i>Artikels</i>) in končnice/sklanjatve</h5>
             <ul class="s">
-                <li>Bestimmter Artikel (določni člen) šibka (/določna) pridevniška sklanjatev</li>
-                <li>Unbestimmter Artikel (nedoločni člen) / Negativartikel (negativni člen)  mešana (/nedoločna) pridevniška končnica</li>
+                <li>[določni člen (<i>Bestimmter Artikel</i>)] [šibka (/določna) pridevniška sklanjatev]</li>
+                <li>[nedoločni člen (<i>Unbestimmter Artikel</i>) / negativni člen (<i>Negativartikel</i>)] [mešana (/nedoločna) pridevniška končnica]</li>
                 <li>-samostalniška končnica</li>
             </ul>
             <table class="capital">
                     <tr>
-                        <th>sklon (Fall) \ spol,število</th>
+                        <th>sklon (<i>Fall</i>) \ spol,število</th>
                         <th colspan="2">moški ednine</th>
                         <th colspan="2">srednji ednine</th>
                         <th colspan="2">ženski ednine</th>
                         <th colspan="2">množina</th>
                     </tr>
                     <tr>
-                        <td>imenovalnik (Nominativ)</td>
-                        <td class="brezdrob">der _-e<br>ein/kein _-er</td>
-                         <td>_-ø</td>
-                        <td class="brezdrob">das _-e<br>ein/kein _-es</td>
-                         <td>_-ø</td>
-                        <td class="brezdrob">die _-e<br>eine/keine _-e</td>
-                         <td>_-ø</td>
-                        <td class="brezdrob">die _-en<br>ø/keine _-e</td>
-                         <td>_-ø</td>
+                        <td>imenovalnik (<i>Nominativ</i>)</td>
+                        <td class="brezdrob"><i>der _-e<br>ein/kein _-er</i></td>
+                         <td><i>_-ø</i></td>
+                        <td class="brezdrob"><i>das _-e<br>ein/kein _-es</i></td>
+                         <td><i>_-ø</i></td>
+                        <td class="brezdrob"><i>die _-e<br>eine/keine _-e</i></td>
+                         <td><i>_-ø</i></td>
+                        <td class="brezdrob"><i>die _-en<br>ø/keine _-e</i></td>
+                         <td><i>_-ø</i></td>
                     </tr>
                     <tr>
-                        <td>rodilnik (Genitiv)</td>
-                        <td class="brezdrob">des _-en<br>eines/keines _-en</td>
-                         <td>_-(e)s</td>
-                        <td class="brezdrob">des _-en<br>eines/keines _-en</td>
-                         <td>_-(e)s</td>
-                        <td class="brezdrob">der _-en<br>einer/keiner _-en</td>
-                         <td>_-ø</td>
-                        <td class="brezdrob">der _-en<br>ø/keiner _-er</td>
-                         <td>_-ø</td>
+                        <td>rodilnik (<i>Genitiv</i>)</td>
+                        <td class="brezdrob"><i>des _-en<br>eines/keines _-en</i></td>
+                         <td><i>_-(e)s</i></td>
+                        <td class="brezdrob"><i>des _-en<br>eines/keines _-en</i></td>
+                         <td><i>_-(e)s</i></td>
+                        <td class="brezdrob"><i>der _-en<br>einer/keiner _-en</i></td>
+                         <td><i>_-ø</i></td>
+                        <td class="brezdrob"><i>der _-en<br>ø/keiner _-er</i></td>
+                         <td><i>_-ø</i></td>
                     </tr>
                     <tr>
-                        <td>dajalnik (Dativ)</td>
-                        <td class="brezdrob">dem _-en<br>einem/keinem _-en</td>
-                         <td>_-ø</td>
-                        <td class="brezdrob">dem _-en<br>einem/keinem _-en</td>
-                         <td>_-ø</td>
-                        <td class="brezdrob">der _-en<br>einer/keiner _-en</td>
-                         <td>_-ø</td>
-                        <td class="brezdrob">den _-en<br>ø/keinen _-en</td>
-                         <td>_-n</td>
+                        <td>dajalnik (<i>Dativ</i>)</td>
+                        <td class="brezdrob"><i>dem _-en<br>einem/keinem _-en</i></td>
+                         <td><i>_-ø</i></td>
+                        <td class="brezdrob"><i>dem _-en<br>einem/keinem _-en</i></td>
+                         <td><i>_-ø</i></td>
+                        <td class="brezdrob"><i>der _-en<br>einer/keiner _-en</i></td>
+                         <td><i>_-ø</i></td>
+                        <td class="brezdrob"><i>den _-en<br>ø/keinen _-en</i></td>
+                         <td><i>_-n</i></td>
                     </tr>
                     <tr>
-                        <td>tožilnik (Akkusativ)</td>
-                        <td class="brezdrob">den _-en<br>einen/keinen _-en</td>
-                         <td>_-ø</td>
-                        <td class="brezdrob">das _-e<br>ein/kein _-es</td>
-                         <td>_-ø</td>
-                        <td class="brezdrob">die _-e<br>eine/keine _-e</td>
-                         <td>_-ø</td>
-                        <td class="brezdrob">die _-en<br>ø/keine _-e</td>
-                         <td>_-ø</td>
+                        <td>tožilnik (<i>Akkusativ</i>)</td>
+                        <td class="brezdrob"><i>den _-en<br>einen/keinen _-en</i></td>
+                         <td><i>_-ø</i></td>
+                        <td class="brezdrob"><i>das _-e<br>ein/kein _-es</i></td>
+                         <td><i>_-ø</i></td>
+                        <td class="brezdrob"><i>die _-e<br>eine/keine _-e</i></td>
+                         <td><i>_-ø</i></td>
+                        <td class="brezdrob"><i>die _-en<br>ø/keine _-e</i></td>
+                         <td><i>_-ø</i></td>
                     </tr>
                 </tbody>
             </table>
             <h4 id="Samostalniška beseda">Samostalniška beseda</h4>
-            <h5 id="Zaimki">Zaimki (Pronomen)</h5>
-            <h6 id="Osebni zaimki">Osebni zaimki (Personalpronomen)</h6>
+            <h5 id="Zaimki">Zaimki (<i>Pronomen</i>)</h5>
+            <h6 id="Osebni zaimki">Osebni zaimki (<i>Personalpronomen</i>)</h6>
             <table class="capital">
                     <tr>
-                        <th>sklon (Fall) \ os., št., sp.</th>
+                        <th>sklon (<i>Fall</i>) \ os., št., sp.</th>
                         <th>1. ed.</th>
                         <th>2. ed.</th>
                         <th>3. ed. m.</th>
@@ -151,47 +1008,47 @@
                         <th>3. mn. vik.</th>
                     </tr>
                     <tr>
-                        <td>imenovalnik (Nominativ)</td>
-                        <td>ich (jaz)</td>
-                        <td>du (ti)</td>
-                        <td>er (on)</td>
-                        <td>es (ono)</td>
-                        <td>sie (ona)</td>
-                        <td>wir (mi)</td>
-                        <td>ihr (vi)</td>
-                        <td>sie (oni)</td>
-                        <td>Sie (Vi)</td>
+                        <td>imenovalnik (<i>Nominativ</i>)</td>
+                        <td><i>ich</i> (jaz)</td>
+                        <td><i>du</i> (ti)</td>
+                        <td><i>er</i> (on)</td>
+                        <td><i>es</i> (ono)</td>
+                        <td><i>sie</i> (ona)</td>
+                        <td><i>wir</i> (mi)</td>
+                        <td><i>ihr</i> (vi)</td>
+                        <td><i>sie</i> (oni)</td>
+                        <td><i>Sie</i> (Vi)</td>
                     </tr>
                     <tr>
-                        <td>dajalnik (Dativ)</td>
-                        <td>mir (meni)</td>
-                        <td>dir (tebi)</td>
-                        <td>ihm (njemu)</td>
-                        <td>ihm (njemu)</td>
-                        <td>ihr (njej)</td>
-                        <td>uns (nam)</td>
-                        <td>euch (vam)</td>
-                        <td>ihnen (njim)</td>
-                        <td>Ihnen (Vam)</td>
+                        <td>dajalnik (<i>Dativ</i>)</td>
+                        <td><i>mir</i> (meni)</td>
+                        <td><i>dir</i> (tebi)</td>
+                        <td><i>ihm</i> (njemu)</td>
+                        <td><i>ihm</i> (njemu)</td>
+                        <td><i>ihr</i> (njej)</td>
+                        <td><i>uns</i> (nam)</td>
+                        <td><i>euch</i> (vam)</td>
+                        <td><i>ihnen</i> (njim)</td>
+                        <td><i>Ihnen</i> (Vam)</td>
                     </tr>
                     <tr>
-                        <td>tožilnik (Akkusativ)</td>
-                        <td>mich (mene)</td>
-                        <td>dich (tebe)</td>
-                        <td>ihn (njega)</td>
-                        <td>es (njega)</td>
-                        <td>sie (njo)</td>
-                        <td>uns (nas)</td>
-                        <td>euch (vas)</td>
-                        <td>sie (njih)</td>
-                        <td>Sie (Vas)</td>
+                        <td>tožilnik (<i>Akkusativ</i>)</td>
+                        <td><i>mich</i> (mene)</td>
+                        <td><i>dich</i> (tebe)</td>
+                        <td><i>ihn</i> (njega)</td>
+                        <td><i>es</i> (njega)</td>
+                        <td><i>sie</i> (njo)</td>
+                        <td><i>uns</i> (nas)</td>
+                        <td><i>euch</i> (vas)</td>
+                        <td><i>sie</i> (njih)</td>
+                        <td><i>Sie</i> (Vas)</td>
                     </tr>
                 </tbody>
             </table>
-            <h6 id="Povratni osebni zaimki">Povratni osebni zaimki (Reflexivpronomen)</h6>
+            <h6 id="Povratni osebni zaimki">Povratni osebni zaimki (<i>Reflexivpronomen</i>)</h6>
             <table class="capital">
                     <tr>
-                        <th>sklon (Fall) \ os., št.</th>
+                        <th>sklon (<i>Fall</i>) \ os., št.</th>
                         <th>1. ed.</th>
                         <th>2. ed.</th>
                         <th>3. ed.</th>
@@ -200,26 +1057,26 @@
                         <th>3. mn.</th>
                     </tr>
                     <tr>
-                        <td>dajalnik (Dativ)</td>
-                        <td>mir (sebi/si)</td>
-                        <td>dir (sebi/si)</td>
-                        <td>sich (sebi/si)</td>
-                        <td>uns (sebi/si)</td>
-                        <td>euch (sebi/si)</td>
-                        <td>sich (sebi/si)</td>
+                        <td>dajalnik (<i>Dativ</i>)</td>
+                        <td><i>mir</i> (sebi/si)</td>
+                        <td><i>dir</i> (sebi/si)</td>
+                        <td><i>sich</i> (sebi/si)</td>
+                        <td><i>uns</i> (sebi/si)</td>
+                        <td><i>euch</i> (sebi/si)</td>
+                        <td><i>sich</i> (sebi/si)</td>
                     </tr>
                     <tr>
-                        <td>tožilnik (Akkusativ)</td>
-                        <td>mich (sebe/se)</td>
-                        <td>dich (sebe/se)</td>
-                        <td>sich (sebe/se)</td>
-                        <td>uns (sebe/se)</td>
-                        <td>euch (sebe/se)</td>
-                        <td>sich (sebe/se)</td>
+                        <td>tožilnik (<i>Akkusativ</i>)</td>
+                        <td><i>mich</i> (sebe/se)</td>
+                        <td><i>dich</i> (sebe/se)</td>
+                        <td><i>sich</i> (sebe/se)</td>
+                        <td><i>uns</i> (sebe/se)</td>
+                        <td><i>euch</i> (sebe/se)</td>
+                        <td><i>sich</i> (sebe/se)</td>
                     </tr>
                 </tbody>
             </table>
-            <h6 id="Svojilni zaimki">Svojilni zaimki (Possessivpronomen)</h6>
+            <h6 id="Svojilni zaimki">Svojilni zaimki (<i>Possessivpronomen</i>)</h6>
             <table class="capital">
                     <tr>
                         <th>osebni zaimek \ sp., št.</th>
@@ -229,219 +1086,70 @@
                         <th>mn.</th>
                     </tr>
                     <tr>
-                        <td><span style="font-weight:normal">1. os. ed.,</span> ich (jaz)</td>
-                        <td>mein (moj)</td>
-                        <td>mein (moje)</td>
-                        <td>meine (moja)</td>
-                        <td>meine (moji)</td>
+                        <td><span style="font-weight:normal">1. os. ed.,</span> <i>ich</i> (jaz)</td>
+                        <td><i>mein</i> (moj)</td>
+                        <td><i>mein</i> (moje)</td>
+                        <td><i>meine</i> (moja)</td>
+                        <td><i>meine</i> (moji)</td>
                     </tr>
                     <tr>
-                        <td><span style="font-weight:normal">2. os. ed.,</span> du (ti)</td>
-                        <td>dein (tvoj)</td>
-                        <td>dein (tvoje)</td>
-                        <td>deine (tvoja)</td>
-                        <td>deine (tvoji)</td>
+                        <td><span style="font-weight:normal">2. os. ed.,</span> <i>du</i> (ti)</td>
+                        <td><i>dein</i> (tvoj)</td>
+                        <td><i>dein</i> (tvoje)</td>
+                        <td><i>deine</i> (tvoja)</td>
+                        <td><i>deine</i> (tvoji)</td>
                     </tr>
                     <tr>
-                        <td><span style="font-weight:normal">3. os. ed.,</span> er/es/man (on/ono)</td>
-                        <td>sein (njegov)</td>
-                        <td>sein (njegovo)</td>
-                        <td>seine (njegova)</td>
-                        <td>seine (njegovi)</td>
+                        <td><i><span style="font-weight:normal">3. os. ed.,</span> <i>er/es/man (on/ono)</td>
+                        <td><i>sein (njegov)</td>
+                        <td><i>sein (njegovo)</td>
+                        <td><i>seine (njegova)</td>
+                        <td><i>seine (njegovi)</td>
                     </tr>
                     <tr>
-                        <td><span style="font-weight:normal">3. ž. os. ed.,</span> sie (ona)</td>
-                        <td>ihr (njen)</td>
-                        <td>ihr (njeno)</td>
-                        <td>ihre (njena)</td>
-                        <td>ihre (njeni)</td>
+                        <td><span style="font-weight:normal">3. ž. os. ed.,</span> <i>sie</i> (ona)</td>
+                        <td><i>ihr</i> (njen)</td>
+                        <td><i>ihr</i> (njeno)</td>
+                        <td><i>ihre</i> (njena)</td>
+                        <td><i>ihre</i> (njeni)</td>
                     </tr>
                     <tr>
-                        <td><span style="font-weight:normal">1. os. mn.,</span> wir (mi)</td>
-                        <td>unser (naš)</td>
-                        <td>unser (naše)</td>
-                        <td>unsere (naša)</td>
-                        <td>unsere (naši)</td>
+                        <td><span style="font-weight:normal">1. os. mn.,</span> <i>wir</i> (mi)</td>
+                        <td><i>unser</i> (naš)</td>
+                        <td><i>unser</i> (naše)</td>
+                        <td><i>unsere</i> (naša)</td>
+                        <td><i>unsere</i> (naši)</td>
                     </tr>
                     <tr>
-                        <td><span style="font-weight:normal">2. os. mn.,</span> ihr (vi)</td>
-                        <td>euer (vaš)</td>
-                        <td>euer (vaše)</td>
-                        <td>eure (vaša)</td>
-                        <td>eure (vaši)</td>
+                        <td><span style="font-weight:normal">2. os. mn.,</span> <i>ihr</i> (vi)</td>
+                        <td><i>euer</i> (vaš)</td>
+                        <td><i>euer</i> (vaše)</td>
+                        <td><i>eure</i> (vaša)</td>
+                        <td><i>eure</i> (vaši)</td>
                     </tr>
                     <tr>
-                        <td><span style="font-weight:normal">3. os. mn.,</span> sie (oni)</td>
-                        <td>ihr (njihov)</td>
-                        <td>ihr (njihovo)</td>
-                        <td>ihre (njihova)</td>
-                        <td>ihre (njihovi)</td>
+                        <td><span style="font-weight:normal">3. os. mn.,</span> <i>sie</i> (oni)</td>
+                        <td><i>ihr</i> (njihov)</td>
+                        <td><i>ihr</i> (njihovo)</td>
+                        <td><i>ihre</i> (njihova)</td>
+                        <td><i>ihre</i> (njihovi)</td>
                     </tr>
                     <tr>
-                        <td><span style="font-weight:normal">2. os. vik.,</span> Sie (Vi)</td>
-                        <td>Ihr (Vaš)</td>
-                        <td>Ihr (Vaše)</td>
-                        <td>Ihre (Vaša)</td>
-                        <td>Ihre (Vaši)</td>
+                        <td><span style="font-weight:normal">2. os. vik.,</span> <i>Sie</i> (Vi)</td>
+                        <td><i>Ihr</i> (Vaš)</td>
+                        <td><i>Ihr</i> (Vaše)</td>
+                        <td><i>Ihre</i> (Vaša)</td>
+                        <td><i>Ihre</i> (Vaši)</td>
                     </tr>
                 </tbody>
             </table>
-            <h2 id="Pravorečje">Pravorečje</h2>
-            <p>Opomba: pravila za izgovorjavo črk na začetku in koncu besede veljajo tudi, če so te besede združene v sestavljankah. Za izgovor je torej vedeti, če je beseda sestavljenka.
-            </p>
-                <table class="capital">
-                    <tr>
-                        <th>zapis sklopa</th>
-                        <th>izgovorjava sklopa</th>
-                        <th>primeri besed</th>
-                    </tr>
-                    <tr>
-                        <td>-ch-</td>
-                        <td>/h/ [ç͂] ali [x]</td>
-                        <td><i>i<b>ch</b>, Da<b>ch</b></i></td>
-                    </tr>
-                    <tr>
-                        <td>-ck-</td>
-                        <td>/k/ [k]</td>
-                        <td><i>ba<b>ck</b>en, di<b>ck</b></i></td>
-                    </tr>
-                    <tr>
-                        <td>-ee-</td>
-                        <td>/ē/ [eː]</td>
-                        <td><i>Erdb<b>ee</b>re</i></td>
-                    </tr>
-                    <tr>
-                        <td>ei</td>
-                        <td>/aj/ [aɪ]</td>
-                        <td><i><b>E</b>is, m<b>ei</b>n</i></td>
-                    </tr>
-                    <tr>
-                        <td>-eu- / -äu-</td>
-                        <td>/oj/ [ɔɪ]</td>
-                        <td><i><b>Eu</b>ropa, Geb<b>äu</b>de</i></td>
-                    </tr>
-                    <tr>
-                        <td>h-<br>-h- / -h</td>
-                        <td>/h/ [h]<br>// []</td>
-                        <td><i><b>H</b>aus, <b>h</b>ier, <b>H</b>offnung; <b>H</b>och<b>h</b>aus, Wolfs<b>h</b>unger<br>ge<b>h</b>en, Ra<b>h</b>men, na<b>h</b></i></td>
-                    </tr>
-                    <tr>
-                        <td>-ie-</td>
-                        <td>/ī/ [iː]</td>
-                        <td><i>L<b>ie</b>be, D<b>ie</b>b</i></td>
-                    </tr>
-                    <tr>
-                        <td>-ig</td>
-                        <td>/ih/ [ɪç͂]</td>
-                        <td><i>lust<b>ig</b>, achtz<b>ig</b></i></td>
-                    </tr>
-                    <tr>
-                        <td>-ph-</td>
-                        <td>/f/ [f]</td>
-                        <td><i><b>Ph</b>iloso<b>ph</b>ie, <b>Ph</b>ysik</i></td>
-                    </tr>
-                    <tr>
-                        <td>-qu-</td>
-                        <td>/kv/ [kv]</td>
-                        <td><i><b>Qu</b>elle, be<b>qu</b>em</i></td>
-                    </tr>
-                    <tr>
-                        <td>s-<br>-s<br>-s-</td>
-                        <td>/z/ [z]<br>/s/ [s]<br>/z/ ali /s/ [z]</td>
-                        <td><i><b>S</b>onne, <b>s</b>icher<br>Mau<b>s</b>, Hau<b>s</b><br>Wolf<b>s</b>hunger (/s/), Rei<b>s</b>en (/z/)</i></td>
-                    </tr>
-                    <tr>
-                        <td>-ss-</td>
-                        <td>/s/ [s]</td>
-                        <td><i>E<b>ss</b>en, Wi<b>ss</b>en</i></td>
-                    </tr>
-                    <tr>
-                        <td>sp-</td>
-                        <td>/šp/ [ʃp]</td>
-                        <td><i><b>Sp</b>ort</i></td>
-                    </tr>
-                    <tr>
-                        <td>st-</td>
-                        <td>/št/ [ʃt]</td>
-                        <td><i><b>St</b>udent</i></td>
-                    </tr>
-                    <tr>
-                        <td>-sch-</td>
-                        <td>/š/ [ʃ]</td>
-                        <td><i><b>Sch</b>nee, <b>sch</b>reiben</i></td>
-                    </tr>
-                    <tr>
-                        <td>-th-</td>
-                        <td>/t/ [t]</td>
-                        <td><i>Empa<b>th</b>ie, sympa<b>th</b>isch</i></td>
-                    </tr>
-                    <tr>
-                        <td>-tien</td>
-                        <td>/cien/ [tsiən]</td>
-                        <td><i>Kroa<b>tien</b></i></td>
-                    </tr>
-                    <tr>
-                        <td>-tion</td>
-                        <td>/cion/ [tsjoːn]</td>
-                        <td><i>Na<b>tion</b></i></td>
-                    </tr>
-                    <tr>
-                        <td>-tsch-</td>
-                        <td>/č/ [tʃ]</td>
-                        <td><i>Deu<b>tsch</b>, <b>Tsch</b>üss</i></td>
-                    </tr>
-                    <tr>
-                        <td>-v-</td>
-                        <td>/f/ [f]</td>
-                        <td><i><b>V</b>ater, <b>v</b>iel</i></td>
-                    </tr>
-                    <tr>
-                        <td>-w-</td>
-                        <td>/v/ [v]</td>
-                        <td><i><b>W</b>asser, <b>w</b>ieder</i></td>
-                    </tr>
-                    <tr>
-                        <td>-y-</td>
-                        <td>zaokrožen /u/ (kot <i>ü</i>) [ʏ]<br>ali /j/ [j]</td>
-                        <td><i>s<b>y</b>mpathisch (/ü/),<br><b>Y</b>oga (/j/)</i></td>
-                    </tr>
-                    <tr>
-                        <td>-z-</td>
-                        <td>/c/ [ts]</td>
-                        <td><i><b>Z</b>itrone, Her<b></b>z</i></td>
-                    </tr>
-                    <tr>
-                        <td>-ä-</td>
-                        <td>/e/ [ɛ]</td>
-                        <td><i>M<b>ä</b>dchen, B<b>ä</b>cker</i></td>
-                    </tr>
-                    <tr>
-                        <td>-ö-</td>
-                        <td>zaokrožen /e/ [ɶ]</td>
-                        <td><i>K<b>ö</b>ln, k<b>ö</b>nnen</i></td>
-                    </tr>
-                    <tr>
-                        <td>-ü-</td>
-                        <td>zaokrožen /i/ [ʏ]</td>
-                        <td><i>M<b>ü</b>ller, M<b>ü</b>nchen</i></td>
-                    </tr>
-                    <tr>
-                        <td>ß</td>
-                        <td>/s/ [s]</td>
-                        <td><i>Stra<b>ß</b>e, schlie<b>ß</b>en</i></td>
-                    </tr>
-                    <tr>
-                        <td>-er</td>
-                        <td>/ə/ [ɐ]</td>
-                        <td><i>Vat<b>er</b>, Hung<b>er</b></i></td>
-                    </tr>
-                    <tr>
-                        <td>-ng-</td>
-                        <td>/ŋ/ [ŋ]</td>
-                        <td><i>Hung<b>er</b></i></td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2>Zunanje povezave in viri</h2>
+            <ul class="s">
+                <li><a href="https://en.wikipedia.org/wiki/Standard_German_phonology">Wikipedia - Standard German phonology</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/German_orthography">Wikipedia - German orthography</a></li>
+            </ul>
         </div>
+        <footer>Zadnja posodobitev te strani: <time datetime="2024-06-26">26. 6. 2024</time>
+        </footer>
     </body>
 </html>

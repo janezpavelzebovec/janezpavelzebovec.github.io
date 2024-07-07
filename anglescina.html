@@ -1,13 +1,35 @@
 <!doctype html>
-<html>
+<html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Angleščina</title>
-          <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" vsebina="IE=edge" />
+        <meta name="viewport" vsebina="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
-        <link rel="icon" type="image/svg+xml" href="JPZ.svg">
+        <script src="scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
+
+        <title>Angleščina</title>
+        <meta name="description" vsebina="Angleščina - zahodnogermanski jezik."  /> <!--opis spletnega mesta-->
+        <meta name="keywords" vsebina="angleščina" />
+        <meta name="copyright" vsebina="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name vsebina="Angleščina"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor vsebina=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color vsebina=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" vsebina="Angleščina"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" vsebina="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" vsebina="Angleščina - zahodnogermanski jezik." ><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" vsebina="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" vsebina="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" vsebina="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" vsebina="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" vsebina="Angleščina - zahodnogermanski jezik." ><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" vsebina="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
 
     <body>
@@ -16,21 +38,519 @@
         </label>
         <aside class="sidebar">
           <nav>
-            <div><a href="index.html">Domov</a></div></div>
-            <div><a href="knjiznica.html">Knjižnica</a></div>
-            <div><a href="ura.html">Ura</a></div></div>
+            <div><a href="./">Domov</a></div></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
           </nav>
         </aside>
 
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
         <div class="content">
-            <h1>English (angleščina)</h1>
+            <h1>Angleščina - <i>English</i></h1>
             <h2>Glasoslovje</h2>
+        </div>
+        <table class="enaPoDve sredinsko prvaLevo">
+            <thead>
+                <tr>
+                    <th colspan="2" style="text-align: right; font-weight: normal">kraj →</th>
+                    <th colspan="5">ustnični</th>
+                    <th colspan="10">robni (<i class="zamrznjeno">koronalni</i>)</th>
+                    <th colspan="5">nebni (<i class="zamrznjeno">dorzalni</i>)</th>
+                    <th colspan="4">grlni (<i class="zamrznjeno">laringalni</i>)</th>
+                </tr>
+                <tr>
+                    <th colspan="2" style="text-align: right; font-weight: normal">način ↓</th>
+                    <th colspan="2">dvoustnični</th>
+                    <th colspan="2">zobnoustnični</th>
+                    <th colspan="2">ustničnojezični</th>
+                    <th colspan="2">zobni</th>
+                    <th colspan="2">dlesnični</th>
+                    <th colspan="2">zadlesnični</th>
+                    <th colspan="2">retrofleksni</th>
+                    <th colspan="2">trdonebni</th>
+                    <th colspan="2">mehkonebni</th>
+                    <th colspan="2">uvularni</th>
+                    <th colspan="2">grlni</th>
+                    <th colspan="2">glasilčni</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="2">zapornik</th>
+                    <td class="polna">p</td>
+                    <td class="polna">b</td>
+                    <td>p̪</td>
+                    <td>b̪</td>
+                    <td>t̼</td>
+                    <td>d̼</td>
+                    <td class="polna"></td>
+                    <td class="polna"></td>
+                    <td class="polna">t</td>
+                    <td class="polna">d</td>
+                    <td></td>
+                    <td></td>
+                    <td>ʈ</td>
+                    <td>ɖ</td>
+                    <td>c</td>
+                    <td>ɟ</td>
+                    <td class="polna">k</td>
+                    <td class="polna">ɡ</td>
+                    <td>q</td>
+                    <td>ɢ</td>
+                    <td>ʡ</td>
+                    <td class="mrtva"></td>
+                    <td class="polnaManj">ʔ</td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">tresavec</th>
+                    <td>ʙ̥</td>
+                    <td>ʙ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>r̥</td>
+                    <td class="polnaManj">r</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɽ̊r̥</td>
+                    <td>ɽr</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>ʀ̥</td>
+                    <td>ʀ</td>
+                    <td>ʜ</td>
+                    <td>ʢ</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">sičniški pripornik</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td class="polna">s</td>
+                    <td class="polna">z</td>
+                    <td class="polna">ʃ</td>
+                    <td class="polna">ʒ</td>
+                    <td>ʂ</td>
+                    <td>ʐ</td>
+                    <td>ɕ</td>
+                    <td>ʑ</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">nesičniški pripornik</th>
+                    <td>ɸ</td>
+                    <td>β</td>
+                    <td class="polna">f</td>
+                    <td class="polna">v</td>
+                    <td>θ̼</td>
+                    <td>ð̼</td>
+                    <td class="polna">θ</td>
+                    <td class="polna">ð</td>
+                    <td>θ̠</td>
+                    <td>ð̠</td>
+                    <td>ɹ̠̊˔</td>
+                    <td>ɹ̠˔</td>
+                    <td></td>
+                    <td>ɻ˔</td>
+                    <td class="polna">ç<br>/hj/</td>
+                    <td>ʝ</td>
+                    <td class="polna">x<br>/h/</td>
+                    <td class="polnaManj">ɣ<br>/h/</td>
+                    <td>χ</td>
+                    <td class="polnaManj">ʁ<br>/r/</td>
+                    <td>ħ</td>
+                    <td>ʕ</td>
+                    <td class="polna">h</td>
+                    <td>ɦ</td>
+                </tr>
+                <tr>
+                    <th colspan="2">nosnik</th>
+                    <td>m̥</td>
+                    <td class="polna">m</td>
+                    <td></td>
+                    <td>ɱ</td>
+                    <td></td>
+                    <td>n̼</td>
+                    <td></td>
+                    <td></td>
+                    <td>n̥</td>
+                    <td class="polna">n</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɳ̊</td>
+                    <td>ɳ</td>
+                    <td>ɲ̊</td>
+                    <td>ɲ</td>
+                    <td>ŋ̊</td>
+                    <td class="polna">ŋ</td>
+                    <td></td>
+                    <td>ɴ</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">tap/flap</th>
+                    <td></td>
+                    <td>ⱱ̟</td>
+                    <td></td>
+                    <td>ⱱ</td>
+                    <td></td>
+                    <td>ɾ̼</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɾ̥</td>
+                    <td class="polnaManj">ɾ</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɽ̊</td>
+                    <td>ɽ</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td>ɢ̆</td>
+                    <td></td>
+                    <td>ʡ̆</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">obstranski pripornik</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="polnaManj">ɬ</td>
+                    <td>ɮ</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɭ̊˔</td>
+                    <td>ɭ˔</td>
+                    <td>ʎ̝̊</td>
+                    <td>ʎ̝</td>
+                    <td>ʟ̝̊</td>
+                    <td>ʟ̝</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">obstranski drsnik</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="polna">l</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>ɭ</td>
+                    <td></td>
+                    <td>ʎ</td>
+                    <td></td>
+                    <td>ʟ</td>
+                    <td></td>
+                    <td>ʟ̠</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">obstranski tap/flap</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>ɺ̥</td>
+                    <td>ɺ</td>
+                    <td></td>
+                    <td></td>
+                    <td>ɭ̥̆</td>
+                    <td>ɭ̆</td>
+                    <td></td>
+                    <td>ʎ̆</td>
+                    <td></td>
+                    <td>ʟ̆</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">drsnik</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="polna">ʋ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="polnaManj">ɹ</td>
+                    <td></td>
+                    <td class="polna">ɹ̠<br>/r/</td>
+                    <td></td>
+                    <td class="polnaManj">ɻ</td>
+                    <td></td>
+                    <td class="polna">j</td>
+                    <td></td>
+                    <td>ɰ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>ʔ̞</td>
+                </tr>
+                <tr class="zgorajrob">
+                    <th colspan="2">sičniški zlitnik</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td class="polna">ts</td>
+                    <td class="polna">dz</td>
+                    <td class="polna">t̠ʃ</td>
+                    <td class="polna">d̠ʒ</td>
+                    <td>ʈʂ</td>
+                    <td>ɖʐ</td>
+                    <td>tɕ</td>
+                    <td>dʑ</td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">nesičniški zlitnik</th>
+                    <td>pɸ</td>
+                    <td>bβ</td>
+                    <td>p̪f</td>
+                    <td>b̪v</td>
+                    <td></td>
+                    <td></td>
+                    <td>t̪θ</td>
+                    <td>d̪ð</td>
+                    <td>tɹ̝̊</td>
+                    <td>dɹ̝</td>
+                    <td>t̠ɹ̠̊˔</td>
+                    <td>d̠ɹ̠˔</td>
+                    <td></td>
+                    <td></td>
+                    <td>cç</td>
+                    <td>ɟʝ</td>
+                    <td>kx</td>
+                    <td>ɡɣ</td>
+                    <td>qχ</td>
+                    <td>ɢʁ</td>
+                    <td></td>
+                    <td>ʡʢ</td>
+                    <td>ʔh</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th colspan="2">obstranski zlitnik</th>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>tɬ</td>
+                    <td>dɮ</td>
+                    <td></td>
+                    <td></td>
+                    <td>ʈɭ̊˔</td>
+                    <td>ɖɭ˔</td>
+                    <td>cʎ̝̊</td>
+                    <td>ɟʎ̝</td>
+                    <td>kʟ̝̊</td>
+                    <td>ɡʟ̝</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="sredinsko prvaLevo">
+            <thead>
+                <tr>
+                    <th style="text-align: right; font-weight: normal">višina \ globina</th>
+                    <th>zadnji</th>
+                    <th>sredinski</th>
+                    <th>sprednji</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>visok/ozek</td>
+                    <td><table class="osnovna brez">
+                        <td class="polna pol">u</td>
+                        <td class="pol">ɯ</td>
+                    </table></td>
+                    <td><table class="osnovna brez">
+                        <td class="polnaManj pol">ʉ</td>
+                        <td class="polnaManj pol">ɨ</td>
+                    </table></td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">y</td>
+                        <td class="polna pol">i</td>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td>zelo ozek sredinski</td>
+                    <td><table class="osnovna brez">
+                        <td class="polna pol">ʊ</td>
+                        <td></td>
+                    </table></td>
+                    <td>ʊ̈</td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">ʏ</td>
+                        <td class="polna pol">ɪ</td>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td>ozek sredinski</td>
+                    <td><table class="osnovna brez">
+                        <td class="polna pol">o</td>
+                        <td class="pol">ɤ</td>
+                    </table></td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">ɵ</td>
+                        <td class="pol">ɘ</td>
+                    </table></td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">ø</td>
+                        <td class="polna pol">e</td>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td>nevtralni sredinski</td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">o̞</td>
+                        <td class="pol">ɤ̞</td>
+                    </table></td>
+                    <td class="polna">ə</td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">ø̞</td>
+                        <td class="pol">e̞</td>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td>široki sredinski</td>
+                    <td><table class="osnovna brez">
+                        <td class="polna pol">ɔ</td>
+                        <td class="polna pol">ʌ</td>
+                    </table></td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">ɞ</td>
+                        <td class="polna pol">ɜ</td>
+                    </table></td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">œ</td>
+                        <td class="polna pol">ɛ</td>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td>zelo široki sredinski</td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">ɒ̝</td>
+                        <td class="pol">ɑ̝</td>
+                    </table></td>
+                    <td>ɐ</td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">œ̞̈</td>
+                        <td class="polna pol">æ</td>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td>nizki</td>
+                    <td><table class="osnovna brez">
+                        <td class="polna pol">ɒ</td>
+                        <td class="polna pol">ɑ</td>
+                    </table></td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">ɒ̈</td>
+                        <td class="pol">ä</td>
+                    </table></td>
+                    <td><table class="osnovna brez">
+                        <td class="pol">ɶ</td>
+                        <td class="polna pol">a</td>
+                    </table></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="vsebina">
             <hr>
             <h2>Oblikoslovje</h2>
             <h3>Besedne vrste</h3>
             <h4>Samostalniška beseda</h4>
-            <h5>Pronouns (zaimki)</h5>
-            <h6>Personal Pronouns (osebni zaimki)</h6>
+            <h5>Zaimki (<i>pronouns</i>)</h5>
+            <h6>Osebni zaimki (<i>personal pronouns</i>)</h6>
             <table class="capital">
                     <tr>
                         <th>sklon \ os., št., sp.</th>
@@ -44,9 +564,9 @@
                         <th>3. mn.</th>
                     </tr>
                     <tr>
-                        <td>nominative (imenovalnik)</td>
+                        <td>imenovalnik (<i>nominative</i>)</td>
                         <td>I (jaz)</td>
-                        <td>you ("uradna")/ <i>thou (neuradna)</i> (ti)</td>
+                        <td>you ("uradna")/ <i>thou</i> ("neuradna") (ti)</td>
                         <td>he (on)</td>
                         <td>she (ona)</td>
                         <td>it (ono)</td>
@@ -55,7 +575,7 @@
                         <td>they (oni)</td>
                     </tr>
                     <tr>
-                        <td>oblique (tožilnik)</td>
+                        <td>~ tožilnik (<i>oblique</i>)</td>
                         <td>me (mene)</td>
                         <td>you / <i>thee</i> (tebe)</td>
                         <td>him (njega)</td>
@@ -104,7 +624,7 @@
                     </tr>
                 </tbody>
             </table>
-            <h6>Verbs (glagoli)</h6>
+            <h6>Glagoli (<i>verbs</i>)</h6>
             <table class="capital">
                     <tr>
                         <th>pronoun</th>
@@ -128,58 +648,68 @@
                     </tr>
                 </tbody>
             </table>
-            <h6>Tenses (časi)</h6>
+            <h6>Časi (<i>tenses</i>)</h6>
             <table class="capital">
                     <tr>
                         <th></th>
-                        <th>past (preteklik)</th>
-                        <th>present (sedanjik)</th>
-                        <th>future (prihodnjik)</th>
+                        <th>preteklik (<i>past</i>)</th>
+                        <th>sedanjik (<i>present</i>)</th>
+                        <th>prihodnjik (<i>future</i>)</th>
                     </tr>
                     <tr>
-                        <td>simple (navadni)</td>
-                        <td><b>past simple</b> (navadni preteklik)<br>
-                            -ed/[2. nep. oblika]<br>
-                            (npr. <i>He cleaned house yesterday; I came home two days ago</i>)</td>
-                        <td><b>present simple</b> (navadni sedanjik)<br>
-                            [navadna]</td>
-                        <td><b>future simple</b> (navadni prihodnjik)<br>
-                            will/going to + [navadna]</td>
+                        <td>navadni (<i>simple</i>)</td>
+                        <td><b>navadni preteklik (<i>past simple</i>)</b><br>
+                            -ed/[2. nep. oblika]<br><br>
+                            (npr. <i>He cleaned house yesterday. I came home two days ago.</i>)</td>
+                        <td><b>navadni sedanjik (<i>present simple</i>)</b><br>
+                            [navadna]<br><br>
+                            (npr. <i>She lives in town.</i>)</td>
+                        <td><b>navadni prihodnjik (<i>future simple</i>)</b><br>
+                            will/ am/is/are going to + [navadna]<br><br>
+                            (npr. <i>It will rain. I am going to make a dinner.</i>)</td>
                     </tr>
                     <tr>
-                        <td>continuous</td>
-                        <td><b>past continuous</b><br>
+                        <td>opisni (<i>continuous</i>)</td>
+                        <td><b>opisni preteklik (<i>past continuous</i>)</b><br>
                             was/were + -ing</td>
-                        <td><b>present continuous</b><br>
+                        <td><b>opisni sedanjik (<i>present continuous</i>)</b><br>
                             am/is/are + -ing</td>
-                        <td><b>future continuous</b><br>
+                        <td><b>opisni prihodnjik (<i>future continuous</i>)</b><br>
                             will be + -ing</td>
                     </tr>
                     <tr>
-                        <td>perfect</td>
-                        <td><b>past perfect</b><br>
+                        <td>dovršni (<i>perfect</i>)</td>
+                        <td><b>predpreteklik (<i>past perfect</i>)</b><br>
                             had + -ed/[3. nep. oblika]</td>
-                        <td><b>present perfect</b><br>
-                            has/have + -ed/f3. nep. oblika]</td>
-                        <td><b>future perfect</b><br>
+                        <td><b>dovršni sedanjik (<i>present perfect</i>)</b><br>
+                            has/have + -ed/[3. nep. oblika]</td>
+                        <td><b>dovršni prihodnjik (<i>future perfect</i>)</b><br>
                             will + has/have + -ed/[3. nep. oblika]</td>
                     </tr>
                     <tr>
-                        <td>perfect continuous</b></td>
-                        <td><b>past perfect continuous</b><br>
+                        <td>opisnodovršni (<i>perfect continuous</i>)</b></td>
+                        <td><b>opisnodovršni preteklik (<i>past perfect continuous</i>)</b><br>
                             had been + -ing</td>
-                        <td><b>present perfect continuous</b><br>
+                        <td><b>opisnodovršni sedanjik (<i>present perfect continuous</i>)</b><br>
                             has/have been + -ing</td>
-                        <td><b>future perfect continuous</b><br>
+                        <td><b>opisnodovršni prihodnjik (<i>future perfect continuous</i>)</b><br>
                             will have been + -ing</td>
                     </tr>
                 </tbody>
             </table>
             <h2>Zunanje povezave in viri</h2>
             <ul class="s">
+                <li><a href="https://www.oed.com/information/understanding-entries/pronunciation/british-english-pronunciations/?tl=true">OED - British English Pronunciations</a></li>
                 <li><a href="https://www.merriam-webster.com/">Merriam Webster</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Thou">Thou (Wikipedia)</a></li>
+                <li><a href="https://sl.wikipedia.org/wiki/Angle%C5%A1%C4%8Dina">Wikipedija - Angleščina</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/British_English">Wikipedia - British English</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/English_phonology">Wikipedia - English phonology</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Great_Vowel_Shift">Wikipedia - Great Vowel Shift</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Pronunciation_of_English_/r/">Wikipedia - Pronunciation of English /r/</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Thou">Wikipedia - Thou</a></li>
             </ul>
         </div>
+        <footer>Zadnja posodobitev te strani: <time datetime="2024-06-25">25. 6. 2024</time>
+        </footer>
     </body>
 </html>

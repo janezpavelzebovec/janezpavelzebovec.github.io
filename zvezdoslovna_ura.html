@@ -1,1 +1,325 @@
-<!DOCTYPE html><html lang="sl"><meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.6.0"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-control" content="public"><script src="https://d3js.org/d3.v4.js"></script><script src="https://d3js.org/d3-geo-projection.v2.min.js"></script><title>Zvezdoslovna ura</title><meta name="description" content="Zvezdoslovna ura, ki z zveznim prikazom medsebojnega položaja Sonca, Zemlje in Lune podaja čas v letu, mesecu in dnevu, Lunino meno, Sončni vzhod in zahod in drugo."><meta name="keywords" content="zvezdoslovna ura, astronomska ura, sončni vzhod, sončni zahod, lunina mena, zvezdoslovje, zvezdoznanstvo, astronomija"><meta name="copyright" content="Janez Pavel Žebovec"><link rel="shortcut icon" type="image/png" href="images/icon.png"><link rel="icon" href="images/favicon.ico"><link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"><meta name="application-name" content="Zvezdoslovna ura (Janez Pavel Žebovec)"><meta name="apple-mobile-web-app-title" content="Zvezdoslovna ura (Janez Pavel Žebovec)"><meta name="msapplication-TileColor" content="#121212"><meta name="theme-color" content="#121212"><link rel="canonical" href="https://janezpavelzebovec.net"><meta property="og:title" content="Zvezdoslovna ura (Janez Pavel Žebovec)"><meta property="og:type" content="website"><meta property="og:image" content="images/icon.png"><meta property="og:url" content="https://www.janezpavelzebovec.net"><meta property="og:description" content="Zvezdoslovna ura, ki z zveznim prikazom medsebojnega položaja Sonca, Zemlje in Lune podaja čas v letu, mesecu in dnevu, Lunino meno, Sončni vzhod in zahod in drugo."><meta property="og:site_name" content="Zvezdoslovna ura (Janez Pavel Žebovec)"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="@JanezPavelZ"><meta name="twitter:title" content="Zvezdoslovna ura (Janez Pavel Žebovec)"><meta name="twitter:description" content="Zvezdoslovna ura, ki z zveznim prikazom medsebojnega položaja Sonca, Zemlje in Lune podaja čas v letu, mesecu in dnevu, Lunino meno, Sončni vzhod in zahod in drugo."><meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><button id="stikaloNačina" class="stikaloNačina"><svg width="100%" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"></path></svg></button> <label class="hamburger-menu"><input type="checkbox"></label><aside class="sidebar"><nav><p><a href="./">Domov</a><br><a href="./knjiznica">Knjižnica</a><br><a href="./nova_stara_slovenscina">Nova stara slovenščina</a><p><a href="./opombe_k_zvezdoslovni_uri">Opombe k uri</a><hr><p><time id="ČasKNiz" style="font-size:large">čas in datum</time> <span class="pripis">- izbrani čas</span><br><time id="ČasIzB">čas</time> <span class="pripis">- brez premika na poletni čas</span><br><time id="ČasUTCNiz">čas in datum</time> <span class="pripis">- izbrani čas v UTC</span><table><tr><td id="nadiropis1">najtemnejši del noči:<td id="nadiropis1"><span id="resultNadir1"><samp>napaka</samp></span><tr><td>konec noči, začetek zvezd. zore:<td><span id="resultNočKon"><samp>napaka</samp></span><tr><td>konec zvezd., začetek pom. zore:<td><span id="resultPomZora"><samp>napaka</samp></span><tr><td>konec pom., začetek zore:<td><span id="resultZora"><samp>napaka</samp></span><tr><td>konec zore, začetek sončnega vzhoda:<td><span id="resultSonVzh"><samp>napaka</samp></span><tr><td>konec sončnega vzhoda:<td><span id="resultSonVzhKon"><samp>napaka</samp></span><tr><td>konec fotografske <i>zlate ure</i>:<td><span id="resultZlataUraKon"><samp>napaka</samp></span><tr><td>poldne:<td><span id="resultPoldne"><samp>napaka</samp></span><tr><td>začetek fotografske <i>zlate ure</i>:<td><span id="resultZlataUra"><samp>napaka</samp></span><tr><td>začetek sončnega vzhoda:<td><span id="resultSonZahZač"><samp>napaka</samp></span><tr><td>konec sončnega vzhoda, začetek mraka:<td><span id="resultSonZah"><samp>napaka</samp></span><tr><td>konec mraka, začetek pom. mraka:<td><span id="resultMrak"><samp>napaka</samp></span><tr><td>konec pom., začetek zvezd. mraka:<td><span id="resultPomMrak"><samp>napaka</samp></span><tr><td>konec zvezd. mraka, začetek noči:<td><span id="resultNoč"><samp>napaka</samp></span><tr><td id="nadiropis2">najtemnejši del noči:<td id="nadiropis2"><span id="resultNadir2"><samp>napaka</samp></span><tr><td>višina Sonca nad obzorjem:<td><span id="resultVišinaSonca"><samp>napaka</samp></span> °<tr><td>kotni odmik (azimut) Sonca od juga:<td><span id="resultAzimutSonca"><samp>napaka</samp></span> °<tr class="zgorajrob"><td>višina Lune nad obzorjem:<td><span id="resultVišinaLune"><samp>napaka</samp></span> °<tr><td>kotni odmik (azimut) Lune od juga:<td><span id="resultAzimutLune"><samp>napaka</samp></span> °<tr><td>oddaljenost Lune:<td><span id="resultOddalLune"><samp>napaka</samp></span> km<tr><td>paralaktični kot Lune:<td><span id="resultParLune"><samp>napaka</samp></span> °<tr><td>kot Lune:<td><span id="resultKotLuneStop"><samp>napaka</samp></span> °<tr><td>mena Lune:<td><span id="resultMenaLune"><samp>napaka</samp></span><tr><td>osvetljenost Lune:<td><span id="resultOsvLune"><samp>napaka</samp></span><tr><td>vzhod Lune:<td><span id="resultVzhLune"><samp>napaka</samp></span><tr><td>zahod Lune:<td><span id="resultZahLune"><samp>napaka</samp></span></table><hr><p><label for="vnosČasa">čas:</label> <button onclick="uporabiČasT()">trenutni čas</button> /<input class="vnos" type="datetime-local" id="vnosČasa" name="vnosČasa"> <span class="pripis">(v tr. čas. pasu)</span><br><label for="vnosČasPas">časovni pas:</label> <button onclick="izberiČasPasT()">trenutni čas. pas</button> <select id="vnosČasPas" class="vnos" autocomplete="on"></select><br><label for="vnosŠirina">zemljepisna širina:</label> <input class="vnos dolgaŠtevilka" type="number" id="vnosŠirina" name="širina" max="90" min="-90" placeholder="Vnesite zemljepisno širino" autofocus=""><br><label for="vnosDolžina">zemljepisna dolžina:</label> <input class="vnos dolgaŠtevilka" type="number" id="vnosDolžina" name="dolžina" max="180" min="-180" placeholder="Vnesite zemljepisno dolžino"><br><button id="btnUporabiTrPol" onclick="uporabiPoložajT()">trenutni položaj</button><br><span class="pripis">privzeti položaj: središče Slovenije (GEOSS)</span><br><div class="inputOznači"><input type="checkbox" id="prikazLune" class="vnos"> <label for="prikazLune">pogled na Luno z Zemlje</label></div><br><input type="checkbox" id="poletniNačin" class="vnos" style="display:none"> <label for="poletniNačin" style="display:none">vključi poletni premik</label><br><input type="checkbox" id="poletniZasuk" class="vnos" style="display:none"> <label for="poletniZasuk" style="display:none">za poletni način prilagodi tudi urno številčnico</label><div class="teden"><img id="teden" class="tedenŠtevilčnica obrnjena" src="./images/vesolje/teden.svg"><div class="kazalecTedna" id="kazTedna"></div></div></nav></aside><div style="width:100vh;height:100vh;relative:absolute" class="uraSonca" data-naprava=""><div id="zemljevidStarš" style="width:75%;height:75%;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background-color:none"><svg id="D3zemljevid" style="width:100%;height:100%"></svg></div><img id="letnaŠtSonca" class="letnaŠtSonca obrnjena" src="./images/vesolje/N-letna_stevilcnica.svg"> <img id="letniČasi" class="letniČasiSonca obrnjena" src="./images/vesolje/N-letni_casi.svg"><div id="letnoSonca" class="letnoSonca"><img class="sonce" src="./images/vesolje/SonceB.svg"> <img class="urnaŠtSo" id="urnaŠt" src="./images/vesolje/N-urna_stevilcnica.svg"> <img class="senca" src="./images/vesolje/Senca.svg"><div class="urno" id="urno" urno=""></div><div id="lunino" class="lunino"><div class="luna"><div id="delLune" class="del"></div><div id="polluna" class="polluna"><img src="./images/vesolje/polluna.svg" width="100%"></div><div id="pollunaPred" class="pollunaPred"><img src="./images/vesolje/polluna.svg" width="100%"></div></div></div><img id="dneviLune" class="dneviLune obrnjena" src="./images/vesolje/N-lunina_stevilcnica.svg"></div></div><div id="nebo" data-naprava=""><div id="neboLetno"><img id="neboUrna" class="obrnjena" src="./images/vesolje/N-urna_stevilcnica-zvezdna.svg"> <img id="neboObzorje" class="obrnjena" src="./images/vesolje/N-zemljevid_zvezdnega_neba-obzorje.svg"></div><img id="neboZvezde" src="./images/vesolje/zemljevid_zvezdnega_neba-zvezde.svg"></div><script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script><script src="moment-timezone-with-data.js"></script><script src="suncalc.js"></script><link href="styles-ura.css" rel="stylesheet"><script src="scripts-ura.js" defer="defer"></script>
+<!doctype html>
+<html lang="sl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
+        <meta http-equiv="Cache-control" content="public">
+
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+        <title>Zvezdoslovna ura</title>
+        <meta name="description" content="Zvezdoslovna ura, ki z zveznim prikazom medsebojnega položaja Sonca, Zemlje in Lune podaja čas v letu, mesecu in dnevu, Lunino meno, Sončni vzhod in zahod in drugo." /> <!--opis spletnega mesta-->
+        <meta name="keywords" content="zvezdoslovna ura, astronomska ura, sončni vzhod, sončni zahod, lunina mena, zvezdoslovje, zvezdoznanstvo, astronomija" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name content="Zvezdoslovna ura (Janez Pavel Žebovec)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name="apple-mobile-web-app-title" content="Zvezdoslovna ura (Janez Pavel Žebovec)">
+        <meta name=msapplication-TileColor content=#121212> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+        <link rel=canonical href=https://janezpavelzebovec.net> <!--kanonični URL, kar pomeni, da določa glavni in preferiran naslov spletne strani, kar je pomembno za SEO (optimizacijo za iskalnike)-->
+
+        <meta property="og:title" content="Zvezdoslovna ura (Janez Pavel Žebovec)"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:type" content="website"><!--določa vrsto objekta, ki se deli na družabnih omrežjih. V tem primeru gre za spletno stran-->
+        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:url" content="https://www.janezpavelzebovec.net"><!--določa URL naslov spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:description" content="Zvezdoslovna ura, ki z zveznim prikazom medsebojnega položaja Sonca, Zemlje in Lune podaja čas v letu, mesecu in dnevu, Lunino meno, Sončni vzhod in zahod in drugo."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Zvezdoslovna ura (Janez Pavel Žebovec)"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Zvezdoslovna ura (Janez Pavel Žebovec)"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="Zvezdoslovna ura, ki z zveznim prikazom medsebojnega položaja Sonca, Zemlje in Lune podaja čas v letu, mesecu in dnevu, Lunino meno, Sončni vzhod in zahod in drugo."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
+    </head>
+    <body>
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+        <label class="hamburger-menu">
+          <input type="checkbox" />
+        </label>
+        <aside class="sidebar">
+          <nav>
+            <p><a href="./">Domov</a>
+                <br><a href="./knjiznica">Knjižnica</a>
+                <br><a href="./nova_stara_slovenscina">Nova stara slovenščina</a>
+            </p>
+            <p><a href="./opombe_k_zvezdoslovni_uri">Opombe k uri</a></p>
+            <hr>
+            <p><time id="ČasKNiz" style="font-size: large">čas in datum</time><span class="pripis"> - izbrani čas</span>
+                <br><time id="ČasIzB">čas</time><span class="pripis"> - brez premika na poletni čas</span>
+                <br><time id="ČasUTCNiz">čas in datum</time><span class="pripis"> - izbrani čas v UTC</span>
+                <!--<br><time id="premik1">prehod: nedelja, DD. mesec LLLL ob 2:00</time>
+                <br><time id="premik2">prehod: nedelja, DD. mesec LLLL ob 2:00</time>-->
+            </p>
+            <table>
+                <tr>
+                    <td id="nadiropis1">najtemnejši del noči: </td>
+                    <td id="nadiropis1"><span id="resultNadir1"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>konec noči, začetek zvezd. zore: </td>
+                    <td><span id="resultNočKon"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>konec zvezd., začetek pom. zore: </td>
+                    <td><span id="resultPomZora"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>konec pom., začetek zore: </td>
+                    <td><span id="resultZora"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>konec zore, začetek sončnega vzhoda: </td>
+                    <td><span id="resultSonVzh"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>konec sončnega vzhoda: </td>
+                    <td><span id="resultSonVzhKon"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>konec fotografske <i>zlate ure</i>: </td>
+                    <td><span id="resultZlataUraKon"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>poldne: </td>
+                    <td><span id="resultPoldne"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>začetek fotografske <i>zlate ure</i>: </td>
+                    <td><span id="resultZlataUra"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>začetek sončnega vzhoda: </td>
+                    <td><span id="resultSonZahZač"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>konec sončnega vzhoda, začetek mraka: </td>
+                    <td><span id="resultSonZah"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>konec mraka, začetek pom. mraka: </td>
+                    <td><span id="resultMrak"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>konec pom., začetek zvezd. mraka: </td>
+                    <td><span id="resultPomMrak"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>konec zvezd. mraka, začetek noči: </td>
+                    <td><span id="resultNoč"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td id="nadiropis2">najtemnejši del noči: </td>
+                    <td id="nadiropis2"><span id="resultNadir2"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>višina Sonca nad obzorjem: </td>
+                    <td><span id="resultVišinaSonca"><samp>napaka</samp></span> °</td>
+                </tr>
+                <tr">
+                    <td>kotni odmik (azimut) Sonca od juga: </td>
+                    <td><span id="resultAzimutSonca"><samp>napaka</samp></span> °</td>
+                </tr>
+                <tr class="zgorajrob">
+                    <td>višina Lune nad obzorjem: </td>
+                    <td><span id="resultVišinaLune"><samp>napaka</samp></span> °</td>
+                </tr>
+                <tr>
+                    <td>kotni odmik (azimut) Lune od juga: </td>
+                    <td><span id="resultAzimutLune"><samp>napaka</samp></span> °</td>
+                </tr>
+                <tr>
+                    <td>oddaljenost Lune: </td>
+                    <td><span id="resultOddalLune"><samp>napaka</samp></span> km</td>
+                </tr>
+                <tr>
+                    <td>paralaktični kot Lune: </td>
+                    <td><span id="resultParLune"><samp>napaka</samp></span> °</td>
+                </tr>
+                <tr>
+                    <td>kot Lune: </td>
+                    <td><span id="resultKotLuneStop"><samp>napaka</samp></span> °</td>
+                </tr>
+                <tr>
+                    <td>mena Lune: </td>
+                    <td><span id="resultMenaLune"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>osvetljenost Lune: </td>
+                    <td><span id="resultOsvLune"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>vzhod Lune: </td>
+                    <td><span id="resultVzhLune"><samp>napaka</samp></span></td>
+                </tr>
+                <tr>
+                    <td>zahod Lune: </td>
+                    <td><span id="resultZahLune"><samp>napaka</samp></span></td>
+                </tr>
+            </table>
+            <hr>
+            <p><label for="vnosČasa">čas: </label>
+                    <button onclick="uporabiČasT()">trenutni čas</button>
+                    /<input class="vnos" type="datetime-local" id="vnosČasa" name="vnosČasa"><span class="pripis"> (v tr. čas. pasu)</span>
+                <br><label for="vnosČasPas">časovni pas:</label>
+                    <button onclick="izberiČasPasT()">trenutni čas. pas</button>
+                    <select id="vnosČasPas" class="vnos" autocomplete="on"></select>
+                <!--<br><label for="uporabiOdmik">izberi č. pas: </label>
+                    <button onclick="uporabiOdmikT()">trenutni pas</button>
+                    / <button onclick="uporabiUTCpas()" onclick="document.getElementById('uporabiOdmik').value = ''">UTC</button>
+                    / <span class="odmika">
+                        <label for="uporabiOdmik">odmik od UTC: </label>
+                        <label id="nadVnosPredznak" class="vnos" style="margin-right: 0; border-right: none">
+                            <input type="checkbox" id="vnosPredznaka" name="predznak"/>
+                            <span id="prikazPredznaka"></span>
+                        </label>
+                        <input class="vnos" type="time" id="uporabiOdmik" name="uporabiOdmik" style="margin-left: 0; border-left: none">
+                    </span>-->
+                <br><label for="vnosŠirina">zemljepisna širina:</label>
+                    <input class="vnos dolgaŠtevilka" type="number" id="vnosŠirina" name="širina" max="90" min="-90" placeholder="Vnesite zemljepisno širino" autofocus>
+                <br><label for="vnosDolžina">zemljepisna dolžina:</label>
+                    <input class="vnos dolgaŠtevilka" type="number" id="vnosDolžina" name="dolžina" max="180" min="-180" placeholder="Vnesite zemljepisno dolžino">
+                <br><button id="btnUporabiTrPol" onclick="uporabiPoložajT()">trenutni položaj</button>
+                <br><span class="pripis">privzeti položaj: središče Slovenije (GEOSS)</span>
+                <br><div class="inputOznači"><input type="checkbox" id="prikazLune" class="vnos">
+                        <label for="prikazLune">pogled na Luno z Zemlje</label>
+                    </div>
+                <br><input type="checkbox" id="poletniNačin" class="vnos" style="display: none">
+                    <label for="poletniNačin" style="display: none">vključi poletni premik</label>
+                <br><input type="checkbox" id="poletniZasuk" class="vnos" style="display: none">
+                    <label for="poletniZasuk" style="display: none">za poletni način prilagodi tudi urno številčnico</label>
+            </p>
+            <div class="teden">
+                <img id="teden"
+                    class="tedenŠtevilčnica obrnjena"
+                    src="./images/vesolje/teden.svg"/>
+                <div class="kazalecTedna" id="kazTedna"></div>
+            </div>
+            <!--<div class="položajSonca">
+                <img id="položajSonca"
+                    class="položajSoncaSlika obrnjena"
+                    src="./images/vesolje/položajSonca.svg"
+                    width="100%"/>
+                <div class="kazPolSonca" id="kazPolSonca"></div>
+            </div>-->
+            <!--<footer>Zadnja posodobitev te strani: <time datetime="2024-06-22">22. 6. 2024</time></footer>-->
+          </nav>
+        </aside>
+        <div style="width: 100vh; height: 100vh" class="uraSonca" style="relative: absolute" data-naprava>
+	        <div id="zemljevidStarš"style="width: 75%; height: 75%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-color: none">
+		        <svg id="D3zemljevid" style="width:100%; height: 100%"></svg>
+	        </div>
+            <img
+                id="letnaŠtSonca"
+                class="letnaŠtSonca obrnjena"
+                src="./images/vesolje/N-letna_stevilcnica.svg"/>
+            <img
+                id="letniČasi"
+                class="letniČasiSonca obrnjena"
+                src="./images/vesolje/N-letni_casi.svg"/>
+            <!--<img
+                class="dnevnaPot"
+                src="./images/vesolje/dnevna_pot.svg"/>-->
+            <div id="letnoSonca" class="letnoSonca">
+                <img class="sonce"
+                    src="./images/vesolje/SonceB.svg"/>
+                <img class="urnaŠtSo" id="urnaŠt"
+                    src="./images/vesolje/N-urna_stevilcnica.svg"/>
+                <!--<div class="prostorUrniK" id="prostorUrniK">
+                    <div class="nadUrniKazalec" id="nadUrniKazalec"><div class="urniKazalec" id="urniKazalec"></div></div>
+                    <div class="ukrivljen" id="ukUrniKaz"></div>
+                </div>-->
+                <img class="senca"
+                    src="./images/vesolje/Senca.svg"/>
+                <div class="urno" id="urno" urno>
+    <!--<script type="module">
+      import createGlobe from 'https://cdn.skypack.dev/cobe'
+
+      let phi = 0;
+      let canvas = document.getElementById("cobe");
+
+      const globe = createGlobe(canvas, {
+        devicePixelRatio: 2,
+        opacity: 0.9,
+        width: 2000,
+        height: 2000,
+        phi: 270/180* Math.PI,
+        theta: 66.5/180* Math.PI,
+        dark: 1,
+        diffuse: 0,
+        scale: 0.5,
+        mapSamples: 100000,
+        mapBrightness: 6,
+        baseColor: [1, 1, 1],
+        markerColor: [1, 0.5, 1],
+        glowColor: [0, 0, 0],
+        offset: [0, 0],
+        markers: [
+          { location: [46.11994444, 14.81533333], size: 0.1 },
+          { location: [90, 0], size: 0.05 }
+        ],
+        onRender: (state) => {
+          // Called on every animation frame.
+          // `state` will be an empty object, return updated params.
+          /*state.phi = phi;
+          phi += 0.01;*/
+        }
+      });
+    </script>
+                    <canvas
+                      id="cobe"
+                      style="width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 20"
+                      width="1000"
+                      height="1000"
+                    ></canvas>-->
+                    <!--<img class="obrnjena zemljevid"
+                        src="./images/vesolje/Severna_polobla.svg"
+                        width="100%"/>-->
+                </div>
+                <div id="lunino" class="lunino">
+                    <div class="luna">
+                        <div id="delLune" class="del"></div>
+                        <div id="polluna"class="polluna"><img
+                            src="./images/vesolje/polluna.svg"
+                            width="100%"/></div>
+                        <div id="pollunaPred"class="pollunaPred"><img
+                            src="./images/vesolje/polluna.svg"
+                            width="100%"/></div>
+                    </div>
+                </div>
+                <img id="dneviLune"
+                    class="dneviLune obrnjena"
+                    src="./images/vesolje/N-lunina_stevilcnica.svg"/>
+            </div>
+        </div>
+        <div id="nebo" data-naprava>
+            <div id="neboLetno">
+                <img id="neboUrna" class="obrnjena"
+                    src="./images/vesolje/N-urna_stevilcnica-zvezdna.svg"/>
+                <img id="neboObzorje"
+                    class="obrnjena"
+                    src="./images/vesolje/N-zemljevid_zvezdnega_neba-obzorje.svg"/>
+            </div>
+            <img id="neboZvezde"
+                src="./images/vesolje/zemljevid_zvezdnega_neba-zvezde.svg"/>
+        </div>
+    </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<!--<script src="moment.js"></script>-->
+<script src="moment-timezone-with-data.js"></script>
+<script src="suncalc.js"></script>
+<link href="styles-ura.css" rel="stylesheet">
+<!--<script src="scripts-ura-0.js" defer></script>-->
+<script src="scripts-ura.js" defer></script>

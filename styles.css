@@ -53,6 +53,24 @@ footer {
     padding-right: 10%;
     color: var(--barvaOzadja);
     font-size: small;
+    width: 100%
+}
+.pripis {
+    color: var(--barvaNazaj);
+    font-size: small;
+}
+.stolpci {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.stolpci.sredina {
+    align-items: center;
+}
+.stolpci table {
+    margin: 0;
 }
 
 .stikaloNačina {
@@ -754,18 +772,44 @@ table.enaPoTri tr>td:not(:nth-child(3n+1)) { /*prvi stolpec sam, potem po trije 
 tr.dvojne td{
     border-right: 1px solid var(--barvaNazaj) !important;
 }
+table.brez {
+    border: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+td:has(> table.brez){
+    padding: 0;
+    vertical-align: middle;
+}
+td.pol {
+    width: 50%;
+}
 table.osnovna td { /*brez vseh robov in brez krepkih vrstic/stolpcev*/
     border-bottom: none;
     border-left: none;
     border-right: none;
     font-weight: normal;
+    margin: none;
 }
 table.sredinsko th,
 table.sredinsko td { /*besedilo v preglednici sredinsko poravnano*/
     text-align:center;
 }
+table.širinaOkna {
+    max-width: 100vw;
+}
+table.večjaVsebina td{/*npr. glasoslovna preglednica*/
+    font-size: large;
+}
 table.prvaLevo th:nth-child(1) { /*glavo prvi stolpec bo poravnalo na levo*/
     text-align:left;
+}
+table.zadnjaPrimer td:last-child {
+    text-align: left;
+    font-style: italic;
 }
 table.leviStLevo th { /*glavni je levi stolpec, katerega besedilo naj bo poravnano levo  (če je več besedila)*/
     text-align: left;

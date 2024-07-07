@@ -1,0 +1,130 @@
+[
+    {   "oznaka": "Lipa19",
+        "položaj": [46.34652, 15.30675],
+        "opis": {
+            "priimek": "Podjavoršek",
+            "domačeIme": {
+                "narečno": "<i>?</i>",
+                "poknjiženo": "<i>Hriberšek</i>"
+            },
+            "naslov": {
+                "trenutni": "Lipa 19, Frankolovo",
+                "Arcanum": "1825: Lippa 74/75",
+                "matičneKnjige": "?"
+            },
+            "predniki": "1. p. - <i>Mihelina</i><br>2. p. - <i>Anton (1940 - 2024), Ana (1944)</i><br>3. p. - <i>Dominik Podjavoršek (1901 - 1980), Angela (1906 - 1966)</i>"
+        },
+    },
+    {   "oznaka": "Kozjak80",
+        "položaj": [46.406295, 15.231522],
+        "opis": {
+            "priimek": "Podjavoršek",
+            "domačeIme": {
+                "narečno": "<i>?</i>",
+                "poknjiženo": "<i>?</i>"
+            },
+            "naslov": {
+                "trenutni": "Kozjak 80, Mislinja",
+                "Arcanum": "?",
+                "matičneKnjige": "Kozjak 64"
+            },
+            "predniki": "?"
+        }
+    },
+    {   "oznaka": "BeliPotok2",
+        "položaj": [46.344226, 15.32949],
+        "opis": {
+            "priimek": "Pinter",
+            "domačeIme": {
+                "narečno": "<i>?</i>",
+                "poknjiženo": "<i>?</i>"
+            },
+            "naslov": {
+                "trenutni": "Beli potok 2",
+                "Arcanum": "?",
+                "matičneKnjige": "?"
+            },
+            "predniki": "3. p. - <i>Angela (1906 - 1966)</i><br>4. p. - <i>Frančišek (1863 -), Marija</i>"
+        },
+    },
+    {   "oznaka": "Vizore15",
+        "položaj": [46.321773, 15.26156],
+        "opis": {
+            "priimek": "Pinter",
+            "domačeIme": {
+                "narečno": "<i>?</i>",
+                "poknjiženo": "<i>?</i>"
+            },
+            "naslov": {
+                "trenutni": "Vizore 15",
+                "Arcanum": "1825: Vizore, Neukirchen 5",
+                "matičneKnjige": "?"
+            },
+            "predniki": "4. p. - <i>Frančišek (1863 -)</i><br>5. p - <i>Andrej (1818 -), Agata r. Kraljič (1832 -)</i>"
+        },
+    },
+    {   "oznaka": "Vizore14",
+        "položaj": [46.322919, 15.268171],
+        "opis": {
+            "priimek": "Kraljič",
+            "domačeIme": {
+                "narečno": "<i>?</i>",
+                "poknjiženo": "<i>?</i>"
+            },
+            "naslov": {
+                "trenutni": "Vizore 14",
+                "Arcanum": "1825: Vizore, Neukirchen 12",
+                "matičneKnjige": ""
+            },
+            "predniki": "5. p. - <i>Agata Pinter(1832 -)</i>"
+        }
+    },
+    {   "oznaka": "Lipa24",
+        "položaj": [46.34369, 15.30243],
+        "opis": {
+            "priimek": "Lopatnik → Selčan",
+            "domačeIme": {
+                "narečno": "<i>?</i>",
+                "poknjiženo": "<i>Lopatnik</i>"
+            },
+            "naslov": {
+                "trenutni": "Lipa 24, Frankolovo",
+                "Arcanum": "1825: Lippa 85/86",
+                "matičneKnjige": "SA1921: Lipa 16"
+            },
+            "predniki": "2. p. - <i>Ana Podjavoršek (1944)</i><br>3. p. - <i>Franc (1899 -), Marija r. Gorenšek (1801 -)</i>"
+        },
+    },
+    {   "oznaka": "Selce21",
+        "položaj": [46.355967, 15.291854],
+        "opis": {
+            "priimek": "Selčan → Delčnjak",
+            "domačeIme": {
+                "narečno": "<i>Koklč</i>",
+                "poknjiženo": "<i>Kokljič</i>"
+            },
+            "naslov": {
+                "trenutni": "Selce 21, Nova cerkev",
+                "Arcanum": "1825: Seutze, Lippa 2",
+                "matičneKnjige": "SA: Selce 2, Frankolovo, Celje"
+            },
+            "predniki": ""
+        }
+    },
+    {   "oznaka": "Selce20",
+        "položaj": [46.355288, 15.292143],
+        "opis": {
+            "priimek": "Selčan → Delčnjak",
+            "domačeIme": {
+                "narečno": "<i>Pri Grigorjih</i>",
+                "poknjiženo": "<i>Gregor</i>"
+            },
+            "naslov": {
+                "trenutni": "Selce 20, Nova cerkev",
+                "Arcanum": "1825: Seutze, Lippa 6",
+                "matičneKnjige": "SA: Selce 6, Sternstein, Celje"
+            },
+            "predniki": "3. p. - </i>Franc (1899 -)</i><br>4. p. - <i>Jurij (1868 - 1911), Marija r. Korošec (1870 - 1901)</i><br>5. p. - Matija (1932 -), Marija Weber (1845 - 1875)</i>"
+        }
+    }
+]

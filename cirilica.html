@@ -1,632 +1,979 @@
 <!doctype html>
-<html>
+<html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" vsebina="width=device-width, initial-scale=1">
-        <title>Cirilica</title>
-          <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
+
+        <title>Cirilica</title>
+        <meta name="description" vsebina="Cirilica - slovanska pisava; izgovorjava, prečrkovanje v latinico." /> <!--opis spletnega mesta-->
+        <meta name="keywords" vsebina="cirilica, slovanska pisava, ruska cirilica, ukrajinska cirilica, srbska cirilica" />
+        <meta name="copyright" vsebina="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name vsebina="Cirilica (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor vsebina=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color vsebina=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" vsebina="Cirilica"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" vsebina="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" vsebina="Cirilica - slovanska pisava; izgovorjava, prečrkovanje v latinico."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" vsebina="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" vsebina="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" vsebina="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" vsebina="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" vsebina="Cirilica - slovanska pisava; izgovorjava, prečrkovanje v latinico."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" vsebina="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
 
     <body>
+
         <label class="hamburger-menu">
           <input type="checkbox" />
         </label>
         <aside class="sidebar">
           <nav>
             <div><a href="./">Domov</a></div></div>
-            <div><a href="knjiznica">Knjižnica</a></div>
-            <div><a href="zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./knjiznica">Knjižnica</a></div></div>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
           </nav>
         </aside>
 
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
         <div class="vsebina">
             <h1>Cirilica</h1>
+            <p class="podnaslov">Цирилица</p>
         </div>
+            <table class="sredinsko vodčrte enaPoDve">
+                <tr>
+                    <th rowspan="2">cirilica</th>
+                    <th colspan="2" class="brezsrob">ruska cirilica</th>
+                    <th colspan="2" class="brezsrob">ukrajinska cirilica</th>
+                    <th colspan="2" class="brezsrob">mongolska cirilica</th>
+                    <th colspan="2" class="brezsrob">srbska cirilica</th>
+                    <th colspan="2" class="brezsrob">makedonska cirilica</th>
+                    <th rowspan="2">latinica</th>
+                </tr>
+                <tr>
+                    <td class="brezdrob">izgovorjava</td>
+                    <td class="drob">prečrkovanje</td>
+                    <td class="brezdrob">izgovorjava</td>
+                    <td class="drob">prečrkovanje</td>
+                    <td class="brezdrob">izgovorjava</td>
+                    <td class="drob">prečrkovanje</td>
+                    <td class="brezdrob">izgovorjava</td>
+                    <td class="drob">prečrkovanje</td>
+                    <td class="brezdrob">izgovorjava</td>
+                    <td class="drob">prečrkovanje</td>
+                </tr>
+                <tr>
+                    <td>А а</td>
+                    <td class="brezdrob">[a]-; [a ə ʌ]</td>
+                    <td>A a</td>
+                    <td class="brezdrob">[a ɐ]</td>
+                    <td>A a</td>
+                    <td class="brezdrob">[a]</td>
+                    <td>A a</td>
+                    <td class="brezdrob">[ä a]</td>
+                    <td>A a</td>
+                    <td class="brezdrob">/a/</td>
+                    <td>A a</td>
+                    <td>A a</td>
+                </tr>
+                <tr>
+                    <td>Б б</td>
+                    <td class="brezdrob">[b bʲ] /b/</td>
+                    <td>B b</td>
+                    <td class="brezdrob">[b]</td>
+                    <td>B b</td>
+                    <td class="brezdrob">[b]</td>
+                    <td>B b</td>
+                    <td class="brezdrob">[b]</td>
+                    <td>B b</td>
+                    <td class="brezdrob">/b/</td>
+                    <td>B b</td>
+                    <td>B b</td>
+                </tr>
+                <tr>
+                    <td>В в</td>
+                    <td class="brezdrob">[v vʲ]</td>
+                    <td>V v</td>
+                    <td class="brezdrob">[w ʋ u̯]</td>
+                    <td>V v</td>
+                    <td class="brezdrob">[w̜ v f]</td>
+                    <td>V v</td>
+                    <td class="brezdrob">[ʋ]</td>
+                    <td>V v</td>
+                    <td class="brezdrob">/v/</td>
+                    <td>V v</td>
+                    <td>V v</td>
+                </tr>
+                <tr>
+                    <td>Г г</td>
+                    <td class="brezdrob">[ɡ ɡʲ]</td>
+                    <td>G g</td>
+                    <td class="brezdrob">[ɦ]</td>
+                    <td>H h (gh)</td>
+                    <td class="brezdrob">[ɡ ɣ ɢ]</td>
+                    <td>G g</td>
+                    <td class="brezdrob">[ɡ]</td>
+                    <td>G g</td>
+                    <td class="brezdrob">/ɡ/</td>
+                    <td>G g</td>
+                    <td>G g (/ H h)</td>
+                </tr>
+                <tr>
+                    <td>Ґ ґ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[g]</td>
+                    <td>G g</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>G g</td>
+                </tr>
+                <tr>
+                    <td>Д д</td>
+                    <td class="brezdrob">[d dʲ]</td>
+                    <td>D d</td>
+                    <td class="brezdrob">[d]</td>
+                    <td>D d</td>
+                    <td class="brezdrob">[d]</td>
+                    <td>D d</td>
+                    <td class="brezdrob">[d]</td>
+                    <td>D d</td>
+                    <td class="brezdrob">/d/</td>
+                    <td>D d</td>
+                    <td>D d</td>
+                </tr>
+                <tr>
+                    <td>Ѓ ѓ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">/ɟ/ (/dʑ/)</td>
+                    <td>Đ đ Gj gj G g Ǵ ǵ</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ђ ђ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[d͡ʑ]</td>
+                    <td>Đ đ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>Đ đ</td>
+                </tr>
+                <tr>
+                    <td>Е е</td>
+                    <td class="brezdrob">[je ʲe e]-; [je e ɛ ɪ]</td>
+                    <td>E e</td>
+                    <td class="brezdrob">[ɛ e]</td>
+                    <td>E e</td>
+                    <td class="brezdrob">[jɵ]-; [ji je]</td>
+                    <td>ye</td>
+                    <td class="brezdrob">[e̞ e]</td>
+                    <td>E e</td>
+                    <td class="brezdrob">/ɛ/</td>
+                    <td>E e</td>
+                    <td>E e</td>
+                </tr>
+                <tr>
+                    <td>Є є</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ē</td>
+                    <td class="brezdrob">[jɛ je ʲɛ ʲe]</td>
+                    <td>Ye- ye-; Ie ie</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ё ё</td>
+                    <td class="brezdrob">[jo ʲo]-; [ɵ]</td>
+                    <td>Ë ë (E e)</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[jɔ]</td>
+                    <td>yo</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>jo</td>
+                </tr>
+                <tr>
+                    <td>Ж ж</td>
+                    <td class="brezdrob">[ʐ]</td>
+                    <td>Zh zh</td>
+                    <td class="brezdrob">[ʒ]</td>
+                    <td>Zh zh (Ž ž)</td>
+                    <td class="brezdrob">[d͡ʒ]</td>
+                    <td>J j</td>
+                    <td class="brezdrob">[ʐ ʒ]</td>
+                    <td>Ž ž</td>
+                    <td class="brezdrob">/ʒ/</td>
+                    <td>Ž ž Zh zh</td>
+                    <td>Ž ž</td>
+                </tr>
+                <tr>
+                    <td>З з</td>
+                    <td class="brezdrob">[z zʲ]</td>
+                    <td>Z z</td>
+                    <td class="brezdrob">[z]</td>
+                    <td>Z z</td>
+                    <td class="brezdrob">[d͡z]</td>
+                    <td>Z z</td>
+                    <td class="brezdrob">[z]</td>
+                    <td>Z z</td>
+                    <td class="brezdrob">/z/</td>
+                    <td>Z z</td>
+                    <td>Z z</td>
+                </tr>
+                <tr>
+                    <td>Ѕ ѕ</td>
+                    <td class="brezdrob mrtva">[z zʲ]</td>
+                    <td class="mrtva">ż (js ẑ)</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">/d͡z/</td>
+                    <td>Dz dz (Ẑ ẑ)</td>
+                    <td>Z z</td>
+                </tr>
+                <tr>
+                    <td>И и</td>
+                    <td class="brezdrob">[i ʲi ɨ]-; [i ɪ ɨ]</td>
+                    <td>I i</td>
+                    <td class="brezdrob">[ɪ e]</td>
+                    <td>Y y</td>
+                    <td class="brezdrob">[i]</td>
+                    <td>i</td>
+                    <td class="brezdrob">[i]</td>
+                    <td>I i</td>
+                    <td class="brezdrob">/i/</td>
+                    <td>I i</td>
+                    <td>I i</td>
+                </tr>
+                <tr>
+                    <td>I і</td>
+                    <td class="brezdrob mrtva">[i ʲi j]</td>
+                    <td class="mrtva">Ī ī I i</td>
+                    <td class="brezdrob">[i]-; [ʲi i]</td>
+                    <td>I i</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>I i</td>
+                </tr>
+                <tr>
+                    <td>Ї ї</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[ji]</td>
+                    <td>Yi- yi-; i</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Й й</td>
+                    <td class="brezdrob">[j]</td>
+                    <td>Ĭ ĭ (I i)</td>
+                    <td class="brezdrob">[i j y] [j i̯]</td>
+                    <td>Y- y-; i</td>
+                    <td class="brezdrob">[i̯]</td>
+                    <td>i</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>J j</td>
+                </tr>
+                <tr>
+                    <td>Ј ј</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[j]</td>
+                    <td>J j</td>
+                    <td class="brezdrob">/j/</td>
+                    <td>J j (J̌ ǰ)</td>
+                    <td>J j</td>
+                </tr>
+                <tr>
+                    <td>К к</td>
+                    <td class="brezdrob">[k kʲ]</td>
+                    <td>K k</td>
+                    <td class="brezdrob">[k]</td>
+                    <td>K k</td>
+                    <td class="brezdrob mrtva">[k x]</td>
+                    <td class="mrtva">K k</td>
+                    <td class="brezdrob">[k]</td>
+                    <td>K k</td>
+                    <td class="brezdrob">/k/</td>
+                    <td>K k</td>
+                    <td>K k</td>
+                </tr>
+                <tr>
+                    <td>Л л</td>
+                    <td class="brezdrob">[ɫ lʲ]</td>
+                    <td>L l</td>
+                    <td class="brezdrob">[ɫ]</td>
+                    <td>L l</td>
+                    <td class="brezdrob">[ɮ]</td>
+                    <td>L l</td>
+                    <td class="brezdrob">[l]</td>
+                    <td>L l</td>
+                    <td class="brezdrob">/l ɫ/</td>
+                    <td>L l</td>
+                    <td>L l</td>
+                </tr>
+                <tr>
+                    <td>Љ љ	</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[ʎ]</td>
+                    <td>ǈ ǉ</td>
+                    <td class="brezdrob">/ʎ l/</td>
+                    <td>Lj lj (L̂ l̂)</td>
+                    <td>ǈ ǉ</td>
+                </tr>
+                <tr>
+                    <td>М м</td>
+                    <td class="brezdrob">[m mʲ]</td>
+                    <td>M m</td>
+                    <td class="brezdrob">[m]</td>
+                    <td>M m</td>
+                    <td class="brezdrob">[m]</td>
+                    <td>M m</td>
+                    <td class="brezdrob">[m]</td>
+                    <td>M m</td>
+                    <td class="brezdrob">/m/</td>
+                    <td>M m</td>
+                    <td>M m</td>
+                </tr>
+                <tr>
+                    <td>Н н</td>
+                    <td class="brezdrob">[n nʲ]</td>
+                    <td>N n</td>
+                    <td class="brezdrob">[n]</td>
+                    <td>N n</td>
+                    <td class="brezdrob">[n ŋ]</td>
+                    <td>N n</td>
+                    <td class="brezdrob">[n]</td>
+                    <td>N n</td>
+                    <td class="brezdrob">/n/</td>
+                    <td>N n</td>
+                    <td>N n</td>
+                </tr>
+                <tr>
+                    <td>Њ њ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[ɲ]</td>
+                    <td>ǋ ǌ</td>
+                    <td class="brezdrob">/ɲ/</td>
+                    <td>ǋ ǌ (N̂ n̂)</td>
+                    <td>ǋ ǌ</td>
+                </tr>
+                <tr>
+                    <td>О о</td>
+                    <td class="brezdrob">[o]</td>
+                    <td>O o</td>
+                    <td class="brezdrob">[ɔ]</td>
+                    <td>O o</td>
+                    <td class="brezdrob">[ɔ]</td>
+                    <td>o</td>
+                    <td class="brezdrob">[ɔ̝ o]</td>
+                    <td>O o</td>
+                    <td class="brezdrob">/ɔ/</td>
+                    <td>O o</td>
+                    <td>O o</td>
+                </tr>
+                <tr>
+                    <td>П п</td>
+                    <td class="brezdrob">[p pʲ] /p/</td>
+                    <td>P p</td>
+                    <td class="brezdrob">[p]</td>
+                    <td>P p</td>
+                    <td class="brezdrob mrtva">[p]</td>
+                    <td class="mrtva">P p</td>
+                    <td class="brezdrob">[p]</td>
+                    <td>P p</td>
+                    <td class="brezdrob">/p/</td>
+                    <td>P p</td>
+                    <td>P p</td>
+                </tr>
+                <tr>
+                    <td>Р р</td>
+                    <td class="brezdrob">[r rʲ]</td>
+                    <td>R r</td>
+                    <td class="brezdrob">[r]</td>
+                    <td>R r</td>
+                    <td class="brezdrob">[r]</td>
+                    <td>R r</td>
+                    <td class="brezdrob">[ɾ r]</td>
+                    <td>R r</td>
+                    <td class="brezdrob">/r/</td>
+                    <td>R r</td>
+                    <td>R r</td>
+                </tr>
+                <tr>
+                    <td>С с</td>
+                    <td class="brezdrob">[s sʲ]</td>
+                    <td>S s</td>
+                    <td class="brezdrob">[s]</td>
+                    <td>S s</td>
+                    <td class="brezdrob">[s]</td>
+                    <td>S s</td>
+                    <td class="brezdrob">[s]</td>
+                    <td>S s</td>
+                    <td class="brezdrob">/s/</td>
+                    <td>S s</td>
+                    <td>S s</td>
+                </tr>
+                <tr>
+                    <td>Т т</td>
+                    <td class="brezdrob">[t tʲ]</td>
+                    <td>T t</td>
+                    <td class="brezdrob">[t]</td>
+                    <td>T t</td>
+                    <td class="brezdrob">[t]</td>
+                    <td>T t</td>
+                    <td class="brezdrob">[t]</td>
+                    <td>T t</td>
+                    <td class="brezdrob">/t/</td>
+                    <td>T t</td>
+                    <td>T t</td>
+                </tr>
+                <tr>
+                    <td>Ќ ќ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">/c/ (/tɕ/)</td>
+                    <td>Ć ć Kj kj K k Ḱ ḱ</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ћ ћ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[t͡ɕ]</td>
+                    <td>Ć ć</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>Ć ć</td>
+                </tr>
+                <tr>
+                    <td>У у</td>
+                    <td class="brezdrob">[u]-; [u ʊ]</td>
+                    <td>U u</td>
+                    <td class="brezdrob">[u ʊ]</td>
+                    <td>U u</td>
+                    <td class="brezdrob">[ʊ]</td>
+                    <td>u</td>
+                    <td class="brezdrob">[u]</td>
+                    <td>U u</td>
+                    <td class="brezdrob">/u/</td>
+                    <td>U u</td>
+                    <td>U u</td>
+                </tr>
+                <tr>
+                    <td>Ф ф</td>
+                    <td class="brezdrob">[f fʲ]</td>
+                    <td>F f</td>
+                    <td class="brezdrob">[f]</td>
+                    <td>F f</td>
+                    <td class="brezdrob mrtva">[f pʰ]</td>
+                    <td class="mrtva">F f</td>
+                    <td class="brezdrob">[f]</td>
+                    <td>F f</td>
+                    <td class="brezdrob">/f/</td>
+                    <td>F f</td>
+                    <td>F f</td>
+                </tr>
+                <tr>
+                    <td>Х х</td>
+                    <td class="brezdrob">[x xʲ]</td>
+                    <td>Kh kh</td>
+                    <td class="brezdrob">[x]</td>
+                    <td>Kh kh</td>
+                    <td class="brezdrob">[x]</td>
+                    <td>KH kh</td>
+                    <td class="brezdrob">[x h]</td>
+                    <td>H h</td>
+                    <td class="brezdrob">/x/</td>
+                    <td>H h</td>
+                    <td>H h</td>
+                </tr>
+                <tr>
+                    <td>Ц ц</td>
+                    <td class="brezdrob">[t͡s]</td>
+                    <td>TS ts (t͡s)</td>
+                    <td class="brezdrob">[t͡s]</td>
+                    <td>Ts ts</td>
+                    <td class="brezdrob">[t͡s]</td>
+                    <td>TS ts</td>
+                    <td class="brezdrob">[t͡s]</td>
+                    <td>C c</td>
+                    <td class="brezdrob">/t͡s/</td>
+                    <td>C c Ts ts</td>
+                    <td>C c</td>
+                </tr>
+                <tr>
+                    <td>Ч ч</td>
+                    <td class="brezdrob">[t͡ɕ]</td>
+                    <td>Ch ch</td>
+                    <td class="brezdrob">[t͡ʃ]</td>
+                    <td>Ch ch</td>
+                    <td class="brezdrob">[t͡ʃ]</td>
+                    <td>CH ch</td>
+                    <td class="brezdrob">[t͡ʂ]</td>
+                    <td>Č č</td>
+                    <td class="brezdrob">/t͡ʃ/</td>
+                    <td>Č č Ch ch</td>
+                    <td>Č č</td>
+                </tr>
+                <tr>
+                    <td>Џ џ	</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[d͡ʐ d͡ʒ]</td>
+                    <td>ǅ ǆ</td>
+                    <td class="brezdrob">/d͡ʒ/</td>
+                    <td>Dž dž Dzh dzh Dj dj D̂ d̂</td>
+                    <td>ǅ ǆ</td>
+                </tr>
+                <tr>
+                    <td>Ш ш</td>
+                    <td class="brezdrob">[ʂ]</td>
+                    <td>Sh sh</td>
+                    <td class="brezdrob">[ʃ]</td>
+                    <td>Sh sh</td>
+                    <td class="brezdrob">[ʃ]</td>
+                    <td>SH sh</td>
+                    <td class="brezdrob">[ʂ ʃ]</td>
+                    <td>Š š</td>
+                    <td class="brezdrob">/ʃ/</td>
+                    <td>Š š Sh sh</td>
+                    <td>Š š</td>
+                </tr>
+                <tr>
+                    <td>Щ щ</td>
+                    <td class="brezdrob">[ɕː ɕʨ]-; [ɕɕ]</td>
+                    <td>Shch shch</td>
+                    <td class="brezdrob">[ʃt͡ʃ]</td>
+                    <td>Shch shch</td>
+                    <td class="brezdrob mrtva">[ʃ]</td>
+                    <td class="mrtva">SH sh</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>Šč šč</td>
+                </tr>
+                <tr>
+                    <td>Ъ ъ</td>
+                    <td class="brezdrob"></td>
+                    <td>ʺ ie</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ˮ ʺ</td>
+                    <td class="brezdrob">[∅]</td>
+                    <td>"</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>{trdi znak; jer (ер)}</td>
+                </tr>
+                <tr>
+                    <td>Ы ы</td>
+                    <td class="brezdrob">[ɨ]</td>
+                    <td>Y y</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">y</td>
+                    <td class="brezdrob">[i]</td>
+                    <td>Y y</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>y (jeri (еры))</td>
+                </tr>
+                <tr>
+                    <td>Ь ь</td>
+                    <td class="brezdrob"></td>
+                    <td>ʹ</td>
+                    <td class="brezdrob">[ʲ]</td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[ĭ ʲ]</td>
+                    <td>i</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>{mehki znak (ерь)}</td>
+                </tr>
+                <tr>
+                    <td>Ѣ ѣ</td>
+                    <td class="brezdrob mrtva">[e ɛ ʲe]</td>
+                    <td class="mrtva">IE ie (Ê ê)</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">i</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>ě</td>
+                </tr>
+                <tr>
+                    <td>Э э</td>
+                    <td class="brezdrob">[ɛ]</td>
+                    <td>Ė ė (E e)</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[e i]</td>
+                    <td>e</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>ė</td>
+                </tr>
+                <tr>
+                    <td>Ю ю</td>
+                    <td class="brezdrob">[ju]-; [ju u ʊ ʉ]</td>
+                    <td>IU iu</td>
+                    <td class="brezdrob">[ju jʊ ʲu ʲʊ]</td>
+                    <td>Yu- yu-; Iu iu</td>
+                    <td class="brezdrob">[jʊ ju]</td>
+                    <td>yu</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>ju</td>
+                </tr>
+                <tr>
+                    <td>Я я</td>
+                    <td class="brezdrob">[ja]-; [jæ jɪ æ a ɪ]</td>
+                    <td>IA ia</td>
+                    <td class="brezdrob">[ja jɐ ʲa ʲɐ]</td>
+                    <td>Ya- ya-; Ia ia</td>
+                    <td class="brezdrob">[ja]</td>
+                    <td>ya</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>ja</td>
+                </tr>
+                <tr>
+                    <td>Ѳ ѳ</td>
+                    <td class="brezdrob mrtva">[f fʲ θ]</td>
+                    <td class="mrtva">Ḟ ḟ F f</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ḟ th</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>F f</td>
+                </tr>
+                <tr>
+                    <td>Ѵ ѵ</td>
+                    <td class="brezdrob mrtva">[i ʲi]</td>
+                    <td class="mrtva">Ẏ ẏ (y̆)</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ẏ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>Í í</td>
+                </tr>
+                <tr>
+                    <td>ү</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[u]</td>
+                    <td>ü</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ө</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob">[ɵ o]</td>
+                    <td>ö</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ʼ</td>
+                    <td class="brezdrob"></td>
+                    <td></td>
+                    <td class="brezdrob"></td>
+                    <td>ʼ</td>
+                    <td class="brezdrob"></td>
+                    <td></td>
+                    <td class="brezdrob"></td>
+                    <td></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>{trdi znak; jer (ер)}</td>
+                </tr>
+                <tr>
+                    <td>Ѥ ѥ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">i͡e</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">je</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ꙋ ꙋ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ū</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ѯ ѯ</td>
+                    <td class="brezdrob mrtva">[ks ksʲ]</td>
+                    <td class="mrtva">k͡s</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ks</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>X x Ks ks</td>
+                </tr>
+                <tr>
+                    <td>Ѱ ѱ</td>
+                    <td class="brezdrob mrtva">[ps psʲ]</td>
+                    <td class="mrtva">p͡s ps</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ps</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>Ps ps</td>
+                </tr>
+                <tr>
+                    <td>Ѡ ѡ</td>
+                    <td class="brezdrob mrtva">[o]</td>
+                    <td class="mrtva">ō</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">O o</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>O o W w</td>
+                </tr>
+                <tr>
+                    <td>Ѿ ѿ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ō͡t</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ѫ ѫ</td>
+                    <td class="brezdrob mrtva">[u ʲu]</td>
+                    <td class="mrtva">ą ǎ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ʺ̣ (ȧ ă ǫ)</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>Ą ą</td>
+                </tr>
+                <tr>
+                    <td>Ѧ ѧ</td>
+                    <td class="brezdrob mrtva">[ʲa]</td>
+                    <td class="mrtva">ę</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ę</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>Ę ę</td>
+                </tr>
+                <tr>
+                    <td>Ѭ ѭ</td>
+                    <td class="brezdrob mrtva">[ju]</td>
+                    <td class="mrtva">i͡ą</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">jǫ</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>Yą yą</td>
+                </tr>
+                <tr>
+                    <td>Ѩ ѩ</td>
+                    <td class="brezdrob mrtva">[ja]</td>
+                    <td class="mrtva">i͡ę</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva">ję</td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td class="brezdrob mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>Yę yę</td>
+                </tr>
+            </table>
+            <br>
+            <h2>Prečrkovanje ciriličnih sklopov</h2>
             <table class="sredinsko zgornja vodčrte">
-              <tr>
-                <th colspan="2" class="brezsrob">ruska<br>cirilica</th>
-                <th colspan="2" class="brezsrob">srbska<br>cirilica</th>
-                <th colspan="2" class="brezsrob">ukrajinska<br>cirilica</th>
-                <th rowspan="2">cirilica</th>
-                <th rowspan="2">latinica</th>
-                <th rowspan="2">ruska<br>latinica</th>
-                <th rowspan="2">srbska<br>latinica</th>
-                <th rowspan="2">ukrajinska<br>latinica</th>
-              </tr>
-              <tr>
-                <th  class="brezdrob">samo<br>ruska<br>cirilica</th>
-                <th>ruska<br>izgovorjava</th>
-                <th  class="brezdrob">samo<br>srbska<br>cirilica</th>
-                <th>srbska<br>izgovorjava</th>
-                <th  class="brezdrob">samo<br>ukrajinska<br>cirilica</th>
-                <th>ukrajinska<br>izgovorjava</th>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[a ə ʌ]</td>
-                <td   class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[a ɐ]</td>
-                <td>А а</td>
-                <td>A a</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[b bʲ] /b/</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[b]</td>
-                <td>Б б</td>
-                <td>B b</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[v vʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[w ʋ u̯]</td>
-                <td>В в</td>
-                <td>V v</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[ɡ ɡʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ɦ]</td>
-                <td>Г г</td>
-                <td></td>
-                <td>G g</td>
-                <td>G g</td>
-                <td>H h</td>
-              </tr>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob">Ґ ґ</td>
-                <td>[g]</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>G g</td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[d dʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[d]</td>
-                <td>Д д</td>
-                <td>D d</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob">Ђ ђ</td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td>Đ đ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[je ʲe e ɛ ɪ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ɛ e]</td>
-                <td>Е е</td>
-                <td>E e</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob">є</td>
-                <td>[jɛ je ʲɛ ʲe]</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>YE Ye ye (z.b.), ie</td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Ё ё</td>
-                <td>[ɵ jo ʲo]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td>jo</td>
-                <td>Ë ë</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[ʐ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ʒ]</td>
-                <td>Ж ж</td>
-                <td></td>
-                <td>Zh zh</td>
-                <td>Ž ž</td>
-                <td>ZH Zh zh</td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[z zʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[z]</td>
-                <td>З з</td>
-                <td>Z z</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[i ɪ ɨ ʲi]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ɪ e]</td>
-                <td>И и</td>
-                <td>I i</td>
-                <td></td>
-                <td></td>
-                <td>Y y</td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob">I і</td>
-                <td>[ʲi i]</td>
-                <td></td>
-                <td>I i</td>
-                <td>Ī ī</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob">ї</td>
-                <td>[ji]</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>YI Yi yi (z.b.), i; ï</td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Й й</td>
-                <td>[j]</td>
-                <td class="brezdrob">Ј ј</td>
-                <td></td>
-                <td class="brezdrob">Й й</td>
-                <td>[j i̯]</td>
-                <td></td>
-                <td></td>
-                <td>Ĭ ĭ</td>
-                <td>J j</td>
-                <td>Y y (z.b.), i; ĭ</td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[k kʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[k]</td>
-                <td>К к</td>
-                <td>K k</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[ɫ lʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ɫ]</td>
-                <td>Л л</td>
-                <td>L l</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob">Љ љ</td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td>ǈ ǉ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[m mʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[m]</td>
-                <td>М м</td>
-                <td>M m</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[n nʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[n]</td>
-                <td>Н н</td>
-                <td>N n</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob">Њ њ</td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td>ǋ ǌ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[o]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ɔ]</td>
-                <td>О о</td>
-                <td>O o</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[p pʲ] /p/</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[p]</td>
-                <td>П п</td>
-                <td>P p</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[r rʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[r]</td>
-                <td>Р р</td>
-                <td>R r</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[s sʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[s]</td>
-                <td>С с</td>
-                <td>S s</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[t tʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[t]</td>
-                <td>Т т</td>
-                <td>T t</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob">Ћ ћ</td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td>Ć ć</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[u ʊ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[u ʊ]</td>
-                <td>У у</td>
-                <td>U u</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[f fʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[f]</td>
-                <td>Ф ф</td>
-                <td>F f</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[x xʲ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[x]</td>
-                <td>Х х</td>
-                <td>H h</td>
-                <td>Kh kh</td>
-                <td></td>
-                <td>KH Kh kh</td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[t͡s]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[t͡s]</td>
-                <td>Ц ц</td>
-                <td>C c</td>
-                <td>TS t͡s</td>
-                <td></td>
-                <td>TS Ts ts</td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[t͡ɕ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[t͡ʃ]</td>
-                <td>Ч ч</td>
-                <td>Č č</td>
-                <td>Ch ch</td>
-                <td>Č č</td>
-                <td>CH Ch ch</td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob">Џ џ</td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td>ǅ ǆ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob"></td>
-                <td>[ʂ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ʃ]</td>
-                <td>Ш ш</td>
-                <td>Š š</td>
-                <td>Sh sh</td>
-                <td></td>
-                <td>SH Sh sh</td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Щ щ</td>
-                <td>[ɕɕ ɕː ɕʨ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ʃt͡ʃ]</td>
-                <td></td>
-                <td>šč</td>
-                <td>Shch shch</td>
-                <td></td>
-                <td>shch</td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Ъ ъ</td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td>{trdi znak (jer (ер))}</td>
-                <td>ʺ {trdi znak}</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Ы ы </td>
-                <td>[ɨ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td>y (jeri (еры))</td>
-                <td>Y y</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Ь ь</td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ʲ]</td>
-                <td></td>
-                <td>{mehki znak (ерь)}</td>
-                <td>ʹ {mehki znak}</td>
-                <td></td>
-                <td>ʹ {mehki znak}</td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Ѣ ѣ</td>
-                <td>[ɛ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>IE ie</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Э э</td>
-                <td>[ɛ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td>ė</td>
-                <td>Ė ė</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Ю ю</td>
-                <td>[ju u ʊ ʉ]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ju jʊ ʲu ʲʊ]</td>
-                <td></td>
-                <td>ju</td>
-                <td>IU iu</td>
-                <td></td>
-                <td>YU Yu yu (z.b.), iu</td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Я я</td>
-                <td>[jæ jɪ æ a ɪ ja]</td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td>[ja jɐ ʲa ʲɐ]</td>
-                <td></td>
-                <td>ja</td>
-                <td>IA ia</td>
-                <td></td>
-                <td>YA Ya ya (z.b.), ia</td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Ѳ ѳ</td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Ḟ ḟ</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="brezdrob">Ѵ ѵ</td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td class="brezdrob"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Ẏ ẏ</td>
-                <td></td>
-                <td></td>
-              </tr>
+                <tr>
+                    <td class="brezdrob">ruski sklop</td>
+                    <td>rusko prečrkovanje</td>
+                    <td class="brezdrob">ukrajinski sklop</td>
+                    <td>ukrajinsko prečrkovanje</td>
+                    <td class="brezdrob">mongolski sklop</td>
+                    <td>mongolsko prečrkovanje</td>
+                    <td class="brezdrob">srbski sklop</td>
+                    <td>srbsko prečrkovanje</td>
+                    <td>(slovenska) latinica</td>
+                </tr>
+                <tr>
+                    <td class="brezdrob"></td>
+                    <td></td>
+                    <td class="brezdrob">зг</td>
+                    <td>zgh</td>
+                    <td class="brezdrob"></td>
+                    <td></td>
+                    <td class="brezdrob"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
             </table>
         <div class="vsebina">
             <p>Prikazana prečrkovalna razpredelnica za srbsko cirilico je standardno srbsko (srbščina se piše v obeh pisavah) oziroma bosansko ter hrvaško prečrkovanje, ki ga uporabljamo tudi v slovenščini. Okvirno ustreza predpisu ISO 9, razen za črko j (ISO 9: ǰ) in dvočrkja lj (ISO 9: l̂) , nj (ISO 9: n̂), dž (ISO 9: d̂).
@@ -645,30 +992,42 @@
             </p>
             <h3>Zunanje povezave in viri</h2>
             <ul class="s">
-                <li><a href="https://www.omniglot.com/writing/cyrillic.htm">Omniglot: Cyrillic script</a> [<a class="arh" href="https://web.archive.org/web/20230920080423/https://www.omniglot.com/writing/cyrillic.htm">arhivirano</a>]<br>
+                <li><a href="https://www.omniglot.com/writing/cyrillic.htm" target="_blank" rel="noopener noreferrer">Omniglot: Cyrillic script</a> [<a class="arh" href="https://web.archive.org/web/20230920080423/https://www.omniglot.com/writing/cyrillic.htm" target="_blank" rel="noopener noreferrer">arhivirano</a>]<br>
                     <ul class="s">
-                <li><a href="https://www.omniglot.com/writing/russian.htm">Omniglot: Russian</a> [<a class="arh" href="https://web.archive.org/web/20230710120403/https://www.omniglot.com/writing/russian.htm">arhivirano</a>]<br>
-                <li><a href="https://omniglot.com/writing/ukrainian.htm">Omniglot: Ukrainian</a> [<a class="arh" href="https://web.archive.org/web/20230710121107/https://www.omniglot.com/writing/ukrainian.htm">arhivirano</a>]<br>
+                <li><a href="https://www.omniglot.com/writing/russian.htm" target="_blank" rel="noopener noreferrer">Omniglot: Russian</a> [<a class="arh" href="https://web.archive.org/web/20230710120403/https://www.omniglot.com/writing/russian.htm" target="_blank" rel="noopener noreferrer">arhivirano</a>]<br>
+                <li><a href="https://omniglot.com/writing/ukrainian.htm" target="_blank" rel="noopener noreferrer">Omniglot: Ukrainian</a> [<a class="arh" href="https://web.archive.org/web/20230710121107/https://www.omniglot.com/writing/ukrainian.htm" target="_blank" rel="noopener noreferrer">arhivirano</a>]<br>
                     </ul>
                 </li>
-                <li><a href="https://r12a.github.io/scripts/cyrl/index.html">r12a.github.io: Cyrillic</a></li>
+                <li><a href="https://r12a.github.io/scripts/cyrl/index.html" target="_blank" rel="noopener noreferrer">r12a.github.io: Cyrillic</a></li>
                     <ul class="s">
-                        <li><a href="https://r12a.github.io/scripts/cyrl/ru.html">r12a.github.io: Russian - cyrillic ortography notes</a> [<a class="arh" href="https://web.archive.org/web/20230607021003/https://r12a.github.io/scripts/cyrl/ru.html">arhivirano</a>]</li>
-                        <li><a href="https://r12a.github.io/scripts/cyrl/uk.html">r12a.github.io: Ukrainian - cyrillic ortography notes</a> [<a class="arh" href="https://web.archive.org/web/20230607031242/https://r12a.github.io/scripts/cyrl/uk.html">arhivirano</a>]</li>
-                        <li><a href="https://r12a.github.io/scripts/cyrl/mn.html">r12a.github.io: Mongolian - cyrillic ortography notes</a> [<a class="arh" href="https://web.archive.org/web/20230607020540/https://r12a.github.io/scripts/cyrl/mn.html">arhivirano</a>]</li>
+                        <li><a href="https://r12a.github.io/scripts/cyrl/ru.html" target="_blank" rel="noopener noreferrer">r12a.github.io: Russian - cyrillic ortography notes</a> [<a class="arh" href="https://web.archive.org/web/20230607021003/https://r12a.github.io/scripts/cyrl/ru.html" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
+                        <li><a href="https://r12a.github.io/scripts/cyrl/uk.html" target="_blank" rel="noopener noreferrer">r12a.github.io: Ukrainian - cyrillic ortography notes</a> [<a class="arh" href="https://web.archive.org/web/20230607031242/https://r12a.github.io/scripts/cyrl/uk.html" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
+                        <li><a href="https://r12a.github.io/scripts/cyrl/mn.html" target="_blank" rel="noopener noreferrer">r12a.github.io: Mongolian - cyrillic ortography notes</a> [<a class="arh" href="https://web.archive.org/web/20230607020540/https://r12a.github.io/scripts/cyrl/mn.html" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
                     </ul>
                 </li>
-                <li><a href="https://www.unicode.org/charts/PDF/U0400.pdf">Unicode: Cyrillic 0400-04FF</a> (pdf)</li>
-                <li><a href="https://unstats.un.org/unsd/geoinfo/ungegn/docs/26th-gegn-docs/WP/WP21_Roma_system_Ukraine%20_engl._.pdf">Romanization system in Ukraine (May 2011)</a> (pdf)</li>
-                <li><a href="https://geonames.nga.mil/geonames/GNSSearch/GNSDocs/romanization/ROMANIZATION_OF_UKRAINIAN.pdf">Romanization of Ukrainian (2019)</a> (pdf)</li>
-                <li><a href="https://www.loc.gov/catdir/cpso/romanization/ukrainia.pdf">Ukrainian (romanization)</a> (pdf)</li>
-                        <li><a href="">Russian romanization</a> (pdf) [<a class="arh" href="https://web.archive.org/web/20170312041508/http://www.lcweb.loc.gov/catdir/cpso/romanization/russian.pdf">arhivirano</a>]</li>
-                <li><a href="https://www.loc.gov/catdir/cpso/romanization/serbian.pdf">Serbian Romanization</a> (pdf)</li>
-                <li><a href="https://sl.wikipedia.org/wiki/Cirilica">Wikipedija: Cirilica</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Early_Cyrillic_alphabet">Wikipedia: Early Cyrillic alphabet</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Cyrillic_alphabets">Wikipedia: Cyrillic alphabets</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Scientific_transliteration_of_Cyrillic">Wikipedia: Scientific transliteration of Cyrillic</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/List_of_Cyrillic_letters">Wikipedia: List of Cyrillic letters</a></li>
+                <li><a href="https://www.unicode.org/charts/PDF/U0400.pdf" target="_blank" rel="noopener noreferrer">Unicode: Cyrillic 0400-04FF</a> (pdf)</li>
+                <li><a href="https://sl.wikipedia.org/wiki/Cirilica" target="_blank" rel="noopener noreferrer">Wikipedija: Cirilica</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Early_Cyrillic_alphabet" target="_blank" rel="noopener noreferrer">Wikipedia: Early Cyrillic alphabet</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Cyrillic_alphabets" target="_blank" rel="noopener noreferrer">Wikipedia: Cyrillic alphabets</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Scientific_transliteration_of_Cyrillic" target="_blank" rel="noopener noreferrer">Wikipedia: Scientific transliteration of Cyrillic</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/List_of_Cyrillic_letters" target="_blank" rel="noopener noreferrer">Wikipedia: List of Cyrillic letters</a></li>
+                <br>
+                <li><a href="https://www.loc.gov/catdir/cpso/romanization/russian.pdf" target="_blank" rel="noopener noreferrer">Russian romanization</a> (pdf) [<a class="arh" href="https://web.archive.org/web/20170312041508/http://www.lcweb.loc.gov/catdir/cpso/romanization/russian.pdf" target="_blank" rel="noopener noreferrer">arhivirano</a>]</li>
+                <li><a href="https://en.wikipedia.org/wiki/Romanization_of_Russian" target="_blank" rel="noopener noreferrer">Wikipedia: Romanization of Russian</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Russian_alphabet" target="_blank" rel="noopener noreferrer">Wikipedia: Russian alphabet</a></li>
+                <br>
+                <li><a href="https://unstats.un.org/unsd/geoinfo/ungegn/docs/26th-gegn-docs/WP/WP21_Roma_system_Ukraine%20_engl._.pdf" target="_blank" rel="noopener noreferrer">Romanization system in Ukraine (May 2011)</a> (pdf)</li>
+                <li><a href="https://geonames.nga.mil/geonames/GNSSearch/GNSDocs/romanization/ROMANIZATION_OF_UKRAINIAN.pdf" target="_blank" rel="noopener noreferrer">Romanization of Ukrainian (2019)</a> (pdf)</li>
+                <li><a href="https://www.loc.gov/catdir/cpso/romanization/ukrainia.pdf" target="_blank" rel="noopener noreferrer">Ukrainian (romanization)</a> (pdf)</li>
+                <li><a href="https://en.wikipedia.org/wiki/Romanization_of_Ukrainian" target="_blank" rel="noopener noreferrer">Wikipedia: Romanization of Ukrainian</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Ukrainian_Latin_alphabet" target="_blank" rel="noopener noreferrer">Wikipedia: Ukrainian Latin alphabet</a></li>
+                <br>
+                <li><a href="https://www.omniglot.com/writing/serbian.htm" target="_blank" rel="noopener noreferrer">Omniglot: Serbian</a></li>
+                <li><a href="https://www.loc.gov/catdir/cpso/romanization/serbian.pdf" target="_blank" rel="noopener noreferrer">Serbian Romanization</a> (pdf)</li>
+                <li><a href="https://en.wikipedia.org/wiki/Serbian_Cyrillic_alphabet" target="_blank" rel="noopener noreferrer">Wikipedia: Serbian Cyrillic alphabet</a></li>
+                <br>
+                <li><a href="https://en.wikipedia.org/wiki/Romanization_of_Macedonian" target="_blank" rel="noopener noreferrer">Wikipedia: Romanization of Macedonian</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Macedonian_alphabet" target="_blank" rel="noopener noreferrer">Wikipedia: Macedonian alphabet</a></li>
             </ul>
         </div>
     </body>
