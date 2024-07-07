@@ -31,6 +31,11 @@
     --barvaOspredja: black;
     --barvaNazaj: rgba(0, 0, 0, 0.4);
 }
+html, body { height: 100%;}
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
 body {
     transition: all 0.5s ease;
     background-color: var(--barvaOzadja);
@@ -39,20 +44,15 @@ body {
     opacity: 0.87;
     accent-color: var(--barvaPoudarka);
     margin: 0;
+    min-height: 100%
 }
-.footer {
-    background-color: var(--barvaOzadjaPoudarek);
-    text-align: center;
-    padding: 2rem;
-}
-.obvestilo {
-    text-align: center;
-    font-style: italic;
-    font-weight: bold;
+footer {
     background-color: var(--barvaPoudarkaProsojno);
-    color: var(--barvaOzadja);
-    border-radius: 0.5rem;
     padding: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: var(--barvaOzadja);
+    font-size: small;
 }
 
 .stikaloNačina {
