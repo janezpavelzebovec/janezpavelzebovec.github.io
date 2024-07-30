@@ -1,12 +1,35 @@
 <!doctype html>
-<html>
+<html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ogamska pisava</title>
-          <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
+
+        <title>Ogamska pisava</title>
+        <meta name="description" content="Ogamska pisava (iz. ang. Ogham) je stara runska pisava, s katero so pisali predvsem na kamen."  /> <!--opis spletnega mesta-->
+        <meta name="keywords" content="ogamska pisava, ogam, ogham, rune" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name content="Ogamska pisava"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" content="Ogamska pisava"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" content="Ogamska pisava (iz. ang. Ogham) je stara runska pisava, s katero so pisali predvsem na kamen." ><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="Ogamska pisava (iz. ang. Ogham) je stara runska pisava, s katero so pisali predvsem na kamen." ><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
 
     <body>
@@ -15,108 +38,120 @@
         </label>
         <aside class="sidebar">
           <nav>
-            <div><a href="./">Domov</a></div></div>
-            <div><a href="knjiznica">Knjižnica</a></div>
-            <div><a href="zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./">Domov</a></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+            <br>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div>
+            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div>
+            <div><a href="./glasopisnica">Glasopisnica</a></div>
+            <div><a href="./mojrodovnik">Moj rodovnik</a></div>
           </nav>
         </aside>
 
-        <div class="content">
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
+        <div class="vsebina">
             <h1>Ogamska pisava</h1>
             <p class="podnaslov">᚛ᚑᚌᚐᚋ᚜</p>
         </div>
         <table class="sredinsko zgornja vodčrte">
             <thead>
                 <tr>
-                    <th colspan="5">aicme b (prva aicme)</th>
-                    <th colspan="5">aicme h (druga aicme)</th>
-                    <th colspan="5">aicme m (tretja aicme)</th>
+                    <th colspan="5"><i>aicme b</i> (prva aicme)</th>
+                    <th colspan="5"><i>aicme h</i> (druga aicme)</th>
+                    <th colspan="5"><i>aicme m</i> (tretja aicme)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="brezdrob"><span class="dol-gor">ᚅ</span></td>
+                    <td class="brezdrob dol-gor">ᚅ</td>
                     <td class="brezdrob">ᚅ</td>
                     <td class="brezdrob">/n/</td>
-                    <td class="brezdrob">N</td>
+                    <td class="brezdrob">N n</td>
                     <td>nion</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚊ</span></td>
+                    <td class="brezdrob dol-gor">ᚊ</td>
                     <td class="brezdrob">ᚊ</td>
                     <td class="brezdrob">/kʷ/</td>
-                    <td class="brezdrob">Q</td>
+                    <td class="brezdrob">Q q</td>
                     <td>ceirt</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚏ</span></td>
+                    <td class="brezdrob dol-gor">ᚏ</td>
                     <td class="brezdrob">ᚏ</td>
                     <td class="brezdrob">/r/</td>
-                    <td class="brezdrob">R</td>
+                    <td class="brezdrob">R r</td>
                     <td>ruis</td>
                 </tr>
                 <tr>
-                    <td class="brezdrob"><span class="dol-gor">ᚄ</span></td>
+                    <td class="brezdrob dol-gor">ᚄ</td>
                     <td class="brezdrob">ᚄ</td>
                     <td class="brezdrob">/s/</td>
-                    <td class="brezdrob">S</td>
+                    <td class="brezdrob">S s</td>
                     <td>sail</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚉ</span></td>
+                    <td class="brezdrob dol-gor">ᚉ</td>
                     <td class="brezdrob">ᚉ</td>
                     <td class="brezdrob">/k/</td>
-                    <td class="brezdrob">C</td>
+                    <td class="brezdrob">C c</td>
                     <td>coll</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚎ</span></td>
+                    <td class="brezdrob dol-gor">ᚎ</td>
                     <td class="brezdrob">ᚎ</td>
                     <td class="brezdrob">/sw ts/</td>
-                    <td class="brezdrob">Z</td>
+                    <td class="brezdrob">Z z</td>
                     <td>straif</td>
                 </tr>
                 <tr>
-                    <td class="brezdrob"><span class="dol-gor">ᚃ</span></td>
+                    <td class="brezdrob dol-gor">ᚃ</td>
                     <td class="brezdrob">ᚃ</td>
                     <td class="brezdrob">/w/</td>
-                    <td class="brezdrob">F</td>
+                    <td class="brezdrob">F f</td>
                     <td>fern</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚈ</span></td>
+                    <td class="brezdrob dol-gor">ᚈ</td>
                     <td class="brezdrob">ᚈ</td>
                     <td class="brezdrob">/t/</td>
-                    <td class="brezdrob">T</td>
+                    <td class="brezdrob">T t</td>
                     <td>tinne</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚍ</span></td>
+                    <td class="brezdrob dol-gor">ᚍ</td>
                     <td class="brezdrob">ᚍ</td>
                     <td class="brezdrob">/gʷ/</td>
-                    <td class="brezdrob">NG</td>
+                    <td class="brezdrob">NG Ng ng</td>
                     <td>ngéadal</td>
                 </tr>
                 <tr>
-                    <td class="brezdrob"><span class="dol-gor">ᚂ</span></td>
+                    <td class="brezdrob dol-gor">ᚂ</td>
                     <td class="brezdrob">ᚂ</td>
                     <td class="brezdrob">/l/</td>
-                    <td class="brezdrob">L</td>
+                    <td class="brezdrob">L l</td>
                     <td>luis</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚇ</span></td>
+                    <td class="brezdrob dol-gor">ᚇ</td>
                     <td class="brezdrob">ᚇ</td>
                     <td class="brezdrob">/d/</td>
-                    <td class="brezdrob">D</td>
+                    <td class="brezdrob">D d</td>
                     <td>dair</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚌ</span></td>
+                    <td class="brezdrob dol-gor">ᚌ</td>
                     <td class="brezdrob">ᚌ</td>
                     <td class="brezdrob">/g/</td>
-                    <td class="brezdrob">G</td>
+                    <td class="brezdrob">G g</td>
                     <td>gort</td>
                 </tr>
                 <tr>
-                    <td class="brezdrob"><span class="dol-gor">ᚁ</span></td>
+                    <td class="brezdrob dol-gor">ᚁ</td>
                     <td class="brezdrob">ᚁ</td>
                     <td class="brezdrob">/b/</td>
-                    <td class="brezdrob">B</td>
+                    <td class="brezdrob">B b</td>
                     <td>beith</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚆ</span></td>
+                    <td class="brezdrob dol-gor">ᚆ</td>
                     <td class="brezdrob">ᚆ</td>
                     <td class="brezdrob">/y/</td>
-                    <td class="brezdrob">H</td>
+                    <td class="brezdrob">H h</td>
                     <td>uath</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚋ</span></td>
+                    <td class="brezdrob dol-gor">ᚋ</td>
                     <td class="brezdrob">ᚋ</td>
                     <td class="brezdrob">/m/</td>
-                    <td class="brezdrob">M</td>
+                    <td class="brezdrob">M m</td>
                     <td>muin</td>
                 </tr>
                 <tr>
@@ -124,89 +159,89 @@
                 </tr>
             <thead>
                 <tr>
-                    <th colspan="5">aicme a (četrta aicme)</th>
+                    <th colspan="5"><i>aicme a</i> (četrta aicme)</th>
                     <th colspan="5">peta aicme</th>
                     <th colspan="5">druga znamenja</th>
                 </tr>
             </thead>
                 <tr>
-                    <td class="brezdrob"><span class="dol-gor">ᚔ</span></td>
+                    <td class="brezdrob dol-gor">ᚔ</td>
                     <td class="brezdrob">ᚔ</td>
                     <td class="brezdrob">/i/</td>
-                    <td class="brezdrob">I</td>
+                    <td class="brezdrob">I i</td>
                     <td>iodhadh</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚙ</span></td>
+                    <td class="brezdrob dol-gor">ᚙ</td>
                     <td class="brezdrob">ᚙ</td>
                     <td class="brezdrob"></td>
-                    <td class="brezdrob">AE (- X/CH)</td>
+                    <td class="brezdrob">AE Ae ae (- X/CH)</td>
                     <td>eamhanchooll</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚚ</span></td>
+                    <td class="brezdrob dol-gor">ᚚ</td>
                     <td class="brezdrob">ᚚ</td>
                     <td class="brezdrob"></td>
-                    <td class="brezdrob">P (→ IO)</td>
+                    <td class="brezdrob">P p (→ IO)</td>
                     <td>peith</td>
                 </tr>
                 <tr>
-                    <td class="brezdrob"><span class="dol-gor">ᚓ</span></td>
+                    <td class="brezdrob dol-gor">ᚓ</td>
                     <td class="brezdrob">ᚓ</td>
                     <td class="brezdrob">/e/</td>
-                    <td class="brezdrob">E</td>
+                    <td class="brezdrob">E e</td>
                     <td>eadhadh</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚘ</span></td>
+                    <td class="brezdrob dol-gor">ᚘ</td>
                     <td class="brezdrob">ᚘ</td>
                     <td class="brezdrob"></td>
-                    <td class="brezdrob">IA</td>
+                    <td class="brezdrob">IA Ia ia</td>
                     <td>ifín</td>
-                    <td class="brezdrob"><span class="dol-gor">᚜</span></td>
+                    <td class="brezdrob dol-gor">᚜</td>
                     <td class="brezdrob">᚜</td>
                     <td class="brezdrob"></td>
-                    <td class="brezdrob">konec besedila</td>
+                    <td class="brezdrob"><i>konec besedila</i></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td class="brezdrob"><span class="dol-gor">ᚒ</span></td>
+                    <td class="brezdrob dol-gor">ᚒ</td>
                     <td class="brezdrob">ᚒ</td>
                     <td class="brezdrob">/u/</td>
-                    <td class="brezdrob">U</td>
+                    <td class="brezdrob">U u</td>
                     <td>úr</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚗ</span></td>
+                    <td class="brezdrob dol-gor">ᚗ</td>
                     <td class="brezdrob">ᚗ</td>
                     <td class="brezdrob"></td>
-                    <td class="brezdrob">UI</td>
+                    <td class="brezdrob">UI Ui ui</td>
                     <td>uilleann</td>
-                    <td class="brezdrob"><span class="dol-gor">᚛</span></td>
+                    <td class="brezdrob dol-gor">᚛</td>
                     <td class="brezdrob">᚛</td>
                     <td class="brezdrob"></td>
-                    <td class="brezdrob">začetek besedilla</td>
+                    <td class="brezdrob"><i>začetek besedilla</i></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td class="brezdrob"><span class="dol-gor">ᚑ</span></td>
+                    <td class="brezdrob dol-gor">ᚑ</td>
                     <td class="brezdrob">ᚑ</td>
                     <td class="brezdrob">/o/</td>
-                    <td class="brezdrob">O</td>
+                    <td class="brezdrob">O o</td>
                     <td>onn</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚖ</span></td>
+                    <td class="brezdrob dol-gor">ᚖ</td>
                     <td class="brezdrob">ᚖ</td>
                     <td class="brezdrob"></td>
-                    <td class="brezdrob">OI</td>
+                    <td class="brezdrob">OI Oi oi</td>
                     <td>ór</td>
-                    <td class="brezdrob"><span class="dol-gor"> </span></td>
+                    <td class="brezdrob dol-gor"> </td>
                     <td class="brezdrob"> </td>
                     <td class="brezdrob"></td>
-                    <td class="brezdrob">presledek</td>
+                    <td class="brezdrob"><i>presledek</i></td>
                     <td>Spás</td>
                 </tr>
                 <tr>
-                    <td class="brezdrob"><span class="dol-gor">ᚐ</span></td>
+                    <td class="brezdrob dol-gor">ᚐ</td>
                     <td class="brezdrob">ᚐ</td>
                     <td class="brezdrob">/a/</td>
-                    <td class="brezdrob">A</td>
+                    <td class="brezdrob">A a</td>
                     <td>ailm</td>
-                    <td class="brezdrob"><span class="dol-gor">ᚕ</span></td>
+                    <td class="brezdrob dol-gor">ᚕ</td>
                     <td class="brezdrob">ᚕ</td>
                     <td class="brezdrob"></td>
-                    <td class="brezdrob">EA</td>
+                    <td class="brezdrob">EA Ea ea</td>
                     <td>éabhadh</td>
                     <td class="brezdrob"></td>
                     <td class="brezdrob"></td>
@@ -216,17 +251,8 @@
                 </tr>
             </tbody>
         </table>
-        <div class="content">
-            <p>Preglednica:<br>
-                <ul>
-                    <li>1. stolpec: črka navpičnega načina pisanja,</li>
-                    <li>2. stolpec: črka vodoravnega načina pisanja,</li>
-                    <li>3. stolpec: izgovorjava,</li>
-                    <li>4. stolpec: prečrkovanje v latinico,</li>
-                    <li>5. stolpec: ime črke</li>
-                </ul>
-            </p>
-            <p>Smer pisanja: od spodaj gor, od leve proti desni</p>
+        <div class="vsebina">
+            <p>Vsaka črka je zapisana najprej v navpičnem (od spodaj gor) načinu pisanja (ki je najpogostejši), ter vodoravnem (od leve proti desni). Navedeni so še izgovorjava, prečrkovanje v latinico, ter ime črke.</p>
             <h3>Zunanje povezave in viri</h3>
             <ul class="s">
                 <li><a href="https://omniglot.com/writing/ogham.htm">Omniglot: Ogham</a> [<a class="arh" href="https://web.archive.org/web/20230930062935/https://omniglot.com/writing/ogham.htm">arhivirano</a>]</li>
@@ -235,5 +261,6 @@
                 <li><a href="https://en.wikipedia.org/wiki/Ogham_inscription">Wikipedia: Ogham inscription</a></li>
             </ul>
         </div>
+        <footer>Zadnja posodobitev te strani: <time datetime="2024-07-15">15. 7. 2024</time></footer>
     </body>
 </html>

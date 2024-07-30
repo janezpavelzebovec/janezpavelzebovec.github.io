@@ -1,12 +1,35 @@
 <!doctype html>
-<html>
+<html lang="sl">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Gotica</title>
-          <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
+
+        <title>Gotica</title>
+        <meta name="description" content="Gotica - stara evropska pisava."  /> <!--opis spletnega mesta-->
+        <meta name="keywords" content="gotica, fraktura, pisana gotica" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name content="Gotica"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" content="Gotica"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" content="Gotica - stara evropska pisava." ><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="Gotica - stara evropska pisava." ><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
     </head>
 
     <body>
@@ -16,12 +39,24 @@
         <aside class="sidebar">
           <nav>
             <div><a href="./">Domov</a></div></div>
-            <div><a href="knjiznica">Knjižnica</a></div>
-            <div><a href="zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+            <br>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
+            <div><a href="./glasopisnica">Glasopisnica</a></div>
+            <div><a href="./mojrodovnik">Moj rodovnik</a></div>
           </nav>
         </aside>
 
-        <div class="content">
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
+        <div class="vsebina">
             <h1>Gotica</h1>
             <p>Gótica (tudi gótska pisáva ali gótska minúskula) je različica <a href="latinica">latinice</a> nastala pod vplivom gotike. Tiskana gotica se v grobih potezah ne razlikuje od latinice, podrobnosti pa so slogovno drugače izrisane. V obdobju od (približno) leta 1150 do 17. stol. so gotico uporabljali kot različico latinice po večjem delu Evrope. Po letu 1500 so gotico v večjem delu Evrope opustili, še naprej pa se je pogosto uporabljala v danskem, norveškem in švedskem jeziku, do sedemdesetih letih 19. stol.. Med Nemci pa se je uporabljala še vse do štiridesetih let 20. stol., ko je bila leta 1941 uradno ukinjena zaradi Hitlerjevega odpora do domnevno "judovske pisave". V stoletjih uporabe so se razvile različne podrazličice gotice - najbolj znana med njimi je <i>fraktura</i> (dobesedno lomljena pisava).
             </p>
@@ -71,6 +106,7 @@
                 </ul>
             </p>
             <h4 id="Fraktura">Fraktura</h3>
+            <p style="font-size: large">𝔉𝔯𝔞𝔨𝔱𝔳𝔯𝔞</p>
             <p><i>Fraktura</i> je različica gotice, ki je do sredine 16. stoletja postala najpogostejša nemška gotica. Njena uporaba je bila tako pogosta, da se v Nemčiji vsaka oblika gotice pogosto imenuje kar Fraktura. Značilnosti Frakture so:<br>
                 <ul class="s">
                     <li>Levo stran male črke ⟨o⟩ tvori kotna poteza, desno stran pa zaobljena poteza. Na vrhu in na dnu se obe potezi stikata pod kotom. Podobne oblike imajo tudi druge male črke.</li>
@@ -174,6 +210,7 @@
                 </tbody>
             </table>
             <h4 id="Pisana gotica">Pisana gotica</h3>
+            <p class="PisanaGotica" style="font-size: small">Pis#ana #gotica</p>
             <p>Pisana gotica (ali <i>Kurziva</i>) se nanaša na zelo različne oblike črk; tako kot pri sodobnih pisanih črkah tudi tu ni prave standardne oblike. Razvila se je v 14. stoletju kot poenostavljena oblika teksture, in pod vplivom teksture, ki se je uporabljala za pisanje listin. Pisana gotica se je deloma razvila tudi zaradi uvedbe papirja, ki je bil bolj gladek od pergamenta, zato je bilo lažje hitro pisati na papir s pisano gotico.
             </p>
             <p>V pisani gotici so pogostejše črte, ki segajo pod spodnjo črto, zlasti v črkah ⟨f⟩ in ⟨s⟩, stebla pa so bolj ukrivljena in zankasta kot navpična (zlasti v črki ⟨d⟩). Črke ⟨a⟩, ⟨g⟩ in ⟨s⟩ (na koncu besede) so zelo podobne svojim karolinškim oblikam. Vendar vseh teh značilnosti ne najdemo v vseh primerih pisane gotice, zaradi česar je težko določiti, ali se pisava sploh lahko imenuje pisana gotica ali ne.
@@ -330,5 +367,7 @@
                 <li><a href="https://fancy-generator.com/gothic-text-generator">Fancy Generator: Gothic Font Generator</a></li>
             </ul>
         </div>
+        <footer>Zadnja posodobitev te strani: <time datetime="2024-07-14">14. 7. 2024</time>
+        </footer>
     </body>
 </html>

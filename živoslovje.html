@@ -39,10 +39,13 @@
         </label>
         <aside class="sidebar">
           <nav>
-            <div><a href="./">Domov</a></div></div>
-            <div><a href="knjiznica">Knjižnica</a></div>
-            <div><a href="zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
-            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
+            <div><a href="./">Domov</a></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+            <br>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div>
+            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div>
+            <div><a href="./glasopisnica">Glasopisnica</a></div>
+            <div><a href="./mojrodovnik">Moj rodovnik</a></div>
             <hr>
             <p>KAZALO</p>
             <ul class="ugn1">
@@ -52,11 +55,14 @@
 
         <div class="vsebina">
             <h1>Živoslovje</h1>
-            <p>živa bitja - domena - kraljestvo - deblo - razred - red - družina - rod - vrsta
+            <p>živa bitja - domena - kraljestvo - deblo - razred - red - družina - rod - vrsta</p>
+            <label class="gumb">
+              <input onclick="odpriDrevo()" type="checkbox" id="odpriRod" style="display: none"/><i><span id="odpriZapri">Zapri</span> celo drevo.</i>
+            </label>
             <ul class="drevesni">
-                <li><details><summary>živa bitja</summary>
+                <li><details open><summary>živa bitja</summary>
                     <ul>
-                        <li><details><summary>arheje</summary>
+                        <li><details open><summary>arheje</summary>
                             <ul>
                                 <li><details><summary></summary>
                                     <ul>
@@ -101,29 +107,29 @@
                                                 <li><details><summary></summary>
                                                     <ul>
                                                         <li></li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>Marjana Sirc, r. Štirn (12. sep. 1869 - 9. sep. 1923)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
                                         </details></li>
-                                        <li><details><summary>Angela Sirc, r. Koglar (24. avg. 1903 - 3. jan. 1982)</summary>
+                                        <li><details><summary></summary>
                                             <ul>
-                                                <li><details><summary>Ivan Koglar (22. jun. 1870 - 8. jan. 1942)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>Marija Koglar, r. Grilc (25. mar. 1869 - 18. maj 1955)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
@@ -132,7 +138,7 @@
                                 </details></li>
                             </ul>
                         </details></li>
-                        <li><details><summary>bakterije (Bacteria)</summary>
+                        <li><details open><summary>bakterije (Bacteria)</summary>
                             <ul>
                                 <li><details><summary></summary>
                                     <ul>
@@ -177,29 +183,29 @@
                                                 <li><details><summary></summary>
                                                     <ul>
                                                         <li></li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>Marjana Sirc, r. Štirn (12. sep. 1869 - 9. sep. 1923)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
                                         </details></li>
-                                        <li><details><summary>Angela Sirc, r. Koglar (24. avg. 1903 - 3. jan. 1982)</summary>
+                                        <li><details><summary></summary>
                                             <ul>
-                                                <li><details><summary>Ivan Koglar (22. jun. 1870 - 8. jan. 1942)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>Marija Koglar, r. Grilc (25. mar. 1869 - 18. maj 1955)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
@@ -208,58 +214,22 @@
                                 </details></li>
                             </ul>
                         </details></li>
-                        <li><details><summary>evkarije (Eukarya)</summary>
+                        <li><details open><summary>evkarije (Eukarya)</summary>
                             <ul>
-                                <li><details><summary>protisti (Protista)</summary>
+                                <li><details open><summary>protisti (Protista)</summary>
                                     <ul>
-                                        <li><details><summary>Dominik Podjavoršek „Hribernik“</summary>
+                                        <li><details><summary></summary>
                                             <ul>
-                                                <li><details><summary>Franc Podjavoršek „Hribernik“ (29. sep. 1864 - )</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>Helena Podjavoršek, r. Iršič (27. mar. 1861 - )</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                            </ul>
-                                        </details></li>
-                                        <li><details><summary>Angela Podjavoršek, r. Pinter</summary>
-                                            <ul>
-                                                <li><details><summary>Frančišek Pinter (2. okt. 1863 - )</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                                <li><details><summary>Marija Pinter, r. Germ</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                            </ul>
-                                        </details></li>
-                                    </ul>
-                                </details></li>
-                                <li><details><summary>glive (Fungi)</summary>
-                                    <ul>
-                                        <li><details><summary>Franc Selčan</summary>
-                                            <ul>
-                                                <li><details><summary>Jurij Selčan „Kokljič“ (12. apr. 1868 - 13. feb. 1911; Selce 2, Frankolovo)</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                                <li><details><summary>Marija Selčan, r. Korošec (27. jan. 1870 - 2. jan. 1901)</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
@@ -274,69 +244,17 @@
                                                 </details></li>
                                                 <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
                                         </details></li>
                                     </ul>
                                 </details></li>
-                                <li><details><summary>rastline (Plantae)</summary>
+                                <li><details open><summary>glive (Fungi)</summary>
                                     <ul>
-                                        <li><details><summary>mahovi</summary>
-                                            <ul>
-                                                <li><details><summary>Franc Podjavoršek „Hribernik“ (29. sep. 1864 - )</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                                <li><details><summary>Helena Podjavoršek, r. Iršič (27. mar. 1861 - )</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                            </ul>
-                                        </details></li>
-                                        <li><details><summary>praprotnice</summary>
-                                            <ul>
-                                                <li><details><summary>Frančišek Pinter (2. okt. 1863 - )</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                                <li><details><summary>Marija Pinter, r. Germ</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                            </ul>
-                                        </details></li>
-                                        <li><details><summary>semenke</summary>
-                                            <ul>
-                                                <li><details><summary>golosemenke</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                                <li><details><summary>kritosemenke</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                            </ul>
-                                        </details></li>
-                                    </ul>
-                                </details></li>
-                                <li><details><summary>živali (Animalia)</summary>
-                                    <ul>
-                                        <li><details><summary>spužve</summary>
+                                        <li><details><summary></summary>
                                             <ul>
                                                 <li><details><summary></summary>
                                                     <ul>
@@ -352,166 +270,254 @@
                                                 </details></li>
                                             </ul>
                                         </details></li>
-                                        <li><details><summary>ožigalkarji</summary>
+                                        <li><details><summary></summary>
                                             <ul>
-                                                <li><details><summary>Jakob Gorenšek „Laznik“ (15. jul. 1858 - 17. jul. 1904)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>Helena Petre, r. Steble (1. apr. 1880 - 7. sep. 1950)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
                                         </details></li>
-                                        <li><details><summary>ploskavci / ploski črvi</summary>
+                                    </ul>
+                                </details></li>
+                                <li><details open><summary>rastline (Plantae)</summary>
+                                    <ul>
+                                        <li><details open><summary>mahovi</summary>
                                             <ul>
-                                                <li><details><summary>Jakob Gorenšek „Laznik“ (15. jul. 1858 - 17. jul. 1904)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>Helena Petre, r. Steble (1. apr. 1880 - 7. sep. 1950)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
                                         </details></li>
-                                        <li><details><summary>mehkužci</summary>
+                                        <li><details open><summary>praprotnice</summary>
                                             <ul>
-                                                <li><details><summary>Jakob Gorenšek „Laznik“ (15. jul. 1858 - 17. jul. 1904)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>Helena Petre, r. Steble (1. apr. 1880 - 7. sep. 1950)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
                                         </details></li>
-                                        <li><details><summary>kolobarniki</summary>
+                                        <li><details open><summary>semenke</summary>
                                             <ul>
-                                                <li><details><summary>Jakob Gorenšek „Laznik“ (15. jul. 1858 - 17. jul. 1904)</summary>
+                                                <li><details open><summary>golosemenke</summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>Helena Petre, r. Steble (1. apr. 1880 - 7. sep. 1950)</summary>
+                                                <li><details open><summary>kritosemenke</summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
                                         </details></li>
-                                        <li><details><summary>valjevci</summary>
+                                    </ul>
+                                </details></li>
+                                <li><details open><summary>živali (Animalia)</summary>
+                                    <ul>
+                                        <li><details open><summary>spužve</summary>
                                             <ul>
-                                                <li><details><summary>Jakob Gorenšek „Laznik“ (15. jul. 1858 - 17. jul. 1904)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>Helena Petre, r. Steble (1. apr. 1880 - 7. sep. 1950)</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
                                         </details></li>
-                                        <li><details><summary>členonožci</summary>
+                                        <li><details open><summary>ožigalkarji</summary>
                                             <ul>
-                                                <li><details><summary>pajkovci</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>raki</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                                <li><details><summary>stonoge</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                                <li><details><summary>žuželke</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
                                         </details></li>
-                                        <li><details><summary>iglokožci</summary>
+                                        <li><details open><summary>ploskavci / ploski črvi</summary>
                                             <ul>
-                                                <li><details><summary>pajkovci</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>raki</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                                <li><details><summary>stonoge</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
-                                                    </ul>
-                                                </details></li>
-                                                <li><details><summary>žuželke</summary>
-                                                    <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
                                         </details></li>
-                                        <li><details><summary>vretenčarji</summary>
+                                        <li><details open><summary>mehkužci</summary>
                                             <ul>
-                                                <li><details><summary>brezčeljustnice / obloustke in ribe</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>dvoživke</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>plazilci</summary>
+                                            </ul>
+                                        </details></li>
+                                        <li><details open><summary>kolobarniki</summary>
+                                            <ul>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
-                                                <li><details><summary>ptice</summary>
+                                                <li><details><summary></summary>
                                                     <ul>
-                                                        <li>stari oče</li>
-                                                        <li>stara mati</li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                        <li><details open><summary>valjevci</summary>
+                                            <ul>
+                                                <li><details><summary></summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details><summary></summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                        <li><details open><summary>členonožci</summary>
+                                            <ul>
+                                                <li><details open><summary>pajkovci</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary>raki</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary>stonoge</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary>žuželke</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                        <li><details open><summary>iglokožci</summary>
+                                            <ul>
+                                                <li><details open><summary>pajkovci</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary>raki</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary>stonoge</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary>žuželke</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                        <li><details open><summary>vretenčarji</summary>
+                                            <ul>
+                                                <li><details open><summary>brezčeljustnice / obloustke in ribe</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary>dvoživke</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary>plazilci</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary>ptice</summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
                                                     </ul>
                                                 </details></li>
                                             </ul>
@@ -535,5 +541,6 @@
                 <li><a href="https://en.wikipedia.org/wiki/Cladistics" target="_blank" rel="noopener noreferrer">Wikipedia: Cladistics</a></li>
             </ul>
         </div>
+        <footer>Zadnja posodobitev te strani: <time datetime="2024-07-16">16. 7. 2024</time></footer>
     </body>
 </html>
