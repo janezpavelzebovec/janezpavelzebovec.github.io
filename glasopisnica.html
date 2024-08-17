@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
         <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
 
         <title>Glasopisnica</title>
         <meta name="description" content="Pisava, ustvarjena na podlagi glasov, oz. jezikovnih prvin." /> <!--opis spletnega mesta-->
@@ -38,314 +38,294 @@
         <aside class="sidebar">
           <nav>
             <div><a href="./">Domov</a></div></div>
-            <div><a href="knjiznica">Knjižnica</a></div>
-            <div><a href="zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+            <br>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div></div>
             <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div></div>
+            <div><a href="./mojrodovnik">Moj rodovnik</a></div>
+            <hr>
+            <p>KAZALO</p>
+            <ul class="ugn1">
+                <li><details><summary><a href="#Glasovi">Glasovi</a></summary>
+                    <ul>
+                        <li><details><summary><a href="#Soglasniki">Soglasniki</a></summary>
+                            <ul>
+                                <li><a href="#Mesta_izgovora">Mesta izgovora</a></li>
+                                <li><a href="#Nacini_izgovora">Načini izgovora</a></li>
+                            </ul>
+                        </details></li>
+                        <li><details><summary><a href="#Samoglasniki">Samoglasniki</a></summary>
+                            <ul>
+                                <li><a href="#Poudarki">Poudarki</a></li>
+                                <li><a href="#Dvoglasniki">Dvoglasniki</a></li>
+                            </ul>
+                        </details></li>
+                    </ul>
+                </details></li>
+                <li><details><summary><a href="#Neglasniška_znamenja">Neglasniška znamenja</a></summary>
+                    <ul>
+                        <li><a href="#Intonančna_znamenja">Intonančna znamenja</a></li>
+                        <li><a href="#Številke">Številke</a></li>
+                        <li><a href="#Druga_znamenja">Druga znamenja</a></li>
+                    </ul>
+                </details></li>
+                <li><a href="#Primer_zapisa">Primer zapisa</a></li>
+                <li><a href="#Zunanje povezave in viri">Zunanje povezave in viri</a></li>
+            </ul>
           </nav>
         </aside>
 
-        <div class="content">
-            <h1>Glasopisnica</h1>
-            <p>Črke, oziroma znamenja glasopisnice predstavljajo glasove; pisava temelji na glasoslovnih značilnostih, in ne na pravopisnih, zato naj bi natančno predstavljala izgovor zapisanih besed. Oblike črk izhajajo iz oblik govoril na mesta izgovora (za oznako mesta izgovora, ki je osnova črke), ter značilnostih načina izgovora (za oznako načina izgovora, ki je nadpisano osnovi), torej kako zrak teče skozi govorila (ali ne teče).</p>
-            <p>Eden od ciljev pisave je tudi ta, da bi se z njo lahko vsi jeziki zapisovali enako enostavno (z ozirom na to, da se razlikujejo v glasovnem obsegu) in smiselno; kar v primeru mednarodne glasoslovne abecede ne velja - poleg tega, da oblike črk ne temeljijo na izgovoru, so si nekatere črke sorodne le v videzu a ne v izgovorjavi, ter za zapis izgovorjave redkejših jezikov MGA ni pripravna.</p>
-            <p>Nekatere besed se lahko zato v zapisu razlikujejo od pisca do pisca, saj je lahko več možnih izgovorov in pisec pravzaprav piše svoj govor, zato praviloma zapiše, kot izgovarja (kar pa je odvisno od okoliščin); tako je lahko zapisano tudi v katerem izmed narečij.</p>
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>način \ mesto</th>
-                    <th>P
-                      <br>B</th>
-                    <th>F
-                      <br>V</th>
-                    <th>S
-                      <br>Z</th>
-                    <th>Θ
-                      <br>Ð</th>
-                    <th>N
-                      <br>M</th>
-                    <th>T
-                      <br>D</th>
-                    <th>Š
-                      <br>Ž</th>
-                    <th>Ʈ
-                      <br>Ɖ</th>
-                    <th>Ç
-                      <br>J</th>
-                    <th>K
-                      <br>G</th>
-                    <th>Q
-                      <br>ɢ</th>
-                    <th>ʡ
-                      <br>ʢ</th>
-                    <th>H
-                      <br>Ɦ</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>p</td><!--zaporniki-->
-                    <td>Pp
-                      <br>Bp</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>c</td><!--zlitniki-->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>f</td><!--zlitniki-->
-                    <td>Pf
-                      <br>Bf</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>s</td><!--priporniki-->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>h</td><!--priporniki-->
-                    <td>Ph
-                      <br>Bh</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>n</td><!--nosniki-->
-                    <td>Pn
-                      <br>Bn</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>ć</td><!--obstranski zlitnik-->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>ɬ</td><!--obstranski pripornik-->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>ɺ</td><!--obstranski tap/flap-->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>l</td><!--obstranski drsnik-->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>r</td><!--tresavec-->
-                    <td>Pr
-                      <br>Br</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>ɾ</td><!--tap/flap-->
-                    <td>Pɾ
-                      <br>Bɾ</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>j</td><!--drsniki, ozki samoglasniki-->
-                    <td>Pj
-                      <br>Bj</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
 
-        <table>
-            <tbody>
-                <tr>
-                    <td>ɯ u</td>
-                    <td></td>
-                    <td>ɨ ʉ</td>
-                    <td></td>
-                    <td>i y</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>ʊ</td>
-                    <td>ʊ̈</td>
-                    <td>ɪʏ</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>ɤ o</td>
-                    <td></td>
-                    <td>ɘ ɵ</td>
-                    <td></td>
-                    <td>e ø</td>
-                </tr>
-                <tr>
-                    <td>ɤ̞ o̞</td>
-                    <td></td>
-                    <td>ə</td>
-                    <td></td>
-                    <td>e̞ ø̞</td>
-                </tr>
-                <tr>
-                    <td>ʌ ɔ</td>
-                    <td></td>
-                    <td>ɜ ɞ</td>
-                    <td></td>
-                    <td>ɛ œ</td>
-                </tr>
-                <tr>
-                    <td>ɑ̝ ɒ̝</td>
-                    <td></td>
-                    <td>ɐ</td>
-                    <td></td>
-                    <td>æ œ̞̈</td>
-                </tr>
-                <tr>
-                    <td>ɑ ɒ</td>
-                    <td></td>
-                    <td>ä ɒ̈</td>
-                    <td></td>
-                    <td>a ɶ</td>
-                </tr>
-            </tbody>
+        <div class="vsebina">
+            <h1>Glasopisnica</h1>
+            <p class="podnaslov Glasopisnica" style="margin: 1rem;">GtDláTsOPtíTsniTcä</p>
+            <img class="obrnjena image-center"
+                style="padding: 0;"
+                src="./images/glasopisnica-govorila.svg"
+                width="25%"/>
+            <p>Črke, oziroma znamenja glasopisnice predstavljajo glasove; pisava temelji na glasoslovnih značilnostih jezika, in ne na pravopisnih, zato naj bi kar najbolje predstavljala izgovor zapisanih besed. Oblike črk izhajajo iz oblik govoril na mestu izgovora (za oznako mesta izgovora, ki je vzeto kot osnova črke), ter značilnostih načina izgovora (za oznako načina izgovora, ki je nadpisano, lahko pa tudi podpisano, osnovi), torej kako zrak teče skozi/mimo govoril/a (ali <i>ne</i> teče).</p>
+            <p>Eden od namenov pisave je tudi ta, da bi se z njo lahko vsi jeziki zapisovali enako enostavno (z ozirom na to, da se razlikujejo v množini glasov) in smiselno; kar v primeru mednarodne glasoslovne abecede ne velja - poleg tega, da oblike črk ne temeljijo na izgovoru, so si nekatere črke sorodne le v videzu, ne pa v značilnostih izgovora; za zapis izgovorjave nekaterih jezikov (npr. afriških) pa MGA sploh ni pripravna, oz. zapis teh jezikov z njo postane nepregleden.</p>
+            <p>Ker se izgovor ponekod od narečja do narečja, oz. od govorca do govorca določenega jezika precej razlikuje, se to (lahko) izrazi tudi v zapisu.</p>
+            <h2 id="Soglasniki">Soglasniki</h2>
+            <h3 id="Mesta_izgovora">Mesta izgovora</h3>
+            <p>Kot že rečeno, je znamenje mesta izgovora oblikovano po pripadajočem govorilu. Kjer pri izgovoru sodeluje jezik, je ta praviloma prav tako prikazan in (kjer je to mogoče) zlit z zvenečnostno oznako.
+                <br>Zvenečnost soglasnika se označuje z majhnim podpisanim krogcem, ki pa se zaradi prikladnosti običajno veže na znamenje mesta izgovora; kljub temu, da se zvenečnost morda bolj nanaša na način, kot mesto izgovora, vendar je to odvisno od razlage. Sam menim, da je bolj stvar mesta izgovora, ker se način običajno vrši na trenutnem mestu/govorilu (kjer se npr. jezik stika z dlesnijo), glasilke pa so povsem drugje in govorilo zase.
+        </div>
+        <table class="sredinsko">
+            <tr>
+                <td>dvoustnični</td>
+                <td>zobno-ustnični</td>
+                <td>ustnično-jezični</td>
+                <td>zobni</td>
+                <td>zobno-dlesnični</td>
+                <td>dlesnični</td>
+                <td>zadlesnični</td>
+                <td>zasukani <span class="zamrznjeno">(retrofleksni)</span></td>
+                <td>trdonebni</td>
+                <td>mehkonebni</td>
+                <td>jezičkovi</td>
+                <td>grlni</td>
+                <td>glasilčni</td>
+            </tr>
+            <tr class="Glasopisnica">
+                    <td>P B</td>
+                    <td>F V</td>
+                    <td>Ť Ď</td>
+                    <td>Θ Ð</td>
+                    <td>N M</td>
+                    <td>T D</td>
+                    <td>Š Ž</td>
+                    <td>Ʈ Ɖ</td>
+                    <td>C J</td>
+                    <td>K G</td>
+                    <td>Q ɢ</td>
+                    <td>Ħ ʕ</td>
+                    <td>H Ɦ</td>
+            </tr>
+        </table>
+        <div class="vsebina">
+            <p>Nekatera premena (npr. mehčani /l'/ v besedi <i>po<b>lj</b>ski</i>) se označujejo z dodatnim podpisanim mestom izgovora (brez jezika).
+            <h3 id="Nacini_izgovora">Načini izgovora</h3>
+            <p>Oznake za način izgovora predstavljajo obliko, oz. gibanje prepreke/zapore.</p>
+        </div>
+        <table class="sredinsko">
+            <tr>
+                <td>zapornik</td>
+                <td>sičniški pripornik</td>
+                <td>nesičniški pripornik</td>
+                <td>nosnik</td>
+                <td>obstranski pripornik</td>
+                <td>obstranski tap/flap</td>
+                <td>obstranski drsnik</td>
+                <td>tresavec</td>
+                <td>tap/flap</td>
+                <td>drsnik</td>
+            </tr>
+            <tr class="Glasopisnica">
+                    <td> t</td>
+                    <td> s</td>
+                    <td> h</td>
+                    <td> n</td>
+                    <td> ɬ</td>
+                    <td> ɺ</td>
+                    <td> l</td>
+                    <td> r</td>
+                    <td> ɾ</td>
+                    <td> j</td>
+            </tr>
+        </table>
+        <div class="vsebina">
+            <h2 id="Samoglasniki">Samoglasniki</h2>
+            <p>Za osnovo samoglasnika je vzet krog, ki predstavlja (bolj ali manj) odprto ustno votlino, oz. zračno pot, v čemer se bistveno razlikujejo od soglasnikov.
+                <br>S črtami ob krogu so označene strani ustne votline (spredaj, zadaj, zgoraj, spodaj), katerim je sredina jezika najbližje. Te črte v primeru nenevtralnih sredinskih samoglasnikov nastopijo še v obliki bolj odmaknjenih kljuk, ki nakazujejo neko srednjo oddaljenost od določene strani votline (niso v nobenem izmed skrajnih položajev, prav tako pa tudi niso povsem nevtralni); te so v primeru zelo ozkih/širokih združene še z običajnimi črtami zgoraj/spodaj, kar nakazuje že na bolj skrajno lego, a še ne povsem.
+                <br>Pika pod samoglasnikom označuje zaokroženost (pri izgovoru našobljene ustnice). <span class="pripis">Ista pika se lahko pojavi tudi pod nekaterimi soglasniki</span></p>
+        </div>
+        <div class="stolpci sredina">
+            <img class="obrnjena" width="300px"
+                src="./images/samoglasniški_trapezZ.svg"
+                alt="Samoglasniški trapez">
+    <style>
+      table.samGla tr td:not(:first-child) {
+        font-family: 'Glasopisnica';
+        font-size: 2rem;
+      }
+    </style>
+            <table class="sredinsko samGla">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>zadnji</th>
+                        <th>srednji</th>
+                        <th>sprednji</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>visoki</td>
+                        <td>u ɯ</td>
+                        <td>ʉ ɨ</td>
+                        <td>y i</td>
+                    </tr>
+                    <tr>
+                        <td>zelo ozki sredinski</td>
+                        <td>ʊ</td>
+                        <td><!--ʊ̈--></td>
+                        <td>ʏ ɪ</td>
+                    </tr>
+                    <tr>
+                        <td>ozki sredinski</td>
+                        <td>o ɤ</td>
+                        <td>ɵ ɘ</td>
+                        <td>ø e</td>
+                    </tr>
+                    <tr>
+                        <td>nevtralni sredinski</td>
+                        <td><!--o̞ ɤ̞--></td>
+                        <td>ə</td>
+                        <td><!--ø̞ e̞--></td>
+                    </tr>
+                    <tr>
+                        <td>široki sredinski</td>
+                        <td>ɔ ʌ</td>
+                        <td>ɞ ɜ</td>
+                        <td>œ ɛ</td>
+                    </tr>
+                    <tr>
+                        <td>zelo široki sredinski</td>
+                        <td><!--ɒ̝ ɑ̝--></td>
+                        <td>ɐ</td>
+                        <td><!--œ̞̈--> æ</td>
+                    </tr>
+                    <tr>
+                        <td>nizki</td>
+                        <td>ɒ ɑ</td>
+                        <td>ä <!--ɒ̈--></td>
+                        <td>ɶ a</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="content">
+            <h2 id="Neglasniška_znamenja">Neglasniška znamenja</h2>
+            <h3 id="Intonančna_znamenja">Intonančna znamenja</h3>
+            <p>Znamenja, ki označujejo intonacijo, predstavljajo odklone v višini govora.</p>
+        </div>
+        <table class="sredinsko">
+            <tr>
+                <td>.</td>
+                <td>?</td>
+                <td>!</td>
+                <td>,</td>
+                <td>;</td>
+                <td>:</td>
+                <td>-</td>
+            </tr>
+            <tr class="Glasopisnica">
+                <td>.</td>
+                <td>?</td>
+                <td>!</td>
+                <td>,</td>
+                <td>;</td>
+                <td>:</td>
+                <td>-</td>
+            </tr>
         </table>
         <div class="content">
-            <p>Podoben pristop je uporabljen tudi za številke in druga znamenja.
-                <br>Znamenja za številke izhajajo iz položaja prstov roke.<p>
+            <h3 id="Številke">Številke</h3>
+            <p>Znamenja za številke izhajajo iz položaja prstov na rokah; zato je tudi izbrani številski sistem desetiški, saj imamo (praviloma) na obeh rokah skupaj 10 prstov.</p>
         </div>
-        <footer class="obvestilo">Zadnja posodobitev te strani: <time datetime="2024-07-13">13. 7. 2024</time>
+        <table class="sredinsko">
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr class="Glasopisnica">
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+        <div class="content">
+            <h3 id="Druga_znamenja">Druga znamenja</h3>
+            <p></p>
+        </div>
+        <table class="sredinsko">
+            <tr>
+                <td>razdelilno znamenje</td>
+                <td>@</td>
+            </tr>
+            <tr class="Glasopisnica">
+                <td>*</td>
+                <td>@</td>
+            </tr>
+        </table>
+        <div class="content">
+            <h3 id="Primer_ zapisa">Primer zapisa</h3>
+            <div style="display:flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap">
+                <p class="besedilosred"><i>Živé naj vsi naródi,
+                    <br>ki hrepené dočakat' dan,
+                    <br>da koder sonce hodi,
+                    <br>prepir iz svéta bo pregnan,
+                    <br>da rojak
+                    <br>prost bo vsak,
+                    <br>ne vrag, le sosed bo mejak!</i><p>
+                <p class="besedilosred Glasopisnica">ŽsiVhé Dnä_i FhTsi DnäDróDti,
+                    <br>Kti GhDrEPtEDné DtOŠcáKtäTt DtáDn,
+                    <br>Dtä KtóDtëTr TsóDnTcE GhóDti,
+                    <br>PtDrEPtíDr iTs TsVhéTtä Btó PtDrEGtDnáDn,
+                    <br>Dtä DrOJjáKt,
+                    <br>PtDròTs t Btó FhTsáKt,
+                    <br>DnE VhDráGt, DlE TsôTsEDt Btó BnEJjáKt!<p>
+            </div>
+            <hr>
+            <h3>Zunanje povezave in viri</h3>
+            <ul class="s">
+                <li><a href="https://sl.wikipedia.org/wiki/Mednarodna_foneti%C4%8Dna_abeceda">Wikipedija - Mednarodna fonetična abeceda</li>
+            </ul>
+        </div>
+        <footer class="obvestilo">Zadnja posodobitev te strani: <time datetime="2024-08-17">17. 8. 2024</time>
         </footer>
     </body>
 </html>

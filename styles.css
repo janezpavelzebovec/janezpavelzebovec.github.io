@@ -44,7 +44,7 @@ body {
     opacity: 0.87;
     accent-color: var(--barvaPoudarka);
     margin: 0;
-    min-height: 100%
+    min-height: 100vh;
 }
 footer {
     background-color: var(--barvaPoudarkaProsojno);
@@ -94,6 +94,18 @@ footer {
     color: white;
 }
 @font-face {
+    font-family: 'Glasopisnica';
+    src: url('fonts/glasopisnica/Glasopisnica.woff2') format('woff2'),
+         url('fonts/glasopisnica/Glasopisnica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Glasopisnica {
+    font-family: 'Glasopisnica';
+    font-size: 2rem;
+    font-variant-ligatures: normal;
+}
+@font-face {
     font-family: 'PisanaGotica';
     src: url('fonts/pisana_gotica/pisana_gotica-webfont.woff2') format('woff2'),
          url('fonts/pisana_gotica/pisana_gotica-webfont.woff') format('woff');
@@ -103,6 +115,32 @@ footer {
 .PisanaGotica {
     font-family: 'PisanaGotica';
     font-size: 1.5rem;
+    font-variant-ligatures: normal;
+}
+
+@font-face {
+    font-family: 'Croatica';
+    src: url('fonts/Croatica/Croatica.woff2') format('woff2'),
+         url('fonts/Croatica/Croatica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Croatica {
+    font-family: 'Croatica';
+    font-size: 1rem;
+    font-variant-ligatures: normal;
+}
+
+@font-face {
+    font-family: 'Glagolica';
+    src: url('fonts/Glagolica_Missal/GlagolicaMissalDPG.woff2') format('woff2'),
+         url('fonts/Glagolica_Missal/GlagolicaMissalDPG.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Glagolica {
+    font-family: 'Glagolica';
+    font-size: 1rem;
     font-variant-ligatures: normal;
 }
 
@@ -310,9 +348,9 @@ footer {
     font-size: 2rem;
 }
 .dol-gor /*smer pisave* (npr. ogamska)*/ {
-    transform-origin: left center 0;
-    transform: rotate(-90deg);
-    position: absolute;
+    /*transform-origin: left center 0;
+    transform: rotate(0);
+    position: absolute;*/
     writing-mode: vertical-lr;
 }
 .povezavaStran {
