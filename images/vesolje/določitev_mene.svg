@@ -12,21 +12,21 @@
   <g
      transform="matrix(0.99961,0,0,0.99911,103.0428,0.01320807)"
      id="g22">
-    <g
-       transform="matrix(0.28267,0.95182,-0.95182,0.28267,270.73,-97.037)"
-       style="stroke:#ffffff"
-       id="g6">
-      <circle
-         cx="78.671997"
-         cy="255.25999"
-         r="50"
-         style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.71398;stroke-linejoin:round"
-         id="circle2" />
-      <path
-         d="m 78.672,205.26 a 50,50 0 0 0 -0.91416,0.0341 100,100 0 0 0 -13.379,49.966 100,100 0 0 0 13.379,49.966 50,50 0 0 0 0.91416,0.0341 50,50 0 0 0 50,-50 50,50 0 0 0 -50,-50 z"
-         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:0.71398;stroke-linejoin:round"
-         id="path4" />
-    </g>
+    <circle
+       cx="62.166321"
+       cy="-33.703197"
+       r="49.645332"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.708916;stroke-linejoin:round"
+       id="circle2"
+       transform="rotate(73.459717)" />
+    <path
+       d="m 97.597641,35.865427 a 49.645333,49.645333 0 0 0 -0.290863,-0.860476 99.290666,99.290666 0 0 0 -51.34048,1.389489 99.290666,99.290666 0 0 0 -43.7767959,26.858289 49.645333,49.645333 0 0 0 0.2259486,0.879755 49.645333,49.645333 0 0 0 61.7245003,33.4575 49.645333,49.645333 0 0 0 33.4575,-61.7245 z"
+       style="display:inline;opacity:1;fill:#b4b4b4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.00064;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.00128, 4.00257;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4" />
+    <path
+       style="opacity:1;fill:#00000d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:110.264;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path1418"
+       d="M 99.652004,50.340855 A 49.645363,49.670208 0 0 1 74.829322,93.356517 49.645363,49.670208 0 0 1 25.183959,93.356516 49.645363,49.670208 0 0 1 0.36127853,50.340855 H 50.006641 Z" />
     <rect
        transform="rotate(73.46)"
        x="47.330002"
@@ -39,16 +39,16 @@
        cx="-83.083"
        cy="90.084999"
        r="20"
-       style="fill:#003f40;fill-rule:evenodd"
+       style="fill:#00fffd;fill-rule:evenodd;fill-opacity:1"
        id="circle10" />
     <rect
        transform="rotate(73.311)"
-       x="61.973"
-       y="-94.601997"
-       width="1"
-       height="200"
-       style="fill:#00fd00;fill-rule:evenodd"
-       id="rect12" />
+       x="61.862926"
+       y="-96.114433"
+       height="222.07732"
+       style="fill:#00ff00;fill-rule:evenodd;stroke-width:1.11039;fill-opacity:1"
+       id="rect12"
+       width="1.1102185" />
     <rect
        x="-10"
        y="49.5"
@@ -74,5 +74,9 @@
        r="2.5"
        style="fill:#0000ff;fill-rule:evenodd"
        id="circle20" />
+    <path
+       d="M 97.306778,35.004951 C 80.367597,30.95742 62.661759,31.436614 45.966298,36.39444 29.271037,41.352938 14.173694,50.61558 2.1895021,63.252729"
+       style="display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#464646;stroke-width:1.00064;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:2.00128, 4.00257;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4-8" />
   </g>
 </svg>

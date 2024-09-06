@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="125.2185mm"
+   height="88.405434mm"
+   viewBox="0 0 125.21849 88.405434"
+   version="1.1"
+   id="svg97541"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs97538">
+    <linearGradient
+       id="linearGradient99359">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1"
+         offset="0"
+         id="stop99355" />
+      <stop
+         style="stop-color:#ff0000;stop-opacity:0"
+         offset="1"
+         id="stop99357" />
+    </linearGradient>
+    <radialGradient
+       xlink:href="#linearGradient99359"
+       id="radialGradient99361"
+       cx="41.499702"
+       cy="171.23744"
+       fx="41.499702"
+       fy="171.23744"
+       r="50.081669"
+       gradientTransform="matrix(1.6253592,2.124083e-7,-1.7688538e-7,1.287413,-25.952194,-75.77192)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-9.7782522,-71.672591)">
+    <circle
+       style="opacity:1;fill:#fffd00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.103706;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path98335"
+       cx="122.99485"
+       cy="97.63015"
+       r="4.447021" />
+    <path
+       style="fill:none;stroke:#ffff00;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 122.99485,97.630152 C 95.829803,113.31391 68.664752,128.99765 41.499702,144.6814"
+       id="path98802" />
+    <path
+       style="fill:url(#radialGradient99361);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 41.499702,144.6814 122.99485,97.630151 122.9004,144.6814 Z"
+       id="path99320" />
+    <path
+       id="path101259"
+       style="opacity:1;fill:none;fill-rule:evenodd;stroke:#ffff00;stroke-width:0.425853;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       transform="matrix(0.76418892,-0.64499247,0.81846348,0.57455855,0,0)"
+       d="m -86.60804,93.103218 c 49.182869,0 89.0534635,19.690962 89.0534669,43.980992 5.6e-6,24.29003 -39.8705909,43.981 -89.0534669,43.981" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="126.18882"
+       y="148.17918"
+       id="text105079"><tspan
+         id="tspan105077"
+         style="font-size:10.5833px;stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="126.18882"
+         y="148.17918">0°</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="28.494432"
+       y="81.647186"
+       id="text105079-3"><tspan
+         id="tspan105077-3"
+         style="font-size:10.5833px;stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="28.494432"
+         y="81.647186">+90°</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="31.923393"
+       y="157.93472"
+       id="text105079-3-4"><tspan
+         id="tspan105077-3-9"
+         style="font-size:7.40833px;stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="31.923393"
+         y="157.93472">−90°</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="12.466088"
+       y="147.12985"
+       id="text105079-3-4-9"><tspan
+         id="tspan105077-3-9-3"
+         style="font-size:7.40833px;stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="12.466088"
+         y="147.12985">±180°</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.29167px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="108.75529"
+       y="145.97522"
+       id="text105079-9"><tspan
+         id="tspan105077-2"
+         style="font-size:5.29167px;stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="108.75529"
+         y="145.97522">obzorje</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.29167px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="28.394911"
+       y="100.24309"
+       id="text105079-4"><tspan
+         id="tspan105077-4"
+         style="font-size:5.29167px;stroke:#fffffd;stroke-width:0.132292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="28.394911"
+         y="100.24309">nadglavišče</tspan></text>
+    <path
+       id="path125009"
+       style="fill:none;stroke:#0000ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 41.499701,144.6814 v 7.24037 m 0.02435,-69.512537 -0.02435,62.272167" />
+    <path
+       id="path125387"
+       style="fill:none;stroke:#00ff00;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 41.499701,144.6814 h -8.176478 m 8.176479,0 h 66.874588" />
+  </g>
+</svg>

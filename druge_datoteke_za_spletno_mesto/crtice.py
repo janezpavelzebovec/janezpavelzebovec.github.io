@@ -1,24 +1,24 @@
 import numpy as np
 
-razmik = (2*np.pi) / 365.2425
-kot = np.arange(-(np.pi/2), 3*np.pi/2, razmik)
+spacing = (2*np.pi) / 365.2425 #angle in radians
+angle = np.arange(-(np.pi/2), 3*np.pi/2, spacing)
 
-r_z = 420
-r_n = 410
+rEx = 420 #external radius of line
+rIn = 410 #internal radius of line
 
-x_n = np.cos(kot)*r_n + r_z
-y_n = (np.sin(kot)*r_n)*-1 + r_z
-x_z = np.cos(kot)*r_z + r_z
-y_z = (np.sin(kot)*r_z)*-1 + r_z
+xIn = np.cos(kot)*rIn + rEx #internal x coordinate point of individual line
+yIn = (np.sin(kot)*rIn)*-1 + rEx #internal y coordinate point of individual line
+xEx = np.cos(kot)*rEx + rEx #external x coordinate point of individual line
+yEx = (np.sin(kot)*rEx)*-1 + rEx #external y coordinate point of individual line
 
-crt = np.array([x_n, y_n, x_z, y_z])
-crt = crt.transpose()
+line = np.array([xIn, yIn, xEx, yEx])
+line = line.transpose()
 d = ''
-# for i in range(len(crt))
-for i in range(len(crt)):
-    d += f' M {crt[i][0]},{crt[i][1]} L {crt[i][2]},{crt[i][3]}'
+# for i in range(len(line))
+for i in range(len(line)):
+    d += f' M {line[i][0]},{line[i][1]} L {line[i][2]},{line[i][3]}'
 
-svg = open('obod.svg', 'w')
+svg = open('rim.svg', 'w')
 svg.write(
 '''<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg

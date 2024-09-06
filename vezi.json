@@ -1,0 +1,154 @@
+[
+  {
+    "id": "JŽ",
+    "potomci": ["JŽ1767"]
+  },
+  {
+    "id": "MJ1735",
+    "potomci": ["JJ1754"]
+  },
+  {
+    "id": "MP",
+    "potomci": ["JJ1754"]
+  },
+  {
+    "id": "JŽ1767",
+    "potomci": ["GŽ1798"]
+  },
+  {
+    "id": "JJ1754",
+    "potomci": ["GŽ1798"]
+  },
+  {
+    "id": "FV1789",
+    "potomci": ["MV1819"]
+  },
+  {
+    "id": "MČ",
+    "potomci": ["MV1819"]
+  },
+  {
+    "id": "GŽ1798",
+    "potomci": ["VŽ1850"]
+  },
+  {
+    "id": "MV1819",
+    "potomci": ["VŽ1850"]
+  },
+  {
+    "id": "VŽ1850",
+    "potomci": ["FŽ1891"]
+  },
+  {
+    "id": "UŽ1862",
+    "potomci": ["FŽ1891"]
+  },
+  {
+    "id": "JD1853",
+    "potomci": ["FD1901"]
+  },
+  {
+    "id": "MM1823",
+    "potomci": ["FD1901"]
+  },
+  {
+    "id": "JS1873",
+    "potomci": ["JS1904"]
+  },
+  {
+    "id": "MŠ1869",
+    "potomci": ["JS1904"]
+  },
+  {
+    "id": "IK1870",
+    "potomci": ["AK1903"]
+  },
+  {
+    "id": "MG1869",
+    "potomci": ["AK1903"]
+  },
+  {
+    "id": "FŽ1891",
+    "potomci": ["CŽ1932"]
+  },
+  {
+    "id": "FD1901",
+    "potomci": ["CŽ1932"]
+  },
+  {
+    "id": "JS1904",
+    "potomci": ["AS1941"]
+  },
+  {
+    "id": "AK1903",
+    "potomci": ["AS1941"]
+  },
+  {
+    "id": "CŽ1932",
+    "potomci": ["IŽ1969"]
+  },
+  {
+    "id": "AS1941",
+    "potomci": ["IŽ1969"]
+  },
+
+
+
+
+  {
+    "id": "FP1864",
+    "potomci": ["DP1901"]
+  },
+  {
+    "id": "HI1861",
+    "potomci": ["DP1901"]
+  },
+  {
+    "id": "FP1863",
+    "potomci": ["AP1906"]
+  },
+  {
+    "id": "MG",
+    "potomci": ["AP1906"]
+  },
+  {
+    "id": "JS1868",
+    "potomci": ["FS1899"]
+  },
+  {
+    "id": "MK1870",
+    "potomci": ["FS1899"]
+  },
+  {
+    "id": "JG1858",
+    "potomci": ["MG1901"]
+  },
+  {
+    "id": "HS1880",
+    "potomci": ["MG1901"]
+  },
+  {
+    "id": "DP1901",
+    "potomci": ["AP1940"]
+  },
+  {
+    "id": "AP1906",
+    "potomci": ["AP1940"]
+  },
+  {
+    "id": "FS1899",
+    "potomci": ["AS1944"]
+  },
+  {
+    "id": "MG1901",
+    "potomci": ["AS1944"]
+  },
+  {
+    "id": "AP1940",
+    "potomci": ["MP1972"]
+  },
+  {
+    "id": "AS1944",
+    "potomci": ["MP1972"]
+  }
+]

@@ -56,7 +56,7 @@
 
 //ODPRE DREVESNI PRIKAZ
     //function odpriDrevo() {document.getElementById("drevesni").addAttribute("open");}
-    function odpriDrevo() {
+    /*function odpriDrevo() {
         // Poišči vse <ul> z razredom "drevesni"
         var drevesniSeznami = document.querySelectorAll("ul.drevesni");
 
@@ -77,7 +77,32 @@
         });
         // Premakni brskalnik na del strani z id-jem "details"
         //window.location = "#details";
+    }*/
+function odpriDrevo() {
+    var drevesniSeznami = document.querySelectorAll("ul.drevesni");
+    var odpriRod = document.getElementById("odpriRod");
+    var odpriZapri = document.getElementById("odpriZapri");
+
+    if (odpriRod.checked){
+        drevesniSeznami.forEach(function(drevesniSeznam) {
+            var vsePodrobnosti = drevesniSeznam.querySelectorAll("details");
+            // Iteriraj skozi vse <details> in preveri stanje
+            vsePodrobnosti.forEach(function(podrobnosti) {
+                    podrobnosti.removeAttribute("open");
+            });
+        });
+        odpriZapri.innerHTML = `Odpri`;
+    } else {
+        drevesniSeznami.forEach(function(drevesniSeznam) {
+            var vsePodrobnosti = drevesniSeznam.querySelectorAll("details");
+            // Iteriraj skozi vse <details> in preveri stanje
+            vsePodrobnosti.forEach(function(podrobnosti) {
+                    podrobnosti.setAttribute("open", "");
+            });
+        });
+        odpriZapri.innerHTML = `Zapri`;
     }
+};
 
 //SPROTNO NALAGANJE SLIK
     if ("IntersectionObserver" in window)
@@ -133,45 +158,121 @@
       }
     }
 
+//TEMNE IN SVETLE RAZLIČIVE SLIKE
+
+/*    const updateSourceMedia = (colorPreference) => {
+      const pictures = document.querySelectorAll('picture');
+
+      pictures.forEach((picture) => {
+        const sources = picture.querySelectorAll(`
+          source[media*="prefers-color-scheme"],
+          source[data-media*="prefers-color-scheme"]
+        `);
+
+        sources.forEach((source) => {
+          // Preserve the source `media` as a data-attribute
+          // to be able to switch between preferences
+          if (source.media.includes('prefers-color-scheme')) {
+            source.dataset.media = source.media;
+          }
+
+          // If the source element `media` target is the `preference`,
+          // override it to 'all' to show
+          // or set it to 'none' to hide
+          if (source.dataset.media.includes(colorPreference)) {
+            source.media = 'all';
+          } else {
+            source.media = 'none';
+          }
+        });
+      });
+    };
+
+    // Izberite stikalo z novim ID-jem
+    const toggle = document.querySelector('#stikaloNačina');
+
+    // Nastavite začetno temo glede na vrednost v atributu data-mode stikala
+    document.firstElementChild.setAttribute('data-theme', toggle.dataset.mode);
+
+    // Dodajte poslušalca dogodkov na stikalo za preklapljanje tem
+    toggle.addEventListener('click', () => {
+      // Preverite trenutni način in preklopite na nasprotno
+      const newMode = toggle.dataset.mode === 'light' ? 'dark' : 'light';
+      toggle.dataset.mode = newMode;
+
+      // Nastavite novo temo na <html> element
+      document.firstElementChild.setAttribute('data-theme', newMode);
+
+      // Posodobite slike glede na novo temo
+      updateSourceMedia(newMode);
+    });
+
+    // Prvotno klicanje funkcije za nastavitev slik na podlagi trenutnega načina
+    updateSourceMedia(toggle.dataset.mode);*/
+
 //SVETLI NAČIN
-    // preveri shranjene 'svetliNačin' v krajevni shrambi
-    let svetliNačin = localStorage.getItem('svetliNačin');
+// Funkcija za posodabljanje medijskih pogojev za slike
+const updateSourceMedia = (colorPreference) => {
+  const pictures = document.querySelectorAll('picture');
 
-    const svetliNačinToggle = document.querySelector('#stikaloNačina');
+  pictures.forEach((picture) => {
+    const sources = picture.querySelectorAll(`
+      source[media*="prefers-color-scheme"],
+      source[data-media*="prefers-color-scheme"]
+    `);
 
-    const enablesvetliNačin = () => {
-      // 1. Add the class to the body
-      document.body.classList.add('svetliNačin');
-      // 2. Update svetliNačin in localStorage
-      localStorage.setItem('svetliNačin', 'enabled');
-    }
+    sources.forEach((source) => {
+      if (source.media.includes('prefers-color-scheme')) {
+        source.dataset.media = source.media;
+      }
 
-    const disablesvetliNačin = () => {
-      // 1. Remove the class from the body
-      document.body.classList.remove('svetliNačin');
-      // 2. Update svetliNačin in localStorage
-      localStorage.setItem('svetliNačin', null);
-    }
-
-    // If the user already visited and enabled svetliNačin
-    // start things off with it on
-    if (svetliNačin === 'enabled') {
-      enablesvetliNačin();
-    }
-
-    // When someone clicks the button
-    svetliNačinToggle.addEventListener('click', () => {
-      // get their svetliNačin setting
-      svetliNačin = localStorage.getItem('svetliNačin');
-
-      // if it not current enabled, enable it
-      if (svetliNačin !== 'enabled') {
-        enablesvetliNačin();
-      // if it has been enabled, turn it off
+      if (source.dataset.media.includes(colorPreference)) {
+        source.media = 'all';
       } else {
-        disablesvetliNačin();
+        source.media = 'none';
       }
     });
+  });
+}
+
+// Preveri shranjeno temo v krajevni shrambi
+let svetliNačin = localStorage.getItem('svetliNačin');
+
+const svetliNačinToggle = document.querySelector('#stikaloNačina');
+
+// Funkcija za omogočanje svetlega načina
+const enablesvetliNačin = () => {
+  document.body.classList.add('svetliNačin');
+  localStorage.setItem('svetliNačin', 'enabled');
+  document.firstElementChild.setAttribute('data-theme', 'light');
+  updateSourceMedia('light');
+}
+
+// Funkcija za onemogočanje svetlega načina (temni način)
+const disablesvetliNačin = () => {
+  document.body.classList.remove('svetliNačin');
+  localStorage.setItem('svetliNačin', null);
+  document.firstElementChild.setAttribute('data-theme', 'dark');
+  updateSourceMedia('dark');
+}
+
+// Inicializacija teme ob nalaganju strani
+if (svetliNačin === 'enabled') {
+  enablesvetliNačin();
+} else {
+  disablesvetliNačin();
+}
+
+// Ko uporabnik klikne na stikalo
+svetliNačinToggle.addEventListener('click', () => {
+  svetliNačin = localStorage.getItem('svetliNačin');
+
+  if (svetliNačin !== 'enabled') {
+    enablesvetliNačin();
+  } else {
+    disablesvetliNačin();
+  }
+});
 
 //NAČIN ZA TISKANJE
     //pred tiskanjem spremeni v svetli način in odpre vse <details>

@@ -707,7 +707,18 @@ ul.drevesni {
     ul.drevesni > li:after, ul.drevesni > li:before {
         display:none
     }
-
+    /*ul.drevesni br::after {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 0.5em;
+        border-left: 2px solid gray;
+        margin-left: 4px;
+    }*/
+    .stran {float: right;} /*za npr. seznam s številkami strani poravnanimi na desno*/
+    li:not(:has(li)):has(span.stran):hover {
+        background-color: var(--barvaOzadjaNaprej);
+    }
 a {
     color: var(--barvaPoudarka);
     cursor: pointer;

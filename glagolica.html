@@ -58,399 +58,791 @@
 
         <div class="vsebina">
             <h1>Glagolica</h1>
-            <p class="podnaslov">ⰃⰎⰀⰃⰑⰎⰋⰜⰀ</p>
+            <p class="podnaslov">ⰃⰎⰀⰃⰑⰎⰉⰜⰀ</p>
         </div>
-        <table class="sredinsko zgornja vodčrte">
+        <style>table.CroaticaDrugi td:nth-child(2) {
+                font-family: 'Glagolica';
+                font-size: 1.5rem;
+            }
+            table.CroaticaDrugi td:nth-child(1) {
+                font-size: 1.5rem;
+            }
+
+            table.vezave td:nth-child(1) {
+                font-family: 'Glagolica';
+                font-size: 1.5rem;
+            }
+            table.vezave td:nth-child(2) {
+                font-family: 'Glagolica';
+                font-size: 1rem;
+            }
+        </style>
+        <table class="sredinsko zgornja vodčrte CroaticaDrugi">
             <thead>
                 <tr>
+                    <th colspan="2">črka</th>
+                    <th rowspan="2">št. vred.</th>
+                    <th colspan="2">cirilična ustreznica</th>
+                    <th rowspan="2">izgovorjava</th>
+                    <th rowspan="2">prečrkovanje v latinico</th>
+                    <th colspan="2">ime</th>
+                    <th rowspan="2">pomen</th>
+                    <th rowspan="2">verjeten izvor</th>
+                </tr>
+                <tr>
+                    <th>okrogla / obla</th>
+                    <th>oglata / hrv.</th>
                     <th>črka</th>
-                    <th>cirilična ustreznica</th>
-                    <th>izgovorjava</th>
-                    <th>starocerkvenoslovansko ime</th>
-                    <th>cerkvenoslovansko ime</th>
-                    <th>pomen</th>
-                    <th>izvor</th>
+                    <th>št. vred.</th>
+                    <th>starocerkvenoslovansko</th>
+                    <th>cerkvenoslovansko</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Ⰰ</td>
-                    <td>А</td>
-                    <td>/ɑ/</td>
-                    <td>Azъ</td>
+                    <td>Ⰰ ⰰ</td>
+                    <td>Ⰰ ⰰ</td>
+                    <td class="polna">1</td>
+                    <td>А а</td>
+                    <td class="polna">1</td>
+                    <td>a<br>/ɑ/</td>
+                    <td>A a</td>
+                    <td>azъ</td>
                     <td>Az</td>
                     <td>jaz</td>
-                    <td>alef 𐤀‎ iz feničanske abecede ali znamenje križa</td>
+                    <td>grška <i>alfa</i> Α α<br>feničanski <i>alef</i> 𐤀‎<br>znamenje križa</td>
                     </tr>
                 <tr>
-                    <td>Ⰱ</td>
-                    <td>Б</td>
-                    <td>/b/</td>
-                    <td>Buky</td>
-                    <td>Buky</td>
-                    <td>črke</td>
-                    <td>neznano; verjetno hebrejski bet  בּ‎ ali aramajski bīt  ܒ‎</td>
+                    <td>Ⰱ ⰱ</td>
+                    <td>Ⰱ ⰱ</td>
+                    <td>2</td>
+                    <td>Б б</td>
+                    <td class="mrtva"></td>
+                    <td>b<br>/b/</td>
+                    <td>B b</td>
+                    <td>buky</td>
+                    <td>buky</td>
+                    <td>črka</td>
+                    <td>neznano<br>morda hebrejski <i>bet</i>  בּ‎ ali aramajski <i>bīt</i>  ܒ‎</td>
                     </tr>
                 <tr>
-                    <td>Ⰲ</td>
-                    <td>В</td>
-                    <td>/ʋ/</td>
-                    <td>Vědě</td>
-                    <td>Vedi</td>
-                    <td>vé</td>
-                    <td>verjetno latinski V ali obrnjen <i>dobro</i>  Ⰴ</td>
+                    <td>Ⰲ ⰲ</td>
+                    <td>Ⰲ ⰲ</td>
+                    <td>3</td>
+                    <td>В в</td>
+                    <td>2</td>
+                    <td>v<br>/ʋ/</td>
+                    <td>V v</td>
+                    <td>vědě</td>
+                    <td>vedi</td>
+                    <td>vem</td>
+                    <td>grška <i>beta</i> Β β<br>morda latinični V<br>obrnjen <i>dobro</i>  Ⰴ</td>
                     </tr>
                 <tr>
-                    <td>Ⰳ</td>
-                    <td>Г Ґ</td>
-                    <td>/ɡ/</td>
+                    <td>Ⰳ ⰳ</td>
+                    <td>Ⰳ ⰳ</td>
+                    <td>4</td>
+                    <td>Г г<span class="pripis">, Ґ</span></td>
+                    <td>3</td>
+                    <td>g<br>/ɡ/</td>
+                    <td>G g</td>
                     <td>Glagoli</td>
                     <td>Glagoli</td>
                     <td>govori</td>
-                    <td>verjetno pisana grška gama 𝛾</td>
+                    <td>morda pisana grška <i>gama</i>  𝛾<br>grška </i>gama</i> Γ γ</td>
                 </tr>
                 <tr>
-                    <td>Ⰴ</td>
-                    <td>Д</td>
-                    <td>/d/</td>
+                    <td>Ⰴ ⰴ</td>
+                    <td>Ⰴ ⰴ</td>
+                    <td>5</td>
+                    <td>Д д</td>
+                    <td>4</td>
+                    <td>d<br>/d/</td>
+                    <td>D d</td>
                     <td>Dobro</td>
                     <td>Dobro</td>
                     <td>dobro</td>
-                    <td>grška delta Δ</td>
+                    <td>grška <i>delta</i> Δ δ</td>
                     </tr>
                 <tr>
-                    <td>Ⰵ</td>
-                    <td>Є, Е, Э, Ё</td>
-                    <td>/ɛ/</td>
+                    <td>Ⰵ ⰵ</td>
+                    <td>Ⰵ ⰵ</td>
+                    <td>6</td>
+                    <td>Є<span class="pripis">, Е е, Э, Ё</span></td>
+                    <td>5</td>
+                    <td>e, je<br>/ɛ/</td>
+                    <td>E e</td>
                     <td>Jestъ</td>
                     <td>Yest</td>
                     <td>je, obstaja</td>
-                    <td>verjetno samaritanski īy ࠄ‎ ali grški ϡ</td>
+                    <td>grški <i>epsilon</i> Ε ε<br>morda samaritanski <i>īy</i> ࠄ‎<br>grški <i>sampi</i> ϡ</td>
                     </tr>
                 <tr>
-                    <td>Ⰶ</td>
-                    <td>Ж</td>
-                    <td>/ʒ/</td>
+                    <td>Ⰶ ⰶ</td>
+                    <td>Ⰶ ⰶ</td>
+                    <td>7</td>
+                    <td>Ж ж</td>
+                    <td class="mrtva"></td>
+                    <td>ž<br>/ʒ/</td>
+                    <td>Ž ž</td>
                     <td>Živěte</td>
                     <td>Zhivete</td>
                     <td>živite</td>
-                    <td>neznano; verjetno koptski janja ϫ  ali astrološko znamenje Pisces ♓︎</td>
+                    <td>neznano<br>morda koptski <i>janja</i> ϫ  <br>astrološko znamenje <i>Pisces</i> ♓︎; <i>Tifinagh</i> ⵣ</td>
                     </tr>
                 <tr>
-                    <td>Ⰷ</td>
-                    <td>Ѕ</td>
-                    <td>/d͡z/</td>
+                    <td>Ⰷ ⰷ</td>
+                    <td>Ⰷ ⰷ</td>
+                    <td>8</td>
+                    <td>Ѕ ѕ</td>
+                    <td>6</td>
+                    <td>dz<br>/dz/</td>
+                    <td>Dz dz</td>
                     <td>Dzělo</td>
                     <td>Zelo</td>
                     <td>zelo</td>
-                    <td>neznano; verjetno armenski ja Ձ</td>
+                    <td>neznano<br>morda armenski <i>ja</i> Ձ</td>
                     </tr>
                 <tr>
-                    <td>Ⰸ</td>
-                    <td>З</td>
-                    <td>/z/</td>
+                    <td>Ⰸ ⰸ</td>
+                    <td>Ⰸ ⰸ</td>
+                    <td>9</td>
+                    <td>З з</td>
+                    <td>7</td>
+                    <td>z<br>/z/</td>
+                    <td>Z z</td>
                     <td>Zemlja</td>
                     <td>Zeml(j)a</td>
                     <td>zemlja/Zemlja</td>
-                    <td>verjetno različica grške theta  θ</td>
+                    <td>morda različica grške <i>theta</i>  θ<br>grška <i>zeta</i> Ζ ζ</td>
                     </tr>
                 <tr>
-                    <td>Ⰹ Ⰺ</td>
-                    <td>Ι Ї</td>
-                    <td>/i/, /j/</td>
+                    <td>Ⰺ ⰺ <span class="pripis">začetna</span>,<br>Ⰹ ⰹ</td>
+                    <td>Ⰺ ⰺ , Ⰹ ⰹ</td>
+                    <td class="polna">10</td>
+                    <td>Ї ï, І і</td>
+                    <td class="polna">10</td>
+                    <td>i<br>/i/, /j/</td>
+                    <td>I i</td>
                     <td>Iže</td>
                     <td>Izhe</td>
                     <td>ki je</td>
-                    <td>verjetno grški upsilon Y ali grška jota z ločilnim znamenjem (na vrhu) ϊ</td>
+                    <td>morda grški <i>upsilon</i> Y<br>ali grška <i>jota</i> z ločilnim znamenjem (na vrhu) ϊ<br>grška <i>eta</i> Η η</td>
                 </tr>
-                    <td>Ⰻ</td>
-                    <td>И</td>
-                    <td>/i/, /j/</td>
+                    <td>Ⰻ ⰻ</td>
+                    <td>Ⰻ ⰻ</td>
+                    <td>20</td>
+                    <td>И и</td>
+                    <td>8</td>
+                    <td>i<br>/i/, /j/</td>
+                    <td>I i</td>
                     <td>I/ižei</td>
                     <td>I/izhey</td>
                     <td>in</td>
-                    <td>verjetno posnema obliko ribe</td>
+                    <td>morda posnema obliko ribe<br>grška <i>jota</i> Ι ι</td>
                 </tr>
                 <tr>
-                    <td>Ⰼ</td>
-                    <td>Ꙉ, Ћ, Ђ</td>
-                    <td>/dʑ/, /tɕ/</td>
+                    <td>Ⰼ ⰼ</td>
+                    <td>Ⰼ ⰼ</td>
+                    <td>30</td>
+                    <td>Ћ ћ, Ђ ђ<span class="pripis">, Ꙉ</span></td>
+                    <td class="mrtva"></td>
+                    <td>g', ĵ<br>/dʑ/, /tɕ/; /dʒ/</td>
+                    <td>Ć ć, Đ đ<span class="pripis">, Dj dj</span></td>
                     <td>Djervь, ǵervь</td>
                     <td>Cherv, Djerv</td>
                     <td>drevo, drvo</td>
                     <td>neznano</td>
                 </tr>
                 <tr>
-                    <td>Ⰽ</td>
-                    <td>К</td>
-                    <td>/k/</td>
-                    <td>Kako</td>
-                    <td>Kako</td>
+                    <td>Ⰽ ⰽ</td>
+                    <td>Ⰽ ⰽ</td>
+                    <td>40</td>
+                    <td>К к</td>
+                    <td>20</td>
+                    <td>k<br>/k/</td>
+                    <td>K k</td>
+                    <td>kako</td>
+                    <td>kako</td>
                     <td>kako/kot</td>
-                    <td>hebrejski qoph ק‎‎</td>
+                    <td>hebrejski <i>qoph</i> ק<br>grška <i>kapa</i> Κ κ‎‎</td>
                     </tr>
                 <tr>
-                    <td>Ⰾ</td>
-                    <td>Л, Љ</td>
-                    <td>/l/, /ʎ/</td>
+                    <td>Ⰾ ⰾ</td>
+                    <td>Ⰾ ⰾ</td>
+                    <td>50</td>
+                    <td>Л л<span class="pripis">, Љ</span></td>
+                    <td>30</td>
+                    <td>l<br>/l/, /ʎ/</td>
+                    <td>L l</td>
                     <td>Ljudie</td>
                     <td>Lyudi</td>
                     <td>ljudje</td>
-                    <td>verjetno grška lambda λ</td>
+                    <td>morda grška <i>lambda</i> Λ λ</td>
                 </tr>
                 <tr>
-                    <td>Ⰿ</td>
-                    <td>М</td>
-                    <td>/m/</td>
+                    <td>Ⰿ ⰿ</td>
+                    <td><span class="pripis">Ⰿ ⰿ, </span>Ⱞ ⱞ</td>
+                    <td>60</td>
+                    <td>М м</td>
+                    <td>40</td>
+                    <td>m<br>/m/</td>
+                    <td>M m</td>
                     <td>Myslite</td>
                     <td>Mislete</td>
                     <td>mislite</td>
-                    <td>grška mu  μ. V oglati glagolici je bil sčasoma zamenjan z latinsko/cirilično obliko, delno zaradi njene zapletenosti</td>
+                    <td>grška <i>mi</i> Μ μ.<br><span class="pripis">V oglati glagolici je bil sčasoma zamenjan z latinično/cirilično obliko, delno zaradi njene zapletenosti</span></td>
                 </tr>
                 <tr>
-                    <td>Ⱀ</td>
-                    <td>Н, Њ</td>
-                    <td>/n/, /ɲ/</td>
+                    <td>Ⱀ ⱀ</td>
+                    <td>Ⱀ ⱀ</td>
+                    <td>70</td>
+                    <td>Н н<span class="pripis">, Њ</span></td>
+                    <td>50</td>
+                    <td>n<br>/n/, /ɲ/</td>
+                    <td>N n</td>
                     <td>Našь</td>
                     <td>Nash</td>
                     <td>naš</td>
-                    <td>neznano</td>
+                    <td>neznano<br>grška <i>ni</i> Ν ν</td>
                 </tr>
                 <tr>
-                    <td>Ⱁ</td>
-                    <td>О</td>
-                    <td>/ɔ/</td>
+                    <td>Ⱁ ⱁ</td>
+                    <td>Ⱁ ⱁ</td>
+                    <td>80</td>
+                    <td>О о</td>
+                    <td>70</td>
+                    <td>o<br>/ɔ/</td>
+                    <td>O o</td>
                     <td>Onъ</td>
                     <td>On</td>
                     <td>on</td>
-                    <td>neznano</td>
+                    <td>neznano<br>grška <i>omikron</i> Ο ο</td>
                     </tr>
                 <tr>
-                    <td>Ⱂ</td>
-                    <td>П</td>
-                    <td>/p/</td>
+                    <td>Ⱂ ⱂ</td>
+                    <td>Ⱂ ⱂ</td>
+                    <td>90</td>
+                    <td>П п</td>
+                    <td>80</td>
+                    <td>p<br>/p/</td>
+                    <td>P p</td>
                     <td>Pokoj</td>
                     <td>Pokoy</td>
                     <td>pokoj</td>
-                    <td>verjetno različica zgodnjegrškega pi</td>
+                    <td>morda različica zgodnjegrškega <i>pi</i><br>grška <i>pi</i> Π π</td>
                 </tr>
                 <tr>
-                    <td>Ⱃ</td>
-                    <td>Р</td>
-                    <td>/r/</td>
+                    <td>Ⱃ ⱃ</td>
+                    <td>Ⱃ ⱃ</td>
+                    <td class="polna">100</td>
+                    <td>Р р</td>
+                    <td class="polna">100</td>
+                    <td>r<br>/r/</td>
+                    <td>R r</td>
                     <td>Rьci</td>
                     <td>Rtsi</td>
                     <td>reci</td>
-                    <td>verjetno grški ro ρ</td>
+                    <td>morda grški <i>ro</i> Ρ ρ</td>
                 </tr>
                 <tr>
-                    <td>Ⱄ</td>
-                    <td>С</td>
-                    <td>/s/</td>
+                    <td>Ⱄ ⱄ</td>
+                    <td>Ⱄ ⱄ</td>
+                    <td class="polna">200</td>
+                    <td>С с</td>
+                    <td class="polna">200</td>
+                    <td>s<br>/s/</td>
+                    <td>S s</td>
                     <td>Slovo</td>
                     <td>Slovo</td>
                     <td>slovje, beseda</td>
-                    <td></td>
+                    <td>grška <i>sigma</i> Σ σ</td>
                 </tr>
                 <tr>
-                    <td>Ⱅ</td>
-                    <td>Т</td>
-                    <td>/t/</td>
+                    <td>Ⱅ ⱅ</td>
+                    <td>Ⱅ ⱅ</td>
+                    <td class="polna">300</td>
+                    <td>Т т</td>
+                    <td class="polna">300</td>
+                    <td>t<br>/t/</td>
+                    <td>T t</td>
                     <td>Tvrьdo</td>
                     <td>Tverdo</td>
                     <td>trdo</td>
-                    <td>morda iz prečke grške tau τ</td>
+                    <td>morda iz prečke grške <i>tau</i> Τ τ</td>
                 </tr>
                 <tr>
-                    <td>Ⱆ</td>
-                    <td>У, Ѹ</td>
-                    <td>/u/</td>
+                    <td>Ⱆ ⱆ</td>
+                    <td>Ⱆ ⱆ</td>
+                    <td class="polna">400</td>
+                    <td>Ѹ ѹ<span class="pripis">, У у</span></td>
+                    <td class="mrtva">(400)</td>
+                    <td>u<br>/u/</td>
+                    <td>U u</td>
                     <td>Ukъ</td>
                     <td>Uk</td>
                     <td>uk, učenje</td>
-                    <td>zveza črk onъ Ⱁ in izhitsa Ⱛ</td>
+                    <td>zveza črk <i>onъ</i> Ⱁ in <i>ižitsa</i> Ⱛ<br>grški <i>dolgi u</i> - omikron Ο ο + ipsilon Υ υ</td>
                 </tr>
                 <tr>
-                    <td>Ⱇ</td>
-                    <td>Ф</td>
-                    <td>/f/</td>
+                    <td>Ⱇ ⱇ, Ⱚ ⱚ</td>
+                    <td>Ⱇ ⱇ, Ⱚ ⱚ</td>
+                    <td class="polna">500</td>
+                    <td>Ф ф</td>
+                    <td class="polna">500</td>
+                    <td>f<br>/f/<br><span class="pripis">tega glasu prasl. ni imela, uporabljano le za prečrkovanje besed grškega izvora</span></td>
+                    <td>F f</td>
                     <td>Frьtъ</td>
                     <td>Fert</td>
                     <td></td>
-                    <td>različica grške fi  φ</td>
+                    <td>grška <i>fi</i> Φ φ</td>
                 </tr>
                 <tr>
-                    <td>Ⱈ</td>
-                    <td>Х</td>
-                    <td>/x/</td>
+                    <td>Ⱈ ⱈ</td>
+                    <td>Ⱈ ⱈ</td>
+                    <td class="polna">600</td>
+                    <td>Х х</td>
+                    <td class="polna">600</td>
+                    <td>x<br>/x/</td>
+                    <td>H h<span class="pripis">, X x</span></td>
                     <td>Xěrъ</td>
                     <td>Kher</td>
                     <td></td>
-                    <td>neznano; podobno glagoli Ⰳ in latiničnemu h</td>
+                    <td>neznano<br>podobno <i>glagoli</i> Ⰳ in latiničnemu h<br>grška <i>ksi</i> Χ χ</td>
                 </tr>
                 <tr>
-                    <td>Ⱉ</td>
-                    <td>Ѡ</td>
-                    <td>/ɔ/</td>
+                    <td>Ⱉ ⱉ</td>
+                    <td>Ⱉ ⱉ</td>
+                    <td>700</td>
+                    <td>Ѡ, Ѿ ѿ</td>
+                    <td>800</td>
+                    <td>o<br>/ɔ/, /o/</td>
+                    <td>O o</td>
                     <td>Otъ</td>
                     <td>Oht, Omega</td>
                     <td>od</td>
-                    <td>zveza črke onъ Ⱁ in njene zrcalne slike</td>
+                    <td>zveza črke <i>onъ</i> Ⱁ in njene zrcalne slike<br>grška <i>omega</i> Ω ω</td>
+                </tr>
+                <tr class="pripis">
+                    <td>Ⱊ ⱊ</td>
+                    <td>Ⱊ ⱊ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>pe</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>Ⱋ</td>
-                    <td>Щ</td>
-                    <td>/tʲ/, /ʃ͡t/</td>
+                    <td>Ⱋ ⱋ</td>
+                    <td>Ⱋ ⱋ</td>
+                    <td>800</td>
+                    <td>Щ щ</td>
+                    <td class="mrtva"></td>
+                    <td>št, ć, šć<br>/tʲ/, /ʃ͡t/</td>
+                    <td>Št št, Šč šč</td>
                     <td>Šta/Šča</td>
                     <td>Shta/Shcha</td>
                     <td></td>
-                    <td>zveza črke sha Ⱎ preko tvrьdo Ⱅ</td>
+                    <td>zveza črke <i>ša</i> Ⱎ preko <i>tvrьdo</i> Ⱅ</td>
                 </tr>
                 <tr>
-                    <td>Ⱌ</td>
-                    <td>Ц</td>
-                    <td>/t͡s/</td>
+                    <td>Ⱌ ⱌ</td>
+                    <td>Ⱌ ⱌ</td>
+                    <td class="polna">900</td>
+                    <td>Ц ц</td>
+                    <td class="polna">900</td>
+                    <td>c<br>/t͡s/</td>
+                    <td>C c, Ts ts</td>
                     <td>Ci</td>
                     <td>Tsi</td>
                     <td></td>
-                    <td>končna oblika hebrejske tsade ץ‎</td>
+                    <td>zaključna oblika hebrejske <i>cade</i> צ ץ‎</td>
                 </tr>
                 <tr>
-                    <td> Ⱍ</td>
-                    <td>Ч, Џ</td>
-                    <td>/t͡ʃ/</td>
+                    <td>Ⱍ ⱍ</td>
+                    <td>Ⱍ ⱍ</td>
+                    <td>1000</td>
+                    <td>Џ џ, Ч ч</td>
+                    <td>90</td>
+                    <td>č<br>/t͡ʃ/</td>
+                    <td>Č č</td>
                     <td>Črьvъ</td>
                     <td>Cherv</td>
                     <td>črv</td>
-                    <td>neznano; podobno shta Ⱋ; morda nekončna oblika hebrejske tsade צ‎</td>
+                    <td>neznano<br>podobno <i>šta</i> Ⱋ<br>morda nezaključna oblika hebrejske <i>tsade</i> צ<br>‎morda iz gotske 𐍁</td>
                 </tr>
                 <tr>
-                    <td>Ⱎ</td>
-                    <td>Ш</td>
-                    <td>/ʃ/</td>
+                    <td>Ⱎ ⱎ</td>
+                    <td>Ⱎ ⱎ</td>
+                    <td class="mrtva">(2000)</td>
+                    <td>Ш ш</td>
+                    <td class="mrtva"></td>
+                    <td>š<br>/ʃ/</td>
+                    <td>Š š</td>
                     <td>Ša</td>
                     <td>Sha</td>
                     <td>tišina</td>
-                    <td>hebrejski shin ש‎‎</td>
+                    <td>hebrejski <i>šin</i> ש</td>
                 </tr>
                 <tr>
-                    <td>Ⱏ</td>
-                    <td>Ъ</td>
-                    <td>/ɯ/</td>
+                    <td>Ⱏ ⱏ</td>
+                    <td>(Ă ă), Ĭ ĭ<span class="pripis">, Ⱏ ⱏ</span></td>
+                    <td class="mrtva">(3000)</td>
+                    <td>Ъ ъ</td>
+                    <td class="mrtva"></td>
+                    <td>[trdo]<span class="pripis">, /ɯ/, /w/, /ə/</span></td>
+                    <td>Je je</td>
                     <td>Jerъ</td>
                     <td>Yer, Yor</td>
                     <td></td>
-                    <td>verjetno spremenjena onъ Ⱁ</td>
+                    <td>morda spremenjeni <i>onъ</i> Ⱁ<br>različica v obliki palice <i>štapić</i> je morda izpeljana iz opuščaja[</td>
                 </tr>
                 <tr>
-                    <td>ⰟⰊ</td>
-                    <td>Ы</td>
-                    <td>/ɨ/</td>
+                    <td>ⰟⰉ<span class="pripis">, Ⱍ ⱍ, ⰟⰋ</span></td>
+                    <td class="mrtva"></td>
+                    <td class="mrtva"></td>
+                    <td>Ы ы <span class="pripis">, ЪИ ъи</span></td>
+                    <td class="mrtva"></td>
+                    <td>y<br>/ɨ/</td>
+                    <td>Je je</td>
                     <td>Jery</td>
                     <td>Yerɨ</td>
                     <td></td>
-                    <td>zveza črk; dvočrkje yer Ⱏ ali yerь Ⱐ, sledi ji izhe Ⰹ/ Ⰺ) ali i Ⰻ.</td>
+                    <td>zveza črk<br>dvočrkje <i>yer<i> Ⱏ ali <i>yerь<i> Ⱐ, sledi ji <i>iže</i> (Ⰹ/ Ⰺ) ali i (Ⰻ).</td>
                 </tr>
                 <tr>
-                    <td>Ⱐ</td>
-                    <td>Ь</td>
-                    <td>/ə/</td>
+                    <td>Ⱐ ⱐ</td>
+                    <td>Ĭ ĭ<span class="pripis">, Ⱐ ⱐ</span></td>
+                    <td class="mrtva"></td>
+                    <td>Ь ь</td>
+                    <td class="mrtva"></td>
+                    <td>[mehko]<span class="pripis">, /ə/, /j/</span></td>
+                    <td>Ja ja</td>
                     <td>Jerь</td>
                     <td>Yer`</td>
                     <td></td>
-                    <td>verjetno spremenjena onъ Ⱁ</td>
+                    <td>morda spremenjeni <i>onъ</i> Ⱁ</td>
                 </tr>
                 <tr>
-                    <td> Ⱑ</td>
-                    <td>Ѣ, Я</td>
-                    <td>/æ/, /jɑ/</td>
+                    <td>Ⱑ ⱑ</td>
+                    <td>Ⱑ ⱑ</td>
+                    <td class="mrtva">(4000)</td>
+                    <td>Ѣ ѣ<span class="pripis">, Я</span></td>
+                    <td class="mrtva"></td>
+                    <td>ě, ja<br>/æ/, /jɑ/, /jæ/</td>
+                    <td>Jo jo</td>
                     <td>Jatь</td>
                     <td>Yat, Ya</td>
                     <td></td>
-                    <td>verjetno epigrafska alfa Α</td>
+                    <td>morda epigrafska grška <i>alfa</i> Α</td>
+                </tr>
+                <tr class="pripis">
+                    <td>Ⱒ ⱒ</td>
+                    <td>Ⱒ ⱒ</td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td>Jo jo</td>
+                    <td>spidery ha</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td> Ⱖ</td>
-                    <td>Ё</td>
-                    <td>/jo/</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>neznano; domnevno del od jonsь Ⱙ spodaj; /jo/ takrat ni bil mogoč</td>
-                </tr>
-                <tr>
-                    <td>Ⱓ</td>
-                    <td>Ю</td>
-                    <td>/ju/</td>
+                    <td>Ⱓ ⱓ</td>
+                    <td>Ⱓ ⱓ</td>
+                    <td class="mrtva">(5000)</td>
+                    <td>Ю ю</td>
+                    <td class="mrtva"></td>
+                    <td>ju<br>/ju/</td>
+                    <td>Ju ju, U u</td>
                     <td>Ju</td>
                     <td>Yu</td>
                     <td></td>
                     <td>neznano</td>
                 </tr>
                 <tr>
-                    <td>Ⱔ</td>
-                    <td>Ѧ</td>
-                    <td>/ɛ̃/</td>
+                    <td>Ⱔ ⱔ</td>
+                    <td class="mrtva pripis">Ⱔ ⱔ</td>
+                    <td class="mrtva">(9000)</td>
+                    <td>Ѧ ѧ</td>
+                    <td class="mrtva">(900)</td>
+                    <td>ę<br>/ɛ̃/</td>
+                    <td>En en<br>ę (pol.)</td>
                     <td>[Ensь]</td>
                     <td>[mali yus]</td>
                     <td></td>
-                    <td>grški epsilon ε, uporabljan tudi za označevanje nosniškosti</td>
+                    <td>grški <i>epsilon</i> ε, uporabljan tudi za označevanje nosniškosti</td>
+                </tr>
+                <tr class="pripis">
+                    <td>Ⱕ ⱕ</td>
+                    <td>Ⱕ ⱕ</td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td class="mrtva"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>[mali yus s podaljškom]</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="pripis">
+                    <td>Ⱖ ⱖ</td>
+                    <td class="pripis">Ⱖ ⱖ</td>
+                    <td class="mrtva"></td>
+                    <td>Ё<span class="pripis">, Ѥ ѥ</span></td>
+                    <td class="mrtva"></td>
+                    <td>jo<br>/jo/, /jɔ/</td>
+                    <td></td>
+                    <td>yo</td>
+                    <td></td>
+                    <td></td>
+                    <td>neznano<br>domnevno del <i>jonsь</i> Ⱙ spodaj<br>/jo/ takrat ni bil mogoč</td>
                 </tr>
                 <tr>
-                    <td>Ⱗ</td>
-                    <td>Ѩ</td>
-                    <td>/jɛ̃/</td>
+                    <td>Ⱗ ⱗ</td>
+                    <td class="mrtva pripis">Ⱗ ⱗ</td>
+                    <td class="mrtva"></td>
+                    <td>Ѩ ѩ</td>
+                    <td class="mrtva"></td>
+                    <td>ję<br>/jɛ̃/</td>
+                    <td>Jen jen<br>ję (pol.)</td>
                     <td>[Jensь]</td>
                     <td>[mali jotovan yus]</td>
                     <td></td>
-                    <td>zveza črk jestъ Ⰵ in ensь Ⱔ za nosniškost</td>
+                    <td>zveza črk <i>jestъ</i> Ⰵ in <i>ensь</i> Ⱔ za nosniškost</td>
                 </tr>
                 <tr>
-                    <td>Ⱘ</td>
-                    <td>Ѫ</td>
-                    <td>/ɔ̃/</td>
+                    <td>Ⱘ ⱘ</td>
+                    <td class="mrtva pripis">Ⱘ ⱘ</td>
+                    <td class="mrtva"></td>
+                    <td>Ѫ ѫ</td>
+                    <td class="mrtva"></td>
+                    <td>ǫ<br>/ɔ̃/</td>
+                    <td>On on<br>ą (pol.)</td>
                     <td>[Onsь]</td>
                     <td>[velik yus]</td>
                     <td></td>
-                    <td>zveza lrk onъ Ⱁ in ensь Ⱔ za nosniškost</td>
+                    <td>zveza črk <i>onъ</i> Ⱁ in <i>ensь</i> Ⱔ za nosniškost</td>
                 </tr>
                 <tr>
-                    <td>Ⱙ</td>
-                    <td>Ѭ</td>
-                    <td>/jɔ̃/</td>
+                    <td>Ⱙ ⱙ</td>
+                    <td class="mrtva pripis">Ⱙ ⱙ</td>
+                    <td class="mrtva"></td>
+                    <td>Ѭ ѭ</td>
+                    <td class="mrtva"></td>
+                    <td>jǫ<br>/jɔ̃/</td>
+                    <td>Jon jon<br>ją (pol.)</td>
                     <td>[Jonsь]</td>
                     <td>[velik jotovan yus]</td>
                     <td></td>
-                    <td>zveza neznane črke in ensь Ⱔ za nosniškost</td>
+                    <td>zveza neznane črke in <i>ensь</i> Ⱔ za nosniškost</td>
                 </tr>
                 <tr>
-                    <td>Ⱚ</td>
-                    <td>Ѳ</td>
-                    <td>/θ/</td>
-                    <td>[Thita]</td>
-                    <td>Fita</td>
-                    <td>Theta</td>
-                    <td>grška theta  θ</td>
-                </tr>
-                <tr>
-                    <td>Ⱛ</td>
-                    <td>Ѵ</td>
-                    <td>/ʏ/, /i/</td>
+                    <td>Ⱛ ⱛ</td>
+                    <td>Ⱛ ⱛ</td>
+                    <td class="mrtva"></td>
+                    <td>Ѵ ѵ</td>
+                    <td>400</td>
+                    <td>ü, v<br>/ʏ/, /i/</td>
+                    <td>I i</td>
                     <td>Ižica</td>
                     <td>Izhitsa</td>
                     <td></td>
                     <td></td>
+                </tr>
+                <tr>
+                    <td class="mrtva pripis">Ⱚ ⱚ</td>
+                    <td class="mrtva pripis">Ⱚ ⱚ</td>
+                    <td class="mrtva"></td>
+                    <td>Ѳ ѳ</td>
+                    <td>9</td>
+                    <td>th, f<br>/θ/, /f/</td>
+                    <td>Th th, F f</td>
+                    <td>[Thita]</td>
+                    <td>Fita</td>
+                    <td>Theta</td>
+                    <td>grška <i>theta</i>  θ</td>
+                </tr>
+                <tr class="pripis">
+                    <td>Ⱜ ⱜ</td>
+                    <td>Ⱜ ⱜ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>štapic</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="pripis">
+                    <td>Ⱝ ⱝ</td>
+                    <td>Ⱝ ⱝ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>trokutasti a</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="pripis">
+                    <td>Ⱞ ⱞ</td>
+                    <td>Ⱞ ⱞ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>latinate myslite</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="pripis">
+                    <td>Ⱟ ⱟ</td>
+                    <td>Ⱟ ⱟ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>črivi</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="sredinsko zgornja vodčrte vezave">
+            <thead>
+                <tr>
+                    <th>vezave (oglate)</th>
+                    <th>črke</th>
+                    <th>vrednost</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ƃ</td>
+                    <td>ⰱ + ⱃ</td>
+                    <td>b + r<br>/b/ + /r/</td>
+                </tr>
+                <tr>
+                    <td>Ɓ</td>
+                    <td>ⰱ + ⱁ</td>
+                    <td>b + o<br>/b/ + /ɔ/</td>
+                </tr>
+                <tr>
+                    <td>ư</td>
+                    <td>ⰲ + ⰾ</td>
+                    <td>v + l<br>/ʋ/ + /l/, /ʎ/</td>
+                </tr>
+                <tr>
+                    <td>Ʊ</td>
+                    <td>ⰲ + ⱁ</td>
+                    <td>v + o<br>/ʋ/ + /ɔ/</td>
+                </tr>
+                <tr>
+                    <td>Ʋ</td>
+                    <td>ⰲ + ⱃ</td>
+                    <td>v + r<br>/ʋ/ + /r/</td>
+                </tr>
+                <tr>
+                    <td>Ƴ</td>
+                    <td>ⱅ + ⰲ</td>
+                    <td>t + v<br>/t/ + /ʋ/</td>
+                </tr>
+                <tr>
+                    <td>Ǝ</td>
+                    <td>ⱓ + ⱃ</td>
+                    <td>ju + r<br>/ju/ + /r/</td>
+                </tr>
+                <tr>
+                    <td>ƌ</td>
+                    <td>ⱞ + ⱁ</td>
+                    <td>m + o<br>/m/ + /ɔ/</td>
+                </tr>
+                <tr>
+                    <td>Ƙ</td>
+                    <td>ⰿ + ⰾ</td>
+                    <td>m + l<br>/m/ + /l/, /ʎ/</td>
+                </tr>
+                <tr>
+                    <td>ơ</td>
+                    <td>ⱁ + ⱅ</td>
+                    <td>o + t<br>/ɔ/ + /t/</td>
+                </tr>
+                <tr>
+                    <td>Ɛ</td>
+                    <td>ⰽ + ⱁ</td>
+                    <td>k + o<br>/k/ + /ɔ/</td>
+                </tr>
+                <tr>
+                    <td>Ƅ</td>
+                    <td>ⰳ + ⱃ</td>
+                    <td>g + r<br>/g/ + /r/</td>
+                </tr>
+                <tr>
+                    <td>ƃ</td>
+                    <td>ⰳ + ⱁ</td>
+                    <td>g + o<br>/g/ + /ɔ/</td>
+                </tr>
+                <tr>
+                    <td>ƅ</td>
+                    <td>ⱈ + ⱁ</td>
+                    <td>h + o<br>/x/ + /ɔ/</td>
+                </tr>
+                <tr>
+                    <td>Ɔ</td>
+                    <td>ⱈ + ⱃ</td>
+                    <td>h + r<br>/x/ + /r/</td>
+                </tr>
+                <tr>
+                    <td>ƿ</td>
+                    <td>ⰸ + ⱃ</td>
+                    <td>z + r<br>/z/ + /r/</td>
                 </tr>
             </tbody>
         </table>
         <div class="vsebina">
             <h3>Zunanje povezave in viri</h3>
             <ul class="s">
-                <li><a href="https://www.omniglot.com/writing/glagolitic.htm">Omniglot: Glagolitic alphabet</a></li>
-                <li><a href="https://www.unicode.org/charts/PDF/U2C00.pdf">Unicode: Glagolitic 2C00–2C5F</a> (pdf)</li>
-                <li><a href="https://www.unicode.org/charts/PDF/U1E000.pdf">Unicode: Glagolitic Supplement 1E000-1e02f</a> (pdf)</li>
-                <li><a href="https://sl.wikipedia.org/wiki/Glagolica">Wikipedija: Glagolica</a></li>
+                <li><a href="https://www.unicode.org/charts/PDF/U2C00.pdf">Unicode - Glagolitic 2C00–2C5F</a> (pdf)</li>
+                <li><a href="https://www.unicode.org/charts/PDF/U1E000.pdf">Unicode - Glagolitic Supplement 1E000-1e02f</a> (pdf)</li>
+                <li><a href="https://plus.cobiss.net/cobiss/si/sl/bib/search/advanced?ax=Vanda+Babi%C4%8D&ti=U%C4%8Dbenik+stare+cerkvene+slovan%C5%A1%C4%8Dine&kw&db=cobib&mat=allmaterials&max=100">COBISS - Vanda Babič: Učbenik stare cerkvene slovanšče</a> (knjiga)</li>
+                <li><a href="https://sl.wikipedia.org/wiki/Glagolica">Wikipedija - Glagolica</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Glagolitic_script">Wikipedia - Glagolitic script</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Glagolitic_numerals">Wikipedia - Glagolitic numerals</a>
+                    <ul class="s">
+                        <li><a href="https://www.wikifunctions.org/wiki/Z14018">WikiFunctions - to glagolitic numeral</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://en.wikipedia.org/wiki/Relationship_of_Cyrillic_and_Glagolitic_scripts">Wikipedia - Relationship of Cyrillic and Glagolitic scripts</a></li>
+                <li><a href="https://www.omniglot.com/writing/glagolitic.htm">Omniglot - Glagolitic alphabet</a></li>
+                <li><a href="https://www.britannica.com/topic/Glagolitic-alphabet">Britannica - Glagolitic alphabet</a></li>
+                <li><a href="https://slav.fandom.com/wiki/Glagolitic_script">Slavic Wiki -  Glagolitic script</a></li>
+                <li><a href="https://www.newadvent.org/cathen/06575b.htm">New Advent: Glagolitic</a></li>
+                <li><a href="https://tekalliste.com/new-old-slavic-script/">Te Kalliste - New old Slavic script</a></li>
+                <li><a href="https://www.croatianhistory.net/etf/et03.html">Croatian History - Darko Zubrinic: Croatian Glagolitic Script</a></li>
+                <li><a href="https://www.researchgate.net/publication/356438520_How_to_write_and_read_Glagolitic_script">Research Gate - How to write and read Glagolitic script</a></li>
+                <li><a href="https://localfonts.eu/freefonts/glagolitic-free-fonts/">Local Fonts - Glagolitic Free Fonts</a>
+                    <ul class="s">
+                        <li><a href="https://localfonts.eu/freefonts/glagolitic-free-fonts/glagolica-missal-dpg/">Local Fonts - Nenad Hančić: Glagolica Missal DPG</a> (uporabljena pisava za oglato glagolico na tej strani, ker je ni posebej v Unicode)</li>
+                    </ul>
+                </li>
             </ul>
         </div>
-        <footer>Zadnja posodobitev te strani: <time datetime="2024-07-14">14. 7. 2024</time></footer>
+        <footer>Zadnja posodobitev te strani: <time datetime="2024-08-16">16. 8. 2024</time></footer>
     </body>
 </html>

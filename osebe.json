@@ -1,0 +1,429 @@
+[
+  {
+    "id": "JŽ",
+    "ime": "Janez",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "",
+    "datum_smrti": "",
+    "kraji_bivanja": ["SK13"]
+  },
+  {
+    "id": "MJ1735",
+    "ime": "Matija",
+    "priimek": "Jerinc",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1735-01-01",
+    "datum_smrti": "",
+    "kraji_bivanja": []
+  },
+  {
+    "id": "MP",
+    "ime": "Marija",
+    "priimek": "Jerinc",
+    "priimek_ob_rojstvu": "Pipan",
+    "datum_rojstva": "",
+    "datum_smrti": "",
+    "kraji_bivanja": []
+  },
+  {
+    "id": "JŽ1767",
+    "ime": "Jurij",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1767-01-01",
+    "datum_smrti": "1829-02-22",
+    "kraji_bivanja": ["SK13", "PV19"]
+  },
+  {
+    "id": "JJ1754",
+    "ime": "Jera",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "Jerinc",
+    "datum_rojstva": "1754-01-01",
+    "datum_smrti": "1829-02-22",
+    "kraji_bivanja": ["PV19"]
+  },
+  {
+    "id": "FV1789",
+    "ime": "Franc",
+    "priimek": "Vertačnik",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1789-10-07",
+    "datum_smrti": "1834-04-22",
+    "kraji_bivanja": ["PV5"]
+  },
+  {
+    "id": "MČ",
+    "ime": "Mina",
+    "priimek": "Vertačnik",
+    "priimek_ob_rojstvu": "Černivc",
+    "datum_rojstva": "1785-01-01",
+    "datum_smrti": "",
+    "kraji_bivanja": ["PV5"]
+  },
+  {
+    "id": "GŽ1798",
+    "ime": "Gregor",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1798-03-12",
+    "datum_smrti": "1856-05-24",
+    "kraji_bivanja": ["PV19"]
+  },
+  {
+    "id": "MV1819",
+    "ime": "Marija",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "Vrtačnik",
+    "datum_rojstva": "1819-11-23",
+    "datum_smrti": "",
+    "kraji_bivanja": ["PV5","PV19"]
+  },
+  {
+    "id": "JŽ",
+    "ime": "Jakob",
+    "priimek": "Žirovnik",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "",
+    "datum_smrti": "",
+    "kraji_bivanja": ["ZM15"]
+  },
+  {
+    "id": "MD",
+    "ime": "Marija",
+    "priimek": "Žirovnik",
+    "priimek_ob_rojstvu": "Drinovec",
+    "datum_rojstva": "",
+    "datum_smrti": "",
+    "kraji_bivanja": ["ZM15"]
+  },
+  {
+    "id": "MM1823",
+    "ime": "Matevž",
+    "priimek": "Mrak",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1823-09-03",
+    "datum_smrti": "",
+    "kraji_bivanja": ["RV18"]
+  },
+  {
+    "id": "JP1835",
+    "ime": "Jera",
+    "priimek": "Mrak",
+    "priimek_ob_rojstvu": "Podgoršek",
+    "datum_rojstva": "1835-02-17",
+    "datum_smrti": "",
+    "kraji_bivanja": ["PV33", "RV18"]
+  },
+  {
+    "id": "VŽ1850",
+    "ime": "Valentin",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1850-02-15",
+    "datum_smrti": "1906-01-01",
+    "kraji_bivanja": ["PV19"]
+  },
+  {
+    "id": "UŽ1862",
+    "ime": "Uršula",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "Žirovnik",
+    "datum_rojstva": "1862-01-01",
+    "datum_smrti": "",
+    "kraji_bivanja": ["ZM15", "PV29"]
+  },
+  {
+    "id": "JD1853",
+    "ime": "Janez",
+    "priimek": "Debevec",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1853-01-01",
+    "datum_smrti": "1927-01-01",
+    "kraji_bivanja": ["PV29"]
+  },
+  {
+    "id": "MM1865",
+    "ime": "Marija",
+    "priimek": "Debevec",
+    "priimek_ob_rojstvu": "Mrak",
+    "datum_rojstva": "1865-11-20",
+    "datum_smrti": "1942-01-01",
+    "kraji_bivanja": ["RV18", "PV29"]
+  },
+  {
+    "id": "JS1873",
+    "ime": "Janez",
+    "priimek": "Sirc",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1873-04-27",
+    "datum_smrti": "1911-05-05",
+    "kraji_bivanja": ["AC5"]
+  },
+  {
+    "id": "MŠ1869",
+    "ime": "Marjana",
+    "priimek": "Sirc",
+    "priimek_ob_rojstvu": "Štirn",
+    "datum_rojstva": "1869-09-12",
+    "datum_smrti": "1923-09-09",
+    "kraji_bivanja": ["ŠG26", "AC5"]
+  },
+  {
+    "id": "IK1870",
+    "ime": "Ivan",
+    "priimek": "Koglar",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1870-06-22",
+    "datum_smrti": "1942-01-08",
+    "kraji_bivanja": ["SV16"]
+  },
+  {
+    "id": "MG1869",
+    "ime": "Marija",
+    "priimek": "Koglar",
+    "priimek_ob_rojstvu": "Grilc",
+    "datum_rojstva": "1869-03-25",
+    "datum_smrti": "1955-05-18",
+    "kraji_bivanja": []
+  },
+  {
+    "id": "FŽ1891",
+    "ime": "Franc",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1891-06-05",
+    "datum_smrti": "1967-06-13",
+    "kraji_bivanja": ["PV19"]
+  },
+  {
+    "id": "FD1901",
+    "ime": "Frančiška",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "Debevec",
+    "datum_rojstva": "1901-06-07",
+    "datum_smrti": "1992-01-30",
+    "kraji_bivanja": ["PV29", "PV19"]
+  },
+  {
+    "id": "JS1904",
+    "ime": "Janez",
+    "priimek": "Sirc",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1904-09-06",
+    "datum_smrti": "1992-09-03",
+    "kraji_bivanja": ["AC5"]
+  },
+  {
+    "id": "AK1903",
+    "ime": "Angela",
+    "priimek": "Sirc",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1903-08-24",
+    "datum_smrti": "1982-01-03",
+    "kraji_bivanja": ["SV16", "AC5"]
+  },
+  {
+    "id": "CŽ1932",
+    "ime": "Ciril",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1932-07-07",
+    "datum_smrti": "2023-12-10",
+    "kraji_bivanja": ["PV19", "ZC1"]
+  },
+  {
+    "id": "AS1941",
+    "ime": "Antonija",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "Sirc",
+    "datum_rojstva": "1941-03-29",
+    "datum_smrti": "1994-05-20",
+    "kraji_bivanja": ["AC5", "ZC1"]
+  },
+  {
+    "id": "IŽ1969",
+    "ime": "Iztok",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1969-03-24",
+    "datum_smrti": "",
+    "kraji_bivanja": ["ZC1"]
+  },
+
+
+
+
+  {
+    "id": "JP1785",
+    "ime": "Jožef",
+    "priimek": "Podjavoršek",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1785-05-22",
+    "datum_smrti": "",
+    "kraji_bivanja": ["KM80"]
+  },
+  {
+    "id": "HK1798",
+    "ime": "Helena",
+    "priimek": "Podjavoršek",
+    "priimek_ob_rojstvu": "Kanovnik",
+    "datum_rojstva": "1798-08-23",
+    "datum_smrti": "",
+    "kraji_bivanja": ["KM80"]
+  },
+  {
+    "id": "MP1810",
+    "ime": "Matevž",
+    "priimek": "Podjavoršek",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1810",
+    "datum_smrti": "",
+    "kraji_bivanja": ["KM80"]
+  },
+  {
+    "id": "MR1828",
+    "ime": "Marija",
+    "priimek": "Podjavoršek",
+    "priimek_ob_rojstvu": "Ramšak",
+    "datum_rojstva": "1828-01-15",
+    "datum_smrti": "1896-03-25",
+    "kraji_bivanja": ["KM80"]
+  },
+  {
+    "id": "FP1864",
+    "ime": "Franc",
+    "priimek": "Podjavoršek",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1864-09-29",
+    "datum_smrti": "",
+    "kraji_bivanja": ["KM80", "LF19"]
+  },
+  {
+    "id": "HI1861",
+    "ime": "Helena",
+    "priimek": "Podjavoršek",
+    "priimek_ob_rojstvu": "Iršič",
+    "datum_rojstva": "1861-03-27",
+    "datum_smrti": "",
+    "kraji_bivanja": ["LF19"]
+  },
+  {
+    "id": "FP1863",
+    "ime": "Frančišek",
+    "priimek": "Pinter",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1863-10-02",
+    "datum_smrti": "",
+    "kraji_bivanja": ["V15"]
+  },
+  {
+    "id": "MG",
+    "ime": "Marija",
+    "priimek": "Pinter",
+    "priimek_ob_rojstvu": "Germ",
+    "datum_rojstva": "",
+    "datum_smrti": "",
+    "kraji_bivanja": ["V15"]
+  },
+  {
+    "id": "JS1868",
+    "ime": "Jurij",
+    "priimek": "Selčan",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1868-04-12",
+    "datum_smrti": "1911-02-13",
+    "kraji_bivanja": ["S20"]
+  },
+  {
+    "id": "MK1870",
+    "ime": "Marija",
+    "priimek": "Selčan",
+    "priimek_ob_rojstvu": "Korošec",
+    "datum_rojstva": "1870-01-27",
+    "datum_smrti": "1901-01-02",
+    "kraji_bivanja": ["BP1", "S20"]
+  },
+  {
+    "id": "JG1858",
+    "ime": "Jakob",
+    "priimek": "Gorenšek",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1858-07-15",
+    "datum_smrti": "1904-07-17",
+    "kraji_bivanja": ["DG15"]
+  },
+  {
+    "id": "HS1880",
+    "ime": "Helena",
+    "priimek": "Gorenšek",
+    "priimek_ob_rojstvu": "Steble",
+    "datum_rojstva": "1880-04-01",
+    "datum_smrti": "1950-09-07",
+    "kraji_bivanja": ["DG15"]
+  },
+  {
+    "id": "DP1901",
+    "ime": "Dominik",
+    "priimek": "Podjavoršek",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1901-07-17",
+    "datum_smrti": "1980-05-07",
+    "kraji_bivanja": ["LF19"]
+  },
+  {
+    "id": "AP1906",
+    "ime": "Angela",
+    "priimek": "Podjavoršek",
+    "priimek_ob_rojstvu": "Pinter",
+    "datum_rojstva": "1906-03-25",
+    "datum_smrti": "1966-07-10",
+    "kraji_bivanja": ["BP2", "LF19"]
+  },
+  {
+    "id": "FS1899",
+    "ime": "Franc",
+    "priimek": "Selčan",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1899-03-28",
+    "datum_smrti": "1987-10-22",
+    "kraji_bivanja": ["S21", "LF24"]
+  },
+  {
+    "id": "MG1901",
+    "ime": "Marija",
+    "priimek": "Selčan",
+    "priimek_ob_rojstvu": "Gorenšek",
+    "datum_rojstva": "1901-02-21",
+    "datum_smrti": "1972-05-19",
+    "kraji_bivanja": ["DG15", "S21", "LF24"]
+  },
+  {
+    "id": "AP1940",
+    "ime": "Anton",
+    "priimek": "Podjavoršek",
+    "priimek_ob_rojstvu": "",
+    "datum_rojstva": "1940-05-27",
+    "datum_smrti": "2024-03-25",
+    "kraji_bivanja": ["LF19"]
+  },
+  {
+    "id": "AS1944",
+    "ime": "Ana",
+    "priimek": "Podjavoršek",
+    "priimek_ob_rojstvu": "Selčan",
+    "datum_rojstva": "1944-05-13",
+    "datum_smrti": "",
+    "kraji_bivanja": ["LF24", "LF19"]
+  },
+  {
+    "id": "MP1972",
+    "ime": "Mihelina",
+    "priimek": "Žebovec",
+    "priimek_ob_rojstvu": "Podjavoršek",
+    "datum_rojstva": "1972-05-25",
+    "datum_smrti": "",
+    "kraji_bivanja": ["LF19", "ZC1"]
+  }
+]

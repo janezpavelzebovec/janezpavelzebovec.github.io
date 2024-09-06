@@ -1,5 +1,5 @@
 import numpy as np
-vhodna = "dnevi202324.csv"
+vhodna = "dnevi2000.csv"
 # vhodna = "test.csv"
 
 dt = open(vhodna, "r")
@@ -52,11 +52,11 @@ pd2 = pd2.transpose() # zdaj so spet skupaj vrstice
 
 dnevi = np.unique(pd1)
 pd3 = np.stack([pd2[pd1 == dan].mean(axis=0) for dan in dnevi])
-pd3 = pd3.transpose() # skupaj so stolpci 
+pd3 = pd3.transpose() # skupaj so stolpci
 
 # izračun polmera za posamezen dan
-rn = 80
-rz = 640
+rn = 255
+rz = 1000
 dr = (rz - rn) / (dnevi[-1] - 1)
 r = rn + dnevi*dr
 
@@ -103,5 +103,3 @@ version="1.1">
 
 svg.write('\n'.join(navodila.values()) + '\n</svg>')
 svg.close()
-       
-

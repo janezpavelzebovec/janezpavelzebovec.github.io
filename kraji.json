@@ -1,0 +1,198 @@
+[
+  {
+    "id": "ZC1",
+    "priimek": "Žebovec",
+    "položaj": [46.14816, 14.410503],
+    "trenutni_naslov": "Zbiljska cesta 1, Medvode",
+    "stari_naslov": "",
+    "hisno_ime": ""
+  },
+  {
+    "id": "PV19",
+    "priimek": "(V)Osel → Žebovec",
+    "položaj": [46.161985, 14.494521],
+    "trenutni_naslov": "Polje 19, Vodice",
+    "stari_naslov": "Polje 22, Vodice<br>Zem. 1826: Polle 27, 28, 29",
+    "hisno_ime": "Pər Grəgórjə (Pri Gregorju)"
+  },
+  {
+    "id": "PV29",
+    "priimek": "Debevec",
+    "položaj": [46.162305, 14.492963],
+    "trenutni_naslov": "Polje pri Vodicah 14",
+    "stari_naslov": "Polje 29<br>Zem. 1826: Polle 18, 19, 20",
+    "hisno_ime": ""
+  },
+  {
+    "id": "PV33",
+    "priimek": "Podgoršek",
+    "položaj": [46.160461, 14.495591],
+    "trenutni_naslov": "Polje pri Vodicah 28",
+    "stari_naslov": "Zem. 1826: Polle 53, 55, 56<br>Polje pri Vodicah 33",
+    "hisno_ime": "Pər tə Spódənmo Pípan (Pri Spodnjem Pipanu)"
+  },
+  {
+    "id": "RV18",
+    "priimek": "Mrak",
+    "položaj": [46.171069, 14.480305],
+    "trenutni_naslov": "Repnje 23 a",
+    "stari_naslov": "Repnje 18, Vodice",
+    "hisno_ime": ""
+  },
+  {
+    "id": "ZM15",
+    "priimek": "Žirovnik",
+    "položaj": [46.159433, 14.417796],
+    "trenutni_naslov": "Zbilje 49, Medvode",
+    "stari_naslov": "Zbilje 15",
+    "hisno_ime": ""
+  },
+  {
+    "id": "SK13",
+    "priimek": "Žebovec",
+    "položaj": [46.188502, 14.548894],
+    "trenutni_naslov": "Suhadole 14, Komenda",
+    "stari_naslov": "Zem. 1826: Suchadolle 13",
+    "hisno_ime": "Pər Ramúš (Pri Ramušu)"
+  },
+  {
+    "id": "PV5",
+    "priimek": "Vrtačnik",
+    "položaj": [46.140413, 14.481911],
+    "trenutni_naslov": "Povodje, Ljubljana-Šmartno",
+    "stari_naslov": "Povodje 2<br>Zem. 1826: Poudie 67, Skarutschna",
+    "hisno_ime": ""
+  },
+  {
+    "id": "AC5",
+    "priimek": "Ude/Vode → Sirc",
+    "položaj": [46.27134, 14.46335],
+    "trenutni_naslov": "Adergas 5, Cerklje na Gorenjskem",
+    "stari_naslov": "SSP: Michelstetten 16, 17 (Udde)",
+    "hisno_ime": "Pər Pék (Pri Peku)"
+  },
+  {
+    "id": "PK17",
+    "priimek": "Sirc",
+    "položaj": [46.253348, 14.377662],
+    "trenutni_naslov": "Jezerska cesta 102 a, Kranj",
+    "stari_naslov": "Zem. 1826: Gorene, Primskau 17",
+    "hisno_ime": ""
+  },
+  {
+    "id": "GK",
+    "priimek": "Štular",
+    "položaj": [46.244447, 14.3442],
+    "trenutni_naslov": "Gorenjesavska cesta?, Kranj",
+    "stari_naslov": "Gorena Sava 16",
+    "hisno_ime": ""
+  },
+  {
+    "id": "SV16",
+    "priimek": "Koglar",
+    "položaj": [46.278354, 14.503554],
+    "trenutni_naslov": "Stiška vas 16, Kranj",
+    "stari_naslov": "Sittichdorf 18",
+    "hisno_ime": ""
+  },
+  {
+    "id": "LK4",
+    "priimek": "Preklet",
+    "položaj": [46.255526, 14.573643],
+    "trenutni_naslov": "",
+    "stari_naslov": "Laniše 4, Kamnik",
+    "hisno_ime": ""
+  },
+  {
+    "id": "ŠG26",
+    "priimek": "Štirn",
+    "položaj": [46.286563, 14.484441],
+    "trenutni_naslov": "Štefanja Gora 4",
+    "stari_naslov": "Zem. 1826: Stephansberg<br>Stefanja gora 26",
+    "hisno_ime": ""
+  },
+
+
+
+
+  {
+    "id": "LF19",
+    "priimek": "Hribernik → Podjavoršek",
+    "položaj": [46.34652, 15.30675],
+    "trenutni_naslov": "Lipa 19, Frankolovo",
+    "stari_naslov": "Zem. 1825: Lippa 74/75",
+    "hisno_ime": "Hribernik"
+  },
+  {
+    "id": "KM80",
+    "priimek": "Podjavoršek",
+    "položaj": [46.406295, 15.231522],
+    "trenutni_naslov": "Kozjak 80, Dolič pri Mislinji",
+    "stari_naslov": "knjige: Kozjak 64",
+    "hisno_ime": ""
+  },
+  {
+    "id": "BP2",
+    "priimek": "Pinter",
+    "položaj": [46.344226, 15.32949],
+    "trenutni_naslov": "Beli potok 2",
+    "stari_naslov": "",
+    "hisno_ime": ""
+  },
+  {
+    "id": "BP1",
+    "priimek": "Korošec",
+    "položaj": [46.345634, 15.329832],
+    "trenutni_naslov": "Beli potok 1",
+    "stari_naslov": "",
+    "hisno_ime": ""
+  },
+  {
+    "id": "V15",
+    "priimek": "Pinter",
+    "položaj": [46.321773, 15.26156],
+    "trenutni_naslov": "Vizore 15/16",
+    "stari_naslov": "Zem. 1825: Visore, Neukirchen 5",
+    "hisno_ime": ""
+  },
+  {
+    "id": "V14",
+    "priimek": "Kraljič",
+    "položaj": [46.322919, 15.268171],
+    "trenutni_naslov": "Vizore 14",
+    "stari_naslov": "Zem. 1825: Visore, Neukirchen 12",
+    "hisno_ime": ""
+  },
+  {
+    "id": "LF24",
+    "priimek": "Lopatnik → Selčan",
+    "položaj": [46.34369, 15.30243],
+    "trenutni_naslov": "Lipa 24, Frankolovo",
+    "stari_naslov": "Zem. 1825: Lippa 85/86<br>SA1921: Lipa 16",
+    "hisno_ime": ""
+  },
+  {
+    "id": "S21",
+    "priimek": "Selčan → Delčnjak",
+    "položaj": [46.355967, 15.291854],
+    "trenutni_naslov": "Selce 21, Nova cerkev",
+    "stari_naslov": "Zem. 1825: Seutze, Lippa 2<br>SA: Selce 2, Frankolovo, Celje",
+    "hisno_ime": ""
+  },
+  {
+    "id": "DG15",
+    "priimek": "Gorenšek",
+    "položaj": [46.336858, 15.313386],
+    "trenutni_naslov": "Dol pod Gojko 6/7",
+    "stari_naslov": "Zem. 1825: Dou 15",
+    "hisno_ime": "Laznik"
+  },
+  {
+    "id": "S20",
+    "priimek": "Kokljič → Selčan → Delčnjak",
+    "položaj": [46.355288, 15.292143],
+    "trenutni_naslov": "Selce 20, Nova cerkev",
+    "stari_naslov": "Zem. 1825: Seutze, Lippa 4, 5, 6, 7<br>SA: Selce 6, Sternstein, Celje",
+    "hisno_ime": "Kokljič"
+  }
+]

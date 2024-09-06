@@ -39,18 +39,18 @@
     --barvaOspredja: black;
     --barvaNazaj: rgba(0, 0, 0, 0.4);
 }
-html, body { height: 100%;}
+html, body { height: 100vh;}
 body {
     background: var(--barvaOzadja);
-    height: 100vh; /*polje dnevnaUra naj bo visoko za višino zaslona, zato da bo lahko align-items poravnano na sredino zaslona*/
-    width: 100vw;
     overflow: hidden; /*skrijemo, kar presega mejo; zato tudi ne more biti drsnika*/
     color: var(--barvaOspredja);
     margin: 0;
     /*justify-content: center;
     align-items: center;*/
     font-family: "Times New Roman", serif;
-    top: 0;
+    top: auto;
+    bootom:0;
+    right: 0;
 }
 p {
     padding: 0.5rem;
@@ -216,8 +216,8 @@ tr:hover {
 
 .teden {
     position: fixed;
-    width: 50%;
-    left: 25%;
+    width: 50vw;
+    max-width: 300px;
     aspect-ratio: 1/1;
 }
     .tedenŠtevilčnica {
@@ -244,6 +244,36 @@ tr:hover {
     right: 0;
     aspect-ratio: 1/1;
 }
+.krajUra {
+    height: 50vw;
+    aspect-ratio: 1/1;
+    position: sticky;
+    float: right;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: var(--barvaOzadja);
+}
+    #krajUrniKaz {
+        height: 50%;
+        width: 2px;
+        position: absolute;
+        background-color: red;
+        bottom: 0;
+        left: 50%;
+        transform: translate (-50%, 0);
+            transform-origin: top;
+    }
+    #krajLetKaz {
+        width: calc(0.14266347*80%);
+        height: calc(0.14266347*80%);
+        position: absolute;
+        border: 1px solid yellow;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate (-50%, -50%);
+    }
 
 /*DRSNIK*/
     html {
@@ -493,6 +523,80 @@ tr:hover {
                     background-color: black;
                     transition: transform 0.5s;
                 }
+        .lunVozel {/*presečišče osončne in Lunine ravnine kroženja*/
+            --višina: 75;
+            z-index: 3;
+            position: absolute;
+            height: 116%;
+                top: -8%;
+                bottom: -8%;
+            width: 8%;
+                left: 46%;
+                right: 46%;
+            transform: rotate(75deg);
+                transform-origin: center;
+            transition: transform 0.5s;
+            border-left: 1px solid blue;
+            border-right: 1px solid blue;
+        }
+        .ZemSenca {/*Senca, ki jo Zemlja meče za seboj*/
+            --višina: 75;
+            z-index: -1;
+            position: absolute;
+            /*height: 116%;
+                top: -8%;
+                bottom: -8%;*/
+            height: 58%;
+                bottom: -8%;
+            width: 8%;
+                left: 46%;
+                right: 46%;
+            transform: rotate(0deg);
+                transform-origin: top;
+            transition: transform 0.5s;
+            /*border-left: 1px solid blue;
+            border-right: 1px solid blue;*/
+        }
+            #krakZemSence1 {
+                width: 1px;
+                height: 15%;
+                position: absolute;
+                right: 50%;
+                bottom: 0;
+                background-color: red;
+                transform-origin: bottom;
+                transform: rotate(0deg);
+            }
+            #krakZemSence2 {
+                width: 1px;
+                height: 15%;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                background-color: red;
+                transform-origin: bottom;
+                transform: rotate(0deg);
+            }
+            #krakZemPolsence1 {
+                width: 1px;
+                height: 15%;
+                position: absolute;
+                right: 50%;
+                bottom: 0;
+                background-color: orange;
+                transform-origin: bottom;
+                transform: rotate(0deg) /*translateY(-100%)*/;
+            }
+            #krakZemPolsence2 {
+                width: 1px;
+                height: 15%;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                background-color: orange;
+                transform-origin: bottom;
+                transform: rotate(0deg) /*translateY(-100%)*/;
+            }
 #nebo {
     position: absolute;
     right: 0;
@@ -564,7 +668,7 @@ tr:hover {
   display: flex;
   flex-direction: column;
   gap: var(--hamburger-gap);
-  width: max-content; /*okno je široko, kolikor je vsebina*/
+  /*width: max-content; /*okno je široko, kolikor je vsebina*/
   position: fixed;
   top: var(--hamburger-margin);
   left: var(--hamburger-margin);
@@ -626,16 +730,17 @@ tr:hover {
 .sidebar /*kazalo stran*/ {
   transition: translate var(--animation-timing); /*čas, da se prikaže kazalo*/
   translate: -100%; /*kazalo strani je privzeto skrito izven strani*/
-  padding: 0.5rem 1rem;
-  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin));
-  padding-bottom: 2rem;
   background-color: var(--barvaOzadjaProsojno);
   color: var(--barvaOspredja);
   /*max-width: 30rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
+  width: 100vw;
   height: 100vh;
   position: fixed;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   overflow: auto;
-  z-index: 100;
+  z-index: 99;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: grayscale(100%);
@@ -643,6 +748,12 @@ tr:hover {
 }
 .sidebar li {
   text-align: left;
+}
+.sidebar nav {
+  padding: 0.5rem 1rem;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin));
+  padding-bottom: 2rem;
+  width: 50vw;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {

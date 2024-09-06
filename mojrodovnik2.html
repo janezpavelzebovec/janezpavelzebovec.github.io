@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="sl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js" defer></script>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+        <meta http-equiv="Cache-control" content="public">
+
+        <title>Moj rodovnik</title>
+        <meta name="description" content="Moj rodovnik in povezave na moje profile na rodoslovnih spletnih straneh." /> <!--opis spletnega mesta-->
+        <meta name="keywords" content="rodoslovje, rodovnik, družinsko drevo, DNK" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name content="Moj rodovnik (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" content="Moj rodovnik"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" content="Moj rodovnik in povezave na moje profile na rodoslovnih spletnih straneh."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="Moj rodovnik in povezave na moje profile na rodoslovnih spletnih straneh."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
+    </head>
+
+    <body>
+
+        <label class="hamburger-menu">
+          <input type="checkbox" />
+        </label>
+        <aside class="sidebar">
+          <nav>
+            <div><a href="./">Domov</a></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+            <br>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div>
+            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div>
+            <div><a href="./glasopisnica">Glasopisnica</a></div>
+            <div><a href="./mojrodovnik">Moj rodovnik</a></div>
+            <hr>
+            <p>KAZALO</p>
+            <ul class="ugn1">
+            </ul>
+          </nav>
+        </aside>
+
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
+        <div class="vsebina">
+            <h1>Moj rodovnik</h1>
+            <h2>Rodovniški zemljevid</h2>
+            <p>Klikni krožno polje za prikaz podrobnosti:
+            <ul class="s">
+                <li>priimek,kako se /so se pisali na tem naslovu (če se je priimek zamenjal, je to označeno s puščico →)</li>
+                <li>trenutni naslov (ponekod je ta bolj okviren, če je bila npr. na istem mestu zgrajena druga hiša)</i></li>
+                <li>stari naslov, bodisi po krstnih, poročnih knjigah, SSP, SZP, ali po knjižici <i><a href="https://www.hisnaimena.si/knjizice/" target="_blank" rel="noopener noreferrer">Slovenskih hišnih imenih</a></i></li>
+                <li>hišno/domače ime, običajno po knjižici <i><a href="https://www.hisnaimena.si/knjizice/" target="_blank" rel="noopener noreferrer">Slovenskih hišnih imenih</a></i></li>
+            </ul>
+            </p>
+            <p>Še nekaj privzetih kratic:</p>
+            <ul class="s">
+                <li><b>SSP</b> = <i>Seznam stavbnih parcel</i> <a href="https://vac.sjas.gov.si/vac/search/details?id=23253"><i>Franciscejskega katastra za Kranjsko (1823-1869)<i></a>, iz <i><a href="https://vac.sjas.gov.si/" target="_blank" rel="noopener noreferrer">Virtualne arhivske čitalnice (VAČ)</a></i></li>
+                <li><b>SLZ</b> = <i>Abecedni seznam lastnikov zemljišč</i>, iz <i><a href="https://vac.sjas.gov.si/" target="_blank" rel="noopener noreferrer">Virtualne arhivske čitalnice (VAČ)</a></i></li>
+                <li><b>SZP</b> = <i>Seznam zemljiških parcel</i>, iz <i><a href="https://vac.sjas.gov.si/" target="_blank" rel="noopener noreferrer">Virtualne arhivske čitalnice (VAČ)</a></i></li>
+                <li><b>Zem. [leto]</b> = po zemljiškem katastru, zemljevidu na (<i><a href="https://maps.arcanum.com/en/map/cadastral/" target="_blank" rel="noopener noreferrer">Arcanum - Habsburg Empire - Cadastral maps (XIX. century)</a></i>), na katerem je označeno leto, ko je bil v določenem kraju izveden popis</li>
+            </ul>
+        </div>
+        <div id="map"></div>
+        <style>
+            /* Nastavitve za zemljevid */
+            #map {
+                height: 500px; /* Višina zemljevida - lahko prilagodite po potrebi */
+                width: 100%; /* Širina zemljevida */
+            }
+            #map ul {
+                margin: 0;
+                padding: 0;
+            }
+            #map li {
+                margin: 0;
+            }
+            .leaflet-popup-content-wrapper {
+                font-size: 0.8rem;
+                font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+            }
+            div.leaflet-popup-content {
+                font-size: 0.8rem;
+                font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+            }
+            div.leaflet-popup-content ul {
+                font-size: 0.8rem;
+                font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+            }
+        </style>
+            <script>
+////////////////////////Izris zemljevida in prikaz podatkov
+var map = L.map('map').setView([46.11994444, 14.81533333], 8);
+
+// Dodaj OSM sloj
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19
+}).addTo(map);
+//////////////////////////////////Naložite JSON datoteke in jih obdelajte
+fetch('kraji.json').then(response => response.json()).then(kraji => {
+    fetch('osebe.json').then(response => response.json()).then(osebe => {
+        fetch('vezi.json').then(response => response.json()).then(vezi => {
+            // Tukaj narišite kraje in linije
+            narišiKrajeInLinije(kraji, osebe, vezi);
+        });
+    });
+});
+//////////////////////////////Izris krajev, oseb in linij
+function narišiKrajeInLinije(kraji, osebe, vezi) {
+    var krajMapa = new Map();
+
+    // Dodaj kroge za kraje
+    kraji.forEach(kraj => {
+        // Položaj je že pravilno oblikovan kot array [lat, lng]
+        var latlng = kraj.položaj;
+
+        // Dodajanje prosojnega kroga namesto markerja
+        var circle = L.circle(latlng, {
+            color: '',
+            fillColor: 'red', // Barva za polnjenje kroga
+            fillOpacity: 0.5, // Prosojnost
+            radius: 100 // Polmer kroga (v metrih)
+        }).addTo(map);
+
+        // Priprava vsebine za bindPopup
+        var popupContent = `<a href="#${kraj.id}"><i>podrobneje</i></a><br>${kraj.priimek}<br><b>${kraj.trenutni_naslov}</b><br>${kraj.stari_naslov}<br>${kraj.hisno_ime}<hr>`;
+        var ljudjeNaTemKraju = osebe.filter(oseba => oseba.kraji_bivanja.includes(kraj.id));
+        popupContent += '<ul>';
+        ljudjeNaTemKraju.forEach(oseba => {
+            // Izluščite letnici iz celotnega datuma rojstva in smrti
+            var letoRojstva = oseba.datum_rojstva.split('-')[0];
+            var letoSmrti = oseba.datum_smrti.split('-')[0];
+            var letnice = `(${letoRojstva} - ${letoSmrti})`;
+
+            popupContent += `<li>${oseba.ime} ${oseba.priimek} ${letnice}</li>`;
+        });
+        popupContent += '</ul>';
+
+        // Poveži popup z krogom
+        circle.bindPopup(popupContent);
+
+        // Shrani krog v mapo krajev
+        krajMapa.set(kraj.id, circle);
+    });
+
+    // Dodaj linije med kraji za vsako osebo
+    osebe.forEach(oseba => {
+        var krajiOsebe = oseba.kraji_bivanja.map(id => {
+            if (!krajMapa.has(id)) {
+                console.warn(`Neveljaven naslov za osebo ${oseba.ime} ${oseba.priimek}: Neobstoječ kraj ID '${id}'`);
+                return null;
+            }
+            return krajMapa.get(id).getLatLng();
+        });
+
+        // Odstrani neveljavne naslove (null) iz krajiOsebe
+        krajiOsebe = krajiOsebe.filter(latlng => latlng !== null);
+
+        // Nariši linije, če so vsaj dva veljavna naslova
+        for (var i = 0; i < krajiOsebe.length - 1; i++) {
+            var linija = L.polyline([krajiOsebe[i], krajiOsebe[i + 1]], {color: 'red'}).addTo(map);
+            linija.bindPopup(`${oseba.ime} ${oseba.priimek}<br>Selitev`);
+        }
+    });
+
+    // Povezava sorodstvenih vezi
+    vezi.forEach(zapis => {
+        var prednik = osebe.find(o => o.id === zapis.id);
+        if (!prednik) {
+            console.warn(`Prednik z ID '${zapis.id}' ni najden.`);
+            return;
+        }
+
+        zapis.potomci.forEach(potomecId => {
+            var potomec = osebe.find(o => o.id === potomecId);
+            if (!potomec) {
+                console.warn(`Potomec z ID '${potomecId}' ni najden.`);
+                return;
+            }
+
+            var prednikKrajId = prednik.kraji_bivanja[prednik.kraji_bivanja.length - 1];
+            var potomecKrajId = potomec.kraji_bivanja[0];
+
+            var prednikKraj = krajMapa.get(prednikKrajId);
+            var potomecKraj = krajMapa.get(potomecKrajId);
+
+            if (!prednikKraj) {
+                console.warn(`Kraj bivanja prednika z ID '${prednikKrajId}' ni najden.`);
+                return;
+            }
+
+            if (!potomecKraj) {
+                console.warn(`Kraj bivanja potomca z ID '${potomecKrajId}' ni najden.`);
+                return;
+            }
+
+            var linija = L.polyline([prednikKraj.getLatLng(), potomecKraj.getLatLng()], {color: 'orange'}).addTo(map);
+            linija.bindPopup(`${prednik.ime} ${prednik.priimek} → ${potomec.ime} ${potomec.priimek}<br>Sorodstvena vez`);
+        });
+    });
+}
+
+            </script>
+        <div class="vsebina">
+            <ul>
+                <li id="PV19"><details><summary><b>Polje pri Vodicah 19</b></summary>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=356734" target="_blank" rel="noopener noreferrer">Seznam stavbnih zemljišč Polje pri Vodicah</a>
+                        <img alt="SSPPolje"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPPolje(22).png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SSPPolje22" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPPolje22.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=356735" target="_blank" rel="noopener noreferrer">Abecedni seznam lastnikov zemljišč Polje pri Vodicah</a>
+                        <img alt="SLZVelesovo"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZPolje22.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://maps.arcanum.com/en/synchron/cadastral/?bbox=1613479.171898165%2C5806311.616483985%2C1613561.431278214%2C5806394.77161046&layers=3%2C4&right-layers=here-aerial" target="_blank" rel="noopener noreferrer">Arcanum - Habsburg Empire - Cadastral maps (XIX. century): Polje pri Vodicah 22</a>
+                        <!--<img alt="ZemUdde"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/ZemUdde.png"
+                            class="image-center"
+                            width="100%"/>-->
+                    </p>
+                </details></li>
+                <li id="AC5"><details><summary><b>Adergas 5</b></summary>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=356734" target="_blank" rel="noopener noreferrer">Seznam stavbnih zemljišč Velesovo</a>
+                        <img alt="SSPVelesovo"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPVelesovo.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SSPAdergas5" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPAdergas5.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=356735" target="_blank" rel="noopener noreferrer">Abecedni seznam lastnikov zemljišč Velesovo</a>
+                        <img alt="SLZVelesovo"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZVelesovo.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SLZUdde" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZUdde.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://maps.arcanum.com/en/synchron/cadastral/?bbox=1609725.740130314%2C5823613.455821178%2C1610178.9878214735%2C5823956.825284178&layers=3%2C4&right-layers=here-aerial" target="_blank" rel="noopener noreferrer">Arcanum - Habsburg Empire - Cadastral maps (XIX. century): Adergas 5 z zemljišči (razen gozda)</a>
+                        <!--<img alt="ZemUdde"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/ZemUdde.png"
+                            class="image-center"
+                            width="100%"/>-->
+                    </p>
+                </details></li>
+                <li id="PK17"><details><summary><b>Primskovo 17</b></summary>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=357164" target="_blank" rel="noopener noreferrer">Seznam stavbnih zemljišč Primskovo</a>
+                        <img alt="SSPPrimskovo"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPPrimskovo.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SSPSircJožef" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPSircJožef.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=357165" target="_blank" rel="noopener noreferrer">Abecedni seznam lastnikov zemljišč Primskovo</a>
+                        <img alt="SLZPrimskovo"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZPrimskovo.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SLZSircJožef" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZSircJožef.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://maps.arcanum.com/en/synchron/cadastral/?bbox=1600393.3003088334%2C5820946.506431292%2C1600619.9241544134%2C5821118.191162792&layers=3%2C4&right-layers=here-aerial" target="_blank" rel="noopener noreferrer">Arcanum - Habsburg Empire - Cadastral maps (XIX. century): Primskovo 17</a></p>
+                </li>
+                <li id="PV5"><details><summary><b>Povodje 2</b></summary>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=369369" target="_blank" rel="noopener noreferrer">Seznam stavbnih zemljišč Skaručna</a>
+                        <img alt="SSPSkaručna
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPSkaručna.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SSPPovodje2" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPPovodje2.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=369370" target="_blank" rel="noopener noreferrer">Abecedni seznam lastnikov zemljišč Skaručna</a>
+                        <img alt="SLZSkaručna"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZSkaručna.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SLZPovodje2" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZPovodje2.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://maps.arcanum.com/en/synchron/cadastral/?bbox=1611917.0106392775%2C5802758.9301222665%2C1612370.2583304371%2C5803102.299585267&layers=3%2C4&right-layers=here-aerial" target="_blank" rel="noopener noreferrer">Arcanum - Habsburg Empire - Cadastral maps (XIX. century): Povodje 67</a></p>
+                </details></li>
+                <li id="SK13"><details><summary><b>Suhadole 13</b></summary>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=369369" target="_blank" rel="noopener noreferrer">Seznam stavbnih zemljišč Suhadole pri Komendi</a>
+                        <img alt="SSPSuhadole
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPSuhadole.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SSPSuhadoleŽebovec" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPSuhadoleŽebovec.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=369370" target="_blank" rel="noopener noreferrer">Abecedni seznam lastnikov zemljišč Skaručna</a>
+                        <img alt="SLZSuhadoleŽebovec" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZSuhadoleŽebovec.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://maps.arcanum.com/en/synchron/cadastral/?bbox=1619520.0706215936%2C5810563.66770253%2C1619633.3825443836%2C5810649.510068279&layers=3%2C4&right-layers=here-aerial" target="_blank" rel="noopener noreferrer">Arcanum - Habsburg Empire - Cadastral maps (XIX. century): Suhadole 13</a></p>
+                </details></li>
+                <li id="SK13"><details><summary><b>Polje pri Vodicah 33</b></summary>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=357123" target="_blank" rel="noopener noreferrer">Seznam stavbnih zemljišč Polje pri Vodicah</a>
+                        <img alt="SSPPoljePriVodicah
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPPoljePriVodicah(33).png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SSPPolje33A" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPPolje33A.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SSPPolje33B" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPPolje33B.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=357124" target="_blank" rel="noopener noreferrer">Abecedni seznam lastnikov zemljišč Polje pri Vodicah</a>
+                        <img alt="SLZPoljePriVodicah" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZPoljePriVodicah(33).png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SLZPolje33" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZPolje33.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://maps.arcanum.com/en/synchron/cadastral/?bbox=1613603.0281019781%2C5806056.298758109%2C1613685.2874820272%2C5806139.453884584&layers=3%2C4&right-layers=here-aerial" target="_blank" rel="noopener noreferrer">Arcanum - Habsburg Empire - Cadastral maps (XIX. century): Polje pri Vodicah 55</a></p>
+                </details></li>
+                <li id="LF19"><details><summary><b>Lipa pri Frankolovem 19</b></summary>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=369369" target="_blank" rel="noopener noreferrer">Seznam stavbnih zemljišč Lipa pri Frankolovem</a>
+                        <img alt="SSPLipaPriFrankolovem
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPLipaB.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SSPHribernikJožef" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPHribernikJožef.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=369370" target="_blank" rel="noopener noreferrer">Abecedni seznam lastnikov zemljišč Lipa pri Frankolovem</a>
+                        <img alt="SLZLipaPriFrankolovem"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZLipaA.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SLZHribernikJožef" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZHribernikJožefA.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://maps.arcanum.com/en/synchron/cadastral/?bbox=1703675.8571075539%2C5835904.673157299%2C1704129.1047987135%2C5836248.042620299&layers=3%2C4&right-layers=here-aerial" target="_blank" rel="noopener noreferrer">Arcanum - Habsburg Empire - Cadastral maps (XIX. century): Lipa pri Frankolovem 74, 75</a></p>
+                </details></li>
+                <li id="S20"><details><summary><b>Selce 20</b></summary>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=369369" target="_blank" rel="noopener noreferrer">Seznam stavbnih zemljišč Lipa pri Frankolovem</a>
+                        <img alt="SSPLipaPriFrankolovem
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPLipaA.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SSPKokljičGašper" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPKokljičGašper.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=369370" target="_blank" rel="noopener noreferrer">Abecedni seznam lastnikov zemljišč Lipa pri Frankolovem</a>
+                        <img alt="SLZLipaPriFrankolovem"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZLipaB.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SLZHribernikJožef" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZKokljičGašperB.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://maps.arcanum.com/en/synchron/cadastral/?bbox=1702197.7152298216%2C5837383.092620975%2C1702424.3390754017%2C5837554.777352476&layers=3%2C4&right-layers=here-aerial" target="_blank" rel="noopener noreferrer">Arcanum - Habsburg Empire - Cadastral maps (XIX. century): Selce 4, 5, 6, 7</a></p>
+                </details></li>
+                <li id="KM80"><details><summary><b>Kozjak pri Mislinji 65</b></summary>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=369105" target="_blank" rel="noopener noreferrer">Seznam stavbnih zemljišč Kozjak pri Mislinji</a>
+                        <img alt="SSPKozjak
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPKozjak.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SSPKozjak65" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SSPKozjak65.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=369106" target="_blank" rel="noopener noreferrer">Abecedni seznam lastnikov zemljišč Kozjak pri Mislinji</a>
+                        <img alt="SLZKozjak"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZKozjak.png"
+                            class="image-center"
+                            width="100%"/>
+                        <img alt="SLZKozjak65" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="./images/rodoslovje/moje/SLZKozjak65.png"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                    <p><a href="https://maps.arcanum.com/en/synchron/cadastral/?bbox=1695415.1525511956%2C5845533.178788685%2C1695744.1900713919%2C5845865.799294583&layers=3%2C4&right-layers=here-aerial" target="_blank" rel="noopener noreferrer">Arcanum - Habsburg Empire - Cadastral maps (XIX. century): Kozjak 65</a></p>
+                    <p><a href="https://vac.sjas.gov.si/vac/search/details?id=215980" target="_blank" rel="noopener noreferrer">Kozjak pri Mislinji - grafični - list A06</a>
+                        <img alt="ZemKozjakA06" style="padding-top:0"
+                            content-visibility="auto"
+                            loading="lazy"
+                            src="https://vac.sjas.gov.si/vac/util/fileStream?type=2&uodid=215980&docid=10&seq=1"
+                            class="image-center"
+                            width="100%"/>
+                    </p>
+                </details></li>
+            </ul>
+            <h3>Seznam prednikov</h3>
+            <label class="gumb">
+              <input onclick="odpriDrevo()" type="checkbox" id="odpriRod" style="display: none"/><i><span id="odpriZapri">Zapri</span> ves rodovnik.</i>
+            </label>
+            <!--<button onclick="odpriDrevo()" class="gumb"><i>Odpri/zapri ves rodovnik.</i></button>-->
+            <ul class="drevesni">
+                <li><details open><summary><b>Janez Pavel Žebovec</b></summary>
+                    <ul>
+                        <li><details open><summary><b>Iztok Žebovec</b></summary>
+                            <ul>
+                                <li><details open><summary><b>Ciril Žebovec</b> (7. jul. 1932 - 10. dec. 2023)</summary>
+                                    <ul>
+                                        <li><details open><summary><b>Franc Žebovec</b> (5. jun. 1891 - 13. jun. 1967)</summary>
+                                            <ul>
+                                                <li><details open><summary><b>Valentin Žebovec</b> (15. feb. 1850 - pr. 1906)</summary>
+                                                    <ul>
+                                                        <li><details open><summary><b>Gregor Žebovec</b> (12. mar. 1798 - 1856)</summary>
+                                                            <ul>
+                                                                <li><b>Jurij Žebovec</b></li>
+                                                                <li><b>Gertruda Žebovec, r. Jerinc</b></li>
+                                                            </ul>
+                                                        </details></li>
+                                                        <li><details open><summary><b>Marija Žebovec, r. Vertačnik</b> (23. nov. 1819 -)</summary></details></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary><b>Uršula Žebovec, r. Žirovnik (1862 -)</b></summary>
+                                                    <ul>
+                                                        <li><b>Jakob Žirovnik</b></li>
+                                                        <li><b>Marija Žirovnik, r. Drinovec</b></li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                        <li><details open><summary><b>Frančiška Žebovec, r. Debevec</b> (7. jun. 1901 - 30. jan. 1992)</summary>
+                                            <ul>
+                                                <li><details open><summary><b>Janez Debevec</b> (1853 - 1927)</summary>
+                                                    <ul>
+                                                        <li><b>Sebastijan Debevec</b> (1830 -)</li>
+                                                        <li><b>Neža Debevec, r. Špenko</b> (1830 -)</li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary><b>Marija Debevec, r. Mrak</b> (20. nov. 1865 - pr. 1942)</summary>
+                                                    <ul>
+                                                        <li><b>Matevž Mrak</b> (1823 -)</li>
+                                                        <li><b>Jera Mrak, r. Podgoršek</b> (1835 -)</li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                    </ul>
+                                </details></li>
+                                <li><details open><summary><b>Antonija Žebovec, r. Sirc</b> (29. mar. 1941 - 20. 5. 1994)</summary>
+                                    <ul>
+                                        <li><details open><summary><b>Janez Sirc</b> (6. sep. 1904 - 3. sep. 1965)</summary>
+                                            <ul>
+                                                <li><details open><summary><b>Janez Sirc</b> (27. apr. 1873 - 5. maj 1911)</summary>
+                                                    <ul>
+                                                        <li><b>Jožef Sirc</b> (1832 -)</li>
+                                                        <li><b>Marija Sirc, r. Ude</b> (1840 -)</li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary><b>Marjana Sirc, r. Štirn</b> (12. sep. 1869 - 9. sep. 1923)</summary>
+                                                    <ul>
+                                                        <li><b>Luka Štern</b></li>
+                                                        <li><b>Marija Štern, r. Aleš</b></li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                        <li><details open><summary><b>Angela Sirc, r. Koglar</b> (24. avg. 1903 - 3. jan. 1982)</summary>
+                                            <ul>
+                                                <li><details open><summary><b>Ivan Koglar</b> (22. jun. 1870 - 8. jan. 1942)</summary>
+                                                    <ul>
+                                                        <li><b>Matija Koglar</b> (1839 - 1902)</li>
+                                                        <li><b>Neža Koglar, r. Preklet</b> (1835 - 1913)</li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary><b>Marija Koglar, r. Grilc</b> (25. mar. 1869 - 18. maj 1955)</summary>
+                                                    <ul>
+                                                        <li><b>Ivan Grilc</b> (1836 - 1918)</li>
+                                                        <li><b>Helena Grilc, r. Nograšek</b> (1831 - 1886)</li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                    </ul>
+                                </details></li>
+                            </ul>
+                        </details></li>
+                        <li><details open><summary><b>Mihelina Žebovec</b></summary>
+                            <ul>
+                                <li><details open><summary><b>Anton Podjavoršek</b></summary>
+                                    <ul>
+                                        <li><details open><summary><b>Dominik Podjavoršek „Hribernik“</b></summary>
+                                            <ul>
+                                                <li><details open><summary><b>Franc Podjavoršek „Hribernik“</b> (29. sep. 1864 - )</summary>
+                                                    <ul>
+                                                        <li><b>Matevž Podjavoršek</b> (1810 -)</li>
+                                                        <li><b>Marija Podjavoršek, r. Ramšak</b></li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary><b>Helena Podjavoršek, r. Iršič</b> (27. mar. 1861 - )</summary>
+                                                    <ul>
+                                                        <li><b>Gašper Iršič</b></li>
+                                                        <li><b>Elizabeta Iršič, r. Založnik</b></li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                        <li><details open><summary><b>Angela Podjavoršek, r. Pinter</b></summary>
+                                            <ul>
+                                                <li><details open><summary><b>Frančišek Pinter</b> (2. okt. 1863 - )</summary>
+                                                    <ul>
+                                                        <li><b>Andrej Pinter</b> (1818 -)</li>
+                                                        <li><b>Agata Pinter, r. Kraljič</b> (1832 -)</li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details><summary><b>Marija Pinter, r. Germ</b></summary>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                    </ul>
+                                </details></li>
+                                <li><details open><summary><b>Ana Podjavoršek, r. Selčan</b></summary>
+                                    <ul>
+                                        <li><details open><summary><b>Franc Selčan</b></summary>
+                                            <ul>
+                                                <li><details open><summary><b>Jurij Selčan „Kokljič“</b> (12. apr. 1868 - 13. feb. 1911; Selce 2, Frankolovo)</summary>
+                                                    <ul>
+                                                        <li><b>Matija Selčan</b> (1832 -)</li>
+                                                        <li><b>Marija Selčan, r. Weber</b> (1845 -)</li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary><b>Marija Selčan, r. Korošec</b> (27. jan. 1870 - 2. jan. 1901)</summary>
+                                                    <ul>
+                                                        <li><b>Anton Korošec</b> (1847 -)</li>
+                                                        <li><b>Jožefa Korošec, r. Steble</b> (1843 -)</li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                        <li><details open><summary><b>Marija Selčan, r. Gorenšek</b></summary>
+                                            <ul>
+                                                <li><details open><summary><b>Jakob Gorenšek „Laznik“</b> (15. jul. 1858 - 17. jul. 1904)</summary>
+                                                    <ul>
+                                                        <li><b>Valentin Gorenšek</b> (1833 - 1909)</li>
+                                                        <li></b>Agata Gorenšek, r. Blazinšek</b> (1835 - 1915)</li>
+                                                    </ul>
+                                                </details></li>
+                                                <li><details open><summary><b>Helena Petre, r. Steble</b> (1. apr. 1880 - 7. sep. 1950)</summary>
+                                                    <ul>
+                                                        <li><b>Janez Steble</b> (1835 -)</li>
+                                                        <li><b>Marija Steble, r. Podgoršek</b> (1846 -)</li>
+                                                    </ul>
+                                                </details></li>
+                                            </ul>
+                                        </details></li>
+                                    </ul>
+                                </details></li>
+                            </ul>
+                        </details></li>
+                    </ul>
+                </details></li>
+            </ul>
+            <ul class="s">
+                <li><a href="https://www.geni.com/people/Janez-Pavel-%C5%BDebovec/6000000127187560821" target="_blank" rel="noopener noreferrer">Geni profil</a> (glavno/sredinsko družinsko drevo)</li>
+                <li><a href="https://www.ancestry.com/profile/08ec98de-0006-0000-0000-000000000000" target="_blank" rel="noopener noreferrer">Ancestry profil</a>
+                    <ul class="s">
+                        <li><a href="https://www.ancestry.com/sharing/3119429?mark=7b22746f6b656e223a223279766f6e41576a6962506f506b74353736734a6833756979535a6b436c75535a4635684d46656c67356f3d222c22746f6b656e5f76657273696f6e223a225632227d" target="_blank" rel="noopener noreferrer">Ancestry - moji DNK izvidi (<i>AncestryDNA® ethnicity estimate</i>)</a></li>
+                        <li><a href="https://www.ancestry.com/sharing/3121541?mark=7b22746f6b656e223a22746d644c7a6a3377454f3278333058585442487771394d2b6c6768314e38534c7a5a6770536369495348453d222c22746f6b656e5f76657273696f6e223a225632227d" target="_blank" rel="noopener noreferrer">Ancestry - moji DNK izvidi: kromosomski slikar (<i>AncestryDNA® chromosome painting</i>)</a></li>
+                        <li><a href="https://www.ancestry.com/sharing/13359207?mark=7b22746f6b656e223a2276623535376e4c73764142496437316768705a6e4d323358473173726f58644345595875523959385238343d222c22746f6b656e5f76657273696f6e223a225632227d" target="_blank" rel="noopener noreferrer">Ancestry - moji DNK izvidi: dedovana narodnost (<i>AncestryDNA® ethnicity inheritance</i>; verjetno dostopno le za nekaj časa)</a></li>
+                    </ul>
+                </li>
+                <!--<li><a href="https://discover.familytreedna.com/y-dna/G-L166/story" target="_blank" rel="noopener noreferrer">Family Tree DNA - Your Haplogroup Story</a></li>-->
+                <li><a href="https://www.myheritage.si/member-1542301122_1230606902/member" target="_blank" rel="noopener noreferrer">My Heritage profil</a></li>
+                <li><a href="https://en.geneanet.org/profil/japaze1" target="_blank" rel="noopener noreferrer">Geneanet profil</a></li>
+                <li><a href="https://www.wikitree.com/wiki/%C5%BDebovec-1" target="_blank" rel="noopener noreferrer">WikiTree profil</a></li>
+            </ul>
+        </div>
+        <footer>Zadnja posodobitev te strani: <time datetime="2024-08-20">20. 8. 2024</time></footer>
+    </body>
+</html>

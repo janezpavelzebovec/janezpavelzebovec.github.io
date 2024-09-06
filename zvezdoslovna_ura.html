@@ -205,6 +205,7 @@
                     src="./images/vesolje/teden.svg"/>
                 <div class="kazalecTedna" id="kazTedna"></div>
             </div>
+            </div>
             <!--<div class="položajSonca">
                 <img id="položajSonca"
                     class="položajSoncaSlika obrnjena"
@@ -214,6 +215,14 @@
             </div>-->
             <!--<footer>Zadnja posodobitev te strani: <time datetime="2024-06-22">22. 6. 2024</time></footer>-->
           </nav>
+          <div class="krajUra">
+                <img class="obrnjena" style="position: absolute"
+                    src="./images/vesolje/N-urna_stevilcnica.svg"/>
+                <img style="position: absolute; width: 90%; left: 5%; top: 5%;"
+                    src="./images/vesolje/dnevne_crte2.svg"/>
+            <div id="krajUrniKaz"></div>
+            <div id="krajLetKaz"></div>
+          </div>
         </aside>
         <div style="width: 100vh; height: 100vh" class="uraSonca" style="relative: absolute" data-naprava>
 	        <div id="zemljevidStarš"style="width: 75%; height: 75%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-color: none">
@@ -297,6 +306,13 @@
                             width="100%"/></div>
                     </div>
                 </div>
+                <div id="lunVozel" class="lunVozel"></div>
+                <div id="ZemSenca" class="ZemSenca">
+                    <div id="krakZemSence1"></div>
+                    <div id="krakZemSence2"></div>
+                    <div id="krakZemPolsence1"></div>
+                    <div id="krakZemPolsence2"></div>
+                </div>
                 <img id="dneviLune"
                     class="dneviLune obrnjena"
                     src="./images/vesolje/N-lunina_stevilcnica.svg"/>
@@ -310,8 +326,8 @@
                     class="obrnjena"
                     src="./images/vesolje/N-zemljevid_zvezdnega_neba-obzorje.svg"/>
             </div>
-            <img id="neboZvezde"
-                src="./images/vesolje/zemljevid_zvezdnega_neba-zvezde.svg"/>
+            <img id="neboZvezde" class="obrnjena"
+                src="./images/vesolje/N-zemljevid_zvezdnega_neba-zvezde.svg"/>
         </div>
     </body>
 </html>

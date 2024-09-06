@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="sl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js" defer></script>
+        <meta http-equiv="Cache-control" content="public">
+
+        <title>Programi</title>
+        <meta name="description" content="Glagolica - starocerkvenoslovanska pisava"  /> <!--opis spletnega mesta-->
+        <meta name="keywords" content="glagolica, starocerkvenoslovanščina" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name content="Glagolica"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" content="Glagolica"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" content="Glagolica - starocerkvenoslovanska pisava" ><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="Glagolica - starocerkvenoslovanska pisava" ><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
+    </head>
+
+    <body>
+        <label class="hamburger-menu">
+          <input type="checkbox" />
+        </label>
+        <aside class="sidebar">
+          <nav>
+            <div><a href="./">Domov</a></div>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+            <br>
+            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div>
+            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div>
+            <div><a href="./glasopisnica">Glasopisnica</a></div>
+            <div><a href="./mojrodovnik">Moj rodovnik</a></div>
+          </nav>
+        </aside>
+
+        <button id="stikaloNačina" class="stikaloNačina">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"/>
+            </svg>
+        </button>
+
+        <div class="vsebina">
+            <h1>Programi</h1>
+            <p class="podnaslov"></p>
+        </div>
+        <table class="sredinsko zgornja vodčrte">
+            <thead>
+                <tr>
+                    <th>program</th>
+                    <th>naloga</th>
+                    <th>morebitno povezovanje</th>
+                    <th>opombe</th>
+            </thead>
+            <tbody>
+                <tr id="Birdfont">
+                    <td>Birdfont</td>
+                    <td>urejevalnik računalniških pisav</td>
+                    <td>← <a href="#Inkscape">Inkscape</a></td>
+                    <td>enostaven, lep</td>
+                </tr>
+                <tr id="Blender">
+                    <td>Blender</td>
+                    <td>urejevalnik v 3R <span class="zamrznjeno">(3D)</span></td>
+                    <td></td>
+                    <td>zelo napreden</td>
+                </tr>
+                <tr id="Brave">
+                    <td>Brave</td>
+                    <td>spletni brskalnik</td>
+                    <td></td>
+                    <td>privzeto brez vseh oglasov</td>
+                </tr>
+                <tr id="digiKam">
+                    <td>digiKam</td>
+                    <td>razvrščevalnik slik</td>
+                    <td></td>
+                    <td>prepoznava obrazov</td>
+                </tr>
+                <tr id="FontForge">
+                    <td>FontForge</td>
+                    <td>urejevalnik računalniških pisav</td>
+                    <td>← <a href="#Inkscape">Inkscape</a></td>
+                    <td>napreden, grd</td>
+                </tr>
+                <tr id="Gimp">
+                    <td>Gimp</td>
+                    <td>urejevalnik slik</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="Inkscape">
+                    <td>Inkscape</td>
+                    <td>SVG</td>
+                    <td>→ <a href="#Birdfont">Birdfont</a>, <a href="#FontForge">FontForge</a></td>
+                    <td></td>
+                </tr>
+                <tr id="JOSM">
+                    <td>JOSM</td>
+                    <td>OSM zemljevidi</td>
+                    <td></td>
+                    <td>izbira več podlag</td>
+                </tr>
+                <tr id="Linux">
+                    <td>Linux:<br>
+                        <ul class="s">
+                            <li>Mint (za začetnike)</li>
+                            <li>Debian (za napredne)</li>
+                            <li>Arch (za zelo napredne)</li>
+                        </ul>
+                    </td>
+                    <td>računalniški izvrševalec <span class="zamrznjeno">(operacijski sistem)</span></td>
+                    <td>večina programov (med drugim ne podpira Microsoftovih)</td>
+                    <td>popolnoma prilagodljiv, učinkovit</td>
+                </tr>
+                <tr id="MPV Media Player">
+                    <td>MPV Media Player</td>
+                    <td>predvajalnik posnetkov</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="Musescore">
+                    <td>Musescore</td>
+                    <td>urejevalnik notnih zapisov</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="Scribus">
+                    <td>Scribus</td>
+                    <td>urejevalnik besedilnih dokumentov</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="vsebina">
+            <h3>Zunanje povezave in viri</h3>
+            <ul class="s">
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+        <footer>Zadnja posodobitev te strani: <time datetime="2024-07-18">18. 7. 2024</time></footer>
+    </body>
+</html>

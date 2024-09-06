@@ -19,6 +19,8 @@ const vnosČasIz = document.getElementById('vnosČasa');//za izbiro časa ČasIz
 const prikazPredznaka = document.getElementById('prikazPredznaka');//za prikaz predznaka izbranega časovnega pasu ČasPasu
 const uporabiOdmik = document.getElementById('uporabiOdmik');//za izbiro odmika časovnega pasu od UTC*/
 const kazTedna = document.getElementById("kazTedna");//za kazalec, kažoč dan v tednu
+const krajUrniKaz = document.getElementById("krajUrniKaz");//za kazalec, kažoč uro v dnevu
+const krajLetKaz = document.getElementById("krajLetKaz");
 const napravi = document.querySelectorAll('[data-naprava]');//ura Sonca in ura neba
 const vnosŠirina = document.getElementById("vnosŠirina");//vnos zemljepisne širine
 const vnosDolžina = document.getElementById("vnosDolžina");//vnos zemljepisne dolžine
@@ -48,7 +50,11 @@ const astMesec = 29*24*60*60*1000 + 12*60*60*1000 + 44*60*1000 + 2.9*1000; //ast
 const astMesecDni = astMesec/(1000*60*60*24);//astronomski mesec v dnevih
 const dolžinaLeta = 365.2425;
 const dan = 24*60*60*1000; //1 dan v milisekundah
-const nagOsi = 23.4392811 //nagnjenost Zemljine osi v stopinjah
+const nagOsi = 23.4392811; //nagnjenost Zemljine osi v stopinjah
+const odZem = 149598023; //povprečna oddaljenost Zemlje od Sonca (v km)
+const polmerSonca = 696000; //polmer Sonca (v km)
+const polmerZemlje = 6356.752; //polmer Zemlje (na tečajih; v km)
+const polmerLune = 3474; //polmer Lune (v km)
 
 ////trenutne
 let ČasT = new Date();//trenutni krajevni čas
@@ -437,11 +443,23 @@ function izvedi() {
     console.log("deležDneva: " + deležDneva);
     urniZasukIzStop = deležDneva *360;
     neboObzorje.style.transform = `rotate(${urniZasukIzStop*1}deg)`;
+    krajUrniKaz.style.transform = `rotate(${urniZasukIzStop*-1}deg)`;
 
     ////Izračun in uporaba letnega zasuka
     var prviDanLeta = new Date(ČasIz.getFullYear(), 0, 0);
     var danLeta = (ČasIz - prviDanLeta)/dan;
     letniZasukIzStop = danLeta *360/dolžinaLeta
+    var danLetaE = danLeta + 11;
+    let danLeta183E;
+    if (danLetaE < 183) {
+        danLeta183E = danLetaE;
+    } else if (danLetaE > 366) {
+        danLeta183E = danLetaE - 366;
+    } else {
+        danLeta183E = 366 - danLetaE;
+    }
+    krajLetKaz.style.width = `${danLeta183E/183}%`;
+    krajLetKaz.style.height = `${danLeta183E/183}%`;
 
     ////Izračun in uporaba tednega zasuka
     console.log("urniZasukIzStop: " + urniZasukIzStop)
@@ -525,9 +543,38 @@ function izvedi() {
         luninihDni = (astMesecDni*zasukLune)/360;//približno število pretečenih dni od mlaja
         deležDnevaNaMeno = luninihDni - Math.floor(luninihDni);//od števila odštejemo celi del (dneve) - dobimo decimalni del
         deležaDnevaRazlika = deležDnevaNaMeno - deležDneva;
-        luninDanStop = 360/astMesec
-        zasukZaMlaj = deležaDnevaRazlika *luninDanStop
+        luninDanStop = 360/astMesec;
+        zasukZaMlaj = deležaDnevaRazlika *luninDanStop;
         dneviLune.style.transform = `rotate(${zasukZaMlaj}deg)`;
+///////////SENCA ZEMLJE
+    var širLuna = document.getElementById('lunino').clientWidth;//širina Lune na prikazu (v px)
+            console.log("širLuna:" + širLuna + "px");
+    var vPxLuna = širLuna/(polmerLune*2); //za pretvorbo kilometrov v slikovne točke za Zemljino senco - torej na podlagi širine prikaza Lune
+    //Senca Zemlje
+    var dolZemSence = odZem*polmerZemlje/(polmerSonca - polmerZemlje); //dolžina Zemljine sence (od Zemljinega središča; v km)
+            console.log("dolžina Zemljine sence:" + dolZemSence);
+    var kotZemSence = Math.asin(polmerZemlje/dolZemSence); //polovični kot Zemljine sence
+    var kotZemSenceStop = kotZemSence*vstopinje;
+            console.log("kot Zemljine sence (v stop.):" + kotZemSenceStop);
+        document.getElementById("krakZemSence1").style.transform = `rotate(${kotZemSenceStop*-1}deg)`;
+        document.getElementById("krakZemSence2").style.transform = `rotate(${kotZemSenceStop}deg)`;
+    var odŽarZemSenceZSLune = dolZemSence - oddalLune - polmerLune;//oddaljenost žarišča Zemljine sence od zadnje strani Lune; pozitivno - za Luno, negativno - pred Luno (v km)
+            console.log("odŽarZemSenceZSLune:" + odŽarZemSenceZSLune);
+    var odKrZemSenZSLune = odŽarZemSenceZSLune*Math.tan(kotZemSence);//oddaljenost kraka Zemljine sence od zadnje strani Lune, pravokotno na srednico sence
+        document.getElementById("krakZemSence1").style.right = `calc(50% + ${odKrZemSenZSLune*vPxLuna}px)`;
+        document.getElementById("krakZemSence2").style.left = `calc(50% + ${odKrZemSenZSLune*vPxLuna}px)`;
+    //Polsenca Zemlje
+    var odŽarZemPolsence = (odZem*polmerZemlje)/(polmerSonca+polmerZemlje);//oddaljenost žarišča Zemljine polsence od (središča) Zemlje
+    var kotZemPolsence = Math.asin(polmerZemlje/odŽarZemPolsence); //polovični kot Zemljine polsence (v rd)
+    var kotZemPolsenceStop = kotZemPolsence*vstopinje;
+            console.log("kot Zemljine polsence (v stop.):" + kotZemPolsenceStop);
+        document.getElementById("krakZemPolsence1").style.transform = `rotate(${kotZemPolsenceStop}deg)`;
+        document.getElementById("krakZemPolsence2").style.transform = `rotate(${kotZemPolsenceStop*-1}deg)`;
+    var odŽarZemPolsenceZSLune = odŽarZemPolsence+oddalLune+polmerLune;//oddaljenost žarišča Zemljine polsence od zadnje strani Lune
+            console.log("odŽarZemPolsenceZSLune:" + odŽarZemPolsenceZSLune);
+    var odKrZemPolsenZSLune = odŽarZemPolsenceZSLune*Math.tan(kotZemPolsence);//oddaljenost kraka Zemljine polsence od zadnje strani Lune, pravokotno na srednico sence
+        document.getElementById("krakZemPolsence1").style.right = `calc(50% + ${odKrZemPolsenZSLune*vPxLuna}px)`;
+        document.getElementById("krakZemPolsence2").style.left = `calc(50% + ${odKrZemPolsenZSLune*vPxLuna}px)`;
 };
 
 ///////////////////PRIDOBIVANJE ČASOV (sončni vzhodi/zahodi, oz. deli dneva)
@@ -926,7 +973,7 @@ function zaslon(elementi){
         element.style.width = premer + "px"
         element.style.height = premer + "px"
     }
-}
+};
 zaslon(napravi);
 window.addEventListener("resize", function() {
     zaslon(napravi);
