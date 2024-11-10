@@ -592,39 +592,51 @@ function pridobiČase() {
         console.log("časi:" + časi);
         var Zora = časi.dawn
             Zora = new Date(Zora);
-        document.getElementById("resultZora").innerHTML = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
+        resultZoraE = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
             timeZone: pasImeIz
         }).format(Zora);
+        document.getElementById("resultZora").innerHTML = resultZoraE;
+        document.getElementById("resultZora2").innerHTML = resultZoraE;
+
             /*document.getElementById("resultZora").innerHTML = `${Zora.getHours().toString().padStart(2, '0')}:${Zora.getMinutes().toString().padStart(2, '0')}:${Zora.getSeconds().toString().padStart(2, '0')}`;*/
         var Mrak = časi.dusk
             Mrak = new Date(Mrak)
-        document.getElementById("resultMrak").innerHTML = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
+        resultMrakE = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
             timeZone: pasImeIz
         }).format(Mrak);
+        document.getElementById("resultMrak").innerHTML = resultMrakE;
+        document.getElementById("resultMrak2").innerHTML = resultMrakE;
+
             /*document.getElementById("resultMrak").innerHTML = `${Mrak.getHours().toString().padStart(2, '0')}:${Mrak.getMinutes().toString().padStart(2, '0')}:${Mrak.getSeconds().toString().padStart(2, '0')}`;*/
         var PomZora = časi.nauticalDawn
             PomZora = new Date(PomZora)
-        document.getElementById("resultPomZora").innerHTML = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
+        resultPomZoraE = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
             timeZone: pasImeIz
         }).format(PomZora);
+        document.getElementById("resultPomZora").innerHTML = resultPomZoraE;
+        document.getElementById("resultPomZora2").innerHTML = resultPomZoraE;
+
             /*document.getElementById("resultPomZora").innerHTML = `${PomZora.getHours().toString().padStart(2, '0')}:${PomZora.getMinutes().toString().padStart(2, '0')}:${PomZora.getSeconds().toString().padStart(2, '0')}`;*/
         var PomMrak = časi.nauticalDusk
             PomMrak = new Date(PomMrak)
-        document.getElementById("resultPomMrak").innerHTML = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
+        resultPomMrakE = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
             timeZone: pasImeIz
         }).format(PomMrak);
+        document.getElementById("resultPomMrak").innerHTML = resultPomMrakE;
+        document.getElementById("resultPomMrak2").innerHTML = resultPomMrakE;
+
             /*document.getElementById("resultPomMrak").innerHTML = `${PomMrak.getHours().toString().padStart(2, '0')}:${PomMrak.getMinutes().toString().padStart(2, '0')}:${PomMrak.getSeconds().toString().padStart(2, '0')}`;*/
         var zlataUra = časi.goldenHour
             zlataUra = new Date(zlataUra)
@@ -700,14 +712,18 @@ function pridobiČase() {
             timeZone: pasImeIz
         }).format(Poldne);
             /*document.getElementById("resultPoldne").innerHTML = `${Poldne.getHours().toString().padStart(2, '0')}:${Poldne.getMinutes().toString().padStart(2, '0')}:${Poldne.getSeconds().toString().padStart(2, '0')}`;*/
-        var SonVzh = časi.sunrise
+        
+    var SonVzh = časi.sunrise
             SonVzh = new Date(SonVzh)
-        document.getElementById("resultSonVzh").innerHTML = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
+        resultSonVzhE = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
             timeZone: pasImeIz
         }).format(SonVzh);
+        document.getElementById("resultSonVzh").innerHTML = resultSonVzhE;
+        document.getElementById("resultSonVzh2").innerHTML = resultSonVzhE;
+
             /*document.getElementById("resultSonVzh").innerHTML = `${SonVzh.getHours().toString().padStart(2, '0')}:${SonVzh.getMinutes().toString().padStart(2, '0')}:${SonVzh.getSeconds().toString().padStart(2, '0')}`;*/
         var SonVzhKon = časi.sunriseEnd
             SonVzhKon = new Date(SonVzhKon)
@@ -718,14 +734,18 @@ function pridobiČase() {
             timeZone: pasImeIz
         }).format(SonVzhKon);
             /*document.getElementById("resultSonVzhKon").innerHTML = `${SonVzhKon.getHours().toString().padStart(2, '0')}:${SonVzhKon.getMinutes().toString().padStart(2, '0')}:${SonVzhKon.getSeconds().toString().padStart(2, '0')}`;*/
-        var SonZah = časi.sunset
+        
+    var SonZah = časi.sunset
             SonZah = new Date(SonZah)
-        document.getElementById("resultSonZah").innerHTML = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
+        resultSonZahE = new Intl.DateTimeFormat('default'/*'sl-SI'*/, {
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
             timeZone: pasImeIz
         }).format(SonZah);
+        document.getElementById("resultSonZah").innerHTML = resultSonZahE;
+        document.getElementById("resultSonZah2").innerHTML = resultSonZahE;
+
             /*document.getElementById("resultSonZah").innerHTML = `${SonZah.getHours().toString().padStart(2, '0')}:${SonZah.getMinutes().toString().padStart(2, '0')}:${SonZah.getSeconds().toString().padStart(2, '0')}`;*/
         var SonZahZač = časi.sunsetStart
             SonZahZač = new Date(SonZahZač)
@@ -760,7 +780,6 @@ function pridobiČase() {
 
             poldneLune = new Date((ZahLune + VzhLune)/2)
                 console.log("poldneLune:" + poldneLune);
-}
 
 /////////////////////ZEMLJEVID////////////////////////////////////////////////////////////////////////
 		setInterval(nariši, 60000);//na minuto
