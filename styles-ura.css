@@ -1,27 +1,10 @@
 :root {
     --barvaPoudarka: rgba(153, 178, 255, 1);
-    --barvaPoudarkaNaprej: rgba(173, 216, 230, 1);
-    --barvaPoudarkaProsojno: rgba(153, 178, 255, 0.7);
-    --barvaOzadja: rgba(18, 18, 18, 1);
-    --barvaOzadjaProsojno: rgba(0, 0, 0, 0.8);
+    --barvaOzadja: #121212;
     --barvaOzadjaNaprej: rgba(36, 36, 36, 1);
-    --barvaOzadjaPoudarek: rgba(128, 159, 255, 0.4);
-    --barvaOspredja: #eee;
+    --barvaOzadjaProsojno: rgba(0, 0, 0, 0.8);
+    --barvaOspredja: white;
     --barvaNazaj: rgba(255, 255, 255, 0.5);
-    --pisava:"Times New Roman", Times, Georgia, Garamond, serif;
-    --vsebina: 120ch;
-    --prehodČas: 0.5s;
-
-    --sončna: yellow;
-    --načrtnomodra: #69A9E3;
-    --turkizna: rgba(0, 255, 255);
-
-    --aastura: 50vw;
-    --asonce: 4vmin;
-    --adnevnaUra: 86vmin;
-    --aluna: 6vmin;
-    --aurica: calc(var(--adnevnaUra) - (2 *var(--aluna) + 2*var(--asonce)));
-    --aobrocek: 14.5%;
 
     --bar-width: 2rem;
     --bar-height: 0.18rem;
@@ -30,77 +13,55 @@
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
 }
-.svetliNačin {
-    --barvaPoudarka: rgba(100, 100, 255, 1);
-    --barvaPoudarkaNaprej: #4169E1;
-    --barvaOzadja: white;
-    --barvaOzadjaProsojno: rgba(220, 220, 220, 0.9);
-    --barvaOzadjaNaprej: rgba(240, 240, 240, 0.5);
-    --barvaOspredja: black;
-    --barvaNazaj: rgba(0, 0, 0, 0.4);
-}
-html, body { height: 100vh;}
 body {
-    background: var(--barvaOzadja);
-    overflow: hidden; /*skrijemo, kar presega mejo; zato tudi ne more biti drsnika*/
-    color: var(--barvaOspredja);
     margin: 0;
-    /*justify-content: center;
-    align-items: center;*/
-    font-family: "Times New Roman", serif;
-    top: auto;
-    bootom:0;
-    right: 0;
+    overflow-x: hidden;
+    background-color: var(--barvaOzadja);
 }
-p {
-    padding: 0.5rem;
-    margin: 0;
+.izpiski {
+    font-family: 'Courier New', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Monaco, monospace;  
 }
-p.footer {
-    position: fixed;
-    width: 90%;
-    background-color: var(--barvaPoudarkaProsojno);
-    padding: 1rem;
-    padding-left: 10%;
-    padding-right: 10%;
-    bottom: 0;
-    color: var(--barvaOzadja);
-    font-size: small;
-}
-footer {
-    position: fixed;
-    width: 90%;
-    background-color: var(--barvaPoudarkaProsojno);
-    padding: 1rem;
-    padding-left: 10%;
-    padding-right: 10%;
-    bottom: 0;
-    color: var(--barvaOzadja);
-    font-size: small;
-}
-button {
-    border: none;
-    background-color: var(--barvaPoudarka);
-    color: var(--barvaOzadja);
-    font-style: italic;
-    padding: 3px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button.gumbPrej {
-    background-color: transparent;
-    color: var(--barvaOspredja);
-    font-style: normal;
-    border-radius: 5px;
-    padding: 0;
-    overflow: hidden;
-}
-i.gumbPrej {
+svg {
     display: block;
-    background-color: var(--barvaPoudarka);
-    color: var(--barvaOzadja);
-    font-style: italic;
-    padding: 3px;
+    /*margin: auto;*/
+    /*background-color: grey;*/
+}
+.circle {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.4);
+    stroke-width: 2;
+}
+.svg-clock {
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0;
+    border: 1px solid black;
+}
+#zemljaPrikaz {
+    left: 0;
+    top: 0;
+}
+#neboPrikaz {
+    right: 0;
+    bottom: 0;
+}
+#letnaStevilcnica {
+    opacity: 1.0;
+}
+#letniCasi {
+    opacity: 0.5;
+}
+#senca {
+    opacity: 0.7;
+}
+#Sonce {
+    opacity: 1.0;
+    z-index: -1;
+}
+#nastavitve {
+    padding-left: 100px;
+    padding-top: 100px;
 }
 .pripis {
     color: var(--barvaNazaj);
@@ -112,9 +73,32 @@ input {
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
+input.dolgaŠtevilka {
+    width: 16ch;
+}
 .inputOznači {
     display: flex;
     align-items: center;
+}
+option {
+    background-color: var(--barvaOzadja);
+    border: 1px solid var(--barvaPoudarka);
+    color: var(--barvaOspredja);
+    color-scheme: dark;
+    margin: 0;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+button {
+    border: none;
+    background-color: var(--barvaPoudarka);
+    color: var(--barvaOzadja);
+    font-style: italic;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .vnos {
     background-color: transparent;
@@ -128,78 +112,12 @@ input {
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
-option {
-    background-color: var(--barvaOzadja);
-    border: 1px solid var(--barvaPoudarka);
-    color: var(--barvaOspredja);
-    color-scheme: dark;
-    margin: 0;
-    cursor: pointer;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-}
-.svetliNačin input.vnos {
-    color-scheme: light;
-}
-    input.vnos:focus {
-        outline: none;
-    }
-    .input-icons {
-        color: var(--barvaOspredja);
-    }
-input.dolgaŠtevilka {
-    width: 16ch;
-}
-#nadVnosPredznak {
-    display: inline-flex;
-    align-content: center;
-    justify-content: flex-end;
-    align-items: center;
-    width: 2ch;
-}
-#nadVnosPredznak input {
-    display: none;
-}
 
-#nadVnosPredznak span:after {
-    /*border: 1px solid blue;*/
-}
-.odmika {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-img.obrnjena {
-    filter: invert(1);
-}
-.svetliNačin .obrnjena {
-    filter: invert(0%);
-}
-.stikaloNačina {
-    position: fixed;
-    z-index: 100;
-    top: 0.5rem;
-    right: 1em;
-    color: var(--barvaOspredja);
-    border: 0;
-    padding: 4px;
-    background: transparent;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    font-size: 1em;
-}
 a {
     color: var(--barvaPoudarka);
     text-decoration: none;
     cursor: pointer
 }
-samp {/*opredeli kot sporočilo računalnika*/
-    font-family: monospace;
-}
-
 table {
     position: static;
     border-collapse: collapse;
@@ -210,449 +128,29 @@ table {
 tr:hover {
     background-color: var(--barvaOzadjaNaprej);
 }
-.zgorajrob td {
+.zgorajRob td {
     border-top: 1px solid var(--barvaOspredja);
 }
 
-.teden {
-    position: fixed;
-    width: 50vw;
-    max-width: 300px;
-    aspect-ratio: 1/1;
-}
-    .tedenŠtevilčnica {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
-    .kazalecTedna {
-        position: absolute;
-        background-color: blue;
-        width: 1%;
-        height: 50%;
-        top: 0;
-        bottom: 0;
-        left: calc(50% - 2px);
-        transform-origin: bottom;
-        z-index: 2;
-    }
-.položajSonca {
-    position: absolute;
-    width: 50%;
-    float: right;
-    right: 0;
-    aspect-ratio: 1/1;
-}
-.krajUra {
-    height: 50vw;
-    aspect-ratio: 1/1;
-    position: sticky;
-    float: right;
-    right: 0;
-    top: 0;
-    border-radius: 50%;
-    background-color: var(--barvaOzadja);
-}
-    #krajUrniKaz {
-        height: 50%;
-        width: 2px;
-        position: absolute;
-        background-color: red;
-        bottom: 0;
-        left: 50%;
-        transform: translate (-50%, 0);
-            transform-origin: top;
-    }
-    #krajLetKaz {
-        width: calc(0.14266347*80%);
-        height: calc(0.14266347*80%);
-        position: absolute;
-        border: 1px solid yellow;
-        border-radius: 50%;
-        top: 50%;
-        left: 50%;
-        transform: translate (-50%, -50%);
-    }
-
 /*DRSNIK*/
-    html {
-      scrollbar-width: normal;
-      scrollbar-color: #777 #5555;
-    }
-
-    ::-webkit-scrollbar {
-      width: 1vw;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: #7775;
-    }
-    ::-webkit-scrollbar-thumb:hover /*barva, ko si z miško gor*/ {
-      background-color: #777;
-    }
-
-    ::-webkit-scrollbar-track {
-      background-color: #5555;
-    }
-
-/*NAPRAVI***************************************************************/
-.uraSonca {
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 50%;
+html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #5555;
 }
-#zemljevidStarš {
-    background: white;
-    border-radius: 50%;
+
+::-webkit-scrollbar {
+    width: 1vw;
 }
-    .letnaŠtSonca {
-        z-index: 3;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        transform: rotate(calc(360/365.2425 *11 *-1deg))
-    }
-    .letniČasiSonca {
-        --širina: 90%;
-        z-index: -1;
-        position: absolute;
-        height: var(--širina);
-        width: var(--širina);
-        border-radius: 50%;
-        left: calc((100% - var(--širina))/2);
-        right: calc((100% - var(--širina))/2);
-        top: calc((100% - var(--širina))/2);
-        bottom: calc((100% - var(--širina))/2);
-    }
-    .dnevnaPot {
-        --širina: 75%;
-        z-index: 5;
-        position: absolute;
-        height: var(--širina);
-            top: calc((100% - var(--širina))/2);
-            bottom: calc((100% - var(--širina))/2);
-        width: var(--širina);
-            left: calc((100% - var(--širina))/2);
-            right: calc((100% - var(--širina))/2);
-        border-radius: 50%;
-    }
-    .letnoSonca {
-        --širina: 75%;
-        z-index: 4;
-        position: absolute;
-        height: var(--širina);
-            top: calc((100% - var(--širina))/2);
-            bottom: calc((100% - var(--širina))/2);
-        width: var(--širina);
-            left: calc((100% - var(--širina))/2);
-            right: calc((100% - var(--širina))/2);
-        border-radius: 50%;
-        transform: rotate(0deg);
-            transform-origin: center;
-            transition: transform 1s;
-    }
-        .dneviLune {
-            --širina: 104%;
-            position: absolute;
-            z-index: 10;
-            width: var(--širina);
-            height: var(--širina);
-            left: calc((100% - var(--širina))/2);
-            top: calc((100% - var(--širina))/2);
-            transform: rotate(0deg);
-                transform-origin: center;
-                transition: transform 1s;
-        }
-        .sonce {
-            --širina: 115%;
-            position: absolute;
-            z-index: 3;
-            width: var(--širina);
-            height: var(--širina);
-            left: calc((100% - var(--širina))/2);
-            top: calc((100% - var(--širina))/2);
-        }
-        .senca {
-            --širina: 100%;
-            position: absolute;
-            z-index: 4;
-            width: var(--širina);
-            height: var(--širina);
-            left: calc((100% - var(--širina))/2);
-            top: calc((100% - var(--širina))/2);
-            opacity: 0.5;
-        }
-        /*.urnaŠtSo {
-            --širina: 100%;
-            position: absolute;
-            z-index: 6;
-            width: var(--širina);
-            height: var(--širina);
-            left: calc((100% - var(--širina))/2);
-            top: calc((100% - var(--širina))/2);
-        }*/
-        .urnaŠtSo {
-            --širina: 100%;
-            position: absolute;
-            z-index: 6;
-            width: var(--širina);
-            height: var(--širina);
-            left: calc((100% - var(--širina))/2);
-            top: 0;
-        }
-        .prostorUrniK {
-            --širina: 100%;
-            z-index: 40;
-            position: absolute;
-            height: var(--širina);
-                top: calc((100% - var(--širina))/2);
-                bottom: calc((100% - var(--širina))/2);
-            width: var(--širina);
-                left: calc((100% - var(--širina))/2);
-                right: calc((100% - var(--širina))/2);
-            border-radius: 50%;
-            overflow: hidden;
-            transform: rotate(0deg);
-                transition: transform 1s;
-        }
-            .nadUrniKazalec {
-                height: 100%;
-                width: 100%;
-            }
-                .urniKazalec {
-                    --širina: 0.5%;
-                    position: absolute;
-                    z-index: 10;
-                    height: 100%;
-                        top: 35.6%;
-                    width: var(--širina);
-                        left: calc((100% - var(--širina))/2);
-                    transform: rotate(0deg);
-                        transform-origin: top;
-                        transition: transform 1s;
-                    background-color: red;
-                }
-            /*.ukrivljen {
-                --širina: 0.5%;
-                position: absolute;
-                z-index: 10;
-                height: 50%;
-                top: 25%;
-                left: 25%;
-                width: 50%;
-                border-radius: 50%;
-                border-right: 4px solid white;
-                transform: rotateZ(-60deg) rotateX(23.5deg) rotateY(60deg);
-                    transform-origin: center;
-                    transition: transform 1s;
-                background-color: green;
-            }*/
-            .ukrivljen {
-                --širina: 0.5%;
-                position: absolute;
-                z-index: 10;
-                width: 100%;
-                height: 100%;
-                    top: 0;
-                    bottom: 0;
-                border-radius: 50%;
-                border: 1px solid white;
-                    border-left-color: transparent;
-                    border-top-color: transparent;
-                background-color: green;
-            }
-        .urno {
-            transform: rotate(0deg);
-                transform-origin: center;
-                transition: transform 1s;
-            background-color: var(--barvaOzadja);
-            border-radius: 50%;
-        }
-            .zemljevid {
-                opacity: 0.6;
-            }
-        .lunino {/*lunin kazalec, cela širina*/
-            --višina: 75;
-            z-index: 4;
-            position: absolute;
-            height: 116%;
-                top: -8%;
-                bottom: -8%;
-            width: 8%;
-                left: 46%;
-                right: 46%;
-            transform: rotate(0deg);
-                transform-origin: center;
-            transition: transform 0.5s;
-        }
-            .luna {/*kvadraten div z deli Luninega prikaza*/
-                z-index: 3;
-                position: absolute;
-                height: calc((8*100)/116 *1%);
-                    top: 0;
-                width: 100%;
-                border-radius: 50%;
-                border: 1px solid white;
-                }
-                .del {/*del prikaza, ki spreminja širino glede na meno*/
-                    position: absolute;
-                    z-index: 5;
-                    height: 100%;
-                    top: 0;
-                    border-radius: 50%;
-                    background-color: black;
-                    /*transition: width 1s, transform 1s;*/
-                }
-                .polluna {/*ozadje za prikaz Lune, osnovna razdelitev na osvetljeno in neosvetljeno*/
-                    position: absolute;
-                    z-index: 4;
-                    height: 100%;
-                    top: 0;
-                    border-radius: 50%;
-                    background-color: black;
-                    transition: transform 0.5s;
-                }
-                .pollunaPred {/*dodaten prikaz "od zgoraj"*/
-                    position: absolute;
-                    z-index: 10;
-                    height: 100%;
-                    top: 0;
-                    border-radius: 50%;
-                    background-color: black;
-                    transition: transform 0.5s;
-                }
-        .lunVozel {/*presečišče osončne in Lunine ravnine kroženja*/
-            --višina: 75;
-            z-index: 3;
-            position: absolute;
-            height: 116%;
-                top: -8%;
-                bottom: -8%;
-            width: 8%;
-                left: 46%;
-                right: 46%;
-            transform: rotate(75deg);
-                transform-origin: center;
-            transition: transform 0.5s;
-            border-left: 1px solid blue;
-            border-right: 1px solid blue;
-        }
-        .ZemSenca {/*Senca, ki jo Zemlja meče za seboj*/
-            --višina: 75;
-            z-index: -1;
-            position: absolute;
-            /*height: 116%;
-                top: -8%;
-                bottom: -8%;*/
-            height: 58%;
-                bottom: -8%;
-            width: 8%;
-                left: 46%;
-                right: 46%;
-            transform: rotate(0deg);
-                transform-origin: top;
-            transition: transform 0.5s;
-            /*border-left: 1px solid blue;
-            border-right: 1px solid blue;*/
-        }
-            #krakZemSence1 {
-                width: 1px;
-                height: 15%;
-                position: absolute;
-                right: 50%;
-                bottom: 0;
-                background-color: red;
-                transform-origin: bottom;
-                transform: rotate(0deg);
-            }
-            #krakZemSence2 {
-                width: 1px;
-                height: 15%;
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-                background-color: red;
-                transform-origin: bottom;
-                transform: rotate(0deg);
-            }
-            #krakZemPolsence1 {
-                width: 1px;
-                height: 15%;
-                position: absolute;
-                right: 50%;
-                bottom: 0;
-                background-color: orange;
-                transform-origin: bottom;
-                transform: rotate(0deg) /*translateY(-100%)*/;
-            }
-            #krakZemPolsence2 {
-                width: 1px;
-                height: 15%;
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-                background-color: orange;
-                transform-origin: bottom;
-                transform: rotate(0deg) /*translateY(-100%)*/;
-            }
-#nebo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
-    /*background-color: blue;*/
+
+::-webkit-scrollbar-thumb {
+    background-color: #7775;
 }
-    #neboLetno {
-        position: absolute;
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.5s;
-    }
-        #neboUrna {
-            position: absolute;
-            z-index: 12;
-            width: 100%;
-            height: 100%;
-        }
-        #neboObzorje {
-            position: absolute;
-            z-index: 11;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            transition: transform 0.5s;
-        }
-    #neboZvezde {
-        position: absolute;
-        width: 90%;
-        height: 90%;
-        border: none;
-        z-index: -1;
-        left: 5%;
-        top: 5%
-    }
-@media (max-aspect-ratio: 1/2) /*visoko/ozko okno*/ {
-    .uraSonca {
-        left: 0;
-        top: 0;
-    }
-    .nebo {
-        right: 0;
-        bottom: calc(100vmax - 200vmin);
-    }
+::-webkit-scrollbar-thumb:hover /*barva, ko si z miško gor*/ {
+    background-color: #777;
 }
-@media (min-aspect-ratio: 2/1) /*nizko/dolgo okno*/ {
-    .uraSonca {
-        left: 0;
-        top: 0;
-    }
-    #nebo {
-        left: 100vmin;
-        bottom: 0;
-    }
+
+::-webkit-scrollbar-track {
+    background-color: #5555;
 }
 
 /*KAZALO SPLETNE STRANI*/
@@ -753,9 +251,25 @@ tr:hover {
   padding: 0.5rem 1rem;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin));
   padding-bottom: 2rem;
-  width: 50vw;
+  width: auto;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
   translate: 0;
+}
+
+@media (max-aspect-ratio: 1/2) /*visoko/ozko okno*/ {
+    #neboPrikaz {
+        right: auto;
+        left: auto;
+        top: 100vmin;
+        bottom: auto;
+    }
+}
+@media (min-aspect-ratio: 2/1) /*nizko/dolgo okno*/ {
+    #neboPrikaz {
+        left: 100vmin;
+        right: auto;
+        bottom: auto;
+    }
 }
