@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Cache-control" content="public">
-        <title>Ura</title>
+        <title>Zvezdoslovna ura</title>
 
         <!--<script src="https://d3js.org/d3.v4.js"></script>-->
         <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -51,17 +51,24 @@
         <aside class="sidebar">
             <nav>
                 <p><a href="./">Domov</a>
-                    <br><a href="./opombe_k_zvezdoslovni_uri">Opombe k uri</a>
+                    <br><a href="./knjiznica">Knjižnica</a>
+                    <br><a href="./nova_stara_slovenscina">Visoka slovenščina</a>
+                    <br><a href="./glasopisnica">Glasopisnica</a>
+                    <br><a href="./mojrodovnik">Moj rodovnik</a>
+                    <br><br><a href="./opombe_k_zvezdoslovni_uri">Opombe k uri</a>
                 </p>
-                <span class="izpiski">
-                    <p><br><span id="tčP"><samp>ni podatka</samp></span><span class="pripis"> - trenutni čas</span>
-                        <br><span id="tčBP"><samp>ni podatka</samp></span><span class="pripis"> - brez premika na poletni čas</span> 
+            </nav>
+            <hr>
+            <div class="besediloUre">
+                <div class="izpiski">
+                    <p><div id="tč"><span id="tčP"><samp>ni podatka</samp></span><span class="pripis"> - <span id="pripisTč">trenutni čas</span></span>
+                            <br><span id="tčBP" class="zamak"><samp>ni podatka</samp><span class="pripis"> - brez premika na poletni čas</span></span>
+                        </div>
                         <br><span id="ičDP">
-                            <span id="ičP"><samp>ni podatka</samp></span><span class="pripis"> - izbrani čas</span>
-                            <br><span id="ičBP"><samp>ni podatka</samp></span><span class="pripis"> - brez premika na poletni čas</span>
-                        </span>
+                                <span id="ičP"><samp>ni podatka</samp></span><span class="pripis"> - izbrani čas</span>
+                                <br><span id="ičBP" class="zamak"><samp>ni podatka</samp><span class="pripis"> - brez premika na poletni čas</span></span>
+                            </span>
                     </p>
-                    <hr>
                     <table>
                         <tr id="nadir1">
                             <td>najtemnejši del noči: </td>
@@ -112,7 +119,7 @@
                             <td id="sVisP"><samp>ni podatka</samp></td>
                         </tr>
                         <tr>
-                            <td>kotni odmik Sonca od juga: </td>
+                            <td>kotni odmik Sonca od J proti Z: </td>
                             <td id="sAziP"><samp>ni podatka</samp></td>
                         </tr>
                         <tr class="zgorajRob">
@@ -120,7 +127,7 @@
                             <td id="lVisP"><samp>ni podatka</samp></td>
                         </tr>
                         <tr>
-                            <td>kotni odmik Lune od juga: </td>
+                            <td>kotni odmik Lune od J proti Z: </td>
                             <td id="lAziP"><samp>ni podatka</samp></td>
                         </tr>
                         <tr>
@@ -152,8 +159,9 @@
                         <td id="lPoldneP"><samp>ni podatka</samp></td>
                         </tr>
                     </table>
-                </nav>
+                </div>
                 <div id="nastavitve">
+                    <p>NASTAVITVE</p>
                     <p><label for="vnosIč">čas: </label>
                             <button onclick="uporabiTč()">trenutni čas</button>
                             /<input class="vnos" type="datetime-local" id="vnosIč" name="vnosIč"><span class="pripis"> (v tr. čas. pasu)</span>
@@ -177,11 +185,11 @@
                             <input class="vnos dolgaŠtevilka" type="number" id="vnosZd" name="dolžina" max="180" min="-180" placeholder="Vnesite zemljepisno dolžino">
                         <br><button id="btnUporabiPoložajT" onclick="uporabiPoložajT()">trenutni položaj</button>
                         <br><span class="pripis">privzeti položaj: središče Slovenije (GEOSS)</span>
-                        <!--<br><div class="inputOznači"><input type="checkbox" id="prikazLune" class="vnos">
-                                <label for="prikazLune">pogled na Luno z Zemlje</label>
-                            </div>-->
+                        <br><div class="inputOznači"><input type="checkbox" id="prikazLune" class="vnos">
+                            <label for="prikazLune" id="labelPrikazLune">prikaži Luno kot je vidna z Zemlje </label><span id="prikazLunePravi" class="pripis"> - trenutno kot vidna z njenega S tečaja.</span>
+                            </div>
                     </p>
-                </span>
+                </div>
             </div>
         </aside>
     </body>
