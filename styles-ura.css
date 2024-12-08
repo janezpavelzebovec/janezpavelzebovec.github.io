@@ -13,13 +13,47 @@
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Odstranite drsnike */
+}
 body {
     margin: 0;
     overflow-x: hidden;
     background-color: var(--barvaOzadja);
 }
+hr {
+    width: 90%;
+}
+.besediloUre {
+    width: 100%;
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-evenly;
+        align-items: flex-start;
+}
 .izpiski {
-    font-family: 'Courier New', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Monaco, monospace;  
+    font-family: 'Courier New', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Monaco, monospace;
+    /*display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;*/
+}
+#nastavitve {
+    padding: 1rem;
+}
+.zamak {
+    margin-left: 1ch;
+}
+#tč {
+    background-color: var(--barvaOzadjaNaprej);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 svg {
     display: block;
@@ -58,10 +92,6 @@ svg {
 #Sonce {
     opacity: 1.0;
     z-index: -1;
-}
-#nastavitve {
-    padding-left: 100px;
-    padding-top: 100px;
 }
 .pripis {
     color: var(--barvaNazaj);
@@ -112,7 +142,9 @@ button {
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
-
+#labelPrikazLune {
+    padding-right: 1ch;
+}
 a {
     color: var(--barvaPoudarka);
     text-decoration: none;
@@ -127,6 +159,9 @@ table {
 }
 tr:hover {
     background-color: var(--barvaOzadjaNaprej);
+}
+td {
+    padding: 0.2rem;
 }
 .zgorajRob td {
     border-top: 1px solid var(--barvaOspredja);
@@ -231,12 +266,15 @@ html {
   background-color: var(--barvaOzadjaProsojno);
   color: var(--barvaOspredja);
   /*max-width: 30rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /*justify-content: space-evenly;*/
+    align-items: flex-start;
   overflow: auto;
   z-index: 99;
     backdrop-filter: blur(2px);
@@ -250,7 +288,7 @@ html {
 .sidebar nav {
   padding: 0.5rem 1rem;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin));
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   width: auto;
 }
 
