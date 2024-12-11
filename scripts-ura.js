@@ -169,6 +169,7 @@ let ičpIme = tčpIme; //"Europe/Ljubljana";
 vnosČp.value = ičpIme;
 let rabaTčp = true;
 let prikazPollune = true;
+let prikazZadPoloble = true;
 let iUre = tUre;
 let iMin = tMin;
 let iSek = tSek;
@@ -265,6 +266,7 @@ function uporabiPoložajT() { //Uporabi trenutni položaj
             izd = tzd;
             rabaTpoložaj = true;
             daljšiInterval();
+            document.getElementById("prPoložaj").style.display = "none";
         }, function(error) {
             console.error("Napaka pri pridobivanju trenutnega zemljepisnega položaja:", error);
         });
@@ -277,6 +279,7 @@ function uporabiPoložajI() {
     izš = vnosZš.value;
     izd = vnosZd.value;
     daljšiInterval();
+    document.getElementById("prPoložaj").style.display = "none";
 };
 vnosZš.addEventListener('input', uporabiPoložajI); //ob spremembi zemljepisne širine
 vnosZd.addEventListener('input', uporabiPoložajI); //ob spremembi zemljepisne dolžine
@@ -306,6 +309,16 @@ function pogledLune() {
     }
     prikaži(); //posodobi prikaz
 } prikazLune.addEventListener('input', pogledLune);
+
+////IZBIRA PRIKAZA ZADNJE POLOBLE
+function pogledZadnjePoloble() {
+    if (prikazZadaj.checked == true){
+        prikazZadPoloble = true;
+    } else {
+        prikazZadPoloble = false;
+    }
+    prikaži(); //posodobi prikaz
+} prikazZadaj.addEventListener('input', pogledZadnjePoloble);
 //VIZUALIZACIJA//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function ustvariSvg(svgId) {
     var w = window.innerWidth;
@@ -335,11 +348,218 @@ function ustvariSvg(svgId) {
 
 // Ustvari globus z D3-Globe
 function ustvariGlobus(svg, premer) {
+    // Nastavite projekcijo ortografske projekcije
+    const projection = d3.geoOrthographic()
+        .center([0, 0]) // Središče projekcije
+        .scale(globusVelikost * premer / 2) // Scale za velikost globusa
+        .clipAngle(90) // Nastavi privzeti kot rezanja
+        .translate([premer / 2, premer / 2]);
+
+    const path = d3.geoPath().projection(projection);
+
+    // Nastavi rotacijo projekcije
+    projection.rotate([poldne * (-1) + zasuk, -(90 - nagOsi), 0]);
+
+    // Naloži podatke o svetu (GeoJSON)
+    d3.json("https://raw.githubusercontent.com/epistler999/GeoLocation/master/world.json").then(function (data) {
+        if (!data || !data.features) {
+            console.error("GeoJSON podatki niso ustrezno naloženi!");
+            return;
+        }
+        // Dodajanje ozadja za globus
+        svg.append("circle")
+            .attr("cx", premer / 2)
+            .attr("cy", premer / 2)
+            .attr("r", globusVelikost*premer / 2)
+            .style("fill", "#121212")
+            //.style("opacity", 1)
+            .style("stroke", "black") // Barva obrobe
+            .style("stroke-width", 1.0); // Debelina obrobe
+
+        if (prikazZadPoloble) {
+            // Zadnja stran globusa (mreža, morje, celinske oblike)
+            projection.clipAngle(0); // Omogoči celotno risanje (brez klipanja)
+
+            svg.append("path")
+                .datum({ type: "Sphere" })
+                .attr("class", "background")
+                .attr("d", path)
+                .style("fill", "rgba(0, 0, 255, 0.2)"); //morje
+
+            svg.append("path")
+                .datum(d3.geoGraticule10())
+                .attr("class", "back-grid")
+                .attr("d", path)
+                .style("stroke", "rgba(0, 0, 0, 0.1)")
+                .style("fill", "none");
+
+            svg.selectAll(".celine-zadaj")
+                .data(data.features)
+                .enter().append("path")
+                .attr("class", "celine-zadaj")
+                .attr("d", path)
+                .style("fill", "rgba(153, 178, 255, 0.3)")
+                .style("stroke", "none");
+            ;
+            svg.selectAll(".poldnevniki-zadaj")
+                .data(d3.range(zamikPoldnevnikov,  360 + zamikPoldnevnikov, 15).map(lon => {
+                    return {
+                        type: "LineString",
+                        coordinates: d3.range(-90, 90, 1).map(lat => [lon, lat])
+                    };
+                }))
+                .enter().append("path")
+                .attr("class", "poldnevniki-zadaj")
+                .attr("d", path)
+                .style("stroke", "grey")
+                .style("stroke-width", 1)
+                .style("opacity", 0.3)
+                .style("fill", "none");
+
+            svg.selectAll(".vzporedniki-zadaj")
+                .data([0, 23.44, -23.44, 66.56, -66.56].map(lat => {
+                    return {
+                        type: "LineString",
+                        coordinates: d3.range(-180, 180, 1).map(lon => [lon, lat])
+                    };
+                }))
+                .enter().append("path")
+                .attr("class", "vzporedniki-zadaj")
+                .attr("d", path)
+                .style("stroke", "grey")
+                .style("stroke-width", 1)
+                .style("opacity", 0.3)
+                .style("fill", "none");
+
+            // Risanje poldnevnikov (meridianov) - polnoč in poldne
+            const linesDataBack = [
+                { type: "LineString", coordinates: [[izd, -90], [izd, 0], [izd, 90]], color: "red" }, // trenutna zem. dolžina
+                { type: "LineString", coordinates: [[-180, izš], [0, izš], [180, izš]], color: "red" },  // trenutna zem. širina
+                { type: "LineString", coordinates: [[polnoc, -90], [polnoc, 0], [polnoc, 90]], color: "blue" }, // Polnoč
+                { type: "LineString", coordinates: [[poldne, -90], [poldne, 0], [poldne, 90]], color: "orange" },  // Poldne
+            ];
+            // Dodajanje poldnevnikov na globus
+            var dodČrteZadaj = svg.selectAll(".črteZadaj")
+                .data(linesDataBack);
+            dodČrteZadaj.enter().append("path")
+                .attr("class", "črteZadaj")
+                .merge(dodČrteZadaj)
+                .transition().duration(500)
+                .attr("d", path)
+                .attr("fill", "none")
+                .attr("stroke", d => d.color)
+                .style("opacity", 0.3)
+                .attr("stroke-width", 2);
+            dodČrteZadaj.exit().remove();
+        };
+
+
+        // Sprednja stran globusa
+        projection.clipAngle(90); // Prikaz samo sprednje strani
+
+        svg.append("circle")
+            .attr("cx", premer / 2)
+            .attr("cy", premer / 2)
+            .attr("r", globusVelikost * premer / 2)
+            .style("fill", "#121212")
+            .style("opacity", 0.3)
+            .style("stroke", "black")
+            .style("stroke-width", 1.0);
+
+        svg.selectAll(".land")
+            .data(data.features)
+            .enter().append("path")
+            .attr("class", "land")
+            .attr("d", path)
+            .style("fill", "rgba(255, 255, 255, 1")
+            .style("stroke", "#121212")
+            .style("stroke-width", 0.5);
+
+        svg.selectAll(".meridian")
+            .data(d3.range(zamikPoldnevnikov,  360 + zamikPoldnevnikov, 15).map(lon => {
+                return {
+                    type: "LineString",
+                    coordinates: d3.range(-90, 90, 1).map(lat => [lon, lat])
+                };
+            }))
+            .enter().append("path")
+            .attr("class", "meridian")
+            .attr("d", path)
+            .style("stroke", "grey")
+            .style("stroke-width", 1)
+            .style("fill", "none");
+
+        svg.selectAll(".latitude")
+            .data([0, 23.44, -23.44, 66.56, -66.56].map(lat => {
+                return {
+                    type: "LineString",
+                    coordinates: d3.range(-180, 180, 1).map(lon => [lon, lat])
+                };
+            }))
+            .enter().append("path")
+            .attr("class", "latitude")
+            .attr("d", path)
+            .style("stroke", "grey")
+            .style("stroke-width", 1)
+            .style("fill", "none");
+
+        // Risanje poldnevnikov (meridianov) - polnoč in poldne
+        const linesData = [
+            { type: "LineString", coordinates: [[izd, -90], [izd, 0], [izd, 90]], color: "red" }, // trenutna zem. dolžina
+            { type: "LineString", coordinates: [[polnoc, -90], [polnoc, 0], [polnoc, 90]], color: "blue" }, // Polnoč
+            { type: "LineString", coordinates: [[poldne, -90], [poldne, 0], [poldne, 90]], color: "orange" }  // Poldne
+        ];
+        // Dodajanje poldnevnikov na globus
+        var lines = svg.selectAll(".line")
+            .data(linesData);
+        lines.enter().append("path")
+            .attr("class", "line")
+            .merge(lines)
+            .transition().duration(500)
+            .attr("d", path)
+            .attr("fill", "none")
+            .attr("stroke", d => d.color)
+            .attr("stroke-width", 2);
+        lines.exit().remove();
+
+        // Risanje vzporednikov (latitud) - ekvator, povratnik in tečajnik
+        var additionalLatitudes = [izš];  // Dodatni vzporedniki
+        var additionalLatitudesData = additionalLatitudes.map(function (latitude) {
+            var coordinates = [];
+            for (var lon = -180; lon <= 180; lon++) {
+                coordinates.push([lon, latitude]);
+            }
+            return {
+                type: "LineString",
+                coordinates: coordinates
+            };
+        });
+        // Določite barve za dodatne vzporednike
+        svg.selectAll(".additional-latitude")
+            .data(additionalLatitudesData)
+            .enter().append("path")
+            .attr("class", "additional-latitude")
+            .attr("d", path)
+            .style("fill", "none")
+            .style("stroke", function(d, i) {
+                // Različne barve za vsak vzporednik
+                const colors = ["red"];
+                return colors[i];
+            })
+            .style("stroke-width", 2);  // Širina linije za dodatne vzporednike
+
+    }).catch(function (error) {
+        console.error("Napaka pri nalaganju GeoJSON datoteke:", error);
+    });
+}
+
+/*// Ustvari globus z D3-Globe
+function ustvariGlobus(svg, premer) {
     // Nastavite projekcijo Airy
     const projection = d3.geoOrthographic()
         .center([0, 0]) // Središče projekcije je v Greenwichu (0° dolžine, 0° širine)
         .scale(globusVelikost*premer / 2) // Scale za primeren prikaz globusa
-        .clipAngle(90)
+        .clipAngle(90) //90
         .translate([premer / 2, premer / 2]);
     const path = d3.geoPath().projection(projection); //uporablja projekcijo za pretvorbo geometrijskih podatkov (GeoJSON) v dejanske risarske poti za SVG
 
@@ -353,13 +573,13 @@ function ustvariGlobus(svg, premer) {
             console.error("GeoJSON podatki niso ustrezno naloženi!");
             return;
         }
-
         // Dodajanje ozadja za globus
         svg.append("circle")
             .attr("cx", premer / 2)
             .attr("cy", premer / 2)
             .attr("r", globusVelikost*premer / 2)
             .style("fill", "#121212")
+            //.style("opacity", 1)
             .style("stroke", "black") // Barva obrobe
             .style("stroke-width", 1.0); // Debelina obrobe
 
@@ -462,7 +682,7 @@ function ustvariGlobus(svg, premer) {
     }).catch(function (error) {
         console.error("Napaka pri nalaganju GeoJSON datoteke:", error);
     });
-}
+}*/
 // Funkcija za prikaz Zemlje (pogled iz vesolja)
 function zemljaPrikaz() {
     const zemlja = ustvariSvg("zemljaPrikaz");
@@ -567,7 +787,7 @@ function zemljaPrikaz() {
     });
 
     // Naloži zunanjo SVG datoteko in jo umesti v obstoječi SVG
-    d3.xml("images/vesolje/B-urna_stevilcnica.svg").then(function (xml) {
+    d3.xml("images/vesolje/B-urna_stevilcnica2.svg").then(function (xml) {
         const importedSvg = d3.select(xml.documentElement); // Naloženi SVG kot D3 objekt
         //layer3.node().appendChild(importedSvg.node()); // Dodaj zunanji SVG v obstoječi SVG
 
@@ -577,12 +797,13 @@ function zemljaPrikaz() {
         // Dodajte naložen SVG kot otroka skupine
         gElement.node().appendChild(importedSvg.node());
 
+        var velUSt = globusVelikost*1.07;
         // Prilagodi dimenzije in transformacijo
         importedSvg
-            .attr("x", (1-globusVelikost*1.15)/2 * zemlja.premer) // X pozicija
-            .attr("y", (1-globusVelikost*1.15)/2 * zemlja.premer) // Y pozicija
-            .attr("width", globusVelikost*1.15 * zemlja.premer) // Širina
-            .attr("height", globusVelikost*1.15 * zemlja.premer) // Višina
+            .attr("x", (1-velUSt)/2 * zemlja.premer) // X pozicija
+            .attr("y", (1-velUSt)/2 * zemlja.premer) // Y pozicija
+            .attr("width", velUSt * zemlja.premer) // Širina
+            .attr("height", velUSt * zemlja.premer) // Višina
             .attr("id", "senca")
             .style("opacity", "0.5");
 
@@ -655,6 +876,7 @@ function zemljaPrikaz() {
 function neboPrikaz() {
     const nebo = ustvariSvg("neboPrikaz");
 }
+
 function izpiši() {
     tč = new Date();
     var tčO = new Intl.DateTimeFormat('sl-SI'/*'sl-SI'*/, {
