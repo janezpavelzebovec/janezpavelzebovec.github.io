@@ -162,31 +162,32 @@
                 </div>
                 <div id="nastavitve">
                     <p>NASTAVITVE</p>
-                    <p><label for="vnosIč">čas: </label>
-                            <button onclick="uporabiTč()">trenutni čas</button>
-                            /<input class="vnos" type="datetime-local" id="vnosIč" name="vnosIč"><span class="pripis"> (v tr. čas. pasu)</span>
-                        <br><label for="vnosČp">časovni pas:</label>
-                            <button onclick="uporabiTčp()">trenutni čas. pas</button>
-                            <select id="vnosČp" class="vnos" autocomplete="on"></select>
-                        <!--<br><label for="uporabiOdmik">izberi č. pas: </label>
-                        <button onclick="uporabiOdmikT()">trenutni pas</button>
-                        / <button onclick="uporabiUTCpas()" onclick="document.getElementById('uporabiOdmik').value = ''">UTC</button>
-                        / <span class="odmika">
-                            <label for="uporabiOdmik">odmik od UTC: </label>
-                            <label id="nadVnosPredznak" class="vnos" style="margin-right: 0; border-right: none">
-                                <input type="checkbox" id="vnosPredznaka" name="predznak"/>
-                                <span id="prikazPredznaka"></span>
-                        <   /label>
-                            <input class="vnos" type="time" id="uporabiOdmik" name="uporabiOdmik" style="margin-left: 0; border-left: none">
-                        </span>-->
-                        <br><label for="vnosZš">zemljepisna širina:</label>
-                            <input class="vnos dolgaŠtevilka" type="number" id="vnosZš" name="širina" max="90" min="-90" placeholder="Vnesite zemljepisno širino" autofocus>
-                        <br><label for="vnosZd">zemljepisna dolžina:</label>
-                            <input class="vnos dolgaŠtevilka" type="number" id="vnosZd" name="dolžina" max="180" min="-180" placeholder="Vnesite zemljepisno dolžino">
-                        <br><button id="btnUporabiPoložajT" onclick="uporabiPoložajT()">trenutni položaj</button>
-                        <br><span class="pripis">privzeti položaj: središče Slovenije (GEOSS)</span>
-                        <br><div class="inputOznači"><input type="checkbox" id="prikazLune" class="vnos">
+                    <table>
+                        <tr>
+                            <td><label for="vnosIč">čas: </label></td>
+                            <td><input class="vnos" type="datetime-local" id="vnosIč" name="vnosIč"><span class="pripis"> (v tr. čas. pasu)</span></td>
+                            <td><button onclick="uporabiTč()">trenutni čas</button></td>
+                        </tr>
+                        <tr>
+                            <td><label for="vnosČp">časovni pas:</label></td>
+                            <td><select id="vnosČp" class="vnos" autocomplete="on"></select></td>
+                            <td><button onclick="uporabiTčp()">trenutni čas. pas</button></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><label for="vnosZš">zemljepisna širina:</label></td>
+                            <td><input class="vnos dolgaŠtevilka" type="number" id="vnosZš" name="širina" max="90" min="-90" placeholder="Vnesite zemljepisno širino" autofocus> zem. širine/višine</td>
+                            <td rowspan="2"><button id="btnUporabiPoložajT" onclick="uporabiPoložajT()">trenutni položaj</button></td>
+                        </tr>
+                        <tr>
+                            <td><input class="vnos dolgaŠtevilka" type="number" id="vnosZd" name="dolžina" max="180" min="-180" placeholder="Vnesite zemljepisno dolžino"> zem. dolžine</td>
+                        </tr>
+                    </table>
+                    <p></p><span id="prPoložaj" class="pripis">privzeti položaj: središče Slovenije (GEOSS)</span>
+                        <br><div class="inputOznači"><input type="checkbox" id="prikazLune" class="vnos"/>
                             <label for="prikazLune" id="labelPrikazLune">prikaži Luno kot je vidna z Zemlje </label><span id="prikazLunePravi" class="pripis"> - trenutno kot vidna z njenega S tečaja.</span>
+                            </div>
+                        <br><div class="inputOznači"><input type="checkbox" id="prikazZadaj" class="vnos" checked />
+                            <label for="prikazZadaj" id="labelPrikazZadaj">prikaži tudi zadnjo poloblo</label>
                             </div>
                     </p>
                 </div>
