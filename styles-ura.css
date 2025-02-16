@@ -271,7 +271,7 @@ html {
   position: fixed;
   display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: flex-start;
     /*justify-content: space-evenly;*/
     align-items: flex-start;
