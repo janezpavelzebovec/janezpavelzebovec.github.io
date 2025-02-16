@@ -9,7 +9,7 @@
         <meta http-equiv="Cache-control" content="public">
 
         <title>Knjižnica</title>
-        <meta name="description" content="Spletna knjižnica" /> <!--opis spletnega mesta-->
+        <meta name="description" content="Knjižnica mojih zanimanj" /> <!--opis spletnega mesta-->
         <meta name="keywords" content="spletna knjižnica, znanje" />
         <meta name="copyright" content="Janez Pavel Žebovec" />
 
@@ -25,7 +25,7 @@
         <meta property="og:title" content="Knjižnica"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
         <meta property="og:type" content="website"><!--določa vrsto objekta, ki se deli na družabnih omrežjih. V tem primeru gre za spletno stran-->
         <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
-        <meta property="og:description" content="Spletna knjižnica, kjer hranim znanja o svojih zanimanjih; ta znanja so tu na voljo, da razsvetljujejo srenjo."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:description" content="Knjižnica mojih zanimanj"><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
         <meta property="og:site_name" content="Knjižnica"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
     </head>
     <body>
@@ -36,84 +36,90 @@
         <aside class="sidebar">
           <nav>
             <div><a href="./">Domov</a></div>
-            <div><a href="./knjiznica">Knjižnica</a></div>
             <br>
-            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div>
-            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div>
-            <div><a href="./glasopisnica">Glasopisnica</a></div>
-            <div><a href="./mojrodovnik">Moj rodovnik</a></div>
+            <div><a class="not" href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div>
+            <div><a class="not" href="./visoka_slovenscina">Visoka slovenščina</a></div>
+            <div><a class="not" href="./moj_rodovnik">Moj rodovnik</a></div>
+            <div><a class="not" href="./programje">Programje</a></div>
+            <div><a class="not" href="./glasopisnica">Glasopisnica</a></div>
           </nav>
         </aside>
 
-        <button id="stikaloNačina" class="stikaloNačina">
-            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
-                <path fill="currentColor"
+        <button id="stikaloNacina">
+            <svg
+                width="100%"
+                viewBox="0 0 496 496"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:svg="http://www.w3.org/2000/svg">
+                <path
+                    fill="currentColor"
                     d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
-                    transform="translate(-8 -8)"/>
+                    transform="translate(-8 -8)"
+                    id="path2" />
             </svg>
         </button>
 
-        <div class="content">
+        <div class="vsebina">
             <h1>KNJIŽNICA</h1>
-            <p>Tu je zbirka raznovrstnega znanja, osredotočena predvsem na področja mojega zanimanja, pa tudi na področja delovanja in izobraževanja.</p>
+            <p>To je moja knjižnica nekaterih znanj, osredotočena predvsem na področja mojega zanimanja, pa tudi na področja delovanja in izobraževanja.</p>
+            <p>Podatke skušam prikazati čim bolj pregledno, brez zelo podrobnih opisov in razlag, na katere se že osredotočajo druge spletne strani <span class="prip">(kot npr. Wikipedija)</span>.</p>
             <hr>
 
             <ul class="s">
-                 <li>Znanost
+                <li><a href="./knjiznica/fizika">Tvornoslovje</a> <span class="prep">(Fizika)</span>
                     <ul class="s">
-                        <li><a href="./fizika">Fizika</a>
-                            <ul class="s">
-                                <li><a href="./kemija">Kemija</a></li>
-                                <li><a href="./zvezdoslovje">Zvezdoslovje</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./živoslovje">Živoslovje</a></li>
-                        <li><a href="./matematika">Matematika</a></li>
+                        <li><a href="./knjiznica/kemija">Snovoslovje</a> <span class="prep">(Kemija)</span></li>
+                        <li><a href="./knjiznica/zvezdoslovje">Zvezdoslovje</a> <span class="prep">(Astronomija)</span></li>
                     </ul>
+                </li>
+                <li><a href="./knjiznica/živoslovje">Živoslovje</a> <span class="prep">(Biologija)</span></li>
+                <li><a href="./knjiznica/matematika">Računstvo</a> <span class="prep">(Matematika)</span></li>
                 </li>
                  <li>Družboslovje
                     <ul class="s">
-                        <li><a href="./jezikoslovje">Jezikoslovje</a>
+                        <li><a href="./knjiznica/jezikoslovje">Jezikoslovje</a> <span class="prep">(Lingvistika)</span>
                             <ul class="s">
-                                <li><a href="./slovenscina">Slovenščina</a></li>
+                                <li><a href="./knjiznica/slovenscina">Slovenščina</a></li>
                                     <ul class="s">
-                                        <li><a href="./SlovenskaSlovnica"><i>Jože Toporišič: Slovenska Slovnica</i></a></li>
+                                        <li><a href="./knjiznica/SlovenskaSlovnica"><i>Jože Toporišič: Slovenska Slovnica</i></a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./anglescina">Angleščina</a></li>
-                                <li><a href="./nemscina">Nemščina</a></li>
-                                <li><a href="./latinscina">Latinščina</a></li>
+                                <li><a href="./knjiznica/anglescina">Angleščina</a></li>
+                                <li><a href="./knjiznica/nemscina">Nemščina</a></li>
+                                <li><a href="./knjiznica/latinscina">Latinščina</a></li>
                                 </li>
-                                 <li><a href="./pisave">Pisave</a>
+                                 <li><a href="./knjiznica/pisave">Pisave</a>
                                     <ul class="s">
-                                        <li><a href="./ogamska_pisava">Ogamska pisava</a></li>
-                                        <li><a href="./grska_abeceda">Grška abeceda</a></li>
-                                        <li><a href="./latinica">Latinica</a></li>
-                                        <li><a href="./gotica">Gotica</a></li>
-                                        <li><a href="./cirilica">Cirilica</a></li>
-                                        <li><a href="./glagolica">Glagolica</a></li>
-                                        <li id="Slovenske zgodovinske pisave"><a href="./slovenske_pisave">Slovenske zgodovinske pisave</a></li>
-                                        <li><a href="./gajica">Gajica</a></li>
-                                        <li><a href="./shawova_abeceda">Shawova abeceda</a></li>
+                                        <li><a href="./knjiznica/ogamska_pisava">Ogamska pisava</a></li>
+                                        <li><a href="./knjiznica/grska_abeceda">Grška abeceda</a></li>
+                                        <li><a href="./knjiznica/latinica">Latinica</a></li>
+                                        <li><a href="./knjiznica/gotica">Gotica</a></li>
+                                        <li><a href="./knjiznica/cirilica">Cirilica</a></li>
+                                        <li><a href="./knjiznica/glagolica">Glagolica</a></li>
+                                        <li id="Slovenske zgodovinske pisave"><a href="./knjiznica/slovenske_pisave">Slovenske zgodovinske pisave</a></li>
+                                        <li><a href="./knjiznica/gajica">Gajica</a></li>
+                                        <li><a href="./knjiznica/shawova_abeceda">Shawova abeceda</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         <li>Književnost
                             <ul class="s">
-                                <li><a href="./Tolkien">John Ronald Reuel Tolkien</a>
+                                <li><a href="./knjiznica/Tolkien">John Ronald Reuel Tolkien</a>
                                 <ul class="s">
-                                    <li><a href="./TheHobbit">J. R. R. Tolkien: <i>The Hobbit</i></a></li>
-                                    <li><a href="./TheSilmarillion">J. R. R. Tolkien: <i>The Silmarillion</i></a></li>
+                                    <!--<li><a href="./knjiznica/The_Hobbit"><i>J. R. R. Tolkien: The Hobbit</i></a></li>-->
+                                    <li><a href="./knjiznica/The_Silmarillion"><i>J. R. R. Tolkien: The Silmarillion</i></a></li>
                                 </ul>
                                 </li>
-                                <li><a href="./Lewis">Clive Staples Lewis</a></li>
+                                <li><a href="./knjiznica/Lewis">Clive Staples Lewis</a></li>
                             </ul>
                         </li>
-                        <li><a href="./rodoslovje">Rodoslovje</a></li>
+                        <li><a href="./knjiznica/rodoslovje">Rodoslovje</a> <span class="prep">(Genealogija)</span></li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <footer>Zadnja posodobitev te strani: <time datetime="2024-07-16">16. 7. 2024</time></footer>
+        <footer>Zadnja posodobitev te strani: <time datetime="2025-02-16">16. 2. 2025</time>
+            <br>Predhodne posodobitve: <time datetime="2024-07-07">7. 7. 2024</time>, <time datetime="2024-07-30">30. 7. 2024</time>
+        </footer>
     </body>
 </html>
