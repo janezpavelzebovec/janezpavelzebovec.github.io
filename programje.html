@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="sl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
+        <meta http-equiv="Cache-control" content="public">
+
+        <title>Programje</title>
+        <meta name="description" content="Moj pogled na programje in priporočila glede programov"/> <!--opis spletnega mesta-->
+        <meta name="keywords" content="programje, programi, računalnik, Linux, Android" />
+        <meta name="copyright" content="Janez Pavel Žebovec" />
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
+        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
+        <meta name=application-name content="Programje"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
+        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
+        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+
+        <meta property="og:title" content="Programje"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
+        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
+        <meta property="og:description" content="Moj pogled na programje in priporočila glede programov" ><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
+        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+
+        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
+        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
+        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:description" content="Moj pogled na programje in priporočila glede programov" ><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
+        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
+    </head>
+
+    <body>
+        <label class="hamburger-menu">
+          <input type="checkbox" />
+        </label>
+        <aside class="sidebar">
+          <nav>            
+            <div><a href="./">Domov</a></div>
+            <br>
+            <div><a class="not" href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div>
+            <div><a class="not" href="./visoka_slovenscina">Visoka slovenščina</a></div>
+            <div><a class="not" href="./moj_rodovnik">Moj rodovnik</a></div>
+            <div><a class="not" href="./glasopisnica">Glasopisnica</a></div>
+            <br>
+            <div><a href="./knjiznica">Knjižnica</a></div>
+          </nav>
+        </aside>
+
+        <button id="stikaloNacina">
+            <svg
+                width="100%"
+                viewBox="0 0 496 496"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:svg="http://www.w3.org/2000/svg">
+                <path
+                    fill="currentColor"
+                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                    transform="translate(-8 -8)"
+                    id="path2" />
+            </svg>
+        </button>
+
+        <div class="vsebina">
+            <h1>Programje</h1>
+            <p>Večina ljudi se danes zadovolji s slabo programsko opremo - s tem pa ne le trpinčijo sami sebe, temveč jo tudi podpirajo (celo denarno). Čeprav jih veliko govoriči o zasebnosti, varnosti, ... , se še vedno niti malo ne potrudijo imeti nadzora nad svojimi lastnimi napravami; vrhovno oblast in dostop do zasebnih podatkov pridno prepuščajo podjetjem, kot so <a href="https://about.google/" target="_blank" rel="noopener noreferrer">Google</a>, <a href="https://www.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft</a>, ...</p>
+            <p>Večina uporabnikov računalnikov dandanes kljub redni uporabi ostaja računalniško nepismenih.</p>
+            <p>Žalostna resnica je, da je dandanes v svetu računalništva marsikaj dodobra zavoženo. Dva izmed primerov te zavoženosti sta splet <span class="prep">(internet)</span> in spletni brskalniki, ter dlačniki <span class="prep">(pametni telefoni)</span>.
+                <br>Splet je poln navlake, pri brodenju skozi katero je človek vezan na pošasti, kot je <a href="https://www.chromium.org/" target="_blank" rel="noopener noreferrer">Chromium</a> - preprosto zato, ker je to za ta zavožen splet preprosto najboljša  možnost.
+                <br>Dlančniki <span class="prep">(pametni telefoni)</span> so za marsikoga nadomestili računalnik - kar je, mimogrede, zelo neumno od njih - in pri tem postali obvezni za vse.
+            <p>Svet bi bil precej lepši, če:
+                <ul class="s">
+                    <li>ne bi bili primorani z napravami kupovati tudi zlonamerne programske opreme;</li>
+                    <li>v šolah ne bi učili uporabljati in oglaševali slabe programske opreme;</li>
+                    <li>ne bi potrebovali vsako leto močnejših računalnikov, da bi bili kos zahtevam slabih programov;</li>
+                </ul>
+            </p>
+            <h2 id="Programi">Programi</h2>
+        </div>
+        <table class="sredinsko zgornja vodčrte">
+            <thead>
+                <tr>
+                    <th>program</th>
+                    <th>naloga</th>
+                    <th>Linux Debian<br>ukazno, namestitveno ime</th>
+                    <th>opombe</th>
+            </thead>
+            <tbody>
+                <tr id="Birdfont">
+                    <td><a href="https://birdfont.org/" target="_blank" rel="noopener noreferrer">Birdfont</a></td>
+                    <td>urejevalnik računalniških pisav</td>
+                    <td><a href="https://packages.debian.org/buster/birdfont" target="_blank" rel="noopener noreferrer">birdfont</a></td>
+                    <td>enostaven, lep</td>
+                </tr>
+                <tr id="Blender">
+                    <td><a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer">Blender</a></td>
+                    <td>3R <span class="prep">(3D)</span> urejevalnik, animiranje</td>
+                    <td><a href="https://wiki.debian.org/Blender" target="_blank" rel="noopener noreferrer"i>blender</a></td>
+                    <td>zelo napreden, obsežen</td>
+                </tr>
+                <tr id="Brave">
+                    <td><a href="https://brave.com/" target="_blank" rel="noopener noreferrer">Brave</a></td>
+                    <td>spletni brskalnik</td>
+                    <td><a href="https://brave.com/linux/#debian-ubuntu-mint" target="_blank" rel="noopener noreferrer">brave-browser</a></a></td>
+                    <td>privzeto preprečevanje oglasov</td>
+                </tr>
+                <tr id="digiKam">
+                    <td><a href="https://www.digikam.org/" target="_blank" rel="noopener noreferrer">digiKam</a></td>
+                    <td>razvrščevalnik slik</td>
+                    <td><a href="https://packages.debian.org/bookworm/digikam" target="_blank" rel="noopener noreferrer">digikam</a></td>
+                    <td>s prepoznavo obrazov</td>
+                </tr>
+                <tr id="FontForge">
+                    <td><a href="https://fontforge.org/" target="_blank" rel="noopener noreferrer">FontForge</a></td>
+                    <td>urejevalnik računalniških pisav</td>
+                    <td><a href="https://packages.debian.org/buster/fontforge" target="_blank" rel="noopener noreferrer">fontforge</a></td>
+                    <td>napreden, grši</td>
+                </tr>
+                <tr id="Gimp">
+                    <td><a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">Gimp</a></td>
+                    <td>urejevalnik slik</td>
+                    <td><a href="https://wiki.debian.org/GIMP" target="_blank" rel="noopener noreferrer">gimp</a></td>
+                    <td></td>
+                </tr>
+                <tr id="Inkscape">
+                    <td><a href="https://inkscape.org/" target="_blank" rel="noopener noreferrer">Inkscape</a></td>
+                    <td>SVG slike</td>
+                    <td><a href="https://packages.debian.org/buster/inkscape" target="_blank" rel="noopener noreferrer">inkscape</a></td>
+                    <td></td>
+                </tr>
+                <tr id="JOSM">
+                    <td><a href="https://josm.openstreetmap.de/" target="_blank" rel="noopener noreferrer">JOSM</a></td>
+                    <td>urejanje Open Street Map zemljevida</td>
+                    <td><a href="https://packages.debian.org/buster/josm" target="_blank" rel="noopener noreferrer">josm</a></td>
+                    <td>številne podlage (tudi LIDAR)</td>
+                </tr>
+                <tr id="LibreWolf">
+                    <td><a href="https://librewolf.net/" target="_blank" rel="noopener noreferrer">LibreWolf</a></td>
+                    <td>spletni brskalnik</td>
+                    <td><a href="https://librewolf.net/installation/debian/" target="_blank" rel="noopener noreferrer">librewolf</a></td>
+                    <td>zelo varen</td>
+                </tr>
+                <tr id="Firefox">
+                    <td><a href="https://www.mozilla.org/en-US/firefox/" target="_blank" rel="noopener noreferrer">Mozilla - Firefox</a></td>
+                    <td>spletni brskalnik</td>
+                    <td><a href="" target="_blank" rel="noopener noreferrer"></a></td>
+                    <td>zaseben</td>
+                </tr>
+                <tr id="LinuxDebian">
+                    <td><a href="https://www.debian.org/" target="_blank" rel="noopener noreferrer">Linux Debian</a></li></td>
+                    <td>računalniški izvrševalec <span class="prep">(operacijski sistem)</span></td>
+                    <td></td>
+                    <td>popolnoma prilagodljiv</td>
+                </tr>
+                <tr id="MPV Media Player">
+                    <td><a href="https://mpv.io/" target="_blank" rel="noopener noreferrer">MPV Media Player</a></td>
+                    <td>predvajalnik posnetkov</td>
+                    <td><a href="https://packages.debian.org/buster/mpv" target="_blank" rel="noopener noreferrer">mpv</a></td>
+                    <td>preprost, večina upravljanja z bližnjicami</td>
+                </tr>
+                <tr id="Musescore">
+                    <td><a href="https://musescore.org/" target="_blank" rel="noopener noreferrer">Musescore</a></td>
+                    <td>urejevalnik notnih zapisov</td>
+                    <td><a href="https://packages.debian.org/buster/musescore" target="_blank" rel="noopener noreferrer">musescore</a></td>
+                    <td>priporočeno naložiti z uradne spletne strani</td>
+                </tr>
+                <tr id="Scribus">
+                    <td><a href="https://www.scribus.net/" target="_blank" rel="noopener noreferrer">Scribus</a></td>
+                    <td>urejevalnik besedilnih dokumentov</td>
+                    <td><a href="https://packages.debian.org/buster/scribus" target="_blank" rel="noopener noreferrer">scribus</a></td>
+                    <td></td>
+                </tr>
+                <tr id="SolveSpace">
+                    <td><a href="https://solvespace.com/" target="_blank" rel="noopener noreferrer">Solve Space</a></td>
+                    <td>2R <span class="prep">(2D)</span>, 3R <span class="prep">(3D)</span> urejevalnik</td>
+                    <td><a href="https://packages.debian.org/buster/solvespace" target="_blank" rel="noopener noreferrer">solvespace</a></td>
+                    <td>odličen za pretvorbo tehničnih načrtov v model in obratno</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="vsebina">
+            <h2 id="Linux">Linux</h2>
+        </div>
+        <table class="sredinsko zgornja vodčrte">
+            <thead>
+                <tr>
+                    <th>program</th>
+                    <th>naloga</th>
+                    <th>ukazno ime Linuxa</th>
+                    <th>Debian paket</th>
+                    <th>opomba</th>
+            </thead>
+            <tbody>
+                <tr id="dmenu">
+                    <td><a href="https://tools.suckless.org/dmenu/" target="_blank" rel="noopener noreferrer">Suckless - Dmenu</a></td>
+                    <td>statusna vrstica, vrstica s trenutno odpritimi programi za <a href="#dwm">DWM</a></td>
+                    <td>dmenu</td>
+                    <td><a href="" target="_blank" rel="noopener noreferrer"></a></td>
+                    <td></td>
+                </tr>
+                <tr id="dwm">
+                    <td><a href="https://dwm.suckless.org" target="_blank" rel="noopener noreferrer">Suckless - DWM (Dynamic Window Manager)</a></td>
+                    <td>upravitelj oken</td>
+                    <td>dwm</td>
+                    <td><a href="https://wiki.debian.org/Dwm" target="_blank" rel="noopener noreferrer">dwm suckless-tools</a></td>
+                    <td></td>
+                </tr>
+                <tr id="slock">
+                    <td><a href="https://tools.suckless.org/slock/" target="_blank" rel="noopener noreferrer">Suckless - Tools - Slock</a></td>
+                    <td>zaklenjen zaslon</td>
+                    <td>slock</td>
+                    <td><a href="" target="_blank" rel="noopener noreferrer"></a></td>
+                    <td></td>
+                </tr>
+                <tr id="st">
+                    <td><a href="https://st.suckless.org/" target="_blank" rel="noopener noreferrer">Suckless - ST (Simple Terminal)</a></td>
+                    <td>terminal</td>
+                    <td>st</td>
+                    <td><a href="https://packages.debian.org/buster/stterm" target="_blank" rel="noopener noreferrer">stterm</a></td>
+                    <td></td>
+                </tr>
+                <tr id="lf">
+                    <td><a href="https://github.com/gokcehan/lf" target="_blank" rel="noopener noreferrer">LF (List Files)</a></td>
+                    <td>upravitelj datotek</td>
+                    <td>lf</td>
+                    <td><a href="https://packages.debian.org/sid/sparc64/utils/lf" target="_blank" rel="noopener noreferrer">lf</a></td>
+                    <td></td>
+                </tr>
+                <tr id="ueberzug">
+                    <td><a href="https://github.com/ueber-devel/ueberzug" target="_blank" rel="noopener noreferrer">Überzug</a></td>
+                    <td>predogled slik v LF</td>
+                    <td>ueberzug</td>
+                    <td><a href="https://packages.debian.org/sid/main/ueberzug" target="_blank" rel="noopener noreferrer">ueberzug</a></td>
+                    <td></td>
+                </tr>
+                <tr id="simple-scan">
+                    <td><a href="https://packages.debian.org/buster/gnome/simple-scan" target="_blank" rel="noopener noreferrer">Simple Scan</a></td>
+                    <td>skeniranje, tiskanje</td>
+                    <td>simple-scan</td>
+                    <td><a href="https://packages.debian.org/buster/gnome/simple-scan" target="_blank" rel="noopener noreferrer">simple-scan</a></td>
+                    <td></td>
+                </tr>
+                <tr id="exiftool">
+                    <td><a href="https://exiftool.org/" target="_blank" rel="noopener noreferrer">ExifTool</a></td>
+                    <td>pregledovalnik in urejevalnik metapodatkov slik</td>
+                    <td>exiftool</td>
+                    <td><a href="https://packages.debian.org/search?keywords=exiftool" target="_blank" rel="noopener noreferrer">exiftool</a></td>
+                    <td></td>
+                </tr>
+                <tr id="sc-im">
+                    <td><a href="https://github.com/andmarti1424/sc-im" target="_blank" rel="noopener noreferrer">sc-im</a></td>
+                    <td>urejevalnik preglednic z izračunalnimi sposobnostmi</td>
+                    <td>sc-im</td>
+                    <td><a href="" target="_blank" rel="noopener noreferrer"></a></td>
+                    <td></td>
+                </tr>
+                <tr id="sxcs">
+                    <td><a href="https://github.com/N-R-K/sxcs" target="_blank" rel="noopener noreferrer">SXCS (Simple X Color Sniper)</a></td>
+                    <td>orodje za izbiro barv na zaslonu in povečevalnik</td>
+                    <td>sxcs</td>
+                    <td><a href="" target="_blank" rel="noopener noreferrer"></a></td>
+                    <td></td>
+                </tr>
+                <tr id="sxiv">
+                    <td><a href="https://github.com/xyb3rt/sxiv" target="_blank" rel="noopener noreferrer">SXIV (Simple X Image Viewer)</a></td>
+                    <td>pregledovalnik in urejevalnik slik</td>
+                    <td>sxiv</td>
+                    <td><a href="https://packages.debian.org/buster/sxiv" target="_blank" rel="noopener noreferrer">sxiv</a></td>
+                    <td>ni več vzdrževan, vzdrževana različica je <a href="#nsxiv">NSXIV</a></td>
+                </tr>
+                <tr id="nsxiv">
+                    <td><a href="https://nsxiv.codeberg.page/" target="_blank" rel="noopener noreferrer">NSXIV (Neo Simple X Image Viewer)</a></td>
+                    <td>pregledovalnik in urejevalnik slik</td>
+                    <td>nsxiv</td>
+                    <td><a href="" target="_blank" rel="noopener noreferrer"></a></td>
+                    <td>je trenutno vzdrževana različica <a href="#sxiv">SXIV</a></td>
+                </tr>
+                <tr id="yt-dlp">
+                    <td><a href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener noreferrer">yt-dlp</a></td>
+                    <td>prenašanje posnetkov z YouTuba (in drugod; iz terminala)</td>
+                    <td>yt-dlp</td>
+                    <td><a href="https://packages.debian.org/sid/yt-dlp" target="_blank" rel="noopener noreferrer">yt-dlp</a></td>
+                    <td></td>
+                </tr>
+                <tr id="nmcli">
+                    <td><a href="https://networkmanager.dev/" target="_blank" rel="noopener noreferrer">Network Manager</a><br>
+                    <a href="https://wiki.debian.org/NetworkManager" target="_blank" rel="noopener noreferrer">Debian Wiki - Network Manager</a></td>
+                    <td>upravljanje omrežne povezave</td>
+                    <td>NetworkManager<br>(nmcli)</td>
+                    <td><a href="https://packages.debian.org/buster/network-manager" target="_blank" rel="noopener noreferrer">network-manager</a></td>
+                    <td></td>
+                </tr>
+                <!--<tr id="ethtool">
+                    <td><a href="https://mirrors.edge.kernel.org/pub/software/network/ethtool/" target="_blank" rel="noopener noreferrer">ethtool</a></td>
+                    <td>pregled omrežne povezave</td>
+                    <td>ethtool</td>
+                    <td><a href="https://packages.debian.org/buster/ethtool" target="_blank" rel="noopener noreferrer">ethtool</a></td>
+                    <td></td>
+                </tr>-->
+                <tr id="pdfjam">
+                    <td><a href="https://github.com/pdfjam/pdfjam" target="_blank" rel="noopener noreferrer">pdfjam</a><br>
+                    <a href="" target="_blank" rel="noopener noreferrer"></a></td>
+                    <td>združevanje PDF-jev</td>
+                    <td></td>
+                    <td><a href="" target="_blank" rel="noopener noreferrer"></a></td>
+                    <td>je del Debianovega paketa <i>texlive-extra-utils</i></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="vsebina">
+            <p>Sucklessove programe je priporočljivo namestiti kar iz vira - neposredno od Sucklessa.</p>
+            <h2 id="Android">Android</h2>
+        </div>
+        <table class="sredinsko zgornja vodčrte">
+            <thead>
+                <tr>
+                    <th>program</th>
+                    <th>naloga</th>
+                    <th>odprtokodno (F-Droid)</th>
+                    <th>Google Play</th>
+                    <th>opombe</th>
+            </thead>
+            <tbody>
+                <tr id="Arcticons">
+                    <td><a href="https://arcticons.com/" target="_blank" rel="noopener noreferrer">Arcticons</a></td>
+                    <td>zbirka sličic za orodja <span class="prep">aplikacije</span></td>
+                    <td><a href="https://f-droid.org/en/packages/com.donnnno.arcticons/" target="_blank" rel="noopener noreferrer">Arcticons</a>,<br><a href="https://f-droid.org/en/packages/com.donnnno.arcticons.you/" target="_blank" rel="noopener noreferrer">Arcticons Material You</a>,<br><a href="https://f-droid.org/en/packages/com.donnnno.arcticons.light/" target="_blank" rel="noopener noreferrer">Arcticons Black</a>,<br><a href="https://f-droid.org/en/packages/com.donnnno.arcticons.daynight/" target="_blank" rel="noopener noreferrer">Arcticons Day & Night</a></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.donnnno.arcticons&hl=en_US" target="_blank" rel="noopener noreferrer">Arcticons - Line Icon Pack</a>,<br><a href="https://play.google.com/store/apps/details?id=com.donnnno.arcticons.you.play&hl=en_US" target="_blank" rel="noopener noreferrer">Arcticons Material You Icons</a>,<br><a href="https://play.google.com/store/apps/details?id=com.donnnno.arcticons.light&hl=en_US" target="_blank" rel="noopener noreferrer">Arcticons Black - Icon Pack</a></td>
+                    <td>preprost, poenoten slog sličic orodij</td>
+                </tr>
+                <tr id="Arity">
+                    <td><a href="https://github.com/woheller69/Arity" target="_blank" rel="noopener noreferrer">Arity</a></td>
+                    <td>računalo</td>
+                    <td><a href="https://f-droid.org/en/packages/org.woheller69.arity/" target="_blank" rel="noopener noreferrer">ArityCalc</a></td>
+                    <td></td>
+                    <td>tudi s 3R <span class="prep">(3D)</span> prikazi funkcij</td>
+                </tr>
+                <tr id="Brave">
+                    <td><a href="https://brave.com/" target="_blank" rel="noopener noreferrer">Brave</a></td>
+                    <td>spletni brskalnik</td>
+                    <td></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.brave.browser&hl=en_US" target="_blank" rel="noopener noreferrer">Brave Private Web Browser, VPN</a>,<br><a href="https://play.google.com/store/apps/details?id=com.brave.browser_beta&hl=en_US" target="_blank" rel="noopener noreferrer">Brave Browser (Beta)</a>,<br><a href="https://play.google.com/store/apps/details?id=com.brave.browser_nightly&hl=en_US" target="_blank" rel="noopener noreferrer">Brave Browser (Nightly)</a></td>
+                    <td>privzeto preprečevanje oglasov</td>
+                </tr>
+                <tr id="F-Droid">
+                    <td><a href="https://f-droid.org/" target="_blank" rel="noopener noreferrer">F-Droid</a></td>
+                    <td>knjižnica odprtokodnih orodij <span class="prep">(aplikacij)</span></td>
+                    <td><a href="https://f-droid.org/" target="_blank" rel="noopener noreferrer">F-Droid</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="Markor">
+                    <td><a href="https://github.com/gsantner/markor/tree/master" target="_blank" rel="noopener noreferrer">Markor</a></td>
+                    <td>urejevalnik golega besedila</td>
+                    <td><a href="https://f-droid.org/packages/net.gsantner.markor/" target="_blank" rel="noopener noreferrer">Markor</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="NewPipe">
+                    <td><a href="https://newpipe.net/" target="_blank" rel="noopener noreferrer">New Pipe</a></td>
+                    <td>nadomestek aplikacije You Tube</td>
+                    <td><a href="https://f-droid.org/en/packages/org.schabi.newpipe/" target="_blank" rel="noopener noreferrer">NewPipe - Lightweight YouTube frontend</a></td>
+                    <td></td>
+                    <td>brez oglasov, privzeta možnost prenosa</td>
+                </tr>
+                <!--<tr id="Niagara">
+                    <td><a href="https://niagaralauncher.app/" target="_blank" rel="noopener noreferrer">Niagara</a></td>
+                    <td>zaganjalnik orodij</td>
+                    <td></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=bitpit.launcher" target="_blank" rel="noopener noreferrer">Niagara Launcher ‧ Home Screen</a></td>
+                    <td>hitrejša dostopnost orodij</td>
+                </tr>-->
+                <tr id="OLauncher">
+                    <td><a href="" target="_blank" rel="noopener noreferrer">OLauncher</a></td>
+                    <td>zaganjalnik orodij</td>
+                    <td><a href="https://f-droid.org/packages/app.olaunchercf/" target="_blank" rel="noopener noreferrer">Olauncher Clutter Free</a></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=app.olauncher" target="_blank" rel="noopener noreferrer">Olauncher. Minimal AF Launcher</a></td>
+                    <td>preprost</td>
+                </tr>
+                <tr id="OsmAnd">
+                    <td><a href="https://osmand.net/" target="_blank" rel="noopener noreferrer">OsmAnd</a></td>
+                    <td><a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Open Street Map</a> zemljevid z dodatki</td>
+                    <td><a href="https://f-droid.org/en/packages/net.osmand.plus/" target="_blank" rel="noopener noreferrer">OsmAnd~</a></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=net.osmand&hl=en_US" target="_blank" rel="noopener noreferrer">OsmAnd — Maps & GPS Offline</a></td>
+                    <td>nalaganje izbranih področij za uporabo brez povezave</td>
+                </tr>
+                <tr id="phyfox">
+                    <td><a href="https://phyphox.org/" target="_blank" rel="noopener noreferrer">PhyFox</a></td>
+                    <td>za razne fizikalne poskuse z uporabo tipal, zvočnika in mikrofona dlančnika</td>
+                    <td><a href="https://f-droid.org/en/packages/de.rwth_aachen.phyphox/" target="_blank" rel="noopener noreferrer">phyphox</a></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=de.rwth_aachen.phyphox&amp%3Bhl=sl" target="_blank" rel="noopener noreferrer">phyphox</a></td>
+                    <td></td>
+                </tr>
+                <tr id="PlantNet">
+                    <td><a href="https://plantnet.org/" target="_blank" rel="noopener noreferrer">PlantNet</a></td>
+                    <td>prepoznava in popis rastlin</td>
+                    <td></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=org.plantnet" target="_blank" rel="noopener noreferrer">PlantNet</a></td>
+                    <td></td>
+                </tr>
+                <tr id="RealityScan">
+                    <td><a href="https://www.unrealengine.com/en-US/realityscan" target="_blank" rel="noopener noreferrer">RealityScan</a></td>
+                    <td>3R skeniranje s pomočjo kamere</td>
+                    <td></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.epicgames.realityscan&hl=en&gl=US" target="_blank" rel="noopener noreferrer">RealityScan - 3D Scanning App</a></td>
+                    <td></td>
+                </tr>
+                <tr id="Sky Wiki">
+                    <td>Sky Wiki</a></td>
+                    <td>zvezdosloven pripomoček</td>
+                    <td></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.bluestreaklabs.skywiki&hl=en_US" target="_blank" rel="noopener noreferrer">SkyWiki - world of astronomy</a></td>
+                    <td>zemljevid neba, vzhodi/zahodi nebesnih teles, kompas</td>
+                </tr>
+                <tr id="Windy">
+                    <td><a href="https://windy.app/" target="_blank" rel="noopener noreferrer">Windy</a></td>
+                    <td>vremenski zemljevid</td>
+                    <td></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.windyty.android&hl=en_US" target="_blank" rel="noopener noreferrer">Windy.com - Weather Forecast</a></td>
+                    <td>potrebuje spletno povezavo</td>
+                </tr>
+                <tr id="WriterPlus">
+                    <td>Writer Plus</td>
+                    <td>urejevalnik označevalskega (MarkDown - .md) besedila</td>
+                    <td></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=co.easy4u.writer&hl=en_US" target="_blank" rel="noopener noreferrer">Writer Plus (Write On the Go)</a></td>
+                    <td>enostaven</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="vsebina">
+            <h3>Namestitve in uporaba</h3>
+            <h4>MicroMamba</h4>
+            <h5>Namestitev</h5>
+            <ol>
+                <li><code>curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest</code></li>
+                <li><code>curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba</code></li>
+                <li><code>micromamba shell init -s bash -r ~/micromamba</code></li>
+            </ol>
+            <h5>Uporaba</h5>
+            <ol>
+                <li><code>micromamba create -n peskovnik</code> Ustvari okolje</li>
+                <li><code>micromamba activate peskovnik</code> Aktivira okolje</li>
+                <li><code>micromamba install [paket]</code> Namesti (Pythonov) paket v tem okolju</li>
+            </ol>
+            <h3>Zunanje povezave in viri</h3>
+            <ul class="s"> 
+                <li><a href="https://suckless.org/" target="_blank" rel="noopener noreferrer">Suckless.org</a> (programi po načelu preprostosti, majhnosti in odprtokodnosti)
+                    <ul class="s">    
+                        <li><a href="https://suckless.org/rocks/" target="_blank" rel="noopener noreferrer">Suckless.org - Rocks</a> (programi, ki jih priporoča Suckless.org, ki torej sledijo njihovim načelom)</li>
+                    </ul>
+                </li>
+                <li><a href="https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md" target="_blank" rel="noopener noreferrer">Mayfrost (GitHub): Alternatives to bloatware</a></li>
+                <h4>Vodiči po programih</h4>
+                <li><a href="https://vim.rtorr.com/" target="_blank" rel="noopener noreferrer">Vim Cheat Sheet</a> (seznam bližnjic v VIM-u)</li>
+                <li><a href="https://www.youtube.com/@blenderguru" target="_blank" rel="noopener noreferrer">YouTube - Blender Guru</a> (vodiči po <a href="#Blender">Blenderju</a>)</li>
+                <!--<li><a href="https://www.reddit.com/r/neography/comments/818364/creating_fonts_with_inkscape_and_fontforge_table/" target="_blank" rel="noopener noreferrer">Reddit - Neography - Pomdepin: Creating Fonts with Inkscape and FontForge | Table of Contents</a></li>-->
+                <h4>Linux</h4>
+                <li><a href="https://itsfoss.com/install-debian-easily/" target="_blank" rel="noopener noreferrer">Abhishek Prakash: How to Easily Install Debian Linux</a></li>
+                <li><a href="https://www.youtube.com/watch?v=CJ41KZ0fBMc&t=264s" target="_blank" rel="noopener noreferrer">YouTube - Chris Titus Tech: Installing Linux The "Right" Way</a></li>
+                <li><a href="https://www.youtube.com/watch?v=rf3EN7e-34g" target="_blank" rel="noopener noreferrer">YouTube - Digital Scriptorium: How to Install Debian 12 "Bookworm" Linux from Start to Finish + Basic Configurations [2024]</a></li>
+                <h5>Programi za Linux</h5>
+                <li><a href="https://manpages.debian.org/bookworm/dwm/dwm.1.en.html" target="_blank" rel="noopener noreferrer">Linux Debian: General Commands Manual - dynamic window manager</a> (seznam bližnjic <a href="#dwm">DWM</a>-ja)</li>
+                <li><a href="https://lukesmith.xyz/" target="_blank" rel="noopener noreferrer">Luke Smith</a> (osebna spletna stran)
+                    <ul class="s">
+                        <li><a href="https://github.com/LukeSmithxyz/voidrice" target="_blank" rel="noopener noreferrer">GitHub - Luke Smith: voidrice</a> (primer nastavitvenih datotek računalniškega okolja, programov Luka Smitha)</li>
+                        <li><a href="https://www.youtube.com/c/lukesmithxyz" target="_blank" rel="noopener noreferrer">YouTube - Luke Smith</a>
+                            <ul class="s">
+                                <li><a href="https://www.youtube.com/watch?v=3C6saSpX4KQ" target="_blank" rel="noopener noreferrer">YouTube - Luke Smith: Programs that Suck Less! suckless</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=sZIEdI9TS2U" target="_blank" rel="noopener noreferrer">YouTube - Luke Smith: Great Music is Unpronounceable: ncmpcpp w/ mpd</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://larbs.xyz/larbs-dwm.pdf" target="_blank" rel="noopener noreferrer">A Friendly Guide to LARBS! by Luke Smith</a> (vodič po Linux programju)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <footer>Zadnja posodobitev te strani: <time datetime="2025-02-16">16. 2. 2025</time>
+            <br><span class="pripis">Predhodne posodobitve: <time datetime="2024-09-06">6. 9. 2024</time>, <time datetime="2024-11-10">10. 11. 2024</time></span></span>
+        </footer>
+    </body>
+    <link href="styles.css" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+</html>
