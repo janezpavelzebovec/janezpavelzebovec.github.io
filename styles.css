@@ -72,6 +72,7 @@ main {
 	margin:auto;
     padding: 1em;
     padding-top: 0;
+    padding-bottom: 100vh;
     flex: 1;
 }
 
