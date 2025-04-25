@@ -1,147 +1,130 @@
 <!doctype html>
 <html lang="sl">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Cache-control" content="public">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Janez Pavel Žebovec</title>
-        <meta name="title" content="Janez Pavel Žebovec">
-        <meta name="description" content="Osebna spletna stran, namenjena zbiranju in deljenju mojih zanimanj.">
-        <meta name="keywords" content="Janez Pavel Žebovec, osebna spletna stran" />
-        <meta name="copyright" content="Janez Pavel Žebovec" />
+    <title>Janez Pavel Žebovec</title>
+    <meta name="description" content="Moja osebna spletna stran"/>
+    <meta name="keywords" content="Janez Pavel, Žebovec, osebna spletna
+stran"/>
+    
+    <link rel="shortcut icon" type="image/svg" href="images/favicon.svg" />
+    <link rel="icon" href="images/favicon.ico">
 
-        <link rel="shortcut icon" type="image/png" href="images/icon.png">
-        <link rel="icon" href="images/favicon.ico">
-        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any">
-        <meta name="application-name" content="Janez Pavel Žebovec">
-        <meta name="apple-mobile-web-app-title" content="Janez Pavel Žebovec">
-        <meta name="msapplication-TileColor" content="#121212">
-        <meta name="theme-color" content="#121212">
-        <link rel="canonical" href="https://janezpavelzebovec.net/">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #121212;
+            color: #eee;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+            max-width: 50em;
+            margin: auto;
+            padding: 1em;
+            padding-top: 0;
+            font-size: 1.1em;
+        }
+        header {
+            height: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #domov {
+            width: 3em;
+            aspect-ratio: 1 / 1;
+            display: block;
+            padding: 0.5em;
+            border-radius: 50%;
+        }
+    </style>
 
-        <meta property="og:title" content="Janez Pavel Žebovec">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="images/JPŽ-drevo.png">
-        <meta property="og:url" content="https://www.janezpavelzebovec.net/">
-        <meta property="og:description" content="Osebna spletna stran, namenjena zbiranju in deljenju mojih zanimanj.">
-        <meta property="og:site_name" content="Janez Pavel Žebovec">
-
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:creator" content="@JanezPavelZ">
-        <meta name="twitter:title" content="Janez Pavel Žebovec">
-        <meta name="twitter:description" content="Osebna spletna stran, namenjena zbiranju in deljenju mojih zanimanj.">
-        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png">
-    </head>
-    <body>
-        <label class="hamburger-menu">
-          <input type="checkbox" />
-        </label>
-        <aside class="sidebar">
-            <nav>
-                <div><a class="not" href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div>
-                <div><a class="not" href="./visoka_slovenscina">Visoka slovenščina</a></div>
-                <div><a class="not" href="./moj_rodovnik">Moj rodovnik</a></div>
-                <div><a class="not" href="./programje">Programje</a></div>
-                <div><a class="not" href="./glasopisnica">Glasopisnica</a></div>
-                <br>
-                <div><a class="not" href="./knjiznica">Knjižnica</a></div>
-            </nav>
-        </aside>
-
-        <button id="stikaloNacina">
-            <!--<img src="images/mode.svg"
-                class="obrnjena zasencena"
-                width="20em"
-                height="20em"
-                style="margin: 0px;">-->
-            <svg
-                width="100%"
-                viewBox="0 0 496 496"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg">
-                <path
-                    fill="currentColor"
-                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
-                    transform="translate(-8 -8)"
-                    id="path2" />
-            </svg> 
-        </button>
-
-        <div style="display:flex; align-items: center; justify-content: center; flex-wrap: wrap">
-            <!--<img src="images/JPZ.svg"
-                class="obrnjena zasencena"
-                width="250rem"
-                height="250rem"
-                style="margin: 10px; margin-bottom: 0">-->
-            <svg
-                width="250"
-                height="250"
-                viewBox="0 0 66.145834 66.145833"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg">
-                <g
-                    id="layer1"
-                    transform="translate(-35.79838,-107.50605)">
-                    <g
-                        transform="matrix(0.26458333,0,0,0.26458333,21.551585,79.281092)">
-                        <path
-                            fill="currentColor"
-                            d="m 167.94976,120.89703 -18.16066,18.16066 14.52854,14.52851 3.63212,3.63212 H 104.38748 L 86.226831,175.37898 H 216.98353 l -38.28103,38.28103 c -20.10672,-18.87405 -37.01362,-30.43581 -50.70618,-34.6489 -15.73919,-4.84283 -32.083842,1.21075 -49.03375,18.16066 -14.528493,14.52847 -21.187425,28.45171 -19.976717,41.7695 1.210709,13.31777 16.344649,34.5053 45.401627,63.56227 l 63.541,-63.54099 3.68002,3.58424 -63.58888,63.5889 h 59.93014 l -21.79278,21.79276 7.26425,7.26428 14.52853,-14.52853 10.89638,10.8964 10.89641,10.89639 18.10567,-18.10567 -18.14645,-18.21563 h 63.60307 l 18.16064,-18.16066 H 140.70879 l 38.28102,-38.28102 c 20.10672,18.87404 37.01363,30.43579 50.70618,34.6489 15.7392,4.84281 32.08385,-1.21075 49.03376,-18.16066 14.52849,-14.52849 21.18742,-28.45173 19.97671,-41.7695 -1.21071,-13.31779 -16.34465,-34.5053 -45.40162,-63.56228 l -63.54101,63.54099 -3.68001,-3.58423 63.58887,-63.58891 h -59.93014 l 21.79278,-21.79276 -7.26426,-7.26428 -14.52852,14.52854 -10.89641,-10.89641 z m 39.89846,203.45429 0.008,0.008 0.0478,-0.0621 z M 238.7763,189.90751 c 14.5285,14.52848 26.0303,27.24099 34.50524,38.13736 8.47497,10.89638 7.8696,21.18746 -1.81606,30.87312 -9.68566,9.68567 -21.7928,10.29101 -36.3213,1.81607 -11.84538,-6.90981 -24.51033,-16.68557 -37.96535,-29.22907 z m -133.90642,6.80315 c 5.42927,0.23173 11.32204,2.20151 17.67825,5.9093 11.84539,6.90981 24.51032,16.68555 37.96534,29.22907 L 118.916,273.4465 C 104.38751,258.91803 92.88572,246.20552 84.410765,235.30914 75.935813,224.41276 76.54117,214.1217 86.226831,204.43602 c 5.448185,-5.44817 11.66256,-8.02331 18.643049,-7.72536 z" />
-                    </g>
-                </g>
-            </svg>
-            <!--<p class="besedilosred pripis"><i>
-                <br>Sin očeta in matere, brat njih sinov,
-                <br>potomec svojih častitljivih prednikov.
-                <br>Bil krščen v vodi, ime biló je dano,
-                <br>vsepovsod za vedno nositi ga zbrano.
-                <br>Let star, kol'krat se zbudila je narava,
-                <br>'kar bíti začel, ugledana svetlava.
-                <br>
-                <br>Iz naše rodne slovenske prsti rastóč,
-                <br>v hrast veličasten, močan, vetrovom kljub'jóč.
-                <br>Zasidran globoko, z močnim lubjem obdan,
-                <br>od viharjev, bolezni sveta nezavdán.
-                <br>Zemlja težka, groba in debela skorja,
-                <br>ne dá hoditi, pa če taka je volja.
-                </i>
-            </p>-->
-        </div>
-        <div class="vsebina">
-            <p>Ta spletna stran je namenjena preglednem zbiranju in podajanju mojih zanimanj in prizadevanj; z veseljem jo prepuščam na voljo tudi drugim s podobnimi zanimanji.</p>
-            <hr>
-            <!--<p>Precej svojega dragocenega časa preživim tudi na spletu, kjer rastem v znanju, prav tako pa znanje, veščine in voljo delim tudi z ostalimi:</p>-->
-            <ul class="brez">
-                <li><a href="https://www.geni.com/people/Janez-Pavel-%C5%BDebovec" target="_blank" rel="noopener noreferrer">Geni</a></i> in <a href="https://gw.geneanet.org/japaze1_w" target="_blank" rel="noopener noreferrer">Geneanet</a></i> (trenutno glavno drevo je na Grampsu), kjer popisujem častivredne korenine svojih prednikov in njihovih potomcev (glej tudi <a class="not" ref="./mojrodovnik">Moj rodovnik</a>);</li>
-                <li><a href="https://github.com/janezpavelzebovec" target="_blank" rel="noopener noreferrer">GitHub</a></i>, ki trenutno tudi streže to spletno mesto;</li>
-                <li><a href="https://www.openstreetmap.org/user/Janez%20Pavel%20%C5%BDebovec" target="_blank" rel="noopener noreferrer">Open Street Map</a></i>, kjer dopolnjujem, popravljam in posodabljam zemljevid naše domače premičnice;
-                    <ul class="brez">
-                        <li>Neis-One: <a href="https://yosmhm.neis-one.org/?Janez%20Pavel%20%C5%BDebovec" target="_blank" rel="noopener noreferrer">OSM Heat Map</a></li>
-                        <li>Neis-One: <a href="https://hdyc.neis-one.org/?Janez%20Pavel%20%C5%BDebovec" target="_blank" rel="noopener noreferrer">How did you contribute to OpenStreetMap?</a></li>
-                    </ul>
-                </li>
-                <!--<li><a href="https://sl.wikipedia.org/wiki/Uporabnik:H%C3%AErnamae_P%C3%AEn_Iono%C3%ABryn" target="_blank" rel="noopener noreferrer">Wikipedija</a></i>, kjer pomagam poučevati srenjo o tem, kar je vredno vedeti;</li>-->
-                <li><a href="https://www.w3profile.com/JanezPavelZebovec" target="_blank" rel="noopener noreferrer">W3Schools</a></i>, ki je eden virov učenja programiranja;</li>
-            </ul>
-            <p>elektronska pošta: <i><a href="mailto:janezpavel.zebovec@gmail.com">janezpavel.zebovec@gmail.com</a></i></p>
-            </ul>
-            <hr>
-            <ul class="brez">
-                <li><i><a href="https://www.goodreads.com/review/list/148184173-janez-pavel-ebovec?ref=nav_mybooks&shelf=read" target="_blank" rel="noopener noreferrer">prebrane knjige (Goodreads)</a></i> (vsaj precej teh)</li>
-                <li><i><a href="https://www.goodreads.com/review/list/148184173-h-rnamae-p-n?shelf=dobre-knjige&visible_control=batchEdit" target="_blank" rel="noopener noreferrer">dobre knjige (Goodreads)</a></i> (raznih zvrsti in starostnega razreda)</li>
-                <li><i><a href="https://www.imdb.com/list/ls527692757/" target="_blank" rel="noopener noreferrer">dobri filmi (IMDb)</a></i> (oziroma tisti, ki bolj izstopajo iz bolj slabega povprečja)</li>
-                <li><i><a href="https://open.spotify.com/playlist/4ZSRzMCXUwssvjSRL1lRVn?si=c2af2b5197854a59" target="_blank" rel="noopener noreferrer">dobra glasba (Spotify)</a></i> (nekaj skladb)</li>
-            </ul>
-        </div>
-        <footer class="obvestilo">To spletno mesto je v zgodnjem nastajanju, zato nekatere zadeve še ne delujejo tako, kot bi morale, mnogo strani je nepopolnih/pomankljivih, spletno mesto pa se zato precej pogosto posodablja.
-            <br>
-            <br>Zadnja posodobitev te strani: <time datetime="2025-02-16">16. 2. 2025</time>
-            <br>Predhodne posodobitve: <time datetime="2024-07-07">7. 7. 2024</time>, <time datetime="2024-09-06">6. 9. 2024</time>, <time datetime="2024-11-10">10. 11. 2024</time>
-            <br>Vzpostavitev tega spletnega mesta na GitHubu: <time datetime="2023-08-19">19. 8. 2023</time> (na naslovu <i>janezpavelzebovec.net</i> od <time datetime="2023-09-12">12. 9. 2023</time>)
-        </footer>
-    </body>
-    <link href="styles2.css" rel="stylesheet">
-    <script src="scripts2.js" defer></script>
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"/>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+    <a href="/" aria-label="Domov"><?xml version="1.0" encoding="UTF-8"?>
+        <svg id="domov" alt="JPŽ" viewBox="0 0 200.29 184.95" xmlns="http://www.w3.org/2000/svg">
+            <path d="m100.16 175.85-9.097-9.097-6.06 6.059-6.059 6.06-3.037-3.039-3.038-3.038 18.16-18.16h-50.008l26.54-26.546 26.54-26.545-1.536-1.497-1.536-1.496-26.527 26.523-26.527 26.522-1.482-1.516c-3.775-3.864-5.546-5.696-7.092-7.336-16.688-17.704-26.211-31.284-28.698-40.924-1.21-4.691-0.863-10.232 0.99-15.79 1.699-5.097 4.565-10.096 8.84-15.423 3.371-4.2 7.977-8.867 12.227-12.39 7.033-5.829 14.255-9.477 20.998-10.607 4.438-0.744 8.947-0.517 13.093 0.659 11.322 3.209 25.58 12.759 42.257 28.304 0.478 0.444 0.891 0.809 0.92 0.81 0.028 0 7.213-7.173 15.966-15.94l15.916-15.94-109.05-0.035 15.156-15.156h53.013l-7.578-7.578-7.577-7.579 7.577-7.578 7.578-7.578 9.097 9.097 9.098 9.097 6.059-6.059 6.06-6.059 6.074 6.076-18.16 18.16h50.009l-26.54 26.545-26.54 26.544 1.535 1.495 1.536 1.495 26.528-26.52 26.529-26.52 1.601 1.635c6.117 6.25 9.362 9.693 13.283 14.098 13.381 15.03 20.977 26.846 22.66 35.248 0.485 2.426 0.556 5.402 0.196 8.275-0.764 6.103-3.472 12.418-8.059 18.795-3.846 5.346-9.652 11.442-15.036 15.786-3.795 3.062-6.921 5.088-10.666 6.912-4.634 2.257-9.022 3.433-13.549 3.632-5.12 0.225-9.614-0.74-15.578-3.344-9.785-4.273-21.875-12.95-35.046-25.152a173.77 173.77 0 0 0-1.525-1.4l-0.33-0.295-15.969 15.97-15.968 15.968h109.1l-15.156 15.156-53.064 0.035 15.13 15.2-7.54 7.539-7.54 7.54zm-32.637-65.878 17.354-17.355-0.496-0.461c-8.602-7.999-17.792-15.358-25.3-20.257-3.967-2.589-6.638-4.163-9.11-5.37-3.704-1.807-7.106-2.842-10.411-3.167-1.054-0.104-3.329-0.086-4.339 0.034-3.886 0.46-7.383 2.025-10.692 4.783-0.834 0.695-2.495 2.348-3.246 3.23-2.748 3.226-4.266 6.306-4.772 9.681-0.15 1-0.15 2.947-2e-3 4.006 0.422 3 1.703 6.037 3.815 9.045 0.582 0.828 2.105 2.79 3.522 4.534 5.168 6.363 11.203 13.127 18.443 20.67 2.292 2.389 7.783 7.982 7.835 7.982 0.023 0 7.854-7.81 17.399-17.355zm97.251 11.61c4.751-0.494 8.898-2.598 12.753-6.47 6.556-6.586 8.053-13.493 4.506-20.802-0.88-1.813-1.786-3.207-3.58-5.508-5.066-6.5-12.265-14.668-20.39-23.131-1.632-1.702-7.416-7.615-7.739-7.913l-0.177-0.165-17.357 17.357c-9.546 9.546-17.35 17.376-17.34 17.4 0.028 0.069 2.703 2.513 4.557 4.161 9.126 8.119 17.582 14.485 25.825 19.443 5.566 3.349 10.079 5.089 14.502 5.591 0.956 0.109 3.55 0.13 4.44 0.038z" fill="currentColor" stroke-width=".066768"/>
+        </svg></a>
+    </header>
+    <main>
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-04-25">2025-04-25</time></p>
+        <p>To je moja spletna stran, namenjena mojim zanimanjem in
+        potrebam.</p>
+        <ul>
+        <li><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a> - njen
+        namen je predstavitev vesolja kot ure;</li>
+        <li><a href="./visoka_slovenscina">Visoka slovenščina</a> -
+        kakšna bi slovenščina morala biti;</li>
+        <li><a href="./glasopisnica">Glasopisnica</a> - moja pisava v
+        delu, ki bi omogočila zapis vseh jezikov;</li>
+        <li><a href="./moj_rodovnik">Moj rodovnik</a> - moje družinsko
+        drevo, na katerem delam (s poudarkom na prednikih);</li>
+        <li><a href="./programje">Programje</a> - predstavitev dobre
+        miselnosti in seznam dobrih računalniških orodij.</li>
+        </ul>
+        <p>Tu je tudi <a href="./knjiznica">Knjižnica</a>, kjer so
+        zbrana nekatera znanja mojih zanimanj.</p>
+        <hr />
+        <p>elektronska pošta: <a
+        href="mailto:janezpavel.zebovec@gmail.com">janezpavel.zebovec@gmail.com</a></p>
+        <p>Nekaj mest spleta, kjer sem bolj dejaven:</p>
+        <ul>
+        <li><a href="https://github.com/janezpavelzebovec">GitHub</a>,
+        kjer je nekaj mojih programčkov in ta spletna stran;</li>
+        <li><a
+        href="https://www.openstreetmap.org/user/Janez%20Pavel%20%C5%BDebovec">Open
+        Street Map</a>, kjer prispevam k prostodostopnem
+        zemljevidu;</li>
+        <li><a
+        href="https://www.openhistoricalmap.org/user/Janez%20Pavel%20%C5%BDebovec">Open
+        Historical Map</a>, ki je kakor Open Street Map, vendar za
+        zgodovinsko zemljepisje (zemljevid je še bolj na začetku);</li>
+        <li><a href="https://gw.geneanet.org/japaze1_w">Geneanet</a>, <a
+        href="https://www.wikitree.com/wiki/%C5%BDebovec-1">WikiTree</a>
+        in <a
+        href="https://www.geni.com/people/Janez-Pavel-%C5%BDebovec">Geni</a>,
+        kjer popisujem predvsem častivredne korenine svojih prednikov in
+        njihovih potomcev (glej tudi <a href="./mojrodovnik">Moj
+        rodovnik</a>);</li>
+        <li><a
+        href="https://sl.wikipedia.org/wiki/Uporabnik:H%C3%AErnamae_P%C3%AEn_Iono%C3%ABryn">Wikipedija</a>,
+        kjer prispevam k člankom, ki se mi zdijo pomembnejši ali
+        zanimivejši, vendar nisem dosti dejaven</li>
+        </ul>
+        <p>Še nekaj seznamov, razvidov:</p>
+        <ul>
+        <li><a
+        href="https://www.w3profile.com/JanezPavelZebovec">W3Schools</a>,
+        kjer se deloma spoznavam s programiranjem;</li>
+        <li><a
+        href="https://www.goodreads.com/review/list/148184173-janez-pavel-ebovec?shelf=readi">prebrane
+        knjige</a> - seveda tu niso navedene vse;</li>
+        <li><a href="https://www.imdb.com/list/ls521309978/">pogledani
+        filmi</a> - seveda tu niso navedeni vsi;</li>
+        </ul>
+        <p>Pa nekaj priporočil (po mojem okusu):</p>
+        <ul>
+        <li><a
+        href="https://www.goodreads.com/review/list/148184173-h-rnamae-p-n?shelf=dobre-knjige&amp;visible_control=batchEdit">dobre
+        knjige</a> - ne nujno odlične;</li>
+        <li><a
+        href="https://open.spotify.com/playlist/4ZSRzMCXUwssvjSRL1lRVn?si=bkhqqx9iTU6FecmLCyzkow">dobre
+        skladbe</a> - ne nujno odlične;</li>
+        <li><a href="https://www.imdb.com/list/ls527692757/">dobri
+        filmi</a> - ne nujno odlični;</li>
+        </ul>
+    </main>
+    <footer>Spletno stran trenutno močno posodabljam, zato so nekatere strani začasno ukinjene, mnoge povezave znotraj strani ne delujejo.
+        <br><button id="stikaloTeme">Preklopi barvni način strani</button>
+    </footer>
+</body>
 </html>
