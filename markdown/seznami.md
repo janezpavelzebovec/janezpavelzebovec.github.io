@@ -10,7 +10,8 @@ author: Janez Pavel Žebovec
 
 ## Spletna mesta in strani
 
-- [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
+- [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/);
+- [Odysee](https://odysee.com/);
 - [Thoughty2](https://www.youtube.com/@Thoughty2) - večinoma zgodovinske zanimivosti;
 - [UsefulCharts](https://www.youtube.com/@UsefulCharts) - zgodovinski in drugi prikazi;
 
@@ -22,15 +23,21 @@ YouTube:
 
 You Tube:
 
+- [Dr Ben Miles](https://www.youtube.com/@DrBenMiles);
 - [SmarterEveryDay](https://www.youtube.com/@smartereveryday);
 - [StarTalk](https://www.youtube.com/@StarTalk) - *astrofizika*, naravoslovje na splošno (Neil deGrasse Tyson);
 - [Veritasium](https://www.youtube.com/@veritasium);
 
 #### Računstvo
 
-Glej tudi stran [Računstvo](racunstvo).
+Glej tudi stran [Računstvo](knjiznica/racunstvo).
 
 - [Desmos - calculator](https://www.desmos.com/calculator);
+
+You Tube:
+
+- [3Blue1Brown](https://www.youtube.com/@3blue1brown);
+- [Jeffrey Chasnov](https://www.youtube.com/@Jeff-math);
 
 #### *Fizika*
 
@@ -59,7 +66,7 @@ Glej tudi stran [Računstvo](racunstvo).
 
 ### Jezikoslovje
 
-Glej tudi stran [Jezikoslovje](jezikoslovje).
+Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 
 - [Etymonline - Online Etymology Dictionary](https://www.etymonline.com/) - svetovni izvoroslovni slovar;
 - [Fran](https://www.fran.si/) - slovarji Inštituta za slovenski jezik Frana Ramovša ZRC SAZU;
@@ -111,7 +118,7 @@ Druge zbirke zemljepisnih podatkov:
 
 ### Zgodovina
 
-Glej tudi stran [Zgodovina](zgodovina).
+Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 
 - [GisKD pregledovalnik](https://geohub.gov.si/ghapp/giskd/) - zemljevid kulturne dediščine, arheoloških najdišč;
 - [Gradovi Slovenije](https://gradovislovenije.si/);
@@ -136,15 +143,18 @@ You Tube:
 
 ### Modroslovje, krščanstvo
 
+- [Luka Smith](https://lukesmith.xyz/);
+
 You Tube:
 
+- [Alexander Grace](https://www.youtube.com/@alexandergrace5350);
 - [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom);
 - [hochelaga](https://www.youtube.com/@hochelaga) - Sveto pismo;
 - [Luke Smith](https://www.youtube.com/@LukeSmithxyz) - programstvo (Linux), modroslovje (*filozofija*), pravoslavstvo?;
 
 ### Rodoslovje
 
-Glej tudi stran [Rodoslovje](rodoslovje).
+Glej tudi stran [Rodoslovje](knjiznica/rodoslovje).
 
 - [Geneanet](https://en.geneanet.org/);
 - [Geni](https://www.geni.com/) - stran za izgradnjo svetovnega družinskega drevesa;
@@ -164,8 +174,13 @@ You Tube:
 
 #### Glasba
 
+You Tube:
+
 - [Clamavi De Profundis](https://www.youtube.com/@ClamaviDeProfundis);
+- [Emmanuel Music](https://www.youtube.com/@Emmanuel-Music);
 - [for KING + COUNTRY](https://www.youtube.com/@ForKingAndCountry);
+- [Pentatonix](https://www.youtube.com/@PTXofficial);
+- [SkromniBandOfficial](https://www.youtube.com/@SkromniBandOfficial);
 - [Two Steps From Hell](https://www.youtube.com/@TwoStepsFromHell-Official);
 
 ### *Tehnologija*
@@ -179,8 +194,46 @@ You Tube:
 
 - [ALEX LAB](https://www.youtube.com/@ALEXLAB) - izdelava Iron Manove obleke;
 - [Clay Hayes](https://www.youtube.com/@clayhayeshunter);
+- [H Carpenter](https://www.youtube.com/@HCarpenter) - tesarstvo;
 - [Hacksmith Industries](https://www.youtube.com/@hacksmith);
-- [Stuff Made Here](https:a
+- [Stuff Made Here](https://www.youtube.com/@StuffMadeHere)
+
+### Programiranje
+
+Glej tudi strani [Programje](programje) in [Linux](Linux).
+
+- [Geeks for Geeks](https://www.geeksforgeeks.org/);
+- [GitHub](https://github.com/) - deljenje programov;
+- [MDN](https://developer.mozilla.org/);
+- [Suckless](https://suckless.org/);
+    - [Suckless - Philosphy](https://suckless.org/philosophy/);
+- [W3Schools](https://www.w3schools.com/) - priročnik za programiranje;
+
+You Tube:
+
+- [Chris Titus Tech](https://www.youtube.com/@ChrisTitusTech);
+- [DistroTube](https://www.youtube.com/@DistroTube) - Linux;
+- [RootJunky](https://www.youtube.com/@Rootjunkycom/videos) - vlamljanje v Android;
+
+#### Spletne strani
+
+- [CSS-Tricks](https://css-tricks.com/);
+    - [Dark Mode in CSS Guide](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/);
+- [web.dev](https://web.dev/);
+- [Web Dev Simplified Blog](https://blog.webdevsimplified.com/);
+
+Dobre spletne strani:
+
+- [Suckless - The Web Sucks](https://suckless.org/sucks/web/);
+- [Motherfucking Website](https://motherfuckingwebsite.com/) - povsem preprosta spletna stran;
+- [Better Motherfucking Website](http://bettermotherfuckingwebsite.com/) - zelo preprosta spletna stran;
+- [Best Motherfucking website](https://bestmotherfucking.website/) - preprosta spletna stran;
+- [Perfect Motherfucking Website](https://perfectmotherfuckingwebsite.com/) - preprosta spletna stran;
+
+You Tube:
+
+- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified);
+
 ### Dostop do drugače brezplačno spletno nedostopnih vsebin
 
 - [Internet Archive](https://web.archive.org/) - arhiv digitalnih virov (spletnih strani, knjig, ...);
@@ -202,14 +255,17 @@ You Tube:
 | Asterix | | Globok prepad | | Albert Uderzo | Kristina Šircelj | slo. |
 | | | Dogodek v mestu Gogi | Igra v dveh dejanjih | Slavko Grum | | slo. |
 | Don Camillo in Peppone | 8 | Don Camillo in Peppone | | Giovannino Guareschi | Dean Rajčič | slo. |
+| | | E. T. Vesoljček | in njegove dogodovščine na Zemlji | William Kotzwinkle | Mitja Meršol | slo. |
 | Gospodar Prstanov | 1 | Bratovščina prstana | | John Ronald Reuel Tolkien | Branko Gradišnik | slo. |
 | Gospodar Prstanov | 2 | Stolpa | | John Ronald Reuel Tolkien | Branko Gradišnik | slo. |
 | Gospodar Prstanov | 3 | Kraljeva vrnitev | | John Ronald Reuel Tolkien | Branko Gradišnik | slo. |
 | | | Inferno | | Dan Brown | Nataša Müller | slo. |
+| | | Izgubljeno mesto | Sodobni mornar v napeti akciji na odprtem morju | Clive Cussler | Nina Drstvenšek | slo. |
 | | | Janez Pavel II. | | Louis Bernard Koch | Irena Modrijan | slo. |
 | Korenine | 1 | Korenine | Saga o ameriški družini | Alex Haley | Branko Gradišnik | slo. |
 | Korenine | 2 | Korenine | Saga o ameriški družini | Alex Haley | Branko Gradišnik | slo. |
-| Pater Elija | 1 | Apokalipsa | | Michael D. O'Brien | Ana MArija Toman | slo. |
+| | | Otok zakladov | | Robert Louis Stevenson | Pavel Holeček | slo. |
+| Pater Elija | 1 | Apokalipsa | | Michael D. O'Brien | Ana Marija Toman | slo. |
 | | | Sveto pismo | Nove zaveze | | | slo. |
 | Sveto pismo | 1 | Sveto pismo Stare zaveze | Zgodovinske knjige – ... | | Matija Slavič | slo. |
 | Sveto pismo | 2 | Sveto pismo Stare zaveze | Zgodovinske knjige – ... | | Matija Slavič | slo. |
@@ -223,6 +279,9 @@ You Tube:
 | The Lord of the Rings | 2 | The Two Towers | | John Ronald Reuel Tolkien | | ang. |
 | The Lord of the Rings | 3 | The The Return of the King | | John Ronald Reuel Tolkien | | ang. |
 | | | The Silmarillion | | John Ronald Reuel Tolkien | | ang. |
+| V vrtincih vojne | | Križarka Ulysses | | Alistair MacLean | Milan Mlačnik | slo. |
+| V vrtincih vojne | | Na jug, mimo Jave | | Alistair MacLean | Ksenija Dolinar | slo. |
+| V vrtincih vojne | | Navaronska topova | | Alistair MacLean | Borut Puntar | slo. |
 | | | Vstopi v Sveto pismo | | | Milena Turnšek | slo. |
 | | | Youcat v slovenščini | Katekizem katoliške Cerkve za mlade | | Anton Štrukelj | slo. |
 | Zgodbe iz Narnija | 2 | Konj in njegov deček | | Clive Staples Lewis | Jakob Emeršič | slo. |
