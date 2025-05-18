@@ -1,0 +1,229 @@
+---
+title: Seznami
+date: 2025-05-18
+description: Priporočila oz. seznami raznih zadev.
+keywords: priporočila
+author: Janez Pavel Žebovec
+---
+
+# Moji seznami
+
+## Spletna mesta in strani
+
+- [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
+- [Thoughty2](https://www.youtube.com/@Thoughty2) - večinoma zgodovinske zanimivosti;
+- [UsefulCharts](https://www.youtube.com/@UsefulCharts) - zgodovinski in drugi prikazi;
+
+YouTube:
+
+- [Fearless & Far](https://www.youtube.com/@fearlessandfar) - potovanja k domorodnim plemenom;
+
+### Naravoslovje
+
+You Tube:
+
+- [SmarterEveryDay](https://www.youtube.com/@smartereveryday);
+- [StarTalk](https://www.youtube.com/@StarTalk) - *astrofizika*, naravoslovje na splošno (Neil deGrasse Tyson);
+- [Veritasium](https://www.youtube.com/@veritasium);
+
+#### Računstvo
+
+Glej tudi stran [Računstvo](racunstvo).
+
+- [Desmos - calculator](https://www.desmos.com/calculator);
+
+#### *Fizika*
+
+- [The Physics Hypertextbook](https://physics.info/);
+    - [Frequently Used Equations](https://physics.info/equations/) - pogoste enačbe;
+
+##### Vesoljeslovje
+
+- [ESky](https://www.glyphweb.com/esky) - *enciklopedija* nebesnih teles;
+
+###### Čas
+
+- [Time and Date](https://www.timeanddate.com/);
+
+#### Živoslovje
+
+- [iNaturalist](https://www.inaturalist.org/) - prepoznava (in popis) živih bitij;
+- [Observable - Tree of Life](https://observablehq.com/@d3/tree-of-life) - drevo življenja;
+- [PlantNet](https://plantnet.org/) - prepoznava (in popis) rastlin;
+
+#### Snovoslovje
+
+- [IUPAC](https://iupac.org/);
+    - [Periodic Table of Elements](https://iupac.org/what-we-do/periodic-table-of-elements/);
+- [Periodic Table](https://www.periodictable.co.za/);
+
+### Jezikoslovje
+
+Glej tudi stran [Jezikoslovje](jezikoslovje).
+
+- [Etymonline - Online Etymology Dictionary](https://www.etymonline.com/) - svetovni izvoroslovni slovar;
+- [Fran](https://www.fran.si/) - slovarji Inštituta za slovenski jezik Frana Ramovša ZRC SAZU;
+- [Franja](https://franja.si/) - večjezični portal Inštituta za slovenski jezik Frana Ramovša ZRC SAZU;
+- [Omniglot](https://www.omniglot.com/) - *enciklopedija* pisav in jezikov;
+
+### Svetovno onesnaženje
+
+- [The New York Times - How 2016 Became Earth’s Hottest Year on Record](https://www.nytimes.com/interactive/2017/01/18/science/earth/2016-hottest-year-on-record.html);
+
+### Zemljepisje
+
+- [Map Projection Explorer](https://www.geo-projections.com/) - prikazovalnik različnih preslikav zemljevidov sveta;
+
+#### Zemljevidi
+
+Za zgodovinske zemljevide glej razdelek [Zgodovinski zemljevidi](#Zgodovinski_zemljevidi).
+
+- [David Rumsey Map Collection](https://www.davidrumsey.com/) - predvsem zgodovinski zemljevidi;
+- [Flurnamen](https://maps.flurnamen.at/) - ledinska imena
+- [Geology](https://geology.com/world);
+- [GeoNames](https://www.geonames.org/v3/);
+- [Geopedia](https://www.geopedia.world);
+    - [Geopedia - GURS - Prostorski podatki](https://www.geopedia.world/#T276_x1614235.3818404947_y5798283.654628612_s11_b2852);
+- [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti;
+- [Mapillary](https://www.mapillary.com/app) - ulični posnetki;
+- [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim;
+- [Open Street Map](https://www.openstreetmap.org/) - prosto dostopen in urejevan zemljevid;
+- [OSM Buildings](https://osmbuildings.org/) - trorazsežnostni prikaz zgradb v [Open Street Mapu](https://www.openstreetmap.org/);
+- [Overpass Turbo](https://overpass-turbo.eu/) - iskalnik značilnosti po zemljevidu [Open Street Mapu](https://www.openstreetmap.org/);
+- [ShadeMap](https://shademap.app/) - zemljevid senc po svetu v poljubnem trenutku;
+- [Windy](https://www.windy.com) - vremenski zemljevidi;
+
+Druge zbirke zemljepisnih podatkov:
+
+- [Kočevski rog - lokacije](https://www.google.com/maps/d/u/0/viewer?mid=12iNVSpmmL8bA2B3qieBjdweF2t8&femb=1&ll=45.666989008977595%2C15.028848286105609&z=14);
+- [Župnije v nadškofiji Ljubljana](https://www.google.com/maps/d/viewer?mid=17_9jBIaZns8lH4PIv7GnIJ8DnoU&hl=sl&ll=46.066899841485196%2C14.912383489615394&z=10);
+
+##### Državni zemljevidi Republike Slovenije
+
+- [Atlas okolja](https://gis.arso.gov.si/evode/profile.aspx) - posnetki LiDAR, satelitski posnetki, pregledna zemljevida in pomorski zemljevid;
+- [Geoportal AKOS](https://gis.akos-rs.si/) - zemljevid z omrežji (vodovodno, električno, poštno, želežniško, *mobilno*, *radijsko* ...), zemljiški zemljevid;
+- [GisKD pregledovalnik](https://geohub.gov.si/ghapp/giskd/) - zemljevid kulturne dediščine, arheoloških najdišč;
+- [INSPIRE](https://eprostor.gov.si/imps) - brskalnik po državnih zemljevidih;
+- [Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp) - povezave do raznih državnih zemljevidov;
+- [Javni pregledovalnik grafičnih podatkov MKGP](https://rkg.gov.si/GERK/WebViewer);
+- [Javni vpogled](https://ipi.eprostor.gov.si/jv/) - zemljiški;
+- [Testni 3D vpogledovalnik](https://clss.si/) - ogledovalnik trorazsežnostnega prikaza podatkov lidarja;
+
+### Zgodovina
+
+Glej tudi stran [Zgodovina](zgodovina).
+
+- [GisKD pregledovalnik](https://geohub.gov.si/ghapp/giskd/) - zemljevid kulturne dediščine, arheoloških najdišč;
+- [Gradovi Slovenije](https://gradovislovenije.si/);
+- [Homocumolat - [tag] Nostalgija](https://homocumolat.com/tag/nostalgija/) - stare slike;
+- [Kamra](https://www.kamra.si/) - zgodovinske slike Slovenije;
+- [Map Warper](https://mapwarper.net/) - prevsem zgodovinski zemljevidi, *geopozicioniranje* zemljevidov;
+- [Plemiška dediščina na Slovenskem](https://plemiska-dediscina.zrc-sazu.si/)
+- [Virtualna arhivska knjižnica](https://vac.sjas.gov.si/) - arhivi Republike Slovenije;
+
+You Tube:
+
+- [Manuel Bravo](https://www.youtube.com/@ManuelBravo/videos) - poudarek na cerkveni, rimski in egipčanski *arhitekturi*;
+
+#### Zgodovinski zemljevidi
+
+- [Arcanum Maps](https://maps.arcanum.com/);
+- [David Rumsey Historical Map Collection](https://www.davidrumsey.com/luna);
+- [Internet Archive - Historic maps [email]](https://mailchi.mp/archive.org/email-20230413rumseymaps);
+- [Map Warper](https://mapwarper.net/) - predvsem zgodovinski zemljevidi, uvažanje zemljevidov in njihovo *geopozicioniranje*;
+- [Old Maps Online](https://www.oldmapsonline.org/);
+- [Open Historical Map](https://www.openhistoricalmap.org/) - prosto dostopen in urejevan zemljevid;
+
+### Modroslovje, krščanstvo
+
+You Tube:
+
+- [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom);
+- [hochelaga](https://www.youtube.com/@hochelaga) - Sveto pismo;
+- [Luke Smith](https://www.youtube.com/@LukeSmithxyz) - programstvo (Linux), modroslovje (*filozofija*), pravoslavstvo?;
+
+### Rodoslovje
+
+Glej tudi stran [Rodoslovje](rodoslovje).
+
+- [Geneanet](https://en.geneanet.org/);
+- [Geni](https://www.geni.com/) - stran za izgradnjo svetovnega družinskega drevesa;
+- [PriRod](https://rodoslovje.uocepek.si/index.php/Zacetek) - rodoslovni pripomočki za gotico, zgodovinsko krajevno *hierarhijo* in iskanje priimkov po matičnih knjigah;
+- [Slovenska hišna imena](https://www.hisnaimena.si/);
+- [WikiTree](https://www.wikitree.com/) - družinska drevesa uporabnikov, sodelovanje med rodoslovci;
+
+### Umetnost
+
+#### Književnost
+
+- [The Encyclopedia of Arda](https://www.glyphweb.com/arda) - *enciklopedija* Tolkienovega sveta;
+
+You Tube:
+
+- [Ink and Fantasy](https://www.youtube.com/@InkandFantasy) - tudi književnost na splošno
+
+#### Glasba
+
+- [Clamavi De Profundis](https://www.youtube.com/@ClamaviDeProfundis);
+- [for KING + COUNTRY](https://www.youtube.com/@ForKingAndCountry);
+- [Two Steps From Hell](https://www.youtube.com/@TwoStepsFromHell-Official);
+
+### *Tehnologija*
+
+- [Animagraffs](https://www.youtube.com/@animagraffs);
+
+### Obrt
+(Ustvarjanje izdelkov, naprav; ročno delo, delo v delavnici ...)
+
+You Tube:
+
+- [ALEX LAB](https://www.youtube.com/@ALEXLAB) - izdelava Iron Manove obleke;
+- [Clay Hayes](https://www.youtube.com/@clayhayeshunter);
+- [Hacksmith Industries](https://www.youtube.com/@hacksmith);
+- [Stuff Made Here](https:a
+### Dostop do drugače brezplačno spletno nedostopnih vsebin
+
+- [Internet Archive](https://web.archive.org/) - arhiv digitalnih virov (spletnih strani, knjig, ...);
+- [InFire](https://infire.si/);
+
+#### Filmi
+
+- [LookMovie2](https://www.lookmovie2.to/);
+- [Movies Joy TV](https://moviesjoytv.to/);
+- [NetMovies](https://web.netmovies.to/);
+- [Partis](https://www.partis.si/);
+- [Sloflix](https://www.sloflix.com/);
+
+## Moja knjižna polica
+
+| sklop del (zbirka) | del | naslov dela | podnaslov dela | pisec | prevajalec | jezik |
+| ---| --- | ---| ---| ---| ---| ---|
+| | | Angeli in demoni | | Dan Brown | Nataša Müller | slo. |
+| Asterix | | Globok prepad | | Albert Uderzo | Kristina Šircelj | slo. |
+| | | Dogodek v mestu Gogi | Igra v dveh dejanjih | Slavko Grum | | slo. |
+| Don Camillo in Peppone | 8 | Don Camillo in Peppone | | Giovannino Guareschi | Dean Rajčič | slo. |
+| Gospodar Prstanov | 1 | Bratovščina prstana | | John Ronald Reuel Tolkien | Branko Gradišnik | slo. |
+| Gospodar Prstanov | 2 | Stolpa | | John Ronald Reuel Tolkien | Branko Gradišnik | slo. |
+| Gospodar Prstanov | 3 | Kraljeva vrnitev | | John Ronald Reuel Tolkien | Branko Gradišnik | slo. |
+| | | Inferno | | Dan Brown | Nataša Müller | slo. |
+| | | Janez Pavel II. | | Louis Bernard Koch | Irena Modrijan | slo. |
+| Korenine | 1 | Korenine | Saga o ameriški družini | Alex Haley | Branko Gradišnik | slo. |
+| Korenine | 2 | Korenine | Saga o ameriški družini | Alex Haley | Branko Gradišnik | slo. |
+| Pater Elija | 1 | Apokalipsa | | Michael D. O'Brien | Ana MArija Toman | slo. |
+| | | Sveto pismo | Nove zaveze | | | slo. |
+| Sveto pismo | 1 | Sveto pismo Stare zaveze | Zgodovinske knjige – ... | | Matija Slavič | slo. |
+| Sveto pismo | 2 | Sveto pismo Stare zaveze | Zgodovinske knjige – ... | | Matija Slavič | slo. |
+| Sveto pismo | 4 | Sveto pismo Nove zaveze | Evangeliji; Apostolska dela; Apostolski listi | | Frančišek Jere | slo. |
+| The Great Tales | | Beren and Lúthien | | John Ronald Reuel Tolkien | | ang. |
+| The Great Tales | | The Children of Húrin | | John Ronald Reuel Tolkien | | ang. |
+| The Great Tales | | The Fall of Gondolin | | John Ronald Reuel Tolkien | | ang. |
+| The Great Tales | | The Fall of Númenor | | John Ronald Reuel Tolkien | | ang. |
+| | | The Hobbit | or There and Back Again | John Ronald Reuel Tolkien | | ang. |
+| The Lord of the Rings | 1 | The Fellowship of the Ring | | John Ronald Reuel Tolkien | | ang. |
+| The Lord of the Rings | 2 | The Two Towers | | John Ronald Reuel Tolkien | | ang. |
+| The Lord of the Rings | 3 | The The Return of the King | | John Ronald Reuel Tolkien | | ang. |
+| | | The Silmarillion | | John Ronald Reuel Tolkien | | ang. |
+| | | Vstopi v Sveto pismo | | | Milena Turnšek | slo. |
+| | | Youcat v slovenščini | Katekizem katoliške Cerkve za mlade | | Anton Štrukelj | slo. |
+| Zgodbe iz Narnija | 2 | Konj in njegov deček | | Clive Staples Lewis | Jakob Emeršič | slo. |
+
