@@ -9,10 +9,10 @@
 dobrih programov"/>
     <meta name="keywords" content="programska oprema, programi, Linux"/>
     
-    <link rel="shortcut icon" type="image/svg" href="images/favicon.svg" />
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/svg" href="/images/favicon.svg" />
+    <link rel="icon" href="/images/favicon.ico">
 
-    <style>
+    <style>/*slog za boljšo učinkovitost strani*/
         body {
             margin: 0;
             font-family: sans-serif;
@@ -45,8 +45,8 @@ dobrih programov"/>
         }
     </style>
 
-    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"/>
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'"/>
+    <script src="/scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -56,8 +56,20 @@ dobrih programov"/>
         </svg></a>
     </header>
     <main>
-        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-04-25">2025-04-25</time></p>
-        <h1 id="programje">Programje</h1>
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-05-17">2025-05-17</time></p>
+        <ul>
+        <li><a href="#Programje">Programje</a>
+        <ul>
+        <li><a href="#Programi">Programi</a>
+        <ul>
+        <li><a href="#Programi_za_Linux">Programi za Linux</a></li>
+        <li><a href="#Orodja_za_Android">Orodja za Android</a></li>
+        </ul></li>
+        <li><a href="#Zunanje_povezave_in_viri">Zunanje povezave in
+        viri</a></li>
+        </ul></li>
+        </ul>
+        <h1 id="Programje">Programje</h1>
         <p>Večina ljudi se dandanes zadovolji s slabo programsko opremo,
         s tem pa se ne le trpinčijo, temveč jo tudi podpirajo. In čeprav
         mnogi jadikujejo zaradi zasebnosti, varnosti in podobnega, pri
@@ -74,7 +86,7 @@ dobrih programov"/>
         pa ne gre le za omejeno, neizkoriščeno rabo računalniške
         zmogljivosti (te ni zares za grjati), temveč za napačno rabo
         uporabljanih zmogljivosti.</p>
-        <h2 id="programi">Programi</h2>
+        <h2 id="Programi">Programi</h2>
         <p>Večinoma so tu programi, ki jih sam uporabljam, nekateri pa
         za določene naloge primerljivo dobri tem, ki jih sam uporabljam
         (spletni brskalniki za primer).</p>
@@ -135,38 +147,58 @@ dobrih programov"/>
         <td></td>
         </tr>
         <tr class="odd">
+        <td><a href="https://gramps-project.org/">Gramps</a></td>
+        <td>rodoslovje</td>
+        <td><a
+        href="https://packages.debian.org/buster/gramps">gramps</a></td>
+        <td></td>
+        </tr>
+        <tr class="even">
         <td><a href="https://inkscape.org/">Inkscape</a></td>
         <td>urejevalnik SVG</td>
         <td><a
         href="https://packages.debian.org/buster/inkscape">inkscape</a></td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td><a href="https://josm.openstreetmap.de/">JOSM</a></td>
-        <td>Java urejevalnik zemljevida Open Street Map</td>
+        <td>urejevalnik zemljevida <a
+        href="https://www.openstreetmap.org/">Open Street Map</a> v
+        jeziku Java</td>
         <td><a
         href="https://packages.debian.org/buster/josm">josm</a></td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td><a href="https://librewolf.net/">LibreWolf</a></td>
         <td>spletni brskalnik</td>
         <td><a
         href="https://librewolf.net/installation/debian/">librewolf</a></td>
         <td>zelo zaseben, varen</td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td><a
         href="https://www.mozilla.org/en-US/firefox/">Firefox</a></td>
         <td>spletni brskalnik</td>
         <td></td>
         <td>zaseben</td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td><a href="https://www.debian.org/">Linux Debian</a></td>
         <td>računalniški vršilec (operacijski sistem)</td>
         <td></td>
         <td>popolnoma prilagodljiv, trden</td>
+        </tr>
+        <tr class="odd">
+        <td><a href="https://merkaartor.be/">Merkaartor</a></td>
+        <td>urejevalnik zemljevida <a
+        href="https://www.openstreetmap.org/">Open Street Map</a> v
+        jeziku C++</td>
+        <td><a
+        href="https://packages.debian.org/buster/merkaartor">merkaartor</a></td>
+        <td>hiter; več dokumentacije na <a
+        href="https://wiki.openstreetmap.org/wiki/Merkaartor/Documentation">OSM
+        - Wiki - Merkaartor</a></td>
         </tr>
         <tr class="even">
         <td><a href="https://mpv.io/">MPV Media Player</a></td>
@@ -183,13 +215,19 @@ dobrih programov"/>
         <td>priporočeno naložiti z uradne spletne strani</td>
         </tr>
         <tr class="even">
+        <td><a href="https://www.qutebrowser.org/">QuteBrowser</a></td>
+        <td>spletni brskalnik</td>
+        <td><a href=""></a></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
         <td><a href="https://www.scribus.net/">Scribus</a></td>
         <td>urejevalnik besedilnih dokumentov</td>
         <td><a
         href="https://packages.debian.org/buster/scribus">scribus</a></td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td><a
         href="https://gitlab.gnome.org/GNOME/simple-scan">SimpleScan</a></td>
         <td>skeniranje in tiskanje</td>
@@ -197,7 +235,7 @@ dobrih programov"/>
         href="https://packages.debian.org/buster/gnome/simple-scan">simple-scan</a></td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td><a href="https://solvespace.com/">SolveSpace</a></td>
         <td>2R in 3R urejevalnik</td>
         <td><a
@@ -205,14 +243,14 @@ dobrih programov"/>
         <td>odličen za pretvorbo tehničnih načrtov v model in
         obratno</td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td><a href="https://www.vim.org/">VIM</a></td>
         <td>urejevalnik golega besedila</td>
         <td><a
         href="https://packages.debian.org/buster/vim">vim</a></td>
         <td>veliko upravljanja z bližnjicami; različica <em>vi</em></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td><a
         href="https://ytdl-org.github.io/youtube-dl/index.html">YouTube-DL</a></td>
         <td>prenos posnetkov z YouTuba in drugih spletnih mest</td>
@@ -220,7 +258,7 @@ dobrih programov"/>
         href="https://packages.debian.org/buster/youtube-dl">youtube-dl</a></td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td><a
         href="https://pwmt.org/projects/zathura/">Zathura</a></td>
         <td>ogledovalnik PDF</td>
@@ -230,7 +268,7 @@ dobrih programov"/>
         </tr>
         </tbody>
         </table>
-        <h3 id="programi-za-linux">Programi za Linux</h3>
+        <h3 id="Programi_za_Linux">Programi za Linux</h3>
         <p>Sucklessove programe je priporočljivo namestiti kar iz vira -
         neposredno s <a href="https://suckless.org/">Suckless.org</a>,
         ker jih običajno želiš prilagoditi svojim potrebam.</p>
@@ -251,40 +289,49 @@ dobrih programov"/>
         </thead>
         <tbody>
         <tr class="odd">
+        <td>ABook (Adress Book)</td>
+        <td>imenik</td>
+        <td><a
+        href="https://packages.debian.org/buster/abook">abook</a></td>
+        <td>namenjen je uporabi v <a href="#mutt">Muttu</a> (ali <a
+        href="#neomutt">NeoMuttu</a>), a se lahko uporablja tudi
+        neodvisno</td>
+        </tr>
+        <tr class="even">
         <td><a href="https://tools.suckless.org/dmenu/">DMenu</a>
         (Dynamic Menu)</td>
         <td>statusna vrstica (za DWM)</td>
         <td></td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td><a href="https://dwm.suckless.org">DWM</a> (Dynamic Windows
         Manager)</td>
         <td>upravitelj oken</td>
         <td><a href="https://wiki.debian.org/Dwm">dwm</a></td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td><a href="https://exiftool.org/">exiftool</a></td>
         <td>pregledovalnik in urejevalnik metapodatkov slik</td>
         <td><a
         href="https://packages.debian.org/search?keywords=exiftool">exiftool</a></td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td><a href="https://htop.dev/">HTop</a></td>
         <td>pregledovalnik procesov</td>
         <td><a
         href="https://packages.debian.org/buster/htop">htop</a></td>
         <td>različica <em>top</em></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td><a href="https://imagemagick.org/">imagemagick</a></td>
         <td>pretvornik, urejevalnik slik</td>
         <td></td>
         <td>podpira dobrih 200 oblik (formatov) slik</td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td><a href="https://github.com/gokcehan/lf">LF</a> (List
         Files)</td>
         <td>upravitelj datotek</td>
@@ -292,7 +339,7 @@ dobrih programov"/>
         href="https://packages.debian.org/sid/sparc64/utils/lf">lf</a></td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td><a href="https://github.com/ncmpcpp/ncmpcpp">NCMPCPP</a>
         (NCurses Music Player Client Plus Plus)</td>
         <td>predvajalnik glasbe</td>
@@ -300,6 +347,13 @@ dobrih programov"/>
         href="https://packages.debian.org/buster/ncmpcpp">ncmpcpp</a></td>
         <td>seznami predvajanja, besedila pesmi; različica <a
         href="https://github.com/MusicPlayerDaemon/ncmpc">ncmpc</a></td>
+        </tr>
+        <tr class="odd">
+        <td><a href="https://neomutt.org/">NeoMutt</a></td>
+        <td>terminalni upravljalnik elektronske pošte</td>
+        <td><a
+        href="https://packages.debian.org/buster/neomutt">NeoMutt</a></td>
+        <td></td>
         </tr>
         <tr class="even">
         <td><a href="https://networkmanager.dev/">NMCli</a> (Network
@@ -347,12 +401,19 @@ dobrih programov"/>
         <td></td>
         </tr>
         <tr class="even">
+        <td><a href="https://surf.suckless.org/">Surf</a></td>
+        <td>spletni brskalnik</td>
+        <td><a href=""></a></td>
+        <td>zelo preprost, a (zaenkrat) neprimeren za zahtevnejše
+        spletne strani</td>
+        </tr>
+        <tr class="odd">
         <td><a href="https://github.com/N-R-K/sxcs">SXCS</a></td>
         <td>orodje za izbiro barv na zaslonu in povečevalnik</td>
         <td></td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td><a href="https://github.com/xyb3rt/sxiv">SXIV</a> (Simple X
         Image Viewer)</td>
         <td>pregledovalnik in urejevalnik slik</td>
@@ -360,7 +421,7 @@ dobrih programov"/>
         href="https://packages.debian.org/buster/sxiv">sxiv</a></td>
         <td>ni več vzdrževan, vzdrževana različica je NSXIV</td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td><a href="https://github.com/yt-dlp/yt-dlp">YT-dlp</a></td>
         <td>prenašanje posnetkov z YouTuba (in drugod; iz
         terminala)</td>
@@ -370,7 +431,7 @@ dobrih programov"/>
         </tr>
         </tbody>
         </table>
-        <h3 id="orodja-za-android">Orodja za Android</h3>
+        <h3 id="Orodja_za_Android">Orodja za Android</h3>
         <table>
         <colgroup>
         <col style="width: 25%" />
@@ -509,6 +570,25 @@ dobrih programov"/>
         - world of astronomy</a></td>
         </tr>
         <tr class="even">
+        <td><a href="https://soundcloud.com/">Sound Cloud</a></td>
+        <td>glasba (nekak nadomestek Spotifyja)</td>
+        <td></td>
+        <td><a
+        href="https://play.google.com/store/apps/details?id=com.soundcloud.android">SoundCloud:
+        Play Music &amp; Songs</a></td>
+        </tr>
+        <tr class="odd">
+        <td><a href="https://samamco.github.io/track-and-graph/">Track
+        &amp; Graph</a></td>
+        <td>beleženje</td>
+        <td><a
+        href="https://f-droid.org/en/packages/com.samco.trackandgraph/">Track
+        &amp; Graph</a></td>
+        <td><a
+        href="https://play.google.com/store/apps/details?id=com.samco.trackandgraph">Track
+        &amp; Graph</a></td>
+        </tr>
+        <tr class="even">
         <td><a href="https://windy.app/">Windy</a></td>
         <td>vremenski zemljevid</td>
         <td></td>
@@ -526,7 +606,7 @@ dobrih programov"/>
         </tr>
         </tbody>
         </table>
-        <h2 id="zunanje-povezave-in-viri">Zunanje povezave in viri</h2>
+        <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in viri</h2>
         <ul>
         <li><a href="https://github.com/">GitHub</a> - spletno mesto za
         odprtokodne programe;</li>
@@ -552,8 +632,7 @@ dobrih programov"/>
         </ul></li>
         </ul>
     </main>
-    <footer>Spletno stran trenutno močno posodabljam, zato so nekatere strani začasno ukinjene, mnoge povezave znotraj strani ne delujejo.
-        <br><button id="stikaloTeme">Preklopi barvni način strani</button>
+    <footer><button id="stikaloTeme">Preklopi barvni način strani</button>
     </footer>
 </body>
 </html>
