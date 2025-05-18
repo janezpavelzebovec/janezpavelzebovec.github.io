@@ -7,7 +7,7 @@
     --bOzadjeNaprej: rgba(255, 255, 255, 0.2);
     --bOzadjePoudarek: rgba(128, 159, 255, 0.4);
     --bOspredje: #eee;
-    --bOspredjeNazaj: rgba(255, 255, 255, 0.7);
+    --bOspredjeNazaj: rgba(255, 255, 255, 0.5);
     --bNazaj: rgba(255, 255, 255, 0.4);
     
     --vsebina: 50em;
@@ -22,7 +22,7 @@
     --bOzadjeNaprej: rgba(0, 0, 0, 0.2);
     --bOzadjePoudarek: rgba(128, 159, 255, 0.4);
     --bOspredje: #121212;
-    --bOspredjeNazaj: rgba(0, 0, 0, 0.7);
+    --bOspredjeNazaj: rgba(0, 0, 0, 0.5);
     --bNazaj: rgba(0, 0, 0, 0.4);
 }
 
@@ -72,6 +72,7 @@ main {
 	margin:auto;
     padding: 1em;
     padding-top: 0;
+    padding-bottom: 100vh;
     flex: 1;
 }
 
@@ -105,7 +106,13 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-a svg {
+
+code {
+    font-family: monospace;
+    background-color: var(--bOzadjeNaprej);
+}
+
+svg {
     color: var(--bOspredje);
 }
 
@@ -116,10 +123,21 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
+main table {
+    max-width: 100vw;
+    width: auto;
+}
 table th, table td {
     border: 1px solid var(--bOspredjeNazaj);
     padding: 0.5em;
     text-align: center;
+}
+tr:hover {
+    background-color: var(--bOzadjeNaprej);
+}
+
+button {
+    background-color: initial;
 }
 
 #domov {
