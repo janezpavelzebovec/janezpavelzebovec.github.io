@@ -9,8 +9,8 @@
     <meta name="keywords" content="Janez Pavel, Žebovec, osebna spletna
 stran"/>
     
-    <link rel="shortcut icon" type="image/svg" href="images/favicon.svg" />
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/svg" href="/images/favicon.svg" />
+    <link rel="icon" href="/images/favicon.ico">
 
     <style>
         body {
@@ -28,6 +28,7 @@ stran"/>
             margin: auto;
             padding: 1em;
             padding-top: 0;
+            padding-bottom: 0 !important; /*tale vrstica je važna za domačo stran*/
             font-size: 1.1em;
         }
         header {
@@ -45,8 +46,8 @@ stran"/>
         }
     </style>
 
-    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"/>
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'"/>
+    <script src="/scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -56,7 +57,8 @@ stran"/>
         </svg></a>
     </header>
     <main>
-        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-04-25">2025-04-25</time></p>
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-04-18">2025-04-18</time></p>
+        
         <p>To je moja spletna stran, namenjena mojim zanimanjem in
         potrebam.</p>
         <ul>
@@ -70,6 +72,8 @@ stran"/>
         drevo, na katerem delam (s poudarkom na prednikih);</li>
         <li><a href="./programje">Programje</a> - predstavitev dobre
         miselnosti in seznam dobrih računalniških orodij.</li>
+        <li><a href="./seznami">Moji seznami</a> - priporočila, spletne
+        povezave …</li>
         </ul>
         <p>Tu je tudi <a href="./knjiznica">Knjižnica</a>, kjer so
         zbrana nekatera znanja mojih zanimanj.</p>
@@ -98,7 +102,11 @@ stran"/>
         <li><a
         href="https://sl.wikipedia.org/wiki/Uporabnik:H%C3%AErnamae_P%C3%AEn_Iono%C3%ABryn">Wikipedija</a>,
         kjer prispevam k člankom, ki se mi zdijo pomembnejši ali
-        zanimivejši, vendar nisem dosti dejaven</li>
+        zanimivejši, vendar nisem dosti dejaven;</li>
+        <li><a href="https://mapwarper.net/users/40154">Map Warper</a>,
+        kjer sem naložil nekaj zgodovinskih zemljevidov za uporabo v <a
+        href="https://www.openhistoricalmap.org">Open Historical
+        Map</a>;</li>
         </ul>
         <p>Še nekaj seznamov, razvidov:</p>
         <ul>
@@ -111,7 +119,7 @@ stran"/>
         <li><a href="https://www.imdb.com/list/ls521309978/">pogledani
         filmi</a> - seveda tu niso navedeni vsi;</li>
         </ul>
-        <p>Pa nekaj priporočil (po mojem okusu):</p>
+        <p>Pa nekaj priporočil:</p>
         <ul>
         <li><a
         href="https://www.goodreads.com/review/list/148184173-h-rnamae-p-n?shelf=dobre-knjige&amp;visible_control=batchEdit">dobre
@@ -123,8 +131,7 @@ stran"/>
         filmi</a> - ne nujno odlični;</li>
         </ul>
     </main>
-    <footer>Spletno stran trenutno močno posodabljam, zato so nekatere strani začasno ukinjene, mnoge povezave znotraj strani ne delujejo.
-        <br><button id="stikaloTeme">Preklopi barvni način strani</button>
+    <footer><button id="stikaloTeme">Preklopi barvni način strani</button>
     </footer>
 </body>
 </html>
