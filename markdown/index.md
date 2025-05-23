@@ -38,5 +38,5 @@ Nekaj mest spleta, kjer sem bolj dejaven:
 Pa nekaj priporočil:
 
 - [dobre knjige](https://www.goodreads.com/review/list/148184173-h-rnamae-p-n?shelf=dobre-knjige&visible_control=batchEdit) - ne nujno odlične;
-- [dobre skladbe](https://open.spotify.com/playlist/4ZSRzMCXUwssvjSRL1lRVn?si=bkhqqx9iTU6FecmLCyzkow) - ne nujno odlične;
+- [dobre skladbe](https://soundcloud.com/janez-pavel-zebovec/sets/good-music) ([na Spotify](https://open.spotify.com/playlist/4ZSRzMCXUwssvjSRL1lRVn?si=bkhqqx9iTU6FecmLCyzkow)) - ne nujno odlične;
 - [dobri filmi](https://www.imdb.com/list/ls527692757/) - ne nujno odlični;

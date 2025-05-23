@@ -1,6 +1,6 @@
 ---
 title: Knjižnica
-date: 2025-04-25
+date: 2025-05-23
 description: Knjižnica znanj mojih zanimanj
 keywords: knjižnica, znanje
 ---
@@ -14,23 +14,24 @@ To je moja knjižnica nekaterih znanj, osredotočena predvsem na področja mojeg
     - [Živoslovje](./knjiznica/zivoslovje) (*biologija*);
     - [Zvezdoslovje](./knjiznica/zvezdoslovje) (*astronomija*);
 - [Računstvo](./knjiznica/racunstvo) (*matematika*);
-- Družboslovje
+- Družboslovje (*sociologija*);
     - [Zgodovina](./knjiznica/zgodovina);
+    - [Rodoslovje](./knjiznica/rodoslovje) (*genealogija*);
     - [Jezikoslovje](./knjiznica/jezikoslovje) (*lingvistika*);
-        - [Slovenščina](./knjiznica/Slovenscina) (~*slovenistika*);
-        - [Nemščina](./knjiznica/Nemscina);
-        - [Latinščina](./knjiznica/Latinscina);
-        - [Angleščina](./knjiznica/Anglescina) (~*anglistika*);
+        - [Slovenščina](./knjiznica/slovenscina) (~*slovenistika*);
+        - [Nemščina](./knjiznica/nemscina);
+        - [Latinščina](./knjiznica/latinscina);
+        - [Angleščina](./knjiznica/anglescina) (~*anglistika*);
         - [Pisave](./knjiznica/pisave);
-            - [Grška abeceda](./knjiznica/grska_abeceda);
+            - [Grška abeceda](./knjiznica/grska_abeceda) (grški *alfabet*);
             - [Latinica](./knjiznica/latinica);
             - [Gotica](./knjiznica/gotica);
             - [Glagolica](./knjiznica/glagolica);
-            - [Cirilica](./knjiznica/cirilica);
+            - [Cirilica](./knjiznica/cirilica) (kirilica);
             - [Slovenske zgodovinske pisave](./knjiznica/slovenske_zgodovinske_pisave);
             - [Ogamska pisava](./knjiznica/ogamska_pisava);
             - [Shawova abeceda](./knjiznica/shawova_abeceda);
-    - Književnost
+    - [Krščanstvo in modroslovje](./knjiznica/krscanstvo) (*religija*, *filozofija*);
+    - Književnost (*literatura*);
         - [John Ronald Reuel Tolkien](./knjiznica/John_Ronald_Reuel_Tolkien);
         - [Clive Staples Lewis](./knjiznica/Clive_Staples_Lewis);
-    - [Rodoslovje](./knjiznica/rodoslovje) (*genealogija*);

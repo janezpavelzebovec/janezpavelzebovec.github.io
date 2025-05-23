@@ -1,12 +1,14 @@
 ---
 title: Seznami
-date: 2025-05-18
+date: 2025-05-22
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
 ---
 
 # Moji seznami
+
+Za seznam programov glej stran [Programje](./programje).
 
 ## Spletna mesta in strani
 
@@ -23,10 +25,13 @@ YouTube:
 
 You Tube:
 
+- [Dialect](https://www.youtube.com/@dialectphilosophy);
 - [Dr Ben Miles](https://www.youtube.com/@DrBenMiles);
 - [SmarterEveryDay](https://www.youtube.com/@smartereveryday);
 - [StarTalk](https://www.youtube.com/@StarTalk) - *astrofizika*, naravoslovje na splošno (Neil deGrasse Tyson);
 - [Veritasium](https://www.youtube.com/@veritasium);
+    - [2veritasium](https://www.youtube.com/@derek);
+    - [Sciencium](https://www.youtube.com/@sciencium);
 
 #### Računstvo
 
@@ -91,19 +96,23 @@ Za zgodovinske zemljevide glej razdelek [Zgodovinski zemljevidi](#Zgodovinski_ze
 - [GeoNames](https://www.geonames.org/v3/);
 - [Geopedia](https://www.geopedia.world);
     - [Geopedia - GURS - Prostorski podatki](https://www.geopedia.world/#T276_x1614235.3818404947_y5798283.654628612_s11_b2852);
-- [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti;
 - [Mapillary](https://www.mapillary.com/app) - ulični posnetki;
-- [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim;
 - [Open Street Map](https://www.openstreetmap.org/) - prosto dostopen in urejevan zemljevid;
-- [OSM Buildings](https://osmbuildings.org/) - trorazsežnostni prikaz zgradb v [Open Street Mapu](https://www.openstreetmap.org/);
-- [Overpass Turbo](https://overpass-turbo.eu/) - iskalnik značilnosti po zemljevidu [Open Street Mapu](https://www.openstreetmap.org/);
-- [ShadeMap](https://shademap.app/) - zemljevid senc po svetu v poljubnem trenutku;
 - [Windy](https://www.windy.com) - vremenski zemljevidi;
 
 Druge zbirke zemljepisnih podatkov:
 
 - [Kočevski rog - lokacije](https://www.google.com/maps/d/u/0/viewer?mid=12iNVSpmmL8bA2B3qieBjdweF2t8&femb=1&ll=45.666989008977595%2C15.028848286105609&z=14);
 - [Župnije v nadškofiji Ljubljana](https://www.google.com/maps/d/viewer?mid=17_9jBIaZns8lH4PIv7GnIJ8DnoU&hl=sl&ll=46.066899841485196%2C14.912383489615394&z=10);
+
+##### Zemljevidi, ki temeljijo na [Open Street Map](https://www.openstreetmap.org/)
+
+- [BrezAvta.si](https://brezavta.si/) - iskanje povezav javnega prometa (avtobus, kolo, avto, skuter);
+- [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti;
+- [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim;
+- [OSM Buildings](https://osmbuildings.org/) - trorazsežnostni prikaz zgradb v [Open Street Mapu](https://www.openstreetmap.org/);
+- [Overpass Turbo](https://overpass-turbo.eu/) - iskalnik značilnosti po zemljevidu [Open Street Mapu](https://www.openstreetmap.org/);
+- [ShadeMap](https://shademap.app/) - zemljevid senc po svetu v poljubnem trenutku;
 
 ##### Državni zemljevidi Republike Slovenije
 
@@ -156,6 +165,7 @@ You Tube:
 
 Glej tudi stran [Rodoslovje](knjiznica/rodoslovje).
 
+- [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava;
 - [Geneanet](https://en.geneanet.org/);
 - [Geni](https://www.geni.com/) - stran za izgradnjo svetovnega družinskega drevesa;
 - [PriRod](https://rodoslovje.uocepek.si/index.php/Zacetek) - rodoslovni pripomočki za gotico, zgodovinsko krajevno *hierarhijo* in iskanje priimkov po matičnih knjigah;
@@ -193,6 +203,8 @@ You Tube:
 You Tube:
 
 - [ALEX LAB](https://www.youtube.com/@ALEXLAB) - izdelava Iron Manove obleke;
+    - [ALEX LAB researches](https://www.youtube.com/@alexlabresearches);
+- [Andi's workshop](https://www.youtube.com/@andiswerkstatt-ow4uw/featured) - 
 - [Clay Hayes](https://www.youtube.com/@clayhayeshunter);
 - [H Carpenter](https://www.youtube.com/@HCarpenter) - tesarstvo;
 - [Hacksmith Industries](https://www.youtube.com/@hacksmith);
