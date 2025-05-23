@@ -1,2980 +1,615 @@
 <!doctype html>
 <html lang="sl">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
-        <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js" defer></script>
-        <meta http-equiv="Cache-control" content="public">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Slovenščina</title>
-        <meta name="description" content="Slovenščina - slovanski jezik Slovencev; glasoslovje, oblikoslovje, tvorjenje, pravopis, in narečja slovenščine." /> <!--opis spletnega mesta-->
-        <meta name="keywords" content="slovenščina, glasoslovje, oblikoslovje, slovenska narečja, slovenski pravopis" />
-        <meta name="copyright" content="Janez Pavel Žebovec" />
+    <title>Slovenščina</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content="slovenščina, slovenski jezik,
+slovenistika"/>
+    
+    <link rel="shortcut icon" type="image/svg" href="/images/favicon.svg" />
+    <link rel="icon" href="/images/favicon.ico">
 
-        <link rel="shortcut icon" type="image/png" href="images/icon.png">
-        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
-        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
-        <meta name=application-name content="Slovenščina (JPŽ)"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
-        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
-        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #121212;
+            color: #eee;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+            max-width: 50em;
+            margin: auto;
+            padding: 1em;
+            padding-top: 0;
+            font-size: 1.1em;
+        }
+        header {
+            height: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #domov {
+            width: 3em;
+            aspect-ratio: 1 / 1;
+            display: block;
+            padding: 0.5em;
+            border-radius: 50%;
+        }
+    </style>
 
-        <meta property="og:title" content="Slovenščina"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
-        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
-        <meta property="og:description" content="Slovenščina - slovanski jezik Slovencev; glasoslovje, oblikoslovje, tvorjenje, pravopis, in narečja slovenščine."><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
-        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
-
-        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
-        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
-        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
-        <meta name="twitter:description" content="Slovenščina - slovanski jezik Slovencev; glasoslovje, oblikoslovje, tvorjenje, pravopis, in narečja slovenščine."><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
-        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
-    </head>
-    <body>
-
-        <label class="hamburger-menu">
-          <input type="checkbox" />
-        </label>
-        <aside class="sidebar">
-          <nav>
-            <div><a href="./">Domov</a></div>
-            <div><a href="./knjiznica">Knjižnica</a></div>
-            <br>
-            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div>
-            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div>
-            <div><a href="./glasopisnica">Glasopisnica</a></div>
-            <div><a href="./mojrodovnik">Moj rodovnik</a></div>
-            <hr>
-                <p>KAZALO</p>
-                    <ul class="ugn1">
-                        <li><details><summary><a href="#Glasoslovje">Glasoslovje</a></summary>
-                            <ul>
-                                <li><details><summary><a href="#Samoglasniki">Samoglasniki</a></summary>
-                                    <ul>
-                                        <li><a href="#Klasični_model">Klasični model</a></li>
-                                        <li><a href="#Samoglasniki">Samoglasniki</a></li>
-                                        <li><a href="#Dvoglasniki">Dvoglasniki</a></li>
-                                        <li><a href="#Novejše_raziskave">Novejše raziskave</a></li>
-                                        <li><a href="#Diakritična_znamenja">Diakritična znamenja</a></li>
-                                        <li><a href="#Formanti">Formanti</a></li>
-                                    </ul>
-                                </details></li>
-                                <li><details><summary><a href="#Soglasniki">Soglasniki</a></summary>
-                                    <ul>
-                                        <li><a href="#Zvočniki">Zvočniki</a></li>
-                                        <li><a href="#Nezvočniki">Nezvočniki</a></li>
-                                    </ul>
-                                </details></li>
-                                <li><a href="#Nekaj primerov glasoslovnih zapisov">Nekaj primerov glasoslovnih zapisov</a></li>
-                            </ul>
-                        </details></li>
-                        <li><a href="#Pravorečje">Pravorečje</a></li>
-                        <li><details><summary><a href="#Oblikoslovje">Oblikoslovje</a></summary>
-                            <ul>
-                                <li><details><summary><a href="#Besedne vrste">Besedne vrste</a></summary>
-                                    <ul>
-                                        <li><a href="#Samostalniska beseda">Samostalniška beseda</a></li>
-                                        <li><a href="#Pridevniška beseda">Pridevniška beseda</a></li>
-                                    </ul>
-                                </details></li>
-                            </ul>
-                        </details></li>
-                        <li><a href="#Pravopis">Pravopis</a></li>
-                        <li><a href="#Slovenska narečja">Slovenska narečja</a></li>
-                        <br>
-                        <li><a href="#Zunanje povezave in viri">Zunanje povezave in viri</a></li>
-                    </ul>
-          </nav>
-        </aside>
-
-        <button id="stikaloNačina" class="stikaloNačina">
-            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
-                <path fill="currentColor"
-                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
-                    transform="translate(-8 -8)"/>
-            </svg>
-        </button>
-
-        <div class="vsebina">
-            <h1>Slovenščina</h1>
-            <h2 id="Glasoslovje">Glasoslovje</h2>
-        </div>
-        <table class="enaPoDve sredinsko prvaLevo">
-            <thead>
-                <tr>
-                    <th colspan="2" style="text-align: right; font-weight: normal">kraj →</th>
-                    <th colspan="5">ustnični</th>
-                    <th colspan="10">robni (<i class="zamrznjeno">koronalni</i>)</th>
-                    <th colspan="5">nebni (<i class="zamrznjeno">dorzalni</i>)</th>
-                    <th colspan="4">grlni (<i class="zamrznjeno">laringalni</i>)</th>
-                </tr>
-                <tr>
-                    <th colspan="2" style="text-align: right; font-weight: normal">način ↓</th>
-                    <th colspan="2">dvoustnični</th>
-                    <th colspan="2">zobnoustnični</th>
-                    <th colspan="2">ustničnojezični</th>
-                    <th colspan="2">zobni</th>
-                    <th colspan="2">dlesnični</th>
-                    <th colspan="2">zadlesnični</th>
-                    <th colspan="2">retrofleksni</th>
-                    <th colspan="2">trdonebni</th>
-                    <th colspan="2">mehkonebni</th>
-                    <th colspan="2">uvularni</th>
-                    <th colspan="2">grlni</th>
-                    <th colspan="2">glasilčni</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th colspan="2">zapornik</th>
-                    <td class="polna">p</td>
-                    <td class="polna">b</td>
-                    <td>p̪</td>
-                    <td>b̪</td>
-                    <td>t̼</td>
-                    <td>d̼</td>
-                    <td class="polnaManj"></td>
-                    <td class="polnaManj"></td>
-                    <td class="polna">t</td>
-                    <td class="polna">d</td>
-                    <td></td>
-                    <td></td>
-                    <td>ʈ</td>
-                    <td>ɖ</td>
-                    <td>c</td>
-                    <td>ɟ</td>
-                    <td class="polna">k</td>
-                    <td class="polna">ɡ</td>
-                    <td>q</td>
-                    <td>ɢ</td>
-                    <td>ʡ</td>
-                    <td class="mrtva"></td>
-                    <td>ʔ</td>
-                    <td class="mrtva"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">tresavec</th>
-                    <td>ʙ̥</td>
-                    <td>ʙ</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>r̥</td>
-                    <td class="polna">r</td>
-                    <td></td>
-                    <td></td>
-                    <td>ɽ̊r̥</td>
-                    <td>ɽr</td>
-                    <td></td>
-                    <td></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td>ʀ̥</td>
-                    <td>ʀ</td>
-                    <td>ʜ</td>
-                    <td>ʢ</td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">sičniški pripornik</th>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td></td>
-                    <td></td>
-                    <td class="polna">s</td>
-                    <td class="polna">z</td>
-                    <td class="polna">ʃ</td>
-                    <td class="polna">ʒ</td>
-                    <td>ʂ</td>
-                    <td>ʐ</td>
-                    <td>ɕ</td>
-                    <td>ʑ</td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">nesičniški pripornik</th>
-                    <td>ɸ</td>
-                    <td>β</td>
-                    <td class="polna">f</td>
-                    <td class="polna">v</td>
-                    <td>θ̼</td>
-                    <td>ð̼</td>
-                    <td>θ</td>
-                    <td>ð</td>
-                    <td>θ̠</td>
-                    <td>ð̠</td>
-                    <td>ɹ̠̊˔</td>
-                    <td>ɹ̠˔</td>
-                    <td></td>
-                    <td>ɻ˔</td>
-                    <td>ç</td>
-                    <td>ʝ</td>
-                    <td class="polna">x</td>
-                    <td class="polna">ɣ</td>
-                    <td>χ</td>
-                    <td>ʁ</td>
-                    <td>ħ</td>
-                    <td>ʕ</td>
-                    <td>h</td>
-                    <td>ɦ</td>
-                </tr>
-                <tr>
-                    <th colspan="2">nosnik</th>
-                    <td>m̥</td>
-                    <td class="polna">m</td>
-                    <td></td>
-                    <td>ɱ</td>
-                    <td></td>
-                    <td>n̼</td>
-                    <td></td>
-                    <td></td>
-                    <td>n̥</td>
-                    <td class="polna">n</td>
-                    <td></td>
-                    <td></td>
-                    <td>ɳ̊</td>
-                    <td>ɳ</td>
-                    <td>ɲ̊</td>
-                    <td>ɲ</td>
-                    <td>ŋ̊</td>
-                    <td class="polna">ŋ</td>
-                    <td></td>
-                    <td>ɴ</td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">tap/flap</th>
-                    <td></td>
-                    <td>ⱱ̟</td>
-                    <td></td>
-                    <td>ⱱ</td>
-                    <td></td>
-                    <td>ɾ̼</td>
-                    <td></td>
-                    <td></td>
-                    <td>ɾ̥</td>
-                    <td>ɾ</td>
-                    <td></td>
-                    <td></td>
-                    <td>ɽ̊</td>
-                    <td>ɽ</td>
-                    <td></td>
-                    <td></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td></td>
-                    <td>ɢ̆</td>
-                    <td></td>
-                    <td>ʡ̆</td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">obstranski pripornik</th>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>ɬ</td>
-                    <td>ɮ</td>
-                    <td></td>
-                    <td></td>
-                    <td>ɭ̊˔</td>
-                    <td>ɭ˔</td>
-                    <td>ʎ̝̊</td>
-                    <td>ʎ̝</td>
-                    <td>ʟ̝̊</td>
-                    <td>ʟ̝</td>
-                    <td></td>
-                    <td></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">obstranski drsnik</th>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="polna">l</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>ɭ</td>
-                    <td></td>
-                    <td>ʎ</td>
-                    <td></td>
-                    <td>ʟ</td>
-                    <td></td>
-                    <td>ʟ̠</td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">obstranski tap/flap</th>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>ɺ̥</td>
-                    <td>ɺ</td>
-                    <td></td>
-                    <td></td>
-                    <td>ɭ̥̆</td>
-                    <td>ɭ̆</td>
-                    <td></td>
-                    <td>ʎ̆</td>
-                    <td></td>
-                    <td>ʟ̆</td>
-                    <td></td>
-                    <td></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">drsnik</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="polna">ʋ</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>ɹ</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>ɻ</td>
-                    <td></td>
-                    <td class="polna">j</td>
-                    <td></td>
-                    <td>ɰ</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>ʔ̞</td>
-                </tr>
-                <tr class="zgorajrob">
-                    <th colspan="2">sičniški zlitnik</th>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td></td>
-                    <td></td>
-                    <td class="polna">t͡s</td>
-                    <td class="polna">dz</td>
-                    <td class="polna">t̠ʃ</td>
-                    <td class="polna">d̠ʒ</td>
-                    <td>ʈʂ</td>
-                    <td>ɖʐ</td>
-                    <td>tɕ</td>
-                    <td>dʑ</td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">nesičniški zlitnik</th>
-                    <td>pɸ</td>
-                    <td>bβ</td>
-                    <td>p̪f</td>
-                    <td>b̪v</td>
-                    <td></td>
-                    <td></td>
-                    <td>t̪θ</td>
-                    <td>d̪ð</td>
-                    <td>tɹ̝̊</td>
-                    <td>dɹ̝</td>
-                    <td>t̠ɹ̠̊˔</td>
-                    <td>d̠ɹ̠˔</td>
-                    <td></td>
-                    <td></td>
-                    <td>cç</td>
-                    <td>ɟʝ</td>
-                    <td>kx</td>
-                    <td>ɡɣ</td>
-                    <td>qχ</td>
-                    <td>ɢʁ</td>
-                    <td></td>
-                    <td>ʡʢ</td>
-                    <td>ʔh</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th colspan="2">obstranski zlitnik</th>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>tɬ</td>
-                    <td>dɮ</td>
-                    <td></td>
-                    <td></td>
-                    <td>ʈɭ̊˔</td>
-                    <td>ɖɭ˔</td>
-                    <td>cʎ̝̊</td>
-                    <td>ɟʎ̝</td>
-                    <td>kʟ̝̊</td>
-                    <td>ɡʟ̝</td>
-                    <td></td>
-                    <td></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                    <td class="mrtva"></td>
-                </tr>
-            </tbody>
+    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'"/>
+    <script src="/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+    <a href="/" aria-label="Domov"><?xml version="1.0" encoding="UTF-8"?>
+        <svg id="domov" alt="JPŽ" viewBox="0 0 200.29 184.95" xmlns="http://www.w3.org/2000/svg">
+            <path d="m100.16 175.85-9.097-9.097-6.06 6.059-6.059 6.06-3.037-3.039-3.038-3.038 18.16-18.16h-50.008l26.54-26.546 26.54-26.545-1.536-1.497-1.536-1.496-26.527 26.523-26.527 26.522-1.482-1.516c-3.775-3.864-5.546-5.696-7.092-7.336-16.688-17.704-26.211-31.284-28.698-40.924-1.21-4.691-0.863-10.232 0.99-15.79 1.699-5.097 4.565-10.096 8.84-15.423 3.371-4.2 7.977-8.867 12.227-12.39 7.033-5.829 14.255-9.477 20.998-10.607 4.438-0.744 8.947-0.517 13.093 0.659 11.322 3.209 25.58 12.759 42.257 28.304 0.478 0.444 0.891 0.809 0.92 0.81 0.028 0 7.213-7.173 15.966-15.94l15.916-15.94-109.05-0.035 15.156-15.156h53.013l-7.578-7.578-7.577-7.579 7.577-7.578 7.578-7.578 9.097 9.097 9.098 9.097 6.059-6.059 6.06-6.059 6.074 6.076-18.16 18.16h50.009l-26.54 26.545-26.54 26.544 1.535 1.495 1.536 1.495 26.528-26.52 26.529-26.52 1.601 1.635c6.117 6.25 9.362 9.693 13.283 14.098 13.381 15.03 20.977 26.846 22.66 35.248 0.485 2.426 0.556 5.402 0.196 8.275-0.764 6.103-3.472 12.418-8.059 18.795-3.846 5.346-9.652 11.442-15.036 15.786-3.795 3.062-6.921 5.088-10.666 6.912-4.634 2.257-9.022 3.433-13.549 3.632-5.12 0.225-9.614-0.74-15.578-3.344-9.785-4.273-21.875-12.95-35.046-25.152a173.77 173.77 0 0 0-1.525-1.4l-0.33-0.295-15.969 15.97-15.968 15.968h109.1l-15.156 15.156-53.064 0.035 15.13 15.2-7.54 7.539-7.54 7.54zm-32.637-65.878 17.354-17.355-0.496-0.461c-8.602-7.999-17.792-15.358-25.3-20.257-3.967-2.589-6.638-4.163-9.11-5.37-3.704-1.807-7.106-2.842-10.411-3.167-1.054-0.104-3.329-0.086-4.339 0.034-3.886 0.46-7.383 2.025-10.692 4.783-0.834 0.695-2.495 2.348-3.246 3.23-2.748 3.226-4.266 6.306-4.772 9.681-0.15 1-0.15 2.947-2e-3 4.006 0.422 3 1.703 6.037 3.815 9.045 0.582 0.828 2.105 2.79 3.522 4.534 5.168 6.363 11.203 13.127 18.443 20.67 2.292 2.389 7.783 7.982 7.835 7.982 0.023 0 7.854-7.81 17.399-17.355zm97.251 11.61c4.751-0.494 8.898-2.598 12.753-6.47 6.556-6.586 8.053-13.493 4.506-20.802-0.88-1.813-1.786-3.207-3.58-5.508-5.066-6.5-12.265-14.668-20.39-23.131-1.632-1.702-7.416-7.615-7.739-7.913l-0.177-0.165-17.357 17.357c-9.546 9.546-17.35 17.376-17.34 17.4 0.028 0.069 2.703 2.513 4.557 4.161 9.126 8.119 17.582 14.485 25.825 19.443 5.566 3.349 10.079 5.089 14.502 5.591 0.956 0.109 3.55 0.13 4.44 0.038z" fill="currentColor" stroke-width=".066768"/>
+        </svg></a>
+    </header>
+    <main>
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-04-25">2025-04-25</time></p>
+        <ul>
+        <li><a href="#Slovenscina">Slovenščina</a>
+        <ul>
+        <li><a href="#Glasoslovje">Glasoslovje</a>
+        <ul>
+        <li><a href="#Glasovna_premena">Glasovna premena</a></li>
+        <li><a href="#Samoglasniki">Samoglasniki</a></li>
+        <li><a href="#Soglasniki">Soglasniki</a></li>
+        </ul></li>
+        <li><a href="#Pravorecje">Pravorečje</a></li>
+        <li><a href="#Oblikoslovje">Oblikoslovje</a></li>
+        </ul></li>
+        </ul>
+        <h1 id="Slovenscina">Slovenščina</h1>
+        <h2 id="Glasoslovje">Glasoslovje</h2>
+        <h3 id="Glasovna_premena">Glasovna premena</h3>
+        <h4 id="Samoglasniska_glasovna_premena">Samoglasniška glasovna
+        premena</h4>
+        <ul>
+        <li>Preglas
+        <ul>
+        <li>Če se koren besede konča na -c, -j, -č, -ž, -š se -o- v
+        končnici spremeni v -e- (npr.: <em>(z)
+        bra-t<strong>o</strong>-m</em> → <em>(s)
+        stri-c<strong>e</strong>-m</em>,
+        <em>bra-t<strong>o</strong>-v</em> →
+        <em>stri-č<strong>e</strong>-v</em>).</li>
+        </ul></li>
+        </ul>
+        <h4 id="Soglasniska_glasovna_premena">Soglasniška glasovna
+        premena</h4>
+        <p>Pri soglasniških glasovnih premenah prihaja do sprememb
+        glasov na koncu korena.</p>
+        <ul>
+        <li>Mehčanje pred nedoločniškimi (-ti/-či) ali namenilniški
+        (-t/-č) obrazili
+        <ul>
+        <li>k → č (npr. <em>po<strong>k</strong></em> →
+        <em>po<strong>č</strong>iti</em>);</li>
+        <li>g → ž (npr. <em>sne<strong>g</strong></em> →
+        <em>sne<strong>ž</strong>iti</em>);</li>
+        <li>h → š (npr. <em>sme<strong>h</strong></em> →
+        <em>sme<strong>š</strong>iti</em>i);</li>
+        </ul></li>
+        <li>Vrivanje/izpadanje polglasnika
+        <ul>
+        <li>Pri sklanjanju polglasnik izgine/izpade (npr.
+        <em>p<strong>e</strong>s</em> → <em>psa</em>).</li>
+        </ul></li>
+        <li>Poenostavitev soglasniškega sklopa (<em>jotacija</em>);
+        <ul>
+        <li>sprememba nekaterih soglasnikov
+        <ul>
+        <li>s → š (npr. <em>no<strong>s</strong>iti</em> →
+        <em>no<strong>š</strong>en</em>);</li>
+        <li>z → ž (npr. <em>vo<strong>z</strong>iti</em> →
+        <em>vo<strong>ž</strong>en</em>);</li>
+        </ul></li>
+        <li>jezičniki r, l, n dobijo poleg sebe -j;
+        <ul>
+        <li>r → rj (npr. <em>ustva<strong>r</strong>iti</em> →
+        <em>ustva<strong>rj</strong>en</em>);</li>
+        <li>l → lj (npr. <em>zahva<strong>l</strong>iti</em> →
+        <em>zahva<strong>lj</strong>en</em>);</li>
+        <li>n → nj (npr. <em>pozvo<strong>n</strong>iti</em> →
+        <em>pozvo<strong>nj</strong>enn</em>);</li>
+        </ul></li>
+        <li>ustnični zaporniki p, b, m dobijo zraven -lj;
+        <ul>
+        <li>p → plj (npr. <em>poto<strong>p</strong>iti</em> →
+        <em>poto<strong>plj</strong>en</em>);</li>
+        <li>b → blj (npr. <em>obro<strong>b</strong>iti</em> →
+        <em>obro<strong>blj</strong>en</em>;
+        <em>glo<strong>b</strong>ok</em> →
+        <em>glo<strong>blj</strong>i</em>);</li>
+        <li>m → mlj (npr. <em>polo<strong>m</strong>iti</em> →
+        <em>polo<strong>mlj</strong>en</em>);</li>
+        </ul></li>
+        </ul></li>
+        <li>Krnitev: nek soglasnik izpade (npr. <em>stisk</em> →
+        <em>stis{k}niti</em>; <em>grebsti</em> → <em>greb{s}em</em>;
+        <em>deklica</em> → <em>dekli{s}štvo</em>)</li>
+        <li>Prilikovanje (<em>asimilacija</em>): prilagoditev enega
+        glasu drugemu zaradi glasovnega sosedstva
+        <ul>
+        <li>drugi nezvočnik v soglasniškem sklopu vpliva na tistega pred
+        sabo - če je drugi zveneč, bo tudi tisti pred njim zveneč, če pa
+        je nezveneč, bo tudi tisti za njim nezveneč. Soglasniški sklop
+        lahko zajema tudi izglasje + začetek naslednje besede; torej ne
+        stoji nujno znotraj besede. Za spremembo zvenečnosti glej <a
+        href="#zvenecnostni_pari">zvenečnostni pari</a>;</li>
+        <li>zveneči nezvočnik se v izglasju (tj. na koncu besede)
+        izgovori nezveneče (razen če mu sledi beseda, ki začne na
+        zveneči nezvočnik - potem velja prejšnje pravilo)</li>
+        </ul></li>
+        </ul>
+        <h5 id="Zvenecnostni_pari">Zvenečnostni pari</h5>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>nezveneči</th>
+        <th>zveneči</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>/p/ [p] [p̪]</td>
+        <td>/b/ [b] [b̪]</td>
+        </tr>
+        <tr class="even">
+        <td>/t/ [t̪]</td>
+        <td>/d/ [d̪]</td>
+        </tr>
+        <tr class="odd">
+        <td>/k/ [k]</td>
+        <td>/g/ [g]</td>
+        </tr>
+        <tr class="even">
+        <td>/s/ [s]</td>
+        <td>/z/ [z]</td>
+        </tr>
+        <tr class="odd">
+        <td>/š/ [ʃ]</td>
+        <td>/ž/ [ʒ]</td>
+        </tr>
+        <tr class="even">
+        <td>/č/ [t͡ʃ]</td>
+        <td>/dž/ [d͡ʒ]</td>
+        </tr>
+        <tr class="odd">
+        <td>/f/ [f]</td>
+        <td>/v/ [v]</td>
+        </tr>
+        <tr class="even">
+        <td>/c/ [ts]</td>
+        <td>/c/ [dz]</td>
+        </tr>
+        <tr class="odd">
+        <td>/h/ [x]</td>
+        <td>/h/ [ɣ]</td>
+        </tr>
+        </tbody>
         </table>
-        <table class="sredinsko prvaLevo">
-            <thead>
-                <tr>
-                    <th style="text-align: right; font-weight: normal">višina \ globina</th>
-                    <th>zadnji</th>
-                    <th>sredinski</th>
-                    <th>sprednji</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>visok/ozek</td>
-                    <td><table class="osnovna brez">
-                        <td class="polna pol">u</td>
-                        <td class="pol">ɯ</td>
-                    </table></td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ʉ</td>
-                        <td class="pol">ɨ</td>
-                    </table></td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">y</td>
-                        <td class="polna pol">i</td>
-                    </table></td>
-                </tr>
-                <tr>
-                    <td>zelo ozek sredinski</td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ʊ</td>
-                        <td class="pol"></td>
-                    </table></td>
-                    <td>ʊ̈</td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ʏ</td>
-                        <td class="pol">ɪ</td>
-                    </table></td>
-                </tr>
-                <tr>
-                    <td>ozek sredinski</td>
-                    <td><table class="osnovna brez">
-                        <td class="polna pol">o</td>
-                        <td class="pol">ɤ</td>
-                    </table></td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ɵ</td>
-                        <td class="pol">ɘ</td>
-                    </table></td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ø</td>
-                        <td class="polna pol">e</td>
-                    </table></td>
-                </tr>
-                <tr>
-                    <td>nevtralni sredinski</td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">o̞</td>
-                        <td class="pol">ɤ̞</td>
-                    </table></td>
-                    <td class="polna">ə</td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ø̞</td>
-                        <td class="pol">e̞</td>
-                    </table></td>
-                </tr>
-                <tr>
-                    <td>široki sredinski</td>
-                    <td><table class="osnovna brez">
-                        <td class="polna pol">ɔ</td>
-                        <td class="pol">ʌ</td>
-                    </table></td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ɞ</td>
-                        <td class="pol">ɜ</td>
-                    </table></td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">œ</td>
-                        <td class="polna pol">ɛ</td>
-                    </table></td>
-                </tr>
-                <tr>
-                    <td>zelo široki sredinski</td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ɒ̝</td>
-                        <td class="pol">ɑ̝</td>
-                    </table></td>
-                    <td class="polnaManj">ɐ</td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">œ̞̈</td>
-                        <td class="pol">æ</td>
-                    </table></td>
-                </tr>
-                <tr>
-                    <td>nizki</td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ɒ</td>
-                        <td class="pol">ɑ</td>
-                    </table></td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ɒ̈</td>
-                        <td class="polna pol">ä</td>
-                    </table></td>
-                    <td><table class="osnovna brez">
-                        <td class="pol">ɶ</td>
-                        <td class="pol">a</td>
-                    </table></td>
-                </tr>
-            </tbody>
+        <h3 id="Samoglasniki">Samoglasniki</h3>
+        <table>
+        <caption>Nenaglašeni samoglasniki</caption>
+        <thead>
+        <tr class="header">
+        <th></th>
+        <th>zadnji</th>
+        <th>srednji</th>
+        <th>sprednji</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>visoki</td>
+        <td>u</td>
+        <td></td>
+        <td>i</td>
+        </tr>
+        <tr class="even">
+        <td>visoki sredinski</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>nevtralni sredinski</td>
+        <td></td>
+        <td>ə</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>široki sredinski</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>nizki</td>
+        <td></td>
+        <td>a</td>
+        <td></td>
+        </tr>
+        </tbody>
         </table>
-        <div class="vsebina">
-            <h3 id="Glasovna premena">Glasovna premena</h3>
-            <h4 id="Samoglasniška glasovna premena">Samoglasniška glasovna premena</h4>
-            <h6 id="Preglas">Preglas</h6>
-            <p>Če se koren besede konča na -c, -j, -č, -ž, -š se -o- v končnici spremeni v -e- (npr.: <i>(s) bra-t<u>-o-</u>m → (s) stri-c<u>-e-</u>m, bra-t<u>-o-</u>v → stri-č<u>-e-</u>v</i>)</li></p>
-            <h4 id="Soglasniška glasovna premena">Soglasniška glasovna premena</h4>
-            <p>Pri soglasniških glasovnih premenah prihaja do sprememb glasov na koncu korena.
-            <h6 id="Mehčanje pred nedoločniškimi ali namenilniški obrazili">Mehčanje pred nedoločniškimi (-ti/-či) ali namenilniški (-t/-č) obrazili</h6>
-                <ul>
-                    <li>k → č (npr. <i>po<u>k</u> → po<u>č</u>iti</i>)</li>
-                    <li>g → ž (npr. <i>sne<u>g</u> → sne<u>ž</u>iti</i>)</li>
-                    <li>h → š (npr. <i>sme<u>h</u> → sme<u>š</u>iti</i>)</li>
-                </ul>
-                <h6 id="Vrivanje/izpadanje polglasnika">Vrivanje/izpadanje polglasnika</h6>
-                <p>Pri sklanjanju polglasnik izgine/izpade (npr. <i>p<u>e</u>s → psa</i>).<p>
-                <h6 id="Poenostavitev soglasniškega sklopa">Poenostavitev soglasniškega sklopa <i class="zamrznjeno">(jotacija)</i></h6>
-                <p>
-                    <ul class="s">
-                        <li>sprememba nekaterih soglasnikov:
-                            <ul>
-                                <li>s → š (npr. <i>no<u>s</u>iti → no<u>š</u>en</i>)</li>
-                                <li>z → ž (npr. <i>vo<u>z</u>iti → vo<u>ž</u>en</i>)</li>
-                            </ul>
-                        </li>
-                        <li>jezičniki r, l, n dobijo poleg sebe -j:
-                            <ul>
-                                <li>r → rj (npr. <i>ustva<u>r</u>iti → ustva<u>rj</u>en</i>)</li>
-                                <li>l → lj (npr. <i>zahva<u>l</u>iti → zahva<u>lj</u>en</i>)</li>
-                                <li>n → nj (npr. <i>pozvo<u>n</u>iti → pozvo<u>nj</u>enn</i>)</li>
-                            </ul>
-                        <li>ustnični zaporniki p, b, m dobijo zraven -lj:
-                            <ul>
-                                <li>p → plj (npr. <i>poto<u>p</u>iti → poto<u>plj</u>en</i>)</li>
-                                <li>b → blj (npr. <i>obro<u>b</u>iti → obro<u>blj</u>en; glo<u>b</u>ok → glo<u>blj</u>i</i>)</li>
-                                <li>m → mlj (npr. <i>polo<u>m</u>iti → polo<u>mlj</u>en</i>)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </p>
-                <h6 id="Krnitev">Krnitev</h6>
-                <p>nek soglasnik izpade (npr. <i>stisk → stis{k}niti; grebsti → greb{s}em; deklica → dekli{s}štvo</i>)
-                    <ul class="s">
-                        <li>velelniški naklon:
-                            <ul>
-                                <li>k → c (npr. <i>pé<u>k</u>el → pe<u>c</u>i</i>)</li>
-                                <li>g → z (npr. <i>stri<u>g</u>el → stri<u>z</u>i</i>)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </p>
-                <h6 id="Prilikovanje">Prilikovanje (<span class="zamrznjeno">asimilacija</span>)</h6>
-                <p>Prilagoditev enega glasu drugemu zaradi glasovnega sosedstva
-                    <ul class="s">
-                        <li>drugi nezvočnik v soglasniškem sklopu vpliva na tistega pred sabo - če je drugi zveneč, bo tudi tisti pred njim zveneč, če pa je nezveneč, bo tudi tisti za njim nezveneč. Soglasniški sklop lahko zajema tudi izglasje + začetek naslednje besede; torej ne stoji nujno znotraj besede. Za spremembo zvenečnosti glej <a href="#zvenečnostni pari">zvenečnostne pare</a>.</li>
-                        <li>zveneči nezvočnik se v izglasju (tj. na koncu besede) izgovori nezveneče (razen če mu sledi beseda, ki začne na zveneči nezvočnik - potem velja prejšnje pravilo)</li>
-                    </ul>
-                Zvenečnostni pari:
-                <table class="sredinsko poDve" id="zvenečnostni_pari">
-                 <tr>
-                    <th colspan="2">zveneči zvočniki</th>
-                    <th colspan="2">zveneči nezvočniki</th>
-                    <th colspan="2">nezveneči nezvočniki</th>
-                 </tr>
-                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>/b/</td>
-                    <td>[b] [b̪]</td>
-                    <td>/p/</td>
-                    <td>[p] [p̪]</td>
-                 </tr>
-                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>/d/</td>
-                    <td>[d̪]</td>
-                    <td>/t/</td>
-                    <td>[t̪]</td>
-                 </tr>
-                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>/g/</td>
-                    <td>[g]</td>
-                    <td>/k/</td>
-                    <td>[k]</td>
-                 </tr>
-                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>/z/</td>
-                    <td>[z]</td>
-                    <td>/s/</td>
-                    <td>[s]</td>
-                 </tr>
-                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>/ž/</td>
-                    <td>[ʒ]</td>
-                    <td>/š/</td>
-                    <td>[ʃ]</td>
-                 </tr>
-                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>/dž/</td>
-                    <td>[d͡ʒ]</td>
-                    <td>/č/</td>
-                    <td>[t͡ʃ]</td>
-                 </tr>
-                 <tr>
-                    <td>/v/</td>
-                    <td>[v]</td>
-                    <td></td>
-                    <td></td>
-                    <td>/f/</td>
-                    <td>[f]</td>
-                 </tr>
-                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>/c/</td>
-                    <td>[d͡z]</td>
-                    <td>/c/</td>
-                    <td>[t͡s]</td>
-                 </tr>
-                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>/h/</td>
-                    <td>[ɣ]</td>
-                    <td>/h/</td>
-                    <td>[x]</td>
-                 </tr>
-                </table>
-            <h3 id="Samoglasniki">Samoglasniki</h3>
-            <img
-                src="./images/slovenski_samoglasniki.svg"
-                width="250px"
-                class="image-center"/>
-            <p>Slovenščina ima 8 samoglasniških glasnikov – [a], [e], [ɛ], [ə], [i], [o], [ɔ] in [u]. Za razliko od ostalih južnoslovanskih jezikov slovenščina razlikuje med širokimi in ozkimi sredinskimi samoglasniki, tako kot zahodnoslovanski jeziki. Sprednji in srednji samoglasniki so vsi nezaokroženi, izjema je le [ü], ki se v knjižnem jeziku ne pojavlja, se pa pojavlja v nekaterih lastnih imenih, najbolj znan je priimek <i>Türk</i>. Zadnji samoglasniki so vsi zaokroženi. Slovenske samoglasnike določata le prva dva formanta, tretji in četrti pri določanju samoglasnikov v slovenščini nimata velike vloge.
-            </p>
-            <p>Slovenske samoglasnike je težko zapisati z mednarodno glasoslovno abecedo, saj ne sledijo obliki trapeza, kot je osnovana, temveč trikotniku. Vsi samoglasniki so pomaknjeni proti sredini trapeza, še posebej [ɛ], [ɔ] in [a]. [a] je običajno obravnavan kot srednji samoglasnik, torej bi moral biti v IPA zapisan kot /ä/, vendar ima vseeno višjo frekvenco drugega formanta kot običajni srednji /ä/ in je nekje vmes med /ä/ ter /a/. Velik odklon kažeta tudi [ɔ] (okoli 300 Hz) ter [ɛ] (okoli 100 Hz) v primerjavi z navadnimi frekvencami za drugi formant. Posebnost slovenskega jezika je tudi dvoglasniški u [u̯], za katerega mednarodna glasoslovna abeceda uradno še nima svojega znaka, vendar je običajno zapisan kot /u̫/ ali /uʷ/. [e], kateremu sledi /r/, je običajno dvignjen, bližje [i], torej se izgovarja kot /e̝/. Z izjemo [i], [u] in [ə] se ostali naglašeni samoglasniki ločijo glede na koren jezika. [ɛ], [ɔ] in dolgi [a] so izgovorjeni z umaknjenim korenom jezika (/ɛ̙/, /ɔ̙/ in /ä̙/), medtem ko so [e], [o] in kratki [a] izgovorjeni s pomaknjenim korenom jezika (/e̘/, /o̘/ in /ä̘/). [i] in [u] se oba izgovarjata s pomaknjenim korenom (i̘, u̘)
-            </p>
-            <p>Vsi samoglasniki razen [ə] imajo svojo črko, s katero jih zapisujemo. V zapisu ne ločujemo med širokimi in ozkimi samoglasniki, zato sta oba zapisana z isto črko e oz. o. Polglasnik se zapisuje z različnimi črkami ali pa se ga ne zapiše. Najpogosteje je zapisan kot e (npr. pes, megla), pred zvočniki pa ni zapisan, zvočniki pa postanejo zlogotvorni. To se zgodi le, če pred zvočnikom ni samoglasnika ter mu ta tudi ne sledi oz. se beseda konča na zvočnik, pred katerim ni samoglasnika. Najpogostejši primer je pred [r] (npr. vrba, hrbet), v naglašeni obliki pa se nezapisan pojavlja le še pred [l] in še to le v redkih besedah, ki niti niso slovenske (npr. v <i>Vĺtava</i>). Pred ostalimi zvočniki se ne zapiše le, če je nenaglašen (npr. <i>film, tovarn</i>). [v] in [l] se ponekod lahko izgovarja kot [u] (ali kot [w]). To se zgodi le v ustreznem zvočniškem okolju, npr. ko sta [v] in [l] na koncu besede, pred njima pa je [r] (npr. <i>trl, barv</i>) ali ko sledita nenaglašenim [ɛ], [i] ali [ə] (npr. <i>nesel, bukev, videl</i>). Dvoglasniški u je v večini primerov različica (<span class="zamrznjeno">alofon</span>) glasnikov [v] in [l]; tako se izgovarjata le kadar sta za samoglasnikom ter jima ne sledi samoglasnik temveč soglasnik ali konec besede (npr. <i>sivka, topel, avtor</i>). [u̯] je zapisan z u le v redkih domačih besedah, v besednih zvezah ali polcitatnih besedah.
-            </p>
-            <h4>Splošna oblika</h4>
-            <p>Oblika, ki je dandanes standarden za zapis izgovorjave slovenskih besed, temelji na raziskavah Jožeta Toporišiča, izvedenih v sedemdesetih letih 20. stoletja. Pred njim sta Ilse Lehiste leta 1961 ter Rado Lenček leta 1966 sicer že objavila poročila o formantih slovenskih samoglasnikov, vendar prvo ni podalo dovolj relevantnih podatkov, saj so bili določeni le na podlagi ene govorke; drugi je podal bolj relevantne podatke, vendar samoglasnikov ni dokončno razdelil, ampak le opisal. Vsekakor pa je bil slednji pomemben za razvoj slovenske fonetike in je tudi v veliki meri vplival na Toporišiča, saj je Toporišič prav tako sestavil model z osmimi samoglasniki, ki se med seboj razlikujejo po kvaliteti ter ločil samoglasnike na dolge in kratke.
-            </p>
-            <p>Toporišič je naglašen polglasnik uvrščal med dolge samoglasnike, vendar so nadaljnje raziskave pokazale, da je naglašeni polglasnik približno enako dolg kot nenaglašeni ter je bil potem premaknjen pod kratke samoglasnike. To je bila edina večja razlika med toporišičevim modelom in tem, ki se uporablja dandanes. Čeprav ga je Toporišič uvrščal med dolge samoglasnike, je že on nad njim pisal krativec in ne ostrivca, kot je običajno za dolge samoglasnike. Še vedno obstaja neskladnost, saj se v primeru, ko je naglašeni kratki polglasnik zapisan z zlogotvornim zvočnikom, se vedno na zvočnik napiše ostrivec in ne krativec (pŕt, Vĺtava), kot bi bilo pričakovati.
-            </p>
-            <table>
-             <tr>
-                <th></th>
-                <th colspan="3">dolgi naglašeni samoglasniki</th>
-                <th colspan="3">kratki naglašeni samoglasniki</th>
-                <th colspan="3">nenaglašeni samoglasniki</th>
-             </tr>
-             <tr>
-                <td></td>
-                <td style="text-align:center">sprednji</td>
-                <td style="text-align:center">srednji</td>
-                <td style="text-align:center">zadnji</td>
-                <td style="text-align:center">sprednji</td>
-                <td style="text-align:center">srednji</td>
-                <td style="text-align:center">zadnji</td>
-                <td style="text-align:center">sprednji</td>
-                <td style="text-align:center">srednji</td>
-                <td style="text-align:center">zadnji</td>
-             </tr>
-             <tr>
-                <td>visoki</td>
-                <td style="text-align:center">í</td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center">ú</td>
-                <td style="text-align:center">ì</td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center">ù</td>
-                <td style="text-align:center">i</td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center">u</td>
-             </tr>
-             <tr>
-                <td>ozki sredinski</td>
-                <td style="text-align:center">é</td>
-                <td style="text-align:center" rowspan="2"></td>
-                <td style="text-align:center">ó</td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center" rowspan="2">ə̀</td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center" rowspan="2">ə</td>
-                <td style="text-align:center"></td>
-             </tr>
-             <tr>
-                <td>široki sredinski</td>
-                <td style="text-align:center">ê</td>
-                <td style="text-align:center">ô</td>
-                <td style="text-align:center">è</td>
-                <td style="text-align:center">ò</td>
-                <td style="text-align:center">e</td>
-                <td style="text-align:center">o</td>
-             </tr>
-             <tr>
-                <td>nizki</td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center">á</td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center">à</td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center">a</td>
-                <td style="text-align:center"></td>
-             </tr>
-            </table>
-            <p>Splošna oblika se še dandanes uporablja v veliki večini slovarjev in pravopisov. Prav tako se še vedno uči v šolah in se po njem ocenjuje teste in druge izpite. Prav tako se privzame v večini poročil in člankov, tudi v tem.
-            </p>
-            <h4>Dvoglasniki</h4>
-            <p>Dvoglasniki so v slovenščini redko napisani z dvema samoglasnikoma; to se zgodi le pri nekaterih domačih besedah (npr. <i>nauk</i>) ter v polcitatnih besedah in besednih zvezah, v besedah kot sta <i>naíven</i> ali <i>kofeín</i> dvoglasnikov ni, saj čeprav sta dva samoglasnika napisana skupaj, pripadata različnim zlogom. Največkrat so zapisani s samoglasnikom ter j, l ali v, saj se [j], pred katerim je samoglasnik in mu sledi soglasnik ali konec besede, izgovarja kot [i], [v] in [l] pa pod istimi pogoji kot [u̯] (Za [l] prav tako ne sme biti [j], saj potem pride do mehčanja.). V slovenščini se dvoglasnik lahko konča le na [i] ali [u̯] in jih na podlagi tega delimo na dve skupini. Skupno je v slovenščini 14 različnih dvoglasnikov, 6 se jih konča na [i] ter 8 na [u̯]. Posebnost pri dvoglasnikih je tudi nevtralizacija širokih samoglasnikov, ki pa se ne zgodi povsod. [ɛ] se nevtralizira v [ḙ] (IPA /e̞/), če mu sledi [i] ter [ɔ] se nevtralizira v [o̭] (IPA /o̞/), če mu sledi [u̯]. Dvoglasniki so lahko dolgi naglašeni, kratki naglašeni ali nenaglašeni (odvisno od prvega samoglasnika (Vsi samoglasniki ne morejo biti dolgi naglašeni, kratki naglašeni in nenaglašeni. Na primer [o] ne more biti kratki naglašeni ali nenaglašeni, zato tudi dvoglasnik [oi] ne more biti kratki naglašeni ali nenaglašeni.)), vendar je vedno naglašen le prvi samoglasnik. Kombinacija navadnega in dvoglasničnega u je možna, vendar redka, medtem ko je v ij primerih izgovorjen samo [i] in zato ne moremo ravno reči, da je to dvoglasnik.
-        </div>
-        <table class="zgornja sredinsko">
-         <tr>
-            <th colspan="6">dolgi naglašeni</th>
-            <th colspan="6">kratki naglašeni</th>
-            <th colspan="6">nenaglašeni</th>
-         </tr>
-         <tr>
-            <th colspan="3">dvoglasnik z /i/</th>
-            <th colspan="3">dvoglasniki z /u̯/</th>
-            <th colspan="3">dvoglasnik z /i/</th>
-            <th colspan="3">dvoglasniki z /u̯/</th>
-            <th colspan="3">dvoglasnik z /i/</th>
-            <th colspan="3">dvoglasniki z /u̯/</th>
-         </tr>
-         <tr>
-            <th class="brezdrob">dvoglasnik</th>
-            <th class="brezdrob">IPA</th>
-            <th style="text-align:center">primer</th>
-            <th class="brezdrob">dvoglasnik</th>
-            <th class="brezdrob">IPA</th>
-            <th style="text-align:center">primer</th>
-            <th class="brezdrob">dvoglasnik</th>
-            <th class="brezdrob">IPA</th>
-            <th style="text-align:center">primer</th>
-            <th class="brezdrob">dvoglasnik</th>
-            <th class="brezdrob">IPA</th>
-            <th style="text-align:center">primer</th>
-            <th class="brezdrob">dvoglasnik</th>
-            <th class="brezdrob">IPA</th>
-            <th style="text-align:center">primer</th>
-            <th class="brezdrob">dvoglasnik</th>
-            <th class="brezdrob">IPA</th>
-            <th style="text-align:center">primer</th>
-         </tr>
-         <tr>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob">íu̯</td>
-            <td class="brezdrob">iːuʷ</td>
-            <td style="text-align:center"><i>lup<b>il</b>nik</i></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob">ìu̯</td>
-            <td class="brezdrob">iuʷ</td>
-            <td style="text-align:center"><i>b<b>il</b></i></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob">iu̯</td>
-            <td class="brezdrob">iuʷ</td>
-            <td style="text-align:center"><i>d<b>iv</b>jad</i></td>
-         </tr>
-         <tr>
-            <td class="brezdrob">éi</td>
-            <td class="brezdrob">eːi</td>
-            <td style="text-align:center"><i>dokl<b>ej</b></i></td>
-            <td class="brezdrob">éu̯</td>
-            <td class="brezdrob">eːuʷ</td>
-            <td style="text-align:center"><i>pep<b>el</b></i></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-         </tr>
-         <tr>
-            <td class="brezdrob">êi</td>
-            <td class="brezdrob">e̞ːi</td>
-            <td style="text-align:center"><i>gl<b>ej</b>te</i></td>
-            <td class="brezdrob">êu̯</td>
-            <td class="brezdrob">ɛːuʷ</td>
-            <td style="text-align:center"><i>om<b>el</b>ce</i></td>
-            <td class="brezdrob">èi</td>
-            <td class="brezdrob">e̞i</td>
-            <td style="text-align:center"><i>sl<b>ej</b></i></td>
-            <td class="brezdrob">èu̯</td>
-            <td class="brezdrob">ɛuʷ	</td>
-            <td style="text-align:center"><i>n<b>ev</b>ljuden</i></td>
-            <td class="brezdrob">ei</td>
-            <td class="brezdrob">e̞i</td>
-            <td style="text-align:center"><i>hok<b>ej</b></i></td>
-            <td class="brezdrob">eu̯</td>
-            <td class="brezdrob">ɛuʷ</td>
-            <td style="text-align:center"><i>dovolit<b>ev</b></i></td>
-         </tr>
-         <tr>
-            <td class="brezdrob">ái</td>
-            <td class="brezdrob">äːi</td>
-            <td style="text-align:center"><i>enač<b>aj</b></i></td>
-            <td class="brezdrob">áu̯</td>
-            <td class="brezdrob">äːuʷ</td>
-            <td style="text-align:center"><i>n<b>au</b>k</i></td>
-            <td class="brezdrob">ài</td>
-            <td class="brezdrob">äi</td>
-            <td style="text-align:center"><i>k<b>aj</b></i></td>
-            <td class="brezdrob">àu̯</td>
-            <td class="brezdrob">äuʷ</td>
-            <td style="text-align:center"><i>rj<b>av</b></i></td>
-            <td class="brezdrob">ai</td>
-            <td class="brezdrob">äi</td>
-            <td style="text-align:center"><i>zdavn<b>aj</b></i></td>
-            <td class="brezdrob">au̯</td>
-            <td class="brezdrob">äuʷ	</td>
-            <td style="text-align:center"><i><b>av</b>gust</i></td>
-         </tr>
-         <tr>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob">ə̀u̯</td>
-            <td class="brezdrob">əuʷ</td>
-            <td style="text-align:center"><i>š<b>el</b></i></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob">əu̯</td>
-            <td class="brezdrob">əuʷ</td>
-            <td style="text-align:center"><i>top<b>el</b></i></td>
-         </tr>
-         <tr>
-            <td class="brezdrob">ôi</td>
-            <td class="brezdrob">ɔːi</td>
-            <td style="text-align:center"><i>b<b>oj</b>ni</i></td>
-            <td class="brezdrob">ôu̯</td>
-            <td class="brezdrob"Z>o̞ːuʷ</td>
-            <td style="text-align:center"><i>pesk<b>ov</b>nik</i></td>
-            <td class="brezdrob">òi</td>
-            <td class="brezdrob">ɔi</td>
-            <td style="text-align:center"><i>n<b>oj</b></i></td>
-            <td class="brezdrob">òu̯</td>
-            <td class="brezdrob">o̞uʷ</td>
-            <td style="text-align:center"><i>ribol<b>ov</b></i></td>
-            <td class="brezdrob">oi</td>
-            <td class="brezdrob">ɔi</td>
-            <td style="text-align:center"><i>kavb<b>oj</b>ke</i></td>
-            <td class="brezdrob">o̞uʷ</td>
-            <td class="brezdrob">iuʷ</td>
-            <td style="text-align:center"><i>akt<b>ov</b>ka</i></td>
-         </tr>
-         <tr>
-            <td class="brezdrob">ói</td>
-            <td class="brezdrob">oːi</td>
-            <td style="text-align:center"><i>dv<b>oj</b>ček</i></td>
-            <td class="brezdrob">óu̯</td>
-            <td class="brezdrob">oːuʷ</td>
-            <td style="text-align:center"><i>dv<b>ov</b>prega</i></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-         </tr>
-         <tr>
-            <td class="brezdrob">úi</td>
-            <td class="brezdrob">uːi</td>
-            <td style="text-align:center"><i>t<b>uj</b></i></td>
-            <td class="brezdrob">úu̯</td>
-            <td class="brezdrob">uːuʷ</td>
-            <td style="text-align:center"><i>min<b>ul</b></i></td>
-            <td class="brezdrob">ùi</td>
-            <td class="brezdrob">ui</td>
-            <td style="text-align:center"><i>f<b>uj</b></i></td>
-            <td class="brezdrob">ùu̯</td>
-            <td class="brezdrob">uuʷ</td>
-            <td style="text-align:center"><i>os<b>ul</b></i></td>
-            <td class="brezdrob">ui</td>
-            <td class="brezdrob">ui</td>
-            <td style="text-align:center"><i>h<b>uj</b>skač</i></td>
-            <td class="brezdrob"></td>
-            <td class="brezdrob"></td>
-            <td style="text-align:center"></td>
-         </tr>
+        <table>
+        <caption>Dolgi naglašeni samoglasniki</caption>
+        <thead>
+        <tr class="header">
+        <th></th>
+        <th>zadnji</th>
+        <th>srednji</th>
+        <th>sprednji</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>visoki</td>
+        <td>ú</td>
+        <td></td>
+        <td>í</td>
+        </tr>
+        <tr class="even">
+        <td>visoki sredinski</td>
+        <td>ó</td>
+        <td></td>
+        <td>é</td>
+        </tr>
+        <tr class="odd">
+        <td>nevtralni sredinski</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>široki sredinski</td>
+        <td>ô</td>
+        <td></td>
+        <td>ê</td>
+        </tr>
+        <tr class="odd">
+        <td>nizki</td>
+        <td></td>
+        <td>á</td>
+        <td></td>
+        </tr>
+        </tbody>
         </table>
-        <div class="vsebina">
-            </p>
-            <h3>Soglasniki</h3>
-            <p>Slovenščina ima 21 soglasnikov, od tega jih ima 20 svojo pripadajočo črko v abecedi. Svoje črke v slovenščini nima glasnik [dž]. V južnoslovanskih jezikih se običajno zapiše s črko đ, ki pa je slovenski jezik ne pozna, zato se v večini primerov glasnik zapiše z dž. Za razliko od angleščine je zapis slovenskih besed bolj sosleden z izgovorjavo, kar je tudi glavni razlog, zakaj se slovenščina redko zapisuje z mednarodno glasoslovno abecedo. Za izgovorjavo velike večine besed si je treba zapomniti le nekaj pravil. Slovenščina ima 12 zvenečih in 9 nezvenečih soglasnikov, 6 zvočniških in 15 nezvočniških. Soglasnike se v slovenščini deli na tri skupine – zvočnike, zveneče nezvočnike ter nezveneče nezvočnike, saj v slovenščini, tako kot v ostalih slovanskih jezikih, ni nezvenečih zvočniških glasnikov. Slovenščina glede na izgovorjavo glasov pozna nosnike, jezičnike, drsnike, tresavce, zapornike, pripornike in zlitnike. Slovenščina načeloma razlikuje med navadnimi in obstranskimi glasovi, čeprav ni v slovenščini nobenega navadni – obstranski" para. Soglasniki segajo od ustničnih do mehkonebnih; slovenščina namreč ne pozna jezičkovih (<span class="zamrznjeno">uvularnih</span>), grlnih ali glasilčnih glasov.
-            </p>
-                <table class="sredinsko">
-                 <tr>
-                    <th colspan="2">zveneči zvočniki</th>
-                    <th colspan="2">zveneči nezvočniki</th>
-                    <th colspan="2">nezveneči nezvočniki</th>
-                 </tr>
-                 <tr>
-                    <td class="brezdrob">glasnik</td>
-                    <td>izgovorjava</td>
-                    <td class="brezdrob">glasnik</td>
-                    <td>izgovorjava</td>
-                    <td class="brezdrob">glasnik</td>
-                    <td>izgovorjava</td>
-                 </tr>
-                 <tr>
-                    <td class="brezdrob">[m]</td>
-                    <td>/m/</td>
-                    <td class="brezdrob">[b]</td>
-                    <td>/b/</td>
-                    <td class="brezdrob">[p]</td>
-                    <td>/p/</td>
-                 </tr>
-                 <tr>
-                    <td class="brezdrob">[n]</td>
-                    <td>/n̪/</td>
-                    <td class="brezdrob">[d]</td>
-                    <td>/d̪/</td>
-                    <td class="brezdrob">[t]</td>
-                    <td>/t̪/</td>
-                 </tr>
-                 <tr>
-                    <td class="brezdrob">[l]</td>
-                    <td>/l/</td>
-                    <td class="brezdrob">[g]</td>
-                    <td>/g/</td>
-                    <td class="brezdrob">[k]</td>
-                    <td>/k/</td>
-                 </tr>
-                 <tr>
-                    <td class="brezdrob">[r]</td>
-                    <td>/r/</td>
-                    <td class="brezdrob">[z]</td>
-                    <td>/z/</td>
-                    <td class="brezdrob">[s]</td>
-                    <td>/s/</td>
-                 </tr>
-                 <tr>
-                    <td class="brezdrob">[j]</td>
-                    <td>/j/</td>
-                    <td class="brezdrob">[ž]</td>
-                    <td>/ʒ/</td>
-                    <td class="brezdrob">[š]</td>
-                    <td>/ʃ/</td>
-                 </tr>
-                 <tr>
-                    <td class="brezdrob"></td>
-                    <td></td>
-                    <td class="brezdrob">[dž]</td>
-                    <td>/d͡ʒ/</td>
-                    <td class="brezdrob">[č]</td>
-                    <td>/t͡ʃ/</td>
-                 </tr>
-                 <tr>
-                    <td class="brezdrob">[v]</td>
-                    <td>/ʋ/</td>
-                    <td class="brezdrob"></td>
-                    <td></td>
-                    <td class="brezdrob">[f]</td>
-                    <td>/f/</td>
-                 </tr>
-                 <tr>
-                    <td class="brezdrob"></td>
-                    <td></td>
-                    <td class="brezdrob"><span class="pripis">[c]</span></td>
-                    <td><span class="pripis">/dz/</span></td>
-                    <td class="brezdrob">[c]</td>
-                    <td>/t͡s/</td>
-                 </tr>
-                 <tr>
-                    <td class="brezdrob"></td>
-                    <td></td>
-                    <td class="brezdrob"><span class="pripis">[h]</span></td>
-                    <td><span class="pripis">/ɣ/</span></td>
-                    <td class="brezdrob">[h]</td>
-                    <td>/x/</td>
-                 </tr>
-                </table>
-            <h4>Zvočniki</h4>
-            <table class="sredinsko">
-             <tr>
-                <th></th>
-                <th>ustnični</th>
-                <th>zobnoustnični</th>
-                <th>zobni</th>
-                <th>dlesnični</th>
-                <th>zadlesnični</th>
-                <th>retrofleksni</th>
-                <th>trdonebni</th>
-                <th>mehkonebni</th>
-             </tr>
-             <tr>
-                <td>nosnik</td>
-                <td>m</td>
-                <td>ɱ</td>
-                <td>n̪</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>ŋ</td>
-             </tr>
-             <tr>
-                <td>vibrant</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>r</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-             </tr>
-             <tr>
-                <td>drsnik</td>
-                <td></td>
-                <td>ʋ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>j</td>
-                <td></td>
-             </tr>
-             <tr>
-                <td>lateral</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>l</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-             </tr>
-            </table>
-            <p>Slovenščina ima šest zvočniških soglasnikov – [m], [n], [l], [r], [j] in [v] ter skupno 14 različnih glasov, od tega sta dva para glasov izbirna (lahko izgovarjamo kateregakoli v paru). V primerjavi s trinajstimi neizbirnimi zvočniškimi glasovi, ki jih imata hrvaščina in srbščina ima slovenščina torej enega manj, v primerjavi s slovaščino pa dva manj. Za razliko od hrvaščine, slovenščina ne pozna silabičnih zvočnikov. V primerjavo s hrvaščino sta [n] in [l] lahko le palatizirana (/nʲ/, /lʲ/) in ne popolna trdonebna glasova (/ɲ/, /ʎ/) tako kot v hrvaščini.
-            </p>
-            <p>
-V slovenščini sta dva nosna glasnika, to sta [n] in [m], ki se običajno izgovarjata kot /n̪/ in /m/. Skupaj z njunimi ostalimi različicami (<span class="zamrznjeno">alofoni</span>) predstavljata šest različnih nosničnih glasov. Poleg /n̪/ in /m/ je v slovenščini tudi zobnoustnični nosnik /ɱ/, ki je gotovo različica glasnika [m] in najbrž tudi [n]. Tako se izgovarjata če jima sledi glas /f/, /v/ ali /ʋ/ (<i>simfonija</i> [siɱfɔˈn̪íːjä], <i>invalid</i> [iɱʋäˈlíːt], <i>triumf želi</i> [triˈúːɱv ʒɛˈlíː]). Običajno se /ɱ/ pojavlja pred /f/ ali /ʋ/, le redko pride do kombinacije [m] ali [n] in /v/. Glasnik [n] se izgovarja kot mehkonebni /ŋ/ pred mehkonebnimi glasovi /k/, /g/, /x/ in /ɣ/ (<i>banka</i> [ˈbä́ːŋkä], <i>angel</i> [ˈä̀ːŋgɛl], <i>inhalator</i> [iŋxäˈlä́ːtɔr], <i>podan h grozovitežu</i> [pɔˈd̪ä̀ːŋ ɣ‿grɔzɔˈvíːt̪ɛʒu]). [n] se prav tako izgovarja drugače, če mu sledi /j/ in soglasnik ali konec besede. Če /j/-ju sledi samoglasnik se izgovarja običajno kot /n̪/ (<i>njega</i> [ˈn̪jɛ̀ːgä]), če pa mu sledi soglasnik ali konec besede, se glasnika [n] in [j] združita v en glas, mehčani n oz. dolgi n. Obe izgovorjavi sta pravilni, čeprav se običajno uporablja mehčani n. Mehčani n je v bistvu palatiziran /n̪/ (/n̪ʲ/) in ne čisti trdonebni nosnik /ɲ/. (<i>konj</i> [ˈkɔ́n̪ʲ] in ne [ˈkô̞ɲ] kot v hrvaščini; druga možnost je kot [ˈkɔ́n̪ː])
-            </p>
-            <p>
-Glasnik [v] ima pet različnih načinov izgovorjave. Običajno se izgovarja kot /ʋ/ in to se zgodi, če mu sledi samoglasnik (<i>voda</i> [ˈʋɔ̀ːdä], <i>vezava</i> [ʋɛˈzä́ːʋä]). Če sledi soglasniku ali je na začetku besede in mu sledi soglasnik ali konec besede, se premenjuje v /w/ ali /ʍ/, odvisno od sledečega soglasnika. Če je sledeči soglasnik zveneč ali sledi konec besede, se premenjuje v /w/ (<i>vnuk</i> [ˈwn̪uːk], <i>vgraditev</i> [wgräˈd̪íːt̪ɛuʷ]), če pa je nezveneč, se premenjuje v /ʍ/ (<i>vsi</i> [ˈʍsí], <i>v škatli</i> [ʍ‿ˈʃkä́ːt̪ˡli]). Namesto /w/ in /ʍ/ se lahko [v] v enakih pimerih izgovarja kot nenaglašeni /u/ (<i>vsi</i> [ˈʍsí] ali [uˈsí]), vendar slednja ni tako pogosta. /w/ in /ʍ/ se običajno nahajata na začetku besed, /w/ tudi na koncu (vrv [ˈʋə́rw]). /ʍ/ je edini nezveneči zvočniški glas, ki ga ima slovenščina. Če [v] sledi samoglasniku, za njim pa je konec besede ali soglasnik se izgovori kot [u̯] in skupaj s prejšnjim samoglasnikom tvori dvoglasnik. Drugi drsnik, [j], ima le eno izgovorjavo, /j/.
-            </p>
-            <p>
-Slovenščina ima tudi dva jezičnika – [l] in [r]. [l] je obstranski jezičnik (<span class="zamrznjeno">lateral</span>) in se običajno izgovarja kot /l/ (</i>limona</i> [liˈmóːn̪a], </i>politi</i> [pɔˈlìt̪i]), vendar ima veliko premen. Tako kot pri [n] pride tudi pri [l] do mehčanja, če mu sledi [j]. Prav tako se oba glasnika združita v enega in prav tako sta možni dve različni izgovorjavi. [l] je prav tako le palatiziran in ne trdonebni glas kot v hrvaščini (</i>bilje</i> [ˈbíːlʲɛ] in ne [ˈbîʎɛ] kot v hrvaščini; druga možnost je kot [ˈbíːlːɛ], </i>poljski</i> [ˈpóːlʲski] ali [ˈpóːlːski]). Tako kot [v] se tudi [l] izgovarja kot dvoglasnični u, če je pred njim samoglasnik, za njim pa soglasnik ali konec besede. V posebnih primerih se lahko [l] izgovarja tudi kot /w/; to se zgodi, če se nahaja na koncu besede ter obenem za /r/ (</i>trl</i> [ˈt̪ərw], </i>izumrl</i> [izuˈmə̀rw]); prav tako je možna tudi izgovorjava z /u/ namesto /w/, vendar obe izgovorjavi </i>Slovenski pravopis</i> zavrača in kot pravo izgovorjavo označuje [u̯]. [r] je najbolj problematičen fonem za zapis z mednarodno glasoslovno abecedo. Še do danes ni jasno, ali se glasnik izgovarja kot tap ali kot tresavec (<span class="zamrznjeno">vibrant</span>) oz. ali med njima variira. Slovenski jezikoslovni atlas trdi, da se glasnik izgovarja kot /ɾ/, medtem ko večina raziskav kaže, da je glas bližje /r/. Večina fonologov prav tako za zapis raje uporablja /r/ kot /ɾ/. Prav tako ni jasno, ali se zlogotvorni r izgovarja kot polglasnik in r ali kot silabični /r̩/, čeprav večina za zapis uporablja prvega. /r/ in /l/ v slovenščini prav tako nista čista dlesnična jezičnika, temveč sta dentalizirana, kar je trenutno nemogoče zapisati z mednarodno glasoslovno abecedo. Nista zobna (<span class="zamrznjeno">dentalna</span>) /l̪/ in /r̪/, saj je mesto izgovorjave še vedno pri dlesni in ne zobeh, prav tako pa kažeta znake dentalizacije.
-            </p>
-            <h4>Nezvočniki</h4>
-            <table class="sredinsko">
-             <tr>
-                <th><span id="zvenečnostni pari">zvenečnostni par</span> (IPA)</th>
-                <th>izguba zvenečnosti (v besedi)</th>
-                <th>izguba zvenečnosti (konec besede)</th>
-                <th>pridobitev zvenečnosti (če glasniku sledi zveneči nezvočnik)</th>
-             </tr>
-             <tr>
-                <td>
-            ustnični zapornik
-            (/p/, /b/)
-                </td>
-                <td>
-            <i>su<b>bt</b>ropski</i>
-            [ˌsuː<b>p</b>ˈt̪roːpski]
-                </td>
-                <td>
-            <i>sla<b>b</b></i>
-            [ˈslä<b>p</b>]
-                </td>
-                <td>
-            <i>le<b>p g</b>ozd</i>
-            [ˈleː<b>b</b> ˈgɔst̪]
-                </td>
-             </tr>
-             <tr>
-                <td>
-            zobni zapornik
-            (/t̪/, /d̪/)
-                </td>
-                <td>
-            <i>sla<b>dk</b>i</i>
-            [ˈslä<b>t̪</b>ki]
-                </td>
-                <td>
-            <i>sla<b>d</b></i>
-            [ˈsläː<b>t̪</b>]
-                </td>
-                <td>
-            <i>pe<b>td</b>eset</i>
-            [ˈpeː<b>d</b>ɛsɛt̪]
-                </td>
-             </tr>
-             <tr>
-                <td>
-            mehkonebni zapornik
-            (/k/, /g/)
-                </td>
-                <td>
-            <i>dol<b>gč</b>as</i>
-            [ˈd̪o̞ːu̯<b>k</b>t͡ʃäs]
-                </td>
-                <td>
-            <i>kro<b>g</b></i>
-            [ˈkroː<b>k</b>]
-                </td>
-                <td>
-            <i>prero<b>kb</b>a</i>
-            [prɛˈroː<b>g</b>bä]
-            </td>
-             </tr>
-             <tr>
-                <td>
-            zadlesnični zlitnik
-            (/t͡ʃ/, /d͡ʒ/)
-                </td>
-                <td>/*</td>
-                <td>
-            <i>imi<b>dž</b></i>
-            [ˈiːmi<b>t͡ʃ</b>]
-                </td>
-                <td>
-            <i>u<b>č</b>benik</i>
-            [ˈuː<b>d͡ʒ</b>bɛn̪ik]
-                </td>
-             </tr>
-             <tr>
-                <td>
-            dlesnični pripornik
-            (/s/, /z/)
-                </td>
-                <td>
-            <i>goz<b>d</b></i>
-            [ˈgɔs<b>t̪</b>]
-                </td>
-                <td>
-            <i>če<b>z</b></i>
-            [čɛ<b>s<b>]
-                </td>
-                <td>
-            <i>gla<b>sb</b>a</i>
-            [ˈglaː<b>z</b>bä]
-                </td>
-             </tr>
-             <tr>
-                <td>
-            zadlesnični pripornik
-            (/ʃ/, /ʒ/)
-                </td>
-                <td>
-            <i>bele<b>žk</b>a</i>
-            [bɛˈleː<b>ʃ</b>kä]
-                </td>
-                <td>
-            <i>bomba<b>ž</b></i>
-            [bɔmˈbäː<b>ʃ</b>]
-                </td>
-                <td>
-            <i>izvr<b>šb</b>a</i>
-            [izˈvər<b>ʒ</b>bä]
-                </td>
-             </tr>
-             <tr>
-                <td>
-            dlesnični zlitnik
-            (/t͡s/, /d͡z/)
-                </td>
-                <td>/</td>
-                <td>/</td>
-                <td>
-            <i>brive<b>c d</b>ela</i>
-            [ˈbriːʋɛ<b>d͡z<b> ˈd̪eːlä]
-                </td>
-             </tr>
-             <tr>
-                <td>
-            zobnoustnični pripornik
-            (/f/, /v/)
-                </td>
-                <td>/</td>
-                <td>/</td>
-                <td>
-            <i>A<b>fg</b>anistan</i>
-            [ˈäː<b>v</b>gän̪ist̪än̪]
-                </td>
-             </tr>
-             <tr>
-                <td>
-            mehkonebni pripornik
-            (/x/, /ɣ/)
-                </td>
-                <td>/</td>
-                <td>/</td>
-                <td>
-            <i><b>h g</b>ori</i>
-            [<b>ɣ</b>‿ˈgɔːri]
-                </td>
-             </tr>
-            </table>
-            <p>Slovenščina ima 20 nezvočniških glasov, vsi izmed njih so v zvenečnostnih parih. To je tri manj v primerjavi s srbščino in hrvaščino ter enako število v primerjavi s slovaščino, vendar se samo glasovi med njima bistveno spreminjajo. Za razliko od hrvaščine slovenščina ne pozna mehčanja nezvočnikov ter prav tako mehkega ć ter treh različic izgovorjave glasnika [h]. Slovenščina pozna pripornike, zapornike ter zlitnike, ki se izgovarjajo v prostoru med ustnicama in mehkim nebom, vendar prav tako ne pozna retrofleksnih in trdonebnih. Poleg dvajsetih osnovnih glasov pozna še štiri favkalne in dva obstranska nezvočnika. Slovenščina nima čiste razlike med zobnimi in dlesničnimi soglasniki. Zobna /t̪/ in /d̪/ sta v resnici zobnodlesnična, dlesnični /t͡s/, /s/ in /z/ pa so dentalizirani.
-            </p>
-            <p>
-Nezvočniški glasniki se v slovenščini pogosto premenjujejo. Najpogosteje pride do <a href="#prilikovanje">prilikovanja</a>, tj. spremembe izgovorjave v svoj zvenečnostni par zaradi sledečega nezvočnika ali konca besede. Zvenečnost dveh sledečih nezvočnikov mora namreč biti ista (nezveneč – nezveneč ali zveneč – zveneč), na koncu besede, razen v primeru, ko se naslednja beseda začne z zvenečim nezvočnikom, pa mora biti glas nezveneč. V slovenščini se to dogaja večkrat kot v ostalih južnoslovanskih jezikih, saj slovenščinna v zloženkah ohranja enak zapis kot v ločenih besedah (<i>predsednik</i> in ne <i>precednik</i>).
-            <br>To se zgodi tudi s glasniki, ki nimajo svojega zvenečnostnega para ([f], [c] in [h]) in tako dobi slovenščina še tri glasove, prilikovanje pri njih pa lahko obstaja samo iz nezvenečega v zveneči. Edina izjema so favkalni in obstranski glasovi, saj njim mora slediti zvočnik, ki v nobenem primeru ne vpliva na prilikovanje. Zveneči nezvočniki prav tako ne izgubijo zvenečnosti na koncu pravih predlogov (<i>iz, od, ob</i> ...), če jim ne sledi nezveneči soglasnik.
-            </p>
-            <hr>
-            <h2 id="Pravorečje">Pravorečje</h2>
-            <p>Pravorečje so pravila, ki določajo in predpisujejo glasove in naglas knjižnega jezika.
-            <br>Glej tudi poglavje <i><a href="#Glasoslovje">Glasoslovje</a></i>
-            </p>
-            <p>Običajno se besede v slovenščini naglašuje na predzadnji zlog (npr. <i>dru<b>ží</b>na, hrepe<b>nên</b>je</i>), oz. na na edini v enozložnih besedah (npr. <i>gózd, pót</i>); v kolikor ne gre za sestavljenke ali besede z večzložnimi obrazili (npr. <i>slo<b>vén</b>ščina, Is<b>lán</b>dija</i>)
-            </p>
-                <table class="zgornja sredinsko zadnjaPrimer">
-                    <tr>
-                        <th>črka</th>
-                        <th>izgovorjava</th>
-                        <th>primer v besedi</th>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>[a]</td>
-                        <td><b>a</b>t<b>a</b></td>
-                    </tr>
-                    <tr>
-                        <td>b</td>
-                        <td>[b]<br>[b̪]<br>[p]<br>[p̪]</td>
-                        <td><b>b</b>arka<br>o<b>b</b>sorej</td>
-                    </tr>
-                    <tr>
-                        <td>c</td>
-                        <td>[t͡s]<br>[d͡z]</td>
-                        <td><b>c</b>okla<br>kone<b>c</b> dela</td>
-                    </tr>
-                    <tr>
-                        <td>č</td>
-                        <td>[t͡ʃ]<br>[d͡ʒ]</td>
-                        <td><b>č</b>ebela<br>ve<b>č</b> dela</td>
-                    </tr>
-                    <tr>
-                        <td>d</td>
-                        <td>[d̪]<br>[t̪]</td>
-                        <td><b>d</b>revo<br>sla<b>d</b>ki</td>
-                    </tr>
-                    <tr>
-                        <td>e</td>
-                        <td>[e]<br>[ɛ]<br>[ə]</td>
-                        <td>r<b>e</b>s<br>kr<b>e</b>silo<br>p<b>e</b>s</td>
-                    </tr>
-                    <tr>
-                        <td>f</td>
-                        <td>[f]<br>[v]</td>
-                        <td><b>f</b>lavta<br>A<b>f</b>ganistan</td>
-                    </tr>
-                    <tr>
-                        <td>g</td>
-                        <td>[g]<br>[k]</td>
-                        <td><b>g</b>ozd<br>dol<b>g</b>čas</td>
-                    </tr>
-                    <tr>
-                        <td>h</td>
-                        <td>[x]<br>[ɣ]</td>
-                        <td><b>h</b>osta<br><b>h</b> gori</td>
-                    </tr>
-                    <tr>
-                        <td>i</td>
-                        <td>[i]</td>
-                        <td><b>i</b>gla</td>
-                    </tr>
-                    <tr>
-                        <td>j</td>
-                        <td>[j]<br>[i]</td>
-                        <td><b>j</b>agoda<br>ki<b>j</b></td>
-                    </tr>
-                    <tr>
-                        <td>k</td>
-                        <td>[k]<br>[g]</td>
-                        <td><b>k</b>rog<br>prero<b>k</b>ba</td>
-                    </tr>
-                    <tr>
-                        <td>l</td>
-                        <td>[l]<br>[uʷ]</td>
-                        <td>h<b>l</b>od<br>jabo<b>l</b>ko</td>
-                    </tr>
-                    <tr>
-                        <td>m</td>
-                        <td>[m]<br>[ɱ]</td>
-                        <td><b>m</b>ost<br>si<b>m</b>fonija</td>
-                    </tr>
-                    <tr>
-                        <td>n</td>
-                        <td>[n̪]<br>[ŋ]</td>
-                        <td><b>n</b>oga<br>A<b>n</b>gela</td>
-                    </tr>
-                    <tr>
-                        <td>o</td>
-                        <td>[ɔ]<br>[o]<br></td>
-                        <td>g<b>o</b>st<br>g<b>o</b>zd</td>
-                    </tr>
-                    <tr>
-                        <td>p</td>
-                        <td>[p]<br>[b]</td>
-                        <td><b>p</b>ar<br>le<b>p</b> gozd</td>
-                    </tr>
-                    <tr>
-                        <td>r</td>
-                        <td>[r]</td>
-                        <td><b>r</b>oka</td>
-                    </tr>
-                    <tr>
-                        <td>s</td>
-                        <td>[s]<br>[z]</td>
-                        <td><b>s</b>vizec<br>gla<b>s</b>ba</td>
-                    </tr>
-                    <tr>
-                        <td>š</td>
-                        <td>[ʃ]<br>[ʒ]</td>
-                        <td><b>š</b>oja<br>izvr<b>š</b>ba</td>
-                    </tr>
-                    <tr>
-                        <td>t</td>
-                        <td>[t]<br>[d]</td>
-                        <td><b>t</b>epec<br>pe<b>t</b>deset</td>
-                    </tr>
-                    <tr>
-                        <td>u</td>
-                        <td>[u]</td>
-                        <td>j<b>u</b>ha</td>
-                    </tr>
-                    <tr>
-                        <td>v</td>
-                        <td>[ʋ]<br>/u̯/ [uʷ]<br>
-                            <table class="osnovna brez">
-                                <tr>
-                                    <td rowspan="2">[v]</td>
-                                    <td style="font-style: normal; padding-left: 0; padding-bottom: 0">[w]</td>
-                                </tr>
-                                <tr><td style="font-style: normal; padding-left: 0; padding-top: 0">[ʍ]</td></tr>
-                            </table>
-                        <td><b>v</b>itel<br>pesko<b>v</b>nik<br><b>v</b>zet<br><b>v</b>sak</td>
-                    </tr>
-                    <tr>
-                        <td>z</td>
-                        <td>[z]<br>[s]</td>
-                        <td><b>z</b>id<br></td>
-                    </tr>
-                    <tr>
-                        <td>ž</td>
-                        <td>[ʒ]<br>[ʃ]</td>
-                        <td><b>ž</b>ito<br>bele<b>ž</b>ka</td>
-                    </tr>
-                </tbody>
-            </table>
-                <table class="capital">
-                    <tr>
-                        <th>zapis sklopa</th>
-                        <th>izgovorjava sklopa</th>
-                        <th>pravilo</th>
-                        <th>primeri besed</th>
-                    </tr>
-                    <tr>
-                        <td>-{sam.}v, -{sam.}l</td>
-                        <td>/u̯/ [uʷ]</td>
-                        <td>če je pred <i>v</i> samoglasnik, sledi pa mu konec besede ali soglasnik (izjeme ne sledijo temu pravilu)</td>
-                        <td><i>k<b>ol</b>, d<b>olg</b>, l<b>ev</b></i>;
-                        <br>ampak: <i>dež<b>el</b></i></td>
-                    </tr>
-                    <tr>
-                        <td>-el, -ev</td>
-                        <td>/eu̯/ [euʷ]</td>
-                        <td>glagoli za moški spol v pretekliku</td>
-                        <td><i>š<b>el</b>, l<b>ev</b></i></td>
-                    </tr>
-                    <tr>
-                        <td>-nj, -nj{sog.}-</td>
-                        <td>/n'/ [n̪ʲ] /n/ [n̪ː]</td>
-                        <td></td>
-                        <td><i>ko<b>nj</b></td>
-                    </tr>
-                    <tr>
-                        <td>-lj, -lj{sog.}-</td>
-                        <td>/l'/ [lʲ] /l/ [lː]</td>
-                        <td></td>
-                        <td><i>ko<b>nj</b></td>
-                    </tr>
-                </tbody>
-            </table>
-            <hr>
-            <h2 id="Oblikoslovje">Oblikoslovje</h2>
-            <p>Skloni v slovenščini so:</p>
-            <ul class="s">
-                <li>imenoválnik <i class="zamrznjeno">(nọ̑minativ)</i>: kdo/kaj?
-                <li>rodílnik <i class="zamrznjeno">(génitiv)</i>: koga/česa?; izraža bodisi:</p>
-                    <ul class="s">
-                        <li>zanikani <a href="#Predmet">predmet</a> ali <a href="#Osebek">osebek</a> (<i>Tukaj ni <b>trpljenja</b>.</i>)</li>
-                        <li>lastnino/svojino (npr.: <i>Naj se zgodi volja <b>očeta</b>.</i>)</li>
-                        <li>jedro v navedbah količine (npr.: <i>Ena vreča <b>moke</b>.</i>)</li>
-                        <li><a href="#Povedkovo določilo">povedkovo določilo</a> (npr.: <i>V viharju je bilo <b>podrtih</b> četvero dreves.</i>)</li>
-                    </ul>
-                </li>
-                <li>dajálnik <i class="zamrznjeno">(dȃtiv)</i>: komu/čemu?</li>
-                <li>tožílnik <i class="zamrznjeno">(ákuzativ)</i>: koga/kaj?</li>
-                <li>méstnik <i class="zamrznjeno">(lókativ)</i>: (o) kom/čem?</li>
-                <li>oródnik <i class="zamrznjeno">(ȋnstrumental)</i>: (s) kom/čim?</li>
-                <li>zválnik <i class="zamrznjeno">(vókativ)</i>: v vlogi ogovora, nagovora (npr. Janez Svetokriški: <i><u>Juri</u> se obrne po cerkvi, rekoč: kje ste zdaj vi moji prijatelji? Kadar jest zakihnem, pravite <u>Jure</u> Bog ti pomagaj</i>). Njegovo vlogo je danes prevzel imenovalnik.</li>
-            </ul>
-            <h3 id="Besedotvorje">Besedotvorje</h3>
-            <p>Besede glede na tvorjenost delimo na:<br>
-                <ul class="s">
-                    <li><b>netvorjenke</b>: osnovne, izvorne besede, s katerimi so najprej poimenovali svet. Ne moremo jih razčleniti (oz. le na koren in končnico; npr.: <i>drev-o, človek-ø, kamen-ø</i>)</li>
-                    <li><b>tvorjenke</b>: tvorjene iz besed (netvorjenk) oz. manjših besednih enot (npr.: <i>drev-esc-e, člov-ečnost-ø</i>):</li>
-                </ul>
-            Tvorjenke členimo na:<br>
-                <ul class="s">
-                    <li><b>besedotvorna podstava</b></li>
-                    <li><b>obrazilo</b></li>
-                </ul>
-            Tvorjenke imajo skladenjsko podstavo (npr.: <i>mizica ← majhna/ljuba miza</i>), katere oblika se razlikuje glede na besedno vrsto:<br>
-                <ul class="s">
-                    <li>samostalniki</li>
-                        <ul class="s">
-                            <li>osebe / nosilec lastnosti: ta, ki... (npr.: <i>delavec ← ta, ki dela</i>)</li>
-                            <li>stvar: to, kar... (npr.: <i>nabrežje ← to, kar je na bregu</i>)</li>
-                            <li>orodje/naprava: to, s čimer... (npr.: <i>zobotrebec ← to, s čimer si trebimo zobe</i>)</li>
-                            <li>prostor: tam, kjer... (npr.: <i>drsališče ← tam, kjer se drsa</i>)</li>
-                            <li>pojmi/stanja: to, da... (npr.: <i>lepota ← to, da je lepo</i>)</li>
-                        </ul>
-                    <li>pridevniki</li>
-                        <ul class="s">
-                            <li>tak, ki... (npr.: <i>dobrodušen ← tak, ki je dobre duše</i>)</li>
-                        </ul>
-                    <li>glagoli</li>
-                        <ul class="s">
-                            <li>imeti (npr.: <i>gnezditi ← imeti gnezdo</i>)</li>
-                            <li>dati (npr.: <i>obglaviti ← dati glavo stran</i>)</li>
-                            <li>biti (npr.: <i>kraljevati ← biti kralj</i>)</li>
-                            <li>delati (npr.: <i>beliti ← delati, da je belo</i>)</li>
-                            <li>postajati (npr.: <i>rdečéti ← postajati rdeč</i>)</li>
-                        </ul>
-                </ul>
-            Glede na mesto obrazila/pripone jih delimo na:<br>
-                <ul class="s">
-                    <li><b>izpeljanke</b>: desno/priponsko obrazilo (npr.: <i>mam<u>-ica</u></i>)</li>
-                    <li><b>zloženke</b>: vmesno/medponsko obrazilo (npr.: <i>kaž<u>-i-</u>pot</i>); značilne medpone so -i-, -r-, -e-, -ø-; zloženke so lahko:<br>
-                        <ul class="s">
-                            <li>priredne zloženke: besede v skladenjski postavi so enakovredne (npr.: <i>kaž<u>-i-</u>pot ← tisto, kar <u>kaže</u> <u>pot</u>; slovensk<u>-o</u>-angleški ← <u>slovenski</u> in <u>angleški</u></i>)</li>
-                            <li>podredne zloženke: besede v skladenjski postavi niso enakovredne (npr.: <i>avto<u>-ø-</u>cesta ← <u>cesta</u> za <u>avto</u>; sever<u>-o-</u>zahod ← sever nekoliko bolj proti zahodu</i>)</li>
-                        </ul>
-                    </li>
-                    <li><b>sestavljenke</b>: levo/predponsko obrazilo (npr.: <i><u>pre-</u>velik, <u>pra-</u>ded, <u>za-</u>ljubiti, <u>do-</u>študirati</i>)</li>
-                </ul>
-            Obstajajo pa tudi <b>sklopi</b>, ki so mehanično sestavljene sestavine v tvorjenko (npr.: <i>na-to, po-tem, za-tem</i>).
-            </p>
-            <h3 id="Besedoslovje">Besedoslovje</h3>
-            <p>Vsaka beseda je sestavljena iz <b>korena</b> in <b>končnice</b>, ki pa je lahko tudi ničta (-ø-; npr.: <i>drev-o, človek-ø, ptic-a, ljud-je, kamn-i</i>).<br>
-            Besede so med seboj lahko v različnih razmerjih:<br>
-                <ul class="s">
-                    <li><b>sopomenke</b> <i class="zamrznjeno">(sinonimi)</i>: imajo skoraj enak pomen (npr.: <i>gozd - boršt - lesa - šuma</i>)</li>
-                    <li><b>protipomeke</b> <i class="zamrznjeno">(antonimi)</i>: imajo nasproten pomen (npr.: <i> belo - črno; vesel - žalosten; temen - svetel; zgoraj - spodaj</i>)</li>
-                    <li><b>nadpomenke</b> <i class="zamrznjeno">(hipernimi)</i>: imajo širši pomen (od podpomenk; npr.: <i>sadje → pod. jabolko; pohištvo → pod. miza</i>)</li>
-                    <li><b>podpomenke</b> <i class="zamrznjeno">(hiponimi)</i>: imajo ožji pomen (od nadpomenk; npr.: <i>jabolko ← nad. sadje; miza ← nad. pohištvo</i>)</li>
-                </ul>
-            Besede lahko pripadajo:<br>
-                <ul class="s">
-                    <li>isti <b>besedni družini</b></li>
-                    <li>istemu <b>pomenskemu polju</b></li>
-                </ul>
-            Vsaka beseda je sestavljena iz <b>korena</b> in <b>končnice</b>, ki pa je lahko tudi ničta (-ø-; npr.: <i>drev-o, človek-ø, ptic-a, ljud-je, kamn-i</i>).
-            </p>
-            <h3 id="Besedne vrste">Besedne vrste</h3>
-            <h4 id="Samostalniska beseda">Samostalniška beseda</h4>
-            <p>Samostalniška beseda je pregibna polnopomenska beseda, ki neposredno (samostalnik, samostalniški pridevnik) ali posredno (samostalniški zaimek) poimenuje bitja, reči ali pojme. V stavku se pojavlja v vlogi osebka in/ali predmeta</p>
-            <h5 id="Samostalnik">Samostalnik</h5>
-            <h6 id="Sklanjatve">Sklanjatve</h6>
-            <h7 id="Prva moška sklanjatev">Prva moška sklanjatev</h7>
-            <p>Splošni sklanjatveni vzorec (npr. stol, kol, Franc...):</p>
-            <table class="capital">
-                    <tr>
-                        <th>sklon \ število</th>
-                        <th>ednina</th>
-                        <th>dvojina</th>
-                        <th>množina</th>
-                    </tr>
-                    <tr>
-                        <td>imenovalnik</td>
-                        <td>-ø</td>
-                        <td>-a</td>
-                        <td>-i</td>
-                    </tr>
-                    <tr>
-                        <td>rodilnik</td>
-                        <td>-a</td>
-                        <td>-ov</td>
-                        <td>-ov</td>
-                    </tr>
-                    <tr>
-                        <td>dajalnik</td>
-                        <td>-u</td>
-                        <td>-oma</td>
-                        <td>-om</td>
-                    </tr>
-                    <tr>
-                        <td>tožilnik</td>
-                        <td>-ø</td>
-                        <td>-a</td>
-                        <td>-e</td>
-                    </tr>
-                    <tr>
-                        <td>mestnik</td>
-                        <td>-u</td>
-                        <td>ih</td>
-                        <td>-ih</td>
-                    </tr>
-                    <tr>
-                        <td>orodnik</td>
-                        <td>-om</td>
-                        <td>-oma</td>
-                        <td>-i</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><b>Premene končnic</b></p>
-            <ul class="s">
-                <li><b>-o/-e</b> v im. ed. namesto -ø: nekatere prevzete besede (npr. avto, finale...)</li>
-                <li><b>-u</b> v rod. ed. namesto -a: nekateri enozložni sam. (npr. grad-u, med-u, zid-u, most-u, tram-u/a...)</li>
-                <li><b>-a</b> v tož. ed. namesto -ø: poimenovanja bitij (npr. brat-a, Janez-a, medved-a...)</li>
-                <li><b>-e-</b> v orod. namesto -o-: kon. osnove -j/-c/-č/-ž/-š (npr. stric-em, kroj-em, križ-em...)</li>
-                <li><b>-je</b> v im. mn. namesto -i (npr. mož-je, zob-je, las-je, maturant-je/-i, gost-je/-i...)</li>
-            </ul>
-            <p><b>Premene osnov</b></p>
-            <ul class="s">
-              <li><b>izpad -ə-</b> (npr. sošol-ø-ca, vet-ø-ra, Prešer-ø-na, p-ø-sa...)</li>
-              <li><b>daljšanje z -j-</b>: kon. osnove -r/samoglasnik, torej tudi 2. m. sklanjatev (npr. kolesar-j-a, skiro-j-a, motor-j-a, Vili-j-a... Vendar npr. šotor-a, požar-a, sever-a...)</li>
-              <li><b>daljšanje s -t-</b>: kon. osnove -e (npr. Stane-t-a, oče-t-a, France-t-a...)</li>
-              <li><b>daljšanje z -n-</b>: kon. osnove -lj (nagelj-n-a, datelj-n-a, Francelj-n-a...)</li>
-              <li><b>daljšanje z -ov-</b> v dv. in mn.: večina enozložnih sam. (npr. most-ov-a/i, sin-ov-a/i, grad-ov-a/i...)</li>
-              <li><b>otro-c-ih/i</b> namesto otro-k-i v mes. dv., im. mn., mes. mn.</li>
-            </ul>
-            <table class="list">
-                <tr>
-                    <th>sklon \ št.</th>
-                    <th>ed.</th>
-                    <th>dv.</th>
-                    <th>mn.</th>
-                </tr>
-                <tr>
-                    <td>im.</td>
-                    <td>otrok</td>
-                    <td>otroka</td>
-                    <td>otroci</td>
-                </tr>
-                <tr>
-                    <td>rod.</td>
-                    <td>otroka</td>
-                    <td>otrok</td>
-                    <td>otrok</td>
-                </tr>
-                <tr>
-                    <td>daj.</td>
-                    <td>otroku</td>
-                    <td>otrokoma</td>
-                    <td>otrokom</td>
-                </tr>
-                <tr>
-                    <td>tož.</td>
-                    <td>otroka</td>
-                    <td>otroka</td>
-                    <td>otroke</td>
-                </tr>
-                <tr>
-                    <td>mes.</td>
-                    <td>(o) otroku</td>
-                    <td>(o) otrocih</td>
-                    <td>(o) otrocih</td>
-                </tr>
-                <tr>
-                    <td>orod.</td>
-                    <td>(z) otrokom</td>
-                    <td>(z) otrokoma</td>
-                    <td>(z) otroki</td>
-                </tr>
-            </table>
-            <ul class="s">
-              <li><b>ljud-</b> namesto človek- v rod. dv., mes. dv. in mn.</li>
-              <li><b>dn-</b> namesto dan- povsod razen v im. ed. in tož. ed.</li>
-            </ul>
-            <table class="list">
-                    <tr>
-                        <th>sklon \ št.</th>
-                        <th>ed.</th>
-                        <th>dv.</th>
-                        <th>mn.</th>
-                    </tr>
-                    <tr>
-                        <td>im.</td>
-                        <td>dan</td>
-                        <td>dneva</td>
-                        <td>dnevi</td>
-                    </tr>
-                    <tr>
-                        <td>rod.</td>
-                        <td>dneva/dne</td>
-                        <td>dnevov/dni</td>
-                        <td>dnevov/dni</td>
-                    </tr>
-                    <tr>
-                        <td>daj.</td>
-                        <td>dnevu</td>
-                        <td>dnevoma/dnema</td>
-                        <td>dnevom/dnem</td>
-                    </tr>
-                    <tr>
-                        <td>tož.</td>
-                        <td>dan</td>
-                        <td>dneva/dni</td>
-                        <td>dneve/dni</td>
-                    </tr>
-                    <tr>
-                        <td>mes.</td>
-                        <td>(o) dnevu</td>
-                        <td>(o) dnevih/dneh</td>
-                        <td>(o) dnevih/dneh</td>
-                    </tr>
-                    <tr>
-                        <td>orod.</td>
-                        <td>(z) dnevom/dnem</td>
-                        <td>(z) dnevoma/dnema</td>
-                        <td>(z) dnevi/dnemi</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h7 id="Druga moška sklanjatev">Druga moška sklanjatev</h7>
-            <p>Splošni sklanjatveni vzorec (npr. vojvoda, Matija...):</p>
-            <table class="capital">
-                    <tr>
-                        <th>sklon \ število</th>
-                        <th>ednina</th>
-                        <th>dvojina</th>
-                        <th>množina</th>
-                    </tr>
-                    <tr>
-                        <td>imenovalnik</td>
-                        <td>-a</td>
-                        <td>-i</td>
-                        <td>-e</td>
-                    </tr>
-                    <tr>
-                        <td>rodilnik</td>
-                        <td>-e</td>
-                        <td>-ø</td>
-                        <td>-ø</td>
-                    </tr>
-                    <tr>
-                        <td>dajalnik</td>
-                        <td>-i</td>
-                        <td>-ama</td>
-                        <td>-am</td>
-                    </tr>
-                    <tr>
-                        <td>tožilnik</td>
-                        <td>-o</td>
-                        <td>-i</td>
-                        <td>-e</td>
-                    </tr>
-                    <tr>
-                        <td>mestnik</td>
-                        <td>-i</td>
-                        <td>-ah</td>
-                        <td>-ah</td>
-                    </tr>
-                    <tr>
-                        <td>orodnik</td>
-                        <td>-o</td>
-                        <td>ama</td>
-                        <td>-ami</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Moška imena (npr.: Mih-e-ta, Žig-e-ta, Jak-e-ta, Luk-e-ta...) in priimke iz 2. m. s. na -a lahko sklanjamo tudi po 1. m. (glej daljšanje osnove s -t- v 1. m.)
-            </p>
-            <h7 id="Tretja moška sklanjatev">Tretja moška sklanjatev</h7>
-            <p>-ø v vseh sklonih (npr. kratice: KD, APZ, NUK...; simboli: vitamin C, H2O...)<br>
-            Lahko sklanjamo tudi po 1. m. s., vendar s stičnim vezajem (npr. KD-a, APZ-ja, NUK-a...).</p>
-            <h7 id="Prva ženska sklanjatev">Prva ženska sklanjatev</h7>
-            <p>Splošni sklanjatveni vzorec (npr. omara, lipa, frača...):
-            </p>
-            <table class="capital">
-                    <tr>
-                        <th>sklon \ število</th>
-                        <th>ednina</th>
-                        <th>dvojina</th>
-                        <th>množina</th>
-                    </tr>
-                    <tr>
-                        <td>imenovalnik</td>
-                        <td>-a</td>
-                        <td>-i</td>
-                        <td>-e</td>
-                    </tr>
-                    <tr>
-                        <td>rodilnik</td>
-                        <td>-e</td>
-                        <td>-ø</td>
-                        <td>-ø</td>
-                    </tr>
-                    <tr>
-                        <td>dajalnik</td>
-                        <td>-i</td>
-                        <td>-ama</td>
-                        <td>-am</td>
-                    </tr>
-                    <tr>
-                        <td>tožilnik</td>
-                        <td>-o</td>
-                        <td>-i</td>
-                        <td>-e</td>
-                    </tr>
-                    <tr>
-                        <td>mestnik</td>
-                        <td>-i</td>
-                        <td>-ah</td>
-                        <td>-ah</td>
-                    </tr>
-                    <tr>
-                        <td>orodnik</td>
-                        <td>-o</td>
-                        <td>ama</td>
-                        <td>-ami</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><b>Premene končnic</b></p>
-            <ul class="s">
-                <li><b>-ø</b> v im. ed., tož. ed., rod. dv. in rod. mn.; ter -ijo v orod. ed.: kon. osnove -ev (npr. cerkev-ø → cerkv-ijo, lestev-ø → lestev-ijo, žetev-ø → žetv-ijo, britev-ø → britv-ijo...)</li>
-            </ul>
-            <table class="list">
-                    <tr>
-                        <th>sklon \ št.</th>
-                        <th>ed.</th>
-                        <th>dv.</th>
-                        <th>mn.</th>
-                    </tr>
-                    <tr>
-                        <td>im.</td>
-                        <td>-ø</td>
-                        <td>-i</td>
-                        <td>-e</td>
-                    </tr>
-                    <tr>
-                        <td>rod.</td>
-                        <td>-e</td>
-                        <td>-ø</td>
-                        <td>-ø</td>
-                    </tr>
-                    <tr>
-                        <td>daj.</td>
-                        <td>-i</td>
-                        <td>-ama</td>
-                        <td>-am</td>
-                    </tr>
-                    <tr>
-                        <td>tož.</td>
-                        <td>-ø</td>
-                        <td>-i</td>
-                        <td>-e</td>
-                    </tr>
-                    <tr>
-                        <td>mes.</td>
-                        <td>-i</td>
-                        <td>-ah</td>
-                        <td>-ah</td>
-                    </tr>
-                    <tr>
-                        <td>orod.</td>
-                        <td>-ijo</td>
-                        <td>-ama</td>
-                        <td>-ami</td>
-                    </tr>
-                </tbody>
-            </table>
-            <ul class="s">
-                <li>sklanjanje <b>mati</b> (mat-i) in <b>hči</b> (hč-i)</li>
-            </ul>
-            <table class="list">
-                    <tr>
-                        <th>sklon \ št.</th>
-                        <th>ed.</th>
-                        <th>dv.</th>
-                        <th>mn.</th>
-                    </tr>
-                    <tr>
-                        <td>im.</td>
-                        <td>-i</td>
-                        <td>-eri</td>
-                        <td>-ere</td>
-                    </tr>
-                    <tr>
-                        <td>rod.</td>
-                        <td>-ere</td>
-                        <td>-er (/hčerá)</td>
-                        <td>-er (/hčerá)</td>
-                    </tr>
-                    <tr>
-                        <td>daj.</td>
-                        <td>-eri</td>
-                        <td>-erama</td>
-                        <td>-eram</td>
-                    </tr>
-                    <tr>
-                        <td>tož.</td>
-                        <td>-er</td>
-                        <td>-eri</td>
-                        <td>-ere</td>
-                    </tr>
-                    <tr>
-                        <td>mes.</td>
-                        <td>(o) -eri</td>
-                        <td>(o) -erah</td>
-                        <td>(o) -erah</td>
-                    </tr>
-                    <tr>
-                        <td>orod.</td>
-                        <td>(z) -erjo</td>
-                        <td>(z) -erama</td>
-                        <td>(z) -erami</td>
-                    </tr>
-                </tbody>
-            </table>
-            <ul class="s">
-                <li>sklanjanje <b>gospa</b></li>
-            </ul>
-            <table class="list">
-                    <tr>
-                        <th>sklon \ št.</th>
-                        <th>ed.</th>
-                        <th>dv.</th>
-                        <th>mn.</th>
-                    </tr>
-                    <tr>
-                        <td>im.</td>
-                        <td>gospa</td>
-                        <td>gospe</td>
-                        <td>gospe</td>
-                    </tr>
-                    <tr>
-                        <td>rod.</td>
-                        <td>gospe</td>
-                        <td>gospa</td>
-                        <td>gospa</td>
-                    </tr>
-                    <tr>
-                        <td>daj.</td>
-                        <td>gospe</td>
-                        <td>gospema</td>
-                        <td>gospem</td>
-                    </tr>
-                    <tr>
-                        <td>tož.</td>
-                        <td>gospo</td>
-                        <td>gospe</td>
-                        <td>gospe</td>
-                    </tr>
-                    <tr>
-                        <td>mes.</td>
-                        <td>(o) gospe</td>
-                        <td>(o) gospeh</td>
-                        <td>(o) gospeh</td>
-                    </tr>
-                    <tr>
-                        <td>orod.</td>
-                        <td>(z) gospo</td>
-                        <td>(z) gospema</td>
-                        <td>(z) gospemi</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><b>Premene v osnovi</b></p>
-                    <ul class="s">
-                        <li><b>vrivanje -ə-</b> v rod. dv. in rod. mn. (npr. isk-ə-r, grab-ə-lj...)</li>
-                        <li><b>vrivanje -i- pred -j-</b> v rod. dv. in rod. mn. (npr. lad-i-j, škar-i-j...)</li>
-                        <li><b>izpad-ə-</b>: kon. osnove -ev (npr. bresk-ø-ve, lest-ø-ve...)</li>
-                    </ul>
-            <h7 id="Druga ženska sklanjatev">Druga ženska sklanjatev</h7>
-            <p>Splošni sklanjatveni obrazec (npr. perut...):</p>
-            <table class="capital">
-                    <tr>
-                        <th>sklon \ število</th>
-                        <th>ednina</th>
-                        <th>dvojina</th>
-                        <th>množina</th>
-                    </tr>
-                    <tr>
-                        <td>imenovalnik</td>
-                        <td>-ø</td>
-                        <td>-i</td>
-                        <td>-i</td>
-                    </tr>
-                    <tr>
-                        <td>rodilnik</td>
-                        <td>-i</td>
-                        <td>-i</td>
-                        <td>-ø</td>
-                    </tr>
-                    <tr>
-                        <td>dajalnik</td>
-                        <td>-i</td>
-                        <td>-ima</td>
-                        <td>-im</td>
-                    </tr>
-                    <tr>
-                        <td>tožilnik</td>
-                        <td>-ø</td>
-                        <td>-i</td>
-                        <td>-i</td>
-                    </tr>
-                    <tr>
-                        <td>mestnik</td>
-                        <td>-i</td>
-                        <td>-ih</td>
-                        <td>-ih</td>
-                    </tr>
-                    <tr>
-                        <td>orodnik</td>
-                        <td>-jo</td>
-                        <td>-ima</td>
-                        <td>-mi</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Sem spadajo tudi vsi množinski sam. ž. sp. (npr. vajeti, jasli, prsi, obresti, Žiri...)</p>
-            <p><b>Premene končnic</b></p>
-            <ul class="s">
-                <li>-e- namesto -i- v daj. dv., mes. dv., orod. dv., daj. mn., mes. mn.: nekateri enozložni sam. (npr. kost-e-ma, stran-e-ma, stvar-e-ma, reč-e-ma, pot-e-ma, skrb-e-ma, gos-e-ma, jed-e-ma, rast-e-ma, pest-e-ma...)</li>
-                <li>misel, pesem, plesen, ljubezen, prikazen... v or. ed., daj. dv., or. dv., or. mn. (npr. pesm-i-jo → pesm-ima → (s) pesm-ima → (s) pesm-imi...)</li>
-            </ul>
-            <p><b>Premene osnove</b></p>
-            <ul class="s">
-                <li>krv- namesto kri povsod razen v im. ed. in tož. ed. (krv-i...)</li>
-                <li>izpad -ə- (npr. mis-ø-li, pes-ø-mi...)</li>
-            </ul>
-            <h7 id="Tretja ženska sklanjatev">Tretja ženska sklanjatev</h7>
-            <ul class="s">
-                <li>-ø v vseh sklonih: prevzeta ženska imena (npr. Ingrid, Iris, Nives...), domača ženska in občna imena na -i (npr. Beti, Fani, mami, babi...) in ženski priimki, ker se ne sklanjajo.</li>
-            </ul>
-            <h7 id="Srednja sklanjatev">Srednja sklanjatev</h7>
-            <p>Splošni sklanjatveni vzorec (npr. mesto, sonce...):</p>
-            <table class="capital">
-                    <tr>
-                        <th>sklon \ število</th>
-                        <th>ednina</th>
-                        <th>dvojina</th>
-                        <th>množina</th>
-                    </tr>
-                    <tr>
-                        <td>imenovalnik</td>
-                        <td>-o/e</td>
-                        <td>-i</td>
-                        <td>-a</td>
-                    </tr>
-                    <tr>
-                        <td>rodilnik</td>
-                        <td>-a</td>
-                        <td>-ø</td>
-                        <td>-ø</td>
-                    </tr>
-                    <tr>
-                        <td>dajalnik</td>
-                        <td>-u</td>
-                        <td>-oma</td>
-                        <td>-om</td>
-                    </tr>
-                    <tr>
-                        <td>tožilnik</td>
-                        <td>-o</td>
-                        <td>-i</td>
-                        <td>-a</td>
-                    </tr>
-                    <tr>
-                        <td>mestnik</td>
-                        <td>-u</td>
-                        <td>-ih</td>
-                        <td>-ih</td>
-                    </tr>
-                    <tr>
-                        <td>orodnik</td>
-                        <td>-om</td>
-                        <td>-oma</td>
-                        <td>-i</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><b>Premene končnic</b></p>
-            <ul class="s">
-                <li>preglas <b>-e namesto -o</b>: kon. osnove j, c, č, ž, š (npr. jajc-e-m, pluč-e-m...)</li>
-                <li><b>-ø v im. ed.</b> (npr. dekle-ø, ime-ø...)</li>
-            </ul>
-            <p><b>Premene osnov</b></p>
-            <ul class="s">
-                <li><b>podaljševanje s -t-</b>: sam. z -ø v im. ed. (npr. tele-t-a, ščene-t-a...)</li>
-                <li><b>podaljševanje s -s-</b>: sam. z -ø v im. ed. (npr. kole-s-a, dreve-s-a, oče-s-a, uše-s-a...)</li>
-                <li><b>podaljševanje z -n-</b>: sam. z -ø v im. ed. (npr. ime-n-a, vreme-n-a, sleme-n-a, vime-n-a...)</li>
-                <li><b>vrivanje -ə-</b> v rod. dv. in rod. mn. (npr. ok-ə-n, pis-ə-m...)</li>
-                <li><b>vrivanje -i- pred -j</b> v rod. dv. in rod. mn. (npr. nesel-i-j, obzid-i-j, mor-i-j...)</li>
-                <li>sam. <b>oko</b> (v mn. oči kot organ vida, očesa pa "očesu podobne stvari")</li>
-            </ul>
-            <table class="list">
-                    <tr>
-                        <th>sklon \ št.</th>
-                        <th>ed.</th>
-                        <th>dv.</th>
-                        <th>mn.</th>
-                    </tr>
-                    <tr>
-                        <td>im.</td>
-                        <td>oko</td>
-                        <td>očesi</td>
-                        <td>oči/očesa</td>
-                    </tr>
-                    <tr>
-                        <td>rod.</td>
-                        <td>očesa</td>
-                        <td>očes</td>
-                        <td>oči/očes</td>
-                    </tr>
-                    <tr>
-                        <td>daj.</td>
-                        <td>očesu</td>
-                        <td>očesoma</td>
-                        <td>očem/očesom</td>
-                    </tr>
-                    <tr>
-                        <td>tož.</td>
-                        <td>oko</td>
-                        <td>očesi</td>
-                        <td>oči/očesa</td>
-                    </tr>
-                    <tr>
-                        <td>mes.</td>
-                        <td>(o) očesu</td>
-                        <td>(o) očesih</td>
-                        <td>(o) očeh/očesih</td>
-                    </tr>
-                    <tr>
-                        <td>orod.</td>
-                        <td>(z) očesom</td>
-                        <td>(z) očesoma</td>
-                        <td>(z) očmi/očesi</td>
-                    </tr>
-                </tbody>
-            </table>
-            <ul class="s">
-                <li>sam. <b>tla</b></li>
-            </ul>
-            <table class="list">
-                    <tr>
-                        <th>sklon \ št.</th>
-                        <th>ed.</th>
-                        <th>dv.</th>
-                        <th>mn.</th>
-                    </tr>
-                    <tr>
-                        <td>im.</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>tlà</td>
-                    </tr>
-                    <tr>
-                        <td>rod.</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>tál</td>
-                    </tr>
-                    <tr>
-                        <td>daj.</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>tlòm</td>
-                    </tr>
-                    <tr>
-                        <td>tož.</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>tlà</td>
-                    </tr>
-                    <tr>
-                        <td>mes.</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>(o) tléh</td>
-                    </tr>
-                    <tr>
-                        <td>orod.</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>(s) tlémi/tlì</td>
-                    </tr>
-                </tbody>
-            </table>
-            <ul class="s">
-                <li>sam. <b>drva</b></li>
-            </ul>
-            <table class="list">
-                <tr>
-                    <th>sklon \ št.</th>
-                    <th>ed.</th>
-                    <th>dv.</th>
-                    <th>mn.</th>
-                </tr>
-                <tr>
-                    <td>im.</td>
-                    <td></td>
-                    <td></td>
-                    <td>dŕva/drvà</td>
-                </tr>
-                <tr>
-                    <td>rod.</td>
-                    <td></td>
-                    <td></td>
-                    <td>dŕv/dŕv</td>
-                </tr>
-                <tr>
-                    <td>daj.</td>
-                    <td></td>
-                    <td></td>
-                    <td>dŕvom/drvòm</td>
-                </tr>
-                <tr>
-                    <td>tož.</td>
-                    <td></td>
-                    <td></td>
-                    <td>dŕva/drvà</td>
-                </tr>
-                <tr>
-                    <td>mes.</td>
-                    <td></td>
-                    <td></td>
-                    <td>(o) dŕvih/drvéh</td>
-                </tr>
-                <tr>
-                    <td>orod.</td>
-                    <td></td>
-                    <td></td>
-                    <td>(z) dŕvmi/drvmí</td>
-                </tr>
-            </table>
-            <h6 id="Posamostaljena pridevniška beseda">Posamostaljena pridevniška beseda</h6>
-            <p>To so bile prvotno pridevniške besede (pridevniki, npr. dežurni dijak, Gorenjska dežela, vozniško dovoljenje...), ki pa se jim izpusti samostalnik (npr. dežurni ø, Gorenjska ø, vozniška ø... tudi Laško, Krško...). Prevzamejo pomenske, skladenjske in oblikovne lastnosti samostalniških besed (po njih se zato sprašujemo z vprašalnicami za samostalniške besede, npr. kdo/kaj, koga/česa...), a praviloma ohranijo pridevniško sklanjatev - ponekod pa se občutek, da je ime posamostaljen pridevnik izgubi, zato nastanejo dvojnice v nekaterih sklonih (npr. Trebnje → Trebnjega/Trebnja... Izjema pa so npr. Lastovo → (z) Lastova, Kosovo → (s) Kosovega...).</p>
-            <p>Pravopis za neslovenska slovanska pridevniška imena predvideva srednjo sklanjatev in ne pridevniške. (npr. Kosovo, Sarajevo...). Prihaja do mešanja oblik za srednji in ženski spol v določenih sklonih (npr. Češka → na Češkem → (iz) Češke [ž. sp.]/(s) Češkega [s. sp.], Norveška → (na) Norveškem → (iz) Norveške [ž. sp.]/Norveškega [s. sp.]...).</p>
-            <p border-left="12px">⇨ <a href="#Pridevniška beseda">Pridevniška beseda</a></p>
-            <h5 id="Samostalniški zaimek">Samostalniški zaimek</h5>
-            <p>Pozaimljanje je uporaba zaimka namesto samostalnika, da se izognemo dobesednemu ponavljanju besed. Samostalniški zaimek posredno poimenuje bitje, reči ali pojme:</p>
-            <h6 id="Osebni samostalniški zaimek">Osebni samostalniški zaimek</h6>
-            <p>Osebnemu sam. zaimku lahko določimo slovnično osebo. Oblike osebnih sam. zaimkov:
-                <ul class="s">
-                    <li><b>naglasna oblika</b> (npr. meni, tebe, njega...): uporabljamo, kadar želimo osebo posebej poudariti, ali pa za določenimi predlogi (npr. brez njega...)</li>
-                    <li><b>nenaglasna/naslonska oblika</b> (npr. ga, me, ji, ti, jo, jima, jim...): največkrat uporabljana; uporabljamo, ko ne želimo poudariti osebe; obstaja le v rod., daj. in tož., 1. in 2. os. ed. in 3. os. v vseh številih</li>
-                    <li><b>navezna oblika</b> (npr. zanj, vame, zame, zanjo, zanj, nanjo, nanj, nadme...): tvorjenje predlog + nasalonska oblika zaimka v tož.; to je slogovno ustreznejša oblika kot predlog + zaimek (npr. za mene - zame)</li>
-                </ul>
-            </p>
-            <h7 id="Svojilni zaimek">Svojilni zaimek</h7>
-            <p>Svojilni zaimek posredno izraža svojino/lastnino.</p>
-            <table class="capital">
-                <tr>
-                    <th>oseba \ št.</th>
-                    <th>ednina</th>
-                    <th>dvojina</th>
-                    <th>množina</th>
-                </tr>
-                <tr>
-                    <td>1.</td>
-                    <td>moj</td>
-                    <td>najin</td>
-                    <td>naš</td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>tvoj</td>
-                    <td>vajin</td>
-                    <td>njun</td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td>njegov/njen</td>
-                    <td>njun</td>
-                    <td>njihov</td>
-                </tr>
-            </table>
-            <h7 id="Kazalni zaimek">Kazalni zaimek</h7>
-            <p>S kazalnim zaimkom pokažemo na osebe, živali, rastline, pojme, lastnosti (takih, takšnih), vrsto, kraj (tam); ki so bili v besedilu že imenovani.</p>
-            <table class="capital">
-                <tr>
-                    <th>oddaljenost</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>poleg</td>
-                    <td>ta/ta/to</td>
-                </tr>
-                <tr>
-                    <td>oddaljen</td>
-                    <td>tisti/tista/tisto</td>
-                </tr>
-                <tr>
-                    <td>neprisoten</td>
-                    <td>oni/ona/ono</td>
-                </tr>
-            </table>
-            <h7 id="Povratni zaimek">Povratni zaimek</h7>
-            <p>Povratni osebni zaimek "sebe/se": kadar se dejanje nanaša na osebek oz. na vršilca dejanja, sta osebek in predmet isto. Nima oblike v imenovalniku, oblika je enaka za vse spole, števila in osebe.</p>
-            <table class="capital">
-                <tr>
-                    <th>sklon \ oblika</th>
-                    <th>naglasna o.</th>
-                    <th>naslonska o.</th>
-                    <th>navezna o.</th>
-                </tr>
-                <tr>
-                    <td>im.</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>rod.</td>
-                    <td>sêbe</td>
-                    <td>se</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>daj.</td>
-                    <td>sêbi</td>
-                    <td>si</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>tož.</td>
-                    <td>sêbe</td>
-                    <td>se</td>
-                    <td>[predpona/"predlog"] + -se</td>
-                </tr>
-                <tr>
-                    <td>mes.</td>
-                    <td>(o) sêbi</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>oro.</td>
-                    <td>(s) sebój/sâbo</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </table>
-            <h6 id="Neosebni samostalniški zaimek">Neosebni samostalniški zaimek</h6>
-            <p>Neosebni sam. zaimek ne izraža slovnične osebe, lahko pa mu določimo spol, število in sklon. So moškega (poimenovanje človeka, npr. kdo) ali srednjega spola (poimenovanje živali, rastlin, reči ali pojmov; npr. kaj) in se pojavljajo v vseh spolih. Neosebni sam. zaimki so lahko:</p>
-            <table class="capital">
-
-                    <tr>
-                        <th>vrsta \</th>
-                        <th>raba</th>
-                        <th>človeško (m. sp.)</th>
-                        <th>nečloveško (sr. sp.)</th>
-                    </tr>
-                    <tr>
-                        <td>vprašalni zaimki</td>
-                        <td>se sprašujemo po nečem</td>
-                        <td>kdo?</td>
-                        <td>kaj?</td>
-                    </tr>
-                    <tr>
-                        <td>oziralni zaimki</td>
-                        <td>najpogosteje v odvisnih stavkih</td>
-                        <td>kdo<u>r</u></td>
-                        <td>ka<u>r</u></td>
-                    </tr>
-                    <tr>
-                        <td>nedoločni zaimki</td>
-                        <td>nadomeščajo natančno poimenovanje</td>
-                        <td><u>ne</u>kdo</td>
-                        <td><u>ne</u>kaj</td>
-                    </tr>
-                    <tr>
-                        <td>nikalni zaimki</td>
-                        <td>zanikajo prisotnost osebe, reči, pojma</td>
-                        <td><u>ni</u>hče</td>
-                        <td><u>ni</u>č</td>
-                    </tr>
-                    <tr>
-                        <td>poljubnostni zaimki</td>
-                        <td>izražajo poljubno osebo, stvar, pojem</td>
-                        <td>kdo</td>
-                        <td>kaj</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h4 id="Pridevniška beseda">Pridevniška beseda</h4>
-            <p>Pridevniške besede neposredno (pridevnik, števnik) ali posredno (pridevniški zaimek) poimenujejo lastnosti (kakšen?), vrste (kateri?), svojine (čigav?) in količine (koliko?). Pridevamo jih k samostalniškim besedam, saj jih pomensko dopolnjujejo. Nimajo lastnega spola, števila in sklona, ampak se v oblikovnih lastnostih ujemajo s samostalniškimi besedami (npr. velika [ž. sp.] omara [ž. sp.]...), zato jim lahko določimo spol (m., ž. sr.), število (ed. dv. mn.), sklon (sklanjamo po pridevniški sklanjatvi:</p>
-            <p id="moška pridevniška sklanjatev">moška pridevniška sklanjatev</p>
-            <table class="capital">
-                    <tr>
-                        <th>sklon \ št.</th>
-                        <th>ed.</th>
-                        <th>dv.</th>
-                        <th>mn.</th>
-                    </tr>
-                    <tr>
-                        <td>im.</td>
-                        <td>-ø</td>
-                        <td>-a</td>
-                        <td>-i</td>
-                    </tr>
-                    <tr>
-                        <td>rod.</td>
-                        <td>-ega</td>
-                        <td>-ih</td>
-                        <td>-ih</td>
-                    </tr>
-                    <tr>
-                        <td>daj.</td>
-                        <td>-emu</td>
-                        <td>-ima</td>
-                        <td>-im</td>
-                    </tr>
-                    <tr>
-                        <td>tož.</td>
-                        <td>-ø</td>
-                        <td>-e</td>
-                        <td>-e</td>
-                    </tr>
-                    <tr>
-                        <td>mes.</td>
-                        <td>-em</td>
-                        <td>-ih</td>
-                        <td>-ih</td>
-                    </tr>
-                    <tr>
-                        <td>orod.</td>
-                        <td>-im</td>
-                        <td>-imi</td>
-                        <td>-imi</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p id="srednja pridevniška sklanjatev">srednja pridevniška sklanjatev</p>
-            <table class="capital">
-                    <tr>
-                        <th>sklon \ št.</th>
-                        <th>ed.</th>
-                        <th>dv.</th>
-                        <th>mn.</th>
-                    </tr>
-                    <tr>
-                        <td>im.</td>
-                        <td>-o</td>
-                        <td>-i</td>
-                        <td>-a</td>
-                    </tr>
-                    <tr>
-                        <td>rod.</td>
-                        <td>-ega</td>
-                        <td>-ih</td>
-                        <td>-ih</td>
-                    </tr>
-                    <tr>
-                        <td>daj.</td>
-                        <td>-u</td>
-                        <td>-ima</td>
-                        <td>-im</td>
-                    </tr>
-                    <tr>
-                        <td>tož.</td>
-                        <td>-o</td>
-                        <td>-i</td>
-                        <td>-a</td>
-                    </tr>
-                    <tr>
-                        <td>mes.</td>
-                        <td>-em</td>
-                        <td>-ih</td>
-                        <td>-ih</td>
-                    </tr>
-                    <tr>
-                        <td>orod.</td>
-                        <td>-im</td>
-                        <td>-ima</td>
-                        <td>-imi</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p id="ženska pridevniška sklanjatev">ženska pridevniška sklanjatev</p>
-            <table class="capital">
-                    <tr>
-                        <th>sklon \ št.</th>
-                        <th>ed.</th>
-                        <th>dv.</th>
-                        <th>mn.</th>
-                    </tr>
-                    <tr>
-                        <td>im.</td>
-                        <td>-a</td>
-                        <td>-i</td>
-                        <td>-e</td>
-                    </tr>
-                    <tr>
-                        <td>rod.</td>
-                        <td>-e</td>
-                        <td>-ih</td>
-                        <td>-ih</td>
-                    </tr>
-                    <tr>
-                        <td>daj.</td>
-                        <td>-i</td>
-                        <td>-ima</td>
-                        <td>-im</td>
-                    </tr>
-                    <tr>
-                        <td>tož.</td>
-                        <td>-o</td>
-                        <td>-e</td>
-                        <td>-e</td>
-                    </tr>
-                    <tr>
-                        <td>mes.</td>
-                        <td>-i</td>
-                        <td>-ih</td>
-                        <td>-ih</td>
-                    </tr>
-                    <tr>
-                        <td>orod.</td>
-                        <td>-o</td>
-                        <td>-imi</td>
-                        <td>-imi</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Obstajajo pa tudi izjeme. Nekateri imajo v vseh sklonih ničto končnico, npr. zanič, poceni, mini, maksi, roza, lila, bordo, gala...); so posebne oblike: nedoločna (npr. majhen, lep, velik...) ali določna (značilna končnica <b>-i</b>; npr. mal-i, lep-i, velik-i...); ali stopnjo (za lastnostne pridevnike).</p>
-            <h5 id="Pridevnik">Pridevnik</h5>
-            <p>Pridevnik pridevamo k samostalniškim besedam</a>, ki jih pomensko dopolnjuje. V oblikovnih lastnostih (spol, število, sklon) se ujemajo s samostalniško besedo, kateri ga pridevamo; razen redkih izjem, ki so pogosto <a href="#Prevzete besede">prevzete besede</a> (npr.: <i>zanič, poceni, mini, maksi, roza, lila, bordo, gala</i>).<br>Pridevnik neposredno poimenuje:<br>
-                <ul class="s">
-                    <li id="Lastnostni pridevnik">Lastnost (kakšen?, kolikšen?; kateri? - za določno obliko) - <b>lastnostni pridevnik</b>: izraža pristransko oceno sporočevalca (npr.: <i>lep, grd, neumen, žalosten, vesel; velik, majhen</i>). Obstajata dve obliki lastnostnih pridevnikov:
-                        <ul class="s">
-                            <li><b>nedoločna oblika</b> (kakšen?): osnovna oblika, izraža splošnost</li>
-                            <li><b>določna oblika</b> (kateri?): označuje točno določeno stvar. Značilna končnica za tvorjenje določne oblike je <b><i>-i</i></b> za im. ed. m. sp. (npr.: <i>lep-i, majhn-i, velik-i</i>), lahko pa jo tvorimo tudi s spremembo naglasnega mesta (npr.: <i>vel<u>í</u>ka → <b>v<u>é</u>lika</i></b>). Posebnost je pridevnik <i>majhen</i>, ki ima določno obliko <b><i>mali</i></b>.<br>Določno obliko uporabimo:
-                                <ul class="s">
-                                    <li>za <a href="#Kazalni zaimek">kazalnimi zaimki</a> <i>ta, tisti, oni</i>  (npr.: <i>ta <b>lepi</b> gozd</i>)</li>
-                                    <li>za <a href="#Vrstilni števnik">vrstilnimi števniki</a> (npr.: <i>prvi <b>delovni</b> dan</i>)
-                                    <li>za <a href="#Svojilni zaimek">svojilnimi zaimki</a> ali <a href="#Svojilni pridevnik">svojilnimi pridevniki</a> (npr.: <i>njegov <b>novorojeni</b> sin; bratov <b>veliki</b> lok</i>)                                 <li>za svojilnimi pridevniki (npr.: <i></i>)
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="Vrstni pridevnik">Vrsto (kateri?) - <b>vrstni pridevnik</b></li>
-                    <li id="Svojilni pridevnik">Svojino (čigav?) - <b>svojilni pridevnik</b></li>
-                </ul>
-            </p>
-            <hr>
-            <h2 id="Skladnja">Skladnja</h2>
-            <p>Skladnja <i class="zamrznjeno">(sintaksa)</i> preučuje skladanje besed v višje enote - besedne zveze, stavke, povedi, besedila. Skladanje besed v poved (upovedovanje) je izražanje logičnih razmerij med prvinami, oz. izseki predmetnosti. Ta razmerja izražamo s stavčnimi členi.</p>
-            <h3 id="Stavek">Stavek</h3>
-            <p>Stavek je lahko v enem od glagolskih načinov:
-                <ul class="s">
-                    <li><b>tvorniku</b>, oz. <b>tvornem načinu</b> <i class="zamrznjeno">(aktivu, oz. aktivnem načinu)</i>: osebek kot nosilec dejanja.</li>
-                    <li><b>trpniku</b>, oz. <b>tvornem načinu</b> <i class="zamrznjeno">(pasivu, oz. pasivnem načinu)</i>: osebek kot cilj dejanja, oz. tisti, ki ga dejanje zadeva. Običajno se uporablja, ko vršilec dejanja ni bistven/pomemben ali se ga hoče zakriti.
-                        <ul class="s">
-                            <li><b>trpni deležnik</b> s končnico -n/-t + glagol <i>biti</i> (npr. <i>Krompir <u>je</u> kuha<u>n</u>. Kol <u>je bil</u> zabi<u>t</u> v tla.</i>)</li>
-                            <li><b>trpnik s <i>se</i></b>: <i>se</i> + glagol v 3. osebni obliki (npr. <i>Jeseni <u>se</u> <u>nabira</u> gobe.</i>)</li>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            <h4 id="Besedni red">Besedni red</h4>
-            <ul class="s">
-                <li><b>stalna stava</b>, oz. pravilo o besednem redu
-                    <ul class="s">
-                        <li>priimek za imenom</li>
-                        <li>lastno ime za občnim</li>
-                        <li>pridevniki pred samostalnikom
-                            <ul class="s">
-                                <li>lastnostni/kakovostni (kakšen?)</li>
-                                <li>svojilni (čigav?)</li>
-                                <li>vrstni (kateri?)</li>
-                            </ul>
-                        </li>
-                        <li>naslonke praviloma za prvim stavčnim členom</li>
-                    </ul>
-                </li>
-                <li><b>prosta stava</b>, oz. členitev po pomembnosti: besede so razvrščeme glede na naslovnikovo poznavanje podatkov (npr. <i>Naša lipa je začela cveteti.</i>):
-                    <ul class="s">
-                        <li>začne se z že (najbolj) znanim podatkom - <b>izhodišče</b></li>
-                        <li><b>prehod</b> - običajno povedek</li>
-                        <li>konča pa z novim podatkom, oz. tistim, ki ga želimo poudariti - <b>jedro</b></li>
-                    </ul>
-                </li>
-            </ul>
-            <h4 id="Stavčni členi">Stavčni členi</h4>
-            <ul class="s">
-                <li id="Osebek"><b>Osebek</b> <i class="zamrznjeno">(subjekt)</i>: nadrejen povedku; v tvorniku izraža vršilca dejanja ali nosilca stanja, v trpniku pa cilj glagolskega dejanja.
-                    <ul class="s">
-                        <li>v imenovalniku (<i>kdo/kaj?</i>): najpogosteje (npr. <i><b>Janez</b> pase ovce</i>);</li>
-                        <li>v rodilniku (<i>koga/česa?</i>): ob zanikanem polnopomenskem glagolu biti (npr. <i><b>Očeta</b> <u>ni</u> doma.</i>);
-                        <li>z osebno glagolsko obliko (npr. <i>Posekal je drevo.</i>);
-                        <li>logični osebek: v rodilniku, dajalniku, tožilniku; neprehodni glagoli v 3. os. ed. sr. spola (npr. <i><b>Aljažu</b> se je sanjalo.</i> <small>→ <i><u>Aljaž</u> je sanjal</i></small>);</li>
-                        <li>osebka ni: če so v povedku glagoli za dogajanje v naravi (npr. <i>Dežuje.</i>).</li>
-                        <li><b>Osebkov prilastek</b>:
-                            <ul class="s">
-                                <li>levi prilastek: pridevnik, števnik, zaimek (npr. <i><u><b>Sosedov</b> Janez</u> pase ovce.</i>);</li>
-                                <li>desni prilastek: samostalnik, prislov, polstavek (npr. <i>To je <u>mesto <b>Kranj</b></u></i> - mesto ima širše pomensko polje, zato je jedro, <i>Kranj</i> pa prilastek).</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li id="Povedek"><b>Povedek</b> <i class="zamrznjeno">(predikat)</i>: stavčni člen, izražen z osebno glagolsko obliko ali z njeno pomočjo. En stavek ima le en povedek. Povedek je lahko iz:
-                    <ul class="s">
-                        <li>polnopomenskega glagola</li>
-                        <li>nepolnopomenskega glagola
-                            <ul class="s">
-                                <li>glagol <i>biti</i>, če ne pomeni <i>obstajati, nahajati se</i></li>
-                                <li>naslonski glagol (npr. <i>morati, smeti, moči, hoteti, želeti, ...</i>)</li>
-                                <li>fazni glagol (npr. <i>začeti, nadaljevati, končati, ...</i>)</li>
-                                <li>drugi nepolnopomenski glagol (npr. <i>postati, zdeti se, ...</i>)</li>
-                            </ul>
-                    </li>
-                    </ul>
-                    <ul class="s">
-                        <li id="Povedkovo določilo"><b>Povedkovo določilo</b>: polnopomenski glagol, ki stoji ob pomožnih/nepolnopomenskih glagolih (npr. <i>On mora <b>posejati</b> žito.</i>).</li>
-                        <li id="Povedkov prilastek"><b>Povedkov prilastek</b>: kakšen je osebek/vršilec med <i>izvajanjem povedka</i> (npr. <i><b>Navdušen</b> je pripovedoval o svojem podvigu</i> - ne <i>navdušeno</i>, ker bi bil potem to načinovni prislov, se ne bi vprašal, kakšen je osebek, ampak kako je to npr. <i>povedal</i>).</li>
-                    </ul>
-                </li>
-                <li id="Prislovno_določilo"><b>Prislovno določilo</b></li>
-                <li id="Predmet"><b>Predmet</b> <i class="zamrznjeno">(objekt)</i>: sklonsko odvisen od povedka, ki izraža, koga ali kaj prizadeva glagolsko dejanje. Po njem se vprašamo s samostalniškimi vprašalnicami za vse sklone razen za imenovalnik (<i>koga/česa, komu/čemu, koga/kaj, (o) kom/čem, (s) kom/čim?</i>)</li>
-                <li id="Prilastek"><b>Prilastek</b> <i class="zamrznjeno">(atribut)</i>: določa odnosnico imenske besedne zveze.</li>
-            </ul>
-            <h4 id="Priredje">Priredja</h4>
-            <p>V priredno zloženi povedi sta stavka v enakovrednem razmerju, enako pomembna.</p>
-        </div>
-        <table class="sredinsko prvaLevo">
-            <thead>
-                <tr>
-                    <th>vrsta priredja</th>
-                    <th>izraža</th>
-                    <th>značilni vezniki</th>
-                    <th>primer</th>
-                    <th>vejica</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>vezalno</th>
-                    <td>hkratnost, sočasnost, zaporedje</td>
-                    <td><i>in, ter, pa</i></td>
-                    <td><i>Sonce sije <b>in</b> potok žubori.</i></td>
-                    <td>✗</td>
-                </tr>
-                <tr>
-                    <th>stopnjevalno</th>
-                    <td>izrazitost, nepričakovanost, stopnjevalnost</td>
-                    <td><i>ne ... ne; niti ... niti;<br>ne samo/le ... ampak/temveč/marveč tudi</i></td>
-                    <td><i><b>Niti ni</b> močan <b>niti ni</b> okreten.<br>Diamant <b>ni le</b> lep, <b>ampak tudi</b> izjemno redek.</i></td>
-                    <td>✗<br>🗸</td>
-                </tr>
-                <tr>
-                    <th>ločno</th>
-                    <td>zamenjava, izbira, nedoločenost</td>
-                    <td><i>ali ... ali (pa); bodisi ... bodisi</i></td>
-                    <td><i>Ura je dve <b>ali pa</b> štiri.</i></td>
-                    <td>✗</td>
-                </tr>
-                <tr>
-                    <th>protivno</th>
-                    <td>nasprotje, razlika</td>
-                    <td><i>a, toda, vendar, ampak, pa, temveč, marveč, namreč, ali, samo, le</i></td>
-                    <td><i>Najprej je nebo izgledalo mirno, <b>vendar</b> se je kmalu ulilo.</i></td>
-                    <td>🗸</td>
-                </tr>
-                <tr>
-                    <th>pojasnjevalno</th>
-                    <td>(logično) pojasnilo, dokaz</td>
-                    <td><i>saj, kajti, in sicer, namreč</i></td>
-                    <td><i>Ptica je v kljunu nosila vejico, <b>saj</b> je gradila gnezdo.</i></td>
-                    <td>🗸</td>
-                </tr>
-                <tr>
-                    <th>sklepalno</th>
-                    <td>sklep</td>
-                    <td><i>torej, zatorej, potemtakem</i></td>
-                    <td><i>Na nebu se zbirajo oblaki, <b>torej</b> bo najverjetneje deževalo.</i></td>
-                    <td>🗸</td>
-                </tr>
-                <tr>
-                    <th>posledično</th>
-                    <td>posledica</td>
-                    <td><i>zato, pa</i></td>
-                    <td><i>Skozi dežne kaplje je posijalo Sonce, <b>zato</b> se je pokazala mavrica.</i></td>
-                    <td>🗸</td>
-                </tr>
-            </tbody>
+        <table>
+        <caption>Kratki naglašeni samoglasniki</caption>
+        <thead>
+        <tr class="header">
+        <th></th>
+        <th>zadnji</th>
+        <th>srednji</th>
+        <th>sprednji</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>visoki</td>
+        <td>ù</td>
+        <td></td>
+        <td>ì</td>
+        </tr>
+        <tr class="even">
+        <td>visoki sredinski</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>nevtralni sredinski</td>
+        <td></td>
+        <td>ə̀</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>široki sredinski</td>
+        <td>ò</td>
+        <td></td>
+        <td>è</td>
+        </tr>
+        <tr class="odd">
+        <td>nizki</td>
+        <td></td>
+        <td>à</td>
+        <td></td>
+        </tr>
+        </tbody>
         </table>
-        <div class="vsebina">
-            <h4 id="Odvisniki">Odvisniki</h4>
-            <p>Odvisnik je dodatni stavek in dopolnjuje glavni stavek in mu je torej podrejen in odvisen. Med glavnim in odvisnim stavkom je vedno vejica.</p>
-        </div>
-        <table class="sredinsko prvaLevo">
-            <thead>
-                <tr>
-                    <th>vrsta odvisnika</th>
-                    <th>več pove</th>
-                    <th>vprašalnica</th>
-                    <th>značilni vezniki</th>
-                    <th>primer</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>osebkov</th>
-                    <td>o osebku</td>
-                    <td>kdo/kaj? (za imenovalnik)</td>
-                    <td><i>kar / kdor/kdo</i></td>
-                    <td><i><b>Kdor</b> veliko bere, veliko ve.</i></td>
-                </tr>
-                <tr>
-                    <th>predmetni</th>
-                    <td>o predmetu</td>
-                    <td>koga/česa?, komu/čemu?, koga/kaj?, ... (za vse sklone, razen imenovalnika)</td>
-                    <td><i>česar/kogar, kar/koga, ... (za vse sklone), da, če, kako, koliko</i></td>
-                    <td><i><b>Kar</b> si obljubil, moraš tudi izpolniti.</i></td>
-                </tr>
-                <tr>
-                    <th>krajevni</th>
-                    <td>o kraju</td>
-                    <td>kje?, kam?, (od/do) kod?</td>
-                    <td><i>kjer, (od/do) koder, kamor</i></td>
-                    <td><i>Hodim po pragozdu, <b>kjer</b> se živali še ne bojijo človeka</i></td>
-                </tr>
-                <tr>
-                    <th>časovni</th>
-                    <td>o času</td>
-                    <td>(od/do) kdaj?</td>
-                    <td><i>ko, kadar, dokler, odkar/kar, potem ko, medtem ko, brž ko, prej ko, takoj ko, od kdaj, tako dolgo da</i></td>
-                    <td><i><b>Ko</b> je Sonce najvišje, si oddahnemo v senci.</i></td>
-                </tr>
-                <tr>
-                    <th>vzročni</th>
-                    <td>o vzroku</td>
-                    <td>zakaj?</td>
-                    <td><i>ker, da</i></td>
-                    <td><i>Zemlja kroži okoli Sonca, <b>ker</b> ga to privlači.</i></td>
-                </tr>
-                <tr>
-                    <th>namerni</th>
-                    <td>o namenu/nameri</td>
-                    <td>čemú? / s katerim namenom?</td>
-                    <td><i>da (bi)</i></td>
-                    <td><i>Posejal bo seme, <b>da</b> bo ga bo lahko požel.</i></td>
-                </tr>
-                <tr>
-                    <th>pogojni</th>
-                    <td>o pogoju</td>
-                    <td>pod katerim pogojem?</td>
-                    <td><i>če, ko bi, ako</i></td>
-                    <td><i><b>Če</b> bi prej premislil, tega ne bi storil.</i></td>
-                </tr>
-                <tr>
-                    <th>dopustni</th>
-                    <td>o tem, kljub čemer nekaj je/bo/je bilo</td>
-                    <td>kljub čemu?</td>
-                    <td><i>četudi, čeprav, dasiravno/dasi</i></td>
-                    <td><i><b>Dasiravno</b> je poznal odgovor, ga je zadržal zase.</i></td>
-                </tr>
-                <tr>
-                    <th>načinovni</th>
-                    <td>o načinu</td>
-                    <td>kako? / na kakšen način?</td>
-                    <td><i>(ne) da bi, kot bi, tako/kakor/kot/ko (da)</i></td>
-                    <td><i><b>Ne da bi</b> dobro pomeril, je zadel v sredino.</i></td>
-                </tr>
-                <tr>
-                    <th>prilastkov</th>
-                    <td>o pridevniku - lastnosti, vrsti, svojini</td>
-                    <td>kakšen/kateri/čigav?</td>
-                    <td><i>ki, kateri, čigar, da</i></td>
-                    <td><i>Sanje, <b>ki</b> so jih mati sanjali prejšnjo noč, so se uresničile.</i></td>
-                </tr>
-            </tbody>
+        <h3 id="Soglasniki">Soglasniki</h3>
+        <h2 id="Pravorecje">Pravorečje</h2>
+        <table>
+        <colgroup>
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>črka</th>
+        <th>izgovor</th>
+        <th>primer</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>⟨a⟩</td>
+        <td>[a]</td>
+        <td><em><strong>a</strong>t<strong>a</strong></em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨b⟩</td>
+        <td>[b]/[b̪] [p]/[p̪]</td>
+        <td><em><strong>b</strong>arka</em>,
+        <em>o<strong>b</strong>sorej</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨c⟩</td>
+        <td>[t͡s] [d͡z]</td>
+        <td><em><strong>c</strong>okla</em>, <em>kone<strong>c</strong>
+        dela</em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨č⟩</td>
+        <td>[t͡ʃ] [d͡ʒ]</td>
+        <td><em><strong>č</strong>ebela</em>, <em>ve<strong>č</strong>
+        dela</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨d⟩</td>
+        <td>[d̪] [t̪]</td>
+        <td><em><strong>d</strong>revo</em>,
+        <em>sla<strong>d</strong>ki</em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨e⟩</td>
+        <td>[e] [ɛ] [ə]</td>
+        <td><em>r<strong>e</strong>s</em>,
+        <em>kr<strong>e</strong>silo</em>,
+        <em>p<strong>e</strong>s</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨f⟩</td>
+        <td>[f] [v]</td>
+        <td><em><strong>F</strong>ilip</em>,
+        <em>A<strong>f</strong>ganistan</em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨g⟩</td>
+        <td>[g] [k]</td>
+        <td><em><strong>g</strong>ozd</em>,
+        <em>dol<strong>g</strong>čas</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨h⟩</td>
+        <td>[x] [ɣ]</td>
+        <td><em><strong>h</strong>osta</em>, <em><strong>h</strong>
+        gori</em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨i⟩</td>
+        <td>[i]</td>
+        <td><em><strong>i</strong>gla</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨j⟩</td>
+        <td>[j] [i]</td>
+        <td><em><strong>j</strong>agoda</em>,
+        <em>ki<strong>j</strong></em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨k⟩</td>
+        <td>[k] [g]</td>
+        <td><em><strong>k</strong>rog</em>,
+        <em>prero<strong>k</strong>ba</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨l⟩</td>
+        <td>[l] [uʷ]</td>
+        <td><em>h<strong>l</strong>od</em>,
+        <em>jabo<strong>l</strong>ko</em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨m⟩</td>
+        <td>[m] [ɱ]</td>
+        <td><em><strong>m</strong>ost</em>,
+        <em>si<strong>m</strong>fonija</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨n⟩</td>
+        <td>[n̪] [ŋ]</td>
+        <td><em><strong>n</strong>oga</em>,
+        <em>A<strong>n</strong>gela</em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨o⟩</td>
+        <td>[o] [ɔ]</td>
+        <td><em>g<strong>o</strong>zd</em>,
+        <em>k<strong>o</strong>l</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨p⟩</td>
+        <td>[p]/[p̪] [b]/[b̪]</td>
+        <td><em><strong>p</strong>ar</em>, <em>le<strong>p</strong>
+        gozd</em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨r⟩</td>
+        <td>[r]</td>
+        <td><em><strong>r</strong>oka</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨s⟩</td>
+        <td>[s] [z]</td>
+        <td><em><strong>s</strong>vizec</em>,
+        <em>gla<strong>s</strong>ba</em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨š⟩</td>
+        <td>[ʃ] [ʒ]</td>
+        <td><em><strong>š</strong>oja</em>,
+        <em>izvr<strong>š</strong>ba</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨t⟩</td>
+        <td>[t] [d]</td>
+        <td><em><strong>t</strong>epec</em>,
+        <em>pe<strong>t</strong>deset</em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨u⟩</td>
+        <td>[u]</td>
+        <td><em>j<strong>u</strong>ha</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨v⟩</td>
+        <td>[ʋ] [v] ([w] [ʍ]) [uʷ]</td>
+        <td><em><strong>v</strong>oda</em>,
+        <em><strong>v</strong>zet</em>, <em><strong>v</strong>sak</em>,
+        <em>pesko<strong>v</strong>nik</em></td>
+        </tr>
+        <tr class="even">
+        <td>⟨z⟩</td>
+        <td>[z] [s]</td>
+        <td><em><strong>z</strong>id</em>,
+        <em>i<strong>z</strong>tolči</em></td>
+        </tr>
+        <tr class="odd">
+        <td>⟨ž⟩</td>
+        <td>[ʒ] [ʃ]</td>
+        <td><em><strong>ž</strong>ito</em>,
+        <em>bele<strong>ž</strong>ka</em></td>
+        </tr>
+        </tbody>
         </table>
-        <div class="vsebina">
-            <h4 id="Časi">Časi</h4>
-            <p>
-                <ul class="s">
-                    <li><b>predpreteklik</b>:  [biti v pretekliku (sem bil / si bil / je bil / sva bila / sta bila / smo bili / ste bili / so bili)] + [glagol] (npr.: <i>Sem bil prišel v hišo.</i>)</li>
-                    <li><b>preteklik</b>: [biti v sedanjiku (sem/si/je/sva/sta/smo/ste/so)] + [glagol] (npr.: <i>Na mizo je postavila kosilo. Pleli so vrt.</i>)</li>
-                    <li><b>sedanjik</b>: [ø] + [glagol] (npr.: <i>On je močan. Jaham konja.</i>)</li>
-                    <li><b>prihodnjik</b>: [biti v prihodnjiku] + [glagol] (npr.: <i>Njive bodo obrodile. Jutri bomo praznovali.</i>)</li>
-                </ul>
-            </p>
-            <h5 id="Glagolski vid">Glagolski vid</h5>
-            <p>
-                <ul class="s">
-                    <li><b>dovršni</b>: označuje dovršeno/dokončano dejanje/dogajanje glagola (npr.: <i>Obral je robide.</i>)</li>
-                    <li><b>nedovršni</b>: označuje nedovršeno/nedokončano dejanje/dogajanje/stanje glagola (npr.: <i>Obiral je robide.</i>)</li>
-                </ul>
-            </p>
-            <hr>
-            <h2 id="Pravopis">Pravopis</h2>
-            <p>Pravopis obsega pravila o pravilnem zapisovanju besed, rabi velikih in malih črk, rabi ločil, deljenju besed, pisanju skupaj in narazen, ter pisanju prevzetih besed.</p>
-            <h3 id="Lastna imena">Lastna imena</h3>
-            <h4 id="Osebna lastna imena">Osebna lastna imena</h4>
-            <p>Z osebnimi lastnimi imeni poimenujemo imena živih bitij. Pišejo se z véliko začetnico:
-            <ul class="s">
-                <li>imena živali (npr.: Reks, Šapa, ...)in oseb: osebna imena (Anton, Ana, Dominik, Janez, ...), priimki (Novak, Žebovec, ...), vzdevki (npr.: Najvišji, Vsemogočni, Veliki, ...), izmišljena osebna imena (npr.: Rdeča kapica, Ostržek, Zlatolaska; Erlond, Iluvator, ...), veroslovna imena (Bog, Jahve, Alah, ...)</li>
-                <li>imena prebivalcev kraja, skupine ljudi, ljudi neke narodnosti (npr.: Kranjčan, Slovenec, Zemljan, Evropejec; Romi, Baski, ...)</li>
-                <li>prevzeta osebna lastna imena: običajno slovenimo imena oseb iz grško-rimskega sveta (npr.: Ojdip, Ahil, ...), vladarskih rodbin (Habsburžani, ...), svetnikov (npr.: Frančišek Asiški, pater Pij, Janez Pavel II., ...), papežev (papež Frančišek, papež Pij XXIII., ...), pomembnih zgodovinskih oseb (npr.: Krištof Kolumb, Petrarka, ...), vladarjev (npr.: Konstantin, Aleksander Veliki, ...).</li>
-            </ul>
-            <h4 id="Zemljepisna lastna imena">Zemljepisna lastna imena</h4>
-            <p>Zemljepisna lastna imena poimenujejo zemljepisne enote, ter jih pišemo z véliko začetnico; razen dele večbesednih imen, ki označujejo zempljepisno enoto, oz. so <a href="#zemljepisna občna imena">zemljepisna občna imena</a> (vas, mesto, trg; gora, reka, jezero, morje, ocean, ulica, cesta, gorovje, nižina, dolina, puščava, ...), katerega ime je to, ali pa so predlogi/vezniki, pišemo z malo začetnico, razen če so na začetku imena (če pa je recimo mesto pomenovano <i>Most</i>, to ne velja)</p>
-            <ul class="s">
-                <li>naselbinska imena: zaselkov, vasi, mest, trgov, krajev, ... (npr.: Medvode, Zidani Most, Cerklje na Gorenjskem, Škofja Loka, Črni Vrh nad Idrijo, Gornja Radgona, Nova Gorica, Novo mesto, Nova vas, Srednja vas v Bohinju, Stari trg ob Kolpi, Šmartno pri Litiji, Orehova vas, ...)</li>
-                <li>nenaselbinska imena: gora, rek, jezer, morij, oceanov, celin, pokrajin, ulic, cest, planetov, gorovij, nižin, dolin, puščav, ... (npr.: Tihi ocean, Evropa, Primorska, Severna Amerika, Južna Koreja, Pireneji, Skalno gorovje, Sava, Sahara, Šetinova ulica, Koroška cesta, ...).
-            </ul>
-            <p>Slovenimo kraje v zamejstvu (npr.: Beljak, Celovec, Trst, Gorica, Oglej, Dunaj, Videm, ...), kraje, povezane z našo kulturno zgodovino (npr.: Pariz, Praga, Krakov, Čikago, ...).</p>
-            <h4 id="Stvarna lastna imena">Stvarna lastna imena</h4>
-            <p>Stvarna lastna imena so imena knjig, filmov, časopisov, ustanov, podjetij, lokalov, restavracij, znamk, društev, zvez, upravnih enot, političnih strank, ... (npr.: Gospodar Prstanov, Sveto pismo, Osnovna šola Medvode, Godba Medvode, ...)</p>
-            <p>Tuja imena knjig, filmov, slovenimo, ostala (imena podjetij, znamk, časopisov, ...) pa ne.</p>
-            <h4 id="Stvarna občna imena">Stvarna občna imena</h4>
-            <p>Občna imena so splošna imena in se pišejo z malo začetnico. Sem spadajo imena praznikov (če so poimenovani po osebah se piše z véliko - npr.: Prešernov dan, Jurjevo; božič, silvestrovo - vendar Silvestrov večer, velika noč, novo leto, valentinovo, noč čarovnic, ...), nagrad, priznanj, zgodovinskih dogodkov, iznajd, bitij (medved, pes; volkodlak, vila, škrat, ...)industrijskih izdelkov; vrste društev, podjetij, klubov (npr.: ribiško društvo, kulturno društvo, nogometni klub, ...)</p>
-            <ul class="s">
-                <li id="zemljepisna občna imena">zemljepisna občna imena (npr.: morje, ocean, gorovje, gora, puščava, ...)</li>
-                <li>osebna občna imena: glede na versko pripadnost (npr.: kristjan, jud, misliman, budist, ...), rasno pripadnost (npr.: belec, črnec, rdečekožec, ...), jezikovno pripadnost (če ni (hkrati) tudi narodna; npr.: germanist, latinist), bivanje (npr.: meščan, vaščan, najemnik, ...)</li>
-            </ul>
-            <hr>
-            <h2 id="Slovenska narečja">Slovenska narečja</h2>
-            <p>Slovenščina pozna sedem narečnih skupin (Toporišič govori o osmih narečnih skupinah – dodatno še o kočevski jezikovni skupini) in skupno več kot 30 narečij.</p>
-            <img
-                src="./images/karta_slovenskih_narecij.svg"
-                class="image-center"/>
-            <ul class="drevesni">
-                <li>slovenščina</li>
-                    <ul>
-                        <li><b>gorenjska narečna skupina</b>
-                            <ul>
-                                <li>gorenjsko narečje
-                                    <ul>
-                                        <li>vzhodnogorenjsko podnarečje</li>
-                                    </ul>
-                                </li>
-                                <li>selško narečje</li>
-                            </ul>
-                        </li>
-                        <li><b>dolenjska narečna skupina</b>
-                            <ul>
-                                <li>dolenjsko narečje
-                                    <ul>
-                                        <li>vzhodnodolenjsko podnarečje</li>
-                                    </ul>
-                                </li>
-                                <li>severnobelokranjsko narečje</li>
-                                <li>južnobelokranjsko narečje</li>
-                                <li>kostelsko narečje</li>
-                                <li>mešani kočevski govori (kočevsko narečje)</li>
-                            </ul>
-                        </li>
-                        <li><b>štajerska narečna skupina</b>
-                            <ul>
-                                <li>srednjesavinjsko narečje</li>
-                                <li>zgornjesavinjsko narečje
-                                    <ul>
-                                        <li>solčavsko podnarečje</li>
-                                    </ul>
-                                </li>
-                                <li>srednještajersko narečje</li>
-                                <li>južnopohorsko narečje
-                                    <ul>
-                                        <li>kozjaško podnarečje</li>
-                                    </ul>
-                                </li>
-                                <li>kozjansko-bizeljsko narečje</li>
-                                <li>posavsko narečje
-                                    <ul>
-                                        <li>zagorsko-trboveljsko podnarečje</li>
-                                        <li>laško podnarečje</li>
-                                        <li>sevniško-krško podnarečje</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><b>panonska narečna skupina</b>
-                            <ul>
-                                <li>prekmursko narečje</li>
-                                <li>slovenskogoriško narečje</li>
-                                <li>prleško narečje</li>
-                                <li>haloško narečje</li>
-                            </ul>
-                        </li>
-                        <li><b>koroška narečna skupina</b>
-                            <ul>
-                                <li>severnopohorsko-remšniško narečje</li>
-                                <li>mežiško narečje</li>
-                                <li>podjunsko narečje (Avstrija)</li>
-                                <li>obirsko narečje (Avstrija)</li>
-                                <li>rožansko narečje (Avstrija)</li>
-                                <li>ziljsko narečje (Avstrija, Italija)
-                                    <ul>
-                                        <li>kranjskogorsko podnarečje</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><b>primorska narečna skupina</b>
-                            <ul>
-                                <li>rezijansko narečje</li>
-                                <li>obsoško narečje</li>
-                                <li>tersko narečje</li>
-                                <li>nadiško narečje</li>
-                                <li>briško narečje</li>
-                                <li>kraško narečje
-                                    <ul>
-                                        <li>banjško podnarečje</li>
-                                    </ul>
-                                </li>
-                                <li>istrsko narečje
-                                    <ul>
-                                        <li>rižansko podnarečje</li>
-                                        <li>šavrinsko podnarečje</li>
-                                    </ul>
-                                </li>
-                                <li>notranjsko narečje</li>
-                                <li>čiško/čičarijsko narečje</li>
-                            </ul>
-                        </li>
-                        <li><b>rovtarska narečna skupina</b>
-                            <ul>
-                                <li>tolminsko narečje
-                                    <ul>
-                                        <li>baško podnarečje</li>
-                                    </ul>
-                                </li>
-                                <li>cerkljansko narečje</li>
-                                <li>poljansko narečje</li>
-                                <li>škofjeloško narečje</li>
-                                <li>črnovrško narečje</li>
-                                <li>horjulsko narečje</li>
-                                <li>(idrijsko narečje)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <hr>
-            <h2 id="Zunanje povezave in viri">Zunanje povezave in viri</h2>
-            <ul class="s">
-                <li><a target="_blank" rel="noopener noreferrer" href="https://www.fran.si/">Fran SSKJ</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://fran.si/134/slovenski-pravopis/datoteke/Pravopis_Pravila.pdf">Fran: Slovenski pravopis - pravila</a> (pdf)</li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://fran.si/204/sla-slovenski-lingvisticni-atlas/datoteke/SLA_Karta-narecij.pdf">Fran: Karta slovenskih narečij z večjimi naselji</a> (pdf) <span class="arh">[<a href="https://web.archive.org/web/20231024151422/https://fran.si/204/sla-slovenski-lingvisticni-atlas/datoteke/SLA_Karta-narecij.pdf">arhivirano</a>]</span></li>
-                <br>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://sl.wikipedia.org/wiki/Fonologija_slovenskega_knji%C5%BEnega_jezika">Wikipedija: Fonologija slovenskega knjižnega jezika</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://omp.zrc-sazu.si/zalozba/catalog/download/906/3843/416?inline=1">Barbara Ivančič Kutin: Slovar bovškega govora</a> (pdf) <span class="arh">[<a href="https://web.archive.org/web/20230401181701/https://omp.zrc-sazu.si/zalozba/catalog/book/906">arhivirano</a>]</span></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://sl.wikipedia.org/wiki/Slovenska_nare%C4%8Dja">Wikipedija: Slovenska narečja</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://ucilnice.arnes.si/mod/book/tool/print/index.php?id=468463">Učilnice Arnes: Pravopis - ločila</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://www.rtvslo.si/kultura/knjige/veliko-odkritje-v-svetokriskem-rokopisu-najstarejsi-zapis-slovenscine-po-brizinskih-spomenikih/630717">RTVSLO: Veliko odkritje v Svetokriškem rokopisu: najstarejši zapis slovenščine po Brižinskih spomenikih</a></li>
-            </ul>
-        </div>
-        <footer>Zadnja posodobitev te strani: <time datetime="2024-07-15">15. 7. 2024</time></footer>
-    </body>
+        <h2 id="Oblikoslovje">Oblikoslovje</h2>
+        <table>
+        <caption>Skloni</caption>
+        <thead>
+        <tr class="header">
+        <th></th>
+        <th>ime sklona</th>
+        <th>vprašalnica</th>
+        <th>primer</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>1</td>
+        <td>imenovalnik (<em>nominativ</em>)</td>
+        <td>kdo/kaj?</td>
+        <td><em>brat</em>, <em>sinek</em></td>
+        </tr>
+        <tr class="even">
+        <td>2</td>
+        <td>rodilnik (<em>genitiv</em>)</td>
+        <td>koga/česa?</td>
+        <td><em>brata</em>, <em>sineka</em></td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>dajalnik (<em>dativ</em>)</td>
+        <td>komu/čemu?</td>
+        <td><em>bratu</em>, <em>sineku</em></td>
+        </tr>
+        <tr class="even">
+        <td>4</td>
+        <td>tožilnik (<em>akuzativ</em>)</td>
+        <td>koga/kaj?</td>
+        <td><em>brata</em>, <em>sineka</em></td>
+        </tr>
+        <tr class="odd">
+        <td>5</td>
+        <td>mestnik (<em>lokativ</em>)</td>
+        <td>(o) kom/čem?</td>
+        <td><em>bratu</em>, <em>sineku</em></td>
+        </tr>
+        <tr class="even">
+        <td>6</td>
+        <td>orodnik (<em>instrumental</em>)</td>
+        <td>(s) kom/čim?</td>
+        <td><em>bratom</em>, <em>sinekom</em></td>
+        </tr>
+        <tr class="odd">
+        <td>7</td>
+        <td>zvalnik (<em>vokativ</em>)</td>
+        <td>(ti)</td>
+        <td><em>brate</em>, <em>sinko</em></td>
+        </tr>
+        </tbody>
+        </table>
+        <h6 id="Sklanjatve">Sklanjatve</h6>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>sklon  število</th>
+        <th>ednina</th>
+        <th>dvojina</th>
+        <th>množina</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>1</td>
+        <td>-ø</td>
+        <td>-a</td>
+        <td>-i</td>
+        </tr>
+        <tr class="even">
+        <td>2</td>
+        <td>-a</td>
+        <td>-ov</td>
+        <td>-ov</td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>-u</td>
+        <td>-oma</td>
+        <td>-om</td>
+        </tr>
+        <tr class="even">
+        <td>4</td>
+        <td>-ø</td>
+        <td>-a</td>
+        <td>-e</td>
+        </tr>
+        <tr class="odd">
+        <td>5</td>
+        <td>-u</td>
+        <td>-ih</td>
+        <td>-ih</td>
+        </tr>
+        <tr class="even">
+        <td>6</td>
+        <td>-om</td>
+        <td>-oma</td>
+        <td>-i</td>
+        </tr>
+        <tr class="odd">
+        <td>7</td>
+        <td>-e/o</td>
+        <td></td>
+        <td>-i</td>
+        </tr>
+        </tbody>
+        </table>
+    </main>
+    <footer><!--Spletno stran trenutno močno posodabljam, zato so nekatere strani začasno ukinjene, mnoge povezave znotraj strani ne delujejo.
+        <br>--><button id="stikaloTeme">Preklopi barvni način strani</button>
+    </footer>
+</body>
 </html>
