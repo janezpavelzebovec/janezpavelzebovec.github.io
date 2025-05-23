@@ -1,429 +1,569 @@
 <!doctype html>
 <html lang="sl">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--nastavitve prikaza v različnih napravah-->
-        <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js" defer></script>
-        <meta http-equiv="Cache-control" content="public">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Matematika</title>
-        <meta name="description" content="Matematika - matematična teorija, enačbe, števila, predpone..."  /> <!--opis spletnega mesta-->
-        <meta name="keywords" content="matematika, matematične enačbe, števila, računstvo" />
-        <meta name="copyright" content="Janez Pavel Žebovec" />
+    <title>Računstvo</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content="računstvo, matematika"/>
+    
+    <link rel="shortcut icon" type="image/svg" href="/images/favicon.svg" />
+    <link rel="icon" href="/images/favicon.ico">
 
-        <link rel="shortcut icon" type="image/png" href="images/icon.png">
-        <link rel="icon" href="images/favicon.ico"> <!--ikona, ki se bo prikazala v zavihku brskalnika-->
-        <link rel="icon" href="images/JPZzozadjem.svg" type="image/svg+xml" sizes="any"> <!--ikona, ki omogoča visoko kakovosten prikaz ikone na različnih napravah-->
-        <meta name=application-name content="Matematika"> <!--ime spletne aplikacije, ki se bo prikazalo v brskalniku ali na drugih platformah-->
-        <meta name=msapplication-TileColor content=#121212f> <!--barva ozadja ploščice za Windows aplikacijo-->
-        <meta name=theme-color content=#121212> <!--barvna shema spletne strani, ki se bo uporabila pri prikazu v brskalnikih ali aplikacijah-->
+    <style>/*običajen slog za boljšo učinkovitost strani*/
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #121212;
+            color: #eee;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+            max-width: 50em;
+            margin: auto;
+            padding: 1em;
+            padding-top: 0;
+            font-size: 1.1em;
+        }
+        header {
+            height: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #domov {
+            width: 3em;
+            aspect-ratio: 1 / 1;
+            display: block;
+            padding: 0.5em;
+            border-radius: 50%;
+        }
+    </style>
 
-        <meta property="og:title" content="Matematika"> <!--og:title določa naslov, ki se bo prikazal pri deljenju na družabnih omrežjih-->
-        <meta property="og:image" content="images/icon.png"><!--določa sliko, ki se bo prikazala ob deljenju spletne strani na družabnih omrežjih-->
-        <meta property="og:description" content="Matematika - matematična teorija, enačbe, števila, predpone..." ><!--določa opis spletne strani, ki se bo prikazal ob deljenju na družabnih omrežjih-->
-        <meta property="og:site_name" content="Janez Pavel Žebovec"><!--določa ime spletnega mesta, ki se bo prikazalo ob deljenju na družabnih omrežjih-->
+    <!--<style>/*poseben slog za domačo stran*/
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #121212;
+            color: #eee;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+            max-width: 50em;
+            margin: auto;
+            padding: 1em;
+            padding-top: 0;
+            padding-bottom: 0 !important; /*tale vrstica je važna za domačo stran*/
+            font-size: 1.1em;
+        }
+        header {
+            height: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #domov {
+            width: 3em;
+            aspect-ratio: 1 / 1;
+            display: block;
+            padding: 0.5em;
+            border-radius: 50%;
+        }
+    </style>-->
 
-        <meta name="twitter:card" content="summary_large_image"><!--določa vrsto kartice, ki se bo uporabila pri deljenju na Twitterju. "summary_large_image" pomeni, da bo prikazana kartica s sliko.-->
-        <meta name="twitter:creator" content="@JanezPavelZ"><!--določa uporabniško ime ustvarjalca vsebine na Twitterju.-->
-        <meta name="twitter:title" content="Janez Pavel Žebovec"><!--določa naslov spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
-        <meta name="twitter:description" content="Matematika - matematična teorija, enačbe, števila, predpone..." ><!--določa opis spletne strani, ki se bo prikazal pri deljenju na Twitterju.-->
-        <meta name="twitter:image:src" content="https://www.janezpavelzebovec.net/icon.png"><!--določa URL slike, ki se bo prikazala ob deljenju na Twitterju-->
-    </head>
+    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'"/>
+    <script src="/scripts.js" defer></script>
 
-    <body>
-        <label class="hamburger-menu">
-          <input type="checkbox" />
-        </label>
-        <aside class="sidebar">
-          <nav>
-            <div><a href="./">Domov</a></div>
-            <div><a href="./knjiznica">Knjižnica</a></div>
-            <br>
-            <div><a href="./zvezdoslovna_ura">Zvezdoslovna ura</a></div>
-            <div><a href="./nova_stara_slovenscina">Nova stara slovenščina</a></div>
-            <div><a href="./glasopisnica">Glasopisnica</a></div>
-            <div><a href="./mojrodovnik">Moj rodovnik</a></div>
-          </nav>
-        </aside>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
 
-        <button id="stikaloNačina" class="stikaloNačina">
-            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
-                <path fill="currentColor"
-                    d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
-                    transform="translate(-8 -8)"/>
-            </svg>
-        </button>
-
-        <div class="vsebina">
-            <h1>Matematika</h1>
-        </div>
-        <div class="vsebina">
-            <h3 id="Predpone in imena visokih števil">Predpone in imena visokih števil</h3>
-                <table class="capital">
-                    <tr>
-                        <th>desetiški<br>mnogokratnik</th>
-                        <th>ime števila</th>
-                        <th>ime predpone</th>
-                        <th>oznaka predpone</th>
-                    </tr>
-                    <tr>
-                        <td>10<sup>10<sup>10<sup>10<sup>10<sup>10<sup>100</sup></sup></sup></sup></sup></sup></td>
-                        <td>gugolkvintupleks</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>10<sup>10<sup>10<sup>10<sup>100</sup></sup></sup></sup></sup></td>
-                        <td>gugolkvadrupleks</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>10<sup>10<sup>10<sup>100</sup></sup></sup></sup></td>
-                        <td>gugoltripleks</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>10<sup>10<sup>100</sup></sup></sup></td>
-                        <td>gugoldupleks</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>10<sup>100</sup></sup></td>
-                        <td>gugolpleks</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>180</sup></td>
-                        <td>trigintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>174</sup></td>
-                        <td>novemgintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>165</sup></td>
-                        <td>oktovigintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>162</sup></td>
-                        <td>septevigintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>156</sup></td>
-                        <td>seksvigintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>150</sup></td>
-                        <td>kvinvigintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>138</sup></td>
-                        <td>trevigintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>132</sup></td>
-                        <td>duovigintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>126</sup></td>
-                        <td>unvigintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>120</sup></td>
-                        <td>vigintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>114</sup></td>
-                        <td>novemdecilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>108</sup></td>
-                        <td>oktodecilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>100</sup></td>
-                        <td>gugol</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>600</sup></td>
-                        <td>centilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>99</sup></td>
-                        <td>duotrigintilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>78</sup></td>
-                        <td>tredecilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>72</sup></td>
-                        <td>duodecilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>66</sup></td>
-                        <td>undecilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>63</sup></td>
-                        <td>decilijarda</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>60</sup></td>
-                        <td>decilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>57</sup></td>
-                        <td>nonilijarda</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>54</sup></td>
-                        <td>nonilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>51</sup></td>
-                        <td>oktilijarda</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>48</sup></td>
-                        <td>oktilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>45</sup></td>
-                        <td>septilijarda</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>42</sup></td>
-                        <td>septilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>39</sup></td>
-                        <td>sekstilijarda</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>36</sup></td>
-                        <td>sekstilijon</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>33</sup></td>
-                        <td>kvintilijarda</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>30</sup></td>
-                        <td>kvintilijon</td>
-                        <td>kveta</td>
-                        <td>Q</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>27</sup></td>
-                        <td>kvadrilijarda</td>
-                        <td>rona</td>
-                        <td>R</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>24</sup></td>
-                        <td>kvadrilijon</td>
-                        <td>jota</td>
-                        <td>Y</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>21</sup></td>
-                        <td>trilijarda</td>
-                        <td>zeta</td>
-                        <td>Z</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>18</sup></td>
-                        <td>trilijon</td>
-                        <td>eksa</td>
-                        <td>E</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>15</sup></td>
-                        <td>bilijarda</td>
-                        <td>peta</td>
-                        <td>P</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>12</sup></td>
-                        <td>bilijon</td>
-                        <td>tera</td>
-                        <td>T</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>9</sup></td>
-                        <td>milijarda</td>
-                        <td>giga</td>
-                        <td>G</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>6</sup></td>
-                        <td>milijon</td>
-                        <td>mega</td>
-                        <td>M</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>3</sup></td>
-                        <td>tisoč</td>
-                        <td>kilo</td>
-                        <td>k</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>2</sup></td>
-                        <td>sto</td>
-                        <td>hekto</td>
-                        <td>h</td>
-                    </tr>
-                    <tr class="spodajrob">
-                        <td>10<sup>1</sup></td>
-                        <td>deset</td>
-                        <td>deka</td>
-                        <td>da</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-1</sup></td>
-                        <td>desetina</td>
-                        <td>deci</td>
-                        <td>d</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-2</sup></td>
-                        <td>stotina</td>
-                        <td>centi</td>
-                        <td>c</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-3</sup></td>
-                        <td>tisočina</td>
-                        <td>mili</td>
-                        <td>m</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-6</sup></td>
-                        <td>milijonina</td>
-                        <td>mikro</td>
-                        <td>μ</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-9</sup></td>
-                        <td>milijardina</td>
-                        <td>nano</td>
-                        <td>n</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-12</sup></td>
-                        <td>bilijonina</td>
-                        <td>piko</td>
-                        <td>p</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-15</sup></td>
-                        <td>bilijardina</td>
-                        <td>femto</td>
-                        <td>f</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-18</sup></td>
-                        <td>trilijonina</td>
-                        <td>ato</td>
-                        <td>a</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-21</sup></td>
-                        <td>trilijardina</td>
-                        <td>zepto</td>
-                        <td>z</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-24</sup></td>
-                        <td>kvadrilijonina</td>
-                        <td>jokto</td>
-                        <td>y</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-27</sup></td>
-                        <td>kvadriljardina</td>
-                        <td>ronto</td>
-                        <td>r</td>
-                    </tr>
-                    <tr>
-                        <td>10<sup>-30</sup></td>
-                        <td>kvintilijonina</td>
-                        <td>kvekto</td>
-                        <td>q</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3>Zunanje povezave in viri</h3>
-            <ul class="s">
-                <li><a href="https://sl.wikipedia.org/wiki/Seznam_%C5%A1tevil">Wikipedija: Seznam števil</a></li>
-                <li><a href="https://sl.wikipedia.org/wiki/Imena_velikih_%C5%A1tevil">Wikipedija: Imena velikih števil</a></li>
-            </ul>
-        </div>
-        <footer>Zadnja posodobitev te strani: <time datetime="2024-07-14">14. 7. 2024</time></footer>
-    </body>
+</head>
+<body>
+    <header>
+    <a href="/" aria-label="Domov"><?xml version="1.0" encoding="UTF-8"?>
+        <svg id="domov" alt="JPŽ" viewBox="0 0 200.29 184.95" xmlns="http://www.w3.org/2000/svg">
+            <path d="m100.16 175.85-9.097-9.097-6.06 6.059-6.059 6.06-3.037-3.039-3.038-3.038 18.16-18.16h-50.008l26.54-26.546 26.54-26.545-1.536-1.497-1.536-1.496-26.527 26.523-26.527 26.522-1.482-1.516c-3.775-3.864-5.546-5.696-7.092-7.336-16.688-17.704-26.211-31.284-28.698-40.924-1.21-4.691-0.863-10.232 0.99-15.79 1.699-5.097 4.565-10.096 8.84-15.423 3.371-4.2 7.977-8.867 12.227-12.39 7.033-5.829 14.255-9.477 20.998-10.607 4.438-0.744 8.947-0.517 13.093 0.659 11.322 3.209 25.58 12.759 42.257 28.304 0.478 0.444 0.891 0.809 0.92 0.81 0.028 0 7.213-7.173 15.966-15.94l15.916-15.94-109.05-0.035 15.156-15.156h53.013l-7.578-7.578-7.577-7.579 7.577-7.578 7.578-7.578 9.097 9.097 9.098 9.097 6.059-6.059 6.06-6.059 6.074 6.076-18.16 18.16h50.009l-26.54 26.545-26.54 26.544 1.535 1.495 1.536 1.495 26.528-26.52 26.529-26.52 1.601 1.635c6.117 6.25 9.362 9.693 13.283 14.098 13.381 15.03 20.977 26.846 22.66 35.248 0.485 2.426 0.556 5.402 0.196 8.275-0.764 6.103-3.472 12.418-8.059 18.795-3.846 5.346-9.652 11.442-15.036 15.786-3.795 3.062-6.921 5.088-10.666 6.912-4.634 2.257-9.022 3.433-13.549 3.632-5.12 0.225-9.614-0.74-15.578-3.344-9.785-4.273-21.875-12.95-35.046-25.152a173.77 173.77 0 0 0-1.525-1.4l-0.33-0.295-15.969 15.97-15.968 15.968h109.1l-15.156 15.156-53.064 0.035 15.13 15.2-7.54 7.539-7.54 7.54zm-32.637-65.878 17.354-17.355-0.496-0.461c-8.602-7.999-17.792-15.358-25.3-20.257-3.967-2.589-6.638-4.163-9.11-5.37-3.704-1.807-7.106-2.842-10.411-3.167-1.054-0.104-3.329-0.086-4.339 0.034-3.886 0.46-7.383 2.025-10.692 4.783-0.834 0.695-2.495 2.348-3.246 3.23-2.748 3.226-4.266 6.306-4.772 9.681-0.15 1-0.15 2.947-2e-3 4.006 0.422 3 1.703 6.037 3.815 9.045 0.582 0.828 2.105 2.79 3.522 4.534 5.168 6.363 11.203 13.127 18.443 20.67 2.292 2.389 7.783 7.982 7.835 7.982 0.023 0 7.854-7.81 17.399-17.355zm97.251 11.61c4.751-0.494 8.898-2.598 12.753-6.47 6.556-6.586 8.053-13.493 4.506-20.802-0.88-1.813-1.786-3.207-3.58-5.508-5.066-6.5-12.265-14.668-20.39-23.131-1.632-1.702-7.416-7.615-7.739-7.913l-0.177-0.165-17.357 17.357c-9.546 9.546-17.35 17.376-17.34 17.4 0.028 0.069 2.703 2.513 4.557 4.161 9.126 8.119 17.582 14.485 25.825 19.443 5.566 3.349 10.079 5.089 14.502 5.591 0.956 0.109 3.55 0.13 4.44 0.038z" fill="currentColor" stroke-width=".066768"/>
+        </svg></a>
+    </header>
+    <main>
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-05-23">2025-05-23</time></p>
+        <ul>
+        <li><a href="#Racunstvo">Računstvo</a>
+        <ul>
+        <li><a href="#Mnozice_stevil">Množice števil</a>
+        <ul>
+        <li><a href="#Naravna_stevila">Naravna števila</a></li>
+        <li><a href="#Cela_stevila">Cela števila</a></li>
+        <li><a href="#Racionalna_stevila"><em>Racionalna</em>
+        števila</a></li>
+        <li><a href="#Iracionalna_stevila"><em>Iracionalna</em>
+        števila</a></li>
+        <li><a href="#Realna_stevila"><em>Realna</em> števila</a></li>
+        <li><a href="#Kompleksna_stevila"><em>Kompleksna</em>
+        števila</a></li>
+        </ul></li>
+        <li><a href="#Mnozice">Množice</a></li>
+        <li><a href="#Kombinatorika">Kombinatorika</a>
+        <ul>
+        <li><a href="#Razrstitve_permutacije">Razrstitve
+        (<em>permutacije</em>)</a></li>
+        <li><a href="#Razlicice_variacije">Različice
+        (<em>variacije</em>)</a></li>
+        <li><a href="#Izbori_kombinacije">Izbori
+        (<em>kombinacije</em>)</a></li>
+        </ul></li>
+        <li><a href="#Verjetnost">Verjetnost</a></li>
+        <li><a href="#Zaporedja">Zaporedja</a>
+        <ul>
+        <li><a href="#Aritmeticno_zaporedje"><em>Aritmetično</em>
+        zaporedje</a></li>
+        <li><a href="#Geometrijsko_zaporedje"><em>Geometrijsko</em>
+        zaporedje</a></li>
+        </ul></li>
+        <li><a href="#Dvoclenik_binom">Dvočlenik (<em>binom</em>)</a>
+        <ul>
+        <li><a href="#Dvoclenski_izrek_binomski_izrek">Dvočlenski izrek
+        (<em>binomski</em> izrek)</a></li>
+        </ul></li>
+        <li><a href="#Stoznice">Stožnice</a>
+        <ul>
+        <li><a href="#Kroznica">Krožnica</a></li>
+        <li><a href="#Elipsa">Elipsa</a></li>
+        </ul></li>
+        <li><a href="#Funkcije">Funkcije</a>
+        <ul>
+        <li><a href="#Potenciranje_in_logaritem">Potenciranje in
+        logaritem</a></li>
+        <li><a href="#Kotne_funkcije">Kotne funkcije</a></li>
+        <li><a href="#Limita">Limita</a></li>
+        <li><a href="#Odvod_in_integral">Odvod in integral</a></li>
+        </ul></li>
+        <li><a href="#Prostoroslovje_geometrija">Prostoroslovje
+        (<em>geometrija</em>)</a>
+        <ul>
+        <li><a href="#Trikotnik">Trikotnik</a></li>
+        <li><a href="#Krogla">Krogla</a></li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        <h1 id="Racunstvo">Računstvo</h1>
+        <h2 id="Mnozice_stevil">Množice števil</h2>
+        <p>Računamo lahko v različnih množicah števil - to je stvar
+        izbire. Tako lahko račun v neki množici nima rešitve (ki jo
+        hočemo v tej množici), ima pa jo v neki drugi množici, vendar
+        nas ta rešitev ne zanima, zato razglasimo, da račun v izbrani
+        množici nima rešitve (tako je običajno npr. s koreni negativnih
+        števil).</p>
+        <p><span class="math display">\[
+        \href{#Naravna_stevila}{\mathbb{N}} &lt;
+        \href{#Cela_stevila}{\mathbb{Z}} &lt;
+        \href{#Racionalna_stevila}{\mathbb{Q}} &lt;
+        \href{#Realna_stevila}{\mathbb{R}} &lt;
+        \href{#Kompleksna_stevila}{\mathbb{C}} \]</span></p>
+        <h3 id="Naravna_stevila">Naravna števila</h3>
+        <p>To so (<em>pozitivna</em> cela) števila s katerimi štejemo
+        (npr. 1, 2, 3, 4, 5, 6, …).</p>
+        <h3 id="Cela_stevila">Cela števila</h3>
+        <p>To so naravna števila, število 0 in nasprotne vrednosti
+        naravnih števil - <em>negativna</em> cela števila (npr. 0, 1,
+        -1, 2, -2, 3, -3, …)</p>
+        <h3 id="Racionalna_stevila"><em>Racionalna</em> števila</h3>
+        <p>To so števila, ki jih lahko izrazimo kot razmerje dveh celih
+        števil, oz. predstavimo z ulomki (npr. 0, 1, -1, 1/3, -1/3,
+        …).</p>
+        <h3 id="Iracionalna_stevila"><em>Iracionalna</em> števila</h3>
+        <p>To so števila, ki jih ni mogoče izraziti kot razmerje dveh
+        celih števil, oz. predstaviti z ulomki (npr. <span
+        class="math inline">\(\sqrt{2}\)</span>, π, e, …).</p>
+        <h3 id="Realna_stevila"><em>Realna</em> števila</h3>
+        <p>To so števila, ki jih lahko predstavimo na običajni številski
+        premici (npr. 0, 1, -1, 1/3, -1/3, π, <span
+        class="math inline">\(\sqrt{2}\)</span>, …).</p>
+        <h3 id="Kompleksna_stevila"><em>Kompleksna</em> števila</h3>
+        <p><em>Kompleksna</em> števila imajo <em>realno komponento</em>
+        <em>a</em> in <em>imaginarno komponento</em> <em>b</em>: <span
+        class="math inline">\(Z = a + b\mathrm{i}\)</span>.</p>
+        <p><span class="math inline">\(\mathrm{i}^2 = -1\)</span>, oz.
+        <span class="math inline">\(\sqrt{-1} =
+        \sqrt{\mathrm{i}}\)</span></p>
+        <h2 id="Mnozice">Množice</h2>
+        <p>Potenčna množica množice A je množica njenih podmnož</p>
+        <p>ic, vključno s prazno množico. Če imamo množico A = {a, b, c,
+        … }, je potenčna množica te množice:</p>
+        <p>P(A) = {{}, {a}, {b}, {c}, …, {ab}, {ac}, {bc}, …, {abc},
+        …}</p>
+        <p>Moč takšne potenčne mnoćžice, kjer je <em>n</em> število
+        elementov v množici, je:</p>
+        <p><span class="math display">\[ m(\mathcal{P}(A)) =
+        \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + ... + \binom{n}{n}
+        = 2^n \]</span></p>
+        <h2 id="Kombinatorika">Kombinatorika</h2>
+        <p>Verjetnost sestavljenega dogodka je zmnožek verjetnosti
+        posameznih dogodkov.</p>
+        <h3 id="Razrstitve_permutacije">Razrstitve
+        (<em>permutacije</em>)</h3>
+        <p>To so razporedbe <em>n</em> različnih <em>elementov</em> na
+        <em>n</em> mest.</p>
+        <p><span class="math display">\[ P_n = n! \]</span></p>
+        <p>Pri razvrstitvah z <em>r</em> ponovitvami posameznih
+        <em>elementov</em> ne upoštevamo različnih razvrstitev enakih
+        predmetov (možnih razvrstitev je <em>r!</em>):</p>
+        <p><span class="math display">\[ P_n^{r_1, r_2, r_3, ... , r_k}
+        = \frac {n!}{r_1! r_2! r_3! ... r_k!} \]</span></p>
+        <p>Pri krožni razvrstitvi ne upoštevamo možnih zasukov enake
+        razporedbe (če ne razlikujemo mest te krožne razvrstitve):</p>
+        <p><span class="math display">\[ P_n = \frac {n!}{n} = (n-1)!
+        \]</span></p>
+        <h3 id="Razlicice_variacije">Različice (<em>variacije</em>)</h3>
+        <p>To so razporedbe <em>n</em> predmetov na <em>r</em> mest.</p>
+        <p>Če se <em>elementi</em> ne smejo ponavljati (na voljo imaš le
+        različne <em>elemente</em>):</p>
+        <p><span class="math display">\[ V_n^r = \frac {n!}{(n-r)!}
+        \]</span></p>
+        <p>Če se <em>elementi</em> lahko ponavljajo (uporabiš lahko
+        večkrat enake <em>elemente</em>):</p>
+        <p><span class="math display">\[ ^{(p)}V_n^r = n^r \]</span></p>
+        <h3 id="Izbori_kombinacije">Izbori (<em>kombinacije</em>)</h3>
+        <p>To so izbori <em>r</em> <em>elementov</em> iz množice z
+        <em>n</em> elementi. Pri tem vrstni red ni pomemben, zato je to
+        pravzaprav število različic (<em>variacij</em>), deljeno s
+        številom možnih razvrstitev <em>elementov</em> posamezne
+        različice.</p>
+        <p><span class="math display">\[ C_n^r = \frac {V_n^r}{r!} =
+        \binom {n}{r} \]</span></p>
+        <h2 id="Verjetnost">Verjetnost</h2>
+        <p><em>Statistično</em>/<em>empirično</em> se verjetnost dogodka
+        <em>P(A)</em> lahko opredeli kot število, pri katerem se ustali
+        <em>relativna</em> pogostost dogodka A pri velikem številu
+        ponovitev poskusa:</p>
+        <p><span class="math display">\[ P(A) = \lim_{n \to \infty}
+        f&#39;(A) \]</span></p>
+        <p><em>Relativna</em> pogostost dogodka A se izračuna kot
+        pogostost dog. A <em>f(A)</em> na število ponovitev poskusa
+        <em>n</em>:</p>
+        <p><span class="math display">\[ f&#39;(A) = \frac {f(A)}{n}
+        \]</span></p>
+        <p>Običajno se verjetnost opredeli kot št. ugodnih izidov
+        <em>m</em> za dogodek na št. vseh izidov <em>n</em>:</p>
+        <p><span class="math display">\[ P(A) = \frac {m}{n}
+        \]</span></p>
+        <p>Za <em>elementarni</em> dogodek v popolnem <em>sistemu</em>
+        dogodkov (kjer so vsi dog. enako verjetni) je ta verjetnost
+        <span class="math inline">\(P(E) = \frac {1}{n}\)</span>.</p>
+        <h2 id="Zaporedja">Zaporedja</h2>
+        <h3 id="Aritmeticno_zaporedje"><em>Aritmetično</em>
+        zaporedje</h3>
+        <p><span class="math display">\[ S_n = \frac {n}{2} (a_1 + a_n)
+        \]</span></p>
+        <h3 id="Geometrijsko_zaporedje"><em>Geometrijsko</em>
+        zaporedje</h3>
+        <p><span class="math display">\[ S_n = \frac {a_1 (k^n -1)}{k -
+        1} \]</span></p>
+        <p>V primeru, da pa velja <span class="math inline">\(k =
+        1\)</span>:</p>
+        <p><span class="math display">\[ S_n = n a_1 \]</span></p>
+        <h2 id="Dvoclenik_binom">Dvočlenik (<em>binom</em>)</h2>
+        <p>Dvočlenik je <span class="math inline">\(a+b\)</span>.</p>
+        <h3 id="Dvoclenski_izrek_binomski_izrek">Dvočlenski izrek
+        (<em>binomski</em> izrek)</h3>
+        <p>Dvočlensko znamenje je <span class="math inline">\(\binom
+        {n}{r}\)</span>.</p>
+        <p><span class="math display">\[ (a+b)^n = \binom{n}{0} a^n b⁰ +
+        \binom{n}{1} a^{n-1} b^1 + \binom{n}{2} a^{n-2} b^2 +
+        \binom{n}{3} a^{n-3} b^3 + ... + \binom {n}{n} b^n a^0 =
+        \sum_{r=0}^{n} \binom {n}{r} a^{n-r} b^r \]</span></p>
+        <p>Splošni člen dvočlenskega izreka je torej:</p>
+        <p><span class="math display">\[ \binom {n}{r} a^{n-r}
+        b^r\]</span></p>
+        <p>Nekaj pravil za računanje z dvočlenskim znamenjem:</p>
+        <p><span class="math display">\[ \binom {n}{r} = \binom {n}{n-r}
+        \]</span> <span class="math display">\[ \binom {n}{0} = \binom
+        {n}{n} = 1 \]</span> <span class="math display">\[ \binom {n}{r}
+        + \binom {n}{r+1} = \binom {n+1}{r+1} \]</span></p>
+        <h2 id="Stoznice">Stožnice</h2>
+        <p>Središče <em>S(p, q)</em>, polmer <em>r</em>, x-polos
+        <em>a</em> in y-polos <em>b</em>.</p>
+        <h3 id="Kroznica">Krožnica</h3>
+        <p><span class="math display">\[ (x-p)^2 + (y-q)^2 = r^2
+        \]</span></p>
+        <h3 id="Elipsa">Elipsa</h3>
+        <p><span class="math display">\[ \frac {(x-p)^2}{a^2} + \frac
+        {(y-q)^2}{b^2} = 1 \]</span></p>
+        <h2 id="Funkcije">Funkcije</h2>
+        <p>Ničli kvadratne funkcije: <span class="math display">\[ x_{1,
+        2} = \frac{- b \pm \sqrt{b^2 - 4 a c}}{2 a} \]</span></p>
+        <p>Za kot, pod katerim funkcija seka os x velja <span
+        class="math inline">\(\tan \varphi = k_t\)</span>. Kot med dvema
+        funkcijama v presečišču:</p>
+        <p><span class="math display">\[ \tan \varphi = \left| \frac
+        {k_{t_1} - k_{t_2}}{1 + k_{t_1} k_{t_2}} \right| \]</span></p>
+        <h3 id="Potenciranje_in_logaritem">Potenciranje in
+        logaritem</h3>
+        <p>Pravila za računanje s potencami: <span
+        class="math display">\[ a^0 = 1 \]</span> <span
+        class="math display">\[ a^m \cdot a^n = a^{m + n} \]</span>
+        <span class="math display">\[ \frac{a^m}{a^n} = a^{m - n}
+        \]</span> <span class="math display">\[ (a^m)^n = a^{mn}
+        \]</span> <span class="math display">\[ a^{-n} = (\frac{1}{a})^n
+        \]</span></p>
+        <p>Potence, ki so ulomki, lahko izrazimo tudi s koreni: <span
+        class="math display">\[ a^{\frac{m}{n}} = \sqrt[n]{a^m}
+        \]</span></p>
+        <p>Logaritem je obratna funkcija potenciranja.</p>
+        <p><span class="math display">\[ \log_a x = b \iff a^b = x
+        \]</span></p>
+        <p><span class="math display">\[ \log_a 1 = 0 \]</span> <span
+        class="math display">\[ \log_a a = 1 \]</span></p>
+        <p>Pravila za računanje z logaritmi:</p>
+        <p><span class="math display">\[ \log_a(u \cdot v) = \log_a u +
+        \log_a v \]</span> <span class="math display">\[ \log_a \left(
+        \frac{u}{v} \right) = \log_a u - \log_a v \]</span> <span
+        class="math display">\[ \log_a u^v = v \cdot \log_a u \]</span>
+        <span class="math display">\[ \log_a u = \frac{\log_b u}{\log_b
+        a} \]</span></p>
+        <h3 id="Kotne_funkcije">Kotne funkcije</h3>
+        <p><span class="math display">\[ \sin^2x + \cos^2x = 1
+        \]</span></p>
+        <h3 id="Limita">Limita</h3>
+        <p><span class="math display">\[ \lim_{n \to \infty} \left( 1 +
+        \frac {1}{n} \right)^n = e \]</span> <span
+        class="math display">\[ \lim_{x \to 0} \frac {\sin x}{x} = 1
+        \]</span></p>
+        <h3 id="Odvod_in_integral">Odvod in integral</h3>
+        <p>Odvod funkcije je funkcija naklonov te funkcije. Opredelitev
+        odvoda:</p>
+        <p><span class="math display">\[ f&#39;(x) = \lim_{h \to 0}
+        \frac {f(x + h) - f(x)}{h} \]</span></p>
+        <p>Integral je obratna funkcija odvoda.</p>
+        <p>V spodnji preglednici so neosnovni (oz. <em>bolj</em>
+        neosnovni) integrali sivo obarvani.</p>
+        <table>
+        <colgroup>
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th><span class="math display">\[ \boldsymbol {f(x)}
+        \]</span></th>
+        <th><span class="math display">\[ \boldsymbol {f&#39;(x)}
+        \]</span></th>
+        <th><span class="math display">\[ \boldsymbol {\int f(x)
+        \mathrm{d}x} \]</span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td><span class="math display">\[ a \]</span></td>
+        <td><span class="math display">\[ 0 \]</span></td>
+        <td><span class="math display">\[ ax + C \]</span></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \textcolor{grey} {1}
+        \]</span></td>
+        <td><span class="math display">\[ \textcolor{grey} {0}
+        \]</span></td>
+        <td><span class="math display">\[ \textcolor{grey} {x + C}
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ a x \]</span></td>
+        <td><span class="math display">\[ a \]</span></td>
+        <td><span class="math display">\[ \textcolor{grey} {a \frac
+        {x^2}{2}+C} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \textcolor{grey} {x}
+        \]</span></td>
+        <td><span class="math display">\[ \textcolor{grey} {1}
+        \]</span></td>
+        <td><span class="math display">\[ \textcolor{grey} {\frac
+        {x^2}{2}+C} \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ x^r \]</span></td>
+        <td><span class="math display">\[ rx^{r-1} \]</span></td>
+        <td><span class="math display">\[ \frac {x^{r+1}}{r+1} + C
+        \]</span></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ x^x \]</span></td>
+        <td><span class="math display">\[ x^x (ln x + 1) \]</span></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ x^{-1} \]</span></td>
+        <td><span class="math display">\[ \textcolor{grey} {-x^{-2}}
+        \]</span></td>
+        <td><span class="math display">\[ \ln |x| + C \]</span></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ a^x \]</span></td>
+        <td><span class="math display">\[ a^x \ln a = \frac {a^x}{log_a
+        \mathrm{e}} \]</span></td>
+        <td><span class="math display">\[ \frac {a^x}{lna} + C
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ \textcolor{grey} {e^x}
+        \]</span></td>
+        <td><span class="math display">\[ \textcolor{grey}
+        {\mathrm{e}^x} \]</span></td>
+        <td><span class="math display">\[ \textcolor{grey} {\mathrm{e}^x
+        + C} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \mathrm{e}^{a x}
+        \]</span></td>
+        <td><span class="math display">\[ a e^{a x} \]</span></td>
+        <td><span class="math display">\[ \frac {\mathrm{e}^{a x}}{a} +
+        C \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ \log_a x \]</span></td>
+        <td><span class="math display">\[ \frac {1}{x \ln a} = \frac
+        {\log_a \mathrm{e}}{x} \]</span></td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \textcolor{grey} {ln x}
+        \]</span></td>
+        <td><span class="math display">\[ \textcolor{grey} {\frac
+        {1}{x}} \]</span></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ \sin x \]</span></td>
+        <td><span class="math display">\[ \cos x \]</span></td>
+        <td><span class="math display">\[ - \cos x + C \]</span></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \sin a x \]</span></td>
+        <td></td>
+        <td><span class="math display">\[ -\frac {1}{a} \cos a x + C
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ \cos x \]</span></td>
+        <td><span class="math display">\[ - \sin x \]</span></td>
+        <td><span class="math display">\[ \sin x + C \]</span></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \cos a x \]</span></td>
+        <td></td>
+        <td><span class="math display">\[ \frac {1}{a} \sin a x + C
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ \tan x \]</span></td>
+        <td><span class="math display">\[ \frac {1}{cos^2x}
+        \]</span></td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \frac {1}{\cos^2 x}
+        \]</span></td>
+        <td></td>
+        <td><span class="math display">\[ \tan x + C \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ cot x \]</span></td>
+        <td><span class="math display">\[ - \frac {1}{\sin^2 x}
+        \]</span></td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \frac {1}{\sin^2 x}
+        \]</span></td>
+        <td></td>
+        <td><span class="math display">\[ - \cot x + C \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ \arcsin x \]</span></td>
+        <td><span class="math display">\[ \frac {1}{\sqrt {1 - x^2}}
+        \]</span></td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \frac {1}{\sqrt {1 -
+        x^2}}\]</span></td>
+        <td></td>
+        <td><span class="math display">\[ \arcsin x + C \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ \arccos x \]</span></td>
+        <td><span class="math display">\[ - \frac {1}{\sqrt {1 - x^2}}
+        \]</span></td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \arctan x \]</span></td>
+        <td><span class="math display">\[ \frac {1}{1 + x^2}
+        \]</span></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ \frac {1}{x^2 + 1}
+        \]</span></td>
+        <td></td>
+        <td><span class="math display">\[ \arctan x + C \]</span></td>
+        </tr>
+        <tr class="even">
+        <td><span class="math display">\[ \frac {1}{x^2 + a^2}
+        \]</span></td>
+        <td></td>
+        <td><span class="math display">\[ \frac {1}{a} \arctan \frac
+        {x}{a} + C \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td><span class="math display">\[ \operatorname{arccot} x
+        \]</span></td>
+        <td><span class="math display">\[ - \frac {1}{1 + x^2}
+        \]</span></td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <p>Pravila za računanje z integrali: <span
+        class="math display">\[ \int \bigl( f(x) + g(x) \bigr)
+        \mathrm{d}x = \int f(x) \mathrm{d} x + \int g(x) \mathrm{d} x
+        \]</span> <span class="math display">\[ \int k \cdot f(x)
+        \mathrm{d} x = k \int f(x) \mathrm{d} x \]</span></p>
+        <p>Integracija po delih:</p>
+        <p><span class="math display">\[ \int u v&#39; = u v - \int v
+        u&#39; \]</span></p>
+        <p>Prostornina telesa zavrtene zvezne funkcije okoli osi x:</p>
+        <p><span class="math display">\[ V = \pi \int_a^b (f(x))^2
+        \mathrm{d}x \]</span></p>
+        <h2 id="Prostoroslovje_geometrija">Prostoroslovje
+        (<em>geometrija</em>)</h2>
+        <h3 id="Trikotnik">Trikotnik</h3>
+        <p>Trikotnik z oglišči <span class="math inline">\(A(x_1),
+        B(x_2, y_2), C(x_3, y_3)\)</span>, s stranicami <em>a, b,
+        c</em>.</p>
+        <p><span class="math display">\[ S = \frac {1}{2} \left| (x_2 -
+        x_1)(y_3 - y_1) - (x_3 - x_1)(y_2 - y_1) \right| \]</span></p>
+        <p><span class="math display">\[ s = \frac {a+b+c}{2}
+        \]</span></p>
+        <p>Heronova enačba za ploščino trikotnika: <span
+        class="math display">\[ S = \sqrt{s (s - a)(s - b)(s - c)}
+        \]</span></p>
+        <h3 id="Krogla">Krogla</h3>
+        <p>Krogla s polmerom <em>r</em>.</p>
+        <p>Površina krogle je enaka obsegu kroga krat premer, kar je
+        enako plašču valja, visokega in širokega za premer krogle.</p>
+        <p><span class="math display">\[ P = 2 \pi r \cdot 2 r = 4 \pi
+        r^2 \]</span> <span class="math display">\[ V = \frac {4 \pi
+        r^3}{3} \]</span></p>
+    </main>
+    <footer><button id="stikaloTeme">Preklopi barvni način strani</button>
+    </footer>
+</body>
 </html>
