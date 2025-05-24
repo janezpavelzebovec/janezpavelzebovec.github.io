@@ -8,8 +8,8 @@
     <meta name="description" content="Knjižnica znanj mojih zanimanj"/>
     <meta name="keywords" content="knjižnica, znanje"/>
     
-    <link rel="shortcut icon" type="image/svg" href="images/favicon.svg" />
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/svg" href="/images/favicon.svg" />
+    <link rel="icon" href="/images/favicon.ico">
 
     <style>
         body {
@@ -27,6 +27,7 @@
             margin: auto;
             padding: 1em;
             padding-top: 0;
+            padding-bottom: 0 !important; /*tale vrstica je važna za domačo stran*/
             font-size: 1.1em;
         }
         header {
@@ -42,10 +43,11 @@
             padding: 0.5em;
             border-radius: 50%;
         }
-    </style>
+    </style>-->
 
-    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"/>
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'"/>
+    <script src="/scripts.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -55,7 +57,8 @@
         </svg></a>
     </header>
     <main>
-        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-04-25">2025-04-25</time></p>
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-05-23">2025-05-23</time></p>
+        
         <h1 id="knjižnica">Knjižnica</h1>
         <p>To je moja knjižnica nekaterih znanj, osredotočena predvsem
         na področja mojega zanimanja, pa tudi na področja delovanja in
@@ -75,25 +78,28 @@
         </ul></li>
         <li><a href="./knjiznica/racunstvo">Računstvo</a>
         (<em>matematika</em>);</li>
-        <li>Družboslovje
+        <li>Družboslovje (<em>sociologija</em>);
         <ul>
         <li><a href="./knjiznica/zgodovina">Zgodovina</a>;</li>
+        <li><a href="./knjiznica/rodoslovje">Rodoslovje</a>
+        (<em>genealogija</em>);</li>
         <li><a href="./knjiznica/jezikoslovje">Jezikoslovje</a>
         (<em>lingvistika</em>);
         <ul>
-        <li><a href="./knjiznica/Slovenscina">Slovenščina</a>
+        <li><a href="./knjiznica/slovenscina">Slovenščina</a>
         (~<em>slovenistika</em>);</li>
-        <li><a href="./knjiznica/Nemscina">Nemščina</a>;</li>
-        <li><a href="./knjiznica/Latinscina">Latinščina</a>;</li>
-        <li><a href="./knjiznica/Anglescina">Angleščina</a>
+        <li><a href="./knjiznica/nemscina">Nemščina</a>;</li>
+        <li><a href="./knjiznica/latinscina">Latinščina</a>;</li>
+        <li><a href="./knjiznica/anglescina">Angleščina</a>
         (~<em>anglistika</em>);</li>
         <li><a href="./knjiznica/pisave">Pisave</a>;
         <ul>
-        <li><a href="./knjiznica/grska_abeceda">Grška abeceda</a>;</li>
+        <li><a href="./knjiznica/grska_abeceda">Grška abeceda</a> (grški
+        <em>alfabet</em>);</li>
         <li><a href="./knjiznica/latinica">Latinica</a>;</li>
         <li><a href="./knjiznica/gotica">Gotica</a>;</li>
         <li><a href="./knjiznica/glagolica">Glagolica</a>;</li>
-        <li><a href="./knjiznica/cirilica">Cirilica</a>;</li>
+        <li><a href="./knjiznica/cirilica">Cirilica</a> (kirilica);</li>
         <li><a href="./knjiznica/slovenske_zgodovinske_pisave">Slovenske
         zgodovinske pisave</a>;</li>
         <li><a href="./knjiznica/ogamska_pisava">Ogamska
@@ -102,20 +108,19 @@
         abeceda</a>;</li>
         </ul></li>
         </ul></li>
-        <li>Književnost
+        <li><a href="./knjiznica/krscanstvo">Krščanstvo in
+        modroslovje</a> (<em>religija</em>, <em>filozofija</em>);</li>
+        <li>Književnost (<em>literatura</em>);
         <ul>
         <li><a href="./knjiznica/John_Ronald_Reuel_Tolkien">John Ronald
         Reuel Tolkien</a>;</li>
         <li><a href="./knjiznica/Clive_Staples_Lewis">Clive Staples
         Lewis</a>;</li>
         </ul></li>
-        <li><a href="./knjiznica/rodoslovje">Rodoslovje</a>
-        (<em>Genealogija</em>);</li>
         </ul></li>
         </ul>
     </main>
-    <footer>Spletno stran trenutno močno posodabljam, zato so nekatere strani začasno ukinjene, mnoge povezave znotraj strani ne delujejo.
-        <br><button id="stikaloTeme">Preklopi barvni način strani</button>
+    <footer><button id="stikaloTeme">Preklopi barvni način strani</button>
     </footer>
 </body>
 </html>
