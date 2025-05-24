@@ -57,10 +57,12 @@ Tu je seznam mojih (precej dokončnih) predlogov za nove besede (vseh nisem sam 
 
 - **dlánčnik** < pametni *telefon*,
 - **gmôta** (**gmôtnost**) < *masa*,
-- **gôn** < *energija* (nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč),
-- **naravoslôvje**, **stvárnoslovje** < *fizika* (nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*),
+- **gôn** < *energija* (< nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč),
+- **naravoslôvje**, **stvárnoslovje** < *fizika* (< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*),
+- **návlec** < *pulover* (< nem. *Pullover* < ang. *pull = *(po)vleči* + *over* = *čez/preko*),
+- **privzgíb** < *pull up* (< ang. *pull up* = *povleči (se) gor*),
 - **prostóroslôvje** < *geometrija*,
-- **vóz** (**sámogôn**) < *avtomobil/avto* (nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*),
+- **vóz** (**sámogôn**) < *avtomobil/avto* (< nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*),
 - **sámovoz** < *avtonomni avtomobil/avto*,
 - **snôvoslôvje** < *kemija*,
 - **sprejémnik zvóka, zvókosprejémnik** < *mikrofon*,
@@ -72,7 +74,10 @@ Tu je seznam mojih (precej dokončnih) predlogov za nove besede (vseh nisem sam 
 
 Še nekaj besed v delu:
 
-- **slikonôs** < *televizija*,
+- **dáljnoglás** < *telefon* (< nem. *Telephon*; fran. *téléphone*; ang. *telephone* < gr. *tē̃le* = *daleč, v daljavi*; *phōnḗ* = *glas, zvok*),
+- **mnógovôz** < *avtobus*,
+- **rázspôlnik, razspôlništvo** < *LGBTQ ...* (motnja v spolnem razvoju)
+- **slikonôs** < *televizija* (< ang. *television*; fran. *télévision* < *tē̃le* = *daleč, v daljavi* + lat. *vīsiō* = *pogled, gledanje*)
 
 ## Zunanje povezave in viri
 
