@@ -16,6 +16,8 @@ To je moja spletna stran, namenjena mojim zanimanjem in potrebam.
 
 Tu je tudi [Knjižnica](./knjiznica), kjer so zbrana nekatera znanja mojih zanimanj.
 
+
+
 ------------------------------------------------------------------------------------------------------------
 
 elektronska pošta: [janezpavel.zebovec@gmail.com](mailto:janezpavel.zebovec@gmail.com)
