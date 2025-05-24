@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2025-04-25
+date: 2025-05-24
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 ---
@@ -26,6 +26,53 @@ Pri tem, ko se nabor prevzetih besed veča, se slovenske opušča kot  „*arhai
 - **„zvenečnost“ tujih jezikov in razkazovanje „razgledanosti“** je kot razlog med najnizkotnejšimi in neupravičenimi; z vpeljevanjem tujih izrazov naj bi se namreč izkazal bolj izobražen, razgledan, omikan; kar je veljalo tudi v preteklosti, ko so bili višji sloji večinoma potujčeni; čeprav ima to danes nekoliko manjši pomen, tuje izrazje še vedno velja za bolj omikano, oziroma strokovno, zato naj bi se uporabljalo v v krogih izobražencev, znanstvenikov - vsak se hoče izkazati kot eden od njih (vendar pa tega očitno ne zna izkazati s svojim znanjem).
 
 Popolnoma zgrešen (a zelo pogost) pristop k prevajanju, oz. iskanju/ustvarjanju slovenskih ustreznic tujim izrazom je dobesedno prevajanje. Taki prevodi so pogosto pomensko zgrešeni, saj ne odražajo prave in trenutne rabe besede. Pri ustvarjanju novih besed (skovank) se zelo pogosto ne držijo besedotvornih zakonitosti (npr. brez obrazil), ali se celo ravnajo po angleškem načinu, pri katerem iz dveh besed sestavijo eno tako, da od obeh vzamejo le en del (npr. *breakfast* + *lunch* = *branch*), kar je popolnoma nesprejemljivo.
+
+## Obstoječa slovenščina
+
+Mesece, ki so dandanes večinoma uporabljani, smo prevzeli neposredno iz nemščine. Vrniti se moramo k edinim pravim slovenskim poimenovanjem: 
+
+- **prosinec** < *januar*,
+- **svečan** < *februar*,
+- **sušec** < *marec*,
+- **mali traven** < *april*,
+- **veliki traven** < *maj*,
+- **rožnik** < *junij*,
+- **mali srpan** < *julij*,
+- **veliki srpan** < *avgust*,
+- **kimavec** < *september*,
+- **vinotok**/**vinotoč** < *oktober*,
+- **listopad** < *november*,
+- **gruden** < *december*
+
+## Nove slovenske ustreznice
+
+Izvori besed, ki so pri nekaterih besedah, niso tam zato, ker bi prevzete besede skušal prevajati dobesedno ali po izvornem pomenu te besede, ampak ker so bodisi zanimivi, bodisi koristijo kot navdih pri kovanju slovenske ustreznice, ali pa so tam zgolj kot dokaz tujeizvornosti.
+
+Manj uveljavljeni predlogi (ampak večinoma poznani):
+
+- **sébek** < *selfi*,
+- **všéček** < *lajk*,
+
+Tu je seznam mojih (precej dokončnih) predlogov za nove besede (vseh nisem sam skoval).
+
+- **dlánčnik** < pametni *telefon*,
+- **gmôta** (**gmôtnost**) < *masa*,
+- **gôn** < *energija* (nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč),
+- **naravoslôvje**, **stvárnoslovje** < *fizika* (nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*),
+- **prostóroslôvje** < *geometrija*,
+- **vóz** (**sámogôn**) < *avtomobil/avto* (nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*),
+- **sámovoz** < *avtonomni avtomobil/avto*,
+- **snôvoslôvje** < *kemija*,
+- **sprejémnik zvóka, zvókosprejémnik** < *mikrofon*,
+- **stálnica** < *konstanta* (tudi matematična, fizikalna),
+- **tresávec** < *vibrant*,
+- **vêlecésta** < *avtocesta*,
+- **vesóljeslôvje** < *kozmologija*,
+- **zemlják** < *krompir*
+
+Še nekaj besed v delu:
+
+- **slikonôs** < *televizija*,
 
 ## Zunanje povezave in viri
 
