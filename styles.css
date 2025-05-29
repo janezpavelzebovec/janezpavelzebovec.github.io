@@ -2,13 +2,13 @@
     color-scheme: dark;
     --tema: dark;
 
-    --bPoudarek: /*rgba(153, 178, 255, 1)*/ #4493f8;
+    --bPoudarek: rgba(67, 166, 255, 1);
     --bPoudarekProsojno: rgba(153, 178, 255, 0.7);
     --bOzadje: #121212;
     --bOzadjeNaprej: rgba(60, 60, 60, 1);
     --bOzadjePoudarek: rgba(40, 50, 80, 1);
     --bOspredje: #eee;
-    --bOspredjeNazaj: rgba(111, 111, 111, 1);
+    --bOspredjeNazaj: rgba(163, 163, 163, 1);
     --bNazaj: rgba(100, 100, 100, 1);
     
     --vsebina: 50em;
@@ -18,13 +18,13 @@
     color-scheme: light;
     --tema: light;
 
-    --bPoudarek: /*rgba(49, 99, 255, 1)*/ /*#4493F8*/ blue;
+    --bPoudarek: rgba(0, 86, 163, 1);
     --bPoudarekProsojno: rgba(49, 99, 255, 0.7);
     --bOzadje: white;
     --bOzadjeNaprej: rgba(207, 207, 207, 1);
     --bOzadjePoudarek: rgba(160, 184, 255, 1);
     --bOspredje: #121212;
-    --bOspredjeNazaj: rgba(140, 140, 140, 1);
+    --bOspredjeNazaj: rgba(88, 88, 88, 1);
     --bNazaj: rgba(160, 160, 160, 1);
 }
 
