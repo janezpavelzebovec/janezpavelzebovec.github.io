@@ -1,7 +1,7 @@
 ---
 title: Naravoslovje
-date: 2025-05-23
-description:
+date: 2025-05-29
+description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
 ---
@@ -42,13 +42,13 @@ author: Janez Pavel Žebovec
 | električna napetost (električni potencial) | U | volt | V | $$ \frac {J}{C}, \frac {W}{A} $$ | $$ \frac {m^2 kg}{s^3 A} $$ |
 | električni upor (el. upornost) | R | ohm (om) | Ω | $$ \frac {V}{A} $$ | $$ \frac {m^2 kg}{s^3 A^2} $$ |
 | električna prevodnost | G | siemens (simens) | S | $$ \frac {1}{Ω} = V s = \frac {A}{V} $$ | $$ \frac {s^3 A^2}{m^2 kg} $$ |
-| kapacitivnost | C | farad | F | $$ \frac {C}{V} $$ | $$ \frac {s^4 A^2}{m^2 kg} $$ |
+| kapacitivnost | C | farad | F | $$ \frac{C}{V} $$ | $$ \frac {s^4 A^2}{m^2 kg} $$ |
 | magnetni (pre)tok | Φ<sub>M</sub> | weber (veber) | Wb | $$ V s $$ | $$ \frac {m^2 kg}{s^2 A} $$ |
 | gostota magnetnega (pre)toka | B | tesla | T | $$ \frac {Wb}{m^2} = \frac {V s}{m^2} $$ | $$ \frac {kg}{s^2 A} $$ |
 | induktivnost | L | henry (henri) | H | $$ \frac {Wb}{A} = \frac {V s}{A} $$ | $$ \frac {m^2 kg}{s^2 A^2} $$ |
-| celzijeva temperatura | t | stopinja celzija | °C | | $$ K - 273,15 $$ |
+| celzijeva temperatura | t | stopinja celzija | °C | | $$ K - 273.15 $$ |
 | svetlobni tok | Φ | lumen | lm | $$ cd sr $$ | $$ cd $$ |
-| osvetljenost | E | luks | lx | $$ \frac {lm}{m^2} = \frac {cd sr}{m^2} $$ | $$ {cd}{m^2} $$ |
+| osvetljenost | E | luks | lx | $$ \frac{lm}{m^2} = \frac{cd sr}{m^2} $$ | $$ \frac{cd}{m^2} $$ |
 | radioaktivnost (št. razpadov na čas. enoto) | A | bekerel | Bq | | $$ \frac {1}{s} $$ |
 | absorbiran odmerek (ionizirajočega sevanja) | D | gray (grej) | Gy | $$ \frac {J}{kg} $$ | $$ \frac {m^2}{s^2} $$ |
 | ekvivalentni odmerek (ionizirajočega sevanj) | H | sievert (sivert) | Sv | $$ \frac {J}{kg} $$ | $$ \frac {m^2}{s^2} $$ |
@@ -59,31 +59,31 @@ author: Janez Pavel Žebovec
 | --- | --- | --- | --- | --- | --- |
 | tlak, pritisk | p | bar | bar | $$ 10^5 Pa $$ | $$ 10^5 \frac {kg}{m s^2} $$ |
 | energija | W | vatna ura | Wh | $$ 1 \frac{J}{s} 3600 s = 3600 J $$ | |
-| energija | W | elektronvolt | eV | $$ 1,6 \cdot 10^{-19} J $$ | |
+| energija | W | elektronvolt | eV | $$ 1.6 \cdot 10^{-19} J $$ | |
 | energija | W | kalorija | cal | | |
-| temperatura | T | fahrenheit (farenhajt) | °F | $$ \frac {5}{9} (x - 32) °C $$ | $$ \frac {5}{9} (x + 459,67) K $$ |
+| temperatura | T | fahrenheit (farenhajt) | °F | $$ \frac {5}{9} (x - 32) °C $$ | $$ \frac {5}{9} (x + 459.67) K $$ |
 :Preglednica ostalih enot
 
 ## Stalnice
 
 | stalnica | oznaka | vrednost |
 | --- | --- | --- |
-| težnostna | G | $$ 6,67 \cdot 10^{-11} \frac{N m^2}{kg^2} $$ |
-| težni pospešek na Zemlji | g | $$ 9,81 \frac{m}{s^2} $$ |
-| hitrost svetlobe v brezzračnem prostoru | c | $$ 299 792 458 \frac{m}{s} $$ |
-| osnovni naboj | $e_0$> | $$ 1,60 \cdot 10^{-19} A s $$ |
-| Avogadrovo število | $N_A$ | $$ 6,02214076 \cdot 10^{26} \frac{1}{kmol} $$ |
-| splošna plinska | R | $$ 8310 \frac{J}{kmol\cdot K} = 8,310 \frac{kPa \cdot l}{mol \cdot K} $$ |
-| električna (*influenčna*) | $ε_0$ | $$ 8,85 \cdot 10^{-12} \frac{A s}{V m} $$ |
+| težnostna | G | $$ 6.67 \cdot 10^{-11} \frac{N m^2}{kg^2} $$ |
+| težni pospešek na Zemlji | g | $$ 9.81 \frac{m}{s^2} $$ |
+| hitrost svetlobe v brezzračnem prostoru | c | $$ 299792458 \frac{m}{s} $$ |
+| osnovni naboj | $e_0$ | $$ 1.60 \cdot 10^{-19} A s $$ |
+| Avogadrovo število | $N_A$ | $$ 6.02214076 \cdot 10^{26} \frac{1}{kmol} $$ |
+| splošna plinska | R | $$ 8310 \frac{J}{kmol\cdot K} = 8.310 \frac{kPa \cdot l}{mol \cdot K} $$ |
+| električna (*influenčna*) | $ε_0$ | $$ 8.85 \cdot 10^{-12} \frac{A s}{V m} $$ |
 | magnetna (*indukcijska*) | $μ_0$ | $$ 4 \pi \cdot 10^{-7} \frac{V s}{A m} $$ |
-| Boltzmannova | $k_{\mathrm{B}}$ | $$ 1,38 \cdot 10^{-23} \frac{J}{K} $$ |
-| Planckova | h | $$ 6,63 \cdot 10^{-34} J s = 4,14 \cdot 10^{-15} e V s $$ |
-| Stefanova | ο | $$ 5,67 \cdot 10^{-8} \frac{W}{m^2 K^4} $$
-| poenotena atomska masna enota | $m_u = 1 u$ | $$ 1,66054 \cdot 10^{-27} kg = 931,494 \frac{Me V}{c^2} $$ |
-| lastna energija atomske enote mase | $m_u c^2$ | $$ 931,494 Me V $$ |
-| masa elektrona | $m_e$ | $$ 9,109 \cdot 10^{-31} kg = \frac {1 u}{1823} = 0,5110 \frac{Me V}{c^2} $$ |
-| masa protona | $m_p$ | $$ 1,67262 \cdot 10^{-27} kg = 1,00728 u = 938,272 \frac{Me V}{c^2} $$ |
-| masa nevtrona | $m_n$ | $$ 1,67493 \cdot 10^{-27} kg = 1,00866 u = 939,566 \frac{Me V}{c^2} $$ |
+| Boltzmannova | $k_{\mathrm{B}}$ | $$ 1.38 \cdot 10^{-23} \frac{J}{K} $$ |
+| Planckova | h | $$ 6.63 \cdot 10^{-34} J s = 4.14 \cdot 10^{-15} eV s $$ |
+| Stefanova | ο | $$ 5.67 \cdot 10^{-8} \frac{W}{m^2 K^4} $$
+| poenotena atomska masna enota | $m_u = 1 u$ | $$ 1.66054 \cdot 10^{-27} kg = 931.494 \frac{Me V}{c^2} $$ |
+| lastna energija atomske enote mase | $m_u c^2$ | $$ 931.494 Me V $$ |
+| masa elektrona | $m_e$ | $$ 9.109 \cdot 10^{-31} kg = \frac {1 u}{1823} = 0.5110 \frac{Me V}{c^2} $$ |
+| masa protona | $m_p$ | $$ 1.67262 \cdot 10^{-27} kg = 1.00728 u = 938.272 \frac{Me V}{c^2} $$ |
+| masa nevtrona | $m_n$ | $$ 1.67493 \cdot 10^{-27} kg = 1.00866 u = 939.566 \frac{Me V}{c^2} $$ |
 :Preglednica fizikalnih stalnic
 
 ## Gibanje
@@ -112,7 +112,7 @@ $$ M = r F \sin \alpha $$
 $$ \Delta p = \rho g h $$
 
 $$ F = p S $$
-$$ F_v = \rho_{tek} g V $$
+$$ F_v = \rho_{\text{tek.}} g V $$
 $$ \Delta p = \rho g h $$
 
 ## Energija
@@ -138,19 +138,19 @@ $$ A = N \lambda $$
 
 ### Razpadi
 
-Razpad alfa; delec razpada je $\alpha = \ce{^4_2He_2^{2+}}$:
-$$ \ce{^{A}_{Z}X_{N} -> ^{A-4}_{Z-2}Y_{N-2} + ^4_2He_2} $$
+Razpad alfa; delec razpada je $\alpha = ^4_2He_2^{2+}$:
+$$ ^{A}_{Z}X_N \rightarrow ^{A-4}_{Z-2}Y_{N-2} + ^4_2\mathrm{He}_2 $$
 
 Razpad beta minus; delec razpada je $\beta^{-} = e_0^{-}$:
-$$ \ce{^A_ZX_N -> ^{A}_{Z+1}Y + e_0^{-} + \bar{\nu}_e} $$
-$$ \ce{n -> p + e_0^{-} + \bar{\nu}_e} $$
+$$ ^A_ZX_N \rightarrow ^{A}_{Z+1}Y + e_0^{-} + \bar{\nu}_e $$
+$$ n \rightarrow p + e_0^{-} + \bar{\nu}_e $$
 
 Razpad beta plus; delec razpada je $\beta^{+} = e_0^{+}$:
-$$ \ce{^A_ZX_N -> ^{A}_{Z-1}Y_{N+1} + e_0^{+} + \nu_e} $$
-$$ \ce{p -> n + e_0^{+} + \nu_e} $$
+$$ ^A_ZX_N \rightarrow ^{A}_{Z-1}Y_{N+1} + e_0^{+} + \nu_e $$
+$$ p \rightarrow n + e_0^{+} + \nu_e $$
 
 Razpad gama; delec razpada je foton $\nu$:
-$$ \ce{X^{+} -> X + \nu} $$
+$$ X^{+} \rightarrow X + \nu $$
 
 ## Zunanje povezave in viri
 

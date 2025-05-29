@@ -1,6 +1,6 @@
 ---
 title: Slovenščina
-date: 2025-04-25
+date: 2025-05-26
 description:
 keywords: slovenščina, slovenski jezik, slovenistika
 ---
@@ -119,6 +119,26 @@ Pri soglasniških glasovnih premenah prihaja do sprememb glasov na koncu korena.
 | ⟨z⟩ | [z] [s] | ***z**id*, *i**z**tolči* |
 | ⟨ž⟩ | [ʒ] [ʃ] | ***ž**ito*, *bele**ž**ka* |
 
+## Besedoslovje
+
+### Besedotvorje
+
+Besede se delijo na:
+
+- netvorjenke - besede, ki so prvotno dane;
+- tvorjenke - besede, narejene iz že danih besed (lahko tudi dalje iz tvorjenk - npr. *temnolasec* iz besede *temnolas*, ne *temni lasje*)
+
+Tvorjenka je zgrajena iz korena in obrazila (pripona, medpona, predpona): [predpona]-[koren 1]-[medpona]-[koren 2]-[pripona]. Koren je najmanjši del besede, ki ima svoj pomen (npr. *besedišče* > *besed* - koren, -*išče* - obrazilo/pripona). Končnica je pri tvorjenkah lahko le del obrazila, medtem ko netvorjenke obrazila nimajo, temveč le končnico.
+Tvorbo besede pojasnimo s skladenjsko podstavo, oz. besedno zvezp, ki vsebuje prvine, iz katerih je beseda tvorjena (npr. *podvozje* < *to, kar je pod vozom*).
+
+#### Besedotvorni načini
+
+- **izpeljava** (izpeljanke) - enodelna besedotvorna podstava + pripona/desno obrazilo (npr. *ta, ki bere > bral-ec; mala smrek-ica > smrek-ica*);
+- **zlaganje** (zloženke) - dvodelna besedotvorna podstava + medpona/vmesno obrazilo (npr. *to, s čimer trebimo zobe > zob-o-trebec; delati kot slepe miši > slep-o-mišiti; tak, ki zabava narod > narodn-o-zabaven*);
+- **sestavljanje** (sestavljenke) - predpona/levo obrazilo + enodelna besedna podstava (npr. *preveč dober > pre-dober, višji učitelj > nad-učitelj*);
+- **sklapljanje** (sklopi) - večdelna besedna podstava brez obrazila (npr. *na + to > na-to, ne + bo + di + ga + treba > ne-bo-di-ga-treba, tri + sto > tri-sto*);
+- **krnitev** - besedni podstavi odvzamemo nekaj začetnih, srednjih ali končnih glasov/zlogov (npr. *Marjeta > Meta, avtomobil > avto*)
+
 ## Oblikoslovje
 
 | | ime sklona | vprašalnica | primer |
@@ -132,9 +152,9 @@ Pri soglasniških glasovnih premenah prihaja do sprememb glasov na koncu korena.
 | 7 | zvalnik (*vokativ*) | (ti) | *brate*, *sinko* |
 : Skloni
 
-###### Sklanjatve
+#### Sklanjatve
 
-| sklon \ število | ednina | dvojina | množina |
+| sklon \ št. | ed. | dv. | mn. |
 | --- | --- | --- | --- |
 | 1 | -ø | -a | -i |
 | 2 | -a | -ov | -ov |
@@ -143,3 +163,57 @@ Pri soglasniških glasovnih premenah prihaja do sprememb glasov na koncu korena.
 | 5 | -u | -ih | -ih |
 | 6 | -om | -oma | -i |
 | 7 | -e/o | | -i |
+:Prva moška sklanjatev
+
+(npr. *korak, stol, brat*)
+
+| sklon \ št. | ed. | dv. | mn. |
+| --- | --- | --- | --- |
+| 1 | -a | -i | -e |
+| 2 | -e | -ø | -ø |
+| 3 | -i | -ema | -em|
+| 4 | -o | -i | -e |
+| 5 | -i | -ah | -ah |
+| 6 | -o | -ema | -ami |
+:Druga moška sklanjatev
+
+(npr. *vojvoda, pismonoša*)
+
+Tretja moška sklanjatev ima v vseh sklonih ničto končnico (npr. *KD, NUK*).
+
+| sklon \ št. | ed. | dv. | mn. |
+| --- | --- | --- | --- |
+| 1 | -ø | -a | -i |
+| 2 | -a | -ov | -ov |
+| 3 | -u | -oma | -om |
+| 4 | -ø | -a | -e |
+| 5 | -u | -ih | -ih |
+| 6 | -om | -oma | -i |
+| 7 | -e/o | | -i |
+:Prva moška sklanjatev
+
+| sklon \ št. | ed. | dv. | mn. |
+| --- | --- | --- | --- |
+| 1 | -a | -i | -e |
+| 2 | -e | -ø | -ø |
+| 3 | -i | -ama | -am |
+| 4 | -o | -i | -e |
+| 5 | -i | -ah | -ah |
+| 6 | -o | -ama | -ami |
+:Prva ženska sklanjatev
+
+(npr. *lipa, miza*)
+
+| sklon \ št. | ed. | dv. | mn. |
+| --- | --- | --- | --- |
+| 1 | -ø | -i | -i |
+| 2 | -i | -i | -i |
+| 3 | -i | -ma | -im |
+| 4 | -ø | -i | -i |
+| 5 | -i | -ih | -ih |
+| 6 | -jo | -ma | -mi |
+:Druga ženska sklanjatev
+
+(npr. *perut, nit, plavut*)
+
+Tretja ženska sklanjatev ima v vseh sklonih ničto končnico (npr. *mami, Karmen*, ženski priimki).
