@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-05-22
+date: 2025-05-24
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -25,6 +25,7 @@ YouTube:
 
 You Tube:
 
+- [Be Smart](https://www.youtube.com/@besmart/featured);
 - [Dialect](https://www.youtube.com/@dialectphilosophy);
 - [Dr Ben Miles](https://www.youtube.com/@DrBenMiles);
 - [SmarterEveryDay](https://www.youtube.com/@smartereveryday);
@@ -97,7 +98,7 @@ Za zgodovinske zemljevide glej razdelek [Zgodovinski zemljevidi](#Zgodovinski_ze
 - [Geopedia](https://www.geopedia.world);
     - [Geopedia - GURS - Prostorski podatki](https://www.geopedia.world/#T276_x1614235.3818404947_y5798283.654628612_s11_b2852);
 - [Mapillary](https://www.mapillary.com/app) - ulični posnetki;
-- [Open Street Map](https://www.openstreetmap.org/) - prosto dostopen in urejevan zemljevid;
+- [Open Street Map](https://www.openstreetmap.org/) - prosto dostopen in urejevan zemljevid (glej tudi [Zemljevidi, ki temeljijo na OSM](#Zemljevidi_ki_temeljijo_na_Open_Street_Map);
 - [Windy](https://www.windy.com) - vremenski zemljevidi;
 
 Druge zbirke zemljepisnih podatkov:
@@ -108,11 +109,24 @@ Druge zbirke zemljepisnih podatkov:
 ##### Zemljevidi, ki temeljijo na [Open Street Map](https://www.openstreetmap.org/)
 
 - [BrezAvta.si](https://brezavta.si/) - iskanje povezav javnega prometa (avtobus, kolo, avto, skuter);
+- [Cycle Travel](https://cycle.travel/map) - kolesarski zemljevid, načrtovanje kolesarjenja tudi glede na površino;
+- [CyclOSM](https://www.cyclosm.org/) - kolesarski zemljevid;
 - [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti;
+- [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid;
 - [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim;
-- [OSM Buildings](https://osmbuildings.org/) - trorazsežnostni prikaz zgradb v [Open Street Mapu](https://www.openstreetmap.org/);
-- [Overpass Turbo](https://overpass-turbo.eu/) - iskalnik značilnosti po zemljevidu [Open Street Mapu](https://www.openstreetmap.org/);
+- [Open Topo Map](https://opentopomap.org/) - *topografski* zemljevid;
+- [OSM Buildings](https://osmbuildings.org/) - trorazsežnostni prikaz zgradb;
+- [Overpass Turbo](https://overpass-turbo.eu/) - iskalnik značilnosti;
 - [ShadeMap](https://shademap.app/) - zemljevid senc po svetu v poljubnem trenutku;
+- [Velo Planner](https://veloplanner.com/routes) - kolesarske poti in načrtovanje kolesarjenja;
+- [Waymarked Trails](https://waymarkedtrails.org/) - označeno poti,
+    - [Waymarked Trails - Cycling](https://cycling.waymarkedtrails.org/) - kolesarske poti;
+    - [Waymarked Trails - Hiking](https://hiking.waymarkedtrails.org/) - pohodniške poti;
+- [Wireless Bike Map](https://www.wirelessbikemap.com/) - kolesarski zemljevid;
+
+Prenos podatkov OSM-ja:
+
+- [BBBike - Extract](https://extract.bbbike.org/) - prenos kolesarskih zemljevidov;
 
 ##### Državni zemljevidi Republike Slovenije
 
@@ -157,6 +171,7 @@ You Tube:
 You Tube:
 
 - [Alexander Grace](https://www.youtube.com/@alexandergrace5350);
+- [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava;
 - [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom);
 - [hochelaga](https://www.youtube.com/@hochelaga) - Sveto pismo;
 - [Luke Smith](https://www.youtube.com/@LukeSmithxyz) - programstvo (Linux), modroslovje (*filozofija*), pravoslavstvo?;
@@ -165,7 +180,6 @@ You Tube:
 
 Glej tudi stran [Rodoslovje](knjiznica/rodoslovje).
 
-- [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava;
 - [Geneanet](https://en.geneanet.org/);
 - [Geni](https://www.geni.com/) - stran za izgradnjo svetovnega družinskega drevesa;
 - [PriRod](https://rodoslovje.uocepek.si/index.php/Zacetek) - rodoslovni pripomočki za gotico, zgodovinsko krajevno *hierarhijo* in iskanje priimkov po matičnih knjigah;
