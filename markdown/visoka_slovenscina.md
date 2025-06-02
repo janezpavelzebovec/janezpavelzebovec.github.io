@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2025-05-24
+date: 2025-06-02
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 ---
@@ -42,7 +42,64 @@ Mesece, ki so dandanes večinoma uporabljani, smo prevzeli neposredno iz nemšč
 - **kimavec** < *september*,
 - **vinotok**/**vinotoč** < *oktober*,
 - **listopad** < *november*,
-- **gruden** < *december*
+- **gruden** < *december*;
+
+## Starejše ustreznice tujim izrazom
+
+Skupaj z nekaterimi opuščenimi, starinskimi ali narečnimi izrazi. Veliko slovenskih ustreznic oz. izrazov v tem poglavju ni najbolj posrečenih. Na velikih mestih je namesto tujke naveden kar zdaj uveljavljen izraz. Navedene so tudi ustreznice, ki jih je oseba uveljavila/skovala.
+
+### Blaž Matek - računstvo
+(1852 - 1910)
+
+Pisec slovenskih učbenikov za računstvo.
+Vir: [Web Archive: FMF - Blaž Matek](https://web.archive.org/web/20090203124846/http://wiki.fmf.uni-lj.si/wiki/Bla%C5%BE_Matek).
+
+Namesto *eno-* piše *jedno-*; tako ima *jednačba, jednak, jeden ...*.
+
+- (geometrijski) **stvori** - telesa;
+- **krožnina**, krožna ploskev - krog;
+- **kotnina**;
+- **somernica, somerno** - *simetrala, simetrično*;
+- **prekotnica** - *diagonala*;
+- **kračja**, obstranska ploskev - stranska ploskev;
+- **tvornica** - premica;
+- **vodnica** - črta;
+- **ravninsko trakovje** - šop premic;
+- **stožkosečnice** - stožnice;
+- **delski produkt** - delni *produkt*;
+- **računski prikrajšek** - nem. *der Rechnungsvorteil*;
+- **največja skupna mera** > delitelj;
+- **odtisoček** - *promil*, nem. *das Promile*;
+- **občna števila** - spremenljivke;
+- **činitelj** - *faktor*, nem. *der Factor*;
+- **vzmnož** - *potenca*, nem. *die Potenz*;
+- **kvadrovati** - kvadrirati;
+- **iztrebiti** - pokrajšati, nem. *eliminieren*;
+- **algebrajska števila** - cela števila;
+- **številna vrsta** - številska premica;
+- **cela števila** - naravna števila;
+- **oblične izpremembe ulomkov** - razširjanje/krajšanje ulomkov; nem. *Formveränderung der Brüche*;
+- **povračaj, povratni ulomek** - *perioda, periodični* ulomek;
+- **pravokotno soredje** - *koordinatni sistem*;
+- **odsečnična os** - *abcisna* os;
+- **rednična os** - *ordinatna* os;
+- **sorednici** - *koordinati*;
+- **stalnica** - *konstanta*, nem. *die Konstante*;
+- **premenljivka** - spremenljivka, nem. *die Variable*;
+- **razvita/nerazvita funkcija** - *eksplicitna/implicitna funkcija*;
+- **nerazložno/razložno število**, iracijonalno/racijonalno število - *iracionalno/racionalno* število, nem. *Irrationale/Rationale Zahl*;
+- **umišljeno število** (ker nima stvarne podlage) - *imaginarno* število;
+- **stvarno število** - *realno* število;
+- **skupno število** (vsota stvarnega in umišljenega števila) - *kompleksno* število;
+- **prirastek** - *diferencial*;
+- **značilka** - *karakteristika*; nem. *die Charakteristik*,
+- **pridavek** - *mantisa*; nem. *die Mantisse*;
+- **postopice** - zaporedja; nem. *die Reihe/Progression*;
+- **sestavbe** - *kombinacije*;
+- **prvek** (kombinacij) - *element (kombinacij)*;
+- **skupina**, *kompleksija*;
+- **premeščaj** - *permutacija*; nem. *die Permutation*;
+- **premena** - *variacija*; nem *die Variation*;
 
 ## Nove slovenske ustreznice
 
