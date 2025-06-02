@@ -1,7 +1,7 @@
 ---
 title: Računstvo
-date: 2025-05-23
-description:
+date: 2025-06-02
+description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
 ---
@@ -22,21 +22,26 @@ To so (*pozitivna* cela) števila s katerimi štejemo (npr. 1, 2, 3, 4, 5, 6, ..
 
 To so naravna števila, število 0 in nasprotne vrednosti naravnih števil - *negativna* cela števila (npr. 0, 1, -1, 2, -2, 3, -3, ...)
 
-### *Racionalna* števila
+### Razložna števila
+(*racionalna* števila)
 
 To so števila, ki jih lahko izrazimo kot razmerje dveh celih števil, oz. predstavimo z ulomki (npr. 0, 1, -1, 1/3, -1/3, ...).
 
-### *Iracionalna* števila
+### Nerazložna števila
+(*iracionalna* števila)
 
 To so števila, ki jih ni mogoče izraziti kot razmerje dveh celih števil, oz. predstaviti z ulomki (npr. $\sqrt{2}$, π, e, ...).
 
-### *Realna* števila
+### Stvarna števila
+
+(*realna* števila)
 
 To so števila, ki jih lahko predstavimo na običajni številski premici (npr. 0, 1, -1, 1/3, -1/3, π, $\sqrt{2}$, ...).
 
-### *Kompleksna* števila
+### Skupna števila
+(*kompleksna* števila)
 
-*Kompleksna* števila imajo *realno komponento* *a* in *imaginarno komponento* *b*: $Z = a + b\mathrm{i}$.
+*Kompleksna* števila imajo stvarno sestavino (*realno komponento*) *a* in umišljeno sestavino (*imaginarno komponento*) *b*: $Z = a + b\mathrm{i}$. Umišljena *komponenta* se označuje z i.
 
 $\mathrm{i}^2 = -1$, oz. $\sqrt{-1} = \sqrt{\mathrm{i}}$
 
@@ -113,11 +118,18 @@ $$ S_n = \frac {n}{2} (a_1 + a_n) $$
 
 ### *Geometrijsko* zaporedje
 
-$$ S_n = \frac {a_1 (k^n -1)}{k - 1} $$
+Vsota zaporedja: $$ S_n = \frac {a_1 (k^n -1)}{k - 1} $$
 
 V primeru, da pa velja $k = 1$:
 
 $$ S_n = n a_1 $$
+
+#### Neskončna *geometrijska* vrsta
+
+- $|k| < 1$ - *konvergentno* zaporedje, vsota neskončnega zaporedja je končna;
+$$ |k| < 1; \lim_{n \to \infty} S_n = \sum_{i=1}^{\infty} a_1 k^{i-1} = \frac{a_1}{1-k} $$
+
+- $|k| \ge 1$ - *divergentno* zaporedje, vsota neskončnega zaporedja je neskončna
 
 ## Dvočlenik (*binom*)
 
@@ -138,18 +150,6 @@ Nekaj pravil za računanje z dvočlenskim znamenjem:
 $$ \binom {n}{r} = \binom {n}{n-r} $$
 $$ \binom {n}{0} = \binom {n}{n} = 1 $$
 $$ \binom {n}{r} + \binom {n}{r+1} = \binom {n+1}{r+1} $$
-
-## Stožnice
-
-Središče *S(p, q)*, polmer *r*, x-polos *a* in y-polos *b*.
-
-### Krožnica
-
-$$ (x-p)^2 + (y-q)^2 = r^2 $$
-
-### Elipsa
-
-$$ \frac {(x-p)^2}{a^2} + \frac {(y-q)^2}{b^2} = 1 $$
 
 ## Funkcije
 
@@ -192,6 +192,11 @@ $$ \sin^2x + \cos^2x = 1 $$
 
 ### Limita
 
+$$ \lim_{n \to \infty} (a_n \pm b_n) = \lim_{n \to \infty} a_n \pm \lim_{n \to \infty}b_n $$
+
+$$ \lim_{n \to \infty} C = C $$
+$$ \lim_{n \to \infty} \frac{1}{n} = 0 $$
+$$ \lim_{n \to \infty} a^n = \begin{cases} 0; -1 < a < 1 \\ \infty; a > 1 \\ 1; a = 1 \end{cases} $$
 $$ \lim_{n \to \infty} \left( 1 + \frac {1}{n} \right)^n = e $$
 $$ \lim_{x \to 0} \frac {\sin x}{x} = 1 $$
 
@@ -246,6 +251,60 @@ $$ \int u v' = u v - \int v u' $$
 Prostornina telesa zavrtene zvezne funkcije okoli osi x:
 
 $$ V = \pi \int_a^b (f(x))^2 \mathrm{d}x $$
+
+## Stožnice
+
+Stožnice se tako imenujejo zato, ker jih lahko dobimo s presekom dvojnega stožca z ravnino. Stožnice so krivulje II. reda.
+
+$$ Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0 $$
+
+Za stožnice velja, da je vsaj eden od količnikov A, B, C ni enak 0. $B = 0$
+
+- $A=C$ - krožnica;
+- $A C > 0$ (A in C sta enako predznačena in nista enaka 0) - elipsa
+- $A C < 0$ (A in sta sta različno predznačena in nista enaka 0) - hiperbola;
+- $A = 0$ ali $C = 0$ - parabola
+
+Izsrednost je razdalja posameznega od dveh gorišč od središča:¸
+
+- *linearna* izsrednost e (*absolutna* vrednost);
+- *numerična* izsrednost ε (*relativna* na polos izsrednosti, oz. na polos, na kateri ležita gorišči, oz. na realno polos)
+
+Izsrednost je lahko:
+
+- vodoravna, gorišči sta na osi x: $a > b$:
+$$e^2 = a^2 - b^2$$
+$$ε = \frac{e}{a}$$
+- navpična, gorišči sta na osi y: $a < b$
+$$e^2 = b^2 - a^2$$
+$$ε = \frac{e}{b}$$
+
+Središče *S(p, q)*, polmer *r*, x-polos *a* in y-polos *b*.
+
+### Krožnica
+
+$$ (x-p)^2 + (y-q)^2 = r^2 $$
+
+### Elipsa
+
+$$ \frac {(x-p)^2}{a^2} + \frac {(y-q)^2}{b^2} = 1 $$
+
+### Hiperbola
+
+$$ \frac{(x - p)^2}{a^2} - \frac{(y - q)^2}{b^2} = \pm 1 $$
+
+- za $+1$ je $a$ realna polos in $b$ imaginarna polos; temeni in gorišči sta na x-osi; lahko zapišemo kot:
+$$ \frac{(x - p)^2}{a^2} - \frac{(y - q)^2}{b^2} = 1 $$
+
+- za $-1$ je ravno obratno - $a$ je imaginarna in $b$ relna polos; temeni in gorišči sta na y-osi; lahko zapišemo kot:
+$$ - \frac{(x - p)^2}{a^2} + \frac{(y - q)^2}{b^2} = 1 $$
+
+### Parabola
+
+- navpična vodnica $(- \frac{p}{2}, b)$: $$ (y - b)^2 = 2p(x - a)$$
+- vodoravna vodnica $(a, - \frac{p}{2})$: $$ (x - a)^2 = 2p(y - b)$$
+
+Teme parabole: (a, b).
 
 ## Prostoroslovje (*geometrija*)
 
