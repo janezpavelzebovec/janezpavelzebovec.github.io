@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>Računstvo</title>
-    <meta name="description" content=""/>
+    <meta name="description" content="računska teorija, enačbe"/>
     <meta name="keywords" content="računstvo, matematika"/>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
@@ -60,7 +60,7 @@
         </svg></a>
     </header>
     <main>
-        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-05-23">2025-05-23</time></p>
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-06-02">2025-06-02</time></p>
         <ul>
         <li><a href="#Racunstvo">Računstvo</a>
         <ul>
@@ -68,13 +68,10 @@
         <ul>
         <li><a href="#Naravna_stevila">Naravna števila</a></li>
         <li><a href="#Cela_stevila">Cela števila</a></li>
-        <li><a href="#Racionalna_stevila"><em>Racionalna</em>
-        števila</a></li>
-        <li><a href="#Iracionalna_stevila"><em>Iracionalna</em>
-        števila</a></li>
-        <li><a href="#Realna_stevila"><em>Realna</em> števila</a></li>
-        <li><a href="#Kompleksna_stevila"><em>Kompleksna</em>
-        števila</a></li>
+        <li><a href="#Razlozna_stevila">Razložna števila</a></li>
+        <li><a href="#Nerazlozna_stevila">Nerazložna števila</a></li>
+        <li><a href="#Stvarna_stevila">Stvarna števila</a></li>
+        <li><a href="#Skupna_stevila">Skupna števila</a></li>
         </ul></li>
         <li><a href="#Mnozice">Množice</a></li>
         <li><a href="#Kombinatorika">Kombinatorika</a>
@@ -99,11 +96,6 @@
         <li><a href="#Dvoclenski_izrek_binomski_izrek">Dvočlenski izrek
         (<em>binomski</em> izrek)</a></li>
         </ul></li>
-        <li><a href="#Stoznice">Stožnice</a>
-        <ul>
-        <li><a href="#Kroznica">Krožnica</a></li>
-        <li><a href="#Elipsa">Elipsa</a></li>
-        </ul></li>
         <li><a href="#Funkcije">Funkcije</a>
         <ul>
         <li><a href="#Potenciranje_in_logaritem">Potenciranje in
@@ -111,6 +103,13 @@
         <li><a href="#Kotne_funkcije">Kotne funkcije</a></li>
         <li><a href="#Limita">Limita</a></li>
         <li><a href="#Odvod_in_integral">Odvod in integral</a></li>
+        </ul></li>
+        <li><a href="#Stoznice">Stožnice</a>
+        <ul>
+        <li><a href="#Kroznica">Krožnica</a></li>
+        <li><a href="#Elipsa">Elipsa</a></li>
+        <li><a href="#Hiperbola">Hiperbola</a></li>
+        <li><a href="#Parabola">Parabola</a></li>
         </ul></li>
         <li><a href="#Prostoroslovje_geometrija">Prostoroslovje
         (<em>geometrija</em>)</a>
@@ -141,22 +140,28 @@
         <p>To so naravna števila, število 0 in nasprotne vrednosti
         naravnih števil - <em>negativna</em> cela števila (npr. 0, 1,
         -1, 2, -2, 3, -3, …)</p>
-        <h3 id="Racionalna_stevila"><em>Racionalna</em> števila</h3>
+        <h3 id="Razlozna_stevila">Razložna števila</h3>
+        <p>(<em>racionalna</em> števila)</p>
         <p>To so števila, ki jih lahko izrazimo kot razmerje dveh celih
         števil, oz. predstavimo z ulomki (npr. 0, 1, -1, 1/3, -1/3,
         …).</p>
-        <h3 id="Iracionalna_stevila"><em>Iracionalna</em> števila</h3>
+        <h3 id="Nerazlozna_stevila">Nerazložna števila</h3>
+        <p>(<em>iracionalna</em> števila)</p>
         <p>To so števila, ki jih ni mogoče izraziti kot razmerje dveh
         celih števil, oz. predstaviti z ulomki (npr. <span
         class="math inline">\(\sqrt{2}\)</span>, π, e, …).</p>
-        <h3 id="Realna_stevila"><em>Realna</em> števila</h3>
+        <h3 id="Stvarna_stevila">Stvarna števila</h3>
+        <p>(<em>realna</em> števila)</p>
         <p>To so števila, ki jih lahko predstavimo na običajni številski
         premici (npr. 0, 1, -1, 1/3, -1/3, π, <span
         class="math inline">\(\sqrt{2}\)</span>, …).</p>
-        <h3 id="Kompleksna_stevila"><em>Kompleksna</em> števila</h3>
-        <p><em>Kompleksna</em> števila imajo <em>realno komponento</em>
-        <em>a</em> in <em>imaginarno komponento</em> <em>b</em>: <span
-        class="math inline">\(Z = a + b\mathrm{i}\)</span>.</p>
+        <h3 id="Skupna_stevila">Skupna števila</h3>
+        <p>(<em>kompleksna</em> števila)</p>
+        <p><em>Kompleksna</em> števila imajo stvarno sestavino
+        (<em>realno komponento</em>) <em>a</em> in umišljeno sestavino
+        (<em>imaginarno komponento</em>) <em>b</em>: <span
+        class="math inline">\(Z = a + b\mathrm{i}\)</span>. Umišljena
+        <em>komponenta</em> se označuje z i.</p>
         <p><span class="math inline">\(\mathrm{i}^2 = -1\)</span>, oz.
         <span class="math inline">\(\sqrt{-1} =
         \sqrt{\mathrm{i}}\)</span></p>
@@ -231,11 +236,23 @@
         \]</span></p>
         <h3 id="Geometrijsko_zaporedje"><em>Geometrijsko</em>
         zaporedje</h3>
-        <p><span class="math display">\[ S_n = \frac {a_1 (k^n -1)}{k -
-        1} \]</span></p>
+        <p>Vsota zaporedja: <span class="math display">\[ S_n = \frac
+        {a_1 (k^n -1)}{k - 1} \]</span></p>
         <p>V primeru, da pa velja <span class="math inline">\(k =
         1\)</span>:</p>
         <p><span class="math display">\[ S_n = n a_1 \]</span></p>
+        <h4 id="Neskoncna_geometrijska_vrsta">Neskončna
+        <em>geometrijska</em> vrsta</h4>
+        <ul>
+        <li><p><span class="math inline">\(|k| &lt; 1\)</span> -
+        <em>konvergentno</em> zaporedje, vsota neskončnega zaporedja je
+        končna; <span class="math display">\[ |k| &lt; 1; \lim_{n \to
+        \infty} S_n = \sum_{i=1}^{\infty} a_1 k^{i-1} = \frac{a_1}{1-k}
+        \]</span></p></li>
+        <li><p><span class="math inline">\(|k| \ge 1\)</span> -
+        <em>divergentno</em> zaporedje, vsota neskončnega zaporedja je
+        neskončna</p></li>
+        </ul>
         <h2 id="Dvoclenik_binom">Dvočlenik (<em>binom</em>)</h2>
         <p>Dvočlenik je <span class="math inline">\(a+b\)</span>.</p>
         <h3 id="Dvoclenski_izrek_binomski_izrek">Dvočlenski izrek
@@ -254,15 +271,6 @@
         \]</span> <span class="math display">\[ \binom {n}{0} = \binom
         {n}{n} = 1 \]</span> <span class="math display">\[ \binom {n}{r}
         + \binom {n}{r+1} = \binom {n+1}{r+1} \]</span></p>
-        <h2 id="Stoznice">Stožnice</h2>
-        <p>Središče <em>S(p, q)</em>, polmer <em>r</em>, x-polos
-        <em>a</em> in y-polos <em>b</em>.</p>
-        <h3 id="Kroznica">Krožnica</h3>
-        <p><span class="math display">\[ (x-p)^2 + (y-q)^2 = r^2
-        \]</span></p>
-        <h3 id="Elipsa">Elipsa</h3>
-        <p><span class="math display">\[ \frac {(x-p)^2}{a^2} + \frac
-        {(y-q)^2}{b^2} = 1 \]</span></p>
         <h2 id="Funkcije">Funkcije</h2>
         <p>Ničli kvadratne funkcije: <span class="math display">\[ x_{1,
         2} = \frac{- b \pm \sqrt{b^2 - 4 a c}}{2 a} \]</span></p>
@@ -299,10 +307,17 @@
         <p><span class="math display">\[ \sin^2x + \cos^2x = 1
         \]</span></p>
         <h3 id="Limita">Limita</h3>
-        <p><span class="math display">\[ \lim_{n \to \infty} \left( 1 +
-        \frac {1}{n} \right)^n = e \]</span> <span
-        class="math display">\[ \lim_{x \to 0} \frac {\sin x}{x} = 1
+        <p><span class="math display">\[ \lim_{n \to \infty} (a_n \pm
+        b_n) = \lim_{n \to \infty} a_n \pm \lim_{n \to \infty}b_n
         \]</span></p>
+        <p><span class="math display">\[ \lim_{n \to \infty} C = C
+        \]</span> <span class="math display">\[ \lim_{n \to \infty}
+        \frac{1}{n} = 0 \]</span> <span class="math display">\[ \lim_{n
+        \to \infty} a^n = \begin{cases} 0; -1 &lt; a &lt; 1 \\ \infty; a
+        &gt; 1 \\ 1; a = 1 \end{cases} \]</span> <span
+        class="math display">\[ \lim_{n \to \infty} \left( 1 + \frac
+        {1}{n} \right)^n = e \]</span> <span class="math display">\[
+        \lim_{x \to 0} \frac {\sin x}{x} = 1 \]</span></p>
         <h3 id="Odvod_in_integral">Odvod in integral</h3>
         <p>Odvod funkcije je funkcija naklonov te funkcije. Opredelitev
         odvoda:</p>
@@ -510,6 +525,78 @@
         <p>Prostornina telesa zavrtene zvezne funkcije okoli osi x:</p>
         <p><span class="math display">\[ V = \pi \int_a^b (f(x))^2
         \mathrm{d}x \]</span></p>
+        <h2 id="Stoznice">Stožnice</h2>
+        <p>Stožnice se tako imenujejo zato, ker jih lahko dobimo s
+        presekom dvojnega stožca z ravnino. Stožnice so krivulje II.
+        reda.</p>
+        <p><span class="math display">\[ Ax^2 + Bxy + Cy^2 + Dx + Ey + F
+        = 0 \]</span></p>
+        <p>Za stožnice velja, da je vsaj eden od količnikov A, B, C ni
+        enak 0. <span class="math inline">\(B = 0\)</span></p>
+        <ul>
+        <li><span class="math inline">\(A=C\)</span> - krožnica;</li>
+        <li><span class="math inline">\(A C &gt; 0\)</span> (A in C sta
+        enako predznačena in nista enaka 0) - elipsa</li>
+        <li><span class="math inline">\(A C &lt; 0\)</span> (A in sta
+        sta različno predznačena in nista enaka 0) - hiperbola;</li>
+        <li><span class="math inline">\(A = 0\)</span> ali <span
+        class="math inline">\(C = 0\)</span> - parabola</li>
+        </ul>
+        <p>Izsrednost je razdalja posameznega od dveh gorišč od
+        središča:¸</p>
+        <ul>
+        <li><em>linearna</em> izsrednost e (<em>absolutna</em>
+        vrednost);</li>
+        <li><em>numerična</em> izsrednost ε (<em>relativna</em> na polos
+        izsrednosti, oz. na polos, na kateri ležita gorišči, oz. na
+        realno polos)</li>
+        </ul>
+        <p>Izsrednost je lahko:</p>
+        <ul>
+        <li>vodoravna, gorišči sta na osi x: <span
+        class="math inline">\(a &gt; b\)</span>: <span
+        class="math display">\[e^2 = a^2 - b^2\]</span> <span
+        class="math display">\[ε = \frac{e}{a}\]</span></li>
+        <li>navpična, gorišči sta na osi y: <span
+        class="math inline">\(a &lt; b\)</span> <span
+        class="math display">\[e^2 = b^2 - a^2\]</span> <span
+        class="math display">\[ε = \frac{e}{b}\]</span></li>
+        </ul>
+        <p>Središče <em>S(p, q)</em>, polmer <em>r</em>, x-polos
+        <em>a</em> in y-polos <em>b</em>.</p>
+        <h3 id="Kroznica">Krožnica</h3>
+        <p><span class="math display">\[ (x-p)^2 + (y-q)^2 = r^2
+        \]</span></p>
+        <h3 id="Elipsa">Elipsa</h3>
+        <p><span class="math display">\[ \frac {(x-p)^2}{a^2} + \frac
+        {(y-q)^2}{b^2} = 1 \]</span></p>
+        <h3 id="Hiperbola">Hiperbola</h3>
+        <p><span class="math display">\[ \frac{(x - p)^2}{a^2} -
+        \frac{(y - q)^2}{b^2} = \pm 1 \]</span></p>
+        <ul>
+        <li><p>za <span class="math inline">\(+1\)</span> je <span
+        class="math inline">\(a\)</span> realna polos in <span
+        class="math inline">\(b\)</span> imaginarna polos; temeni in
+        gorišči sta na x-osi; lahko zapišemo kot: <span
+        class="math display">\[ \frac{(x - p)^2}{a^2} - \frac{(y -
+        q)^2}{b^2} = 1 \]</span></p></li>
+        <li><p>za <span class="math inline">\(-1\)</span> je ravno
+        obratno - <span class="math inline">\(a\)</span> je imaginarna
+        in <span class="math inline">\(b\)</span> relna polos; temeni in
+        gorišči sta na y-osi; lahko zapišemo kot: <span
+        class="math display">\[ - \frac{(x - p)^2}{a^2} + \frac{(y -
+        q)^2}{b^2} = 1 \]</span></p></li>
+        </ul>
+        <h3 id="Parabola">Parabola</h3>
+        <ul>
+        <li>navpična vodnica <span class="math inline">\((- \frac{p}{2},
+        b)\)</span>: <span class="math display">\[ (y - b)^2 = 2p(x -
+        a)\]</span></li>
+        <li>vodoravna vodnica <span class="math inline">\((a, -
+        \frac{p}{2})\)</span>: <span class="math display">\[ (x - a)^2 =
+        2p(y - b)\]</span></li>
+        </ul>
+        <p>Teme parabole: (a, b).</p>
         <h2 id="Prostoroslovje_geometrija">Prostoroslovje
         (<em>geometrija</em>)</h2>
         <h3 id="Trikotnik">Trikotnik</h3>
