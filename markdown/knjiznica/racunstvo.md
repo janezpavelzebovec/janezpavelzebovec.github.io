@@ -1,12 +1,25 @@
 ---
 title: Računstvo
-date: 2025-06-02
+date: 2025-06-06
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
 ---
 
 # Računstvo
+
+## Logika
+
+| ne | ali | in | torej / če ..., potem | če in samo če ..., potem | je enako | podmnožica | unija | prazna množica | presek |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| $$\neg$$ | $$\lor$$ | $$\land$$ | $$\implies$$ | $$\iff$$ | $$\Leftrightarrow$$ $$=$$ | $$\subset$$ | $$\cup$$ | $$\emptyset$$ | $$\cap$$ |
+
+| $A$ | $B$ | $\neg A$ | $A \land B$ | $A \lor B$ | $A \implies B$ | $A \iff B$ |
+| --- | --- | --- | --- | --- | --- | --- |
+| P | P | N | P | P | P | P |
+| P | N | N | N | P | N | N |
+| N | P | P | N | P | P | N |
+| N | N | P | N | P | P | P |
 
 ## Množice števil
 
@@ -62,7 +75,7 @@ $$ m(\mathcal{P}(A)) = \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + ... + \binom
 
 Verjetnost sestavljenega dogodka je zmnožek verjetnosti posameznih dogodkov.
 
-### Razrstitve (*permutacije*)
+### Razvvrstitve (*permutacije*)
 
 To so razporedbe *n* različnih *elementov* na *n* mest.
 
@@ -153,14 +166,35 @@ $$ \binom {n}{r} + \binom {n}{r+1} = \binom {n+1}{r+1} $$
 
 ## Funkcije
 
-Ničli kvadratne funkcije:
-$$ x_{1, 2} = \frac{- b \pm \sqrt{b^2 - 4 a c}}{2 a} $$
+Funkcija je lahko:
+
+- soda: $f(-x) = f(x)$,
+- liha: $f(-x) = -f(x)$;
+- injektivna (nobena vrednost y se ne ponovi): $x_1 \neq x_2 \implies f(x_1) \neq f(x_2)$;
+- surjektivna (zaloga funkcije so vsa stvarna števila): Z_f = \reals;
+- bijektivna: injektivna in surjektivna;
+
+Računanje s funkcijami:
+$$ (f \pm g)(x) = f(x) \pm g(x) $$
+$$ (f \cdot g)(x) = f(x) \cdot g(x) $$
+$$ \left( \frac{f}{g} \right) (x) = \frac{f(x)}{g(x)}; g(x) \neq 0 $$
+
+Inverzna funkcija $f^{-1}(x)$:
+$$f: x \to y \iff f^{-1}: y \to x$$
+
+Sestavljena funkcija (*kompozitum funkcije*):
+$$ (g \circ f)(x) = g(f(x)) \neq (f \circ g)(x) $$
 
 Za kot, pod katerim funkcija seka os x velja $\tan \varphi = k_t$. Kot med dvema funkcijama v presečišču:
 
 $$ \tan \varphi = \left| \frac {k_{t_1} - k_{t_2}}{1 + k_{t_1} k_{t_2}} \right| $$
 
-### Potenciranje in logaritem
+### Linearna funkcija
+
+$$ f(x) = kx + n $$
+$$ k = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1} = \tan \alpha $$
+
+### Potenciranje
 
 Pravila za računanje s potencami:
 $$ a^0 = 1 $$
@@ -171,6 +205,19 @@ $$ a^{-n} = (\frac{1}{a})^n $$
 
 Potence, ki so ulomki, lahko izrazimo tudi s koreni:
 $$ a^{\frac{m}{n}} = \sqrt[n]{a^m} $$
+
+#### Kvadratna funkcija
+
+- $f(x) = ax^2 + bx + c; a \neq 0$;
+- temenska oblika: $f(x) = a(x - p)^2 + q$, teme T(p, q);
+- razcepna/ničelna oblika: $f(x) = a(x - x_1)(x - x_2)$, ničli $x_1$ in $x_2$;
+
+$$ x_{1, 2} = \frac{-b \pm \sqrt{D}}{2 a} $$
+$$ D = b^2 - 4 a c $$
+$$ p = - \frac{b}{2 a} = \frac{x_1 + x_2}{2} $$
+$$ q = f(p) = - \frac{D}{4a} $$
+
+### Logaritem
 
 Logaritem je obratna funkcija potenciranja.
 
@@ -313,7 +360,12 @@ Trikotnik z oglišči $A(x_1), B(x_2, y_2), C(x_3, y_3)$, s stranicami *a, b, c*
 
 $$ S = \frac {1}{2} \left| (x_2 - x_1)(y_3 - y_1) - (x_3 - x_1)(y_2 - y_1) \right| $$
 
+$$ S = \frac{c v_c}{2} $$
+
 $$ s = \frac {a+b+c}{2} $$
+
+$$ R_{\text{očrtan.}} = \frac{abc}{4 S} $$
+$$ r_{\text{včrtan.}} = \frac{S}{s} $$
 
 Heronova enačba za ploščino trikotnika:
 $$ S = \sqrt{s (s - a)(s - b)(s - c)} $$
@@ -326,3 +378,10 @@ Površina krogle je enaka obsegu kroga krat premer, kar je enako plašču valja,
 
 $$ P = 2 \pi r \cdot 2 r = 4 \pi r^2 $$
 $$ V = \frac {4 \pi r^3}{3} $$
+
+## *Vektorji*
+
+$$\vec{a} = (a_1, a_2, a_3) $$
+
+$$ \vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1 \cdot b_1 + a_2 \cdot b_2 +  a_3 \cdot b_3 $$
+$$ |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2} $$
