@@ -60,10 +60,11 @@
         </svg></a>
     </header>
     <main>
-        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-06-02">2025-06-02</time></p>
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-06-06">2025-06-06</time></p>
         <ul>
         <li><a href="#Racunstvo">Računstvo</a>
         <ul>
+        <li><a href="#Logika">Logika</a></li>
         <li><a href="#Mnozice_stevil">Množice števil</a>
         <ul>
         <li><a href="#Naravna_stevila">Naravna števila</a></li>
@@ -76,7 +77,7 @@
         <li><a href="#Mnozice">Množice</a></li>
         <li><a href="#Kombinatorika">Kombinatorika</a>
         <ul>
-        <li><a href="#Razrstitve_permutacije">Razrstitve
+        <li><a href="#Razvvrstitve_permutacije">Razvvrstitve
         (<em>permutacije</em>)</a></li>
         <li><a href="#Razlicice_variacije">Različice
         (<em>variacije</em>)</a></li>
@@ -98,8 +99,9 @@
         </ul></li>
         <li><a href="#Funkcije">Funkcije</a>
         <ul>
-        <li><a href="#Potenciranje_in_logaritem">Potenciranje in
-        logaritem</a></li>
+        <li><a href="#Linearna_funkcija">Linearna funkcija</a></li>
+        <li><a href="#Potenciranje">Potenciranje</a></li>
+        <li><a href="#Logaritem">Logaritem</a></li>
         <li><a href="#Kotne_funkcije">Kotne funkcije</a></li>
         <li><a href="#Limita">Limita</a></li>
         <li><a href="#Odvod_in_integral">Odvod in integral</a></li>
@@ -117,9 +119,114 @@
         <li><a href="#Trikotnik">Trikotnik</a></li>
         <li><a href="#Krogla">Krogla</a></li>
         </ul></li>
+        <li><a href="#Vektorji"><em>Vektorji</em></a></li>
         </ul></li>
         </ul>
         <h1 id="Racunstvo">Računstvo</h1>
+        <h2 id="Logika">Logika</h2>
+        <table style="width:100%;">
+        <colgroup>
+        <col style="width: 10%" />
+        <col style="width: 10%" />
+        <col style="width: 10%" />
+        <col style="width: 10%" />
+        <col style="width: 10%" />
+        <col style="width: 10%" />
+        <col style="width: 10%" />
+        <col style="width: 10%" />
+        <col style="width: 10%" />
+        <col style="width: 10%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>ne</th>
+        <th>ali</th>
+        <th>in</th>
+        <th>torej / če …, potem</th>
+        <th>če in samo če …, potem</th>
+        <th>je enako</th>
+        <th>podmnožica</th>
+        <th>unija</th>
+        <th>prazna množica</th>
+        <th>presek</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td><span class="math display">\[\neg\]</span></td>
+        <td><span class="math display">\[\lor\]</span></td>
+        <td><span class="math display">\[\land\]</span></td>
+        <td><span class="math display">\[\implies\]</span></td>
+        <td><span class="math display">\[\iff\]</span></td>
+        <td><span class="math display">\[\Leftrightarrow\]</span> <span
+        class="math display">\[=\]</span></td>
+        <td><span class="math display">\[\subset\]</span></td>
+        <td><span class="math display">\[\cup\]</span></td>
+        <td><span class="math display">\[\emptyset\]</span></td>
+        <td><span class="math display">\[\cap\]</span></td>
+        </tr>
+        </tbody>
+        </table>
+        <table style="width:100%;">
+        <colgroup>
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th><span class="math inline">\(A\)</span></th>
+        <th><span class="math inline">\(B\)</span></th>
+        <th><span class="math inline">\(\neg A\)</span></th>
+        <th><span class="math inline">\(A \land B\)</span></th>
+        <th><span class="math inline">\(A \lor B\)</span></th>
+        <th><span class="math inline">\(A \implies B\)</span></th>
+        <th><span class="math inline">\(A \iff B\)</span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>P</td>
+        <td>P</td>
+        <td>N</td>
+        <td>P</td>
+        <td>P</td>
+        <td>P</td>
+        <td>P</td>
+        </tr>
+        <tr class="even">
+        <td>P</td>
+        <td>N</td>
+        <td>N</td>
+        <td>N</td>
+        <td>P</td>
+        <td>N</td>
+        <td>N</td>
+        </tr>
+        <tr class="odd">
+        <td>N</td>
+        <td>P</td>
+        <td>P</td>
+        <td>N</td>
+        <td>P</td>
+        <td>P</td>
+        <td>N</td>
+        </tr>
+        <tr class="even">
+        <td>N</td>
+        <td>N</td>
+        <td>P</td>
+        <td>N</td>
+        <td>P</td>
+        <td>P</td>
+        <td>P</td>
+        </tr>
+        </tbody>
+        </table>
         <h2 id="Mnozice_stevil">Množice števil</h2>
         <p>Računamo lahko v različnih množicah števil - to je stvar
         izbire. Tako lahko račun v neki množici nima rešitve (ki jo
@@ -179,7 +286,7 @@
         <h2 id="Kombinatorika">Kombinatorika</h2>
         <p>Verjetnost sestavljenega dogodka je zmnožek verjetnosti
         posameznih dogodkov.</p>
-        <h3 id="Razrstitve_permutacije">Razrstitve
+        <h3 id="Razvvrstitve_permutacije">Razvvrstitve
         (<em>permutacije</em>)</h3>
         <p>To so razporedbe <em>n</em> različnih <em>elementov</em> na
         <em>n</em> mest.</p>
@@ -272,15 +379,41 @@
         {n}{n} = 1 \]</span> <span class="math display">\[ \binom {n}{r}
         + \binom {n}{r+1} = \binom {n+1}{r+1} \]</span></p>
         <h2 id="Funkcije">Funkcije</h2>
-        <p>Ničli kvadratne funkcije: <span class="math display">\[ x_{1,
-        2} = \frac{- b \pm \sqrt{b^2 - 4 a c}}{2 a} \]</span></p>
+        <p>Funkcija je lahko:</p>
+        <ul>
+        <li>soda: <span class="math inline">\(f(-x) =
+        f(x)\)</span>,</li>
+        <li>liha: <span class="math inline">\(f(-x) =
+        -f(x)\)</span>;</li>
+        <li>injektivna (nobena vrednost y se ne ponovi): <span
+        class="math inline">\(x_1 \neq x_2 \implies f(x_1) \neq
+        f(x_2)\)</span>;</li>
+        <li>surjektivna (zaloga funkcije so vsa stvarna števila): Z_f =
+        ;</li>
+        <li>bijektivna: injektivna in surjektivna;</li>
+        </ul>
+        <p>Računanje s funkcijami: <span class="math display">\[ (f \pm
+        g)(x) = f(x) \pm g(x) \]</span> <span class="math display">\[ (f
+        \cdot g)(x) = f(x) \cdot g(x) \]</span> <span
+        class="math display">\[ \left( \frac{f}{g} \right) (x) =
+        \frac{f(x)}{g(x)}; g(x) \neq 0 \]</span></p>
+        <p>Inverzna funkcija <span
+        class="math inline">\(f^{-1}(x)\)</span>: <span
+        class="math display">\[f: x \to y \iff f^{-1}: y \to
+        x\]</span></p>
+        <p>Sestavljena funkcija (<em>kompozitum funkcije</em>): <span
+        class="math display">\[ (g \circ f)(x) = g(f(x)) \neq (f \circ
+        g)(x) \]</span></p>
         <p>Za kot, pod katerim funkcija seka os x velja <span
         class="math inline">\(\tan \varphi = k_t\)</span>. Kot med dvema
         funkcijama v presečišču:</p>
         <p><span class="math display">\[ \tan \varphi = \left| \frac
         {k_{t_1} - k_{t_2}}{1 + k_{t_1} k_{t_2}} \right| \]</span></p>
-        <h3 id="Potenciranje_in_logaritem">Potenciranje in
-        logaritem</h3>
+        <h3 id="Linearna_funkcija">Linearna funkcija</h3>
+        <p><span class="math display">\[ f(x) = kx + n \]</span> <span
+        class="math display">\[ k = \frac{\Delta y}{\Delta x} =
+        \frac{y_2 - y_1}{x_2 - x_1} = \tan \alpha \]</span></p>
+        <h3 id="Potenciranje">Potenciranje</h3>
         <p>Pravila za računanje s potencami: <span
         class="math display">\[ a^0 = 1 \]</span> <span
         class="math display">\[ a^m \cdot a^n = a^{m + n} \]</span>
@@ -291,6 +424,23 @@
         <p>Potence, ki so ulomki, lahko izrazimo tudi s koreni: <span
         class="math display">\[ a^{\frac{m}{n}} = \sqrt[n]{a^m}
         \]</span></p>
+        <h4 id="Kvadratna_funkcija">Kvadratna funkcija</h4>
+        <ul>
+        <li><span class="math inline">\(f(x) = ax^2 + bx + c; a \neq
+        0\)</span>;</li>
+        <li>temenska oblika: <span class="math inline">\(f(x) = a(x -
+        p)^2 + q\)</span>, teme T(p, q);</li>
+        <li>razcepna/ničelna oblika: <span class="math inline">\(f(x) =
+        a(x - x_1)(x - x_2)\)</span>, ničli <span
+        class="math inline">\(x_1\)</span> in <span
+        class="math inline">\(x_2\)</span>;</li>
+        </ul>
+        <p><span class="math display">\[ x_{1, 2} = \frac{-b \pm
+        \sqrt{D}}{2 a} \]</span> <span class="math display">\[ D = b^2 -
+        4 a c \]</span> <span class="math display">\[ p = - \frac{b}{2
+        a} = \frac{x_1 + x_2}{2} \]</span> <span class="math display">\[
+        q = f(p) = - \frac{D}{4a} \]</span></p>
+        <h3 id="Logaritem">Logaritem</h3>
         <p>Logaritem je obratna funkcija potenciranja.</p>
         <p><span class="math display">\[ \log_a x = b \iff a^b = x
         \]</span></p>
@@ -605,8 +755,13 @@
         c</em>.</p>
         <p><span class="math display">\[ S = \frac {1}{2} \left| (x_2 -
         x_1)(y_3 - y_1) - (x_3 - x_1)(y_2 - y_1) \right| \]</span></p>
+        <p><span class="math display">\[ S = \frac{c v_c}{2}
+        \]</span></p>
         <p><span class="math display">\[ s = \frac {a+b+c}{2}
         \]</span></p>
+        <p><span class="math display">\[ R_{\text{očrtan.}} =
+        \frac{abc}{4 S} \]</span> <span class="math display">\[
+        r_{\text{včrtan.}} = \frac{S}{s} \]</span></p>
         <p>Heronova enačba za ploščino trikotnika: <span
         class="math display">\[ S = \sqrt{s (s - a)(s - b)(s - c)}
         \]</span></p>
@@ -617,6 +772,14 @@
         <p><span class="math display">\[ P = 2 \pi r \cdot 2 r = 4 \pi
         r^2 \]</span> <span class="math display">\[ V = \frac {4 \pi
         r^3}{3} \]</span></p>
+        <h2 id="Vektorji"><em>Vektorji</em></h2>
+        <p><span class="math display">\[\vec{a} = (a_1, a_2, a_3)
+        \]</span></p>
+        <p><span class="math display">\[ \vec{a} \cdot \vec{b} =
+        |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1 \cdot b_1 + a_2
+        \cdot b_2 +  a_3 \cdot b_3 \]</span> <span
+        class="math display">\[ |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}
+        \]</span></p>
     </main>
     <footer><button id="stikaloTeme">Preklopi barvni način strani</button>
     </footer>
