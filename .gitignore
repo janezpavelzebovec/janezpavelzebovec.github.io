@@ -1,0 +1,13 @@
+
+# Prezri vse varnostne kopije
+*~
+
+*.log
+*.tmp
+*.swp
+
+template.html
+template-index.html
+template-mathjay.html
+*.lua
+

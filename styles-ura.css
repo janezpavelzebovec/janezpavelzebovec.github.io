@@ -1,0 +1,316 @@
+:root {
+    --barvaPoudarka: rgba(153, 178, 255, 1);
+    --barvaOzadja: #121212;
+    --barvaOzadjaNaprej: rgba(36, 36, 36, 1);
+    --barvaOzadjaProsojno: rgba(0, 0, 0, 0.8);
+    --barvaOspredja: white;
+    --barvaNazaj: rgba(255, 255, 255, 0.5);
+
+    --bar-width: 2rem;
+    --bar-height: 0.18rem;
+    --hamburger-gap: 0.38rem;
+    --hamburger-margin: 0.38rem;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*izračun celotne višine ikone treh črtic*/
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Odstranite drsnike */
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--barvaOzadja);
+}
+hr {
+    width: 90%;
+}
+.besediloUre {
+    width: 100%;
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-evenly;
+        align-items: flex-start;
+}
+.izpiski {
+    font-family: 'Courier New', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Monaco, monospace;
+    /*display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;*/
+}
+#nastavitve {
+    padding: 1rem;
+}
+.zamak {
+    margin-left: 1ch;
+}
+#tč {
+    background-color: var(--barvaOzadjaNaprej);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+svg {
+    display: block;
+    /*margin: auto;*/
+    /*background-color: grey;*/
+}
+.circle {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.4);
+    stroke-width: 2;
+}
+.svg-clock {
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0;
+    border: 1px solid black;
+}
+#zemljaPrikaz {
+    left: 0;
+    top: 0;
+}
+#neboPrikaz {
+    right: 0;
+    bottom: 0;
+}
+#letnaStevilcnica {
+    opacity: 1.0;
+}
+#letniCasi {
+    opacity: 0.5;
+}
+#senca {
+    opacity: 0.7;
+}
+#Sonce {
+    opacity: 1.0;
+    z-index: -1;
+}
+.pripis {
+    color: var(--barvaNazaj);
+    font-size: small;
+}
+input {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+input.dolgaŠtevilka {
+    width: 16ch;
+}
+.inputOznači {
+    display: flex;
+    align-items: center;
+}
+option {
+    background-color: var(--barvaOzadja);
+    border: 1px solid var(--barvaPoudarka);
+    color: var(--barvaOspredja);
+    color-scheme: dark;
+    margin: 0;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+button {
+    border: none;
+    background-color: var(--barvaPoudarka);
+    color: var(--barvaOzadja);
+    font-style: italic;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.vnos {
+    background-color: transparent;
+    border: 1px solid var(--barvaPoudarka);
+    color: var(--barvaOspredja);
+    color-scheme: dark;
+    margin: 0.2rem;
+    height: 1.4rem;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+#labelPrikazLune {
+    padding-right: 1ch;
+}
+a {
+    color: var(--barvaPoudarka);
+    text-decoration: none;
+    cursor: pointer
+}
+table {
+    position: static;
+    border-collapse: collapse;
+    margin: 0.5rem;
+    left: auto;
+    right: auto;
+}
+tr:hover {
+    background-color: var(--barvaOzadjaNaprej);
+}
+table.nohover tr:hover {
+    background-color: initial;
+}
+td {
+    padding: 0.2rem;
+}
+.zgorajRob td {
+    border-top: 1px solid var(--barvaOspredja);
+}
+
+/*DRSNIK*/
+html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #5555;
+}
+
+::-webkit-scrollbar {
+    width: 1vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7775;
+}
+::-webkit-scrollbar-thumb:hover /*barva, ko si z miško gor*/ {
+    background-color: #777;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #5555;
+}
+
+/*KAZALO SPLETNE STRANI*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);/*izračun širine ikone x; število je koren od 2*/
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  /*width: max-content; /*okno je široko, kolikor je vsebina*/
+  position: fixed;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
+  z-index: 101;
+  cursor: pointer; /*kazalec spremeni obliko, ko se zapelješ nanj - dejaven*/
+}
+
+.hamburger-menu:has(input:checked) {
+  --foreground: var(--barvaOspredja);
+  --background: var(--barvaOzadja);
+}
+
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+  border: 1px solid var(--barvaOspredja); /*obroba, ko je ikona izbrana pri delu brez kazalca, barve background*/
+  box-shadow: 0 0 0 1px var(--barvaOzadja);
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--barvaOspredja);
+  border-radius: 9999px;
+  transform-origin: left center; /*središče sukanja je na levi*/
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing); /*dolžina trajanj animacij za vse spremembe*/
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg; /*obračanje zgornje črtice*/
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;/*obračanje spodnje črtice*/
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked { /*ob kliku je počekirana sredinska črta - ob tem pa izgine*/
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar /*kazalo stran*/ {
+  transition: translate var(--animation-timing); /*čas, da se prikaže kazalo*/
+  translate: -100%; /*kazalo strani je privzeto skrito izven strani*/
+  background-color: var(--barvaOzadjaProsojno);
+  color: var(--barvaOspredja);
+  /*max-width: 30rem; /*največja širina polja kazala strani, 1rem = fontsize of page*/
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    /*justify-content: space-evenly;*/
+    align-items: flex-start;
+  overflow: auto;
+  z-index: 99;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+}
+.sidebar li {
+  text-align: left;
+}
+.sidebar nav {
+  padding: 0.5rem 1rem;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin));
+  padding-bottom: 1rem;
+  width: auto;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
+
+@media (max-aspect-ratio: 1/2) /*visoko/ozko okno*/ {
+    #neboPrikaz {
+        right: auto;
+        left: auto;
+        top: 100vmin;
+        bottom: auto;
+    }
+}
+@media (min-aspect-ratio: 2/1) /*nizko/dolgo okno*/ {
+    #neboPrikaz {
+        left: 100vmin;
+        right: auto;
+        bottom: auto;
+    }
+}

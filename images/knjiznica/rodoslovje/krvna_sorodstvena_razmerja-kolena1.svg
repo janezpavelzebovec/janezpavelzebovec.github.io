@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="114.23mm" height="128.85mm" version="1.1" viewBox="0 0 114.23 128.85" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(13.362 -361.7)" stroke-linecap="round">
+  <g stroke-linejoin="round">
+   <g transform="matrix(12.147,0,0,12.147,148.95,-3928.7)" stroke-width=".021781">
+    <g stroke-linecap="round" stroke-linejoin="round" stroke-width=".021781">
+     <path d="m-11.906 355.86v5.2917" fill="none" stroke="#0f0" stroke-dasharray="0.174251, 0.174251"/>
+     <text x="-11.916834" y="355.6799" font-family="'DejaVu Serif'" font-size=".35278px" style="line-height:1.25" xml:space="preserve"><tspan x="-11.916834" y="355.6799" fill="#00ff00" font-family="'Latin Modern Roman'" font-size=".35278px" stroke-linecap="round" stroke-linejoin="round" stroke-width=".021781" text-align="center" text-anchor="middle" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">1. koleno</tspan></text>
+     <path d="m-10.583 354.54v7.9375" fill="none" stroke="#0f0" stroke-dasharray="0.174251, 0.174251"/>
+     <text x="-10.587037" y="354.35699" font-family="'DejaVu Serif'" font-size=".35278px" style="line-height:1.25" xml:space="preserve"><tspan x="-10.587037" y="354.35699" fill="#00ff00" font-family="'Latin Modern Roman'" font-size=".35278px" stroke-linecap="round" stroke-linejoin="round" stroke-width=".021781" text-align="center" text-anchor="middle" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">2. koleno</tspan></text>
+     <path d="m-9.2604 353.62v10.179" fill="none" stroke="#0f0" stroke-dasharray="0.174251, 0.174251"/>
+     <text x="-9.2627096" y="353.4657" font-family="'DejaVu Serif'" font-size=".35278px" style="line-height:1.25" xml:space="preserve"><tspan x="-9.2627096" y="353.4657" fill="#00ff00" font-family="'Latin Modern Roman'" font-size=".35278px" stroke-linecap="round" stroke-linejoin="round" stroke-width=".021781" text-align="center" text-anchor="middle" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">3. koleno</tspan></text>
+     <path d="m-7.9375 354.54v7.9375" fill="none" stroke="#0f0" stroke-dasharray="0.174251, 0.174251"/>
+     <text x="-7.9309177" y="354.37555" font-family="'DejaVu Serif'" font-size=".35278px" style="line-height:1.25" xml:space="preserve"><tspan x="-7.9309177" y="354.37555" fill="#00ff00" font-family="'Latin Modern Roman'" font-size=".35278px" stroke-linecap="round" stroke-linejoin="round" stroke-width=".021781" text-align="center" text-anchor="middle" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">4. koleno</tspan></text>
+     <path d="m-6.6146 355.86 1.499e-4 5.2916" fill="none" stroke="#0f0" stroke-dasharray="0.174251, 0.174251"/>
+     <text x="-6.6182876" y="355.69458" font-family="'DejaVu Serif'" font-size=".35278px" style="line-height:1.25" xml:space="preserve"><tspan x="-6.6182876" y="355.69458" fill="#00ff00" font-family="'Latin Modern Roman'" font-size=".35278px" stroke-linecap="round" stroke-linejoin="round" stroke-width=".021781" text-align="center" text-anchor="middle" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">5. koleno</tspan></text>
+     <path d="m-5.2917 357.19v2.6459" fill="none" stroke="#0f0" stroke-dasharray="0.174251, 0.174251"/>
+     <text x="-5.2939601" y="357.01749" font-family="'DejaVu Serif'" font-size=".35278px" style="line-height:1.25" xml:space="preserve"><tspan x="-5.2939601" y="357.01749" fill="#00ff00" font-family="'Latin Modern Roman'" font-size=".35278px" stroke-linecap="round" stroke-linejoin="round" stroke-width=".021781" text-align="center" text-anchor="middle" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">6. koleno</tspan></text>
+    </g>
+   </g>
+   <g transform="matrix(12.147,0,0,12.147,148.95,-3928.7)" fill="none" stroke="#808080" stroke-width=".021781">
+    <path d="m-9.2604 362.48-3.9688-3.9688 1.3229-1.3229c2.2049 2.2048 1.7639 1.7639 3.9688 3.9688"/>
+    <path d="m-11.906 357.19 1.3229-1.3229 3.9688 3.9688"/>
+    <path d="m-10.583 355.86 1.3229-1.3229c3.0868 3.0868 0.88195 0.88195 3.9687 3.9688"/>
+    <g stroke-dasharray="0.0435627, 0.0435627">
+     <path d="m-9.2604 354.54 1.3229-1.3229"/>
+     <path d="m-9.2604 362.48 1.3229 1.3229"/>
+     <path d="m-5.2917 358.51 1.3229 1.3229"/>
+     <path d="m-6.6143 359.84 1.3229 1.3229"/>
+     <path d="m-7.9375 361.16 1.3229 1.3229"/>
+    </g>
+   </g>
+   <path d="m36.464 474.34-48.209-48.209 48.209-48.238" fill="none" stroke="#f00" stroke-width=".26458"/>
+   <g transform="matrix(12.147,0,0,12.147,148.95,-3928.7)" fill="#f00" fill-rule="evenodd">
+    <circle cx="-11.906" cy="359.83" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-10.583" cy="358.51" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-11.906" cy="357.19" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-10.583" cy="355.86" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-9.2604" cy="357.19" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-7.9375" cy="355.86" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-9.2604" cy="354.54" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-6.6146" cy="357.19" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-5.2917" cy="358.51" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-7.9375" cy="358.51" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-7.9375" cy="361.16" r=".1325" style="paint-order:markers fill stroke"/>
+    <ellipse cx="-6.6146" cy="359.83" rx=".13246" ry=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-10.583" cy="361.16" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-9.2604" cy="359.83" r=".1325" style="paint-order:markers fill stroke"/>
+    <circle cx="-9.2604" cy="362.48" r=".1325" style="paint-order:markers fill stroke"/>
+   </g>
+  </g>
+  <g transform="matrix(12.147,0,0,12.147,148.95,-3928.7)" fill="#809fff" font-family="'Latin Modern Roman'" font-size=".35278px" stroke-dasharray="0.01, 0.01" stroke-linejoin="round" stroke-width=".1" text-anchor="middle">
+   <text x="-9.2553024" y="354.93875" style="line-height:1.25" xml:space="preserve"><tspan x="-9.2553024" y="354.93875" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">pradedek/</tspan><tspan x="-9.2553024" y="355.39603" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">prababica</tspan></text>
+   <text x="-11.906426" y="357.56412" style="line-height:1.25" xml:space="preserve"><tspan x="-11.906426" y="357.56412" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">oče/</tspan><tspan x="-11.906426" y="358.02139" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">mati</tspan></text>
+   <text x="-10.586156" y="358.9075" style="line-height:1.25" xml:space="preserve"><tspan x="-10.586156" y="358.9075" dy="0" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">brat/</tspan><tspan x="-10.586156" y="359.36478" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">sestra</tspan></text>
+   <text x="-9.2630634" y="360.23044" style="line-height:1.25" xml:space="preserve"><tspan x="-9.2630634" y="360.23044" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">nečak/</tspan><tspan x="-9.2630634" y="360.68771" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">nečakinja</tspan></text>
+   <text x="-11.902017" y="360.23044" style="line-height:1.25" xml:space="preserve"><tspan x="-11.902017" y="360.23044" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">sin/</tspan><tspan x="-11.902017" y="360.68771" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">hči</tspan></text>
+   <text x="-9.2561836" y="357.58459" style="line-height:1.25" xml:space="preserve"><tspan x="-9.2561836" y="357.58459" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">stric/</tspan><tspan x="-9.2561836" y="358.04187" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">teta</tspan></text>
+   <text x="-6.6101742" y="357.58459" style="line-height:1.25" xml:space="preserve"><tspan x="-6.6101742" y="357.58459" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">mrzli stric/</tspan><tspan x="-6.6101742" y="358.04187" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">mrzla teta</tspan></text>
+   <text x="-7.932385" y="356.26169" style="line-height:1.25" xml:space="preserve"><tspan x="-7.932385" y="356.26169" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">prastric/</tspan><tspan x="-7.932385" y="356.71896" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">prateta</tspan></text>
+   <text x="-7.932385" y="358.9075" style="line-height:1.25" xml:space="preserve"><tspan x="-7.932385" y="358.9075" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">bratranec/</tspan><tspan x="-7.932385" y="359.36478" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">sestrična</tspan></text>
+   <text x="-5.2872572" y="358.9075" style="line-height:1.25" xml:space="preserve"><tspan x="-5.2872572" y="358.9075" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">mrzli bratranec/</tspan><tspan x="-5.2872572" y="359.36478" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">mrzla sestrična</tspan></text>
+   <text x="-10.579276" y="356.26169" style="line-height:1.25" xml:space="preserve"><tspan x="-10.579276" y="356.26169" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">dedek/</tspan><tspan x="-10.579276" y="356.71896" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">babica</tspan></text>
+   <text x="-7.9394407" y="361.55334" style="line-height:1.25" xml:space="preserve"><tspan x="-7.9394407" y="361.55334" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">pranečak/</tspan><tspan x="-7.9394407" y="362.01062" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">pranečakinja</tspan></text>
+   <text x="-10.583686" y="361.55334" style="line-height:1.25" xml:space="preserve"><tspan x="-10.583686" y="361.55334" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">vnuk/</tspan><tspan x="-10.583686" y="362.01062" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">vnukinja</tspan></text>
+   <text x="-9.2623577" y="362.87625" style="line-height:1.25" xml:space="preserve"><tspan x="-9.2623577" y="362.87625" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">pravnuk/</tspan><tspan x="-9.2623577" y="363.33353" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">pravnukinja</tspan></text>
+   <text x="-6.6172466" y="360.22708" style="line-height:1.25" xml:space="preserve"><tspan x="-6.6172466" y="360.22708" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">mrzli nečak/</tspan><tspan x="-6.6172466" y="360.68436" text-align="center" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">mrzla nečakinja</tspan></text>
+  </g>
+  <circle cx="-11.752" cy="426.21" r="1.6095" fill="#00f" fill-rule="evenodd" style="paint-order:markers fill stroke"/>
+ </g>
+</svg>

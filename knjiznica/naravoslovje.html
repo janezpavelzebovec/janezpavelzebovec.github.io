@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="sl">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Naravoslovje</title>
+    <meta name="description" content="Naravni zakoni"/>
+    <meta name="keywords" content="naravoslovje, fizika"/>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icon.png"/>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #121212;
+            color: #eee;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+            max-width: 50em;
+            margin: auto;
+            padding: 1em;
+            padding-top: 0;
+            font-size: 1.1em;
+        }
+        header {
+            min-height: 4em;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #domov {
+            width: 3em;
+            aspect-ratio: 1 / 1;
+            display: block;
+            padding: 0.5em;
+            border-radius: 50%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'"/>
+    <script src="/scripts.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="ac7911af-065e-4a16-8a66-255ee9f70989"></script>
+
+</head>
+<body>
+    <header>
+
+    <a href="/" aria-label="Domov"><?xml version="1.0" encoding="UTF-8"?>
+        <svg id="domov" alt="JPŽ" viewBox="0 0 200.29 184.95" xmlns="http://www.w3.org/2000/svg">
+            <path d="m100.16 175.85-9.097-9.097-6.06 6.059-6.059 6.06-3.037-3.039-3.038-3.038 18.16-18.16h-50.008l26.54-26.546 26.54-26.545-1.536-1.497-1.536-1.496-26.527 26.523-26.527 26.522-1.482-1.516c-3.775-3.864-5.546-5.696-7.092-7.336-16.688-17.704-26.211-31.284-28.698-40.924-1.21-4.691-0.863-10.232 0.99-15.79 1.699-5.097 4.565-10.096 8.84-15.423 3.371-4.2 7.977-8.867 12.227-12.39 7.033-5.829 14.255-9.477 20.998-10.607 4.438-0.744 8.947-0.517 13.093 0.659 11.322 3.209 25.58 12.759 42.257 28.304 0.478 0.444 0.891 0.809 0.92 0.81 0.028 0 7.213-7.173 15.966-15.94l15.916-15.94-109.05-0.035 15.156-15.156h53.013l-7.578-7.578-7.577-7.579 7.577-7.578 7.578-7.578 9.097 9.097 9.098 9.097 6.059-6.059 6.06-6.059 6.074 6.076-18.16 18.16h50.009l-26.54 26.545-26.54 26.544 1.535 1.495 1.536 1.495 26.528-26.52 26.529-26.52 1.601 1.635c6.117 6.25 9.362 9.693 13.283 14.098 13.381 15.03 20.977 26.846 22.66 35.248 0.485 2.426 0.556 5.402 0.196 8.275-0.764 6.103-3.472 12.418-8.059 18.795-3.846 5.346-9.652 11.442-15.036 15.786-3.795 3.062-6.921 5.088-10.666 6.912-4.634 2.257-9.022 3.433-13.549 3.632-5.12 0.225-9.614-0.74-15.578-3.344-9.785-4.273-21.875-12.95-35.046-25.152a173.77 173.77 0 0 0-1.525-1.4l-0.33-0.295-15.969 15.97-15.968 15.968h109.1l-15.156 15.156-53.064 0.035 15.13 15.2-7.54 7.539-7.54 7.54zm-32.637-65.878 17.354-17.355-0.496-0.461c-8.602-7.999-17.792-15.358-25.3-20.257-3.967-2.589-6.638-4.163-9.11-5.37-3.704-1.807-7.106-2.842-10.411-3.167-1.054-0.104-3.329-0.086-4.339 0.034-3.886 0.46-7.383 2.025-10.692 4.783-0.834 0.695-2.495 2.348-3.246 3.23-2.748 3.226-4.266 6.306-4.772 9.681-0.15 1-0.15 2.947-2e-3 4.006 0.422 3 1.703 6.037 3.815 9.045 0.582 0.828 2.105 2.79 3.522 4.534 5.168 6.363 11.203 13.127 18.443 20.67 2.292 2.389 7.783 7.982 7.835 7.982 0.023 0 7.854-7.81 17.399-17.355zm97.251 11.61c4.751-0.494 8.898-2.598 12.753-6.47 6.556-6.586 8.053-13.493 4.506-20.802-0.88-1.813-1.786-3.207-3.58-5.508-5.066-6.5-12.265-14.668-20.39-23.131-1.632-1.702-7.416-7.615-7.739-7.913l-0.177-0.165-17.357 17.357c-9.546 9.546-17.35 17.376-17.34 17.4 0.028 0.069 2.703 2.513 4.557 4.161 9.126 8.119 17.582 14.485 25.825 19.443 5.566 3.349 10.079 5.089 14.502 5.591 0.956 0.109 3.55 0.13 4.44 0.038z" fill="currentColor" stroke-width=".066768"/>
+        </svg></a>
+
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-06-15">2025-06-15</time></p>
+    </header>
+    <main>
+        <ul>
+        <li><a href="#Naravoslovje">Naravoslovje</a>
+        <ul>
+        <li><a href="#Velicine_in_enote">Veličine in enote</a>
+        <ul>
+        <li><a href="#Osnovne_enote">Osnovne enote</a></li>
+        <li><a href="#Izpeljane_enote">Izpeljane enote</a></li>
+        </ul></li>
+        <li><a href="#Stalnice">Stalnice</a></li>
+        <li><a href="#Gibanje">Gibanje</a></li>
+        <li><a href="#Sila">Sila</a></li>
+        <li><a href="#Energija">Energija</a></li>
+        <li><a href="#Elektrika">Elektrika</a></li>
+        <li><a href="#Fizika_delcev">Fizika delcev</a>
+        <ul>
+        <li><a href="#Razpadi">Razpadi</a></li>
+        </ul></li>
+        <li><a href="#Zunanje_povezave_in_viri">Zunanje povezave in
+        viri</a></li>
+        </ul></li>
+        </ul>
+        <h1 id="Naravoslovje">Naravoslovje</h1>
+        <h2 id="Velicine_in_enote">Veličine in enote</h2>
+        <h3 id="Osnovne_enote">Osnovne enote</h3>
+        <table>
+        <caption>Preglednica osnovnih enot</caption>
+        <thead>
+        <tr class="header">
+        <th>veličina</th>
+        <th>oznaka veličine</th>
+        <th>enota</th>
+        <th>oznaka enote</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>dolžina, (odmik)</td>
+        <td>l, d, (x)</td>
+        <td>meter</td>
+        <td>m</td>
+        </tr>
+        <tr class="even">
+        <td>masa</td>
+        <td>m</td>
+        <td>kilogram</td>
+        <td>kg</td>
+        </tr>
+        <tr class="odd">
+        <td>čas</td>
+        <td>t</td>
+        <td>sekunda</td>
+        <td>s</td>
+        </tr>
+        <tr class="even">
+        <td>električni tok</td>
+        <td>I</td>
+        <td>amper</td>
+        <td>A</td>
+        </tr>
+        <tr class="odd">
+        <td>termodinamična temperatura</td>
+        <td>T</td>
+        <td>kelvin</td>
+        <td>K</td>
+        </tr>
+        <tr class="even">
+        <td>množina snovi</td>
+        <td>n</td>
+        <td>mol</td>
+        <td>mol</td>
+        </tr>
+        <tr class="odd">
+        <td>svetilnost</td>
+        <td>J</td>
+        <td>kandela</td>
+        <td>cd</td>
+        </tr>
+        </tbody>
+        </table>
+        <h3 id="Izpeljane_enote">Izpeljane enote</h3>
+        <table>
+        <caption>Preglednica dopolnilnih enot</caption>
+        <thead>
+        <tr class="header">
+        <th>veličina</th>
+        <th>oznaka veličine</th>
+        <th>enota</th>
+        <th>oznaka enote</th>
+        <th>osnovne enote</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>ravninski kot</td>
+        <td>α</td>
+        <td>radian</td>
+        <td>rad</td>
+        <td><span class="math display">\[ \frac {m}{m} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>prostorski kot</td>
+        <td>Ω</td>
+        <td>steradian</td>
+        <td>sr</td>
+        <td><span class="math display">\[ \frac {m^2}{m^2}
+        \]</span></td>
+        </tr>
+        </tbody>
+        </table>
+        <table style="width:100%;">
+        <caption>Preglednica izpeljanih enot</caption>
+        <colgroup>
+        <col style="width: 16%" />
+        <col style="width: 16%" />
+        <col style="width: 16%" />
+        <col style="width: 16%" />
+        <col style="width: 16%" />
+        <col style="width: 16%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>veličina</th>
+        <th>oznaka veličine</th>
+        <th>enota</th>
+        <th>oznaka enote</th>
+        <th>druge enote</th>
+        <th>osnovne enote</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>frekvenca</td>
+        <td>ν (grška <em>ni</em>)</td>
+        <td>herc</td>
+        <td>Hz</td>
+        <td></td>
+        <td><span class="math display">\[ \frac {1}{s} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>sila</td>
+        <td>F</td>
+        <td>newton (njuten)</td>
+        <td>N</td>
+        <td></td>
+        <td><span class="math display">\[ \frac {kg m}{s^2}
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>tlak, pritisk, mehanska napetost</td>
+        <td>p</td>
+        <td>pascal (paskal)</td>
+        <td>Pa</td>
+        <td><span class="math display">\[ \frac {N}{m^2} \]</span></td>
+        <td><span class="math display">\[ \frac {kg}{m s^2}
+        \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>energija (delo, toplota, entalpija)</td>
+        <td>W (E, A, Q, H)</td>
+        <td>joule (džul)</td>
+        <td>J</td>
+        <td><span class="math display">\[ N m \]</span></td>
+        <td><span class="math display">\[ \frac {kg m^2}{s^2}
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>moč</td>
+        <td>P</td>
+        <td>watt (vat)</td>
+        <td>W</td>
+        <td><span class="math display">\[ \frac {J}{s} \]</span></td>
+        <td><span class="math display">\[ \frac {kg m^2}{s}
+        \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>električni naboj</td>
+        <td>Q</td>
+        <td>coulomb (kolumb)</td>
+        <td>C</td>
+        <td></td>
+        <td><span class="math display">\[ A s \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>električna napetost (električni potencial)</td>
+        <td>U</td>
+        <td>volt</td>
+        <td>V</td>
+        <td><span class="math display">\[ \frac {J}{C}, \frac {W}{A}
+        \]</span></td>
+        <td><span class="math display">\[ \frac {m^2 kg}{s^3 A}
+        \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>električni upor (el. upornost)</td>
+        <td>R</td>
+        <td>ohm (om)</td>
+        <td>Ω</td>
+        <td><span class="math display">\[ \frac {V}{A} \]</span></td>
+        <td><span class="math display">\[ \frac {m^2 kg}{s^3 A^2}
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>električna prevodnost</td>
+        <td>G</td>
+        <td>siemens (simens)</td>
+        <td>S</td>
+        <td><span class="math display">\[ \frac {1}{Ω} = V s = \frac
+        {A}{V} \]</span></td>
+        <td><span class="math display">\[ \frac {s^3 A^2}{m^2 kg}
+        \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>kapacitivnost</td>
+        <td>C</td>
+        <td>farad</td>
+        <td>F</td>
+        <td><span class="math display">\[ \frac{C}{V} \]</span></td>
+        <td><span class="math display">\[ \frac {s^4 A^2}{m^2 kg}
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>magnetni (pre)tok</td>
+        <td>Φ<sub>M</sub></td>
+        <td>weber (veber)</td>
+        <td>Wb</td>
+        <td><span class="math display">\[ V s \]</span></td>
+        <td><span class="math display">\[ \frac {m^2 kg}{s^2 A}
+        \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>gostota magnetnega (pre)toka</td>
+        <td>B</td>
+        <td>tesla</td>
+        <td>T</td>
+        <td><span class="math display">\[ \frac {Wb}{m^2} = \frac {V
+        s}{m^2} \]</span></td>
+        <td><span class="math display">\[ \frac {kg}{s^2 A}
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>induktivnost</td>
+        <td>L</td>
+        <td>henry (henri)</td>
+        <td>H</td>
+        <td><span class="math display">\[ \frac {Wb}{A} = \frac {V s}{A}
+        \]</span></td>
+        <td><span class="math display">\[ \frac {m^2 kg}{s^2 A^2}
+        \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>celzijeva temperatura</td>
+        <td>t</td>
+        <td>stopinja celzija</td>
+        <td>°C</td>
+        <td></td>
+        <td><span class="math display">\[ K - 273.15 \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>svetlobni tok</td>
+        <td>Φ</td>
+        <td>lumen</td>
+        <td>lm</td>
+        <td><span class="math display">\[ cd sr \]</span></td>
+        <td><span class="math display">\[ cd \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>osvetljenost</td>
+        <td>E</td>
+        <td>luks</td>
+        <td>lx</td>
+        <td><span class="math display">\[ \frac{lm}{m^2} = \frac{cd
+        sr}{m^2} \]</span></td>
+        <td><span class="math display">\[ \frac{cd}{m^2} \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>radioaktivnost (št. razpadov na čas. enoto)</td>
+        <td>A</td>
+        <td>bekerel</td>
+        <td>Bq</td>
+        <td></td>
+        <td><span class="math display">\[ \frac {1}{s} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>absorbiran odmerek (ionizirajočega sevanja)</td>
+        <td>D</td>
+        <td>gray (grej)</td>
+        <td>Gy</td>
+        <td><span class="math display">\[ \frac {J}{kg} \]</span></td>
+        <td><span class="math display">\[ \frac {m^2}{s^2}
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>ekvivalentni odmerek (ionizirajočega sevanj)</td>
+        <td>H</td>
+        <td>sievert (sivert)</td>
+        <td>Sv</td>
+        <td><span class="math display">\[ \frac {J}{kg} \]</span></td>
+        <td><span class="math display">\[ \frac {m^2}{s^2}
+        \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>katalitična aktivnost</td>
+        <td>Akt k</td>
+        <td>katal</td>
+        <td>kat</td>
+        <td></td>
+        <td><span class="math display">\[ \frac {mol}{s} \]</span></td>
+        </tr>
+        </tbody>
+        </table>
+        <table style="width:100%;">
+        <caption>Preglednica ostalih enot</caption>
+        <colgroup>
+        <col style="width: 16%" />
+        <col style="width: 16%" />
+        <col style="width: 16%" />
+        <col style="width: 16%" />
+        <col style="width: 16%" />
+        <col style="width: 16%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>veličina</th>
+        <th>oznaka veličine</th>
+        <th>enota</th>
+        <th>oznaka enote</th>
+        <th>druge enote</th>
+        <th>osnovne enote</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>tlak, pritisk</td>
+        <td>p</td>
+        <td>bar</td>
+        <td>bar</td>
+        <td><span class="math display">\[ 10^5 Pa \]</span></td>
+        <td><span class="math display">\[ 10^5 \frac {kg}{m s^2}
+        \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>energija</td>
+        <td>W</td>
+        <td>vatna ura</td>
+        <td>Wh</td>
+        <td><span class="math display">\[ 1 \frac{J}{s} 3600 s = 3600 J
+        \]</span></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>energija</td>
+        <td>W</td>
+        <td>elektronvolt</td>
+        <td>eV</td>
+        <td><span class="math display">\[ 1.6 \cdot 10^{-19} J
+        \]</span></td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>energija</td>
+        <td>W</td>
+        <td>kalorija</td>
+        <td>cal</td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>temperatura</td>
+        <td>T</td>
+        <td>fahrenheit (farenhajt)</td>
+        <td>°F</td>
+        <td><span class="math display">\[ \frac {5}{9} (x - 32) °C
+        \]</span></td>
+        <td><span class="math display">\[ \frac {5}{9} (x + 459.67) K
+        \]</span></td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="Stalnice">Stalnice</h2>
+        <table>
+        <caption>Preglednica fizikalnih stalnic</caption>
+        <colgroup>
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>stalnica</th>
+        <th>oznaka</th>
+        <th>vrednost</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>težnostna</td>
+        <td>G</td>
+        <td><span class="math display">\[ 6.67 \cdot 10^{-11} \frac{N
+        m^2}{kg^2} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>težni pospešek na Zemlji</td>
+        <td>g</td>
+        <td><span class="math display">\[ 9.81 \frac{m}{s^2}
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>hitrost svetlobe v brezzračnem prostoru</td>
+        <td>c</td>
+        <td><span class="math display">\[ 299792458 \frac{m}{s}
+        \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>osnovni naboj</td>
+        <td><span class="math inline">\(e_0\)</span></td>
+        <td><span class="math display">\[ 1.60 \cdot 10^{-19} A s
+        \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>Avogadrovo število</td>
+        <td><span class="math inline">\(N_A\)</span></td>
+        <td><span class="math display">\[ 6.02214076 \cdot 10^{26}
+        \frac{1}{kmol} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>splošna plinska</td>
+        <td>R</td>
+        <td><span class="math display">\[ 8310 \frac{J}{kmol\cdot K} =
+        8.310 \frac{kPa \cdot l}{mol \cdot K} \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>električna (<em>influenčna</em>)</td>
+        <td><span class="math inline">\(ε_0\)</span></td>
+        <td><span class="math display">\[ 8.85 \cdot 10^{-12} \frac{A
+        s}{V m} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>magnetna (<em>indukcijska</em>)</td>
+        <td><span class="math inline">\(μ_0\)</span></td>
+        <td><span class="math display">\[ 4 \pi \cdot 10^{-7} \frac{V
+        s}{A m} \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>Boltzmannova</td>
+        <td><span class="math inline">\(k_{\mathrm{B}}\)</span></td>
+        <td><span class="math display">\[ 1.38 \cdot 10^{-23}
+        \frac{J}{K} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>Planckova</td>
+        <td>h</td>
+        <td><span class="math display">\[ 6.63 \cdot 10^{-34} J s = 4.14
+        \cdot 10^{-15} eV s \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>Stefanova</td>
+        <td>ο</td>
+        <td><span class="math display">\[ 5.67 \cdot 10^{-8}
+        \frac{W}{m^2 K^4} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>poenotena atomska masna enota</td>
+        <td><span class="math inline">\(m_u = 1 u\)</span></td>
+        <td><span class="math display">\[ 1.66054 \cdot 10^{-27} kg =
+        931.494 \frac{Me V}{c^2} \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>lastna energija atomske enote mase</td>
+        <td><span class="math inline">\(m_u c^2\)</span></td>
+        <td><span class="math display">\[ 931.494 Me V \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>masa elektrona</td>
+        <td><span class="math inline">\(m_e\)</span></td>
+        <td><span class="math display">\[ 9.109 \cdot 10^{-31} kg =
+        \frac {1 u}{1823} = 0.5110 \frac{Me V}{c^2} \]</span></td>
+        </tr>
+        <tr class="odd">
+        <td>masa protona</td>
+        <td><span class="math inline">\(m_p\)</span></td>
+        <td><span class="math display">\[ 1.67262 \cdot 10^{-27} kg =
+        1.00728 u = 938.272 \frac{Me V}{c^2} \]</span></td>
+        </tr>
+        <tr class="even">
+        <td>masa nevtrona</td>
+        <td><span class="math inline">\(m_n\)</span></td>
+        <td><span class="math display">\[ 1.67493 \cdot 10^{-27} kg =
+        1.00866 u = 939.566 \frac{Me V}{c^2} \]</span></td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="Gibanje">Gibanje</h2>
+        <p><span class="math display">\[ x = x_0 + v t \]</span> <span
+        class="math display">\[ s = v t \]</span> <span
+        class="math display">\[ x = x_0 + v_0 t + \frac {a t^2}{2}
+        \]</span> <span class="math display">\[ v = v_0 + a t \]</span>
+        <span class="math display">\[ v^2 = v_0^2 + 2 a x \]</span>
+        <span class="math display">\[ \nu = \frac{1}{t_o} \]</span>
+        <span class="math display">\[ v_o = \frac{o}{t_0} = \frac{2 \pi
+        r}{t_0} = \omega r = 2 \pi \nu \]</span> <span
+        class="math display">\[ a_r = \frac{v_0^2}{r} = \omega^2 r =
+        \omega v \]</span></p>
+        <h2 id="Sila">Sila</h2>
+        <p><span class="math display">\[ g(r) = g \frac{r_z^2}{r^2}
+        \]</span> <span class="math display">\[ F = G \frac{m_1
+        m_2}{r^2} \]</span> <span class="math display">\[
+        \frac{r^3}{t_0^2}  = \text{stalno} \]</span></p>
+        <p><span class="math display">\[ F = k x \]</span> <span
+        class="math display">\[ F_tr = k_tr F_n \]</span> <span
+        class="math display">\[ \vec{F} = m \vec{a} \]</span> <span
+        class="math display">\[ \vec{G} = m \vec{v} \]</span> <span
+        class="math display">\[ \vec{F} \Delta t = \Delta \vec{G}
+        \]</span> <span class="math display">\[ M = r F \sin \alpha
+        \]</span> <span class="math display">\[ \Delta p = \rho g h
+        \]</span></p>
+        <p><span class="math display">\[ F = p S \]</span> <span
+        class="math display">\[ F_v = \rho_{\text{tek.}} g V \]</span>
+        <span class="math display">\[ \Delta p = \rho g h \]</span></p>
+        <h2 id="Energija">Energija</h2>
+        <p><span class="math display">\[ A = \vec{F} \vec{s} = F s \cos
+        \varphi \]</span> <span class="math display">\[ W_k = \frac {m
+        v^2}{2} \]</span> <span class="math display">\[ W_p = m g h
+        \]</span> <span class="math display">\[ W_{pr} = \frac {k
+        x^2}{2} \]</span> <span class="math display">\[ P = \frac {A}{t}
+        \]</span> <span class="math display">\[ A = \Delta W_k + \Delta
+        W_p + \Delta W_{pr} \]</span> <span class="math display">\[ A =
+        - p \Delta V \]</span></p>
+        <h2 id="Elektrika">Elektrika</h2>
+        <p><span class="math display">\[ I = \frac{e}{t} \]</span> <span
+        class="math display">\[ \vec{F} = a \vec{E} \]</span> <span
+        class="math display">\[ E_{toč.} = \frac{e}{4 \phi \epsilon_0
+        r^2} \]</span></p>
+        <h2 id="Fizika_delcev">Fizika delcev</h2>
+        <p><span class="math display">\[ W_f = \mathrm{h} \nu \]</span>
+        <span class="math display">\[ W_f = A_i + W_k \]</span> <span
+        class="math display">\[ W_f = \Delta W_n \]</span> <span
+        class="math display">\[ \Delta W_v = \Delta m c^2 \]</span></p>
+        <p><span class="math display">\[ N = N_0 2^{- \frac{t}{t_{1/2}}}
+        = N_0 e^{- \lambda t} \]</span> <span class="math display">\[
+        \lambda = \frac{\ln 2}{t_{1/2}} \]</span> <span
+        class="math display">\[ A = N \lambda \]</span></p>
+        <h3 id="Razpadi">Razpadi</h3>
+        <p>Razpad alfa; delec razpada je <span
+        class="math inline">\(\alpha = ^4_2He_2^{2+}\)</span>: <span
+        class="math display">\[ ^{A}_{Z}X_N \rightarrow
+        ^{A-4}_{Z-2}Y_{N-2} + ^4_2\mathrm{He}_2 \]</span></p>
+        <p>Razpad beta minus; delec razpada je <span
+        class="math inline">\(\beta^{-} = e_0^{-}\)</span>: <span
+        class="math display">\[ ^A_ZX_N \rightarrow ^{A}_{Z+1}Y +
+        e_0^{-} + \bar{\nu}_e \]</span> <span class="math display">\[ n
+        \rightarrow p + e_0^{-} + \bar{\nu}_e \]</span></p>
+        <p>Razpad beta plus; delec razpada je <span
+        class="math inline">\(\beta^{+} = e_0^{+}\)</span>: <span
+        class="math display">\[ ^A_ZX_N \rightarrow ^{A}_{Z-1}Y_{N+1} +
+        e_0^{+} + \nu_e \]</span> <span class="math display">\[ p
+        \rightarrow n + e_0^{+} + \nu_e \]</span></p>
+        <p>Razpad gama; delec razpada je foton <span
+        class="math inline">\(\nu\)</span>: <span
+        class="math display">\[ X^{+} \rightarrow X + \nu \]</span></p>
+        <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in viri</h2>
+        <ul>
+        <li><a
+        href="https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507">The
+        International System of Units (SI; 2019)</a>;</li>
+        </ul>
+    </main> 
+
+    <footer>
+        <button id="stikaloTeme">Preklopi barvni način strani</button>
+        <br><a id="linkMD" href="/markdown/knjiznica/naravoslovje.md">Oglej si stran v Markdownu</a>
+    </footer>
+
+    </script><script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1FD0790Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TR1FD0790Y');
+    </script>
+</body>
+</html>
