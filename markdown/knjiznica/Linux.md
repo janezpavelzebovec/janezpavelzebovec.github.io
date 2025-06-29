@@ -270,6 +270,10 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/), [Codebergom](https://c
 - `git status` - preveri stanje Gita - primerja vsebino glede na oddaljeni *repozitorij*
 - `git log` - izpiši zgodovino objav
 - `git pull` - prejme spremebe, narejene na oddaljenem repozitoriju
+- `git remote -v` - izpiše, kateri URL-ji se uporabljajo za `remote`
+- `ssh -T git@github.com` - preveri povezavo prek SSH (prek ključa)
+- `ssh-add -l` - preveri ključe, dodane v `agent`
+
 
 - `git diff > spremembe.patch` - ustvari datoteko s spremembami
 
