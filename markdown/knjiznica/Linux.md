@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2025-06-28
+date: 2025-06-29
 description:
 keywords: programska oprema, Linux, programi
 author: Janez Pavel Žebovec
@@ -259,7 +259,7 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/), [Codebergom](https://c
 
 - `git clone URL` - podvoji *repozitorij* na URL-ju na svoj računalnik
 - `git init` - ustvari mapo Gita
-- `git checkout -b main`
+- `git checkout -b main` = `git branch main` + `git checkout main` - ustvari novo vejo z imenom *main* in se nanjo priklopi
 - `git add {datoteke}` - dodaj datoteke v Git pred objavo
 - `git commit` - ustvari objavo
     - `-m "opomba" = *message*` - opomba/povzetek/sporočilo objave
@@ -277,14 +277,16 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/), [Codebergom](https://c
 
 Sinhronizacija s strežnikom (npr. pri Hetznerju):
 
-- `ssh-keygen -t ed25519 -C "tvoje_ime"` - ustvari ključ SSH - javnega (daš ga Hetznerju) in zasebnega (ostane pri tebi);
+- `ssh-keygen -t ed25519 -C "tvoje_ime" -f pot/do/datoteke` - ustvari ključ SSH - javnega (daš ga Hetznerju) in zasebnega (ostane pri tebi);
     - `-t ed25519` - opredeli vrsto ključa, oz. *kriptografskega algoritma* (Ed25519 je med najvarnejšimi);
     - `-C "tvoje_ime` - opredeli opombo (*comment*), oz. ime ključa, ki si ga sam izbereš, da veš za katerega gre (posebno če jih imaš več);
+    - `-f pot/do/datoteke` - določi mesto, kamor naj se ključ shrani in ime datoteke (privzeto je to `~/.ssh/id_ed25519`) - ta *parameter* sicer ni nujen, saj te po njem program sam vpraša, če ga ne navedeš
 - `ssh-keygen -p -f ~/.ssh/id_ed25519` - spremeni geslo ključa (torej ga s tem lahko tudi odstraniš, če poznaš trenutno geslo);
 
 `ssh-keygen` ustvari zasebni ključ *id_[vrsta]* in javni ključ *id_[vrsta].pub*. Javni ključ moraš shraniti na strežniku v datoteko *.ssh/authorized_keys*.
 
 - `ssh up_ime@tvoj_naslov_IP` - predstavi strežniku svojo napravo (za uporabniško ime uporabi tisto s K-jem, *K{deset števk}*)
+- `ssh-add ~/.ssh/id_ed25519` - dodaj ključ v `ssh-agent`
 
 ---
 
