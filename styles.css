@@ -77,6 +77,11 @@ main {
     padding-bottom: 100vh;
     flex: 1;
 }
+.content {
+    max-width: var(--vsebina);
+    margin:auto;
+}
+
 
 header {
     min-height: 5em;

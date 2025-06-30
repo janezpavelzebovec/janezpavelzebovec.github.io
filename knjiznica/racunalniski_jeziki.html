@@ -25,11 +25,15 @@ računalnik zna ustrezno upoštevati"/>
         }
         main {
             flex: 1;
-            max-width: 50em;
+            width: 100%;
             margin: auto;
             padding: 1em;
             padding-top: 0;
             font-size: 1.1em;
+        }
+        .content {
+            max-width: var(--vsebina);
+            margin:auto;
         }
         header {
             min-height: 4em;
@@ -65,219 +69,226 @@ računalnik zna ustrezno upoštevati"/>
         <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-06-27">2025-06-27</time></p>
     </header>
     <main>
-        <ul>
-        <li><a href="#Racunalniski_jeziki">Računalniški jeziki</a>
-        <ul>
-        <li><a href="#MD_Markdown">MD (Markdown)</a></li>
-        <li><a href="#Zunanje_povezave_in_viri">Zunanje povezave in
-        viri</a></li>
-        </ul></li>
-        </ul>
-        <h1 id="Racunalniski_jeziki">Računalniški jeziki</h1>
-        <h2 id="MD_Markdown">MD (Markdown)</h2>
-        <p>Markdown je preprost označevalski jezik, ki je za razliko od
-        HTML (ki sicer omogoča več) enostavno čitljiv tudi
-        nepoučenemu.</p>
-        <p>Prelom besedila v novo vrstico narediš tako, da greš v novo
-        vrstico. Odstavke ločiš z razmikom tako, da pustiš vrstico
-        prazno. Prazne vrstice je lepo puščati tudi med naslovi in
-        besedilom, seznami in besedilom, ipd.; v nekaterih primerih pa
-        je to celo obvezno.</p>
-        <ul>
-        <li><code># Naslov</code> - naslov; več ključnikov
-        (<em>heštegov</em>) pomeni nižji podnaslov; HTML:
-        <code>&lt;h1&gt;Naslov&lt;/h1&gt;</code>;
-        <ul>
-        <li><p>Naslov prve ravni lahko označiš tudi tako:</p>
-        <div class="sourceCode" id="cb1"><pre
-        class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Naslov</span>
+        <div class="content">
+            <ul>
+            <li><a href="#Racunalniski_jeziki">Računalniški jeziki</a>
+            <ul>
+            <li><a href="#MD_Markdown">MD (Markdown)</a></li>
+            <li><a href="#Zunanje_povezave_in_viri">Zunanje povezave in
+            viri</a></li>
+            </ul></li>
+            </ul>
+            <h1 id="Racunalniski_jeziki">Računalniški jeziki</h1>
+            <h2 id="MD_Markdown">MD (Markdown)</h2>
+            <p>Markdown je preprost označevalski jezik, ki je za razliko
+            od HTML (ki sicer omogoča več) enostavno čitljiv tudi
+            nepoučenemu.</p>
+            <p>Prelom besedila v novo vrstico narediš tako, da greš v
+            novo vrstico. Odstavke ločiš z razmikom tako, da pustiš
+            vrstico prazno. Prazne vrstice je lepo puščati tudi med
+            naslovi in besedilom, seznami in besedilom, ipd.; v
+            nekaterih primerih pa je to celo obvezno.</p>
+            <ul>
+            <li><code># Naslov</code> - naslov; več ključnikov
+            (<em>heštegov</em>) pomeni nižji podnaslov; HTML:
+            <code>&lt;h1&gt;Naslov&lt;/h1&gt;</code>;
+            <ul>
+            <li><p>Naslov prve ravni lahko označiš tudi tako:</p>
+            <div class="sourceCode" id="cb1"><pre
+            class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Naslov</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">=====</span></span></code></pre></div></li>
-        <li><p>Naslov druge ravni lahko označiš tudi tako:</p>
-        <div class="sourceCode" id="cb2"><pre
-        class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Podnaslov</span>
+            <li><p>Naslov druge ravni lahko označiš tudi tako:</p>
+            <div class="sourceCode" id="cb2"><pre
+            class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Podnaslov</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>---------</span></code></pre></div></li>
-        <li><p><code># Naslov {#moj_ID}</code> - naslov z določenim
-        ID-jem; HTML:
-        <code>&lt;h1 id="moj_ID"&gt;Naslov&lt;/h1&gt;</code>;</p></li>
-        </ul></li>
-        </ul>
-        <p>Pri poudarki je priporočljivo uporabljati zvezdice, čeprav so
-        običajno podprti tudi podčrtaji.</p>
-        <ul>
-        <li><code>*besedilo*</code> = <code>_besedilo_</code> (enojen
-        podčrtaj) - poudarek (torej ležeče); HTML:
-        <code>&lt;em&gt;besedilo&lt;/em&gt;</code>;</li>
-        <li><code>**besedilo**</code> = <code>__besedilo__</code>
-        (dvojen podčrtaj) - močan poudarek (torej krepko); HTML:
-        <code>&lt;strong&gt;besedilo&lt;/strong&gt;</code>;</li>
-        <li><code>~~besedilo~~</code> - prečrtano; HTML:
-        <code>&lt;del&gt;besedilo&lt;/del&gt;</code>;</li>
-        <li><code>===besedilo===</code> - obarvano ozadje besedila;
-        HTML: <code>&lt;mark&gt;besedilo&lt;/mark&gt;</code>;</li>
-        <li><code>&gt; citat</code> - citat (če citat obsega več
-        odstavkov, naj bo znak citata na začetku vsake vrstice); HTML:
-        <code>&lt;blockquote&gt;citat&lt;/blockquote&gt;</code>
-        <ul>
-        <li><p>Citat znotraj citata, oz. gnezdeni citati - dodaj več
-        znakov citata:</p>
-        <div class="sourceCode" id="cb3"><pre
-        class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; okvirni citat</span></span>
+            <li><p><code># Naslov {#moj_ID}</code> - naslov z določenim
+            ID-jem; HTML:
+            <code>&lt;h1 id="moj_ID"&gt;Naslov&lt;/h1&gt;</code>;</p></li>
+            </ul></li>
+            </ul>
+            <p>Pri poudarki je priporočljivo uporabljati zvezdice,
+            čeprav so običajno podprti tudi podčrtaji.</p>
+            <ul>
+            <li><code>*besedilo*</code> = <code>_besedilo_</code>
+            (enojen podčrtaj) - poudarek (torej ležeče); HTML:
+            <code>&lt;em&gt;besedilo&lt;/em&gt;</code>;</li>
+            <li><code>**besedilo**</code> = <code>__besedilo__</code>
+            (dvojen podčrtaj) - močan poudarek (torej krepko); HTML:
+            <code>&lt;strong&gt;besedilo&lt;/strong&gt;</code>;</li>
+            <li><code>~~besedilo~~</code> - prečrtano; HTML:
+            <code>&lt;del&gt;besedilo&lt;/del&gt;</code>;</li>
+            <li><code>===besedilo===</code> - obarvano ozadje besedila;
+            HTML: <code>&lt;mark&gt;besedilo&lt;/mark&gt;</code>;</li>
+            <li><code>&gt; citat</code> - citat (če citat obsega več
+            odstavkov, naj bo znak citata na začetku vsake vrstice);
+            HTML:
+            <code>&lt;blockquote&gt;citat&lt;/blockquote&gt;</code>
+            <ul>
+            <li><p>Citat znotraj citata, oz. gnezdeni citati - dodaj več
+            znakov citata:</p>
+            <div class="sourceCode" id="cb3"><pre
+            class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; okvirni citat</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;&gt; gnezden citat</span></span></code></pre></div></li>
-        </ul></li>
-        <li><code>besedilo~podpisano-besedilo~besedilo</code> -
-        podpisano besedilo (ne sme vsebovati presledkov);</li>
-        <li><code>besedilo^nadpisano-besedilo^besedilo</code> - napisano
-        besedilo (ne sme vsebovati presledkov);</li>
-        </ul>
-        <p>Med vrsticami/elementi seznama naj ne bo prazne vrstice, saj
-        s tem ločiš seznam na več seznamov.</p>
-        <ul>
-        <li><code>* element</code> = <code>- element</code> =
-        <code>+ element</code> - oznaka <em>elementa</em> nerazvrščenega
-        seznama; HTML:
-        <code>&lt;ul&gt;&lt;li&gt;element&lt;/li&gt;&lt;/ul&gt;</code>;</li>
-        <li><code>1. element</code> (zapovrstne številke s piko) -
-        oznaka <em>elementa</em> razvrščenega seznama; HTML:
-        <code>&lt;ol&gt;&lt;li&gt;element&lt;/li&gt;&lt;/ol&gt;</code>
-        <ul>
-        <li><code>- 1\. element</code> - če se element nerazvrščenega
-        seznama začne z vrstno številko s piko, vmesti pred piko nazaj
-        nagnjeno poševnico;</li>
-        </ul></li>
-        </ul>
-        <p>Vrstice elementov gnezdenega seznama zamakni noter:</p>
-        <div class="sourceCode" id="cb4"><pre
-        class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>element</span>
+            </ul></li>
+            <li><code>besedilo~podpisano-besedilo~besedilo</code> -
+            podpisano besedilo (ne sme vsebovati presledkov);</li>
+            <li><code>besedilo^nadpisano-besedilo^besedilo</code> -
+            napisano besedilo (ne sme vsebovati presledkov);</li>
+            </ul>
+            <p>Med vrsticami/elementi seznama naj ne bo prazne vrstice,
+            saj s tem ločiš seznam na več seznamov.</p>
+            <ul>
+            <li><code>* element</code> = <code>- element</code> =
+            <code>+ element</code> - oznaka <em>elementa</em>
+            nerazvrščenega seznama; HTML:
+            <code>&lt;ul&gt;&lt;li&gt;element&lt;/li&gt;&lt;/ul&gt;</code>;</li>
+            <li><code>1. element</code> (zapovrstne številke s piko) -
+            oznaka <em>elementa</em> razvrščenega seznama; HTML:
+            <code>&lt;ol&gt;&lt;li&gt;element&lt;/li&gt;&lt;/ol&gt;</code>
+            <ul>
+            <li><code>- 1\. element</code> - če se element
+            nerazvrščenega seznama začne z vrstno številko s piko,
+            vmesti pred piko nazaj nagnjeno poševnico;</li>
+            </ul></li>
+            </ul>
+            <p>Vrstice elementov gnezdenega seznama zamakni noter:</p>
+            <div class="sourceCode" id="cb4"><pre
+            class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>element</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>element</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>element gnezdenega seznama</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>element gnezdenega seznama</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>element</span></code></pre></div>
-        <p>Za odstavke znotraj elementa seznama jih zamakni noter in med
-        temi odstavki pusti prazno vrstico</p>
-        <div class="sourceCode" id="cb5"><pre
-        class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Prvi odstavek elementa.</span>
+            <p>Za odstavke znotraj elementa seznama jih zamakni noter in
+            med temi odstavki pusti prazno vrstico</p>
+            <div class="sourceCode" id="cb5"><pre
+            class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Prvi odstavek elementa.</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    Drugi odstavek elementa.</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    Tretji odstavek elemeta.</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>drugi element</span></code></pre></div>
-        <ul>
-        <li><p><code>[besedilo povezave](URL)</code> - spletna
-        povezava</p>
-        <ul>
-        <li><code>besedilo povezave](URL naslov povezave)</code> -
-        spletna povezava z naslovom; HTML:
-        <code>&lt;a href="URL" title="naslov povezave"&gt;besedilo povezave&lt;/a&gt;</code>;</li>
-        <li><code>&lt;povezava&gt;</code> - spletna povezava, pri kateri
-        je besedilo enako naslovu;</li>
-        </ul></li>
-        <li><p><code>[besedilo povezave](pot)</code> - povezava s potjo,
-        <em>relativno</em> na mapo, v kateri se nahaja stran;</p></li>
-        <li><p><code>[besedilo povezave][ime sklica]</code> - sklic (ime
-        sklica je lahko tudi preposta številka)</p>
-        <ul>
-        <li><code>[sklic]</code> - sklic, pri katerem je besedilo
-        povezave enako imenu sklica; lahko je tudi
-        <code>besedilo [^1]</code> za opombo;</li>
-        <li><code>[ime sklica]: povezava</code> - vrednost sklica (ali
-        opombe: <code>[^1]: opomba</code>; običajno na koncu
-        strani);</li>
-        </ul></li>
-        <li><p><code>![naslov slike](pot/do/slike.jpg)</code> -
-        vstavljena slika;</p></li>
-        <li><p><code>---</code> = <code>***</code> = <code>___</code> -
-        vodoravna razdelilna črta (uporabiš <em>najmanj</em> tri
-        znake);</p></li>
-        <li><p><code>`koda`</code> - besedilo v računalniškem
-        jeziku;</p></li>
-        <li><p>večji <em>blok</em> besedila v rač. jeziku (ni potrebno
-        opredeliti jezika):</p>
-        <div class="sourceCode" id="cb6"><pre
-        class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```jezik</span></span>
+            <ul>
+            <li><p><code>[besedilo povezave](URL)</code> - spletna
+            povezava</p>
+            <ul>
+            <li><code>besedilo povezave](URL naslov povezave)</code> -
+            spletna povezava z naslovom; HTML:
+            <code>&lt;a href="URL" title="naslov povezave"&gt;besedilo povezave&lt;/a&gt;</code>;</li>
+            <li><code>&lt;povezava&gt;</code> - spletna povezava, pri
+            kateri je besedilo enako naslovu;</li>
+            </ul></li>
+            <li><p><code>[besedilo povezave](pot)</code> - povezava s
+            potjo, <em>relativno</em> na mapo, v kateri se nahaja
+            stran;</p></li>
+            <li><p><code>[besedilo povezave][ime sklica]</code> - sklic
+            (ime sklica je lahko tudi preposta številka)</p>
+            <ul>
+            <li><code>[sklic]</code> - sklic, pri katerem je besedilo
+            povezave enako imenu sklica; lahko je tudi
+            <code>besedilo [^1]</code> za opombo;</li>
+            <li><code>[ime sklica]: povezava</code> - vrednost sklica
+            (ali opombe: <code>[^1]: opomba</code>; običajno na koncu
+            strani);</li>
+            </ul></li>
+            <li><p><code>![naslov slike](pot/do/slike.jpg)</code> -
+            vstavljena slika;</p></li>
+            <li><p><code>---</code> = <code>***</code> =
+            <code>___</code> - vodoravna razdelilna črta (uporabiš
+            <em>najmanj</em> tri znake);</p></li>
+            <li><p><code>`koda`</code> - besedilo v računalniškem
+            jeziku;</p></li>
+            <li><p>večji <em>blok</em> besedila v rač. jeziku (ni
+            potrebno opredeliti jezika):</p>
+            <div class="sourceCode" id="cb6"><pre
+            class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```jezik</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="in">koda</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="in">koda</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
-        <p>ali pa z zamikom vrstic noter (to je dodaten zamik - če je
-        zamaknjeno že zato, ker je znotraj elementa seznama, mora biti
-        zamik dvojen):</p>
-        <div class="sourceCode" id="cb7"><pre
-        class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">    koda</span></span>
+            <p>ali pa z zamikom vrstic noter (to je dodaten zamik - če
+            je zamaknjeno že zato, ker je znotraj elementa seznama, mora
+            biti zamik dvojen):</p>
+            <div class="sourceCode" id="cb7"><pre
+            class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">    koda</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="in">    koda</span></span></code></pre></div></li>
-        <li><p>preglednica:</p>
-        <div class="sourceCode" id="cb8"><pre
-        class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>| prvi stolpec | drugi stolpec |</span>
+            <li><p>preglednica:</p>
+            <div class="sourceCode" id="cb8"><pre
+            class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>| prvi stolpec | drugi stolpec |</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>| --- | --- |</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>| nekaj | še nekaj |</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>| nekaj drugega | še nekaj drugega |</span></code></pre></div></li>
-        <li><p>opredelitev izraza:</p>
-        <div class="sourceCode" id="cb9"><pre
-        class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>izraz</span>
+            <li><p>opredelitev izraza:</p>
+            <div class="sourceCode" id="cb9"><pre
+            class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>izraz</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>: opredelitev</span></code></pre></div></li>
-        <li><p>seznam opravkov:</p>
-        <ul>
-        <li><code>- [ ] opravek</code> - element seznama opravkov
-        (neopravljen);</li>
-        <li><code>- [x] opravek</code> - element seznama opravkov
-        (opravljen);</li>
-        </ul></li>
-        <li><p><code>:joy:</code> (oklepajoče dvopičje) -
-        čustvenik;</p></li>
-        </ul>
-        <p>Z nazaj nagnjeno poševnico <code>\</code> lahko ubežiš
-        določenim znakom, če nočeš, da opredeljujejo Markdownove
-        elemente:</p>
-        <ul>
-        <li><code>\</code> - ubežna nazaj nagnjena poševnica,</li>
-        <li><code>`</code> - znak za kodo,
-        <ul>
-        <li><p>znakom za kodo ubežiš tudi tako, da jih obdaš s še več
-        znaki:</p>
-        <p><code>`` `besedilo, obdano z znaki kode` ``</code>, oz.
-        znotraj povedi lahko tudi tako:
-        <code>``blabla `besedilo, obdano z znaki kode` blabla``</code></p>
-        <p>Za večji blok kode pa:</p>
-        <div class="sourceCode" id="cb10"><pre
-        class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="in">````</span></span>
+            <li><p>seznam opravkov:</p>
+            <ul>
+            <li><code>- [ ] opravek</code> - element seznama opravkov
+            (neopravljen);</li>
+            <li><code>- [x] opravek</code> - element seznama opravkov
+            (opravljen);</li>
+            </ul></li>
+            <li><p><code>:joy:</code> (oklepajoče dvopičje) -
+            čustvenik;</p></li>
+            </ul>
+            <p>Z nazaj nagnjeno poševnico <code>\</code> lahko ubežiš
+            določenim znakom, če nočeš, da opredeljujejo Markdownove
+            elemente:</p>
+            <ul>
+            <li><code>\</code> - ubežna nazaj nagnjena poševnica,</li>
+            <li><code>`</code> - znak za kodo,
+            <ul>
+            <li><p>znakom za kodo ubežiš tudi tako, da jih obdaš s še
+            več znaki:</p>
+            <p><code>`` `besedilo, obdano z znaki kode` ``</code>, oz.
+            znotraj povedi lahko tudi tako:
+            <code>``blabla `besedilo, obdano z znaki kode` blabla``</code></p>
+            <p>Za večji blok kode pa:</p>
+            <div class="sourceCode" id="cb10"><pre
+            class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="in">````</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="in">```jezik</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="in">koda</span></span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="in">````</span></span></code></pre></div></li>
-        </ul></li>
-        <li><code>*</code> - zvezdica za poudarke, sezname, ločilne
-        črte,</li>
-        <li><code>_</code> - podčrtaj,</li>
-        <li><code>{}</code> - zaviti oklepaji za ID-je naslovov,</li>
-        <li><code>[]</code> - oglati oklepaji,</li>
-        <li><code>&lt;&gt;</code> - oznake za povezave,</li>
-        <li><code>()</code> - običajni oklepaji za del povezave z
-        URL-jem,</li>
-        <li><code>#</code> - ključnik za naslove,</li>
-        <li><code>+</code>, <code>-</code> - plus in pomišljaj za
-        sezname,</li>
-        <li><code>.</code> - pika za številkami za razvrščene
-        sezname,</li>
-        <li><code>!</code> klicaj pred vstavljenimi slikami,</li>
-        <li><code>|</code> - navpičnica v preglednicah</li>
-        </ul>
-        <hr />
-        <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in viri</h2>
-        <ul>
-        <li><a
-        href="https://daringfireball.net/projects/markdown/">Daring
-        Fireball - John Gruber: Markdown</a>;</li>
-        <li><a href="https://commonmark.org/">CommonMark - A strongly
-        defined, highly compatible specification of Markdown</a>;</li>
-        <li><a href="https://www.markdownguide.org/">The Markdown
-        Guide</a>;</li>
-        </ul>
+            </ul></li>
+            <li><code>*</code> - zvezdica za poudarke, sezname, ločilne
+            črte,</li>
+            <li><code>_</code> - podčrtaj,</li>
+            <li><code>{}</code> - zaviti oklepaji za ID-je
+            naslovov,</li>
+            <li><code>[]</code> - oglati oklepaji,</li>
+            <li><code>&lt;&gt;</code> - oznake za povezave,</li>
+            <li><code>()</code> - običajni oklepaji za del povezave z
+            URL-jem,</li>
+            <li><code>#</code> - ključnik za naslove,</li>
+            <li><code>+</code>, <code>-</code> - plus in pomišljaj za
+            sezname,</li>
+            <li><code>.</code> - pika za številkami za razvrščene
+            sezname,</li>
+            <li><code>!</code> klicaj pred vstavljenimi slikami,</li>
+            <li><code>|</code> - navpičnica v preglednicah</li>
+            </ul>
+            <hr />
+            <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in
+            viri</h2>
+            <ul>
+            <li><a
+            href="https://daringfireball.net/projects/markdown/">Daring
+            Fireball - John Gruber: Markdown</a>;</li>
+            <li><a href="https://commonmark.org/">CommonMark - A
+            strongly defined, highly compatible specification of
+            Markdown</a>;</li>
+            <li><a href="https://www.markdownguide.org/">The Markdown
+            Guide</a>;</li>
+            </ul>
+        </div>
     </main>
+    <hr>
     <footer>
         <button id="stikaloTeme">Preklopi barvni način strani</button>
         <br><a id="linkMD" href="/markdown/knjiznica/racunalniski_jeziki.md">Oglej si stran v Markdownu</a>
     </footer>
-
     </script><script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1FD0790Y"></script>
     <script>
         window.dataLayer = window.dataLayer || [];

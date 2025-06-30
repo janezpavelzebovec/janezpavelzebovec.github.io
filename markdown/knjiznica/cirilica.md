@@ -9,7 +9,7 @@ keywords: cirilica, slovanska pisava
 
 Kjer so za določen jezik navedene dve izgovorni vrednosti ([...], [...]), je prva za veliko črko, druga pa za malo; če je le ena vrednost, velja za obe. Za glasovno vrednostjo je navedeno še (trenutno) uradno prečrkovanje jezika v latinico. Ponekod je oznaka *st.*, ki pomeni *starinsko*  (*arhaično*), torej označuje črke, ki so v določenih jezikih pojmovane kot starinske in so običajno iz-/opuščene.
 
-</main>
+</div>
 
 | glagol.   | cir.  | št.   | splošno                   | ruska                         | belorusko | ukrajinska            | mongolska             | srbska        | makedonska    | bolg.  |
 | --------- | ----- | ----- | ------------------------- | ----------------------------- |---------- | --------------------- | --------------------- | ------------- | ------------- | ----  |
@@ -76,9 +76,8 @@ Kjer so za določen jezik navedene dve izgovorni vrednosti ([...], [...]), je pr
 | Ⱔ ⱔ       | Ѧ ѧ   | (900) |                           | *st.* [ja]                    |       |                       |                       |               |               |       |
 | Ⱙ ⱙ       | Ѭ ѭ   |       |                           | *st.* [ju]                    |       |                       |                       |               |               |       |
 | Ⱗ ⱗ       | Ѩ ѩ   |       |                           | *st..* [ja]                   |       |                       |                       |               |               |       |
-:Uporaba cirilice v jezikih
 
-<main>
+<div class="content">
 
 ## Ruska cirilica
 

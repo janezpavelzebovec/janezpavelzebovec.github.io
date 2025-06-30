@@ -24,11 +24,15 @@
         }
         main {
             flex: 1;
-            max-width: 50em;
+            width: 100%;
             margin: auto;
             padding: 1em;
             padding-top: 0;
             font-size: 1.1em;
+        }
+        .content {
+            max-width: var(--vsebina);
+            margin:auto;
         }
         header {
             min-height: 4em;
@@ -62,10 +66,11 @@
         <p id="datum">Zadnja posodobitev te strani: <time datetime="$date$">$date$</time></p>
     </header>
     <main>
-        $toc$
-        $body$
-    </main> 
-
+        <div class="content">
+            $toc$
+            $body$
+        </div> 
+    </main>
     <footer>
         <button id="stikaloTeme">Preklopi barvni način strani</button>
         <br><a id="linkMD" href="/markdown/$md_link$">Oglej si stran v Markdownu</a>

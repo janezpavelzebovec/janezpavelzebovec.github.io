@@ -19,6 +19,17 @@ author: Janez Pavel Žebovec
 - ogljikovi hidrati (C, H, O)
 - nukleinske kisline
 
+## Dedovanje
+
+### Genetski kod
+
+| 1. \\ 2. | U | C | A | G |
+| --- | --- | --- | --- | --- |
+| U | UUU - fenilalanin | UCU - serin | UAU - tirozin | UGU - cistein |
+| U | UUC - fenilalanin | UCC - serin | UAC - tirozin | UGC - cistein |
+| U | UUA - levcin | UCA - serin | UAA - *ustavi* (okra) | UGA - *ustavi* |
+| U | UUG - levcin | UCG - serin | UAG - *ustavi* (jantar) | UGG - triptofan |
+
 ## Drevo življenja
 
 **domena - kraljestvo - deblo - razred - red - družina - rod - vrsta**
@@ -62,4 +73,7 @@ author: Janez Pavel Žebovec
 ## Zunanje povezave in viri
 
 - [Tree of Life Web Project (ToL)](http://www.tolweb.org/);
+- [One Zoom - Life](https://www.onezoom.org/life/);
+- [ITOL - Interactive Tree of Life](https://itol.embl.de/itol.cgi);
+- [YouTube - XVIVO Scientific Animation: The Inner Life of the Cell Animation](https://youtu.be/wJyUtbn0O5Y);
 
