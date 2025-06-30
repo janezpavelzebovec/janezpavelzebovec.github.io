@@ -1,6 +1,6 @@
 ---
 title: Živoslovje
-date: 2025-06-29
+date: 2025-06-30
 description: O živih bitjih
 keywords: živoslovje, biologija
 author: Janez Pavel Žebovec
@@ -21,15 +21,8 @@ author: Janez Pavel Žebovec
 
 ## Drevo življenja
 
-**
-- domena
-    - kraljestvo
-        - deblo
-            - razred
-                - red
-                    - družina
-                        - rod
-                            - vrsta**
+**domena - kraljestvo - deblo - razred - red - družina - rod - vrsta**
+
 - arheje
 - bakterije (*Bacteria*)
 - evkarije (*Eukarya*)
@@ -63,4 +56,10 @@ author: Janez Pavel Žebovec
             - dvoživke
             - plazilci
             - ptice
+
+-----------------------------------------------------
+
+## Zunanje povezave in viri
+
+- [Tree of Life Web Project (ToL)](http://www.tolweb.org/);
 
