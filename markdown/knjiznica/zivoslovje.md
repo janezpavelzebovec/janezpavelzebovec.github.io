@@ -30,7 +30,6 @@ author: Janez Pavel Žebovec
                     - družina
                         - rod
                             - vrsta**
-
 - arheje
 - bakterije (*Bacteria*)
 - evkarije (*Eukarya*)

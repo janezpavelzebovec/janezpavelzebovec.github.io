@@ -272,6 +272,7 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/), [Codebergom](https://c
 - `git pull` - prejme spremebe, narejene na oddaljenem repozitoriju
 - `git remote -v` - izpiše, kateri URL-ji se uporabljajo za `remote`
 - `ssh -T git@github.com` - preveri povezavo prek SSH (prek ključa)
+- `ssh-add ~/.ssh/id_ed25519` - dodaj ključ
 - `ssh-add -l` - preveri ključe, dodane v `agent`
 
 
