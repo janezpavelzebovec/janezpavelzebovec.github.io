@@ -1,8 +1,8 @@
 ---
 title: Janez Pavel Žebovec
-date: 2025-06-26
+date: 2025-06-30
 description: Moja osebna spletna stran
-keywords: Janez Pavel, Žebovec, osebna spletna stran
+keywords: Janez Pavel Žebovec, osebna spletna stran
 ---
 
 To je moja spletna stran, namenjena mojim zanimanjem in potrebam.
@@ -16,7 +16,8 @@ To je moja spletna stran, namenjena mojim zanimanjem in potrebam.
 
 Tu je tudi [Knjižnica](./knjiznica/), kjer so zbrana nekatera znanja mojih zanimanj.
 
-Spletno mesto je dostopno tudi preko GitHuba, na povezavi [https://janezpavelzebovec.github.io](https://janezpavelzebovec.github.io).
+Spletno mesto je dostopno tudi [preko GitHuba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) pod domeno [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
+in [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) pod domeno [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/).
 
 ------------------------------------------------------------------------------------------------------------
 
