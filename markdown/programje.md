@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2025-06-01
+date: 2025-07-08
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -41,6 +41,16 @@ Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge
 | [VIM](https://www.vim.org/) | urejevalnik golega besedila | [vim](https://packages.debian.org/buster/vim) | veliko upravljanja z bližnjicami; različica *vi* |
 | [YouTube-DL](https://ytdl-org.github.io/youtube-dl/index.html) | prenos posnetkov z YouTuba in drugih spletnih mest | [youtube-dl](https://packages.debian.org/buster/youtube-dl) | |
 | [Zathura](https://pwmt.org/projects/zathura/) | ogledovalnik PDF | [zathura](https://packages.debian.org/buster/zathura) | upravljanje z bližnjicami |
+
+### Razširitve za brskalnik
+
+| razširitev | naloga | Chrome Web Store | opombe |
+| Custom CSS by Denis | lasten CSS za izbrane spletne strani | [Custom CSS by Denis](https://chromewebstore.google.com/detail/custom-css-by-denis/cemphncflepgmgfhcdegkbkekifodacd) | |
+| [Violentmonkey](https://violentmonkey.github.io/) | dodajanje programčkov (*userscripts*) v brskalnik (npr. [better-osm-org](https://github.com/deevroman/better-osm-org) | [Violentmonkey](https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag) | |
+
+#### Programčki/knjižnice za razširitve
+
+- [better-osm-org](https://github.com/deevroman/better-osm-org): dodane zmogljivosti k urejevalniku OSM v brskalniku
 
 ### Programi za Linux
 

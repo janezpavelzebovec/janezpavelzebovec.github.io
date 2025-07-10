@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2025-06-29
+date: 2025-07-10
 description:
 keywords: programska oprema, Linux, programi
 author: Janez Pavel Žebovec
@@ -14,6 +14,16 @@ author: Janez Pavel Žebovec
 - `startx` - zažene strežnik X, oz. privzeti grafični prikaz (to je lahko DWM, GNOME, KDE,...); prebere datoteko `~/xinitrc`, kjer so ukazi, ki naj se izvršijo med zagonom, tudi ukaz za zagon grafičnega okolja (`startx &`)
 
 - `locale` - preveri lokalizacijo sistema (jezik, enote, ...)
+- `chmod` - spreminjanje dovoljenj datotek
+    - `chmod +x datoteka` - dodeli datoteki izvšilne pravice, da jo lahko recimo zaženeš kot ukaz v terminalu
+- `python 3 datoteka.py` - zaženi Python datoteko
+- `live server` - zažene lokalni strežnik, brez dodatnih opredelitev odpre *index.html* v mapi, kjer je bil ukaz izveden
+    - `live server --open=pot/do/datoteke` - zažene lokalni strežnik in odpre izbrano datoteko
+- `sudo dmidecode -t system` - izpiše lastnosti računalniške opreme (diski, spomin, model računalnika, ...)
+
+- `sudo apt install ime-programa` - namesti program
+- `sudo apt update` - posodobi seznam nameščenih paketov
+- `sudo apt upgrade` - posodobi programe
 
 ## Mape in datoteke v Linuxu
 
@@ -41,9 +51,14 @@ Datoteke:
 ### Terminal (jezik Bash)
 
 - `cd ime_mape` = *change directory* -  premakni se v mapo
+- `cp pot/do/kopirane_datoteke_mape pot/do/ciljne_datoteke_mape` = *copy* - kopiraj
+    - `-r` = *recrusive* - kopiraj vključno s podmapami in datotekami/mapami v njih (pri kopiranju mape)
+- `mv izvorna/pot ciljna/pot` = *move* - premakni/preimenuj
 - `ls`= *list* -  izpiši vsebino mape
     - `-a` = *all* -  prikaži tudi skrite datoteke
     - `-v` - razvrsti po naravnih številih (npr. *a1, a2, a10, a21, ...*; namesto privzeto leksikografskega reda, npr. *a1, a10, a2, a21, ...*); prezre skrite datoteke z začetnim `.` ali `..`
+- `ln ciljna_datoteka gledana datoteka` = *link*- ustvari povezavo med dvema datotekama, oz. preusmeritev na ciljno datoteko
+    - `-s` = *soft* - datoteka kaže na drugo datoteko (ne pa na same podatke ciljne datoteke, kot to počne *hard link*)
 - `man ime-programa` = *manuals* -  prikaži navodila programa
 - `/iskalni_niz` -  išče po iskalnem nizu po zapisu
 - `mkdir ime_nove_mape` = *make directory* -  ustvari mapo
@@ -51,6 +66,9 @@ Datoteke:
 - `rm ime_datoteke` = *remove* -  odstrani predmet
     - `rm -r ime_mape` -  odstrani mapo z njeno vsebino
 - `cat ime_datoteke` - izpiši vsebino datoteke
+- `find -name ime_datoteke` - poišči datoteko
+    - `find -type d -name ime_mape` = *directory* - poišči mapo
+    - `find / -name ime_datoteke` - poišči v korenski mapi
 
 Nadomestne oznake:
 
@@ -213,6 +231,7 @@ NetworkManager:
 
 ## Pretvarjanje/združevanje datotek
 
+- `tar -xvzf mapa.tar.gz` - razširi stisnjeno mapo *.tar.gz* (*.tar* - arhivska; *.gz* - stisnjena)
 - `convert {imena_slik} ime_PDF-ja` - združi več slik JPG v en PDF
 
 - `pdfjam {imena_PDF-jev} -o ime_nove_datoteke.pdf` -  združi več PDF-jev v enega
@@ -292,6 +311,9 @@ Sinhronizacija s strežnikom (npr. pri Hetznerju):
 
 - `ssh up_ime@tvoj_naslov_IP` - predstavi strežniku svojo napravo (za uporabniško ime uporabi tisto s K-jem, *K{deset števk}*)
 - `ssh-add ~/.ssh/id_ed25519` - dodaj ključ v `ssh-agent`
+
+- `curl {možnosti} URL` - pridobivanje podatkov od oddaljenega strežnika ali pošiljanje podatkov oddaljenemu strežniku
+    - `-L` - sledi preusmeritvam, dokler ne dospe do cilja
 
 ---
 
