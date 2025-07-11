@@ -8,22 +8,32 @@ author: Janez Pavel Žebovec
 
 # Shawova abeceda
 
+- jezik: [angleščina](/knjiznica/jezikoslovje/jeziki/anglescina)
+- obdobje: 1960 -
+- tvorec: Kingsley Read
+- pobudnik, podpornik: Bernard Shaw
+
 | nezveneči sog.<br>(visoke oblike) | zveneči sog.<br>(nizke oblike) | mehki<br>(kratke oblike) | mehki<br>(kratke oblike) | sklopi<br>(sestavljene oblike) |
 | --- | --- | --- | --- |
-| 𐑐 /p/ | 𐑚 /b/ | 𐑤 /l/ | 𐑮 /r/ | 𐑸	/ɑː(r)/ |
-| 𐑑 /t/ | 𐑛 /d/ | 𐑥 /m/ | 𐑯 /n/ | 𐑹 /ɔː(r)/ |
-| 𐑒 /k/ | 𐑜 /g/ | 𐑦 /ɪ/~/i/ | 𐑰 /iː/ | 𐑺 /ɛə(r)/ |
-| 𐑓 /f/ | 𐑝 /v/ | 𐑧 /ɛ/ | 𐑱 /eɪ/ | 𐑻 /ɜː(r)/ |
-| 𐑔 /θ/ | 𐑞 /ð/ | 𐑨 /æ/ | 𐑲 /aɪ/ | 𐑼 /ə(r)/ |
-| 𐑕 /s/ | 𐑟 /z/ | 𐑩 /ə/ | 𐑳 /ʌ/ | 𐑽 /ɪə(r)/ |
-| 𐑖 /ʃ/ | 𐑠 /ʒ/ | 𐑪 /ɒ/ | 𐑴 /əʊ/ | 𐑾 /ɪə/ |
-| 𐑗 /ʧ/ | 𐑡 /ʤ/ | 𐑫 /ʊ/ | 𐑵 /u(ː)/ | 𐑿 /ju(ː)/ |
-| 𐑘 /j/ | 𐑢 /w/ | 𐑬 /aʊ/ | 𐑶 /ɔɪ/ | |
-| 𐑙 /ŋ/ | 𐑣 /h/ | 𐑭 /ɑː/ | 𐑷 /ɔː/ | |
+| 𐑐 /p/ ***p**eep* | 𐑚 /b/ ***b**ib* | 𐑤 /l/ ***l**oll* | 𐑮 /r/ ***r**oar* | 𐑸 /ɑː(r)/ ***ar**e* |
+| 𐑑 /t/ ***t**ot* | 𐑛 /d/ ***d**ead* | 𐑥 /m/ ***m**ime* | 𐑯 /n/ ***n**un* | 𐑹 /ɔː(r)/ ***or*** |
+| 𐑒 /k/ ***k**ick* | 𐑜 /g/ ***g**ag* | 𐑦 /ɪ/~/i/ ***i**f* | 𐑰 /iː/ ***ea**t* | 𐑺 /ɛə(r)/ ***air*** |
+| 𐑓 /f/ ***f**ee* | 𐑝 /v/ ***v**ow* | 𐑧 /ɛ/ ***e**gg* | 𐑱 /eɪ/ ***a**ge* | 𐑻 /ɜː(r)/ ***err*** |
+| 𐑔 /θ/ ***th**igh* | 𐑞 /ð/ ***th**ey* | 𐑨 /æ/ ***a**sh* | 𐑲 /aɪ/ ***i**ce* | 𐑼 /ə(r)/ ***arr**ay* |
+| 𐑕 /s/ ***s**o* | 𐑟 /z/ ***z**oo* | 𐑩 /ə/ ***a**do* | 𐑳 /ʌ/ ***u**p* | 𐑽 /ɪə(r)/ ***ear*** |
+| 𐑖 /ʃ/ ***s**ure* | 𐑠 /ʒ/ *mea**s**ure* | 𐑪 /ɒ/ ***o**n* | 𐑴 /əʊ/ ***oa**k* | 𐑾 /ɪə/ ***la**n* |
+| 𐑗 /ʧ/ ***ch**urch* | 𐑡 /ʤ/ ***j**udge* | 𐑫 /ʊ/ *w**oo**l* | 𐑵 /u(ː)/ ***oo**ze* | 𐑿 /ju(ː)/ ***yew** |
+| 𐑘 /j/ ***y**ea* | 𐑢 /w/ ***w**oe* | 𐑬 /aʊ/ ***ou**t* | 𐑶 /ɔɪ/ ***oi**l* | |
+| 𐑙 /ŋ/ *hu**ng*** | 𐑣 /h/ ***h**a-ha* | 𐑭 /ɑː/ ***a**h* | 𐑷 /ɔː/ ***aw**e* | |
+
+Ta pisava naj bi nadomestila angleško latinico, ki je neučinkovita za zapisovanje angleščine.
+Pisava je glasovna, *fonemska*, torej naj bi vsaka črka ustrezala svojemu *fonemu* angleščine (*fonem* je pomenskorazločevalna glasovna enota jezika).
+
+Abecedni red: 𐑐 𐑚 𐑑 𐑛 𐑒 𐑜 𐑓 𐑝 𐑔 𐑞 𐑕 𐑟 𐑖 𐑠 𐑗 𐑡 𐑘 𐑢 𐑙 𐑣 𐑤 𐑮 𐑥 𐑯 𐑦 𐑰 𐑧 𐑱 𐑨 𐑲 𐑩 𐑳 𐑪 𐑴 𐑫 𐑵 𐑬 𐑶 𐑭 𐑷 𐑸 𐑹 𐑺 𐑻 𐑼 𐑽 𐑾 𐑿
 
 Namesto velikih začetnic se pred besedo, kjer je to potrebno (npr. lastna imena) piše pika v sredini višine vrstice (·).
 
-Za 5 najbolj splošnih besed se uporabljajo sledeče črke:
+Za 5 najbolj splošnih besed se uporabljajo sledeče črke kot bližnjice (krajšave):
 
 | beseda | črka | enako kot za glas ... |
 | --- | --- | --- |

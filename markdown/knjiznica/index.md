@@ -35,7 +35,7 @@ Opomba: strani z oznako ^N^ še niso posodobljene, zato trenutno niso dostopne.
             - [Cirilica](/knjiznica/pisave/cirilica) (kirilica);
             - ^N^ [Slovenske zgodovinske pisave](/knjiznica/pisave/slovenske_zgodovinske_pisave);
             - ^N^ [Ogamska pisava](/knjiznica/pisave/ogamska_pisava);
-            - ^N^ [Shawova abeceda](/knjiznica/pisave/shawova_abeceda);
+            - [Shawova abeceda](/knjiznica/pisave/shawova_abeceda);
     - ^N^ [Krščanstvo in modroslovje](/knjiznica/krscanstvo) (*religija*, *filozofija*);
     - Književnost (*literatura*)
         - ^N^ [John Ronald Reuel Tolkien](/knjiznica/John_Ronald_Reuel_Tolkien);
