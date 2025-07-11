@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2025-07-10
+date: 2025-07-11
 description:
 keywords: programska oprema, Linux, programi
 author: Janez Pavel Žebovec
@@ -21,9 +21,25 @@ author: Janez Pavel Žebovec
     - `live server --open=pot/do/datoteke` - zažene lokalni strežnik in odpre izbrano datoteko
 - `sudo dmidecode -t system` - izpiše lastnosti računalniške opreme (diski, spomin, model računalnika, ...)
 
+## Upravljanje programov
+
 - `sudo apt install ime-programa` - namesti program
 - `sudo apt update` - posodobi seznam nameščenih paketov
 - `sudo apt upgrade` - posodobi programe
+- `dpkg -l | grep ime-programa` - izpiše seznam vseh paketov, katerih ime ustreza izbranemu
+- `ime-programa --version` -  izpiše različico programa
+- `which ime-programa` -  izpiše kraj shrambe programa (običajno /usr/bin/)
+- `sudo apt remove ime-programa` -  odstrani program, a ohrani nastavitvene datoteke (npr. /etc)
+- `sudo apt purge ime-programa` -  odstrani program z vsemi nastavitvenimi datotekami
+- `apt purge --remove ime-programa` -  odstrani program z vsemi nastavitvenimi datotekami
+- `sudo apt clean` -  čiščenje predpomnilnika paketov, ki ga APT ustvari pri nameščanju ali posodabljanju programske opreme
+- `sudo apt autoremove` - očisti nepotrebne pakete, ki so bili nameščeni kot odvisnosti
+
+### Nameščanje programov iz vira
+
+- `make` - izvozi program, oz. prebere datoteko `makefile`
+    - `sudo make install` - izvozi in naloži program
+        - `sudo make clean install` - naloži program in odstrani namestitvene datoteke (datoteke *build*)
 
 ## Mape in datoteke v Linuxu
 
@@ -197,6 +213,26 @@ Uporablja podobne bližnjice kot VIM:
 - **i** -  pokaži podatke o skladbi
 - **:** -  odpri ukazno vrstico
 
+### YT-DLP
+
+- `yt-dlp {možnosti} {--} URL-ji` - prenese posnetek na naslovu URL
+    - `-x` - izvozi zvok
+    - `-o pot/do/datoteke` - nastavi pot oz. imena datotek
+        - `%(playlist_index)s` - številka posnetka na seznamu predvajanja
+        - `%(playlist_title)s` - naslov seznama predvajanja
+        - `%(title)s` - naslov posnetka
+        - `%(ext)s` - končnica datoteke
+    - `-k` - ohrani predhodno obstoječe datoteke v mapi, kamor se bodo posnetki shranili
+    - `-i` = `--ignore-errors`
+    - `-f bestvideo+bestaudio` = `-f best`
+    - `--audio-format vrsta-datoteke` - pretvori v izbrano vrsto zvočne datoteke (npr. `--audio-format mp3` pretvori v MP3)
+    - `--audio-quality 0` - izbere najboljšo možno kakovost zvoka
+    - `--embed-metadata` -  doda metapodatke v datoteko
+    - `--add-metadata` -  prenese dodatne podatke
+    - `--progress` -  prikaz napredka prenosa
+    - `--restrict-filenames` -  nadomesti presledke s podčrtaji in odstrani posebne znake
+    - `--cookies-from-browser` -  pridobi piškotke (prej jih moraš prenesti) za strani, kjer je potrebna prijava, ali prihaja do s tem povezanih napak
+
 ## Omrežna povezava
 
 - `ip link show` - preveri omrežni vmesnik(wlp2s0 je brezžično omrežje, enp1s0 je kabelsko)
@@ -322,3 +358,4 @@ Sinhronizacija s strežnikom (npr. pri Hetznerju):
 - [Hetzner Community - Tutorials - Setting up an SSH key](https://community.hetzner.com/tutorials/howto-ssh-key);
 - [VIM Cheat Sheet](https://vim.rtorr.com/);
 - [Codeberg Docs - Your First Repository](https://docs.codeberg.org/getting-started/first-repository/);
+- [Software Galaxies](https://anvaka.github.io/pm/#/?_k=hl5p8n) (zemljevid odvisnosti med posameznimi paketi glede naupravitelja paketov)

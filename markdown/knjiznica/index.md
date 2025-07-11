@@ -1,6 +1,6 @@
 ---
 title: Knjižnica
-date: 2025-06-30
+date: 2025-07-11
 description: Knjižnica znanj mojih zanimanj
 keywords: knjižnica, znanje
 ---
@@ -23,19 +23,19 @@ Opomba: strani z oznako ^N^ še niso posodobljene, zato trenutno niso dostopne.
     - ^N^ [Zgodovina](/knjiznica/zgodovina);
     - [Rodoslovje](/knjiznica/rodoslovje) (*genealogija*);
     - [Jezikoslovje](/knjiznica/jezikoslovje) (*lingvistika*)
-        - [Slovenščina](/knjiznica/slovenscina) (~*slovenistika*);
-        - ^N^ [Nemščina](/knjiznica/nemscina);
-        - ^N^ [Latinščina](/knjiznica/latinscina);
-        - ^N^ [Angleščina](/knjiznica/anglescina) (~*anglistika*);
+        - [Slovenščina](/knjiznica/jeziki/slovenscina) (~*slovenistika*);
+        - ^N^ [Nemščina](/knjiznica/jeziki/nemscina);
+        - ^N^ [Latinščina](/knjiznica/jeziki/latinscina);
+        - ^N^ [Angleščina](/knjiznica/jeziki/anglescina) (~*anglistika*);
         - ^N^ [Pisave](/knjiznica/pisave)
-            - ^N^ [Grška abeceda](/knjiznica/grska_abeceda) (grški *alfabet*);
-            - ^N^ [Latinica](/knjiznica/latinica);
-            - ^N^ [Gotica](/knjiznica/gotica);
-            - ^N^ [Glagolica](/knjiznica/glagolica);
-            - [Cirilica](/knjiznica/cirilica) (kirilica);
-            - ^N^ [Slovenske zgodovinske pisave](/knjiznica/slovenske_zgodovinske_pisave);
-            - ^N^ [Ogamska pisava](/knjiznica/ogamska_pisava);
-            - ^N^ [Shawova abeceda](/knjiznica/shawova_abeceda);
+            - ^N^ [Grška abeceda](/knjiznica/pisave/grska_abeceda) (grški *alfabet*);
+            - ^N^ [Latinica](/knjiznica/pisave/latinica);
+            - ^N^ [Gotica](/knjiznica/pisave/gotica);
+            - ^N^ [Glagolica](/knjiznica/pisave/glagolica);
+            - [Cirilica](/knjiznica/pisave/cirilica) (kirilica);
+            - ^N^ [Slovenske zgodovinske pisave](/knjiznica/pisave/slovenske_zgodovinske_pisave);
+            - ^N^ [Ogamska pisava](/knjiznica/pisave/ogamska_pisava);
+            - ^N^ [Shawova abeceda](/knjiznica/pisave/shawova_abeceda);
     - ^N^ [Krščanstvo in modroslovje](/knjiznica/krscanstvo) (*religija*, *filozofija*);
     - Književnost (*literatura*)
         - ^N^ [John Ronald Reuel Tolkien](/knjiznica/John_Ronald_Reuel_Tolkien);
