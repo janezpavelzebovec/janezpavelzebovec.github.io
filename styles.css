@@ -108,6 +108,11 @@ h2 + h3 {
     margin-top: 0;
 }
 
+hr {
+    width: 75%;
+    color: var(--bOspredjeNazaj);
+}
+
 a {
     color: var(--bPoudarek);
     cursor: pointer;
