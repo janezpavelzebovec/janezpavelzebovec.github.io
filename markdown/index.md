@@ -17,6 +17,7 @@ To je moja spletna stran, namenjena mojim zanimanjem in potrebam.
 Tu je tudi [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih načeloma lahko preberete tudi drugje.
 
 Spletno mesto je dostopno tudi:
+
 - [preko GitHuba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) pod domeno [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
 - [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) pod domeno [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/).
 

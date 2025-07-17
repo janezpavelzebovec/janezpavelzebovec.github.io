@@ -15,16 +15,16 @@ author: Janez Pavel Žebovec
 
 | nezveneči sog.<br>(visoke oblike) | zveneči sog.<br>(nizke oblike) | mehki<br>(kratke oblike) | mehki<br>(kratke oblike) | sklopi<br>(sestavljene oblike) |
 | --- | --- | --- | --- |
-| 𐑐 /p/ ***p**eep* | 𐑚 /b/ ***b**ib* | 𐑤 /l/ ***l**oll* | 𐑮 /r/ ***r**oar* | 𐑸 /ɑː(r)/ ***ar**e* |
-| 𐑑 /t/ ***t**ot* | 𐑛 /d/ ***d**ead* | 𐑥 /m/ ***m**ime* | 𐑯 /n/ ***n**un* | 𐑹 /ɔː(r)/ ***or*** |
-| 𐑒 /k/ ***k**ick* | 𐑜 /g/ ***g**ag* | 𐑦 /ɪ/~/i/ ***i**f* | 𐑰 /iː/ ***ea**t* | 𐑺 /ɛə(r)/ ***air*** |
-| 𐑓 /f/ ***f**ee* | 𐑝 /v/ ***v**ow* | 𐑧 /ɛ/ ***e**gg* | 𐑱 /eɪ/ ***a**ge* | 𐑻 /ɜː(r)/ ***err*** |
-| 𐑔 /θ/ ***th**igh* | 𐑞 /ð/ ***th**ey* | 𐑨 /æ/ ***a**sh* | 𐑲 /aɪ/ ***i**ce* | 𐑼 /ə(r)/ ***arr**ay* |
-| 𐑕 /s/ ***s**o* | 𐑟 /z/ ***z**oo* | 𐑩 /ə/ ***a**do* | 𐑳 /ʌ/ ***u**p* | 𐑽 /ɪə(r)/ ***ear*** |
-| 𐑖 /ʃ/ ***s**ure* | 𐑠 /ʒ/ *mea**s**ure* | 𐑪 /ɒ/ ***o**n* | 𐑴 /əʊ/ ***oa**k* | 𐑾 /ɪə/ ***la**n* |
-| 𐑗 /ʧ/ ***ch**urch* | 𐑡 /ʤ/ ***j**udge* | 𐑫 /ʊ/ *w**oo**l* | 𐑵 /u(ː)/ ***oo**ze* | 𐑿 /ju(ː)/ ***yew** |
-| 𐑘 /j/ ***y**ea* | 𐑢 /w/ ***w**oe* | 𐑬 /aʊ/ ***ou**t* | 𐑶 /ɔɪ/ ***oi**l* | |
-| 𐑙 /ŋ/ *hu**ng*** | 𐑣 /h/ ***h**a-ha* | 𐑭 /ɑː/ ***a**h* | 𐑷 /ɔː/ ***aw**e* | |
+| **𐑐** /p/ ***p**eep*      | **𐑚** /b/ ***b**ib*       | **𐑤 /l/ ***l**oll*  | 𐑮 /r/ ***r**oar*      | 𐑸 /ɑː(r)/ ***ar**e*   |
+| **𐑑** /t/ ***t**ot*       | **𐑛** /d/ ***d**ead*      | **𐑥 /m/ ***m**ime*  | 𐑯 /n/ ***n**un*       | 𐑹 /ɔː(r)/ ***or***    |
+| **𐑒** /k/ ***k**ick*      | **𐑜** /g/ ***g**ag*       | **𐑦 /ɪ/~/i/ ***i**f*| 𐑰 /iː/ ***ea**t*      | 𐑺 /ɛə(r)/ ***air***   |
+| **𐑓** /f/ ***f**ee*       | **𐑝** /v/ ***v**ow*       | **𐑧 /ɛ/ ***e**gg*   | 𐑱 /eɪ/ ***a**ge*      | 𐑻 /ɜː(r)/ ***err***   |
+| **𐑔** /θ/ ***th**igh*     | **𐑞** /ð/ ***th**ey*      | **𐑨 /æ/ ***a**sh*   | 𐑲 /aɪ/ ***i**ce*      | 𐑼 /ə(r)/ ***arr**ay*  |
+| **𐑕** /s/ ***s**o*        | **𐑟** /z/ ***z**oo*       | **𐑩 /ə/ ***a**do*   | 𐑳 /ʌ/ ***u**p*        | 𐑽 /ɪə(r)/ ***ear***   |
+| **𐑖** /ʃ/ ***s**ure*      | **𐑠** /ʒ/ *mea**s**ure*   | **𐑪 /ɒ/ ***o**n*    | 𐑴 /əʊ/ ***oa**k*      | 𐑾 /ɪə/ ***la**n*      |
+| **𐑗** /ʧ/ ***ch**urch*    | **𐑡** /ʤ/ ***j**udge*     | **𐑫 /ʊ/ *w**oo**l*  | 𐑵 /u(ː)/ ***oo**ze*   | 𐑿 /ju(ː)/ ***yew**    |
+| **𐑘** /j/ ***y**ea*       | **𐑢** /w/ ***w**oe*       | **𐑬 /aʊ/ ***ou**t*  | 𐑶 /ɔɪ/ ***oi**l*      |                       |
+| **𐑙** /ŋ/ *hu**ng***      | **𐑣** /h/ ***h**a-ha*     | **𐑭 /ɑː/ ***a**h*   | 𐑷 /ɔː/ ***aw**e*      |                       |
 
 Ta pisava naj bi nadomestila angleško latinico, ki je neučinkovita za zapisovanje angleščine.
 Pisava je glasovna, *fonemska*, torej naj bi vsaka črka ustrezala svojemu *fonemu* angleščine (*fonem* je pomenskorazločevalna glasovna enota jezika).
