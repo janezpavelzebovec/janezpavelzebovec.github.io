@@ -12,31 +12,32 @@ To je moja knjižnica nekaterih znanj, osredotočena predvsem na področja mojeg
 Opomba: strani z oznako ^N^ še niso posodobljene, zato trenutno niso dostopne.
 
 - [Naravoslovje](/knjiznica/naravoslovje) (*fizika*)
-    - [Snovoslovje](/knjiznica/snovoslovje) (*kemija*);
-    - [Živoslovje](/knjiznica/zivoslovje) (*biologija*);
-    - ^N^ [Zvezdoslovje](/knjiznica/zvezdoslovje) (*astronomija*);
-- [Računstvo](/knjiznica/racunstvo) (*matematika*);
+    - [Snovoslovje](/knjiznica/snovoslovje) (*kemija*)
+    - [Živoslovje](/knjiznica/zivoslovje) (*biologija*)
+    - ^N^ [Zvezdoslovje](/knjiznica/zvezdoslovje) (*astronomija*)
+- [Računstvo](/knjiznica/racunstvo) (*matematika*)
 - Računalništvo
-    - [Računalniški jeziki](/knjiznica/racunalniski_jeziki);
-    - [Linux](/knjiznica/Linux);
+    - [Računalniški jeziki](/knjiznica/racunalniski_jeziki)
+    - [Linux](/knjiznica/Linux)
 - Družboslovje (*sociologija*)
-    - ^N^ [Zgodovina](/knjiznica/zgodovina);
-    - [Rodoslovje](/knjiznica/rodoslovje) (*genealogija*);
+    - ^N^ [Zgodovina](/knjiznica/zgodovina)
+    - [Rodoslovje](/knjiznica/rodoslovje) (*genealogija*)
     - [Jezikoslovje](/knjiznica/jezikoslovje) (*lingvistika*)
-        - [Slovenščina](/knjiznica/jezikoslovje/jeziki/slovenscina) (~*slovenistika*);
-        - ^N^ [Nemščina](/knjiznica/jezikoslovje/jeziki/nemscina);
-        - ^N^ [Latinščina](/knjiznica/jezikoslovje/jeziki/latinscina);
-        - ^N^ [Angleščina](/knjiznica/jezikoslovje/jeziki/anglescina) (~*anglistika*);
-        - ^N^ [Pisave](/knjiznica/jezikoslovje/pisave)
-            - [Grška abeceda](/knjiznica/jezikoslovje/pisave/grska_abeceda) (grški *alfabet*);
-            - ^N^ [Latinica](/knjiznica/jezikoslovje/pisave/latinica);
-            - ^N^ [Gotica](/knjiznica/jezikoslovje/pisave/gotica);
-            - ^N^ [Glagolica](/knjiznica/jezikoslovje/pisave/glagolica);
-            - [Cirilica](/knjiznica/jezikoslovje/pisave/cirilica) (kirilica);
-            - ^N^ [Slovenske zgodovinske pisave](/knjiznica/jezikoslovje/pisave/slovenske_zgodovinske_pisave);
-            - ^N^ [Ogamska pisava](/knjiznica/jezikoslovje/pisave/ogamska_pisava);
-            - [Shawova abeceda](/knjiznica/jezikoslovje/pisave/shawova_abeceda);
-    - ^N^ [Krščanstvo in modroslovje](/knjiznica/krscanstvo) (*religija*, *filozofija*);
+        - [Slovenščina](/knjiznica/jezikoslovje/jeziki/slovenscina) (~*slovenistika*)
+        - ^N^ [Nemščina](/knjiznica/jezikoslovje/jeziki/nemscina)
+        - ^N^ [Latinščina](/knjiznica/jezikoslovje/jeziki/latinscina)
+        - ^N^ [Angleščina](/knjiznica/jezikoslovje/jeziki/anglescina) (~*anglistika*)
+        - [Pisave](/knjiznica/jezikoslovje/pisave)
+            - [Grška abeceda](/knjiznica/jezikoslovje/pisave/grska_abeceda) (grški *alfabet*)
+            - ^N^ [Aramejska abeceda](/knjiznica/jezikoslovje/pisave/aramejska_abeceda)
+            - ^N^ [Latinica](/knjiznica/jezikoslovje/pisave/latinica)
+            - ^N^ [Gotica](/knjiznica/jezikoslovje/pisave/gotica)
+            - ^N^ [Glagolica](/knjiznica/jezikoslovje/pisave/glagolica)
+            - [Cirilica](/knjiznica/jezikoslovje/pisave/cirilica) (kirilica)
+            - ^N^ [Slovenske zgodovinske pisave](/knjiznica/jezikoslovje/pisave/slovenske_zgodovinske_pisave)
+            - ^N^ [Ogamska pisava](/knjiznica/jezikoslovje/pisave/ogamska_pisava)
+            - [Shawova abeceda](/knjiznica/jezikoslovje/pisave/shawova_abeceda)
+    - ^N^ [Krščanstvo in modroslovje](/knjiznica/krscanstvo) (*religija*, *filozofija*)
     - Književnost (*literatura*)
-        - ^N^ [John Ronald Reuel Tolkien](/knjiznica/John_Ronald_Reuel_Tolkien);
-        - ^N^ [Clive Staples Lewis](/knjiznica/Clive_Staples_Lewis);
+        - ^N^ [John Ronald Reuel Tolkien](/knjiznica/John_Ronald_Reuel_Tolkien)
+        - ^N^ [Clive Staples Lewis](/knjiznica/Clive_Staples_Lewis)
