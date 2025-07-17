@@ -337,6 +337,8 @@ Uporablja podobne bližnjice kot VIM:
 
 ### YT-DLP
 
+Prenos posnetkov z YouTuba pa tudi številnih drugih spletnih mest
+
 - `yt-dlp {možnosti} {--} URL-ji` - prenese posnetek na naslovu URL
     - `-x` - izvozi samo zvok
     - `-o pot/do/datoteke` - nastavi izhodno pot/ime datotek(e)
