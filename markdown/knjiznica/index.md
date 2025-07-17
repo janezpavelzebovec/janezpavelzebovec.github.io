@@ -1,6 +1,6 @@
 ---
 title: Knjižnica
-date: 2025-07-12
+date: 2025-07-17
 description: Knjižnica znanj mojih zanimanj
 keywords: knjižnica, znanje
 ---
@@ -28,7 +28,7 @@ Opomba: strani z oznako ^N^ še niso posodobljene, zato trenutno niso dostopne.
         - ^N^ [Latinščina](/knjiznica/jezikoslovje/jeziki/latinscina);
         - ^N^ [Angleščina](/knjiznica/jezikoslovje/jeziki/anglescina) (~*anglistika*);
         - ^N^ [Pisave](/knjiznica/jezikoslovje/pisave)
-            - ^N^ [Grška abeceda](/knjiznica/jezikoslovje/pisave/grska_abeceda) (grški *alfabet*);
+            - [Grška abeceda](/knjiznica/jezikoslovje/pisave/grska_abeceda) (grški *alfabet*);
             - ^N^ [Latinica](/knjiznica/jezikoslovje/pisave/latinica);
             - ^N^ [Gotica](/knjiznica/jezikoslovje/pisave/gotica);
             - ^N^ [Glagolica](/knjiznica/jezikoslovje/pisave/glagolica);
