@@ -1,6 +1,6 @@
 ---
 title: Knjižnica
-date: 2025-07-17
+date: 2025-07-18
 description: Knjižnica znanj mojih zanimanj
 keywords: knjižnica, znanje
 ---
@@ -37,7 +37,7 @@ Opomba: strani z oznako ^N^ še niso posodobljene, zato trenutno niso dostopne.
             - ^N^ [Slovenske zgodovinske pisave](/knjiznica/jezikoslovje/pisave/slovenske_zgodovinske_pisave)
             - ^N^ [Ogamska pisava](/knjiznica/jezikoslovje/pisave/ogamska_pisava)
             - [Shawova abeceda](/knjiznica/jezikoslovje/pisave/shawova_abeceda)
-    - ^N^ [Krščanstvo in modroslovje](/knjiznica/krscanstvo) (*religija*, *filozofija*)
+    - [Krščanstvo in modroslovje](/knjiznica/krscanstvo) (*religija*, *filozofija*)
     - Književnost (*literatura*)
         - ^N^ [John Ronald Reuel Tolkien](/knjiznica/John_Ronald_Reuel_Tolkien)
         - ^N^ [Clive Staples Lewis](/knjiznica/Clive_Staples_Lewis)

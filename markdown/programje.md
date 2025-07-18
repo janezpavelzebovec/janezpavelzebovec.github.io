@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2025-07-08
+date: 2025-07-18
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -45,6 +45,7 @@ Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge
 ### Razširitve za brskalnik
 
 | razširitev | naloga | Chrome Web Store | opombe |
+| --- | --- | --- | --- |
 | Custom CSS by Denis | lasten CSS za izbrane spletne strani | [Custom CSS by Denis](https://chromewebstore.google.com/detail/custom-css-by-denis/cemphncflepgmgfhcdegkbkekifodacd) | |
 | [Violentmonkey](https://violentmonkey.github.io/) | dodajanje programčkov (*userscripts*) v brskalnik (npr. [better-osm-org](https://github.com/deevroman/better-osm-org) | [Violentmonkey](https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag) | |
 
