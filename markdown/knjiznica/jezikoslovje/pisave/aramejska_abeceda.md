@@ -1,6 +1,6 @@
 ---
 title: Aramejska abeceda
-date: 2025-07-12
+date: 2025-07-18
 description:
 keywords: aramejska abeceda, aramejščina
 author: Janez Pavel Žebovec
@@ -12,27 +12,27 @@ author: Janez Pavel Žebovec
 - obdobje: 800 pr. n .št. - 600
 - vrsta: soglasniška abeceda (*abdžad*)
 
-| egipt.            | fenič.            | aram. |
-| ----------------- | ----------------- | ----------------- |
-| 𓃾<br><br>         | 𐤀 <br>[ʔ]<br> ʾ   | 𐡀 <br>/ʔ/ /aː/ /eː/<br> ʾ |
-| 𓉐<br><br>         | 𐤁 <br>[b]<br> b   | 𐡁 <br>/b/ /v/<br> b       |
-| 𓌙<br><br>         | 𐤂 <br>[ɡ]<br> g   | 𐡂 <br>/ɡ/ /ɣ/<br> g       |
-| 𓉿<br><br>         | 𐤃 <br>[d]<br> d   |
-| 𓀠 ?<br><br>       | 𐤄 <br>[h]<br> h   |
-| 𓏲<br><br>         | 𐤅 <br>[w]<br> w   |
-| 𓏭<br><br>         | 𐤆 <br>[z]<br> z   |
-| 𓉗 ali 𓈈 ?<br><br> | 𐤇 <br>[ħ]<br> ḥ   |
-| 𓄤 ?<br><br>       | 𐤈 <br>[tˤ]<br> ṭ  |
-| 𓂝<br><br>         | 𐤉 <br>[j]<br> j   |
-| 𓂧<br><br>         | 𐤊 <br>[k]<br> k   |
-| 𓌅<br><br>         | 𐤋 <br>[l]<br> l   |
-| 𓈖<br><br>         | 𐤌 <br>[m]<br> m   |
-| 𓆓<br><br>         | 𐤍 <br>[n]<br> n   |
-| 𓊽<br><br>         | 𐤎 <br>[s]<br> s   |
-| 𓁹<br><br>         | 𐤏 <br>[ʕ]<br> ʿ   |
-| 𓂋<br><br>         | 𐤐 <br>[p]<br> p   |
-| 𓇑 ?<br><br>       | 𐤑 <br>[sˤ]<br> ṣ  |
-| 𓃻 ?<br><br>       | 𐤒 <br>[q]<br> q   |
-| 𓁶<br><br>         | 𐤓 <br>[r]<br> r   |
-| 𓌓<br><br>         | 𐤔 <br>[ʃ]<br> š   |
-| 𓏴<br><br>         | 𐤕 <br>[t]<br> t   |
+| črka  | ime       | izgovor           | prečrk.   |
+| ----- | --------- | ----------------- | --------- |
+| 𐡀     | Ālaph     | /ʔ/ /aː/ /eː/     | ʾ         |
+| 𐡁     | Bēth      | /b/ /v/           | b         |
+| 𐡂     | Gāmal     | /ɡ/ /ɣ/           | g         |
+| 𐡃     | Dālath    | /d/, /ð/          | d         |
+| 𐡄     | Hē        | /h/               | h         |
+| 𐡅     | Waw       | /w/; /oː/, /uː/   | w         |
+| 𐡆     | Zayn      | /z/               | z         |
+| 𐡇     | Ḥēth      | /ħ/               | ḥ         |
+| 𐡈     | Ṭēth      | /tˤ/              | ṭ         |
+| 𐡉     | Yodh      | /j/; /iː/, /eː/   | y         |
+| 𐡊     | Kāph      | /k/, /x/          | k         |         
+| 𐡋     | Lāmadh    | /l/               | l         |
+| 𐡌     | Mim       | /m/               | m         |
+| 𐡍     | Nun       | /n/               | n         |
+| 𐡎     | Semkath   | /s/               | s         |
+| 𐡏     | ʿAyn      | /ʕ/               | ʿ         |
+| 𐡐     | Pē        | /p/, /f/          | p         |
+| 𐡑     | Ṣādhē     | /sˤ/              | ṣ         |
+| 𐡒     | Qoph      | /q/               | q         |
+| 𐡓     | Rēš       | /r/               | r         |
+| 𐡔     | Šin       | /ʃ/               | š         |
+| 𐡕     | Taw       | /t/, /θ/          | t         |
