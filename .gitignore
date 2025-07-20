@@ -1,5 +1,4 @@
 
-# Prezri vse varnostne kopije
 *~
 
 *.log
@@ -8,6 +7,8 @@
 
 template.html
 template-index.html
-template-mathjay.html
+template-mathjax.html
 *.lua
+
+moj_rodovnik/
 
