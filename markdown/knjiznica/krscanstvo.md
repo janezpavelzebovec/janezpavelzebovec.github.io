@@ -130,8 +130,8 @@ author: Janez Pavel Žebovec
 ## Ločine
 
 - katoliška cerkev
-    - rimska katoliška cerkev (vodi jo rimski papež)
-        - starokatoliška cerkev (ne priznava nezmotljivosti papeža in njegove vrhovne oblasti); po 1. vatikanskem koncilu 1870
+    - rimska katoliška cerkev <small>(vodi jo rimski papež)</small>
+        - starokatoliška cerkev <small>(ne priznava nezmotljivosti papeža in njegove vrhovne oblasti); po 1. vatikanskem koncilu 1870</small>
     - vzhodne katoliške cerkve
         - ukrajinska grko-katoliška cerkev
 - katoliške cerkve vzhodnega obreda
@@ -139,34 +139,34 @@ author: Janez Pavel Žebovec
         - koptska katoliška cerkev
         - etiopska katoliška cerkev
     - *antiohijski obred*
-        - maronitska cerkev (priznava oblast papeža)
+        - maronitska cerkev <small>(priznava oblast papeža)</small>
         - sirska katoliška cerkev
     - *armenski obred*: armenska katoliška cerkev
     - *vzhodni sirski obred*
         - kaldejska katoliška cerkev
         - sirsko-malabarska katoliška cerkev
-    - *bizantinski obred*: grkokatoliške cerkve (priznavajo vrhovno oblast papeža)
+    - *bizantinski obred*: grkokatoliške cerkve <small>(priznavajo vrhovno oblast papeža)</small>
         - grška katoliška cerkev
         - hrvaška grkokatoliška cerkev
 - vzhodno pravoslavje
     - grška pravoslavna cerkev
     - ruska pravoslavna cerkev
     - srbska pravoslavna cerkev
-- protestantizem (priznava Sveto pismo za edino avtoriteto); po 1517 (Martin Luter)
-    - luteranstvo (priznava le dva zakramenta: krst in evharistijo; celibat ni obvezen, ne priznava vrhovne oblasti papeža, Marijo je neprimerno častiti); po 1517 (Martin Luter)
+- protestantizem <small>(priznava Sveto pismo za edino avtoriteto); po 1517 (Martin Luter)</small>
+    - luteranstvo <small>(priznava le dva zakramenta: krst in evharistijo; celibat ni obvezen, ne priznava vrhovne oblasti papeža, Marijo je neprimerno častiti); po 1517 (Martin Luter)</small>
         - evangeličanska cerkev
-    - kalvinizem (poudarja avtoriteto Svetega pisma, preprostost); po 1519
+    - kalvinizem <small>(poudarja avtoriteto Svetega pisma, preprostost); po 1519</small>
         - reformirana cerkev
-        - prezbiterjanstvo (poudarja nadvlado Boga, avtoriteto Svetega pisma); po 1707
-    - anglikanstvo; po 1534 (Henrik VIII., ang. kralj)
-        - puritanci (moralna strogost, obsoja številna običajna zadovoljstva)
+        - prezbiterjanstvo <small>(poudarja nadvlado Boga, avtoriteto Svetega pisma); po 1707</small>
+    - anglikanstvo; <small>po 1534 (Henrik VIII., ang. kralj)</small>
+        - puritanci <small>(moralna strogost, obsoja številna običajna zadovoljstva)</small>
         - metodisti
     - baptizem
     - kongregacionalna cerkev
     - adventizem
     - binkoštniki
 - vzhodna asirska cerkev
-- Cerkev Jezusa Kristusa svetih iz poslednjih dni / Mormonska cerkev (najvišji vodja je predsednik Cerkve)
+- Cerkev Jezusa Kristusa svetih iz poslednjih dni / Mormonska cerkev <small>(najvišji vodja je predsednik Cerkve)</small>
 
 ---
 

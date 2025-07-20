@@ -29,7 +29,7 @@ Opomba: strani z oznako ^N^ še niso posodobljene, zato trenutno niso dostopne.
         - ^N^ [Angleščina](/knjiznica/jezikoslovje/jeziki/anglescina) (~*anglistika*)
         - [Pisave](/knjiznica/jezikoslovje/pisave)
             - [Grška abeceda](/knjiznica/jezikoslovje/pisave/grska_abeceda) (grški *alfabet*)
-            - ^N^ [Aramejska abeceda](/knjiznica/jezikoslovje/pisave/aramejska_abeceda)
+            - [Aramejska abeceda](/knjiznica/jezikoslovje/pisave/aramejska_abeceda)
             - ^N^ [Latinica](/knjiznica/jezikoslovje/pisave/latinica)
             - ^N^ [Gotica](/knjiznica/jezikoslovje/pisave/gotica)
             - ^N^ [Glagolica](/knjiznica/jezikoslovje/pisave/glagolica)
