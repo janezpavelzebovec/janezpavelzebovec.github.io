@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2025-07-17
+date: 2025-07-26
 description:
 keywords: programska oprema, Linux, programi
 author: Janez Pavel Žebovec
@@ -93,6 +93,17 @@ Datoteke:
             - `nmcli device show`prikaže podroben seznam razpoložljivih omrežij;
     - `nmcli radio wifi` - preveri, če je omogočeno brezžično omrežje (WiFi), oz. naprava za brezžično omrežje;
         - `nmcli radio wifi on` - vklopi/omogoči napravo za povezovanje s brezžičnim omrežjem;
+
+### Eduroam
+
+1. Prenesi namestitveni program (ta program je v Pythonu) na strani [cat.eduroam.org](https://cat.eduroam.org/).
+2. Naredi datoteko izvršljivo z `sudo chmod +x ime_datoteke.py`.
+3. Namesti odvisnosti (če tega ne narediš pred zagonom programa ti bo pač program sam povedal, da moraš):
+    - `python3`
+    - `python3-dbus` <small>(vmesnik za sporazumevanje Pythona z D-Busom, ki omogoča pogovarjanje s programi kot je Network Manager)</small>
+    - `network-manager`
+    - če uporabljaš GUI tudi `network-manager-gnome`
+4. Zaženi program `ime_datoteke.py`.
 
 ## Pretvarjanje/združevanje datotek
 

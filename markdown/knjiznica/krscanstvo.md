@@ -1,6 +1,6 @@
 ---
 title: Krščanstvo
-date: 2025-07-18
+date: 2025-07-21
 description:
 keywords: krščanstvo, modroslovje
 author: Janez Pavel Žebovec
@@ -129,44 +129,44 @@ author: Janez Pavel Žebovec
 
 ## Ločine
 
-- katoliška cerkev
-    - rimska katoliška cerkev <small>(vodi jo rimski papež)</small>
-        - starokatoliška cerkev <small>(ne priznava nezmotljivosti papeža in njegove vrhovne oblasti); po 1. vatikanskem koncilu 1870</small>
+- **katoliška cerkev**
+    - **rimska katoliška cerkev** <small>(vodi jo rimski papež)</small>
+        - **starokatoliška cerkev** <small>(ne priznava nezmotljivosti papeža in njegove vrhovne oblasti); po 1. vatikanskem koncilu 1870</small>
     - vzhodne katoliške cerkve
-        - ukrajinska grko-katoliška cerkev
+        - **ukrajinska grko-katoliška cerkev**
 - katoliške cerkve vzhodnega obreda
     - *aleksandrijski obred*
-        - koptska katoliška cerkev
-        - etiopska katoliška cerkev
+        - **koptska katoliška cerkev**
+        - **etiopska katoliška cerkev**
     - *antiohijski obred*
-        - maronitska cerkev <small>(priznava oblast papeža)</small>
-        - sirska katoliška cerkev
-    - *armenski obred*: armenska katoliška cerkev
+        - **maronitska cerkev** <small>(priznava oblast papeža)</small>
+        - **sirska katoliška cerkev**
+    - *armenski obred*: **armenska katoliška cerkev**
     - *vzhodni sirski obred*
-        - kaldejska katoliška cerkev
-        - sirsko-malabarska katoliška cerkev
-    - *bizantinski obred*: grkokatoliške cerkve <small>(priznavajo vrhovno oblast papeža)</small>
-        - grška katoliška cerkev
-        - hrvaška grkokatoliška cerkev
+        - **kaldejska katoliška cerkev**
+        - **sirsko-malabarska katoliška cerkev**
+    - *bizantinski obred*: **grkokatoliške cerkve** <small>(priznavajo vrhovno oblast papeža)</small>
+        - **grška katoliška cerkev**
+        - **hrvaška grkokatoliška cerkev**
 - vzhodno pravoslavje
-    - grška pravoslavna cerkev
-    - ruska pravoslavna cerkev
-    - srbska pravoslavna cerkev
-- protestantizem <small>(priznava Sveto pismo za edino avtoriteto); po 1517 (Martin Luter)</small>
-    - luteranstvo <small>(priznava le dva zakramenta: krst in evharistijo; celibat ni obvezen, ne priznava vrhovne oblasti papeža, Marijo je neprimerno častiti); po 1517 (Martin Luter)</small>
-        - evangeličanska cerkev
-    - kalvinizem <small>(poudarja avtoriteto Svetega pisma, preprostost); po 1519</small>
-        - reformirana cerkev
-        - prezbiterjanstvo <small>(poudarja nadvlado Boga, avtoriteto Svetega pisma); po 1707</small>
-    - anglikanstvo; <small>po 1534 (Henrik VIII., ang. kralj)</small>
-        - puritanci <small>(moralna strogost, obsoja številna običajna zadovoljstva)</small>
-        - metodisti
-    - baptizem
-    - kongregacionalna cerkev
-    - adventizem
-    - binkoštniki
-- vzhodna asirska cerkev
-- Cerkev Jezusa Kristusa svetih iz poslednjih dni / Mormonska cerkev <small>(najvišji vodja je predsednik Cerkve)</small>
+    - **grška pravoslavna cerkev**
+    - **ruska pravoslavna cerkev**
+    - **srbska pravoslavna cerkev**
+- **protestantizem** <small>(priznava Sveto pismo za edino avtoriteto); po 1517 (Martin Luter)</small>
+    - **luteranstvo** <small>(priznava le dva zakramenta: krst in evharistijo; celibat ni obvezen, ne priznava vrhovne oblasti papeža, Marijo je neprimerno častiti); po 1517 (Martin Luter)</small>
+        - **evangeličanska cerkev**
+    - **kalvinizem** <small>(poudarja avtoriteto Svetega pisma, preprostost); po 1519</small>
+        - **reformirana cerkev**
+        - **prezbiterjanstvo** <small>(poudarja nadvlado Boga, avtoriteto Svetega pisma); po 1707</small>
+    - **anglikanstvo**; <small>po 1534 (Henrik VIII., ang. kralj)</small>
+        - **puritanci** <small>(moralna strogost, obsoja številna običajna zadovoljstva)</small>
+        - **metodisti**
+    - **baptizem**
+    - **kongregacionalna cerkev**
+    - **adventizem**
+    - **binkoštniki**
+- **vzhodna asirska cerkev** <small>(polno ime Sveta katoliška apostolska vzhodna asirska cerkev; nauk nestorianizma: Marija ni Božja mati, temveč le Kristusova mati, v Jezusu sta namreč dve osebnsoti - Jezus Bog in Jezus Človek); po 431 (Nestor na Efeškem koncilu)</small>
+- **Cerkev Jezusa Kristusa svetih iz poslednjih dni / Mormonska cerkev** <small>(najvišji vodja je predsednik Cerkve)</small>
 
 ---
 
