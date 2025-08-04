@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="sl">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Zvezdoslovna ura</title>
+    <meta name="description" content="Zvezdoslovna ura, ki z zveznim prikazom medsebojnega položaja Sonca, Zemlje in Lune podaja čas v letu, mesecu in dnevu, Lunino meno, Sončni vzhod in zahod in drugo." />
+    <meta name="keywords" content="ura, zvezdoslovna ura, astronomska ura"/>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icon.png"/>
+
+    <link rel="stylesheet" href="/zvezdoslovna_ura/styles-ura.css" media="print" onload="this.media='all'"/>
+    <script src="/zvezdoslovna_ura/scripts-ura.js" defer></script>
+    <!--<script defer src="https://cloud.umami.is/script.js" data-website-id="ac7911af-065e-4a16-8a66-255ee9f70989"></script>-->
+
+</head>
+<body>
+    <header>
+        <span id="datum">Zadnja posodobitev te strani: <time datetime="2025-07-20">2025-08-04</time></span>
+        | <a id="domov" href="/">Domov</a>
+        <a id="domov" href="/zvezdoslovna_ura/opombe_k_zvezdoslovni_uri">Opombe</a>
+        | <button id="pisno" onclick="odpriPisno()">Pisno</button>
+        <button id="nastavitve" onclick="odpriNastavitve()">Nastavitve</button>
+    </header>
+    <main>
+    <p id="prikaz-casa">Čas</p>
+
+    </main>
+    </script><script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1FD0790Y"></script>
+    <!--<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TR1FD0790Y');
+    </script>-->
+</body>
+</html>
+<script src="suncalc.js"></script>

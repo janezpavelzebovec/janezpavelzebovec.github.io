@@ -1,0 +1,107 @@
+:root {
+    color-scheme: dark;
+    --tema: dark;
+
+    --bPoudarek: rgba(67, 166, 255, 1);
+    --bPoudarekProsojno: rgba(153, 178, 255, 0.7);
+    --bOzadje: #121212;
+    --bOzadjeNaprej: rgba(60, 60, 60, 1);
+    --bOzadjePoudarek: rgba(40, 50, 80, 1);
+    --bOspredje: #eee;
+    --bOspredjeNazaj: rgba(163, 163, 163, 1);
+    --bNazaj: rgba(100, 100, 100, 1);
+    
+    --vsebina: 50em;
+}
+
+.light {
+    color-scheme: light;
+    --tema: light;
+
+    --bPoudarek: rgba(0, 86, 163, 1);
+    --bPoudarekProsojno: rgba(49, 99, 255, 0.7);
+    --bOzadje: white;
+    --bOzadjeNaprej: rgba(207, 207, 207, 1);
+    --bOzadjePoudarek: rgba(160, 184, 255, 1);
+    --bOspredje: #121212;
+    --bOspredjeNazaj: rgba(88, 88, 88, 1);
+    --bNazaj: rgba(160, 160, 160, 1);
+}
+
+html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #5555;
+}
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #7775;
+}
+/*::-webkit-scrollbar-thumb:hover {
+    background-color: #777;         
+}*/
+::-webkit-scrollbar-track {
+    background-color: #5555;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+    transition: all 0.2s;
+}
+body{
+	margin:auto;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: var(--bOzadje);
+    color: var(--bOspredje);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    min-height: 1.5em;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+}
+a {
+    color: var(--bPoudarek);
+    cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+
+#datum {
+    font-size: small;
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#domov {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#nastavitve, #pisno {
+    color: var(--bPoudarek);
+    font-size: 1em;
+    padding: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: initial;
+    border: none;
+
+}

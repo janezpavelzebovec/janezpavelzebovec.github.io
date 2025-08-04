@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2025-07-18
+date: 2025-08-01
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -16,7 +16,7 @@ Večina ljudi se dandanes zadovolji s slabo programsko opremo, s tem pa se ne le
 
 Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge primerljivo dobri tem, ki jih sam uporabljam (spletni brskalniki za primer).
 
-| program | naloga | Debianov paket | opombe |
+| program | namembnost | Debianov paket | opombe |
 | --- | --- | --- | --- |
 | [Birdfont](https://birdfont.org/) | urejevalnik računalniških pisav | [birdfont](https://packages.debian.org/buster/birdfont) | preprost, lep |
 | [Blender](https://www.blender.org/) | 3R urejevalnik, orodje za animiranje | [blender](https://wiki.debian.org/Blender) | zelo obsežen, napreden |
@@ -29,7 +29,7 @@ Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge
 | [JOSM](https://josm.openstreetmap.de/) | urejevalnik zemljevida [Open Street Map](https://www.openstreetmap.org/) v jeziku Java | [josm](https://packages.debian.org/buster/josm) | |
 | [LibreWolf](https://librewolf.net/) | spletni brskalnik | [librewolf](https://librewolf.net/installation/debian/) | zelo zaseben, varen |
 | [Firefox](https://www.mozilla.org/en-US/firefox/) | spletni brskalnik | | zaseben |
-| [Linux Debian](https://www.debian.org/) | računalniški vršilec (operacijski sistem) | | popolnoma prilagodljiv, trden |
+| [Linux Debian](https://www.debian.org/) | računalniški vršilec (*operacijski sistem*) | | popolnoma prilagodljiv, trden |
 | [Merkaartor](https://merkaartor.be/) | urejevalnik zemljevida [Open Street Map](https://www.openstreetmap.org/) v jeziku C++ | [merkaartor](https://packages.debian.org/buster/merkaartor) | hiter; več dokumentacije na [OSM - Wiki - Merkaartor](https://wiki.openstreetmap.org/wiki/Merkaartor/Documentation) |
 | [MPV Media Player](https://mpv.io/) | predvajalnik posnetkov | [mpv](https://packages.debian.org/buster/mpv) | preprost, večina upravljanja z bližnjicami |
 | [Musescore](https://musescore.org/) | urejevalnik notnih zapisov | [musescore](https://packages.debian.org/buster/musescore) | priporočeno naložiti z uradne spletne strani |
@@ -42,9 +42,26 @@ Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge
 | [YouTube-DL](https://ytdl-org.github.io/youtube-dl/index.html) | prenos posnetkov z YouTuba in drugih spletnih mest | [youtube-dl](https://packages.debian.org/buster/youtube-dl) | |
 | [Zathura](https://pwmt.org/projects/zathura/) | ogledovalnik PDF | [zathura](https://packages.debian.org/buster/zathura) | upravljanje z bližnjicami |
 
+Moji izbrani programi po namembnosti:
+
+- [Brave Browser](https://brave.com/"): spletni brskalnik
+- [FontForge](https://fontforge.org/): urejevalnik pisav
+- [Gimp](https://www.gimp.org/): urejevalnik slik (posebaj točkastih)
+- [Gramps](https://gramps-project.org/): rodoslovje
+- [Inkscape](https://inkscape.org/): urejevalnik SVG
+- [JOSM](https://josm.openstreetmap.de/): urejevalnik zemljevida [Open Street Map](https://www.openstreetmap.org/)
+- [Linux Debian](https://www.debian.org/): računalniški vršilec (*operacijski sistem*)
+- [MPV Media Player](https://mpv.io/): predvajalnik posnetkov
+- [Musescore](https://musescore.org/): urejevalnik notnih zapisov
+- [SimpleScan](https://gitlab.gnome.org/GNOME/simple-scan): skeniranje in tiskanje
+- [SolveSpace](https://solvespace.com/): 3R (in 2R) urejevalnik
+- [VIM](https://www.vim.org/): urejevalnik golega besedila
+- [YouTube-DL](https://ytdl-org.github.io/youtube-dl/index.html): prenos posnetkov z YouTuba
+- [Zathura](https://pwmt.org/projects/zathura/): ogledovalnik PDF
+
 ### Razširitve za brskalnik
 
-| razširitev | naloga | Chrome Web Store | opombe |
+| razširitev | namembnost | Chrome Web Store | opombe |
 | --- | --- | --- | --- |
 | Custom CSS by Denis | lasten CSS za izbrane spletne strani | [Custom CSS by Denis](https://chromewebstore.google.com/detail/custom-css-by-denis/cemphncflepgmgfhcdegkbkekifodacd) | |
 | [Violentmonkey](https://violentmonkey.github.io/) | dodajanje programčkov (*userscripts*) v brskalnik (npr. [better-osm-org](https://github.com/deevroman/better-osm-org) | [Violentmonkey](https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag) | |
@@ -57,7 +74,7 @@ Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge
 
 Sucklessove programe je priporočljivo namestiti kar iz vira - neposredno s [Suckless.org](https://suckless.org/), ker jih običajno želiš prilagoditi svojim potrebam.
 
-| program | naloga | Debianov paket | opombe |
+| program | namembnost | Debianov paket | opombe |
 | --- | --- | --- | --- |
 | ABook (Adress Book) | imenik | [abook](https://packages.debian.org/buster/abook) | namenjen je uporabi v [Muttu](#mutt) (ali [NeoMuttu](#neomutt)), a se lahko uporablja tudi neodvisno |
 | [DMenu](https://tools.suckless.org/dmenu/) (Dynamic Menu) | statusna vrstica (za DWM) | | |
@@ -79,43 +96,61 @@ Sucklessove programe je priporočljivo namestiti kar iz vira - neposredno s [Suc
 | [SXIV](https://github.com/xyb3rt/sxiv) (Simple X Image Viewer) | pregledovalnik in urejevalnik slik | [sxiv](https://packages.debian.org/buster/sxiv) | ni več vzdrževan, vzdrževana različica je NSXIV |
 | [YT-dlp](https://github.com/yt-dlp/yt-dlp) | prenašanje posnetkov z YouTuba (in drugod; iz terminala) | [yt-dlp](https://packages.debian.org/sid/yt-dlp) | || [pdfjam](https://github.com/pdfjam/pdfjam) | združevanje PDF-jev | | je del Debianovega paketa *texlive-extra-utils* |
 
+Večino navedenih programov zgoraj uporabljam tudi sam - več ali manj (kar je odvisno tudi od namembnosti). 
 
 ### Orodja za Android
 
 F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android.com/) iz knjižnice [Free and Open Source Software](https://freeopensourcesoftware.org/).
 
-| program | naloga | F-Droid (odprtokodno) | Google Play | opombe |
+| program | namembnost | F-Droid (odprtokodno) | Google Play | opombe |
 | --- | --- | --- | --- |
 | [Arcticons](https://arcticons.com/) | zbirka preprostih sličic za orodja | [Arcticons](https://f-droid.org/en/packages/com.donnnno.arcticons/), [Arcticons Material You](https://f-droid.org/en/packages/com.donnnno.arcticons.you/), [Arcticons Black](https://f-droid.org/en/packages/com.donnnno.arcticons.light/), [Arcticons Day & Night](https://f-droid.org/en/packages/com.donnnno.arcticons.daynight/) | [Arcticons - Line Icon Pack](https://play.google.com/store/apps/details?id=com.donnnno.arcticons), [Arcticons Material You Icons](https://play.google.com/store/apps/details?id=com.donnnno.arcticons.you.play), [Arcticons Black - Icon Pack](https://play.google.com/store/apps/details?id=com.donnnno.arcticons.light) | preprost, poenoten slog sličic orodij |
 | [Arity](https://github.com/woheller69/Arity) | računalo | [ArityCalc](https://f-droid.org/en/packages/org.woheller69.arity/) | | tudi s 3R prikazi grafov |
 | [Brave](https://brave.com/) | spletni brskalnik | | [Brave Private Web Browser, VPN](https://play.google.com/store/apps/details?id=com.brave.browser) | privzeto preprečevanje oglasov |
-| [Discord]() | dopisovanje | | [Discord - Talk, Play, Hang Out](https://play.google.com/store/apps/details?id=com.discord) | |
+| [CoMaps](https://www.comaps.app/) | zemljevid [Open Street Map](https://www.openstreetmap.org/) | [CoMaps](https://f-droid.org/packages/app.comaps.fdroid/) | [CoMaps](https://play.google.com/store/apps/details?id=app.comaps.google/) | različica *OrganicMaps*, pri katerem so v zadnjem času posamezniki sprejeli vprašljive odločitve ; bolj (povsem) osredotočena na skupnost razvijalcev |
+| [Discord]() | hitro dopisovanje | | [Discord - Talk, Play, Hang Out](https://play.google.com/store/apps/details?id=com.discord) | |
 | [F-Droid](https://f-droid.org/) | knjižnica odprtokodnih orodij | [F-Droid](https://f-droid.org/) | | |
 | [Markor](https://github.com/gsantner/markor/tree/master) | urejevalnik golega besedila | [Markor](https://f-droid.org/packages/net.gsantner.markor/) | | |
 | [NewPipe](https://newpipe.net/) | nadomestek YouTuba (prikazuje njegove vsebine) | [NewPipe - Lightweight YouTube frontend](https://f-droid.org/en/packages/org.schabi.newpipe/) | | brez oglasov, privzeta možnost prenosa |
 | [Odysee](https://odysee.com/) | videoposnetki (kot YT, a boljše) | [Odysee](https://f-droid.org/en/packages/com.odysee.floss/) | [Odysee](https://play.google.com/store/apps/details?id=com.odysee.app) | popolnoma brezplačen |
 | OLauncher | zaganjalnik orodij | [Olauncher Clutter Free](https://f-droid.org/packages/app.olaunchercf/) | [Olauncher. Minimal AF Launcher](https://play.google.com/store/apps/details?id=app.olauncher) | preprost |
-| [Organic Maps](https://organicmaps.app/) | zemljevid [Open Street Map](https://www.openstreetmap.org/) z dodatki | [Organic Maps: Hike, Bike, Drive Offline](https://f-droid.org/en/packages/app.organicmaps/) | [Organic Maps: Hike Bike Drive](https://play.google.com/store/apps/details?id=app.organicmaps) | preprost |
+| [Organic Maps](https://organicmaps.app/) | zemljevid [Open Street Map](https://www.openstreetmap.org/) | [Organic Maps: Hike, Bike, Drive Offline](https://f-droid.org/en/packages/app.organicmaps/) | [Organic Maps: Hike Bike Drive](https://play.google.com/store/apps/details?id=app.organicmaps) | preprost; <br>v zadnjem času nekaj vprašljivih odločitev, zato glej različico *CoMaps* |
 | [OSMAnd](https://osmand.net/) | zemljevid [Open Street Map](https://www.openstreetmap.org/) z dodatki | [OsmAnd~](https://f-droid.org/en/packages/net.osmand.plus/) | [OsmAnd — Maps & GPS Offline](https://play.google.com/store/apps/details?id=net.osmand) | nalaganje izbranih področij za uporabo brez povezave |
 | [PhyFox](https://phyphox.org/) | za razne fizikalne poskuse z uporabo tipal, zvočnika in mikrofona dlančnika | [phyphox](https://f-droid.org/en/packages/de.rwth_aachen.phyphox/) | [phyphox](https://play.google.com/store/apps/details?id=de.rwth_aachen.phyphox) |
 | [PlantNet](https://plantnet.org/) | prepoznava in popis rastlin | | [PlantNet](https://play.google.com/store/apps/details?id=org.plantnet) | |
 | [RealityScan](https://www.unrealengine.com/en-US/realityscan) | 3R skeniranje s pomočjo kamere | | [RealityScan - 3D Scanning App](https://play.google.com/store/apps/details?id=com.epicgames.realityscan) | |
 | [Signal](https://signal.org/) | dopisovanje | []() | [Signal Private Messenger](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms) | varen |
 | Sky Wiki | pripomoček za opazovanje (zvezdnega) neba | | [SkyWiki - world of astronomy](https://play.google.com/store/apps/details?id=com.bluestreaklabs.skywiki) | zemljevid neba, vzhodi/zahodi nebesnih teles, kompas |
-| [Sound Cloud](https://soundcloud.com/) | glasba (nekak nadomestek Spotifyja) | | [SoundCloud: Play Music & Songs](https://play.google.com/store/apps/details?id=com.soundcloud.android) | brez oglasov |
+| [Sound Cloud](https://soundcloud.com/) | poslušanje glasbe (nekak nadomestek Spotifyja) | | [SoundCloud: Play Music & Songs](https://play.google.com/store/apps/details?id=com.soundcloud.android) | brez oglasov |
 | [Thunderbird](https://thunderbird.net/) | elektronska pošta | [Thunderbird: Free Your Inbox](https://f-droid.org/en/packages/net.thunderbird.android/) | [Thunderbird: Free Your Inbox](https://play.google.com/store/apps/details?id=net.thunderbird.android) | temelji na [K-9](https://k9mail.app/) |
 | [Track & Graph](https://samamco.github.io/track-and-graph/) | beleženje | [Track & Graph](https://f-droid.org/en/packages/com.samco.trackandgraph/) | [Track & Graph](https://play.google.com/store/apps/details?id=com.samco.trackandgraph) | |
 | [Windy](https://windy.app/) | vremenski zemljevid | | [Windy.com - Weather Forecast](https://play.google.com/store/apps/details?id=com.windyty.android) | potrebuje spletno povezavo |
 | WriterPlus | urejevalnik označevalskega (MarkDown - .md) besedila | | [Writer Plus (Write On the Go)](https://play.google.com/store/apps/details?id=co.easy4u.writer) | |
 
+Moja izbrana orodja po namembnosti:
+
+- [Arity](https://github.com/woheller69/Arity): računalo
+- [Brave](https://brave.com/): spletni brskalnik
+- [CoMaps](https://www.comaps.app/): zemljevid [Open Street Map](https://www.openstreetmap.org/)
+- [Discord](): hitro dopisovanje
+- [F-Droid](https://f-droid.org/): knjižnica odprtokodnih orodij
+- [Markor](https://github.com/gsantner/markor/tree/master): urejevalnik golega besedila
+- [OSMAnd](https://osmand.net/): zemljevid [Open Street Map](https://www.openstreetmap.org/) z dodatki
+- [Sound Cloud](https://soundcloud.com/): glasba
+- [Thunderbird](https://thunderbird.net/): elektronska pošta
+- [Track & Graph](https://samamco.github.io/track-and-graph/): beleženje
+- [Windy](https://windy.app/): vremenski zemljevid
+
+---
+
 ## Zunanje povezave in viri
 
-- [GitHub](https://github.com/) - spletno mesto za odprtokodne programe;
 - [Suckless.org - software that sucks less](https://suckless.org/) - kakovostni programi po načelu preprostosti, majhnosti, uporabnosti in, seveda, odprtokodnosti;
     - [Suckless - Philosophy](https://suckless.org/philosophy/) - Sucklessova miselnost;
     - [Suckless - Rocks](https://suckless.org/rocks/) - seznam programov, ki jih Suckless odobrava;
     - [Suckless - Sucks](https://suckless.org/sucks/) - seznam programov in drugih zadev, ki jih Suckless **ne** odobrava;
 - [F-Droid](https://f-droid.org/) - orodje za nameščanje odprtokodnih orodij za [Android](https://www.android.com/) knjižnice [Free and Open Source Software](https://freeopensourcesoftware.org/);
+- [GitHub](https://github.com/) - spletno mesto za odprtokodne programe;
 - [Luke Madison Smith](https://lukesmith.xyz/) - bister mož, zagovornik Linuxa, odprtokodnosti, preprostosti;
     - [YouTube - Luke Smith](https://www.youtube.com/c/lukesmithxyz) - Luketova stran na YouTubu;
     - [GitHub - Luke Smith](https://github.com/LukeSmithxyz/) - Luketova stran na GitHubu;

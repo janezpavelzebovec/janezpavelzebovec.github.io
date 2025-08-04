@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="sl">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Zvezdoslovna ura – nastavitve</title>
+    <meta name="description" content="To so nastavitve Zvezdoslovne ure." />
+    <meta name="keywords" content="Zvezdoslovna ura"/>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icon.png"/>
+
+    <link rel="stylesheet" href="/zvezdoslovna_ura/styles-okno.css" media="print" onload="this.media='all'"/>
+    <script src="/scripts.js" defer></script>
+    <script src="/zvezdoslovna_ura/scripts-nastavitve_ure.js" defer></script>
+
+</head>
+<body>
+    <button id="zapri" onclick="window.close()">Zapri nastavitve</button>
+    <main>
+        <table>
+            <tr>
+                <td><label for="vnosČas">čas:</label></td>
+                <td><input id="vnosČas" name="Izbira časa" type="datetime-local" ></td>
+                <td><button onclick="uporabiTČas()">trenutni</button></td>
+            </tr>
+            <tr>
+                <td><label for="vnosČPas">časovni pas:</label></td>
+                <td><select id="vnosČPas" name="Izbira časovnega pasu" autocomplete="on"></select></td>
+                <td><button onclick="uporabiTČPas()">trenutni</button> <button onclick="uporabiLjubljana()">Ljubljana</button></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><label>položaj:</label></td>
+                <td><input id="vnosPolŠ" name="Izbira zemljepisne širine" type="number" max="90" min="-90"> zem. šir.</td>
+                <td rowspan="2"><button onclick="uporabiTPol()">trenutni</button> <button onclick="uporabiGEOSS()">GEOSS</button></td>
+            </tr>
+            <tr>
+                <td><input id="vnosPolD" name="Izbira zemljepisne dolžine" type="number" max="180" min="-180"> zem. dol.</td>
+            </tr>
+        </table>
+        <input id="prikazLune" type="checkbox"/><label for="prikazLune">prikaži Luno kot je vidna z Zemlje</label>
+        <br/><input id="prikazZadaj" type="checkbox"/><label for="prikazZadaj">prikaži tudi zadnjo poloblo</label>
+    </main>
+    <footer>
+        <button id="stikaloTeme">Preklopi barvni način strani</button>
+    </footer>
+</body>
+</html>

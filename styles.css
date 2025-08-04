@@ -177,7 +177,6 @@ button {
 
 #datum {
     font-size: small;
-    color: var(--bOspredjeNazaj);
     text-align: center;
     padding-bottom: 1em;
 }

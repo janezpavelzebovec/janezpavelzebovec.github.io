@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2025-06-19
+date: 2025-08-01
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 ---
@@ -28,6 +28,14 @@ Pri tem, ko se nabor prevzetih besed veča, se slovenske opušča kot  „*arhai
 Popolnoma zgrešen (a zelo pogost) pristop k prevajanju, oz. iskanju/ustvarjanju slovenskih ustreznic tujim izrazom je dobesedno prevajanje. Taki prevodi so pogosto pomensko zgrešeni, saj ne odražajo prave in trenutne rabe besede. Pri ustvarjanju novih besed (skovank) se zelo pogosto ne držijo besedotvornih zakonitosti (npr. brez obrazil), ali se celo ravnajo po angleškem načinu, pri katerem iz dveh besed sestavijo eno tako, da od obeh vzamejo le en del (npr. *breakfast* + *lunch* = *branch*), kar je popolnoma nesprejemljivo.
 
 ## Obstoječa slovenščina
+
+Tu so navedene nekatere sprejete (a ne nujno - več - uveljavljene/uporabljane).
+
+- **hranilnica** < *banka*
+- **ljudovlada** < *republika*, *demokracija* <small>(it./nem. < frc. < lat.; nem. < frc. < lat. < gr.))</small>
+- **pogon** (gonilna sila, gibalo, pogonski stroj) < *motor*
+- **potno usmerjanje** < *navigacija*
+- **veljava** < *valuta* <small>(nem. < it.)</small>
 
 Mesece, ki so dandanes večinoma uporabljani, smo prevzeli neposredno iz nemščine. Vrniti se moramo k edinim pravim slovenskim poimenovanjem: 
 
@@ -107,34 +115,50 @@ Izvori besed, ki so pri nekaterih besedah, niso tam zato, ker bi prevzete besede
 
 Manj uveljavljeni predlogi (ampak večinoma poznani):
 
+- **pregledna plošča** < ang. *dashboard*,
 - **sébek** < *selfi*,
 - **všéček** < *lajk*,
 
+Dobri predlogi na [*Fran - Predlagajte nove slovenske ustreznice*](https://fran.si/ustreznice):
+
+- **znamčenje** < ang. *branding*,
+- **ženomor** < *femicid*,
+
+### Moji predlogi
+
 Tu je seznam mojih (precej dokončnih) predlogov za nove besede (vseh nisem sam skoval).
 
-- **dlánčnik** < pametni *telefon*,
+- **dlánčnik** < "pametni" *telefon*,
 - **gmôta** (**gmôtnost**) < *masa*,
-- **gôn** < *energija* (< nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč),
-- **naravoslôvje**, **stvárnoslovje** < *fizika* (< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*),
-- **návlec** < *pulover* (< nem. *Pullover* < ang. *pull = *(po)vleči* + *over* = *čez/preko*),
-- **privzgíb** < *pull up* (< ang. *pull up* = *povleči (se) gor*),
+- **gôn** < *energija* <small>(< nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč)</small>,
+- **naravoslôvje**, stvárnoslovje?, tvarnoslovje? < *fizika* <small>(< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>,
+- **návlec** < *pulover* <small>(< nem. *Pullover* < ang. *pull = *(po)vleči* + *over* = *čez/preko*)</small>,
+- **privzgíb** < *pull up* <small>(< ang. *pull up* = *povleči (se) gor*)</small>,
 - **prostóroslôvje** < *geometrija*,
-- **vóz** (**sámogôn**) < *avtomobil/avto* (< nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*),
+- **rázspôlnik, razspôlništvo** < *LGBTQ ...* (kot motnja v spolnem razvoju, ko posameznik nima pravilno razvitih spolnih značilnostih zaradi prirojenih motenj ali **samorazspoljenja**, ki je pogosto družbeno pogojeno),
+- **rod otrok blaginje** < *babyboom generacija*,
+- **vóz** (**sámogôn**) < *avtomobil/avto* <small>(< nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*)</small>,
 - **sámovoz** < *avtonomni avtomobil/avto*,
 - **snôvoslôvje** < *kemija*,
 - **sprejémnik zvóka, zvókosprejémnik** < *mikrofon*,
-- **stálnica** < *konstanta* (tudi matematična, fizikalna),
+- **stálnica** < *konstanta* (nasploh in npr. matematična, fizikalna),
 - **tresávec** < *vibrant*,
 - **vêlecésta** < *avtocesta*,
 - **vesóljeslôvje** < *kozmologija*,
-- **zemlják** < *krompir*
+- **zemlják** < *krompir*,
+- **zemljevidopis** < *kartografija*
 
-Še nekaj besed v delu:
+#### Besede v nastajanju
 
-- **dáljnoglás** < *telefon* (< nem. *Telephon*; fran. *téléphone*; ang. *telephone* < gr. *tē̃le* = *daleč, v daljavi*; *phōnḗ* = *glas, zvok*),
+- mehur? < *balon*
+- **dáljnoglás** < *telefon* <small>(< nem. *Telephon*; fran. *téléphone*; ang. *telephone* < gr. *tē̃le* = *daleč, v daljavi*; *phōnḗ* = *glas, zvok*)</small>,
+- svetlo(bo)stav(ba)? < *fotosinteza*
+- **številčno, (računalniško)** < *digitalno*, *digitalizirati*
 - **mnógovôz** < *avtobus*,
-- **rázspôlnik, razspôlništvo** < *LGBTQ ...* (motnja v spolnem razvoju)
-- **slikonôs** < *televizija* (< ang. *television*; fran. *télévision* < *tē̃le* = *daleč, v daljavi* + lat. *vīsiō* = *pogled, gledanje*)
+- ? < *plaža*,
+- **slikonôs** < *televizija* <small>(< ang. *television*; fran. *télévision* < *tē̃le* = *daleč, v daljavi* + lat. *vīsiō* = *pogled, gledanje*)</small>
+
+Predloge lahko posreduješ na [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net).
 
 ## Zunanje povezave in viri
 
