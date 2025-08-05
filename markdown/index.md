@@ -1,13 +1,13 @@
 ---
 title: Janez Pavel Žebovec
-date: 2025-07-20
+date: 2025-08-05
 description: Moja osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran
 ---
 
 To je moja spletna stran, namenjena mojim zanimanjem in potrebam.
 
-- [Zvezdoslovna ura](/zvezdoslovna_ura) - predstavitev vesolja kot ure;
+- [Zvezdoslovna ura](/zvezdoslovna_ura.html) - predstavitev vesolja kot ure;
 - [Visoka slovenščina](/visoka_slovenscina) - kakšna bi slovenščina morala biti oz. je lahko;
 - [Glasopisnica](/glasopisnica) - moja pisava <small>*(v delu - začasno nedostopno)*</small>;
 - [Moj rodovnik](/moj_rodovnik) - moje družinsko drevo, na katerem delava z bratrancem (s poudarkom na prednikih; za živeče osebe in umrle v zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh ostalih podatkov);
