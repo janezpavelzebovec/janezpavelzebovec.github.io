@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="/zvezdoslovna_ura/styles-okno.css" media="print" onload="this.media='all'"/>
     <script src="/scripts.js" defer></script>
     <script src="/zvezdoslovna_ura/scripts-nastavitve_ure.js" defer></script>
+    <style>
+        .inputInt {
+            width: 8ch;
+        }   
+    </style>
 
 </head>
 <body>
@@ -22,8 +27,8 @@
     <main>
         <table>
             <tr>
-                <td><label for="vnosČas">čas:</label></td>
-                <td><input id="vnosČas" name="Izbira časa" type="datetime-local" ></td>
+                <td><label for="vnosČas">čas (v tr. č. pasu):</label></td>
+                <td><input id="vnosČas" name="Izbira časa" type="datetime-local" style="width:28.5ch" /></td>
                 <td><button onclick="uporabiTČas()">trenutni</button></td>
             </tr>
             <tr>
@@ -33,15 +38,34 @@
             </tr>
             <tr>
                 <td rowspan="2"><label>položaj:</label></td>
-                <td><input id="vnosPolŠ" name="Izbira zemljepisne širine" type="number" max="90" min="-90"> zem. šir.</td>
+                <td><input id="vnosPolŠ" name="Izbira zemljepisne širine" type="number" max="90" min="-90" style="width:15ch" /> ° z. širine</td>
                 <td rowspan="2"><button onclick="uporabiTPol()">trenutni</button> <button onclick="uporabiGEOSS()">GEOSS</button></td>
             </tr>
             <tr>
-                <td><input id="vnosPolD" name="Izbira zemljepisne dolžine" type="number" max="180" min="-180"> zem. dol.</td>
+                <td><input id="vnosPolD" name="Izbira zemljepisne dolžine" type="number" max="180" min="-180" style="width:15ch" /> ° z. dolžine</td>
             </tr>
         </table>
-        <input id="prikazLune" type="checkbox"/><label for="prikazLune">prikaži Luno kot je vidna z Zemlje</label>
-        <br/><input id="prikazZadaj" type="checkbox"/><label for="prikazZadaj">prikaži tudi zadnjo poloblo</label>
+        <input id="lunaZZemlje" type="checkbox"/><label for="lunaZZemlje">prikaži Luno kot je vidna z Zemlje</label>
+        <br/><input id="zadnjaPolobla" type="checkbox"/><label for="zadnjaPolobla">prikaži tudi zadnjo poloblo</label>
+        <br/>
+        <br/>interval posodabljanja sledečih vrednosti, ko so izbrane trenutne:
+        <table>
+            <tr>
+                <td><label for="intČas">čas:</label></td>
+                <td><input id="intČas" name="Določitev intervala posodabljanja časa" type="number" class="inputInt" /> sek. </td>
+                <td><button onclick="uporabiPrivIntČas()">privzeto</button></td>
+            </tr>
+            <tr>
+                <td><label for="intPas">čas. pas:</label></td>
+                <td><input id="intPas" name="Določitev intervala posodabljanja čas. pasu" type="number" class="inputInt" /> sek. </td>
+                <td><button onclick="uporabiPrivIntPas()">privzeto</button></td>
+            </tr>
+            <tr>
+                <td><label for="intPol">položaj:</label></td>
+                <td><input id="intPol" name="Določitev intervala posodabljanja položaja" type="number" class="inputInt" /> sek. </td>
+                <td><button onclick="uporabiPrivIntPol()">privzeto</button></td>
+            </tr>
+        </table>
     </main>
     <footer>
         <button id="stikaloTeme">Preklopi barvni način strani</button>

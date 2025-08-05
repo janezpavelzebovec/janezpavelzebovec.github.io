@@ -9,13 +9,14 @@ TPol = true;
 let oknoPisno = null;
 let oknoNastavitve = null;
 
+let intervalČas = null;
+let intervalČPas = null;
+let intervalPol = null;
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-function nariši() {
-    if (IČas) {
-        document.getElementById("prikaz-casa").textContent = IČas;
-        // posodobi uro glede na cas
-    }
+function nariši(IČas) {
+    document.getElementById("prikaz-casa").innerHTML = new Date(IČas);
 }
 
 // Pošlji podatke oknu Pisno
@@ -78,7 +79,7 @@ function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas) {
         luOsv, luMena, luKot
     };
 
-    nariši();
+    nariši(IČas);
     pošlji(podatki);
 };
 
@@ -103,8 +104,66 @@ function odpriPisno() {
 
 function sprejmiNastavitve(nastavitve) {
     console.log("Prejete nastavitve:", nastavitve);
+    nastaviIntervale(nastavitve.TČas, nastavitve.TČPas, nastavitve.TPol)
     izračunPodatkov(nastavitve.IČas, nastavitve.IPolŠ, nastavitve.IPolD, nastavitve.IČPas);
 }
 
+// Pridobi trenutne vrednosti in jih nastavi
+function posodobiČas() {
+  IČas = new Date();
+};
+function posodobiČPas() {
+  const IČPasIme = Intl.DateTimeFormat().resolvedOptions().timeZone;
+};
+function posodobiPol() {
+    // Preverite, ali je brskalnik omogočil geolokacijo:
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            TPolŠ = position.coords.latitude;
+            TPolD = position.coords.longitude;
+            const točnost = position.coords.accuracy;
+                /*console.log("tr. zem. širina:" + TPolŠ);
+                console.log("tr. zem. dolžina:" + TPolD);
+                console.log("točnost: " + točnost + " m");*/
+        }, function(error) {
+            console.error("Napaka pri pridobivanju trenutnega zemljepisnega položaja:", error);
+        });
+    } else {
+        alert("Pridobivanje trenutnega zemljepisnega položaja ni podprto v tem brskalniku.");
+    };
+};
+
+function nastaviIntervale(TČas, TČPas, TPol) {
+    // Čas
+    if (TČas && !intervalČas) {
+        posodobiČas(); // takoj ob vklopu
+        intervalČas = setInterval(posodobiČas, 30000); // 30 sek
+    } else if (!TČas && intervalČas) {
+        clearInterval(intervalČas);
+        intervalČas = null;
+    }
+
+    // Časovni pas
+    if (TČPas && !intervalČPas) {
+        posodobiČPas();
+        intervalČPas = setInterval(posodobiČPas, 600000); // 10 min
+    } else if (!TČPas && intervalČPas) {
+        clearInterval(intervalČPas);
+        intervalČPas = null;
+    }
+
+    // Položaj
+    if (TPol && !intervalPol) {
+        posodobiPol();
+        intervalPol = setInterval(posodobiPol, 300000); // 5 min
+    } else if (!TPol && intervalPol) {
+        clearInterval(intervalPol);
+        intervalPol = null;
+    }
+};
+
+posodobiČas();
+posodobiČPas();
+posodobiPol();
 izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
-nariši();
+nastaviIntervale(TČas, TČPas, TPol);
