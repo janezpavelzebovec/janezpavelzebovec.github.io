@@ -1,10 +1,40 @@
-IČas = new Date();
-TČas = true;
-IČPas = "Europe/Ljubljana"
-TČPas = true;
-IPolD = 0;
-IPolŠ = 0;
-TPol = true;
+let IČas = new Date();
+let TČas = true;
+let IČPas = "Europe/Ljubljana"
+let TČPas = true;
+let IPolD = 0;
+let IPolŠ = 0;
+let TPol = true;
+ 
+let soVzhZ = null;
+let soVzhK = null;
+let zlataK = null;
+let poldne = null;
+let zlataZ = null;
+let soZahZ = null;
+let soZahK = null;
+let mrakK = null;
+let poMrakK = null;
+let nočZ = null;
+let polnoč = null;
+let nočK = null;
+let poZoraZ = null;
+let zoraZ = null;
+let soViš = null;
+let soAzi = null;
+let luVzh = null;
+let luZah = null;
+let luGor = null;
+let luDol = null;
+let luViš = null;
+let luAzi = null;
+let luOdd = null;
+let luPar = null;
+let luOsv = null;
+let luMena = null;
+let luKot = null;
+
+let podatki = null;
 
 let oknoPisno = null;
 let oknoNastavitve = null;
@@ -12,6 +42,8 @@ let oknoNastavitve = null;
 let intervalČas = null;
 let intervalČPas = null;
 let intervalPol = null;
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -30,47 +62,49 @@ function pošlji(podatki) {
 function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas) {
     const časiSon = SunCalc.getTimes(new Date(IČas), IPolŠ, IPolD);
     console.log("časi Sonca:", časiSon);
-    var soVzhZ = new Date(časiSon.sunrise);
-    var soVzhK = new Date(časiSon.sunriseEnd);
-    var zlataK = new Date(časiSon.goldenHourEnd);
-    var poldne = new Date(časiSon.solarNoon);
-    var zlataZ = new Date(časiSon.goldenHour);
-    var soZahZ = new Date(časiSon.sunsetStart);
-    var soZahK = new Date(časiSon.sunset);
-    var mrakK = new Date(časiSon.dusk);
-    var poMrakK = new Date(časiSon.nauticalDusk);
-    var nočZ = new Date(časiSon.night);
-    var polnoč= new Date(časiSon.nadir);
-    var nočK = new Date(časiSon.nightEnd);
-    var poZoraZ = new Date(časiSon.nauticalDawn);
-    var zoraZ = new Date(časiSon.dawn);
+    soVzhZ = new Date(časiSon.sunrise);
+    soVzhK = new Date(časiSon.sunriseEnd);
+    zlataK = new Date(časiSon.goldenHourEnd);
+    poldne = new Date(časiSon.solarNoon);
+    zlataZ = new Date(časiSon.goldenHour);
+    soZahZ = new Date(časiSon.sunsetStart);
+    soZahK = new Date(časiSon.sunset);
+    mrakK = new Date(časiSon.dusk);
+    poMrakK = new Date(časiSon.nauticalDusk);
+    nočZ = new Date(časiSon.night);
+    polnoč= new Date(časiSon.nadir);
+    nočK = new Date(časiSon.nightEnd);
+    poZoraZ = new Date(časiSon.nauticalDawn);
+    zoraZ = new Date(časiSon.dawn);
 
     const polSon = SunCalc.getPosition(new Date(IČas), IPolŠ, IPolD);
     console.log("položaj Sonca:", polSon);
-    var soViš = polSon.altitude;
-    var soAzi = polSon.azimuth;
+    soViš = polSon.altitude;
+    soAzi = polSon.azimuth;
 
     const časiLun = SunCalc.getMoonTimes(new Date(IČas), IPolŠ, IPolD);
     console.log("časi Lune:", časiLun);
-    var luVzh = new Date(časiLun.rise);
-    var luZah = new Date(časiLun.set);
-    var luGor = časiLun.alwaysUp;
-    var luDol = časiLun.alwaysDown;
+    luVzh = new Date(časiLun.rise);
+    luZah = new Date(časiLun.set);
+    luGor = časiLun.alwaysUp;
+    luDol = časiLun.alwaysDown;
 
     const polLun = SunCalc.getMoonPosition(new Date(IČas), IPolŠ, IPolD);
     console.log("položaj Lune:", polLun);
-    var luViš = polLun.altitude;
-    var luAzi = polLun.azimuth;
-    var luOdd= polLun.distance;
-    var luPar = polLun.parallacticAngle;
+    luViš = polLun.altitude;
+    luAzi = polLun.azimuth;
+    luOdd= polLun.distance;
+    luPar = polLun.parallacticAngle;
 
     const osvLun = SunCalc.getMoonIllumination(new Date(IČas), IPolŠ, IPolD);
     console.log("osvetljenost Lune:", osvLun);
-    var luOsv = osvLun.fraction;
-    var luMena = osvLun.phase;
-    var luKot = osvLun.angle;
+    luOsv = osvLun.fraction;
+    luMena = osvLun.phase;
+    luKot = osvLun.angle;
 
-    const podatki = {
+    nariši(IČas);
+
+    podatki = {
         IČas, IPolŠ, IPolD, IČPas,
         soVzhZ, soVzhK, zlataK, poldne, zlataZ, soZahZ, soZahK, mrakK, poMrakK, nočZ, polnoč, nočK, poZoraZ, zoraZ,
         soViš, soAzi,
@@ -78,8 +112,6 @@ function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas) {
         luViš, luAzi, luOdd, luPar,
         luOsv, luMena, luKot
     };
-
-    nariši(IČas);
     pošlji(podatki);
 };
 
@@ -100,6 +132,11 @@ function odpriPisno() {
         'oknoPisno', // ime okna
         `width=${sirina90},height=${visina90}`
     );
+
+    oknoPisno.addEventListener("load", () => { // Počakaj, da se okno naloži, nato pošlji podatke
+        pošlji(podatki);
+        //izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
+    });
 }
 
 function sprejmiNastavitve(nastavitve) {
@@ -121,10 +158,12 @@ function posodobiPol() {
         navigator.geolocation.getCurrentPosition(function(position) {
             TPolŠ = position.coords.latitude;
             TPolD = position.coords.longitude;
-            const točnost = position.coords.accuracy;
-                /*console.log("tr. zem. širina:" + TPolŠ);
-                console.log("tr. zem. dolžina:" + TPolD);
-                console.log("točnost: " + točnost + " m");*/
+            const točnost = position.coords.accuracy
+            ;
+            console.log("tr. zem. širina:" + TPolŠ);
+            console.log("tr. zem. dolžina:" + TPolD);
+            console.log("točnost: " + točnost + " m");
+
         }, function(error) {
             console.error("Napaka pri pridobivanju trenutnega zemljepisnega položaja:", error);
         });
