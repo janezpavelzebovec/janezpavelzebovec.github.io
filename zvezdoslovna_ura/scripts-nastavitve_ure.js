@@ -28,6 +28,8 @@ function poslji() {
         IPolŠ: vnosPolŠ.value,
         IPolD: vnosPolD.value,
         TPol,
+        lunaZZemlje,
+        zadnjaPolobla,
     };
 
     window.opener?.sprejmiNastavitve?.(nastavitve);
@@ -121,6 +123,23 @@ vnosPolŠ.addEventListener('input', () => {
 vnosPolD.addEventListener('input', () => {
   TPol = false;
   poslji();
+});
+
+lunaZZemlje.addEventListener('input', () => {
+    if (lunaZZemlje.checked) {
+        lunaZZemlje = true;
+    } else {
+        lunaZZemlje = false;
+    }
+    poslji();
+});
+zadnjaPolobla.addEventListener('input', () => {
+    if (zadnjaPolobla.checked) {
+        zadnjaPolobla = true;
+    } else {
+        zadnjaPolobla = false;
+    }
+    poslji();
 });
 
 // Vmesni čas //////////////////////////////////////////////////////////////////////////////////////////////
