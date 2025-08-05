@@ -39,11 +39,16 @@ let podatki = null;
 let oknoPisno = null;
 let oknoNastavitve = null;
 
+let intČas = 30000; // 30 sek;
+let intPas = 600000; // 10 min;
+let intPol = 300000; // 5 min;
+
 let intervalČas = null;
 let intervalČPas = null;
 let intervalPol = null;
 
-
+let decStop = 2;
+let decOdst = 2;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -110,8 +115,10 @@ function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas) {
         soViš, soAzi,
         luVzh, luZah, luGor, luDol,
         luViš, luAzi, luOdd, luPar,
-        luOsv, luMena, luKot
+        luOsv, luMena, luKot,
+        decStop, decOdst,
     };
+    console.log("Poslani bodo podatki:", podatki);
     pošlji(podatki);
 };
 
@@ -134,35 +141,40 @@ function odpriPisno() {
     );
 
     oknoPisno.addEventListener("load", () => { // Počakaj, da se okno naloži, nato pošlji podatke
-        pošlji(podatki);
-        //izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
+        izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
     });
 }
 
 function sprejmiNastavitve(nastavitve) {
     console.log("Prejete nastavitve:", nastavitve);
-    nastaviIntervale(nastavitve.TČas, nastavitve.TČPas, nastavitve.TPol)
+    nastaviIntervale(nastavitve.TČas, nastavitve.TČPas, nastavitve.TPol, nastavitve.intČas, nastavitve.intPas, nastavitve.intPol);
+    decStop = nastavitve.decStop;
+    decOdst = nastavitve.decOdst;
     izračunPodatkov(nastavitve.IČas, nastavitve.IPolŠ, nastavitve.IPolD, nastavitve.IČPas);
 }
 
 // Pridobi trenutne vrednosti in jih nastavi
 function posodobiČas() {
-  IČas = new Date();
+    IČas = new Date();
+    izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
 };
 function posodobiČPas() {
-  const IČPasIme = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const IČPasIme = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
 };
 function posodobiPol() {
     // Preverite, ali je brskalnik omogočil geolokacijo:
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
-            TPolŠ = position.coords.latitude;
-            TPolD = position.coords.longitude;
+            IPolŠ = position.coords.latitude;
+            IPolD = position.coords.longitude;
             const točnost = position.coords.accuracy
             ;
-            console.log("tr. zem. širina:" + TPolŠ);
-            console.log("tr. zem. dolžina:" + TPolD);
+            console.log("tr. zem. širina:" + IPolŠ);
+            console.log("tr. zem. dolžina:" + IPolD);
             console.log("točnost: " + točnost + " m");
+            
+            izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
 
         }, function(error) {
             console.error("Napaka pri pridobivanju trenutnega zemljepisnega položaja:", error);
@@ -172,37 +184,47 @@ function posodobiPol() {
     };
 };
 
-function nastaviIntervale(TČas, TČPas, TPol) {
+function nastaviIntervale(TČas, TČPas, TPol, novIntČas, novIntPas, novIntPol) {
     // Čas
-    if (TČas && !intervalČas) {
-        posodobiČas(); // takoj ob vklopu
-        intervalČas = setInterval(posodobiČas, 30000); // 30 sek
-    } else if (!TČas && intervalČas) {
+    if (TČas) {
+        if (!intervalČas || novIntČas !== intČas) {
+            if (intervalČas) clearInterval(intervalČas);
+            intČas = novIntČas;
+            console.log("Interval za čas nastavljen na:", intČas);
+            posodobiČas();
+            intervalČas = setInterval(posodobiČas, intČas);
+        }
+    } else if (intervalČas) {
         clearInterval(intervalČas);
         intervalČas = null;
     }
 
     // Časovni pas
-    if (TČPas && !intervalČPas) {
-        posodobiČPas();
-        intervalČPas = setInterval(posodobiČPas, 600000); // 10 min
-    } else if (!TČPas && intervalČPas) {
+    if (TČPas) {
+        if (!intervalČPas || novIntPas !== intPas) {
+            if (intervalČPas) clearInterval(intervalČPas);
+            intPas = novIntPas;
+            posodobiČPas();
+            intervalČPas = setInterval(posodobiČPas, intPas);
+        }
+    } else if (intervalČPas) {
         clearInterval(intervalČPas);
         intervalČPas = null;
     }
 
     // Položaj
-    if (TPol && !intervalPol) {
-        posodobiPol();
-        intervalPol = setInterval(posodobiPol, 300000); // 5 min
-    } else if (!TPol && intervalPol) {
+    if (TPol) {
+        if (!intervalPol || novIntPol !== intPol) {
+            if (intervalPol) clearInterval(intervalPol);
+            intPol = novIntPol;
+            posodobiPol();
+            intervalPol = setInterval(posodobiPol, intPol);
+        }
+    } else if (intervalPol) {
         clearInterval(intervalPol);
         intervalPol = null;
     }
 };
 
-posodobiČas();
-posodobiČPas();
-posodobiPol();
 izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
-nastaviIntervale(TČas, TČPas, TPol);
+nastaviIntervale(TČas, TČPas, TPol, intČas, intPas, intPol);

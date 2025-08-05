@@ -1,6 +1,9 @@
 /*const dneviTedna = ["nedelja","ponedeljek","torek","sreda","četrtek","petek","sobota"];
 const meseci = ["prosinec", "svečan", "sušec", "mali traven", "veliki traven", "rožnik", "mali srpan", "veliki srpan", "kimavec", "vinotok", "listopad", "gruden"];*/
 
+let decStop = 2;
+let decOdst = 2;
+
 function vStopinje(rad) {
     return rad*(180/Math.PI);
 }
@@ -15,16 +18,20 @@ function fmtČas(čas, pas) {
         timeZone: pas
     }).format(new Date(čas)) : "--:--";
 }
-function fmtStopinje(rad) {
-  return `${parseFloat(vStopinje(rad)).toFixed(4)} °`;
+function fmtStopinje(rad, decStop) {
+  return `${parseFloat(vStopinje(rad)).toFixed(decStop)} °`;
 }
-function fmtOdstotek(število) {
-  return `${(parseFloat(število)*100).toFixed(2)} %`;
+function fmtOdstotek(število, decOdst) {
+  return `${(parseFloat(število)*100).toFixed(decOdst)} %`;
 }
 
 
 function izpišiPodatke(podatki) {
     if (podatki) {
+        console.log("dec. mesta:", decStop, decOdst);
+        decStop = podatki.decStop;
+        decOdst = podatki.decOdst;
+
         document.getElementById("časP").innerHTML = podatki.IČas;
         document.getElementById("čPasP").innerHTML = podatki.IČPas;
         document.getElementById("polP").innerHTML = `${parseFloat(podatki.IPolD).toFixed(4)}, ${parseFloat(podatki.IPolŠ).toFixed(4)}`;
@@ -63,15 +70,15 @@ function izpišiPodatke(podatki) {
         document.getElementById("poMrakP").innerHTML = `${mrakKNiz} – ${poMrakKNiz}`;
         document.getElementById("zvMrakP").innerHTML = `${poMrakKNiz} – ${nočZNiz}`;
 
-        document.getElementById("visSonP").innerHTML = fmtStopinje(podatki.soViš);
-        document.getElementById("aziSonP").innerHTML = fmtStopinje(podatki.soAzi);
-        document.getElementById("visLunP").innerHTML = fmtStopinje(podatki.luViš);
-        document.getElementById("aziLunP").innerHTML = fmtStopinje(podatki.luAzi);
+        document.getElementById("visSonP").innerHTML = fmtStopinje(podatki.soViš, decStop);
+        document.getElementById("aziSonP").innerHTML = fmtStopinje(podatki.soAzi, decStop);
+        document.getElementById("visLunP").innerHTML = fmtStopinje(podatki.luViš, decStop);
+        document.getElementById("aziLunP").innerHTML = fmtStopinje(podatki.luAzi, decStop);
         document.getElementById("oddLunP").innerHTML = `${parseFloat(podatki.luOdd).toFixed(0)} km`;
-        document.getElementById("parLunP").innerHTML = fmtStopinje(podatki.luPar);
-        document.getElementById("kotLunP").innerHTML = fmtStopinje(podatki.luKot);
-        document.getElementById("menaLunP").innerHTML = fmtOdstotek(podatki.luMena);
-        document.getElementById("osvLunP").innerHTML = fmtOdstotek(podatki.luOsv);
+        document.getElementById("parLunP").innerHTML = fmtStopinje(podatki.luPar, decStop);
+        document.getElementById("kotLunP").innerHTML = fmtStopinje(podatki.luKot, decStop);
+        document.getElementById("menaLunP").innerHTML = fmtOdstotek(podatki.luMena, decOdst);
+        document.getElementById("osvLunP").innerHTML = fmtOdstotek(podatki.luOsv, decOdst);
 
         let luVzhNiz = fmtČas(podatki.luVzh, podatki.IČPas);
         let luZahNiz = fmtČas(podatki.luZah, podatki.IČPas);

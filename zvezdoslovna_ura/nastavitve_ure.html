@@ -16,7 +16,7 @@
     <script src="/scripts.js" defer></script>
     <script src="/zvezdoslovna_ura/scripts-nastavitve_ure.js" defer></script>
     <style>
-        .inputInt {
+        .inputSt {
             width: 8ch;
         }   
     </style>
@@ -51,19 +51,31 @@
         <br/>interval posodabljanja sledečih vrednosti, ko so izbrane trenutne:
         <table>
             <tr>
-                <td><label for="intČas">čas:</label></td>
-                <td><input id="intČas" name="Določitev intervala posodabljanja časa" type="number" class="inputInt" /> sek. </td>
+                <td><label for="vnosIntČas">čas:</label></td>
+                <td><input id="vnosIntČas" name="Določitev intervala posodabljanja časa" type="number" class="inputSt" /> sek. </td>
                 <td><button onclick="uporabiPrivIntČas()">privzeto</button></td>
             </tr>
             <tr>
-                <td><label for="intPas">čas. pas:</label></td>
-                <td><input id="intPas" name="Določitev intervala posodabljanja čas. pasu" type="number" class="inputInt" /> sek. </td>
+                <td><label for="vnosIntPas">čas. pas:</label></td>
+                <td><input id="vnosIntPas" name="Določitev intervala posodabljanja čas. pasu" type="number" class="inputSt" /> sek. </td>
                 <td><button onclick="uporabiPrivIntPas()">privzeto</button></td>
             </tr>
             <tr>
-                <td><label for="intPol">položaj:</label></td>
-                <td><input id="intPol" name="Določitev intervala posodabljanja položaja" type="number" class="inputInt" /> sek. </td>
+                <td><label for="vnosIntPol">položaj:</label></td>
+                <td><input id="vnosIntPol" name="Določitev intervala posodabljanja položaja" type="number" class="inputSt" /> sek. </td>
                 <td><button onclick="uporabiPrivIntPol()">privzeto</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><label for="vnosDecStop">št. dec. mest za stopinje</label></td>
+                <td><input id="vnosDecStop" name="Določitev števila decimalnih mest za stopnije" type="number" class="inputSt" /> decimalk </td>
+                <td><button onclick="uporabiPrivDecStop()">privzeto</button></td>
+            </tr>
+            <tr>
+                <td><label for="vnosDecOdst">št. dec. mest za odstotke</label></td>
+                <td><input id="vnosDecOdst" name="Določitev števila decimalnih mest za odstotke" type="number" class="inputSt" /> decimalk </td>
+                <td><button onclick="uporabiPrivDecOdst()">privzeto</button></td>
             </tr>
         </table>
     </main>

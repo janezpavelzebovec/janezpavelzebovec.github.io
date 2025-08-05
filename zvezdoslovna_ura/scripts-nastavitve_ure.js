@@ -6,6 +6,8 @@ let TČPas = true;
 let TPol = true;
 let TPolŠ = 0;
 let TPolD = 0;
+let decStop = 2;
+let decOdst = 2;
 
 // Ustvari seznam podprtih časovnih pasov
 const ČPasPodprti = Intl.supportedValuesOf("timeZone"); // Pridobi vse podprte časovne pasove (timezones supported)
@@ -30,9 +32,11 @@ function poslji() {
         TPol,
         lunaZZemlje,
         zadnjaPolobla,
-        intČas,
-        intPas,
-        intPol,
+        intČas: vnosIntČas.value * 1000,
+        intPas: vnosIntPas.value * 1000,
+        intPol: vnosIntPol.value * 1000,
+        decStop: vnosDecStop.value,
+        decOdst: vnosDecOdst.value,
     };
 
     window.opener?.sprejmiNastavitve?.(nastavitve);
@@ -109,18 +113,28 @@ function uporabiGEOSS() {
 }
 
 function uporabiPrivIntČas() {
-    intČas.value = 30;
+    vnosIntČas.value = 30;
     intČas = 30000;
     poslji();
 }
 function uporabiPrivIntPas() {
-    intPas.value = 600;
+    vnosIntPas.value = 600;
     intPas = 600000;
     poslji();
 }
 function uporabiPrivIntPol() {
-    intPol.value = 300;
+    vnosIntPol.value = 300;
     intPol = 300000;
+    poslji();
+}
+function uporabiPrivDecStop() {
+    vnosDecStop.value = 2;
+    decStop = 2;
+    poslji();
+}
+function uporabiPrivDecOdst() {
+    vnosDecOdst.value = 2;
+    decOdst = 2;
     poslji();
 }
 
@@ -133,10 +147,15 @@ posodobiPol();
 lunaZZemlje.checked = false;
 zadnjaPolobla.checked = true;
 
-intČas.value = 30;
-intPas.value = 600;
-intPol.value = 300;
+vnosIntČas.value = 30;
+vnosIntPas.value = 600;
+vnosIntPol.value = 300;
 
+vnosIntPol.value = 2;
+vnosIntPol.value = 300;
+
+vnosDecStop.value = 2;
+vnosDecOdst.value = 2;
 
 // Dejanja //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -173,6 +192,22 @@ zadnjaPolobla.addEventListener('input', () => {
         zadnjaPolobla = false;
     }
     poslji();
+});
+vnosIntČas.addEventListener('input', () => {
+  poslji();
+});
+vnosIntPas.addEventListener('input', () => {
+  poslji();
+});
+vnosIntPol.addEventListener('input', () => {
+  poslji();
+});
+
+vnosDecStop.addEventListener('input', () => {
+  poslji();
+});
+vnosDecOdst.addEventListener('input', () => {
+  poslji();
 });
 
 // Vmesni čas //////////////////////////////////////////////////////////////////////////////////////////////
