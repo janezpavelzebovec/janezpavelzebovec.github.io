@@ -148,8 +148,8 @@ function odpriPisno() {
 function sprejmiNastavitve(nastavitve) {
     console.log("Prejete nastavitve:", nastavitve);
     nastaviIntervale(nastavitve.TČas, nastavitve.TČPas, nastavitve.TPol, nastavitve.intČas, nastavitve.intPas, nastavitve.intPol);
-    decStop = nastavitve.decStop;
-    decOdst = nastavitve.decOdst;
+    decStop = nastavitve.decStop ?? decStop;
+    decOdst = nastavitve.decOdst ?? decOdst;
     izračunPodatkov(nastavitve.IČas, nastavitve.IPolŠ, nastavitve.IPolD, nastavitve.IČPas);
 }
 
@@ -159,7 +159,7 @@ function posodobiČas() {
     izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
 };
 function posodobiČPas() {
-    const IČPasIme = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    IČPasIme = Intl.DateTimeFormat().resolvedOptions().timeZone;
     izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
 };
 function posodobiPol() {
