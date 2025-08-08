@@ -1,6 +1,6 @@
 ---
 title: Računalniški jeziki
-date: 2025-06-27
+date: 2025-08-08
 description: Skladnje, oz. zapisovanja, ki jih računalnik zna ustrezno upoštevati
 keywords: programiranje, programski jeziki
 author: Janez Pavel Žebovec
@@ -157,6 +157,7 @@ Z nazaj nagnjeno poševnico `\` lahko ubežiš določenim znakom, če nočeš, d
 
 ## Zunanje povezave in viri
 
-- [Daring Fireball - John Gruber: Markdown](https://daringfireball.net/projects/markdown/);
-- [CommonMark - A strongly defined, highly compatible specification of Markdown](https://commonmark.org/);
-- [The Markdown Guide](https://www.markdownguide.org/);
+- [Daring Fireball - John Gruber: Markdown](https://daringfireball.net/projects/markdown/)
+- [CommonMark - A strongly defined, highly compatible specification of Markdown](https://commonmark.org/)
+- [Daring Fireball – John Gruber: Markdown](https://daringfireball.net/projects/markdown/)
+- [The Markdown Guide – Basic Syntax](https://www.markdownguide.org/basic-syntax/)

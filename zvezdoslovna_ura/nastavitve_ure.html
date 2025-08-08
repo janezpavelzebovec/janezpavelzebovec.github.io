@@ -47,8 +47,8 @@
         </table>
         <input id="lunaZZemlje" type="checkbox"/><label for="lunaZZemlje">prikaži Luno kot je vidna z Zemlje</label>
         <br/><input id="zadnjaPolobla" type="checkbox"/><label for="zadnjaPolobla">prikaži tudi zadnjo poloblo</label>
-        <br/>
-        <br/>interval posodabljanja sledečih vrednosti, ko so izbrane trenutne:
+        <br>
+        <br>interval posodabljanja sledečih vrednosti, ko so izbrane trenutne:
         <table>
             <tr>
                 <td><label for="vnosIntČas">čas:</label></td>
@@ -75,7 +75,12 @@
             <tr>
                 <td><label for="vnosDecOdst">št. dec. mest za odstotke</label></td>
                 <td><input id="vnosDecOdst" name="Določitev števila decimalnih mest za odstotke" type="number" class="inputSt" /> decimalk </td>
-                <td><button onclick="uporabiPrivDecOdst()">privzeto</button></td>
+                <td><button onclick="uporabiPrivDecOdsto()">privzeto</button></td>
+            </tr>
+            <tr>
+                <td><label for="vnosProsSence">prosojnost sence na Globusu</label></td>
+                <td><input id="vnosProsSence" name="Izbira prosojnosti sence" type="number" class="inputSt" /> %</td>
+                <td><button onclick="uporabiPrivProsSence()">privzeto</button></td>
             </tr>
         </table>
     </main>

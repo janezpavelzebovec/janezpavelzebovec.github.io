@@ -1,3 +1,15 @@
+// Zvezdoslovne stalnice ////////////////////////
+const dolžinaLeta = 365.2425;
+const dan = 24*60*60*1000; //1 dan v milisekundah
+const astMesec = (((29*24+12)*60+44)*60+2.9)*1000; //astronomski mesec (29 dni, 12 ur, 44 minut in 2.9 sekund) v milisekundah
+const astMesecDni = astMesec / dan;//astronomski mesec v dnevih
+const nagOsi = 23.4392811; //nagnjenost Zemljine osi v stopinjah
+const odZem = 149598023; //povprečna oddaljenost Zemlje od Sonca (v km)
+const polmerSonca = 696000; //polmer Sonca (v km)
+const polmerZemlje = 6356.752; //polmer Zemlje (na tečajih; v km)
+const polmerLune = 3474; //polmer Lune (v km)
+
+// Nastavitve ////////////////////////////////////////////////
 let IČas = new Date();
 let TČas = true;
 let IČPas = "Europe/Ljubljana"
@@ -5,7 +17,25 @@ let TČPas = true;
 let IPolD = 0;
 let IPolŠ = 0;
 let TPol = true;
- 
+
+let prikazZadnjePoloble = true;
+
+let intČas = 30000; // 30 sek;
+let intPas = 600000; // 10 min;
+let intPol = 300000; // 5 min;
+
+let decStop = 2;
+let decOdst = 2;
+
+let prosSence = 0.8; // prosojnost sence
+let polUre = true;
+
+// nenastavljive
+const premerGlob = 0.7; // premer globusa
+
+// Izračunani podatki ////////////////////////////////////////
+let podatki = null;
+
 let soVzhZ = null;
 let soVzhK = null;
 let zlataK = null;
@@ -34,37 +64,408 @@ let luOsv = null;
 let luMena = null;
 let luKot = null;
 
-let podatki = null;
+/////////////////////////////////////////////////////////////
 
 let oknoPisno = null;
 let oknoNastavitve = null;
 
-let intČas = 30000; // 30 sek;
-let intPas = 600000; // 10 min;
-let intPol = 300000; // 5 min;
+let intervalČas = null; // ali se posodablja
+let intervalČPas = null; // ali se posodablja
+let intervalPol = null; // ali se posodablja
 
-let intervalČas = null;
-let intervalČPas = null;
-let intervalPol = null;
+let zamikPoldnevnikov;
+let zamikLeta = 11*360/dolžinaLeta;
+let letniZasuk = 0;
 
-let decStop = 2;
-let decOdst = 2;
+////////////////////////////////////////////////////////////////
 
-//////////////////////////////////////////////////////////////////////////////////////////////////
+function leapYear(year) {
+    return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+};
 
-function nariši(IČas) {
-    document.getElementById("prikaz-casa").innerHTML = new Date(IČas);
+function ustvariSVG(id) {
+    let premer;
+    d3.select(`#${id}`).remove(); // Počisti obstoječi SVG, če obstaja
+
+    var main = document.querySelector('main');
+    var w = main.offsetWidth; //window.innerWidth;
+    var h = main.offsetHeight; //window.innerHeight;
+    if (polUre) {
+        premer = Math.min(w, h);
+    } else {
+        if (h >= 2 * w) {
+            premer = w;
+        } else if (w >= 2 * h) {
+            premer = h;
+        } else {
+            premer = w + h - Math.sqrt(2 * w * h);
+        }
+    }
+
+    // Ustvari nov SVG element
+    const svg = d3.select("main")
+        .append("svg")
+        .attr("id", id)
+        .attr("width", premer)
+        .attr("height", premer)
+        .attr("viewBox", `0 0 ${premer} ${premer}`)
+        .attr("class", "part")
+
+    return { svg, premer };
+};
+
+// Ustvari globus z D3-Globe
+function narišiGlobus(svg, premer, zamikPoldnevnikov, polnoc, poldne) {
+    // Nastavite projekcijo ortografske projekcije
+    const projection = d3.geoOrthographic()
+        .center([0, 0]) // Središče projekcije
+        .scale(premerGlob * premer / 2) // Scale za velikost globusa
+        .clipAngle(90) // Nastavi privzeti kot rezanja
+        .translate([premer / 2, premer / 2]);
+
+    const path = d3.geoPath().projection(projection);
+
+    // Nastavi rotacijo projekcije
+    projection.rotate([poldne * (-1) + letniZasuk, -(90 - nagOsi), 0]);
+
+    // Naloži podatke o svetu (GeoJSON)
+    d3.json("world.json").then(function (data) {
+        if (!data || !data.features) {
+            console.error("GeoJSON podatki niso ustrezno naloženi!");
+            return;
+        }
+        // Dodajanje ozadja za globus
+        svg.append("circle")
+            .attr("cx", premer / 2)
+            .attr("cy", premer / 2)
+            .attr("r", premerGlob*premer / 2)
+            .style("fill", "#121212")
+            //.style("opacity", 1)
+            .style("stroke", "black") // Barva obrobe
+            .style("stroke-width", 1.0); // Debelina obrobe
+
+        if (prikazZadnjePoloble) {
+            // Zadnja stran globusa (mreža, morje, celinske oblike)
+            projection.clipAngle(0); // Omogoči celotno risanje (brez klipanja)
+
+            svg.append("path")
+                .datum({ type: "Sphere" })
+                .attr("class", "background")
+                .attr("d", path)
+                .style("fill", "rgba(0, 0, 255, 0.2)"); //morje
+
+            svg.append("path")
+                .datum(d3.geoGraticule10())
+                .attr("class", "back-grid")
+                .attr("d", path)
+                .style("stroke", "rgba(0, 0, 0, 0.2)")
+                .style("fill", "none");
+
+            svg.selectAll(".celine-zadaj")
+                .data(data.features)
+                .enter().append("path")
+                .attr("class", "celine-zadaj")
+                .attr("d", path)
+                .style("fill", "rgba(153, 178, 255, 0.3)")
+                .style("stroke", "none");
+            ;
+            svg.selectAll(".poldnevniki-zadaj")
+                .data(d3.range(zamikPoldnevnikov,  360 + zamikPoldnevnikov, 15).map(lon => {
+                    return {
+                        type: "LineString",
+                        coordinates: d3.range(-90, 90, 1).map(lat => [lon, lat])
+                    };
+                }))
+                .enter().append("path")
+                .attr("class", "poldnevniki-zadaj")
+                .attr("d", path)
+                .style("stroke", "grey")
+                .style("stroke-width", 1)
+                .style("opacity", 0.3)
+                .style("fill", "none");
+
+            svg.selectAll(".vzporedniki-zadaj")
+                .data([0, 23.44, -23.44, 66.56, -66.56].map(lat => {
+                    return {
+                        type: "LineString",
+                        coordinates: d3.range(-180, 180, 1).map(lon => [lon, lat])
+                    };
+                }))
+                .enter().append("path")
+                .attr("class", "vzporedniki-zadaj")
+                .attr("d", path)
+                .style("stroke", "grey")
+                .style("stroke-width", 1)
+                .style("opacity", 0.3)
+                .style("fill", "none");
+
+            // Risanje poldnevnikov (meridianov) - polnoč in poldne
+            const linesDataBack = [
+                { type: "LineString", coordinates: [[IPolD, -90], [IPolD, 0], [IPolD, 90]], color: "red" }, // trenutna zem. dolžina
+                { type: "LineString", coordinates: [[-180, IPolŠ], [0, IPolŠ], [180, IPolŠ]], color: "red" },  // trenutna zem. širina
+                { type: "LineString", coordinates: [[polnoc, -90], [polnoc, 0], [polnoc, 90]], color: "blue" }, // Polnoč
+                { type: "LineString", coordinates: [[poldne, -90], [poldne, 0], [poldne, 90]], color: "orange" },  // Poldne
+            ];
+            // Dodajanje poldnevnikov na globus
+            var dodČrteZadaj = svg.selectAll(".črteZadaj")
+                .data(linesDataBack);
+            dodČrteZadaj.enter().append("path")
+                .attr("class", "črteZadaj")
+                .merge(dodČrteZadaj)
+                .transition().duration(500)
+                .attr("d", path)
+                .attr("fill", "none")
+                .attr("stroke", d => d.color)
+                .style("opacity", 0.3)
+                .attr("stroke-width", 2);
+            dodČrteZadaj.exit().remove();
+        };
+
+
+        // Sprednja stran globusa
+        projection.clipAngle(90); // Prikaz samo sprednje strani
+
+        svg.append("circle")
+            .attr("cx", premer / 2)
+            .attr("cy", premer / 2)
+            .attr("r", premerGlob * premer / 2)
+            .style("fill", "grey")
+            .style("opacity", 0.3)
+            .style("stroke", "black")
+            .style("stroke-width", 1.0);
+
+        svg.selectAll(".land")
+            .data(data.features)
+            .enter().append("path")
+            .attr("class", "land")
+            .attr("d", path)
+            .style("fill", "rgba(255, 255, 255, 1")
+            .style("stroke", "#121212")
+            .style("stroke-width", 0.5);
+
+        svg.selectAll(".meridian")
+            .data(d3.range(zamikPoldnevnikov,  360 + zamikPoldnevnikov, 15).map(lon => {
+                return {
+                    type: "LineString",
+                    coordinates: d3.range(-90, 90, 1).map(lat => [lon, lat])
+                };
+            }))
+            .enter().append("path")
+            .attr("class", "meridian")
+            .attr("d", path)
+            .style("stroke", "grey")
+            .style("stroke-width", 1)
+            .style("fill", "none");
+
+        svg.selectAll(".latitude")
+            .data([0, 23.44, -23.44, 66.56, -66.56].map(lat => {
+                return {
+                    type: "LineString",
+                    coordinates: d3.range(-180, 180, 1).map(lon => [lon, lat])
+                };
+            }))
+            .enter().append("path")
+            .attr("class", "latitude")
+            .attr("d", path)
+            .style("stroke", "grey")
+            .style("stroke-width", 1)
+            .style("fill", "none");
+
+        // Risanje poldnevnikov (meridianov) - polnoč in poldne
+        const linesData = [
+            { type: "LineString", coordinates: [[IPolD, -90], [IPolD, 0], [IPolD, 90]], color: "red" }, // trenutna zem. dolžina
+            { type: "LineString", coordinates: [[polnoc, -90], [polnoc, 0], [polnoc, 90]], color: "blue" }, // Polnoč
+            { type: "LineString", coordinates: [[poldne, -90], [poldne, 0], [poldne, 90]], color: "orange" }  // Poldne
+        ];
+        // Dodajanje poldnevnikov na globus
+        var lines = svg.selectAll(".line")
+            .data(linesData);
+        lines.enter().append("path")
+            .attr("class", "line")
+            .merge(lines)
+            .transition().duration(500)
+            .attr("d", path)
+            .attr("fill", "none")
+            .attr("stroke", d => d.color)
+            .attr("stroke-width", 2);
+        lines.exit().remove();
+
+        // Risanje vzporednikov (latitud) - ekvator, povratnik in tečajnik
+        var additionalLatitudes = [IPolŠ];  // Dodatni vzporedniki
+        var additionalLatitudesData = additionalLatitudes.map(function (latitude) {
+            var coordinates = [];
+            for (var lon = -180; lon <= 180; lon++) {
+                coordinates.push([lon, latitude]);
+            }
+            return {
+                type: "LineString",
+                coordinates: coordinates
+            };
+        });
+        // Določite barve za dodatne vzporednike
+        svg.selectAll(".additional-latitude")
+            .data(additionalLatitudesData)
+            .enter().append("path")
+            .attr("class", "additional-latitude")
+            .attr("d", path)
+            .style("fill", "none")
+            .style("stroke", function(d, i) {
+                // Različne barve za vsak vzporednik
+                const colors = ["red"];
+                return colors[i];
+            })
+            .style("stroke-width", 2);  // Širina linije za dodatne vzporednike
+
+    }).catch(function (error) {
+        console.error("Napaka pri nalaganju GeoJSON datoteke:", error);
+    });
+}
+function poglejZemljo(letniZasuk, zamikPoldnevnikov, polnoc, poldne, prosSence) {
+    const naZemljo = ustvariSVG("naZemljo");
+
+    var layer1 = naZemljo.svg.append('g').attr('id', 'layer1');
+    var layer2 = naZemljo.svg.append('g').attr('id', 'layer2');
+    var layer3 = naZemljo.svg.append('g').attr('id', 'layer3');
+    var layer4 = naZemljo.svg.append('g').attr('id', 'layer4');
+    var layer5 = naZemljo.svg.append('g').attr('id', 'layer5');
+
+    /*naZemljo.svg.append("circle")
+        .attr("cx", 0.5*naZemljo.premer)
+        .attr("cy", 0.5*naZemljo.premer)
+        .attr("r", 0.5*naZemljo.premer)
+        .attr("fill", "none")
+        .attr("stroke", "grey")
+        .attr("stroke-width", 1);*/
+
+    // Naloži zunanjo SVG datoteko in jo umesti v obstoječi SVG
+    d3.xml("images/Sonce.svg").then(function (xml) {
+        const importedSVG = d3.select(xml.documentElement); 
+        const gSonca = layer1.append("g").attr("id", "gSonce");
+        gSonca.node().appendChild(importedSVG.node());
+
+        importedSVG
+            .attr("x", 0)  // X pozicija
+            .attr("y", 0)  // Y pozicija
+            .attr("width", naZemljo.premer)
+            .attr("height", naZemljo.premer)
+            .attr("id", "Sonce");
+
+        gSonca.attr("transform", `rotate(${(letniZasuk) *-1}, ${0.5 * naZemljo.premer}, ${0.5 * naZemljo.premer})`)
+    }).catch(function (error) {
+        console.error("Napaka pri nalaganju SVG datoteke:", error);
+    });
+
+    d3.xml("images/letni_casi.svg").then(function (xml) {
+        const importedSVG = d3.select(xml.documentElement);
+        layer2.node().appendChild(importedSVG.node());
+
+        importedSVG
+            .attr("x", 0.05*naZemljo.premer)  // X pozicija
+            .attr("y", 0.05*naZemljo.premer)  // Y pozicija
+            .attr("width", 0.9*naZemljo.premer)
+            .attr("height", 0.9*naZemljo.premer)
+            .attr("id", "letniCasi");
+    }).catch(function (error) {
+        console.error("Napaka pri nalaganju SVG datoteke:", error);
+    });
+
+    d3.xml("images/letna_stevilcnica.svg").then(function (xml) {
+        const importedSVG = d3.select(xml.documentElement);
+        const gLetStev = layer2.append("g").attr("id", "gLetStev");
+        gLetStev.node().appendChild(importedSVG.node());
+
+        importedSVG
+            .attr("x", 0)  // X pozicija
+            .attr("y", 0)  // Y pozicija
+            .attr("width", naZemljo.premer)
+            .attr("height", naZemljo.premer)
+            .attr("id", "letnaStevilcnica");
+
+        gLetStev.attr("transform", `rotate(${zamikLeta *-1}, ${0.5 * naZemljo.premer}, ${0.5 * naZemljo.premer})`)
+    }).catch(function (error) {
+        console.error("Napaka pri nalaganju SVG datoteke:", error);
+    });
+
+    narišiGlobus(layer3, naZemljo.premer, zamikPoldnevnikov, polnoc, poldne);
+
+    d3.xml("images/Senca.svg").then(function (xml) {
+        const importedSVG = d3.select(xml.documentElement);
+        const gSenca = layer4.append("g").attr("id", "gSenca");
+        gSenca.node().appendChild(importedSVG.node());
+
+        importedSVG
+            .attr("x", (1-premerGlob)/2 * naZemljo.premer) // X pozicija
+            .attr("y", (1-premerGlob)/2 * naZemljo.premer) // Y pozicija
+            .attr("width", premerGlob * naZemljo.premer) // Širina
+            .attr("height", premerGlob * naZemljo.premer) // Višina
+            .attr("id", "senca")
+            .style("opacity", prosSence);
+
+        gSenca.attr("transform", `rotate(${(letniZasuk) *-1}, ${0.5 * naZemljo.premer}, ${0.5 * naZemljo.premer})`)
+
+    }).catch(function (error) {
+        console.error("Napaka pri nalaganju SVG datoteke:", error);
+    });
+
+    d3.xml("images/urna_stevilcnica.svg").then(function (xml) {
+        const importedSVG = d3.select(xml.documentElement);
+        const gUrnaStev = layer4.append("g").attr("id", "gUrnaStev");
+        gUrnaStev.node().appendChild(importedSVG.node());
+        var premerUrnaStev = premerGlob*1.07;
+
+        importedSVG
+            .attr("x", (1 - premerUrnaStev)/2 * naZemljo.premer) // X pozicija
+            .attr("y", (1 - premerUrnaStev)/2 * naZemljo.premer) // Y pozicija
+            .attr("width", premerUrnaStev * naZemljo.premer)
+            .attr("height", premerUrnaStev * naZemljo.premer)
+            .attr("id", "urna_stevilcnica")
+            .style("opacity", "0.5");
+
+        gUrnaStev.attr("transform", `rotate(${(letniZasuk) *-1}, ${0.5 * naZemljo.premer}, ${0.5 * naZemljo.premer})`)
+
+        //gElement.attr("transform", `rotate(${(letniZasuk)*-1}, ${0.1 * zemlja.premer + 0.4 * zemlja.premer}, ${0.1 * zemlja.premer + 0.4 * zemlja.premer})`)
+    }).catch(function (error) {
+        console.error("Napaka pri nalaganju SVG datoteke:", error);
+    });
 }
 
-// Pošlji podatke oknu Pisno
+function nariši(IČas, prosSence) {
+    /*document.getElementById("prikaz-casa").innerHTML = new Date(IČas);*/
+
+    var ure = IČas.getHours();
+    var ureUTC = IČas.getUTCHours();
+    var min = IČas.getMinutes();
+    var sek = IČas.getSeconds();
+
+    zamikPoldnevnikov = (min + (sek/60)) / 60 *-15;
+    polnoc = ((24 - ureUTC)/24)*360 + zamikPoldnevnikov;
+    poldne = (polnoc + 180)%360;
+
+    var prviDanLeta = new Date(IČas.getFullYear(), 0, 1); // 1. prosinec leta
+    var razlika = IČas - prviDanLeta;
+    var danLeta = razlika / dan;
+    console.log("dan v letu:", danLeta);
+    var danLetaStop = (360/dolžinaLeta) * danLeta;
+    letniZasuk = danLetaStop + zamikLeta
+    poglejZemljo(letniZasuk, zamikPoldnevnikov, polnoc, poldne, prosSence);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+
 function pošlji(podatki) {
     if (oknoPisno && !oknoPisno.closed) {
         oknoPisno.postMessage({ podatki }, "*");
     }
 }
 
+function pošljiNastavitve(nastavitve) {
+    if (oknoNastavitve && !oknoNastavitve.closed) {
+        oknoNastavitve.postMessage({ nastavitve }, "*");
+    }
+}
+
 // Uporabi SunCalc za izračun podatkov
-function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas) {
+function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas, prosSence) {
     const časiSon = SunCalc.getTimes(new Date(IČas), IPolŠ, IPolD);
     console.log("časi Sonca:", časiSon);
     soVzhZ = new Date(časiSon.sunrise);
@@ -107,7 +508,7 @@ function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas) {
     luMena = osvLun.phase;
     luKot = osvLun.angle;
 
-    nariši(IČas);
+    nariši(IČas, prosSence);
 
     podatki = {
         IČas, IPolŠ, IPolD, IČPas,
@@ -130,6 +531,16 @@ function odpriNastavitve() {
         'oknoNastavitve', // ime okna
         `width=${sirina90},height=${visina90}`
     );
+    
+    nastavitve = {
+        IČas, TČas, IČPas, TČPas, IPolD, IPolŠ, TPol,
+        prikazZadnjePoloble,
+        intČas, intPas, intPol, decStop, decOdst,
+        prosSence, polUre,
+    };
+
+    console.log("Poslane bodo nastavitve", nastavitve);
+    pošljiNastavitve(nastavitve);
 }
 function odpriPisno() {
     const sirina90 = Math.floor(window.innerWidth * 0.9);
@@ -150,7 +561,7 @@ function sprejmiNastavitve(nastavitve) {
     nastaviIntervale(nastavitve.TČas, nastavitve.TČPas, nastavitve.TPol, nastavitve.intČas, nastavitve.intPas, nastavitve.intPol);
     decStop = nastavitve.decStop ?? decStop;
     decOdst = nastavitve.decOdst ?? decOdst;
-    izračunPodatkov(nastavitve.IČas, nastavitve.IPolŠ, nastavitve.IPolD, nastavitve.IČPas);
+    izračunPodatkov(nastavitve.IČas, nastavitve.IPolŠ, nastavitve.IPolD, nastavitve.IČPas, nastavitve,prosSence);
 }
 
 // Pridobi trenutne vrednosti in jih nastavi
@@ -228,3 +639,5 @@ function nastaviIntervale(TČas, TČPas, TPol, novIntČas, novIntPas, novIntPol)
 
 izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
 nastaviIntervale(TČas, TČPas, TPol, intČas, intPas, intPol);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

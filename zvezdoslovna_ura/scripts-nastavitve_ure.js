@@ -1,13 +1,19 @@
-
-// Privzeto //////////////////////////////////////////////////////////////////////////////////////////////
-
+let IČas = null;
 let TČas = true;
+let IČPas = null;
 let TČPas = true;
+let IPolŠ = 0;
+let IPolD = 0;
 let TPol = true;
-let TPolŠ = 0;
-let TPolD = 0;
+let lunaZZemlje = false;
+let prikazZadnjePoloble;
+let intČas;
+let intPas;
+let intPol;
 let decStop = 2;
 let decOdst = 2;
+let prosSence;
+let polUre;
 
 // Ustvari seznam podprtih časovnih pasov
 const ČPasPodprti = Intl.supportedValuesOf("timeZone"); // Pridobi vse podprte časovne pasove (timezones supported)
@@ -37,6 +43,8 @@ function poslji() {
         intPol: vnosIntPol.value * 1000,
         decStop: vnosDecStop.value,
         decOdst: vnosDecOdst.value,
+        prosSence: vnosProsSence.value / 100,
+        polUre,
     };
 
     window.opener?.sprejmiNastavitve?.(nastavitve);
@@ -137,6 +145,11 @@ function uporabiPrivDecOdst() {
     decOdst = 2;
     poslji();
 }
+function uporabiPrivProsSence() {
+    vnosProsSence.value = 80;
+    prosSence = 0.8;
+    poslji();
+}
 
 // Naložitev strani - prikaži privzete vrednosti //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -144,7 +157,7 @@ posodobiČas();
 posodobiČPas();
 posodobiPol();
 
-lunaZZemlje.checked = false;
+/*lunaZZemlje.checked = false;
 zadnjaPolobla.checked = true;
 
 vnosIntČas.value = 30;
@@ -156,6 +169,7 @@ vnosIntPol.value = 300;
 
 vnosDecStop.value = 2;
 vnosDecOdst.value = 2;
+vnosProsSence.value = 80;*/
 
 // Dejanja //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -177,14 +191,14 @@ vnosPolD.addEventListener('input', () => {
   poslji();
 });
 
-lunaZZemlje.addEventListener('input', () => {
+/*lunaZZemlje.addEventListener('input', () => {
     if (lunaZZemlje.checked) {
         lunaZZemlje = true;
     } else {
         lunaZZemlje = false;
     }
     poslji();
-});
+});*/
 zadnjaPolobla.addEventListener('input', () => {
     if (zadnjaPolobla.checked) {
         zadnjaPolobla = true;
@@ -209,6 +223,9 @@ vnosDecStop.addEventListener('input', () => {
 vnosDecOdst.addEventListener('input', () => {
   poslji();
 });
+vnosProsSence.addEventListener('input', () => {
+  poslji();
+});
 
 // Vmesni čas //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -218,3 +235,24 @@ setInterval(() => {
     if (TČPas) { posodobiČPas(); };
     if (TPol) { posodobiPol(); };
 }, 30000);
+
+window.addEventListener("message", (event) => {
+    const nastavitve = event.data.nastavitve;
+    console.log("Prejete Nastavitve:", nastavitve);
+    
+    IČas = nastavitve.IČas;
+    TČas = nastavitve.TČas;
+    IČPas = nastavitve.IČPas;
+    TČPas = nastavitve.TČPas;
+    IPolD = nastavitve.IPolD;
+    IPolŠ = nastavitve.IPolŠ;
+    TPol = nastavitve.TPol;
+    prikazZadnjePoloble = nastavitve.prikazZadnjePoloble;
+    intČas = nastavitve.intČas;
+    intPas = nastavitve.intPas;
+    intPol = nastavitve.intPol;
+    decStop = nastavitve.decStop;
+    decOdst = nastavitve.decOdst;
+    prosSence = nastavitve.prosSence;
+    polUre = nastavitve.polUre;
+});

@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2025-08-01
+date: 2025-08-08
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -69,6 +69,12 @@ Moji izbrani programi po namembnosti:
 #### Programčki/knjižnice za razširitve
 
 - [better-osm-org](https://github.com/deevroman/better-osm-org): dodane zmogljivosti k urejevalniku OSM v brskalniku
+
+### Spletne storitve
+
+Glej tudi: [Moje seznami](/seznami).
+
+- [Umami](https://umami.is/): odprtokodna analitika spletnega mesta
 
 ### Programi za Linux
 

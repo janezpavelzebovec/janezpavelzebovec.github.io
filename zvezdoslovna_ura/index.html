@@ -16,20 +16,34 @@
     <script src="/zvezdoslovna_ura/scripts-ura.js" defer></script>
     <!--<script defer src="https://cloud.umami.is/script.js" data-website-id="ac7911af-065e-4a16-8a66-255ee9f70989"></script>-->
 
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
 </head>
 <body>
-    <header>
-        <span id="datum">Zadnja posodobitev te strani: <time datetime="2025-07-20">2025-08-05</time></span>
-        | <a id="domov" href="/">Domov</a>
-        <a id="domov" href="/zvezdoslovna_ura/opombe_k_zvezdoslovni_uri">Opombe</a>
-        | <button id="pisno" onclick="odpriPisno()">Pisno</button>
+    <header><!--<span id="datum">Zadnja posodobitev te strani: <time datetime="2025-08-06">2025-08-06</time></span>--></header>
+    <button id ="hamburger" onclick="meni()" aria-label="Meni" aria-expanded="false">☰</button>
+    <nav>
+        <a id="domov" href="/">Domov</a>
+        <a href="/zvezdoslovna_ura/opombe_k_zvezdoslovni_uri">Opombe</a>
+        <button id="pisno" onclick="odpriPisno()">Pisno</button>
         <button id="nastavitve" onclick="odpriNastavitve()">Nastavitve</button>
-    </header>
+    </nav>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.querySelector('nav');
+
+        function meni() {
+        const odprto = nav.classList.toggle('open');
+        hamburger.textContent = odprto ? '✕' : '☰';
+        hamburger.setAttribute('aria-expanded', odprto);
+        };
+    </script>
     <main>
-    <p id="prikaz-casa">Čas</p>
+        <!--<p id="prikaz-casa">Čas</p>-->
 
     </main>
-    </script><script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1FD0790Y"></script>
+    <!--</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1FD0790Y"></script>-->
     <!--<script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}

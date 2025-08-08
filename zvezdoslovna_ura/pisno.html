@@ -20,6 +20,15 @@
             background-color: var(--bOzadjeNaprej);
         }
     </style>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            const odprto = nav.classList.toggle('open');
+            hamburger.textContent = odprto ? '✕' : '☰';
+        });
+    </script>
 
 </head>
 <body>
