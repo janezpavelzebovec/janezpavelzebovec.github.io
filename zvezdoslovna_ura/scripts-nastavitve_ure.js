@@ -1,19 +1,38 @@
-let IČas = null;
+let IČas;
 let TČas = true;
-let IČPas = null;
+let IČPas;
 let TČPas = true;
 let IPolŠ = 0;
 let IPolD = 0;
 let TPol = true;
 let lunaZZemlje = false;
-let prikazZadnjePoloble;
+let zadnjaPolobla;
 let intČas;
+    let pIntČas;
 let intPas;
+    let pIntPas;
 let intPol;
-let decStop = 2;
-let decOdst = 2;
+    let pIntPol;
+let decStop;
+    let pDecStop;
+let decOdst;
+    let pDecOdst;
 let prosSence;
+    let pProsSence;
 let polUre;
+
+const vnosČas = document.getElementById("vnosČas");
+const vnosČPas = document.getElementById("vnosČPas");
+const vnosPolŠ = document.getElementById("vnosPolŠ");
+const vnosPolD = document.getElementById("vnosPolD");
+const vnosLunaZZemlje = document.getElementById("vnosLunaZZemlje");
+const vnosZadnjaPolobla = document.getElementById("vnosZadnjaPolobla");
+const vnosIntČas = document.getElementById("vnosIntČas");
+const vnosIntPas = document.getElementById("vnosIntPas");
+const vnosIntPol = document.getElementById("vnosIntPol");
+const vnosDecStop = document.getElementById("vnosDecStop");
+const vnosDecOdst = document.getElementById("vnosDecOdst");
+const vnosProsSence = document.getElementById("vnosProsSence");
 
 // Ustvari seznam podprtih časovnih pasov
 const ČPasPodprti = Intl.supportedValuesOf("timeZone"); // Pridobi vse podprte časovne pasove (timezones supported)
@@ -33,17 +52,17 @@ function poslji() {
         TČas,
         IČPas: vnosČPas.value,
         TČPas,
-        IPolŠ: vnosPolŠ.value,
-        IPolD: vnosPolD.value,
+        IPolŠ: Number(vnosPolŠ.value),
+        IPolD: Number(vnosPolD.value),
         TPol,
-        lunaZZemlje,
-        zadnjaPolobla,
-        intČas: vnosIntČas.value * 1000,
-        intPas: vnosIntPas.value * 1000,
-        intPol: vnosIntPol.value * 1000,
-        decStop: vnosDecStop.value,
-        decOdst: vnosDecOdst.value,
-        prosSence: vnosProsSence.value / 100,
+        lunaZZemlje: Boolean(vnosLunaZZemlje.checked),
+        zadnjaPolobla: Boolean(vnosZadnjaPolobla.checked),
+        intČas: Number(vnosIntČas.value) * 1000,
+        intPas: Number(vnosIntPas.value) * 1000,
+        intPol: Number(vnosIntPol.value) * 1000,
+        decStop: Number(vnosDecStop.value),
+        decOdst: Number(vnosDecOdst.value),
+        prosSence: Number(vnosProsSence.value) / 100,
         polUre,
     };
 
@@ -121,33 +140,33 @@ function uporabiGEOSS() {
 }
 
 function uporabiPrivIntČas() {
-    vnosIntČas.value = 30;
-    intČas = 30000;
+    vnosIntČas.value = pIntČas;
+    intČas = pIntČas;
     poslji();
 }
 function uporabiPrivIntPas() {
-    vnosIntPas.value = 600;
-    intPas = 600000;
+    vnosIntPas.value = pIntPas;
+    intPas = pIntPas;
     poslji();
 }
 function uporabiPrivIntPol() {
-    vnosIntPol.value = 300;
-    intPol = 300000;
+    vnosIntPol.value = pIntPol;
+    intPol = pIntPol;
     poslji();
 }
 function uporabiPrivDecStop() {
-    vnosDecStop.value = 2;
-    decStop = 2;
+    vnosDecStop.value = pDecStop;
+    decStop = pDecStop;
     poslji();
 }
 function uporabiPrivDecOdst() {
-    vnosDecOdst.value = 2;
-    decOdst = 2;
+    vnosDecOdst.value = pDecOdst;
+    decOdst = pDecOdst;
     poslji();
 }
 function uporabiPrivProsSence() {
-    vnosProsSence.value = 80;
-    prosSence = 0.8;
+    vnosProsSence.value = pProsSence * 100;
+    prosSence = pProsSence;
     poslji();
 }
 
@@ -191,20 +210,12 @@ vnosPolD.addEventListener('input', () => {
   poslji();
 });
 
-/*lunaZZemlje.addEventListener('input', () => {
-    if (lunaZZemlje.checked) {
-        lunaZZemlje = true;
-    } else {
-        lunaZZemlje = false;
-    }
+vnosLunaZZemlje.addEventListener('input', () => {
+    lunaZZemlje = vnosLunaZZemlje.checked;
     poslji();
-});*/
-zadnjaPolobla.addEventListener('input', () => {
-    if (zadnjaPolobla.checked) {
-        zadnjaPolobla = true;
-    } else {
-        zadnjaPolobla = false;
-    }
+});
+vnosZadnjaPolobla.addEventListener('input', () => {
+    zadnjaPolobla = vnosZadnjaPolobla.checked;
     poslji();
 });
 vnosIntČas.addEventListener('input', () => {
@@ -236,7 +247,47 @@ setInterval(() => {
     if (TPol) { posodobiPol(); };
 }, 30000);
 
-window.addEventListener("message", (event) => {
+window.addEventListener("load", function () {
+    if (window.opener) {
+        window.opener.postMessage("ready-nastavitve", "*");
+    }
+});
+
+// Posluša prejete nastavitve
+window.addEventListener("message", function (event) {
+    if (event.data && event.data.nastavitve) {
+        const nastavitve = event.data.nastavitve;
+        console.log("Prejete nastavitve:", nastavitve);
+    
+        IČas = new Date(nastavitve.IČas);
+        vnosČas.value = `${IČas.getFullYear().toString().padStart(4, '0')}-` +
+                    `${(IČas.getMonth()+1).toString().padStart(2, '0')}-` +
+                    `${IČas.getDate().toString().padStart(2, '0')}T` +
+                    `${IČas.getHours().toString().padStart(2, '0')}:` +
+                    `${IČas.getMinutes().toString().padStart(2, '0')}`;
+
+        TČas = nastavitve.TČas;
+        IČPas = vnosČPas.value = nastavitve.IČPas;
+        TČPas = nastavitve.TČPas;
+        IPolD = vnosPolD.value = nastavitve.IPolD;
+        IPolŠ = vnosPolŠ.value = nastavitve.IPolŠ;
+        TPol = nastavitve.TPol;
+        lunaZZemlje = vnosLunaZZemlje.checked = Boolean(nastavitve.lunaZZemlje);
+        zadnjaPolobla = vnosZadnjaPolobla.checked = Boolean(nastavitve.zadnjaPolobla);
+        intČas = nastavitve.intČas;
+            vnosIntČas.value = pIntČas = nastavitve.intČas / 1000;
+        intPas = nastavitve.intPas;
+            vnosIntPas.value = pIntPas = nastavitve.intPas / 1000;
+        intPol = nastavitve.intPol;
+            vnosIntPol.value = pIntPol = nastavitve.intPol / 1000;
+        decStop = vnosDecStop.value = pDecStop = nastavitve.decStop;
+        decOdst = vnosDecOdst.value = pDecOdst = nastavitve.decOdst;
+        prosSence = pProsSence = nastavitve.prosSence;
+            vnosProsSence.value = nastavitve.prosSence * 100;
+        polUre = nastavitve.polUre;
+    }
+});
+/*window.addEventListener("message", (event) => {
     const nastavitve = event.data.nastavitve;
     console.log("Prejete Nastavitve:", nastavitve);
     
@@ -247,7 +298,8 @@ window.addEventListener("message", (event) => {
     IPolD = nastavitve.IPolD;
     IPolŠ = nastavitve.IPolŠ;
     TPol = nastavitve.TPol;
-    prikazZadnjePoloble = nastavitve.prikazZadnjePoloble;
+    lunaZZemlje = nastavitve.lunaZZemlje;
+    zadnjaPolobla = nastavitve.zadnjaPolobla;
     intČas = nastavitve.intČas;
     intPas = nastavitve.intPas;
     intPol = nastavitve.intPol;
@@ -255,4 +307,4 @@ window.addEventListener("message", (event) => {
     decOdst = nastavitve.decOdst;
     prosSence = nastavitve.prosSence;
     polUre = nastavitve.polUre;
-});
+});*/

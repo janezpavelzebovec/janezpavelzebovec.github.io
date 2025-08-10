@@ -18,7 +18,8 @@ let IPolD = 0;
 let IPolŠ = 0;
 let TPol = true;
 
-let prikazZadnjePoloble = true;
+let lunaZZemlje = false;
+let zadnjaPolobla = true;
 
 let intČas = 30000; // 30 sek;
 let intPas = 600000; // 10 min;
@@ -27,11 +28,12 @@ let intPol = 300000; // 5 min;
 let decStop = 2;
 let decOdst = 2;
 
-let prosSence = 0.8; // prosojnost sence
+let prosSence = 0.7; // prosojnost sence
 let polUre = true;
 
 // nenastavljive
 const premerGlob = 0.7; // premer globusa
+const lunaVelikost = (0.85 - premerGlob)/2;
 
 // Izračunani podatki ////////////////////////////////////////
 let podatki = null;
@@ -78,6 +80,13 @@ let zamikLeta = 11*360/dolžinaLeta;
 let letniZasuk = 0;
 
 ////////////////////////////////////////////////////////////////
+
+function vStopinje(rad) {
+    return rad*(180/Math.PI);
+}
+function vRadiane(stop) {
+    return stop*(Math.PI/180);
+}
 
 function leapYear(year) {
     return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
@@ -144,7 +153,7 @@ function narišiGlobus(svg, premer, zamikPoldnevnikov, polnoc, poldne) {
             .style("stroke", "black") // Barva obrobe
             .style("stroke-width", 1.0); // Debelina obrobe
 
-        if (prikazZadnjePoloble) {
+        if (zadnjaPolobla) {
             // Zadnja stran globusa (mreža, morje, celinske oblike)
             projection.clipAngle(0); // Omogoči celotno risanje (brez klipanja)
 
@@ -320,7 +329,7 @@ function narišiGlobus(svg, premer, zamikPoldnevnikov, polnoc, poldne) {
         console.error("Napaka pri nalaganju GeoJSON datoteke:", error);
     });
 }
-function poglejZemljo(letniZasuk, zamikPoldnevnikov, polnoc, poldne, prosSence) {
+function poglejZemljo(letniZasuk, zamikPoldnevnikov, polnoc, poldne) {
     const naZemljo = ustvariSVG("naZemljo");
 
     var layer1 = naZemljo.svg.append('g').attr('id', 'layer1');
@@ -427,9 +436,68 @@ function poglejZemljo(letniZasuk, zamikPoldnevnikov, polnoc, poldne, prosSence) 
     }).catch(function (error) {
         console.error("Napaka pri nalaganju SVG datoteke:", error);
     });
+
+    console.log("mena lune:", luMena);
+    var lunaZasuk = luMena*360;
+        console.log("lunaZasuk:", lunaZasuk);
+    // var željenKot = 90 - (lunaZasuk%90)
+    var željenKot = lunaZasuk % 180;
+    console.log("željen kot <= 180:", željenKot);
+    if (željenKot > 90) {
+        željenKot = 180 - željenKot;
+    }
+
+        console.log("željen kot:", željenKot);
+    var odmikMene = Math.cos(vRadiane(željenKot));
+        console.log("odmikMene: ", odmikMene);
+    let barvaMene;
+    if (0.25 <= luMena && luMena < 0.75) {
+        barvaMene = "white";
+    } else {
+        barvaMene = "black";
+    }
+    const lunaGroup = layer5.append("g")
+        
+    /*const lunaTir = lunaGroup.append("circle")
+        .attr("cx", 0.5*zemlja.premer)
+        .attr("cy", 0.5*zemlja.premer)
+        .attr("r", 0.425*zemlja.premer)
+        .style("fill", "none")
+        .style("stroke", "blue") // Barva obrobe
+        .style("stroke-width", 1.0); // Debelina obrobe*/
+
+    d3.xml("images/polluna.svg").then(function (xml) {
+        const importedSVG = d3.select(xml.documentElement); // Naloženi SVG kot D3 objekt
+        //layer3.node().appendChild(importedSvg.node()); // Dodaj zunanji SVG v obstoječi SVG
+        const gPolluna = lunaGroup.append("g").attr("id", "gPolluna");
+        gPolluna.node().appendChild(importedSVG.node());
+
+        importedSVG
+            .attr("x", 0.5*naZemljo.premer - lunaVelikost*naZemljo.premer/2) // X pozicija
+            .attr("y", 0.5*naZemljo.premer + 0.425*naZemljo.premer - lunaVelikost*naZemljo.premer) // Y pozicija
+            .attr("width", lunaVelikost*naZemljo.premer) // Širina
+            .attr("height", lunaVelikost*naZemljo.premer) // Višina
+            .attr("id", "polluna");
+        if (lunaZZemlje) {
+            gPolluna.append("ellipse")
+                .attr("cx", 0.5*naZemljo.premer)   // Središče elipse (X koordinata)
+                .attr("cy", 0.5*naZemljo.premer + 0.425*naZemljo.premer - lunaVelikost*naZemljo.premer/2)   // Središče elipse (Y koordinata)
+                .attr("rx", lunaVelikost*naZemljo.premer/2)    // Vodoravni polmer
+                .attr("ry", odmikMene * lunaVelikost*naZemljo.premer/2)    // Navpični polmer
+                .style("fill", barvaMene)
+                .style("stroke", "none")  // Barva obrobe
+                .style("stroke-width", 0);
+            gPolluna.attr("transform", `rotate(${90}, ${0.5*naZemljo.premer}, ${0.5*naZemljo.premer + 0.425*naZemljo.premer - lunaVelikost*naZemljo.premer/2})`)
+        } else {
+            gPolluna.attr("transform", `rotate(${lunaZasuk}, ${0.5*naZemljo.premer}, ${0.5*naZemljo.premer + 0.425*naZemljo.premer - lunaVelikost*naZemljo.premer/2})`)
+        }
+        lunaGroup.attr("transform", `rotate(${(lunaZasuk + letniZasuk)*-1}, ${0.5*naZemljo.premer}, ${0.5*naZemljo.premer})`);
+    }).catch(function (error) {
+        console.error("Napaka pri nalaganju SVG datoteke:", error);
+    });
 }
 
-function nariši(IČas, prosSence) {
+function nariši(IČas) {
     /*document.getElementById("prikaz-casa").innerHTML = new Date(IČas);*/
 
     var ure = IČas.getHours();
@@ -447,7 +515,7 @@ function nariši(IČas, prosSence) {
     console.log("dan v letu:", danLeta);
     var danLetaStop = (360/dolžinaLeta) * danLeta;
     letniZasuk = danLetaStop + zamikLeta
-    poglejZemljo(letniZasuk, zamikPoldnevnikov, polnoc, poldne, prosSence);
+    poglejZemljo(letniZasuk, zamikPoldnevnikov, polnoc, poldne);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -458,14 +526,9 @@ function pošlji(podatki) {
     }
 }
 
-function pošljiNastavitve(nastavitve) {
-    if (oknoNastavitve && !oknoNastavitve.closed) {
-        oknoNastavitve.postMessage({ nastavitve }, "*");
-    }
-}
 
 // Uporabi SunCalc za izračun podatkov
-function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas, prosSence) {
+function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas) {
     const časiSon = SunCalc.getTimes(new Date(IČas), IPolŠ, IPolD);
     console.log("časi Sonca:", časiSon);
     soVzhZ = new Date(časiSon.sunrise);
@@ -508,7 +571,7 @@ function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas, prosSence) {
     luMena = osvLun.phase;
     luKot = osvLun.angle;
 
-    nariši(IČas, prosSence);
+    nariši(IČas);
 
     podatki = {
         IČas, IPolŠ, IPolD, IČPas,
@@ -523,6 +586,11 @@ function izračunPodatkov(IČas, IPolŠ, IPolD, IČPas, prosSence) {
     pošlji(podatki);
 };
 
+/*function pošljiNastavitve(nastavitve) {
+    if (oknoNastavitve && !oknoNastavitve.closed) {
+        oknoNastavitve.postMessage({ nastavitve }, "*");
+    }
+}*/
 function odpriNastavitve() {
     const sirina90 = Math.floor(window.innerWidth * 0.9);
     const visina90 = Math.floor(window.innerHeight * 0.9);
@@ -532,15 +600,21 @@ function odpriNastavitve() {
         `width=${sirina90},height=${visina90}`
     );
     
-    nastavitve = {
+    var privzeteNastavitve = {
         IČas, TČas, IČPas, TČPas, IPolD, IPolŠ, TPol,
-        prikazZadnjePoloble,
+        lunaZZemlje, zadnjaPolobla,
         intČas, intPas, intPol, decStop, decOdst,
         prosSence, polUre,
     };
 
-    console.log("Poslane bodo nastavitve", nastavitve);
-    pošljiNastavitve(nastavitve);
+    window.addEventListener("message", function (event) {
+        if (event.data === "ready-nastavitve" && oknoNastavitve) {
+            oknoNastavitve.postMessage({ nastavitve: privzeteNastavitve }, "*");
+        }
+    });
+
+    /*console.log("Poslane bodo nastavitve", nastavitve);
+    pošljiNastavitve(nastavitve);*/
 }
 function odpriPisno() {
     const sirina90 = Math.floor(window.innerWidth * 0.9);
@@ -561,7 +635,10 @@ function sprejmiNastavitve(nastavitve) {
     nastaviIntervale(nastavitve.TČas, nastavitve.TČPas, nastavitve.TPol, nastavitve.intČas, nastavitve.intPas, nastavitve.intPol);
     decStop = nastavitve.decStop ?? decStop;
     decOdst = nastavitve.decOdst ?? decOdst;
-    izračunPodatkov(nastavitve.IČas, nastavitve.IPolŠ, nastavitve.IPolD, nastavitve.IČPas, nastavitve,prosSence);
+    lunaZZemlje = nastavitve.lunaZZemlje ?? lunaZZemlje;
+    zadnjaPolobla = nastavitve.zadnjaPolobla ?? zadnjaPolobla;
+    izračunPodatkov(nastavitve.IČas, nastavitve.IPolŠ, nastavitve.IPolD, nastavitve.IČPas);
+    prosSence = nastavitve.prosSence;
 }
 
 // Pridobi trenutne vrednosti in jih nastavi
@@ -640,4 +717,11 @@ function nastaviIntervale(TČas, TČPas, TPol, novIntČas, novIntPas, novIntPol)
 izračunPodatkov(IČas, IPolŠ, IPolD, IČPas);
 nastaviIntervale(TČas, TČPas, TPol, intČas, intPas, intPol);
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+let resizeTimer;
+window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer); // počisti star časovnik
+    resizeTimer = setTimeout(() => { // pokliči funkcijo po ~250 ms
+        nariši(IČas);
+    }, 250);
+});
+

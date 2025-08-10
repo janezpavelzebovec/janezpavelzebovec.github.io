@@ -340,14 +340,14 @@ You Tube:
 ## Moja knjižna polica
 
 | sklop del (zbirka) | del | naslov dela | podnaslov dela | pisec | prevajalec | ilustrator | jezik |
-| ---| --- | ---| ---| ---| ---| ---|
+| ---| --- | ---| ---| ---| ---| --- | ---|
 | | | Angeli in demoni | | Dan Brown | Nataša Müller | | slo. |
 | Asterix | | Globok prepad | | Albert Uderzo | Kristina Šircelj | | slo. |
 | | | Dogodek v mestu Gogi | Igra v dveh dejanjih | Slavko Grum | | | slo. |
 | Don Camillo in Peppone | 8 | Don Camillo in Peppone | | Giovannino Guareschi | Dean Rajčič | | slo. |
 | | | E. T. Vesoljček | in njegove dogodovščine na Zemlji | William Kotzwinkle | Mitja Meršol |  |slo. |
 | Gospodar Prstanov | 1 | Bratovščina prstana | | John Ronald Reuel Tolkien | Branko Gradišnik | | slo. |
-| Gospodar Prstanov | 2 | Stolpa | | John Ronald Reuel Tolkien | Branko Gradišnik | slo. |
+| Gospodar Prstanov | 2 | Stolpa | | John Ronald Reuel Tolkien | Branko Gradišnik | | slo. |
 | Gospodar Prstanov | 3 | Kraljeva vrnitev | | John Ronald Reuel Tolkien | Branko Gradišnik | | slo. |
 | | | Inferno | | Dan Brown | Nataša Müller | | slo. |
 | | | Izgubljeno mesto | Sodobni mornar v napeti akciji na odprtem morju | Clive Cussler | Nina Drstvenšek | | slo. |
