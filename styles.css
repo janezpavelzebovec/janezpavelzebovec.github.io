@@ -69,7 +69,7 @@ body{
 }
 
 main {
-    max-width: var(--vsebina);
+    /*max-width: var(--vsebina);*/
     height: 100%;
 	margin:auto;
     padding: 1em;
@@ -139,6 +139,12 @@ img {
 svg {
     color: var(--bOspredje);
 }
+.obrnljiva {
+    filter: invert(100%);
+}
+.light .obrnljiva {
+    filter: invert(0);
+}
 
 table {
     border-collapse: collapse;
@@ -179,6 +185,11 @@ button {
     font-size: small;
     text-align: center;
     padding-bottom: 1em;
+}
+
+#kazalo {
+    max-width: var(--vsebina);
+    margin:auto;
 }
 
 #stikaloTeme {

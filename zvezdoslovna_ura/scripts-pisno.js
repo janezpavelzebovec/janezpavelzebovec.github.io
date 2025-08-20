@@ -1,5 +1,5 @@
-/*const dneviTedna = ["nedelja","ponedeljek","torek","sreda","četrtek","petek","sobota"];
-const meseci = ["prosinec", "svečan", "sušec", "mali traven", "veliki traven", "rožnik", "mali srpan", "veliki srpan", "kimavec", "vinotok", "listopad", "gruden"];*/
+const dneviTedna = ["ned.","pon.","tor.","sre.","čet.","pet.","sob."];
+const meseci = ["prosinec", "svečan", "sušec", "mali traven", "veliki traven", "rožnik", "mali srpan", "veliki srpan", "kimavec", "vinotok", "listopad", "gruden"];
 
 let decStop = 2;
 let decOdst = 2;
@@ -33,8 +33,16 @@ function izpišiPodatke(podatki) {
         console.log("dec. mesta:", decStop, decOdst);
         decStop = podatki.decStop;
         decOdst = podatki.decOdst;
+        
+        IČas = podatki.IČas;
+        let časLeto = IČas.getFullYear();
+        let časMesec = String(IČas.getMonth() + 1).padStart(2, "0");
+        let časDan = String(IČas.getDate()).padStart(2, "0");
+        let časDanTedna = dneviTedna[IČas.getDay()];
+        let časUre = String(IČas.getHours()).padStart(2, "0");
+        let časMin = String(IČas.getMinutes()).padStart(2, "0");
+        izpiši("časP", `${časLeto}-${časMesec}-${časDan}, ${časDanTedna}, ${časUre}:${časMin}`);
 
-        izpiši("časP", podatki.IČas);
         izpiši("čPasP", podatki.IČPas);
         izpiši("polP", `${parseFloat(podatki.IPolD).toFixed(4)}, ${parseFloat(podatki.IPolŠ).toFixed(4)}`);
         
@@ -62,15 +70,15 @@ function izpišiPodatke(podatki) {
         let poMrakKNiz = fmtČas(podatki.poMrakK, podatki.IČPas);
         let nočZNiz = fmtČas(podatki.nočZ, podatki.IČPas);
         
-        izpiši("zvZoraP", `${nočKNiz} – ${poZoraZNiz}`);
-        izpiši("poZoraP", `${poZoraZNiz} – ${zoraZNiz}`);
-        izpiši("zoraP", `${zoraZNiz} – ${soVzhZNiz}`);
-        izpiši("soVzhodP", `${soVzhZNiz} – ${poZoraZNiz}`);
+        izpiši("zvZoraP", `${nočKNiz}–${poZoraZNiz}`);
+        izpiši("poZoraP", `${poZoraZNiz}–${zoraZNiz}`);
+        izpiši("zoraP", `${zoraZNiz}–${soVzhZNiz}`);
+        izpiši("soVzhodP", `${soVzhZNiz}–${poZoraZNiz}`);
         izpiši("poldneP", poldneNiz);
-        izpiši("soZahodP", `${soZahZNiz} – ${soZahKNiz}`);
-        izpiši("mrakP", `${soZahKNiz} – ${mrakKNiz}`);
-        izpiši("poMrakP", `${mrakKNiz} – ${poMrakKNiz}`);
-        izpiši("zvMrakP", `${poMrakKNiz} – ${nočZNiz}`);
+        izpiši("soZahodP", `${soZahZNiz}–${soZahKNiz}`);
+        izpiši("mrakP", `${soZahKNiz}–${mrakKNiz}`);
+        izpiši("poMrakP", `${mrakKNiz}–${poMrakKNiz}`);
+        izpiši("zvMrakP", `${poMrakKNiz}–${nočZNiz}`);
 
         izpiši("visSonP", fmtStopinje(podatki.soViš, decStop));
         izpiši("aziSonP", fmtStopinje(podatki.soAzi, decStop));
@@ -84,9 +92,14 @@ function izpišiPodatke(podatki) {
 
         let luVzhNiz = fmtČas(podatki.luVzh, podatki.IČPas);
         let luZahNiz = fmtČas(podatki.luZah, podatki.IČPas);
-        let luNajvisje = fmtČas((podatki.luVzh.getTime() + podatki.luZah.getTime()) / 2, podatki.IČPas);
+   
+        if (podatki.luVzh < podatki.luZah) {
+            document.getElementById("vidLunP").innerHTML = `${luVzhNiz}–${luZahNiz}`;
+        } else if (podatki.luZah < podatki.luVzh) {
+            document.getElementById("vidLunP").innerHTML = `PD–${luZahNiz}, ${luVzhNiz}–ND`;
+        };
 
-        document.getElementById("vidLunP").innerHTML = `${luVzhNiz} – ${luZahNiz}`;
+        let luNajvisje = fmtČas((podatki.luVzh.getTime() + podatki.luZah.getTime()) / 2, podatki.IČPas);
         document.getElementById("najLunP").innerHTML = luNajvisje;
     }
 }

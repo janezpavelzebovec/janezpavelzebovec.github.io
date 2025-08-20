@@ -137,7 +137,7 @@ button {
 }*/
 
 
-#nastavitve, #pisno {
+#nebo, #nastavitve, #pisno {
     color: var(--bPoudarek);
     font-size: 1em;
     background-color: initial;

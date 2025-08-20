@@ -5,8 +5,11 @@ let TČPas = true;
 let IPolŠ = 0;
 let IPolD = 0;
 let TPol = true;
-let lunaZZemlje = false;
+let lunaPrikaz;
+let lunaZZemlje;
 let zadnjaPolobla;
+let polDneNočPrikaz;
+let polPrikaz;
 let intČas;
     let pIntČas;
 let intPas;
@@ -19,20 +22,24 @@ let decOdst;
     let pDecOdst;
 let prosSence;
     let pProsSence;
-let polUre;
+let proj;
 
 const vnosČas = document.getElementById("vnosČas");
 const vnosČPas = document.getElementById("vnosČPas");
 const vnosPolŠ = document.getElementById("vnosPolŠ");
 const vnosPolD = document.getElementById("vnosPolD");
+const vnosLunaPrikaz = document.getElementById("vnosLunaPrikaz");
 const vnosLunaZZemlje = document.getElementById("vnosLunaZZemlje");
 const vnosZadnjaPolobla = document.getElementById("vnosZadnjaPolobla");
+const vnosPolDneNočPrikaz = document.getElementById("vnosPolDneNočPrikaz");
+const vnosPolPrikaz = document.getElementById("vnosPolPrikaz");
 const vnosIntČas = document.getElementById("vnosIntČas");
 const vnosIntPas = document.getElementById("vnosIntPas");
 const vnosIntPol = document.getElementById("vnosIntPol");
 const vnosDecStop = document.getElementById("vnosDecStop");
 const vnosDecOdst = document.getElementById("vnosDecOdst");
 const vnosProsSence = document.getElementById("vnosProsSence");
+const vnosProj = document.getElementById("vnosProj");
 
 // Ustvari seznam podprtih časovnih pasov
 const ČPasPodprti = Intl.supportedValuesOf("timeZone"); // Pridobi vse podprte časovne pasove (timezones supported)
@@ -41,6 +48,94 @@ const ČPasPodprti = Intl.supportedValuesOf("timeZone"); // Pridobi vse podprte 
     option.value = čp;
     option.textContent = čp;
     vnosČPas.appendChild(option);
+});
+
+/*const projekcije = [
+    {value: "airy",        label: "airy"},
+    {value: "aitoff",        label: "aitoff"},
+    {value: "mercator",      label: "mercator"},
+    {value: "mollweide",     label: "mollweide"},
+    {value: "orthographic",  label: "ortographic"},
+    {value: "stereographic", label: "stereographic"},
+    {value: "equirectangular", label: "equirectangular"}
+];*/
+const projekcije = [
+  { value: "airy", label: "Airy’s Minimum Error (hemi)" },
+  { value: "aitoff", label: "Aitoff" },
+  { value: "armadillo", label: "Armadillo" },
+  { value: "august", label: "August" },
+  { value: "azimuthalEqualArea", label: "Azimuthal Equal Area (hemi)" },
+  { value: "azimuthalEquidistant", label: "Azimuthal Equidistant (hemi)" },
+  { value: "baker", label: "Baker Dinomic" },
+  { value: "berghaus", label: "Berghaus Star (hemi)" },
+  { value: "boggs", label: "Boggs Eumorphic" },
+  { value: "bonne", label: "Bonne" },
+  { value: "bromley", label: "Bromley" },
+  { value: "cassini", label: "Cassini (hemi)" },
+  { value: "collignon", label: "Collignon" },
+  { value: "craig", label: "Craig Retroazimuthal (hemi)" },
+  { value: "craster", label: "Craster Parabolic" },
+  { value: "cylindricalEqualArea", label: "Cylindrical Equal Area" },
+  { value: "cylindricalStereographic", label: "Cylindrical Stereographic" },
+  { value: "eckert1", label: "Eckert I" },
+  { value: "eckert2", label: "Eckert II" },
+  { value: "eckert3", label: "Eckert III" },
+  { value: "eckert4", label: "Eckert IV" },
+  { value: "eckert5", label: "Eckert V" },
+  { value: "eckert6", label: "Eckert VI" },
+  { value: "eisenlohr", label: "Eisenlohr" },
+  { value: "equirectangular", label: "Equirectangular" },
+  { value: "fahey", label: "Fahey" },
+  { value: "mtFlatPolarParabolic", label: "Flat Polar Parabolic" },
+  { value: "mtFlatPolarQuartic", label: "Flat Polar Quartic" },
+  { value: "mtFlatPolarSinusoidal", label: "Flat Polar Sinusoidal" },
+  { value: "foucaut", label: "Foucaut" },
+  { value: "ginzburg4", label: "Ginzburg IV" },
+  { value: "ginzburg5", label: "Ginzburg V" },
+  { value: "ginzburg6", label: "Ginzburg VI" },
+  { value: "ginzburg8", label: "Ginzburg VIII" },
+  { value: "ginzburg9", label: "Ginzburg IX" },
+  { value: "homolosine", label: "Goode Homolosine" },
+  { value: "hammer", label: "Hammer" },
+  { value: "hatano", label: "Hatano" },
+  { value: "healpix", label: "HEALPix" },
+  { value: "hill", label: "Hill Eucyclic" },
+  { value: "kavrayskiy7", label: "Kavrayskiy VII" },
+  { value: "lagrange", label: "Lagrange" },
+  { value: "larrivee", label: "l'Arrivée" },
+  { value: "laskowski", label: "Laskowski Tri-Optimal" },
+  { value: "loximuthal", label: "Loximuthal" },
+  { value: "mercator", label: "Mercator" },
+  { value: "miller", label: "Miller" },
+  { value: "mollweide", label: "Mollweide" },
+  { value: "naturalEarth", label: "Natural Earth" },
+  { value: "nellHammer", label: "Nell Hammer" },
+  { value: "orthographic", label: "Orthographic (hemi)" },
+  { value: "patterson", label: "Patterson Cylindrical" },
+  { value: "polyconic", label: "Polyconic" },
+  { value: "quincuncial", label: "Quincuncial" },
+  { value: "rectangularPolyconic", label: "Rectangular Polyconic" },
+  { value: "robinson", label: "Robinson" },
+  { value: "sinusoidal", label: "Sinusoidal" },
+  { value: "stereographic", label: "Stereographic (hemi)" },
+  { value: "times", label: "Times" },
+  { value: "twoPointEquidistant", label: "Two-Point Equidistant (hemi)" },
+  { value: "vanDerGrinten", label: "van Der Grinten" },
+  { value: "vanDerGrinten2", label: "van Der Grinten II" },
+  { value: "vanDerGrinten3", label: "van Der Grinten III" },
+  { value: "vanDerGrinten4", label: "van Der Grinten IV" },
+  { value: "wagner4", label: "Wagner IV" },
+  { value: "wagner6", label: "Wagner VI" },
+  { value: "wagner7", label: "Wagner VII" },
+  { value: "wiechel", label: "Wiechel (hemi)" },
+  { value: "winkel3", label: "Winkel Tripel" }
+];
+
+projekcije.forEach(p => {
+    const opt = document.createElement("option");
+    opt.value = p.value;
+    opt.textContent = p.label;
+    vnosProj.appendChild(opt);
 });
 
 // Funkcije //////////////////////////////////////////////////////////////////////////////////////////////
@@ -55,16 +150,20 @@ function poslji() {
         IPolŠ: Number(vnosPolŠ.value),
         IPolD: Number(vnosPolD.value),
         TPol,
+        lunaPrikaz: Boolean(vnosLunaPrikaz.checked),
         lunaZZemlje: Boolean(vnosLunaZZemlje.checked),
         zadnjaPolobla: Boolean(vnosZadnjaPolobla.checked),
+        polDneNočPrikaz: Boolean(vnosPolDneNočPrikaz.checked),
+        polPrikaz: Boolean(vnosPolPrikaz.checked),
         intČas: Number(vnosIntČas.value) * 1000,
         intPas: Number(vnosIntPas.value) * 1000,
         intPol: Number(vnosIntPol.value) * 1000,
         decStop: Number(vnosDecStop.value),
         decOdst: Number(vnosDecOdst.value),
         prosSence: Number(vnosProsSence.value) / 100,
-        polUre,
+        proj: vnosProj.value,
     };
+    console.log("Poslane bodo nastavitve:", nastavitve);
 
     window.opener?.sprejmiNastavitve?.(nastavitve);
 }
@@ -192,7 +291,7 @@ vnosProsSence.value = 80;*/
 
 // Dejanja //////////////////////////////////////////////////////////////////////////////////////////////
 
-// Izbira vrednosti
+// Izbira Celestial.reproject({projection:<see above>})vrednosti
 vnosČas.addEventListener('input', () => {
   TČas = false;
   poslji();
@@ -210,6 +309,10 @@ vnosPolD.addEventListener('input', () => {
   poslji();
 });
 
+vnosLunaPrikaz.addEventListener('input', () => {
+    lunaPrikaz = vnosLunaPrikaz.checked;
+    poslji();
+});
 vnosLunaZZemlje.addEventListener('input', () => {
     lunaZZemlje = vnosLunaZZemlje.checked;
     poslji();
@@ -218,6 +321,15 @@ vnosZadnjaPolobla.addEventListener('input', () => {
     zadnjaPolobla = vnosZadnjaPolobla.checked;
     poslji();
 });
+vnosPolDneNočPrikaz.addEventListener('input', () => {
+    polDneNočPrikaz = vnosPolDneNočPrikaz.checked;
+    poslji();
+});
+vnosPolPrikaz.addEventListener('input', () => {
+    polPrikaz = vnosPolPrikaz.checked;
+    poslji();
+});
+
 vnosIntČas.addEventListener('input', () => {
   poslji();
 });
@@ -235,6 +347,10 @@ vnosDecOdst.addEventListener('input', () => {
   poslji();
 });
 vnosProsSence.addEventListener('input', () => {
+  poslji();
+});
+
+vnosProj.addEventListener('input', () => {
   poslji();
 });
 
@@ -272,8 +388,11 @@ window.addEventListener("message", function (event) {
         IPolD = vnosPolD.value = nastavitve.IPolD;
         IPolŠ = vnosPolŠ.value = nastavitve.IPolŠ;
         TPol = nastavitve.TPol;
+        lunaPrikaz = vnosLunaPrikaz.checked = Boolean(nastavitve.lunaPrikaz);
         lunaZZemlje = vnosLunaZZemlje.checked = Boolean(nastavitve.lunaZZemlje);
         zadnjaPolobla = vnosZadnjaPolobla.checked = Boolean(nastavitve.zadnjaPolobla);
+        polDneNočPrikaz = vnosPolDneNočPrikaz.checked = Boolean(nastavitve.polDneNočPrikaz);
+        polPrikaz = vnosPolPrikaz.checked = Boolean(nastavitve.polPrikaz);
         intČas = nastavitve.intČas;
             vnosIntČas.value = pIntČas = nastavitve.intČas / 1000;
         intPas = nastavitve.intPas;
@@ -284,7 +403,7 @@ window.addEventListener("message", function (event) {
         decOdst = vnosDecOdst.value = pDecOdst = nastavitve.decOdst;
         prosSence = pProsSence = nastavitve.prosSence;
             vnosProsSence.value = nastavitve.prosSence * 100;
-        polUre = nastavitve.polUre;
+        proj = vnosProj.value = nastavitve.proj;
     }
 });
 /*window.addEventListener("message", (event) => {

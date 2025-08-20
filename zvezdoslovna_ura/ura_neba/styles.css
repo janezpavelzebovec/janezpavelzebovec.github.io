@@ -1,0 +1,52 @@
+:root {
+    color-scheme: dark;
+    --bOzadje: #121212;
+    --bOspredje: #eee;
+    --bPoudarek: rgba(67, 166, 255, 1);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bOzadje);
+    color: var(--bOspredje);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#zapri {
+    color: var(--bPoudarek);
+    font-size: 1em;
+    padding-top: 0.5em;
+    background-color: initial;
+    border: none;
+    cursor: pointer;
+}
+
+canvas {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#celestial-map {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;       /* centrira horizontalno */
+    padding: 0;
+    display: flex;        /* omogoči centriranje */
+    align-items: center;  /* vertikalno centriranje */
+    justify-content: center; /* horizontalno centriranje */
+    min-width: 0 !important; /* prekrije staro nastavitev 720px */
+    overflow: hidden;
+}
+
+#celestial-map canvas {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* ohrani razmerje stranic */
+}
+
+#celestial-zoomin, #celestial-zoomout {
+    display: none;
+}
