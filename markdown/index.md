@@ -9,7 +9,7 @@ To je moja spletna stran, namenjena mojim zanimanjem in potrebam.
 
 - [Zvezdoslovna ura](/zvezdoslovna_ura/) - predstavitev vesolja kot ure;
 - [Visoka slovenščina](/visoka_slovenscina) - kakšna bi slovenščina morala biti oz. je lahko;
-- [Glasopisnica](/glasopisnica) - moja pisava <small>*(v delu - začasno nedostopno)*</small>;
+- [Glasopisnica](/glasopisnica/) - moja pisava <small>*(v delu - začasno nedostopno)*</small>;
 - [Moj rodovnik](/moj_rodovnik) - moje družinsko drevo, na katerem delava z bratrancem <small>(s poudarkom na prednikih; za živeče osebe in umrle v zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh ostalih podatkov)</small>;
 - [Programje](/programje) - predstavitev miselnosti in seznam dobrih računalniških orodij;
 - [Moji seznami](/seznami) - priporočila, predvsem spletne povezave ...

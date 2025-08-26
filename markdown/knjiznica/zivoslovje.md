@@ -72,8 +72,9 @@ author: Janez Pavel Žebovec
 
 ## Zunanje povezave in viri
 
-- [Tree of Life Web Project (ToL)](http://www.tolweb.org/);
-- [One Zoom - Life](https://www.onezoom.org/life/);
-- [ITOL - Interactive Tree of Life](https://itol.embl.de/itol.cgi);
-- [YouTube - XVIVO Scientific Animation: The Inner Life of the Cell Animation](https://youtu.be/wJyUtbn0O5Y);
+- [Tree of Life Web Project (ToL)](http://www.tolweb.org/)
+- [One Zoom - Life](https://www.onezoom.org/life/)
+- [ITOL - Interactive Tree of Life](https://itol.embl.de/itol.cgi)
+- [YouTube - XVIVO Scientific Animation: The Inner Life of the Cell Animation](https://youtu.be/wJyUtbn0O5Y)
+- [Wikispecies](https://species.wikimedia.org/wiki/Main_Page)
 

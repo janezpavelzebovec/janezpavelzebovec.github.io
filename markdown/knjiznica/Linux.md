@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2025-07-26
+date: 2025-08-26
 description:
 keywords: programska oprema, Linux, programi
 author: Janez Pavel Žebovec
@@ -373,6 +373,36 @@ Prenos posnetkov z YouTuba pa tudi številnih drugih spletnih mest
         - `--postprocessor-args "-ss 01:57:00 -t 03:05:06"` - obreži šele po prenosu z `ffmpeg`
         - `--force-keyframes-at-cuts "*01:57:00-03:05:06"` - zagotovi bolj natančno rezanje med sličicami (deluje le z nekaterimi oblikami datotek)
 
+### JOSM
+
+Urejevalnik zemljevida [Open Street Map](https://www.openstreetmap.org/) (OSM)
+
+#### JOSM za *Open Historical Map*
+
+JOSM lahko uporabljaš tudi za urejanje [Open Historical Map](https://www.openhistoricalmap.org/) (OHM), za to pa moraš spremeniti nastavitve tako, da program uporablja ustrezen strežnik za prenos podatkov in nalaganje sprememb.
+
+Če JOSMa ne nameravaš uporabljati zgolj za urejanje OHM, je priporočeno ustvariti ločeno datoteko z nastavitvami, da ti ni treba nastavitev spreminjati vsakič, ko urejaš drug zemljevid (OSM/OHM). V nasprotnem primeru preskoči ta korak.
+
+- Nastavitvena datoteka se običajno nahaja na naslovu `~/.config/JOSM/preferences.xml`. Ustvari dvojnik teh nastavitev (npr. `~/.config/JOHM/preferences.xml`).
+- Zaženi JOSM tako, da uporablja ta dvojnik nastavitev: `JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM" josm` (ob zagonu programu poveš, katere nastavitve naj uporabi).
+
+Urejanje nastavitev za uporabo OHM (te nastavitve se bodo shranile v nastavitveno datoteko, s katero s program odprl):
+
+- V *Nastavitvah/Preferences* odkljukaj *"Use the default OSM server URL"* in pod *OSM Server URL* vnesi <https://www.openhistoricalmap.org/api>. Pritisni *Validate*. Tako nastaviš ustrezen strežnik.
+- Prijavi se s svojim računom za OHM (pred tem se odstrani svoj račun za OSM, če si se pred tem prijavil z njim).
+- Poljubno nastavi še *Overpass server* na <https://overpass-api.openhistoricalmap.org/api/>.
+- Poljubno nastavi vzdevek za zagon JOHMa v terminalu: na konec datoteke `~/.bashrc`dodaj: `alias johm='JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM" josm'` (shrani in posodobi rabo te datoteke z `source ~/.bashrc`). Zdaj lahko program odpreš z ukazom `johm`.
+    - Lahko še ustvariš skripto `~/.local/bin/johm` s sledečo vsebino:
+        ```bash
+        #!/bin/bash
+        JAVA_OPTS="-Djosm.pref=$HOME/.config/JOHM" josm "$@"
+        ```
+
+Uporabni vtičniki za "JOHM":
+
+- [ohm-date-filter](https://github.com/OpenHistoricalMap/ohm-date-filter/): zasenči elemente, ki niso znotraj izbranega obdobja
+- [PicLayer](https://github.com/JOSM/PicLayer): prikaz slike zemljevida in nje umeščanje v prostor ([na *Wiki*ju](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/PicLayer))
+
 ---
 
 ## Zunanje povezave in viri
@@ -381,3 +411,4 @@ Prenos posnetkov z YouTuba pa tudi številnih drugih spletnih mest
 - [VIM Cheat Sheet](https://vim.rtorr.com/) - bližnjice v VIM-u;
 - [Codeberg Docs - Your First Repository](https://docs.codeberg.org/getting-started/first-repository/) - Git pri Codebergu, med drugim;
 - [Software Galaxies](https://anvaka.github.io/pm/#/?_k=hl5p8n) (zemljevid odvisnosti med posameznimi paketi glede naupravitelja paketov)
+- [Wiki OpenStreetMap – OpenHistoricalMap/JOSM](https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/JOSM)
