@@ -1,6 +1,6 @@
 ---
 title: Seznamii
-date: 2025-08-08
+date: 2025-08-28
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -187,6 +187,7 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 You Tube:
 
 - [History for GRANITE](https://www.youtube.com/@HistoryforGRANITE) - egipčanske piramide
+- [Lost in Time](https://www.youtube.com/@LostInTimeVids)
 - [Manuel Bravo](https://www.youtube.com/@ManuelBravo/videos) - poudarek na cerkveni, rimski in egipčanski *arhitekturi*
 
 #### Zgodovinski zemljevidi
@@ -334,8 +335,9 @@ You Tube:
 
 - [larsandersen23](https://www.youtube.com/@larsandersen23) - lokostrelstvo
 - [Mover's Odyssey](https://www.youtube.com/@moversodyssey) - strokovne razlage, napotki, skice
-- [Sondre Berg](https://www.youtube.com/@Sondre_Berg) - t.i. "ulična vadba" (*kalistenika*, ang. *calisthenics*)
+- [Sondre Berg](https://www.youtube.com/@Sondre_Berg) - "ulična vadba" (*kalistenika*)
 - [The Bioneer](https://www.youtube.com/@TheBioneer) - uporabna moč
+- [Yellow Dude | Gravgear](https://www.youtube.com/@yellowdude_co) - "ulična vadba" (*kalistenika*)
 
 ## Moja knjižna polica
 
