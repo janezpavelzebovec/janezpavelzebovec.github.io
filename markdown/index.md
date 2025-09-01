@@ -22,7 +22,8 @@ Spletno mesto je dostopno tudi:
 - [preko GitHuba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) pod domeno [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
 - [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) pod domeno [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/).
 
-Spletno mesto je dostopno v obliki *Markdown* pod naslovom *https://janezpavelzebovec.net/markdown/*[stran]. Na dnu vsake strani je tudi povezava do pripadajoče strani v Markdownu.
+Spletno mesto je dostopno v obliki *Markdown* pod naslovom *https://janezpavelzebovec.net/markdown/*[stran].
+Na dnu vsake strani je tudi povezava do pripadajoče strani v Markdownu.
 
 ---
 
