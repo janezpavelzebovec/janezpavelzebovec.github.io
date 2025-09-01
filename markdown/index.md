@@ -1,18 +1,19 @@
 ---
 title: Janez Pavel Žebovec
-date: 2025-08-18
+date: 2025-09-01
 description: Moja osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran
 ---
 
-To je moja spletna stran, namenjena mojim zanimanjem in potrebam.
+To je moja spletna stran, namenjena mojim zanimanjem in potrebam, ter obiskovalcem, ki jih slednje zanima.
 
-- [Zvezdoslovna ura](/zvezdoslovna_ura/) - predstavitev vesolja kot ure;
-- [Visoka slovenščina](/visoka_slovenscina) - kakšna bi slovenščina morala biti oz. je lahko;
-- [Glasopisnica](/glasopisnica/) - moja pisava <small>*(v delu - začasno nedostopno)*</small>;
-- [Moj rodovnik](/moj_rodovnik) - moje družinsko drevo, na katerem delava z bratrancem <small>(s poudarkom na prednikih; za živeče osebe in umrle v zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh ostalih podatkov)</small>;
-- [Programje](/programje) - predstavitev miselnosti in seznam dobrih računalniških orodij;
-- [Moji seznami](/seznami) - priporočila, predvsem spletne povezave ...
+- [Zvezdoslovna ura](/zvezdoslovna_ura/) - predstavitev vesolja kot ure
+- [Visoka slovenščina](/visoka_slovenscina) - kakšna bi slovenščina morala biti oz. je lahko
+- [Glasopisnica](/glasopisnica/) - moja pisava <small>*(v delu - začasno nedostopno)*</small>
+- [Moj rodovnik](/moj_rodovnik) - moje družinsko drevo, na katerem delava z bratrancem <small>(s poudarkom na prednikih; za živeče osebe in umrle v zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh ostalih podatkov)</small>
+- [Programje](/programje) - predstavitev miselnosti in seznam dobrih računalniških orodij
+- [Moji seznami](/seznami) - priporočila, predvsem spletne povezave
+- [Moja polica](/moja_polica) – seznam mojih knjig
 
 Tu je tudi [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih načeloma lahko preberete tudi drugje.
 
@@ -20,6 +21,8 @@ Spletno mesto je dostopno tudi:
 
 - [preko GitHuba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) pod domeno [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
 - [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) pod domeno [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/).
+
+Spletno mesto je dostopno v obliki *Markdown* pod naslovom *https://janezpavelzebovec.net/markdown/*[stran]. Na dnu vsake strani je tudi povezava do pripadajoče strani v Markdownu.
 
 ---
 
@@ -35,7 +38,7 @@ Nekaj mest spleta, kjer sem bolj dejaven:
 
 ---
 
-Nekaj dodatnih seznamov (poleg [Seznamov](/seznami)):
+Nekaj dodatnih seznamov (poleg [Seznamov](/seznami)) na zunanjih spletnih mestih:
 
 - [W3Schools](https://www.w3profile.com/JanezPavelZebovec), kjer se deloma spoznavam s programiranjem;
 - [prebrane knjige](https://www.goodreads.com/review/list/148184173-janez-pavel-ebovec?shelf=readi) - seveda tu niso navedene vse;
