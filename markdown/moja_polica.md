@@ -8,6 +8,7 @@ author: Janez Pavel Žebovec
 
 ## Moja knjižna polica
 
+</div class="content">
 | sklop del (zbirka) | del | naslov dela | podnaslov dela | pisec | prevajalec | ilustrator | jezik | leto izdaje (natisnjena) | leto izdaje izvirnika |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | | | Angeli in demoni | | Dan Brown | Nataša Müller | | slo. | 2005 | 2000 |
@@ -47,3 +48,4 @@ author: Janez Pavel Žebovec
 | | | Vstopi v Sveto pismo | | | Milena Turnšek | | slo. |
 | | | Youcat v slovenščini | Katekizem katoliške Cerkve za mlade | | Anton Štrukelj | | slo. |
 | Zgodbe iz Narnija | 2 | Konj in njegov deček | | Clive Staples Lewis | Jakob Emeršič | | slo. |
+<div class="content">
