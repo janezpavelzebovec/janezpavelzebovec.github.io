@@ -128,7 +128,7 @@ Za zgodovinske zemljevide glej tudi razdelek [Zgodovinski zemljevidi](#Zgodovins
 - [Geopedia](https://www.geopedia.world)
     - [Geopedia - GURS - Prostorski podatki](https://www.geopedia.world/#T276_x1614235.3818404947_y5798283.654628612_s11_b2852)
 - [Mapillary](https://www.mapillary.com/app) - ulični posnetki
-- [Open Street Map](https://www.openstreetmap.org/) - prosto dostopen in urejevan zemljevid (glej tudi [Zemljevidi, ki temeljijo na OSM](#Zemljevidi_ki_temeljijo_na_Open_Street_Map)
+- [Open Street Map](https://www.openstreetmap.org/) - prosto dostopen in urejevan zemljevid (glej tudi [Zemljevidi, ki temeljijo na OSM](#Zemljevidi_ki_temeljijo_na_Open_Street_Map))
 - [Windy](https://www.windy.com) - vremenski zemljevidi
 
 Druge zbirke zemljepisnih podatkov:
@@ -136,14 +136,14 @@ Druge zbirke zemljepisnih podatkov:
 - [Kočevski rog - lokacije](https://www.google.com/maps/d/u/0/viewer?mid=12iNVSpmmL8bA2B3qieBjdweF2t8&femb=1&ll=45.666989008977595%2C15.028848286105609&z=14)
 - [Župnije v nadškofiji Ljubljana](https://www.google.com/maps/d/viewer?mid=17_9jBIaZns8lH4PIv7GnIJ8DnoU&hl=sl&ll=46.066899841485196%2C14.912383489615394&z=10)
 
-##### Zemljevidi, ki temeljijo na [Open Street Map](https://www.openstreetmap.org/)
+##### Zemljevidi, ki temeljijo na [OSM](https://www.openstreetmap.org/)
 
 - [BrezAvta.si](https://brezavta.si/) - iskanje povezav javnega prometa (avtobus, kolo, avto, skuter)
 - [Cycle Travel](https://cycle.travel/map) - kolesarski zemljevid, načrtovanje kolesarjenja tudi glede na površino
 - [CyclOSM](https://www.cyclosm.org/) - kolesarski zemljevid
 - [F4 Map](https://www.f4map.com/) - 3R prikaz, podrobni 3R prikazi stavb,
     - [F4 Map - Demo](https://demo.f4map.com/)
-- [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodnhttps://www.youtube.com/@Glumpuddleiške poti
+- [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti
 - [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid
 - [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim
 - [Open Topo Map](https://opentopomap.org/) - *topografski* zemljevid
@@ -170,7 +170,7 @@ Prenos podatkov OSM-ja:
 - [Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp) - povezave do raznih državnih zemljevidov
 - [Javni pregledovalnik grafičnih podatkov MKGP](https://rkg.gov.si/GERK/WebViewer)
 - [Javni vpogled](https://ipi.eprostor.gov.si/jv/) - najboljši državni zemljevid? (zemljišča, stavbe, državna napeljava, ceste, železnice, zgodovinske satelitske slike, pregledni zemljevidi, ...)
-- [Promet.si](https://promet.si/) – DARS-ov prometni zemljevid Slovenije, ki ima tudi svojo *aplikacijo* (s trenutnimi zastoji, zaprtimi cestami, hitrostmi, ...); podatke črpa predvsem od GURS-a (zgradbe, ceste, ...) in OSM-ja (točke zanimivosti/storitve, podjetja, ...), pa tudi še nekaterih vir;
+- [Promet.si](https://promet.si/) – DARS-ov prometni zemljevid, ki ima tudi svojo *aplikacijo* (s trenutnimi zastoji, zaprtimi cestami, hitrostmi, ...); podatke črpa predvsem od GURS-a (zgradbe, ceste, ...) in OSM-ja (točke zanimivosti/storitve, podjetja, ...), pa tudi še nekaterih vir;
 - [Testni 3D vpogledovalnik](https://clss.si/) - ogledovalnik trorazsežnostnega prikaza podatkov lidarja
 
 ### Zgodovina
