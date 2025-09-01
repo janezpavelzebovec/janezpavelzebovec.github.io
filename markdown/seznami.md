@@ -1,6 +1,6 @@
 ---
 title: Seznamii
-date: 2025-08-28
+date: 2025-09-01
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -119,7 +119,7 @@ You Tube:
 
 #### Zemljevidi
 
-Za zgodovinske zemljevide glej razdelek [Zgodovinski zemljevidi](#Zgodovinski_zemljevidi).
+Za zgodovinske zemljevide glej tudi razdelek [Zgodovinski zemljevidi](#Zgodovinski_zemljevidi).
 
 - [David Rumsey Map Collection](https://www.davidrumsey.com/) - predvsem zgodovinski zemljevidi
 - [Flurnamen](https://maps.flurnamen.at/) - ledinska imena
@@ -170,6 +170,7 @@ Prenos podatkov OSM-ja:
 - [Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp) - povezave do raznih državnih zemljevidov
 - [Javni pregledovalnik grafičnih podatkov MKGP](https://rkg.gov.si/GERK/WebViewer)
 - [Javni vpogled](https://ipi.eprostor.gov.si/jv/) - najboljši državni zemljevid? (zemljišča, stavbe, državna napeljava, ceste, železnice, zgodovinske satelitske slike, pregledni zemljevidi, ...)
+- [Promet.si](https://promet.si/) – DARS-ov prometni zemljevid Slovenije, ki ima tudi svojo *aplikacijo* (s trenutnimi zastoji, zaprtimi cestami, hitrostmi, ...); podatke črpa predvsem od GURS-a (zgradbe, ceste, ...) in OSM-ja (točke zanimivosti/storitve, podjetja, ...), pa tudi še nekaterih vir;
 - [Testni 3D vpogledovalnik](https://clss.si/) - ogledovalnik trorazsežnostnega prikaza podatkov lidarja
 
 ### Zgodovina
