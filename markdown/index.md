@@ -1,4 +1,4 @@
----
+ pri projektih---
 title: Janez Pavel Žebovec
 date: 2025-09-01
 description: Moja osebna spletna stran

@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2025-08-26
+date: 2025-09-12
 description:
 keywords: programska oprema, Linux, programi
 author: Janez Pavel Žebovec
@@ -58,9 +58,22 @@ Datoteke:
 
 ## Zunanje naprave
 
+- `lsblk` - izpiše vse priklopljene naprave (tudi npr. ključke USB)
 - `udisksctl`
     - `mount`/`unmount` - namesti/odmesti zunanji pogon (npr. `udisksctl mount -b /dev/sda1` namesti pogon);
 - `aft-mtp-mount [pot_do_dlančnika]` - namesti dlančnik
+
+### Ustvarjanje zagonskega ključka
+(ang. *bootable USB drive*)
+
+Zagonski ključek je običajno potreben pri nameščanju operacijskega sistema.
+
+- Prenesi operacijski sistem. Privzeli bomo, da se prenešena datoteka ISO nahaja pod *pot/do/datoteke.iso*.
+- Z uporabo `lsblk` ugotovi naziv ključka. Tu bom privzel, da se imenuje *sdb* (najpogostejše za USB), oz. se nahaja na /dev/sdb (pogosto pa se imenuje tudi *sda*).
+- `sudo umount /dev/sdb*` – odklopi USB
+- `sudo dd if=pot/do/datoteke.iso of=/dev/sdb` Dodatne možnosti (*parametri*) ukaza:
+    - `status='progres` – sproti kaže napredek pri zapisovanju operacijskega sistema an ključek
+    - `oflag=sync`
 
 ## Omrežna povezava
 

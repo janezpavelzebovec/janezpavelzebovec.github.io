@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-09-01
+date: 2025-09-02
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -279,7 +279,15 @@ You Tube:
 - [SK Bushcraft](https://www.youtube.com/@skbushcraft) - gradnja zavetij v naravi
 - [Stuff Made Here](https://www.youtube.com/@StuffMadeHere) - naprave
 
-### Programiranje
+### Racunalnistvo
+
+- [AI 2027](https://ai-2027.com/)
+
+You Tube:
+
+- [AI In Context](https://www.youtube.com/@AI_In_Context)
+
+#### Programiranje
 
 Glej tudi strani [Programje](programje) in [Linux](Linux).
 
@@ -299,7 +307,7 @@ You Tube:
 - [RootJunky](https://www.youtube.com/@Rootjunkycom/videos) - vlamljanje v Android
 - [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP)
 
-#### Spletne strani
+##### Spletne strani
 
 - [CSS-Tricks](https://css-tricks.com/)
     - [Dark Mode in CSS Guide](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)
