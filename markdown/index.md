@@ -1,6 +1,6 @@
- pri projektih---
+---
 title: Janez Pavel Žebovec
-date: 2025-09-01
+date: 2025-09-12
 description: Moja osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran
 ---
@@ -27,13 +27,16 @@ Na dnu vsake strani je tudi povezava do pripadajoče strani v Markdownu.
 
 ---
 
-elektronski poštni naslov: [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net) (nekdanji naslov: [janezpavel.zebovec@gmail.com](mailto:janezpavel.zebovec@gmail.com))
+Stiki:
+
+- elektronski poštni naslov: [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net) (nekdanji naslov: [janezpavel.zebovec@gmail.com](mailto:janezpavel.zebovec@gmail.com))
+- [Telegram](telegram.org): [@janezpavelzebovec](https://t.me/janezpavelzebovec)
 
 Nekaj mest spleta, kjer sem bolj dejaven:
 
 - [GitHub](https://github.com/janezpavelzebovec), kjer je nekaj mojih programčkov in ta spletna stran;
-- [Open Street Map](https://www.openstreetmap.org/user/Janez%20Pavel%20%C5%BDebovec), kjer prispevam k najboljšemu prostodostopnemu zemljevidu;
-- [Open Historical Map](https://www.openhistoricalmap.org/user/Janez%20Pavel%20%C5%BDebovec), ki je kakor izgorajomenjeni Open Street Map, vendar za zgodovinsko zemljepisje;
+- [Open Street Map](https://www.openstreetmap.org/user/JanezPavelZebovec), kjer prispevam k najboljšemu prostodostopnemu zemljevidu;
+- [Open Historical Map](https://www.openhistoricalmap.org/user/JanezPavelZebovec), ki je kakor izgorajomenjeni Open Street Map, vendar za zgodovinsko zemljepisje;
 - [Geneanet](https://gw.geneanet.org/japaze1_w), [WikiTree](https://www.wikitree.com/wiki/%C5%BDebovec-1) in [Geni](https://www.geni.com/people/Janez-Pavel-%C5%BDebovec), kjer popisujem predvsem častivredne korenine svojih prednikov in njihovih potomcev (glej tudi [Moj rodovnik](./mojrodovnik));
 - [Wikipedija](https://sl.wikipedia.org/wiki/Uporabnik:H%C3%AErnamae_P%C3%AEn_Iono%C3%ABryn), kjer prispevam k člankom, ki se mi zdijo pomembnejši ali zanimivejši (vendar nisem več dosti dejaven);
 

@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-09-02
+date: 2025-09-13
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -167,11 +167,16 @@ Prenos podatkov OSM-ja:
 - [Geoportal AKOS](https://gis.akos-rs.si/) - zemljevid z omrežji (vodovodno, električno, poštno, želežniško, *mobilno*, *radijsko* ...), zemljiški zemljevid
 - [GisKD pregledovalnik](https://geohub.gov.si/ghapp/giskd/) - zemljevid kulturne dediščine, arheoloških najdišč
 - [INSPIRE](https://eprostor.gov.si/imps) - brskalnik po državnih zemljevidih
-- [Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp) - povezave do raznih državnih zemljevidov
 - [Javni pregledovalnik grafičnih podatkov MKGP](https://rkg.gov.si/GERK/WebViewer)
-- [Javni vpogled](https://ipi.eprostor.gov.si/jv/) - najboljši državni zemljevid? (zemljišča, stavbe, državna napeljava, ceste, železnice, zgodovinske satelitske slike, pregledni zemljevidi, ...)
 - [Promet.si](https://promet.si/) – DARS-ov prometni zemljevid, ki ima tudi svojo *aplikacijo* (s trenutnimi zastoji, zaprtimi cestami, hitrostmi, ...); podatke črpa predvsem od GURS-a (zgradbe, ceste, ...) in OSM-ja (točke zanimivosti/storitve, podjetja, ...), pa tudi še nekaterih vir;
+- [Portal Prostor](https://www.e-prostor.gov.si/)
+    - [Portal Prostor – Javni vpogled](https://ipi.eprostor.gov.si/jv/) - najboljši državni zemljevid? (zemljišča, stavbe, državna napeljava, ceste, železnice, zgodovinske satelitske slike, pregledni zemljevidi, ...)
 - [Testni 3D vpogledovalnik](https://clss.si/) - ogledovalnik trorazsežnostnega prikaza podatkov lidarja
+
+Državni podatki za prenos:
+
+- [Portal Prostor – Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp/)
+
 
 ### Zgodovina
 
@@ -188,6 +193,7 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 You Tube:
 
 - [History for GRANITE](https://www.youtube.com/@HistoryforGRANITE) - egipčanske piramide
+- [IMPERIAL](https://www.youtube.com/@IMPERIALYT)
 - [Lost in Time](https://www.youtube.com/@LostInTimeVids)
 - [Manuel Bravo](https://www.youtube.com/@ManuelBravo/videos) - poudarek na cerkveni, rimski in egipčanski *arhitekturi*
 
