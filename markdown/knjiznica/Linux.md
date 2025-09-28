@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2025-09-12
+date: 2025-09-17
 description:
 keywords: programska oprema, Linux, programi
 author: Janez Pavel Žebovec
@@ -37,9 +37,30 @@ author: Janez Pavel Žebovec
 
 ### Nameščanje programov iz vira
 
-- `make` - izvozi program, oz. prebere datoteko `makefile`
-    - `sudo make install` - izvozi in naloži program
-        - `sudo make clean install` - naloži program in odstrani namestitvene datoteke (datoteke *build*)
+- `make` - izvozi program, oz. prebere datoteko *makefile*
+- `sudo make install` - izvozi in naloži program
+        - `sudo make clean install` - naloži program in odstrani namestitvene datoteke (datoteke *build*) – običajno je priporočljivo uporabiti tega
+
+#### Suckless
+
+Priporočljivo je imeti vse programe nameščene iz vira v ločeni mapi, npr. ~/viri/.
+
+`git clone` prenese v trenutno mapo, zato se pred prenašanjem premakni v ~/viri/ (ali kamorkoli, kjer hočeš to imeti shranjeno).
+
+1. `git clone https://git.suckless.org/program` – prenos programa (za natančen naslov poglej na spletno stran)
+2. `cd ~/viri/program` – pojdi v mapo programa, ki si ga prenesel in ga hočeš namestiti
+3. `sudo make clean install` – namesti program, kot opisano [zgoraj](#Nameščanje iz vira)
+
+Nastavitvena datoteka programa je config.h, config.def.h pa je varnostna kopija te nastavitvene datoteke.
+
+##### Dodatki (*Patches*)
+
+1. Sledi povezavi na spletni strani "dodatka" in shrani datoteko dodatek.diff v ~/viri/program/patches/dodatek.diff
+2. Prestavi se v mapo programa, ki mu "dodajaš" zadeve: `cd ~viri/program/`
+3. Dodaj zadevo programu: `patch -i patches/dodatek.diff`
+4. Ponovno namesti program z dodatkom: `sudo make clean install`
+
+Odstranitev dodatka: ponovno zaženi ukaz za dodajanje, saj te nato vpraša, če hočeš dodatek odstraniti.
 
 ## Mape in datoteke v Linuxu
 
@@ -59,6 +80,8 @@ Datoteke:
 ## Zunanje naprave
 
 - `lsblk` - izpiše vse priklopljene naprave (tudi npr. ključke USB)
+- `xrandr` – izpiše ime zaslona in njegove možne povečave
+    - `xrandr --output "ime-zaslona" --mode širinaxvišina` – izberi povečavo za določen zaslon
 - `udisksctl`
     - `mount`/`unmount` - namesti/odmesti zunanji pogon (npr. `udisksctl mount -b /dev/sda1` namesti pogon);
 - `aft-mtp-mount [pot_do_dlančnika]` - namesti dlančnik
@@ -256,6 +279,7 @@ Ukazi:
 
 Za tipko *Mod1* se običajno uporablja/nastavi tipka *Super*.
 
+- **Ctrl+Shift+Q** – zaustavi DWM
 - **F11** -  celozaslonski način
 - **Mod1+Shift+c** = *close* -  zapri trenutno okno
 - **Mod1+Enter** -  nastavi prvo okno pod glavnim kot glavno
@@ -308,6 +332,7 @@ Ukazi:
 - `:s/niz/zamenjava` -  zamenja niz v trenutni vrsticii
     - `%s/niz/zamenjava/g` -  zamenja niz v vseh vrsticah
     - `:%s/old/new/gc` - za vsako zamenjavo vpraša
+- `:N` – skoči v vrstico številka N
 
 ### LF
 
@@ -425,3 +450,5 @@ Uporabni vtičniki za "JOHM":
 - [Codeberg Docs - Your First Repository](https://docs.codeberg.org/getting-started/first-repository/) - Git pri Codebergu, med drugim;
 - [Software Galaxies](https://anvaka.github.io/pm/#/?_k=hl5p8n) (zemljevid odvisnosti med posameznimi paketi glede naupravitelja paketov)
 - [Wiki OpenStreetMap – OpenHistoricalMap/JOSM](https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/JOSM)
+
+- [YT – Mashed – COMPLETE Beginners guide to Suckless (Dwm, Dmenu, ST)](https://www.youtube.com/watch?v=6MaTMuFVGck)

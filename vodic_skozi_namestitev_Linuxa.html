@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="sl">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Vodič skozi namestitev Linuxa</title>
+    <meta name="description" content="Namestitev Linux Debiana, kot ga
+uporabljam jaz sam"/>
+    <meta name="keywords" content="Linux, namestitev operacijskega
+sistema"/>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icon.png"/>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #121212;
+            color: #eee;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+            width: 100%;
+            margin: auto;
+            padding: 1em;
+            padding-top: 0;
+            font-size: 1.1em;
+        }
+        .content {
+            max-width: var(--vsebina);
+            margin:auto;
+        }
+        header {
+            min-height: 4em;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #domov {
+            width: 3em;
+            aspect-ratio: 1 / 1;
+            display: block;
+            padding: 0.5em;
+            border-radius: 50%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/styles.css"/>
+    <script src="/scripts.js" defer></script>
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="ac7911af-065e-4a16-8a66-255ee9f70989"></script> 
+
+</head>
+<body>
+    <header>
+    <a href="/" aria-label="Domov"><?xml version="1.0" encoding="UTF-8"?>
+        <svg
+            id="domov"
+            alt="JPŽ"
+            viewBox="0 0 200.29 184.95"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="m100.16 175.85-9.097-9.097-6.06 6.059-6.059 6.06-3.037-3.039-3.038-3.038 18.16-18.16h-50.008l26.54-26.546 26.54-26.545-1.536-1.497-1.536-1.496-26.527 26.523-26.527 26.522-1.482-1.516c-3.775-3.864-5.546-5.696-7.092-7.336-16.688-17.704-26.211-31.284-28.698-40.924-1.21-4.691-0.863-10.232 0.99-15.79 1.699-5.097 4.565-10.096 8.84-15.423 3.371-4.2 7.977-8.867 12.227-12.39 7.033-5.829 14.255-9.477 20.998-10.607 4.438-0.744 8.947-0.517 13.093 0.659 11.322 3.209 25.58 12.759 42.257 28.304 0.478 0.444 0.891 0.809 0.92 0.81 0.028 0 7.213-7.173 15.966-15.94l15.916-15.94-109.05-0.035 15.156-15.156h53.013l-7.578-7.578-7.577-7.579 7.577-7.578 7.578-7.578 9.097 9.097 9.098 9.097 6.059-6.059 6.06-6.059 6.074 6.076-18.16 18.16h50.009l-26.54 26.545-26.54 26.544 1.535 1.495 1.536 1.495 26.528-26.52 26.529-26.52 1.601 1.635c6.117 6.25 9.362 9.693 13.283 14.098 13.381 15.03 20.977 26.846 22.66 35.248 0.485 2.426 0.556 5.402 0.196 8.275-0.764 6.103-3.472 12.418-8.059 18.795-3.846 5.346-9.652 11.442-15.036 15.786-3.795 3.062-6.921 5.088-10.666 6.912-4.634 2.257-9.022 3.433-13.549 3.632-5.12 0.225-9.614-0.74-15.578-3.344-9.785-4.273-21.875-12.95-35.046-25.152a173.77 173.77 0 0 0-1.525-1.4l-0.33-0.295-15.969 15.97-15.968 15.968h109.1l-15.156 15.156-53.064 0.035 15.13 15.2-7.54 7.539-7.54 7.54zm-32.637-65.878 17.354-17.355-0.496-0.461c-8.602-7.999-17.792-15.358-25.3-20.257-3.967-2.589-6.638-4.163-9.11-5.37-3.704-1.807-7.106-2.842-10.411-3.167-1.054-0.104-3.329-0.086-4.339 0.034-3.886 0.46-7.383 2.025-10.692 4.783-0.834 0.695-2.495 2.348-3.246 3.23-2.748 3.226-4.266 6.306-4.772 9.681-0.15 1-0.15 2.947-2e-3 4.006 0.422 3 1.703 6.037 3.815 9.045 0.582 0.828 2.105 2.79 3.522 4.534 5.168 6.363 11.203 13.127 18.443 20.67 2.292 2.389 7.783 7.982 7.835 7.982 0.023 0 7.854-7.81 17.399-17.355zm97.251 11.61c4.751-0.494 8.898-2.598 12.753-6.47 6.556-6.586 8.053-13.493 4.506-20.802-0.88-1.813-1.786-3.207-3.58-5.508-5.066-6.5-12.265-14.668-20.39-23.131-1.632-1.702-7.416-7.615-7.739-7.913l-0.177-0.165-17.357 17.357c-9.546 9.546-17.35 17.376-17.34 17.4 0.028 0.069 2.703 2.513 4.557 4.161 9.126 8.119 17.582 14.485 25.825 19.443 5.566 3.349 10.079 5.089 14.502 5.591 0.956 0.109 3.55 0.13 4.44 0.038z" fill="currentColor" stroke-width=".066768"/>
+        </svg></a>
+
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-09-17">2025-09-17</time></p>
+    </header>
+    <main>
+        <div class="content">
+            <ul>
+            <li><a
+            href="#Vodic_skozi_namestitev_Linuxa_in_njegova_prilagoditev">Vodič
+            skozi namestitev Linuxa in njegova prilagoditev</a></li>
+            </ul>
+            <h1
+            id="Vodic_skozi_namestitev_Linuxa_in_njegova_prilagoditev">Vodič
+            skozi namestitev Linuxa in njegova prilagoditev</h1>
+            <p>To je različica Linux Debiana (s prilagoditvami), ki ga
+            sam uporabljam.</p>
+            <ul>
+            <li><p>Prenos DWM-ja (upravitelj oken):
+            <code>git clone https://git.suckless.org/dwm</code> (glej <a
+            href="https://dwm.suckless.org/">Suckless – DWM</a>)</p>
+            <ul>
+            <li><p>Odpri zagonsko datoteko:
+            <code>vim ~/.xinitrc</code></p></li>
+            <li><p>Na konec datoteke daj <code>exec dwm</code> (oz. s
+            tem zamenjal ukaz za zagon drugega upravitelja oken, če že
+            obstaja), kar ob zagonu sistema zažene DWM</p></li>
+            <li><p>Prilagajanje videza:</p>
+            <div class="sourceCode" id="cb1"><pre
+            class="sourceCode c"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* appearance */</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">unsigned</span> <span class="dt">int</span> borderpx  <span class="op">=</span> <span class="dv">1</span><span class="op">;</span>        <span class="co">/* border pixel of windows */</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">unsigned</span> <span class="dt">int</span> snap      <span class="op">=</span> <span class="dv">32</span><span class="op">;</span>       <span class="co">/* snap pixel */</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">int</span> showbar            <span class="op">=</span> <span class="dv">1</span><span class="op">;</span>        <span class="co">/* 0 means no bar */</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">int</span> topbar             <span class="op">=</span> <span class="dv">1</span><span class="op">;</span>        <span class="co">/* 0 means bottom bar */</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>fonts<span class="op">[]</span>          <span class="op">=</span> <span class="op">{</span> <span class="st">&quot;monospace:size=10&quot;</span> <span class="op">};</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">char</span> dmenufont<span class="op">[]</span>       <span class="op">=</span> <span class="st">&quot;monospace:size=10&quot;</span><span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">char</span> col_gray1<span class="op">[]</span>       <span class="op">=</span> <span class="st">&quot;#222222&quot;</span><span class="op">;</span> <span class="co">//barva ozadja številk</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">char</span> col_gray2<span class="op">[]</span>       <span class="op">=</span> <span class="st">&quot;#444444&quot;</span><span class="op">;</span> <span class="co">//barva obrob neizbranih oken</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">char</span> col_gray3<span class="op">[]</span>       <span class="op">=</span> <span class="st">&quot;#bbbbbb&quot;</span><span class="op">;</span> <span class="co">//barva številk</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">char</span> col_gray4<span class="op">[]</span>       <span class="op">=</span> <span class="st">&quot;#eeeeee&quot;</span><span class="op">;</span> <span class="co">//barva označene številke</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">char</span> col_rob<span class="op">[]</span>         <span class="op">=</span> <span class="st">&quot;#fca503&quot;</span><span class="op">;</span> <span class="co">//barva robu osrediščenega okna (dodano)</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">char</span> col_cyan<span class="op">[]</span>        <span class="op">=</span> <span class="st">&quot;#005577&quot;</span><span class="op">;</span> <span class="co">//barva zgornje pasice (modra)</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span>colors<span class="op">[][</span><span class="dv">3</span><span class="op">]</span>      <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">/*               fg         bg         border   */</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">[</span>SchemeNorm<span class="op">]</span> <span class="op">=</span> <span class="op">{</span> col_gray3<span class="op">,</span> col_gray1<span class="op">,</span> col_gray2 <span class="op">},</span> <span class="co">//barve neoznačene številke/okna: barva-stevilk, ozadje-stevilk, obroba neizbranih oken</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="op">[</span>SchemeSel<span class="op">]</span>  <span class="op">=</span> <span class="op">{</span> col_gray4<span class="op">,</span> col_cyan<span class="op">,</span>  col_rob  <span class="op">},</span> <span class="co">//barve označene številke/okna: barva-stevilke, ozadje-stevilke, obroba izbranega okna</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code></pre></div>
+            <ul>
+            <li>Za barvo obrobe osrediščenega okna med začetne
+            opredelitve barv dodaj
+            <code>static const char col_border[] = "#fca503";</code> in
+            spremeni
+            <code>[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },</code>v
+            <code>[SchemeSel]  = { col_gray4, col_cyan,  col_border },</code></li>
+            <li>Za spremembo barve zgornje pasice spremeni vrstico
+            <code>static const char col_cyan[] = "#005577";</code></li>
+            <li>Da DWM ne upošteva namige programov o velikosti oken (da
+            ni nepotrebnih praznih robov, zato včasih zlomi prikaz v teh
+            oknih, kar običajno ne predstavlja težave): spremeni
+            <code>static const int resizehints = 1;</code>v
+            <code>static const int resizehints = 0;</code></li>
+            <li>Bližnjice:
+            <ul>
+            <li>Spremeni <code>#define MODKEY Mod1Mask</code> v
+            <code>#define MODKEY Mod4Mask</code></li>
+            <li>Spremeni
+            <code>{ MODKEY,  XK_p,  spawn,  {.v = dmenucmd } },</code> v
+            <code>{ MODKEY,  XK_a,  spawn,  {.v = dmenucmd } },</code>,
+            da odpiraš menu z bolj priročno bližnjico</li>
+            <li>Dodaj
+            <code>{ MODKEY,  XK_Tab,  focusstack,  {.i = +1 } },</code></li>
+            <li>Dodaj
+            <code>{ MODKEY|ShiftMask,  XK_Tab,  focusstack,  {.i = -1 } },</code></li>
+            <li>Spremeni <code>{ MODKEY,  XK_Tab,  view,  {0} },</code>
+            v <code>{ MODKEY,  XK_v,  view,  {0} },</code></li>
+            </ul></li>
+            </ul></li>
+            </ul></li>
+            <li><p>V <strong>~/.xinitrc</strong> pred zagonom
+            upravitelka oken dodaj
+            <code>xrandr --output "ime-zaslona" --mode širinaxvišina &amp;</code>,
+            da se ob zagonu nastavi želena povečava zaslona (če ti
+            privzeta ni povšeči).</p></li>
+            <li><p>Prenos ST-ja (termina):
+            <code>git clone https://git.suckless.org/st</code> (glej <a
+            href="https://st.suckless.org/">Suckless – ST</a>)</p></li>
+            <li><p>Prenos DMenu-ja (menu za DWM):
+            <code>git clone https://git.suckless.org/dmenu</code> (glej
+            <a href="https://tools.suckless.org/dmenu/">Suckless –
+            DMenu</a>)</p></li>
+            <li><p>Prenos Brave-a (brskalnik):
+            <code>sudo apt install brave-browser</code></p></li>
+            <li><p>Prenos LF-ja (raziskovalca datotek):
+            <code>sudo apt install lf</code>?</p></li>
+            <li><p>Prenos SLock-a (zakljenjen zaslon):
+            <code>https://tools.suckless.org/dmenu/</code> (glej <a
+            href="https://tools.suckless.org/slock/">Suckless –
+            SLock</a>)</p></li>
+            </ul>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <button id="stikaloTeme">Preklopi barvni način strani</button>
+        <br><a id="linkMD" href="/markdown/vodic_skozi_namestitev_Linuxa.md">Oglej si stran v Markdownu</a>
+    </footer>
+    </script><script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1FD0790Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TR1FD0790Y');
+    </script>
+</body>
+</html>
