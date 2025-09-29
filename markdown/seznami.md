@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-09-13
+date: 2025-09-28
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -123,6 +123,7 @@ Za zgodovinske zemljevide glej tudi razdelek [Zgodovinski zemljevidi](#Zgodovins
 
 - [David Rumsey Map Collection](https://www.davidrumsey.com/) - predvsem zgodovinski zemljevidi
 - [Flurnamen](https://maps.flurnamen.at/) - ledinska imena
+- [GeoFabrik Tools](https://tools.geofabrik.de/)
 - [Geology](https://geology.com/world)
 - [GeoNames](https://www.geonames.org/v3/)
 - [Geopedia](https://www.geopedia.world)
@@ -143,6 +144,7 @@ Druge zbirke zemljepisnih podatkov:
 - [CyclOSM](https://www.cyclosm.org/) - kolesarski zemljevid
 - [F4 Map](https://www.f4map.com/) - 3R prikaz, podrobni 3R prikazi stavb,
     - [F4 Map - Demo](https://demo.f4map.com/)
+- [Geofabrik Tools – OSM Inspector](https://tools.geofabrik.de/osmi/) – izlušči ceste, naslove, vodovja, javni promet, ... in težave pri teh elementih 
 - [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti
 - [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid
 - [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim
@@ -168,9 +170,11 @@ Prenos podatkov OSM-ja:
 - [GisKD pregledovalnik](https://geohub.gov.si/ghapp/giskd/) - zemljevid kulturne dediščine, arheoloških najdišč
 - [INSPIRE](https://eprostor.gov.si/imps) - brskalnik po državnih zemljevidih
 - [Javni pregledovalnik grafičnih podatkov MKGP](https://rkg.gov.si/GERK/WebViewer)
+- [NAP – Nacionalna točka dostopa](https://www.nap.si/) - dostop do prometnih podatkov in podatkov o polnilnih mestih za el. vozila (Ministrstvo za infrastrukturo)
 - [Promet.si](https://promet.si/) – DARS-ov prometni zemljevid, ki ima tudi svojo *aplikacijo* (s trenutnimi zastoji, zaprtimi cestami, hitrostmi, ...); podatke črpa predvsem od GURS-a (zgradbe, ceste, ...) in OSM-ja (točke zanimivosti/storitve, podjetja, ...), pa tudi še nekaterih vir;
 - [Portal Prostor](https://www.e-prostor.gov.si/)
     - [Portal Prostor – Javni vpogled](https://ipi.eprostor.gov.si/jv/) - najboljši državni zemljevid? (zemljišča, stavbe, državna napeljava, ceste, železnice, zgodovinske satelitske slike, pregledni zemljevidi, ...)
+- [SiMO](https://www.simo.si/) – načrtovalnik potovanj, uporablja tudi podatke [NAP](https://www.nap.si/) (Ministrstvo za infrastrukturo, Nacionalni center za upravljanje prometa)
 - [Testni 3D vpogledovalnik](https://clss.si/) - ogledovalnik trorazsežnostnega prikaza podatkov lidarja
 
 Državni podatki za prenos:
