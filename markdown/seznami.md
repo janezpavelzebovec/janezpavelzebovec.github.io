@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-09-28
+date: 2025-10-05
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -152,7 +152,8 @@ Druge zbirke zemljepisnih podatkov:
 - [OSM Buildings](https://osmbuildings.org/) - trorazsežnostni prikaz zgradb
 - [Overpass Turbo](https://overpass-turbo.eu/) - iskalnik značilnosti
 - [ShadeMap](https://shademap.app/) - zemljevid senc po svetu v poljubnem trenutku
-- [TagInfo](https://taginfo.openstreetmap.org/) - statistika oznak v Open Street Mapu¸
+- [TagInfo](https://taginfo.openstreetmap.org/) - statistika oznak v Open Street Mapu
+- [Točen.si](https://tocen.si/#/) – točni časi prihodov avtobusov z njihovimi trenutnimi položaji
 - [Velo Planner](https://veloplanner.com/routes) - kolesarske poti in načrtovanje kolesarjenja
 - [Waymarked Trails](https://waymarkedtrails.org/) - označeno poti,
     - [Waymarked Trails - Cycling](https://cycling.waymarkedtrails.org/) - kolesarske poti
