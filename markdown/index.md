@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2025-09-12
+date: 2025-10-05
 description: Moja osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran
 ---
@@ -31,6 +31,15 @@ Stiki:
 
 - elektronski poštni naslov: [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net) (nekdanji naslov: [janezpavel.zebovec@gmail.com](mailto:janezpavel.zebovec@gmail.com))
 - [Telegram](telegram.org): [@janezpavelzebovec](https://t.me/janezpavelzebovec)
+- [Matrix](https://matrix.to/#/@janezpavelzebovec:matrix.org) ([Element](https://element.io/))
+- [Discord](https://discord.com/): [janezpavel](https://discordapp.com/users/789883011084058666)
+
+Še nekateri stiki, ki le obstajajo, a se ne uporabljajo:
+
+- [Facebook](https://www.facebook.com/janezpavel.zebovec)
+- [Instagram](https://www.instagram.com/janezpavelzebovec/)
+- [Twitter](https://x.com/JanezPavelZ)
+- [Reddit](https://www.reddit.com/user/Ionoeryn/)
 
 Nekaj mest spleta, kjer sem bolj dejaven:
 
@@ -39,6 +48,7 @@ Nekaj mest spleta, kjer sem bolj dejaven:
 - [Open Historical Map](https://www.openhistoricalmap.org/user/JanezPavelZebovec), ki je kakor izgorajomenjeni Open Street Map, vendar za zgodovinsko zemljepisje;
 - [Geneanet](https://gw.geneanet.org/japaze1_w), [WikiTree](https://www.wikitree.com/wiki/%C5%BDebovec-1) in [Geni](https://www.geni.com/people/Janez-Pavel-%C5%BDebovec), kjer popisujem predvsem častivredne korenine svojih prednikov in njihovih potomcev (glej tudi [Moj rodovnik](./mojrodovnik));
 - [Wikipedija](https://sl.wikipedia.org/wiki/Uporabnik:H%C3%AErnamae_P%C3%AEn_Iono%C3%ABryn), kjer prispevam k člankom, ki se mi zdijo pomembnejši ali zanimivejši (vendar nisem več dosti dejaven);
+- [TranslateWiki](https://translatewiki.net/wiki/User:JanezPavelZebovec), kjer sem naredil nekaj prevodov na OSM in OHM
 
 ---
 
