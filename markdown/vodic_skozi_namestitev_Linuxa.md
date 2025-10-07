@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2025-09-17
+date: 2025-10-06
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -52,4 +52,44 @@ To je različica Linux Debiana (s prilagoditvami), ki ga sam uporabljam.
 
 - Prenos SLock-a (zakljenjen zaslon): `https://tools.suckless.org/dmenu/` (glej [Suckless – SLock](https://tools.suckless.org/slock/))
 
+# Novo
+
+Ne dodaj gesla za *'root'*a.
+
+- `sudo apt update` – posodobi seznam programske opreme
+- `sudo apt install network-manager` – namesti upravitelja omrežne povezave
+- `sudo systemctl start NetworkManager`
+- `sudo systemctl enable NetworkManager`
+    - `nmcli device wifi connect ime_omrežja password geslo` – poveži se na brezžično omrežje (izbirno)
+- `sudo apt install xorg` – namesti strežnik X
+- `sudo apt install xinit` – ustvari zagonsko datoteko, s klicem katere zaženeš *grafično okolje* (DWM) in vsebuje vse, kar naj se izvede ob zagonu *sistema*.
+- `echo "exec dwm" > ~/.xinitrc` – doda vrstico `exec dwm`v zagonsko datoteko **~/.xinitrc**
+- `sudo apt install make` – namesti program **make** za izgradnjo programov (pretvorbo v binarni jezik) iz vira (npr. Sucklessovih)
+- `sudo apt install build-essential` – namesti potrebne pakete za izgradnjo z ukazom `make`
+- `mkdir viri` – ustvari mapo za programe, nameščene iz vira (npr. Sucklessovi)
+- `cd viri` – premakni se v novoustvarjeno mapo **viri**, kamor boš prenesel programe iz vira
+- `sudo apt install git` – namesti program **git** za prenos datotek (npr. programov) s spletnih strani
+- `sudo apt install libx11-dev libxft-dev libxinerama-dev`, oz. izbirno `sudo apt install libx11-dev libxft-dev libxinerama-dev libxrandr-dev libxcb-res-dev`, če boš uporabljal tudi patche
+    - **libx11-dev** za osnovno sporazumevanje s strežnikom X
+    - **libxft-dev** za prikaz pisav
+    - **libxinerama-dev** za podporo več zaslonov
+    - **libxrandr-dev** za dinamično spreminjanje ločljivosti in orientacije zaslona
+    - **libxcb-res-dev** omogoča dostop do določenih sistemskih podatkov za npr. statusno vrstico
+- `git clone https://git.suckless.org/dmenu` – prenesi DWM (*Dynamic Windows Manager* – upravitelj oken) s Sucklessove spletne strani
+- `git clone https://git.suckless.org/dmenu` – prenese DMenu (*Dynamic Menu* – nekakšna statusna vrstica)
+- `git clone https://git.suckless.org/st` – prenese ST (*Simple terminal*)
+- Za vsak od teh treh programov:
+    - `cd ime_programa` – premakni se v mapo programa (dwm/dmenu/st)
+    - `sudo make clean install` – izgradi program
+    - `cd ..` – premakni se nazaj v nadmapo
+- `startx` – zažene strežnik X, oz. DWM
+- `sudo dpkg-reconfigure keyboard-configuration` – zaženi programček za nastavitev tipkovnice
+    - izberi *model* svoje tipkovnice
+    - izberi običajno slovensko zipkovnico "*Slovenian*"
+    - izberi *Default* (privzeto) tipko za **AltGr**
+    - za *Compose key* pa *Right Alt (AltGr)* ali pa nič, če ne rabiš
+- `sudo systemctl restart keyboard-setup.service` – znova zaženeš sistem za uporabo tipkovnice
+- nastavi slovensko tipkovnico v terminalu s `setxkbmap si`in to dodaj v ~./xinitrc
+- `sudo apt install curl` – namesti program **curl**
+- `curl -fsS https://dl.brave.com/install.sh | sh` – namesti spletni brskalnik Brave
 
