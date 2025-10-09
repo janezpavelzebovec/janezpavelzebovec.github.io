@@ -8,7 +8,39 @@ author: Janez Pavel Žebovec
 
 # Vodič skozi namestitev Linuxa
 
-Med namestitvijo ne dodaj gesla za *'root'*a, če hočeš biti edini uporabnik, ki ima tudi pravice *root*a.
+Tukaj so navedeni koraki, po katerih prideš do skoraj enakega okolja kot je moje.
+
+## Namestitev operacijskega sistema
+
+Izberi **Graphical install** ali **Install**
+
+- Jezik nastavi na angleščino (čeprav je na voljo tudi v slovenščini), ker je tako mnogo lažje razhroščevati morebitne napake
+- Državo lahko izbereš svojo (*Slovenia*, predvidevam)
+- Tipkovnico izbereš tako kot jo imaš (*Slovenian*, predvidevam)
+- Izberi *hostname*, kar je ime tvoje naprave (kot bo vidno v omrežju in tebi)
+- Ime domene (*Domain name*) lahko pustiš prazno, če ne vzpostavljaš strežnika
+- Geslo skrbnika (*Root password*) pusti prazno, če hočeš biti edini uporabnik in s pravicami skrbnika (*root*a)
+- Izberi svoje uporabniško ime (*Full name for the new user*)
+- Izberi geslo (tega novoustvarjenega uporabnika, ki bo imel skrbniške pravice, če nisi predhodno izbral gesla skrbnika)
+- *Partitioning method* izberi *Guided – use entire disk*, če hočeš imeti na napravi le Linux (ostale podatke na disku bo izbrisalo!)
+- Pazljivo izberi pravi disk, na katerega boš namestil Linux (da ne izbereš recimo zagonskega ključka, ker bo potem Linux namestilo na ključek)
+- Izberi privzeto *Partitioning scheme*, to je *All files in one partition*
+- Potrdi
+- Zdaj bo namestilo *operacijski sistem*, ter preneslo in maestilo vse potrebne *pakete/programe*
+- Zavrni *Scan extra installation media*, če nočeš namestiti Linuxa na dodatno napravo
+- Izberi svojo državo za *archive mirror*
+- Izbereš lahko privzet strežnik (*archive mirror*) *deb.debian.org* za prejem posodobitev, razen če veš, kjer ti je najbljižje, oz. je zate najhitrejši
+- *HTTP proxy* pusti prazno
+- Prikaže se seznam razpoložljivih uporabniških vmesnikov (GNOME, Xfce, GNOME Flashback, KDE Plasma, Cinnamon, MATE, LXDE, LXQt) oz. spletni/SSH strežnik. Odizberi privzeto izbran uporabniški vmesnik GNOME in *Debian desktop environment*, ker bomo v nadaljevanju namestili DWM (če pa tega nočeš, se naše poti tu razidejo in je nadaljevanje Vodiča skoraj brezpredmetno) in pusti izbrano *standard system utilities*
+- Če si izbral katerega izmed uporabniških vmesnikov, se bo zdaj prenesel
+- *Install the GRUB boot loader* potrdi (to je zagonski *meni*)
+- Izberi napravo, kamor želiš namestiti GRUB (to je skoraj zagotovo disk naprave, na katero trenutno nameščaš Linux) – običajno **/dev/sda** ali **/dev/vda**
+- Namestitev Linuxa je končana, nadaljuj na ponovni zagon
+
+- Ob ponovnem zagonu v zagonskem *meniju* izberi **Debian GNU/Linux**
+- Zdaj si v Linuxu brez uporabniškega vmesnika (ker ga moramo še namestiti, poleg še nekaterih drugih zadev)
+- Prijavi se, kot zahtevano, z uporabniškim imenom in geslom, ki si ju nastavil
+## Namestitev osnovnih/sistemskih orodij
 
 - `sudo apt update` – posodobi seznam programske opreme
 - `sudo apt install network-manager` – namesti upravitelja omrežne povezave
@@ -16,7 +48,7 @@ Med namestitvijo ne dodaj gesla za *'root'*a, če hočeš biti edini uporabnik, 
 - `sudo systemctl enable NetworkManager`
     - `nmcli device wifi connect ime_omrežja password geslo` – poveži se na brezžično omrežje (izbirno)
 - `sudo apt install xorg` – namesti strežnik X
-- `sudo apt install xinit` – ustvari zagonsko datoteko, s klicem katere zaženeš *grafično okolje* (DWM) in vsebuje vse, kar naj se izvede ob zagonu *sistema*.
+- `sudo apt install xinit` – ustvari zagonsko datoteko, s klicem katere zaženeš *grafično okolje* (DWM) in vsebuje vse, kar naj se izvede ob zagonu *sistema* (ukaz startx)
 - `echo "exec dwm" > ~/.xinitrc` – doda vrstico `exec dwm`v zagonsko datoteko **~/.xinitrc**
 - `sudo apt install make` – namesti program **make** za izgradnjo programov (pretvorbo v binarni jezik) iz vira (npr. Sucklessovih)
 - `sudo apt install build-essential` – namesti potrebne pakete za izgradnjo z ukazom `make`
@@ -38,22 +70,24 @@ Med namestitvijo ne dodaj gesla za *'root'*a, če hočeš biti edini uporabnik, 
     - `cd ime_programa` – premakni se v mapo programa (dwm/dmenu/st)
     - `sudo make clean install` – izgradi program
     - `cd ..` – premakni se nazaj v nadmapo
-- `startx` – zažene strežnik X, oz. DWM
+- `startx` – zažene strežnik X, oz. DWM (brez **~/.xinitrc** ne bo delovalo)
 - `sudo dpkg-reconfigure keyboard-configuration` – zaženi programček za nastavitev tipkovnice
     - izberi *model* svoje tipkovnice
-    - izberi običajno slovensko zipkovnico "*Slovenian*"
+    - izberi običajno slovensko tipkovnico "*Slovenian*"
     - izberi *Default* (privzeto) tipko za **AltGr**
     - za *Compose key* pa *Right Alt (AltGr)* ali pa nič, če ne rabiš
 - `sudo systemctl restart keyboard-setup.service` – znova zaženeš sistem za uporabo tipkovnice
 - nastavi slovensko tipkovnico v terminalu s `setxkbmap si`in to dodaj v ~./xinitrc
 
+## Namestitev dodatnih orodij
+
 - `sudo apt install curl` – namesti program **curl** (potreben za nekatere prenose podatkov/programov)
 - `curl -fsS https://dl.brave.com/install.sh | sh` – namesti spletni brskalnik Brave
 - `sudo apt install lf` – namesti "raziskovalca" shranjenih datotek /shrambe
 
-## Prilagoditve videza in *funkcionalnosti*
+## Prilagoditve videza in uporabnosti posameznih orodij
 
-Dejanja ob zagonu DWM-ja
+### Dejanja ob zagonu
 
 - `vim ~/.xinitrc` – odpri zagonsko datoteko in vanjo vstavi sledeče:
     ```sh
@@ -73,7 +107,7 @@ Dejanja ob zagonu DWM-ja
     ```
     - nekam pred `exec dwm` dodaj še `xrandr --output "ime-zaslona" --mode širinaxvišina &`, če želiš ob zagonu nastaviti neko neprivzeto povećavo/velikost zaslona
 
-Prilagoditev videza in bližnjic DWM-ja
+### DWM
 
 - `vim ~/viri/dwm/config.h` – odpri nastavitveno datoteko DWM in spremeni:
     - Videz:
@@ -95,7 +129,7 @@ Prilagoditev videza in bližnjic DWM-ja
         - Spremeni `{ MODKEY,  XK_Tab,  view,  {0} },` v `{ MODKEY,  XK_v,  view,  {0} },`
 - `sudo make clean install` – program DWM ponovno izgradi s prilagoditvami
 
-ST
+### ST
 
 - `vim ~/viri/st/config.h` – odpri nastavitveno datoteko ST
 - Namesto
@@ -197,7 +231,7 @@ ST
      };
      
     static const char * const * colorname;
-    int colorscheme = 1
+    int colorscheme = 1;
     ```
 - v `static MouseShortcut mshortcuts[] = {}` opredeli še dve bližnjici, da se lahko premikaš gor/dol z vrtenjem koleščka:
     ```c

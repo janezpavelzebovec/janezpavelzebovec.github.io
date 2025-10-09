@@ -75,17 +75,95 @@ sistema"/>
             <li><a href="#Vodic_skozi_namestitev_Linuxa">Vodič skozi
             namestitev Linuxa</a>
             <ul>
+            <li><a href="#Namestitev_operacijskega_sistema">Namestitev
+            operacijskega sistema</a></li>
+            <li><a href="#Namestitev_dodatnih_orodij">Namestitev
+            dodatnih orodij</a></li>
             <li><a
-            href="#Prilagoditve_videza_in_funkcionalnosti">Prilagoditve
-            videza in <em>funkcionalnosti</em></a></li>
+            href="#Prilagoditve_videza_in_uporabnosti_posameznih_orodij">Prilagoditve
+            videza in uporabnosti posameznih orodij</a>
+            <ul>
+            <li><a href="#Dejanja_ob_zagonu">Dejanja ob zagonu</a></li>
+            <li><a href="#DWM">DWM</a></li>
+            <li><a href="#ST">ST</a></li>
+            </ul></li>
             </ul></li>
             </ul>
             <h1 id="Vodic_skozi_namestitev_Linuxa">Vodič skozi
             namestitev Linuxa</h1>
-            <p>Med namestitvijo ne dodaj gesla za <em>‘root’</em>a, če
-            hočeš biti edini uporabnik, ki ima tudi pravice
-            <em>root</em>a.</p>
+            <p>Tukaj so navedeni koraki, po katerih prideš do skoraj
+            enakega okolja kot je moje.</p>
+            <h2 id="Namestitev_operacijskega_sistema">Namestitev
+            operacijskega sistema</h2>
+            <p>Izberi <strong>Graphical install</strong> ali
+            <strong>Install</strong></p>
             <ul>
+            <li><p>Jezik nastavi na angleščino (čeprav je na voljo tudi
+            v slovenščini), ker je tako mnogo lažje razhroščevati
+            morebitne napake</p></li>
+            <li><p>Državo lahko izbereš svojo (<em>Slovenia</em>,
+            predvidevam)</p></li>
+            <li><p>Tipkovnico izbereš tako kot jo imaš
+            (<em>Slovenian</em>, predvidevam)</p></li>
+            <li><p>Izberi <em>hostname</em>, kar je ime tvoje naprave
+            (kot bo vidno v omrežju in tebi)</p></li>
+            <li><p>Ime domene (<em>Domain name</em>) lahko pustiš
+            prazno, če ne vzpostavljaš strežnika</p></li>
+            <li><p>Geslo skrbnika (<em>Root password</em>) pusti prazno,
+            če hočeš biti edini uporabnik in s pravicami skrbnika
+            (<em>root</em>a)</p></li>
+            <li><p>Izberi svoje uporabniško ime (<em>Full name for the
+            new user</em>)</p></li>
+            <li><p>Izberi geslo (tega novoustvarjenega uporabnika, ki bo
+            imel skrbniške pravice, če nisi predhodno izbral gesla
+            skrbnika)</p></li>
+            <li><p><em>Partitioning method</em> izberi <em>Guided – use
+            entire disk</em>, če hočeš imeti na napravi le Linux (ostale
+            podatke na disku bo izbrisalo!)</p></li>
+            <li><p>Pazljivo izberi pravi disk, na katerega boš namestil
+            Linux (da ne izbereš recimo zagonskega ključka, ker bo potem
+            Linux namestilo na ključek)</p></li>
+            <li><p>Izberi privzeto <em>Partitioning scheme</em>, to je
+            <em>All files in one partition</em></p></li>
+            <li><p>Potrdi</p></li>
+            <li><p>Zdaj bo namestilo <em>operacijski sistem</em>, ter
+            preneslo in maestilo vse potrebne
+            <em>pakete/programe</em></p></li>
+            <li><p>Zavrni <em>Scan extra installation media</em>, če
+            nočeš namestiti Linuxa na dodatno napravo</p></li>
+            <li><p>Izberi svojo državo za <em>archive
+            mirror</em></p></li>
+            <li><p>Izbereš lahko privzet strežnik (<em>archive
+            mirror</em>) <em>deb.debian.org</em> za prejem posodobitev,
+            razen če veš, kjer ti je najbljižje, oz. je zate
+            najhitrejši</p></li>
+            <li><p><em>HTTP proxy</em> pusti prazno</p></li>
+            <li><p>Prikaže se seznam razpoložljivih uporabniških
+            vmesnikov (GNOME, Xfce, GNOME Flashback, KDE Plasma,
+            Cinnamon, MATE, LXDE, LXQt) oz. spletni/SSH strežnik.
+            Odizberi privzeto izbran uporabniški vmesnik GNOME in
+            <em>Debian desktop environment</em>, ker bomo v nadaljevanju
+            namestili DWM (če pa tega nočeš, se naše poti tu razidejo in
+            je nadaljevanje Vodiča skoraj brezpredmetno) in pusti
+            izbrano <em>standard system utilities</em></p></li>
+            <li><p>Če si izbral katerega izmed uporabniških vmesnikov,
+            se bo zdaj prenesel</p></li>
+            <li><p><em>Install the GRUB boot loader</em> potrdi (to je
+            zagonski <em>meni</em>)</p></li>
+            <li><p>Izberi napravo, kamor želiš namestiti GRUB (to je
+            skoraj zagotovo disk naprave, na katero trenutno nameščaš
+            Linux) – običajno <strong>/dev/sda</strong> ali
+            <strong>/dev/vda</strong></p></li>
+            <li><p>Namestitev Linuxa je končana, nadaljuj na ponovni
+            zagon</p></li>
+            <li><p>Ob ponovnem zagonu v zagonskem <em>meniju</em> izberi
+            <strong>Debian GNU/Linux</strong></p></li>
+            <li><p>Zdaj si v Linuxu brez uporabniškega vmesnika (ker ga
+            moramo še namestiti, poleg še nekaterih drugih
+            zadev)</p></li>
+            <li><p>Prijavi se, kot zahtevano, z uporabniškim imenom in
+            geslom, ki si ju nastavil ## Namestitev osnovnih/sistemskih
+            orodij</p></li>
             <li><p><code>sudo apt update</code> – posodobi seznam
             programske opreme</p></li>
             <li><p><code>sudo apt install network-manager</code> –
@@ -101,7 +179,7 @@ sistema"/>
             <li><p><code>sudo apt install xinit</code> – ustvari
             zagonsko datoteko, s klicem katere zaženeš <em>grafično
             okolje</em> (DWM) in vsebuje vse, kar naj se izvede ob
-            zagonu <em>sistema</em>.</p></li>
+            zagonu <em>sistema</em> (ukaz startx)</p></li>
             <li><p><code>echo "exec dwm" &gt; ~/.xinitrc</code> – doda
             vrstico <code>exec dwm</code>v zagonsko datoteko
             <strong>~/.xinitrc</strong></p></li>
@@ -165,13 +243,13 @@ sistema"/>
             program</li>
             <li><code>cd ..</code> – premakni se nazaj v nadmapo</li>
             </ul></li>
-            <li><p><code>startx</code> – zažene strežnik X, oz.
-            DWM</p></li>
+            <li><p><code>startx</code> – zažene strežnik X, oz. DWM
+            (brez <strong>~/.xinitrc</strong> ne bo delovalo)</p></li>
             <li><p><code>sudo dpkg-reconfigure keyboard-configuration</code>
             – zaženi programček za nastavitev tipkovnice</p>
             <ul>
             <li>izberi <em>model</em> svoje tipkovnice</li>
-            <li>izberi običajno slovensko zipkovnico
+            <li>izberi običajno slovensko tipkovnico
             “<em>Slovenian</em>”</li>
             <li>izberi <em>Default</em> (privzeto) tipko za
             <strong>AltGr</strong></li>
@@ -182,17 +260,22 @@ sistema"/>
             – znova zaženeš sistem za uporabo tipkovnice</p></li>
             <li><p>nastavi slovensko tipkovnico v terminalu s
             <code>setxkbmap si</code>in to dodaj v ~./xinitrc</p></li>
-            <li><p><code>sudo apt install curl</code> – namesti program
-            <strong>curl</strong> (potreben za nekatere prenose
-            podatkov/programov)</p></li>
-            <li><p><code>curl -fsS https://dl.brave.com/install.sh | sh</code>
-            – namesti spletni brskalnik Brave</p></li>
-            <li><p><code>sudo apt install lf</code> – namesti
-            “raziskovalca” shranjenih datotek /shrambe</p></li>
             </ul>
-            <h2 id="Prilagoditve_videza_in_funkcionalnosti">Prilagoditve
-            videza in <em>funkcionalnosti</em></h2>
-            <p>Dejanja ob zagonu DWM-ja</p>
+            <h2 id="Namestitev_dodatnih_orodij">Namestitev dodatnih
+            orodij</h2>
+            <ul>
+            <li><code>sudo apt install curl</code> – namesti program
+            <strong>curl</strong> (potreben za nekatere prenose
+            podatkov/programov)</li>
+            <li><code>curl -fsS https://dl.brave.com/install.sh | sh</code>
+            – namesti spletni brskalnik Brave</li>
+            <li><code>sudo apt install lf</code> – namesti
+            “raziskovalca” shranjenih datotek /shrambe</li>
+            </ul>
+            <h2
+            id="Prilagoditve_videza_in_uporabnosti_posameznih_orodij">Prilagoditve
+            videza in uporabnosti posameznih orodij</h2>
+            <h3 id="Dejanja_ob_zagonu">Dejanja ob zagonu</h3>
             <ul>
             <li><p><code>vim ~/.xinitrc</code> – odpri zagonsko datoteko
             in vanjo vstavi sledeče: ```sh #!/bin/sh</p>
@@ -213,7 +296,7 @@ sistema"/>
             povećavo/velikost zaslona</li>
             </ul></li>
             </ul>
-            <p>Prilagoditev videza in bližnjic DWM-ja</p>
+            <h3 id="DWM">DWM</h3>
             <ul>
             <li><code>vim ~/viri/dwm/config.h</code> – odpri
             nastavitveno datoteko DWM in spremeni:
@@ -254,7 +337,7 @@ sistema"/>
             <li><code>sudo make clean install</code> – program DWM
             ponovno izgradi s prilagoditvami</li>
             </ul>
-            <p>ST</p>
+            <h3 id="ST">ST</h3>
             <ul>
             <li><p><code>vim ~/viri/st/config.h</code> – odpri
             nastavitveno datoteko ST</p></li>
@@ -349,7 +432,7 @@ sistema"/>
 <span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a> <span class="op">};</span></span>
 <span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">const</span> <span class="dt">char</span> <span class="op">*</span> <span class="dt">const</span> <span class="op">*</span> colorname<span class="op">;</span></span>
-<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> colorscheme <span class="op">=</span> <span class="dv">1</span></span></code></pre></div></li>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> colorscheme <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span></code></pre></div></li>
             <li><p>v <code>static MouseShortcut mshortcuts[] = {}</code>
             opredeli še dve bližnjici, da se lahko premikaš gor/dol z
             vrtenjem koleščka:
