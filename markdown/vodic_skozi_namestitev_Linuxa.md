@@ -45,6 +45,8 @@ Izberi **Graphical install** ali **Install**
 - Izberi napravo, kamor želiš namestiti GRUB (to je skoraj zagotovo disk naprave, na katero trenutno nameščaš Linux) – običajno **/dev/sda** ali **/dev/vda**
 - Namestitev Linuxa je končana, nadaljuj na ponovni zagon
 
+Zagon novega *operacijskega sistema*:
+
 - Ob ponovnem zagonu v zagonskem *meniju* izberi **Debian GNU/Linux**
 - Zdaj si v Linuxu brez uporabniškega vmesnika (ker ga moramo še namestiti, poleg še nekaterih drugih zadev)
 - Prijavi se, kot zahtevano, z uporabniškim imenom in geslom, ki si ju nastavil
