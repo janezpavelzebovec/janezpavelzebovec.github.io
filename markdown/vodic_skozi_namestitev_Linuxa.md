@@ -10,6 +10,14 @@ author: Janez Pavel Žebovec
 
 Tukaj so navedeni koraki, po katerih prideš do skoraj enakega okolja kot je moje.
 
+## Ustvarjanje zagonskega ključka in dostop do zagonskega *menija*
+
+- [Debian.org](https://www.debian.org/) > [Other downloads](https://www.debian.org/distrib/) > [small installation image](https://www.debian.org/distrib/netinst) > prenesi **amd64**. S tem si prenesil datoteko ** \*.iso**
+- Ustvari zagonski ključek (ang. *bootable flash USB*) s to datoteko. V ta namen na Windowsu uporabi npr. [Rufus](https://rufus.ie/sl/) ali [Balena Etcher](https://etcher.balena.io/).
+- V programu izberi datoteko \*.iso in napravo (najpogosteje je to ključek USB), ki jo boš uporabil za nameščanje. Pri tem bo izbrisano vse, kar je bilo prej na tej napravi (npr. USB)
+- Zaženi računalnik in pritiskaj **F12** ali **F9** (odvisno od računalnika, lahko je tudi kaj tretjega, pogosto pa piše, kaj naj bi pritiskal)
+- Odpre se zagonski *meni*, kjer izbereš svojo zagonsko napravo (ključek USB)
+
 ## Namestitev operacijskega sistema
 
 Izberi **Graphical install** ali **Install**
@@ -40,6 +48,7 @@ Izberi **Graphical install** ali **Install**
 - Ob ponovnem zagonu v zagonskem *meniju* izberi **Debian GNU/Linux**
 - Zdaj si v Linuxu brez uporabniškega vmesnika (ker ga moramo še namestiti, poleg še nekaterih drugih zadev)
 - Prijavi se, kot zahtevano, z uporabniškim imenom in geslom, ki si ju nastavil
+
 ## Namestitev osnovnih/sistemskih orodij
 
 - `sudo apt update` – posodobi seznam programske opreme
@@ -62,7 +71,7 @@ Izberi **Graphical install** ali **Install**
     - **libxrandr-dev** za dinamično spreminjanje ločljivosti in orientacije zaslona
     - **libxcb-res-dev** omogoča dostop do določenih sistemskih podatkov za npr. statusno vrstico
 - `git clone https://git.suckless.org/dwm` – prenese DWM (*Dynamic Windows Manager* – upravitelj oken) s Sucklessove spletne strani – glej <https://dwm.suckless.org/>
-- `git clone https://git.suckless.org/dmenu` – prenese DMenu (*Dynamic Menu* – nekakšna statusna vrstica) – glej <https://tools.suckless.org/dmenu/>
+- `git clone https://git.suckless.org/dmenu` – prenese Še glede zadnjega bloka kode (ki vprašal prej): ta del zdaj izgleda pravilno – če želiš ga vstavim nazaj na pravo mesto v novo verzijo.DMenu (*Dynamic Menu* – nekakšna statusna vrstica) – glej <https://tools.suckless.org/dmenu/>
 - `git clone https://git.suckless.org/st` – prenese ST (*Simple terminal*) – glej <https://st.suckless.org/>
 - `git clone https://git.suckless.org/slock` – prenese SLock (*Simple X display locker* – zaklenjen zaslon) – glej <https://tools.suckless.org/slock/>
 - `git clone https://git.suckless.org/slstatus` – prenese SlStatus (prikazovalnik stanja v "orodni vrstici", če ne ustvariš kar svojega) – glej <https://tools.suckless.org/slstatus/>
@@ -239,6 +248,7 @@ Izberi **Graphical install** ali **Install**
 	{ ShiftMask,            Button5, kscrolldown,    {.i = 1} },
     ```
 - V `static MouseShortcut mshortcuts[] = {}`:
+
     ```c
     { TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
     { TERMMOD,              XK_Next,        zoom,           {.f = -1} },

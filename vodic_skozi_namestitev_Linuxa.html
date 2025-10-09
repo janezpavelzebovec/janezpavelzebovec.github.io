@@ -75,8 +75,15 @@ sistema"/>
             <li><a href="#Vodic_skozi_namestitev_Linuxa">Vodič skozi
             namestitev Linuxa</a>
             <ul>
+            <li><a
+            href="#Ustvarjanje_zagonskega_kljucka_in_dostop_do_zagonskega_menija">Ustvarjanje
+            zagonskega ključka in dostop do zagonskega
+            <em>menija</em></a></li>
             <li><a href="#Namestitev_operacijskega_sistema">Namestitev
             operacijskega sistema</a></li>
+            <li><a
+            href="#Namestitev_osnovnih_sistemskih_orodij">Namestitev
+            osnovnih/sistemskih orodij</a></li>
             <li><a href="#Namestitev_dodatnih_orodij">Namestitev
             dodatnih orodij</a></li>
             <li><a
@@ -93,6 +100,30 @@ sistema"/>
             namestitev Linuxa</h1>
             <p>Tukaj so navedeni koraki, po katerih prideš do skoraj
             enakega okolja kot je moje.</p>
+            <h2
+            id="Ustvarjanje_zagonskega_kljucka_in_dostop_do_zagonskega_menija">Ustvarjanje
+            zagonskega ključka in dostop do zagonskega
+            <em>menija</em></h2>
+            <ul>
+            <li><a href="https://www.debian.org/">Debian.org</a> &gt; <a
+            href="https://www.debian.org/distrib/">Other downloads</a>
+            &gt; <a href="https://www.debian.org/distrib/netinst">small
+            installation image</a> &gt; prenesi <strong>amd64</strong>.
+            S tem si prenesil datoteko ** *.iso**</li>
+            <li>Ustvari zagonski ključek (ang. <em>bootable flash
+            USB</em>) s to datoteko. V ta namen na Windowsu uporabi npr.
+            <a href="https://rufus.ie/sl/">Rufus</a> ali <a
+            href="https://etcher.balena.io/">Balena Etcher</a>.</li>
+            <li>V programu izberi datoteko *.iso in napravo
+            (najpogosteje je to ključek USB), ki jo boš uporabil za
+            nameščanje. Pri tem bo izbrisano vse, kar je bilo prej na
+            tej napravi (npr. USB)</li>
+            <li>Zaženi računalnik in pritiskaj <strong>F12</strong> ali
+            <strong>F9</strong> (odvisno od računalnika, lahko je tudi
+            kaj tretjega, pogosto pa piše, kaj naj bi pritiskal)</li>
+            <li>Odpre se zagonski <em>meni</em>, kjer izbereš svojo
+            zagonsko napravo (ključek USB)</li>
+            </ul>
             <h2 id="Namestitev_operacijskega_sistema">Namestitev
             operacijskega sistema</h2>
             <p>Izberi <strong>Graphical install</strong> ali
@@ -162,45 +193,47 @@ sistema"/>
             moramo še namestiti, poleg še nekaterih drugih
             zadev)</p></li>
             <li><p>Prijavi se, kot zahtevano, z uporabniškim imenom in
-            geslom, ki si ju nastavil ## Namestitev osnovnih/sistemskih
-            orodij</p></li>
-            <li><p><code>sudo apt update</code> – posodobi seznam
-            programske opreme</p></li>
-            <li><p><code>sudo apt install network-manager</code> –
-            namesti upravitelja omrežne povezave</p></li>
-            <li><p><code>sudo systemctl start NetworkManager</code></p></li>
-            <li><p><code>sudo systemctl enable NetworkManager</code></p>
+            geslom, ki si ju nastavil</p></li>
+            </ul>
+            <h2 id="Namestitev_osnovnih_sistemskih_orodij">Namestitev
+            osnovnih/sistemskih orodij</h2>
+            <ul>
+            <li><code>sudo apt update</code> – posodobi seznam
+            programske opreme</li>
+            <li><code>sudo apt install network-manager</code> – namesti
+            upravitelja omrežne povezave</li>
+            <li><code>sudo systemctl start NetworkManager</code></li>
+            <li><code>sudo systemctl enable NetworkManager</code>
             <ul>
             <li><code>nmcli device wifi connect ime_omrežja password geslo</code>
             – poveži se na brezžično omrežje (izbirno)</li>
             </ul></li>
-            <li><p><code>sudo apt install xorg</code> – namesti strežnik
-            X</p></li>
-            <li><p><code>sudo apt install xinit</code> – ustvari
-            zagonsko datoteko, s klicem katere zaženeš <em>grafično
-            okolje</em> (DWM) in vsebuje vse, kar naj se izvede ob
-            zagonu <em>sistema</em> (ukaz startx)</p></li>
-            <li><p><code>echo "exec dwm" &gt; ~/.xinitrc</code> – doda
+            <li><code>sudo apt install xorg</code> – namesti strežnik
+            X</li>
+            <li><code>sudo apt install xinit</code> – ustvari zagonsko
+            datoteko, s klicem katere zaženeš <em>grafično okolje</em>
+            (DWM) in vsebuje vse, kar naj se izvede ob zagonu
+            <em>sistema</em> (ukaz startx)</li>
+            <li><code>echo "exec dwm" &gt; ~/.xinitrc</code> – doda
             vrstico <code>exec dwm</code>v zagonsko datoteko
-            <strong>~/.xinitrc</strong></p></li>
-            <li><p><code>sudo apt install make</code> – namesti program
+            <strong>~/.xinitrc</strong></li>
+            <li><code>sudo apt install make</code> – namesti program
             <strong>make</strong> za izgradnjo programov (pretvorbo v
-            binarni jezik) iz vira (npr. Sucklessovih)</p></li>
-            <li><p><code>sudo apt install build-essential</code> –
-            namesti potrebne pakete za izgradnjo z ukazom
-            <code>make</code></p></li>
-            <li><p><code>mkdir viri</code> – ustvari mapo za programe,
-            nameščene iz vira (npr. Sucklessovi)</p></li>
-            <li><p><code>cd viri</code> – premakni se v novoustvarjeno
-            mapo <strong>viri</strong>, kamor boš prenesel programe iz
-            vira</p></li>
-            <li><p><code>sudo apt install git</code> – namesti program
+            binarni jezik) iz vira (npr. Sucklessovih)</li>
+            <li><code>sudo apt install build-essential</code> – namesti
+            potrebne pakete za izgradnjo z ukazom <code>make</code></li>
+            <li><code>mkdir viri</code> – ustvari mapo za programe,
+            nameščene iz vira (npr. Sucklessovi)</li>
+            <li><code>cd viri</code> – premakni se v novoustvarjeno mapo
+            <strong>viri</strong>, kamor boš prenesel programe iz
+            vira</li>
+            <li><code>sudo apt install git</code> – namesti program
             <strong>git</strong> za prenos datotek (npr. programov) s
-            spletnih strani</p></li>
-            <li><p><code>sudo apt install libx11-dev libxft-dev libxinerama-dev</code>,
+            spletnih strani</li>
+            <li><code>sudo apt install libx11-dev libxft-dev libxinerama-dev</code>,
             oz. izbirno
             <code>sudo apt install libx11-dev libxft-dev libxinerama-dev libxrandr-dev libxcb-res-dev</code>,
-            če boš uporabljal tudi patche</p>
+            če boš uporabljal tudi patche
             <ul>
             <li><strong>libx11-dev</strong> za osnovno sporazumevanje s
             strežnikom X</li>
@@ -212,30 +245,32 @@ sistema"/>
             <li><strong>libxcb-res-dev</strong> omogoča dostop do
             določenih sistemskih podatkov za npr. statusno vrstico</li>
             </ul></li>
-            <li><p><code>git clone https://git.suckless.org/dwm</code> –
+            <li><code>git clone https://git.suckless.org/dwm</code> –
             prenese DWM (<em>Dynamic Windows Manager</em> – upravitelj
             oken) s Sucklessove spletne strani – glej <a
             href="https://dwm.suckless.org/"
-            class="uri">https://dwm.suckless.org/</a></p></li>
-            <li><p><code>git clone https://git.suckless.org/dmenu</code>
-            – prenese DMenu (<em>Dynamic Menu</em> – nekakšna statusna
-            vrstica) – glej <a href="https://tools.suckless.org/dmenu/"
-            class="uri">https://tools.suckless.org/dmenu/</a></p></li>
-            <li><p><code>git clone https://git.suckless.org/st</code> –
+            class="uri">https://dwm.suckless.org/</a></li>
+            <li><code>git clone https://git.suckless.org/dmenu</code> –
+            prenese Še glede zadnjega bloka kode (ki vprašal prej): ta
+            del zdaj izgleda pravilno – če želiš ga vstavim nazaj na
+            pravo mesto v novo verzijo.DMenu (<em>Dynamic Menu</em> –
+            nekakšna statusna vrstica) – glej <a
+            href="https://tools.suckless.org/dmenu/"
+            class="uri">https://tools.suckless.org/dmenu/</a></li>
+            <li><code>git clone https://git.suckless.org/st</code> –
             prenese ST (<em>Simple terminal</em>) – glej <a
             href="https://st.suckless.org/"
-            class="uri">https://st.suckless.org/</a></p></li>
-            <li><p><code>git clone https://git.suckless.org/slock</code>
-            – prenese SLock (<em>Simple X display locker</em> –
-            zaklenjen zaslon) – glej <a
-            href="https://tools.suckless.org/slock/"
-            class="uri">https://tools.suckless.org/slock/</a></p></li>
-            <li><p><code>git clone https://git.suckless.org/slstatus</code>
+            class="uri">https://st.suckless.org/</a></li>
+            <li><code>git clone https://git.suckless.org/slock</code> –
+            prenese SLock (<em>Simple X display locker</em> – zaklenjen
+            zaslon) – glej <a href="https://tools.suckless.org/slock/"
+            class="uri">https://tools.suckless.org/slock/</a></li>
+            <li><code>git clone https://git.suckless.org/slstatus</code>
             – prenese SlStatus (prikazovalnik stanja v “orodni vrstici”,
             če ne ustvariš kar svojega) – glej <a
             href="https://tools.suckless.org/slstatus/"
-            class="uri">https://tools.suckless.org/slstatus/</a></p></li>
-            <li><p>Za vsakega od teh treh programov:</p>
+            class="uri">https://tools.suckless.org/slstatus/</a></li>
+            <li>Za vsakega od teh treh programov:
             <ul>
             <li><code>cd ime_programa</code> – premakni se v mapo
             programa (dwm/dmenu/st)</li>
@@ -243,10 +278,10 @@ sistema"/>
             program</li>
             <li><code>cd ..</code> – premakni se nazaj v nadmapo</li>
             </ul></li>
-            <li><p><code>startx</code> – zažene strežnik X, oz. DWM
-            (brez <strong>~/.xinitrc</strong> ne bo delovalo)</p></li>
-            <li><p><code>sudo dpkg-reconfigure keyboard-configuration</code>
-            – zaženi programček za nastavitev tipkovnice</p>
+            <li><code>startx</code> – zažene strežnik X, oz. DWM (brez
+            <strong>~/.xinitrc</strong> ne bo delovalo)</li>
+            <li><code>sudo dpkg-reconfigure keyboard-configuration</code>
+            – zaženi programček za nastavitev tipkovnice
             <ul>
             <li>izberi <em>model</em> svoje tipkovnice</li>
             <li>izberi običajno slovensko tipkovnico
@@ -256,10 +291,10 @@ sistema"/>
             <li>za <em>Compose key</em> pa <em>Right Alt (AltGr)</em>
             ali pa nič, če ne rabiš</li>
             </ul></li>
-            <li><p><code>sudo systemctl restart keyboard-setup.service</code>
-            – znova zaženeš sistem za uporabo tipkovnice</p></li>
-            <li><p>nastavi slovensko tipkovnico v terminalu s
-            <code>setxkbmap si</code>in to dodaj v ~./xinitrc</p></li>
+            <li><code>sudo systemctl restart keyboard-setup.service</code>
+            – znova zaženeš sistem za uporabo tipkovnice</li>
+            <li>nastavi slovensko tipkovnico v terminalu s
+            <code>setxkbmap si</code>in to dodaj v ~./xinitrc</li>
             </ul>
             <h2 id="Namestitev_dodatnih_orodij">Namestitev dodatnih
             orodij</h2>
@@ -438,10 +473,12 @@ sistema"/>
             vrtenjem koleščka:
             <code>c     { ShiftMask,            Button4, kscrollup,      {.i = 1} },     { ShiftMask,            Button5, kscrolldown,    {.i = 1} },</code></p></li>
             <li><p>V
-            <code>static MouseShortcut mshortcuts[] = {}</code>:
-            <code>c     { TERMMOD,              XK_Prior,       zoom,           {.f = +1} },     { TERMMOD,              XK_Next,        zoom,           {.f = -1} },</code>
-            zamenjaj s
-            <code>c     { ControlMask,          XK_plus,        zoom,           {.f = +1} },     { ControlMask,          XK_minus,       zoom,           {.f = -1} }</code>
+            <code>static MouseShortcut mshortcuts[] = {}</code>:</p>
+            <div class="sourceCode" id="cb3"><pre
+            class="sourceCode c"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">{</span> TERMMOD<span class="op">,</span>              XK_Prior<span class="op">,</span>       zoom<span class="op">,</span>           <span class="op">{.</span>f <span class="op">=</span> <span class="op">+</span><span class="dv">1</span><span class="op">}</span> <span class="op">},</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span> TERMMOD<span class="op">,</span>              XK_Next<span class="op">,</span>        zoom<span class="op">,</span>           <span class="op">{.</span>f <span class="op">=</span> <span class="op">-</span><span class="dv">1</span><span class="op">}</span> <span class="op">},</span></span></code></pre></div>
+            <p>zamenjaj s
+            <code>c   { ControlMask,          XK_plus,        zoom,           {.f = +1} },   { ControlMask,          XK_minus,       zoom,           {.f = -1} }</code>
             ter dodaj sledeče bližnjice za izbiro barvnih tem (in
             lepljenje): ```c { ControlMask, XK_e, kscrollup, {.i = -1}
             }, { ControlMask, XK_y, kscrolldown, {.i = -1} }, { MODKEY,
