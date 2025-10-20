@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2025-10-09
+date: 2025-10-14
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -97,6 +97,8 @@ Zagon novega *operacijskega sistema*:
 - `sudo apt install lf` – namesti "raziskovalca" shranjenih datotek /shrambe
 
 ## Prilagoditve videza in uporabnosti posameznih orodij
+
+- Da odstraniš nadležen pisk: `sudo rmmod pcspkr`. Da ga odstraniš za vedno `echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf`, oz. v datoteko `/etc/modprobe.d/nobeep.conf`dodaj `blacklist pcspkr`. To onemogoči **pcspkr**, ki je odgovoren za to piskanje.
 
 ### Dejanja ob zagonu
 
@@ -278,3 +280,13 @@ Zagon novega *operacijskega sistema*:
 
 	{ MODKEY,           	XK_v,           selpaste,       {.i =  0} },
     ```
+
+---
+
+## Kaj mora Janez Pavel še dodat v vodič:
+
+- namesti udisks2 (za udisksctl) za nameščanje ključka
+    - povezava mape ~/USB
+- namesti sxhkd
+
+- `chmod +x pot/do/programčka` – podeli datoteki izvršilne pravice

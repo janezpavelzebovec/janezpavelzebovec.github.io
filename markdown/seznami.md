@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-10-05
+date: 2025-10-20
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -144,7 +144,8 @@ Druge zbirke zemljepisnih podatkov:
 - [CyclOSM](https://www.cyclosm.org/) - kolesarski zemljevid
 - [F4 Map](https://www.f4map.com/) - 3R prikaz, podrobni 3R prikazi stavb,
     - [F4 Map - Demo](https://demo.f4map.com/)
-- [Geofabrik Tools – OSM Inspector](https://tools.geofabrik.de/osmi/) – izlušči ceste, naslove, vodovja, javni promet, ... in težave pri teh elementih 
+- [Geofabrik Tools – OSM Inspector](https://tools.geofabrik.de/osmi/) – izlušči ceste, naslove, vodovja, javni promet, ... in težave pri teh elementih
+- [Health Sites](https://healthsites.io/) – zemljevid zdravstvenih ustanov, storitev
 - [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti
 - [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid
 - [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim
@@ -160,7 +161,15 @@ Druge zbirke zemljepisnih podatkov:
     - [Waymarked Trails - Hiking](https://hiking.waymarkedtrails.org/) - pohodniške poti
 - [Wireless Bike Map](https://www.wirelessbikemap.com/) - kolesarski zemljevid
 
-Prenos podatkov OSM-ja:
+###### Druga spletna mesta za urejanje OSM, oz. projekti OSM
+
+- [How did you contribute to OpenStreetMap?](https://hdyc.neis-one.org/) – *statistika* urejanj po urejevalcih (in državah)
+- [Humanitarian OpenStreetMap Team (HOT)](https://www.hotosm.org/) – *kartiranje* območij ob (naravnih) nesrečah, revnih območij / območij v razvoju
+- [OSMCha](https://osmcha.org/) – pregledovanje kakovosti urejanj
+- [OSM Perfect Intersection Editor](https://osmpie.org/) – urejanje cest, križišč
+- [OSM Wikidata matcher](https://osm.wikidata.link/) – iskalnik povezav med podatki OSM in Wikidata (torej tudi Wikipedijo)
+
+###### Prenos podatkov OSM
 
 - [BBBike - Extract](https://extract.bbbike.org/) - prenos kolesarskih zemljevidov
 
