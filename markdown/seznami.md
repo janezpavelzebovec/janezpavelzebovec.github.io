@@ -306,6 +306,7 @@ You Tube:
 You Tube:
 
 - [AI In Context](https://www.youtube.com/@AI_In_Context)
+- [Techlore](https://www.youtube.com/@techlore) – predstavitev orodij (*programov*), nevarnosti Googla, ...
 
 #### Programiranje
 

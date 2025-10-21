@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2025-08-08
+date: 2025-10-21
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -112,14 +112,17 @@ F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android
 | --- | --- | --- | --- |
 | [Arcticons](https://arcticons.com/) | zbirka preprostih sličic za orodja | [Arcticons](https://f-droid.org/en/packages/com.donnnno.arcticons/), [Arcticons Material You](https://f-droid.org/en/packages/com.donnnno.arcticons.you/), [Arcticons Black](https://f-droid.org/en/packages/com.donnnno.arcticons.light/), [Arcticons Day & Night](https://f-droid.org/en/packages/com.donnnno.arcticons.daynight/) | [Arcticons - Line Icon Pack](https://play.google.com/store/apps/details?id=com.donnnno.arcticons), [Arcticons Material You Icons](https://play.google.com/store/apps/details?id=com.donnnno.arcticons.you.play), [Arcticons Black - Icon Pack](https://play.google.com/store/apps/details?id=com.donnnno.arcticons.light) | preprost, poenoten slog sličic orodij |
 | [Arity](https://github.com/woheller69/Arity) | računalo | [ArityCalc](https://f-droid.org/en/packages/org.woheller69.arity/) | | tudi s 3R prikazi grafov |
+| [Audio Recorder](https://github.com/Dimowner/AudioRecorder) | snemalnik zvoka | [Sound Recorder](https://f-droid.org/en/packages/com.dimowner.audiorecorder/) | [Audio Recorder](https://play.google.com/store/apps/details?id=com.dimowner.audiorecorder) | žal nima orodja za obrezovanje posnetkov |
+| [Aurora Store](https://auroraoss.com/) | nameščevalnik orodij (*aplikacij*) iz Trgovine Play | [Aurora Store](https://f-droid.org/en/packages/com.aurora.store/) | :) | brez prijave; ne potrebuje nameščenih [Googlovih storitev](https://play.google.com/store/apps/details?id=com.google.android.gms&hl=en_US) |
 | [Brave](https://brave.com/) | spletni brskalnik | | [Brave Private Web Browser, VPN](https://play.google.com/store/apps/details?id=com.brave.browser) | privzeto preprečevanje oglasov |
 | [CoMaps](https://www.comaps.app/) | zemljevid [Open Street Map](https://www.openstreetmap.org/) | [CoMaps](https://f-droid.org/packages/app.comaps.fdroid/) | [CoMaps](https://play.google.com/store/apps/details?id=app.comaps.google/) | različica *OrganicMaps*, pri katerem so v zadnjem času posamezniki sprejeli vprašljive odločitve ; bolj (povsem) osredotočena na skupnost razvijalcev |
 | [Discord]() | hitro dopisovanje | | [Discord - Talk, Play, Hang Out](https://play.google.com/store/apps/details?id=com.discord) | |
+| [Etar](https://github.com/Etar-Group/Etar-Calendar) | koledar | [Etar](https://f-droid.org/en/packages/ws.xsoh.etar/) | [Etar - OpenSource Calendar](https://play.google.com/store/apps/details?id=ws.xsoh.etar) | |
 | [F-Droid](https://f-droid.org/) | knjižnica odprtokodnih orodij | [F-Droid](https://f-droid.org/) | | |
 | [Markor](https://github.com/gsantner/markor/tree/master) | urejevalnik golega besedila | [Markor](https://f-droid.org/packages/net.gsantner.markor/) | | |
 | [NewPipe](https://newpipe.net/) | nadomestek YouTuba (prikazuje njegove vsebine) | [NewPipe - Lightweight YouTube frontend](https://f-droid.org/en/packages/org.schabi.newpipe/) | | brez oglasov, privzeta možnost prenosa |
 | [Odysee](https://odysee.com/) | videoposnetki (kot YT, a boljše) | [Odysee](https://f-droid.org/en/packages/com.odysee.floss/) | [Odysee](https://play.google.com/store/apps/details?id=com.odysee.app) | popolnoma brezplačen |
-| OLauncher | zaganjalnik orodij | [Olauncher Clutter Free](https://f-droid.org/packages/app.olaunchercf/) | [Olauncher. Minimal AF Launcher](https://play.google.com/store/apps/details?id=app.olauncher) | preprost |
+| [OLauncher Clutter Free](https://github.com/OlauncherCF/OlauncherCF)| zaganjalnik orodij | [Olauncher Clutter Free](https://f-droid.org/packages/app.olaunchercf/) | [Olauncher. Minimal AF Launcher](https://play.google.com/store/apps/details?id=app.olauncher) | različica [OLauncherja](https://github.com/tanujnotes/Olauncher) |
 | [Organic Maps](https://organicmaps.app/) | zemljevid [Open Street Map](https://www.openstreetmap.org/) | [Organic Maps: Hike, Bike, Drive Offline](https://f-droid.org/en/packages/app.organicmaps/) | [Organic Maps: Hike Bike Drive](https://play.google.com/store/apps/details?id=app.organicmaps) | preprost; <br>v zadnjem času nekaj vprašljivih odločitev, zato glej različico *CoMaps* |
 | [OSMAnd](https://osmand.net/) | zemljevid [Open Street Map](https://www.openstreetmap.org/) z dodatki | [OsmAnd~](https://f-droid.org/en/packages/net.osmand.plus/) | [OsmAnd — Maps & GPS Offline](https://play.google.com/store/apps/details?id=net.osmand) | nalaganje izbranih področij za uporabo brez povezave |
 | [PhyFox](https://phyphox.org/) | za razne fizikalne poskuse z uporabo tipal, zvočnika in mikrofona dlančnika | [phyphox](https://f-droid.org/en/packages/de.rwth_aachen.phyphox/) | [phyphox](https://play.google.com/store/apps/details?id=de.rwth_aachen.phyphox) |
@@ -133,16 +136,22 @@ F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android
 | [Windy](https://windy.app/) | vremenski zemljevid | | [Windy.com - Weather Forecast](https://play.google.com/store/apps/details?id=com.windyty.android) | potrebuje spletno povezavo |
 | WriterPlus | urejevalnik označevalskega (MarkDown - .md) besedila | | [Writer Plus (Write On the Go)](https://play.google.com/store/apps/details?id=co.easy4u.writer) | |
 
-Moja izbrana orodja po namembnosti:
+#### Moja izbrana orodja po namembnosti
 
 - [Arity](https://github.com/woheller69/Arity): računalo
+- [Audio Recorder](https://github.com/Dimowner/AudioRecorder): snemalnik zvoka
+- [Aurora Store](https://auroraoss.com/): nameščevalnik orodij iz Trgovine Play
 - [Brave](https://brave.com/): spletni brskalnik
 - [CoMaps](https://www.comaps.app/): zemljevid [Open Street Map](https://www.openstreetmap.org/)
 - [Discord](): hitro dopisovanje
+- Fran
+- [Etar](https://github.com/Etar-Group/Etar-Calendar)
+- Every Door: manjša urejanja OSM na terenu
 - [F-Droid](https://f-droid.org/): knjižnica odprtokodnih orodij
 - [Markor](https://github.com/gsantner/markor/tree/master): urejevalnik golega besedila
 - [OSMAnd](https://osmand.net/): zemljevid [Open Street Map](https://www.openstreetmap.org/) z dodatki
-- [Sound Cloud](https://soundcloud.com/): glasba
+- [NewPipe](https://newpipe.net/): YouTube, SoundCloud
+- Sky Wiki: sončni vzhodi/zahodi, opazovanje zvezdnega neba
 - [Thunderbird](https://thunderbird.net/): elektronska pošta
 - [Track & Graph](https://samamco.github.io/track-and-graph/): beleženje
 - [Windy](https://windy.app/): vremenski zemljevid
@@ -151,12 +160,13 @@ Moja izbrana orodja po namembnosti:
 
 ## Zunanje povezave in viri
 
-- [Suckless.org - software that sucks less](https://suckless.org/) - kakovostni programi po načelu preprostosti, majhnosti, uporabnosti in, seveda, odprtokodnosti;
-    - [Suckless - Philosophy](https://suckless.org/philosophy/) - Sucklessova miselnost;
-    - [Suckless - Rocks](https://suckless.org/rocks/) - seznam programov, ki jih Suckless odobrava;
-    - [Suckless - Sucks](https://suckless.org/sucks/) - seznam programov in drugih zadev, ki jih Suckless **ne** odobrava;
-- [F-Droid](https://f-droid.org/) - orodje za nameščanje odprtokodnih orodij za [Android](https://www.android.com/) knjižnice [Free and Open Source Software](https://freeopensourcesoftware.org/);
-- [GitHub](https://github.com/) - spletno mesto za odprtokodne programe;
-- [Luke Madison Smith](https://lukesmith.xyz/) - bister mož, zagovornik Linuxa, odprtokodnosti, preprostosti;
-    - [YouTube - Luke Smith](https://www.youtube.com/c/lukesmithxyz) - Luketova stran na YouTubu;
-    - [GitHub - Luke Smith](https://github.com/LukeSmithxyz/) - Luketova stran na GitHubu;
+- [Suckless.org - software that sucks less](https://suckless.org/) - kakovostni programi po načelu preprostosti, majhnosti, uporabnosti in, seveda, odprtokodnosti
+    - [Suckless - Philosophy](https://suckless.org/philosophy/) - Sucklessova miselnost
+    - [Suckless - Rocks](https://suckless.org/rocks/) - seznam programov, ki jih Suckless odobrava
+    - [Suckless - Sucks](https://suckless.org/sucks/) - seznam programov in drugih zadev, ki jih Suckless **ne** odobrava
+- [F-Droid](https://f-droid.org/) - orodje za nameščanje odprtokodnih orodij za [Android](https://www.android.com/) knjižnice [Free and Open Source Software](https://freeopensourcesoftware.org/)
+- [GitHub](https://github.com/) - spletno mesto za odprtokodne programe
+- [Codeberg](https://codeberg.org/) - boljše spletno mesto za odprtokodne programe
+- [Luke Madison Smith](https://lukesmith.xyz/) - bister mož, zagovornik Linuxa, odprtokodnosti, preprostosti
+    - [YouTube - Luke Smith](https://www.youtube.com/c/lukesmithxyz) - Luketova stran na YouTubu
+    - [GitHub - Luke Smith](https://github.com/LukeSmithxyz/) - Luketova stran na GitHubu
