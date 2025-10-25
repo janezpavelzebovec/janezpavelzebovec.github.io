@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2025-10-21
+date: 2025-10-23
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -136,7 +136,9 @@ F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android
 | [Windy](https://windy.app/) | vremenski zemljevid | | [Windy.com - Weather Forecast](https://play.google.com/store/apps/details?id=com.windyty.android) | potrebuje spletno povezavo |
 | WriterPlus | urejevalnik označevalskega (MarkDown - .md) besedila | | [Writer Plus (Write On the Go)](https://play.google.com/store/apps/details?id=co.easy4u.writer) | |
 
-#### Moja izbrana orodja po namembnosti
+#### Moja izbrana orodja za dlančnik po namembnosti
+
+- GrapheneOS: *operacijski sistem*
 
 - [Arity](https://github.com/woheller69/Arity): računalo
 - [Audio Recorder](https://github.com/Dimowner/AudioRecorder): snemalnik zvoka
