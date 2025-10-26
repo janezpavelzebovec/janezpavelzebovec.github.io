@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-10-20
+date: 2025-10-25
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -150,6 +150,7 @@ Druge zbirke zemljepisnih podatkov:
 - [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid
 - [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim
 - [Open Topo Map](https://opentopomap.org/) - *topografski* zemljevid
+- [OsmAnd](https://osmand.net/map/) – spletna različica dlančniškega orodja, ki se jo da povezati s slednjim, tako da si tudi v brskalniku (npr. na računalniku) lahko gleduješ shranjene točke in sledi
 - [OSM Buildings](https://osmbuildings.org/) - trorazsežnostni prikaz zgradb
 - [Overpass Turbo](https://overpass-turbo.eu/) - iskalnik značilnosti
 - [ShadeMap](https://shademap.app/) - zemljevid senc po svetu v poljubnem trenutku
