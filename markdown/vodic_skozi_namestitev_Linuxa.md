@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2025-10-14
+date: 2025-11-02
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -281,6 +281,14 @@ Zagon novega *operacijskega sistema*:
 	{ MODKEY,           	XK_v,           selpaste,       {.i =  0} },
     ```
 
+### Knjižnice za Python
+
+#### Matplotlib
+
+Uporablja se za risanje najrazličnejših grafov
+
+- `sudo apt install python3-matplotlib` – namestitev knjižnice
+
 ---
 
 ## Kaj mora Janez Pavel še dodat v vodič:
@@ -288,5 +296,6 @@ Zagon novega *operacijskega sistema*:
 - namesti udisks2 (za udisksctl) za nameščanje ključka
     - povezava mape ~/USB
 - namesti sxhkd
+    - ponovni zagon sxhkd: `pkill -usr1 -x sxhkd`
 
 - `chmod +x pot/do/programčka` – podeli datoteki izvršilne pravice

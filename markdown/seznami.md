@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-10-25
+date: 2025-11-0
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -166,6 +166,7 @@ Druge zbirke zemljepisnih podatkov:
 
 - [How did you contribute to OpenStreetMap?](https://hdyc.neis-one.org/) – *statistika* urejanj po urejevalcih (in državah)
 - [Humanitarian OpenStreetMap Team (HOT)](https://www.hotosm.org/) – *kartiranje* območij ob (naravnih) nesrečah, revnih območij / območij v razvoju
+- [MapRoulette](https://maproulette.org/) – razni projekti, običajno za popravljanje nedoslednosti pri označevanju
 - [OSMCha](https://osmcha.org/) – pregledovanje kakovosti urejanj
 - [OSM Perfect Intersection Editor](https://osmpie.org/) – urejanje cest, križišč
 - [OSM Wikidata matcher](https://osm.wikidata.link/) – iskalnik povezav med podatki OSM in Wikidata (torej tudi Wikipedijo)
@@ -220,6 +221,11 @@ You Tube:
 - [Map Warper](https://mapwarper.net/) - predvsem zgodovinski zemljevidi, uvažanje zemljevidov in njihovo *geopozicioniranje*
 - [Old Maps Online](https://www.oldmapsonline.org/)
 - [Open Historical Map](https://www.openhistoricalmap.org/) - prosto dostopen in urejevan zemljevid
+
+##### Državni zgodovinski zemljevidi RS
+
+- [EZKN](https://geohub.gov.si/ghapp/ezkn/) – zemljiški zemljevidi (Franciscejski *kataster*, *reambulančni*, ...)
+- [GisKD](https://geohub.gov.si/ghapp/giskd/) – pregledovalnik podatkov kulturne dediščine, arheoloških podatkov, poplavljenih območij l. 2023
 
 ### Modroslovje, krščanstvo
 
