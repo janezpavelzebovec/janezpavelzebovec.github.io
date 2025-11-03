@@ -31,7 +31,7 @@ let intPol = 300000; // 5 min;
 let decStop = 2;
 let decOdst = 2;
 
-let prosSence = 0.75; // prosojnost sence
+let prosSence = 0.85; // prosojnost sence
 
 let proj = "aitoff"; // preslikava za Nebo
 

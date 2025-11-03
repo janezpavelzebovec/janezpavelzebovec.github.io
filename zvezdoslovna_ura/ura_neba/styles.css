@@ -15,7 +15,7 @@ html, body {
     overflow: hidden;
 }
 
-#zapri {
+#zapri, #privzetiPogled {
     color: var(--bPoudarek);
     font-size: 1em;
     padding-top: 0.5em;
