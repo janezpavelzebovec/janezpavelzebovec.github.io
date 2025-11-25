@@ -94,8 +94,8 @@ $$ x = x_0 + v_0 t + \frac {a t^2}{2} $$
 $$ v = v_0 + a t $$
 $$ v^2 = v_0^2 + 2 a x $$
 $$ \nu = \frac{1}{t_o} $$
-$$ v_o = \frac{o}{t_0} = \frac{2 \pi r}{t_0} = \omega r = 2 \pi \nu $$
-$$ a_r = \frac{v_0^2}{r} = \omega^2 r = \omega v $$
+$$ v_O = \frac{o}{t_o} = \frac{2 \pi r}{t_o} = \omega r = 2 \pi \nu $$
+$$ a_r = \frac{v_o^2}{r} = \omega^2 r = \omega v $$
 
 ## Sila
 
