@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2025-10-26
+date: 2025-11-24
 description: Moja osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran
 ---
@@ -17,7 +17,7 @@ To je moja spletna stran, namenjena mojim zanimanjem in potrebam, dobrodošli pa
 
 Tu je tudi [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih načeloma lahko preberete tudi drugje.
 
-Spletno mesto je dostopno tudi:
+To spletno mesto je dostopno tudi:
 
 - [preko GitHuba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) pod domeno [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
 - [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) pod domeno [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/).
@@ -43,9 +43,9 @@ Stiki:
 Nekaj mest spleta, kjer sem bolj dejaven:
 
 - [Open Street Map](https://www.openstreetmap.org/user/JanezPavelZebovec), kjer prispevam k najboljšemu prostodostopnemu zemljevidu;
+- [Open Historical Map](https://www.openhistoricalmap.org/user/JanezPavelZebovec), ki je kakor zgoraj omenjeni Open Street Map, vendar za zgodovinsko zemljepisje;
 - [Codeberg](https://codeberg.org/), kjer je nekaj mojih pregramčkov in ta spletna stran;
 - [GitHub](https://github.com/janezpavelzebovec), ki ga bom počasi celoma zamenjal s Codebergom, verjetno pa bo ostal še kot pomožno mesto teh zadev;
-- [Open Historical Map](https://www.openhistoricalmap.org/user/JanezPavelZebovec), ki je kakor izgorajomenjeni Open Street Map, vendar za zgodovinsko zemljepisje;
 - [Geneanet](https://gw.geneanet.org/japaze1_w), [WikiTree](https://www.wikitree.com/wiki/%C5%BDebovec-1) in [Geni](https://www.geni.com/people/Janez-Pavel-%C5%BDebovec), kjer popisujem predvsem častivredne korenine svojih prednikov in njihovih potomcev (glej tudi [Moj rodovnik](./mojrodovnik));
 - [Wikipedija](https://sl.wikipedia.org/wiki/Uporabnik:H%C3%AErnamae_P%C3%AEn_Iono%C3%ABryn), kjer prispevam k člankom, ki se mi zdijo pomembnejši ali zanimivejši (vendar nisem več dosti dejaven);
 - [TranslateWiki](https://translatewiki.net/wiki/User:JanezPavelZebovec), kjer sem naredil nekaj prevodov na OpenStreetMap in OpenHistoricalMap, prevajam pa tudi CoMaps na <https://translate.codeberg.org/>.

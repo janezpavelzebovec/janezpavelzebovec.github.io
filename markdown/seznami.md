@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-11-0
+date: 2025-11-22
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -22,6 +22,7 @@ YouTube:
 - [Artifexian](https://www.youtube.com/@Artifexian) - ustvarjanje izmišljenega sveta z znanstveno podlago
 - [Atomic Frontier](https://www.youtube.com/@AtomicFrontier) - znanstvene zanimivosti
 - [Fearless & Far](https://www.youtube.com/@fearlessandfar) - potovanja k domorodnim plemenom
+- [Fern](https://www.youtube.com/@fern-tv) – *dokumentarni filmi*
 - [Jedi Brooks](https://www.youtube.com/@jedibrooks7235) - *kritik* današnjega slabega pisanja zgodb v filmih
 - [The Woke Critic](https://www.youtube.com/@thewokecritic) - ocene filmov (predvsem kritika novejših trnedov v filmih) na zabaven način
 
@@ -81,11 +82,12 @@ You Tube:
 
 You Tube:
 
-- [Planet Wild](https://www.youtube.com/@planet-wild) - naravovarstvo in obnavljanje življenjskih prostorov v večjem obsegu
 - [XVIVO Scientific Animation](https://www.youtube.com/@XVIVOScientificAnimation)
 
 ### Okolje
 
+- [Climate Trace](https://climatetrace.org/explore) – podatki o onesnaževanju po svetu
+- [Planet Wild](https://www.youtube.com/@planet-wild) - naravovarstvo in obnavljanje življenjskih prostorov v večjem obsegu
 - [The New York Times - How 2016 Became Earth’s Hottest Year on Record](https://www.nytimes.com/interactive/2017/01/18/science/earth/2016-hottest-year-on-record.html)
 
 #### Snovoslovje
@@ -139,6 +141,8 @@ Druge zbirke zemljepisnih podatkov:
 
 ##### Zemljevidi, ki temeljijo na [OSM](https://www.openstreetmap.org/)
 
+Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services)
+
 - [BrezAvta.si](https://brezavta.si/) - iskanje povezav javnega prometa (avtobus, kolo, avto, skuter)
 - [Cycle Travel](https://cycle.travel/map) - kolesarski zemljevid, načrtovanje kolesarjenja tudi glede na površino
 - [CyclOSM](https://www.cyclosm.org/) - kolesarski zemljevid
@@ -146,8 +150,10 @@ Druge zbirke zemljepisnih podatkov:
     - [F4 Map - Demo](https://demo.f4map.com/)
 - [Geofabrik Tools – OSM Inspector](https://tools.geofabrik.de/osmi/) – izlušči ceste, naslove, vodovja, javni promet, ... in težave pri teh elementih
 - [Health Sites](https://healthsites.io/) – zemljevid zdravstvenih ustanov, storitev
+- [Historic Place – Map](https://gk.historic.place/historische_objekte/) – zgodovinski predmeti na OSM (domača stran [Historic Place](https://gk.historic.place/)) 
 - [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti
 - [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid
+- [Open Infrastructure Map](https://openinframap.org/) – *infrastrukturni* zemljevid (elektrika, plinovodi, vodovod, *telekomunikacija*)
 - [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim
 - [Open Topo Map](https://opentopomap.org/) - *topografski* zemljevid
 - [OsmAnd](https://osmand.net/map/) – spletna različica dlančniškega orodja, ki se jo da povezati s slednjim, tako da si tudi v brskalniku (npr. na računalniku) lahko gleduješ shranjene točke in sledi
@@ -169,11 +175,13 @@ Druge zbirke zemljepisnih podatkov:
 - [MapRoulette](https://maproulette.org/) – razni projekti, običajno za popravljanje nedoslednosti pri označevanju
 - [OSMCha](https://osmcha.org/) – pregledovanje kakovosti urejanj
 - [OSM Perfect Intersection Editor](https://osmpie.org/) – urejanje cest, križišč
+- [OSM Relation Analyzer](https://ra.osmsurround.org/)
 - [OSM Wikidata matcher](https://osm.wikidata.link/) – iskalnik povezav med podatki OSM in Wikidata (torej tudi Wikipedijo)
 
 ###### Prenos podatkov OSM
 
 - [BBBike - Extract](https://extract.bbbike.org/) - prenos kolesarskih zemljevidov
+- [Project OSMR](https://project-osrm.org/) – iskanje najkrajše poti
 
 ##### Državni zemljevidi Republike Slovenije
 
@@ -189,9 +197,11 @@ Druge zbirke zemljepisnih podatkov:
 - [SiMO](https://www.simo.si/) – načrtovalnik potovanj, uporablja tudi podatke [NAP](https://www.nap.si/) (Ministrstvo za infrastrukturo, Nacionalni center za upravljanje prometa)
 - [Testni 3D vpogledovalnik](https://clss.si/) - ogledovalnik trorazsežnostnega prikaza podatkov lidarja
 
-Državni podatki za prenos:
+Državni podatki za prenos ali gostovani
 
+- [ArcGIS REST Services Directory](https://geohub.gov.si/ags/rest/services)
 - [Portal Prostor – Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp/)
+    - [Temeljne karte](https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE) – gostovani (na voljo za uporabo v npr. JOSMu, na volju tudi za prenos v različnih oblikah): *topografska* zemljevida, franciscejski *kataster*, lidar, ...
 
 
 ### Zgodovina
@@ -204,6 +214,7 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Kamra](https://www.kamra.si/) - zgodovinske slike Slovenije
 - [Map Warper](https://mapwarper.net/) - prevsem zgodovinski zemljevidi, *geopozicioniranje* zemljevidov
 - [Plemiška dediščina na Slovenskem](https://plemiska-dediscina.zrc-sazu.si/)
+- [Rapalska meja](https://www.rapalskameja.si/) – medvojno obdobje
 - [Virtualna arhivska knjižnica](https://vac.sjas.gov.si/) - arhivi Republike Slovenije
 
 You Tube:
@@ -218,9 +229,11 @@ You Tube:
 - [Arcanum Maps](https://maps.arcanum.com/)
 - [David Rumsey Historical Map Collection](https://www.davidrumsey.com/luna)
 - [Internet Archive - Historic maps [email]](https://mailchi.mp/archive.org/email-20230413rumseymaps)
+- [Itiner-e](https://itiner-e.org/) – zemljevid rimskih cest
 - [Map Warper](https://mapwarper.net/) - predvsem zgodovinski zemljevidi, uvažanje zemljevidov in njihovo *geopozicioniranje*
 - [Old Maps Online](https://www.oldmapsonline.org/)
 - [Open Historical Map](https://www.openhistoricalmap.org/) - prosto dostopen in urejevan zemljevid
+- [Rapalska meja – Karta ZDRM](https://www.rapalskameja.si/zdrm_karta/) – zemljevid rapalske meje in (predvsem vojaški) *objekti* tistega obdobja
 
 ##### Državni zgodovinski zemljevidi RS
 
