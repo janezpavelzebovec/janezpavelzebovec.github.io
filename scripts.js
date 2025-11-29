@@ -43,8 +43,8 @@ document.addEventListener("keydown", function(event) {
       break;
 
     case 'D':
-      const linkDomov = document.getElementById("domov");
-      if (linkDomov) linkDomov.click();
+      const domov = document.getElementById("domov");
+      if (domov) domov.click();
       break;
   }
 });
