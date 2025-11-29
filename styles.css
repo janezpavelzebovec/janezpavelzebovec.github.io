@@ -136,6 +136,16 @@ code {
     display: inline-block;
 }
 
+kbd {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--bOspredje)
+  border: 1px solid var(--bOspredje);
+  margin-left: 2px;
+}
+
 img {
     display: block;
     margin-left: auto;

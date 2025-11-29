@@ -24,3 +24,27 @@
     });
   }
 })();
+
+document.addEventListener("keydown", function(event) {
+  // Preveri, da je Shift pritisnjen, Ctrl/Alt/Meta pa ne
+  if (!event.shiftKey || event.ctrlKey || event.altKey || event.metaKey) return;
+
+  const key = event.key.toUpperCase(); // velike črke, ker Shift običajno pomeni velike
+
+  switch (key) {
+    case 'S':
+      const stikaloTeme = document.getElementById("stikaloTeme");
+      if (stikaloTeme) stikaloTeme.click();
+      break;
+
+    case 'M':
+      const linkMD = document.getElementById("linkMD");
+      if (linkMD) linkMD.click();
+      break;
+
+    case 'D':
+      const linkDomov = document.getElementById("linkDomov");
+      if (linkDomov) linkDomov.click();
+      break;
+  }
+});

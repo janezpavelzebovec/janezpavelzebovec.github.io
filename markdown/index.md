@@ -25,6 +25,12 @@ To spletno mesto je dostopno tudi:
 Spletno mesto je dostopno v obliki *Markdown* pod naslovom *https://janezpavelzebovec.net/markdown/*[stran].
 Na dnu vsake strani je tudi povezava do pripadajoče strani v Markdownu.
 
+Bližnjice na tem spletnem mestu:
+
+- <kbd>B</kbd> – preklopi barvni način strani (temni/svetli)
+- <kbd>M</kbd> – odpre stran v Markdownu
+- <kbd>D</kbd> – povezava na domačo stran
+
 ---
 
 Stiki:
