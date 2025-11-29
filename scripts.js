@@ -32,7 +32,7 @@ document.addEventListener("keydown", function(event) {
   const key = event.key.toUpperCase(); // velike črke, ker Shift običajno pomeni velike
 
   switch (key) {
-    case 'S':
+    case 'B':
       const stikaloTeme = document.getElementById("stikaloTeme");
       if (stikaloTeme) stikaloTeme.click();
       break;
@@ -43,7 +43,7 @@ document.addEventListener("keydown", function(event) {
       break;
 
     case 'D':
-      const linkDomov = document.getElementById("linkDomov");
+      const linkDomov = document.getElementById("domov");
       if (linkDomov) linkDomov.click();
       break;
   }
