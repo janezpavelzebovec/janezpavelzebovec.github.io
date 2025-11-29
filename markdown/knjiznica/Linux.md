@@ -266,9 +266,9 @@ Dodatno:
 
 Bližnjice:
 
-- **Ctrl+c** - ustavi program;
-- **Ctrl+Shift+c** = *copy* - kopira izbrano besedilo v odložišče
-- **Ctrl+Shift+v** = **sredinska tipka** - prilepi iz odložišča
+- <kbd>Ctrl+c</kbd> - ustavi program;
+- <kbd>Ctrl+Shift+c</kbd> = *copy* - kopira izbrano besedilo v odložišče
+- <kbd>Ctrl+Shift+v</kbd> = **sredinska tipka** - prilepi iz odložišča
 
 Ukazi:
 
@@ -279,48 +279,48 @@ Ukazi:
 
 Za tipko *Mod1* se običajno uporablja/nastavi tipka *Super*.
 
-- **Ctrl+Shift+Q** – zaustavi DWM
-- **F11** -  celozaslonski način
-- **Mod1+Shift+c** = *close* -  zapri trenutno okno
-- **Mod1+Enter** -  nastavi prvo okno pod glavnim kot glavno
-- **Mod1+j/k** -  premikni se po oknih naprej/nazaj
-- **Mod1+Tab** -  premikaj se med okni
-- **Mod1+l/h** -  povečaj/zmanjšaj širino stranskih oken
-- **Mod1+i/d** -  povečaj/zmanjšaj število oken kot glavna
-- **Mod1+[0 - 9]** -  preklopi delovno površino (pod 0 so vsa odprta okna)
-- **Mod1+Shift+[0 - 9]** -  dodeli oknu drugo oznako (tj. delovno površino; *Mod1+Shift+0* dodeli oknu vse oznake 1 - 9)
-    - **Mod1+Shift+Ctrl+[0 - 9]** -  dodeli oknu dodatno oznako poleg trenutne
-- **Mod1+b** = *bar* -  prikaži/skrij zgornjo pasico
-- **Mod1+m** -  pojdi v način celozaslonskih oken
-- **Mod1+t** = *tiles* -  pojdi v prikaz oken v mozaičnem načinu
-- **Mod1+Tab** - premikaj se med okni
-- **Mod1+a** - odpre meni
+- <kbd>Ctrl+Shift+Q</kbd> – zaustavi DWM
+- <kbd>F11</kbd> -  celozaslonski način
+- <kbd>Mod1+Shift+c</kbd> = *close* -  zapri trenutno okno
+- <kbd>Mod1+Enter</kbd> -  nastavi prvo okno pod glavnim kot glavno
+- <kbd>Mod1+j/k</kbd> -  premikni se po oknih naprej/nazaj
+- <kbd>Mod1+Tab</kbd> -  premikaj se med okni
+- <kbd>Mod1+l/h</kbd> -  povečaj/zmanjšaj širino stranskih oken
+- <kbd>Mod1+i/d</kbd> -  povečaj/zmanjšaj število oken kot glavna
+- <kbd>Mod1+[0 - 9]</kbd> -  preklopi delovno površino (pod 0 so vsa odprta okna)
+- <kbd>Mod1+Shift+[0 - 9]</kbd> -  dodeli oknu drugo oznako (tj. delovno površino; <kbd>Mod1+Shift+0</kbd> dodeli oknu vse oznake 1 - 9)
+    - <kbd>od1+Shift+Ctrl+[0 - 9]</kbd> -  dodeli oknu dodatno oznako poleg trenutne
+- <kbd>MMod1+b</kbd> = *bar* -  prikaži/skrij zgornjo pasico
+- <kbd>Mod1+m</kbd> -  pojdi v način celozaslonskih oken
+- <kbd>Mod1+t</kbd> = *tiles* -  pojdi v prikaz oken v mozaičnem načinu
+- <kbd>Mod1+Tab</kbd> - premikaj se med okni
+- <kbd>Mod1+a</kbd> - odpre meni
 
-- **Mod1+Shift+Enter** - odpre terminal
-- **Ctrl++/-** - povečaj/pomanjšaj velikost pisave
+- <kbd>Mod1+Shift+Enter</kbd> - odpre terminal
+- <kbd>Ctrl++/-</kbd> - povečaj/pomanjšaj velikost pisave
 
 ### VIM
 
 Bližnjice:
 
-- **i** = *insert* -  preklopi v urejevalni način
-- **v** = *visual* -  preklopi v ogledovalni način (za izbiranje besedila/kode)
-    - **Shift+v** -  preklopi v ogledovalni način vrstic (za izbiranje celotnih vrstic)
-- **Shift+2** / **"** -  izberi register odložišča (odložišče moraš izbrati pred kopiranjem z npr. **y**)
-    - **+** -  "običajen" register
-    - **\*** -  register terminala
-    - **0** -  register zadnjega kopiranja z **y** (*yank*, ne pa tudi izrezovanja z **d**)
-- **y** = *yank* -  kopiraj
-- **d** -  izreži (tj. kopiraj in izbriši)
-- **p** = *paste* -  prilepi
-- **u** = *undo* -  pojdi korak nazaj v zgodovini urejanja
-- **gg** -  na začetek datoteke
-- **Shift+g**  -  na konec datoteke
-- **0** -  na začetek trenutne vrstice (v urejevalnem načinu deluje le splošni **Home**, kar je običajno **Fn+levo**)
-- **$** -  na konec trenutne vrstice (v urejevalnem načinu deluje le splošni **End**, kar je običajno **Fn+desno**)
-- **Tab** - premikaj se med urejevanimi datotekami
+- <kbd></kbd> = *insert* -  preklopi v urejevalni način
+- <kbd></kbd> = *visual* -  preklopi v ogledovalni način (za izbiranje besedila/kode)
+    - <kbd>Shift+v</kbd> -  preklopi v ogledovalni način vrstic (za izbiranje celotnih vrstic)
+- <kbd>Shift+2</kbd> / <kbd>"</kbd> -  izberi register odložišča (odložišče moraš izbrati pred kopiranjem z npr. </kbd>y</kbd>)
+    - <kbd>+</kbd> -  "običajen" register
+    - <kbd>\*</kbd> -  register terminala
+    - <kbd>0</kbd> -  register zadnjega kopiranja z <kbd>y</kbd> (*yank*, ne pa tudi izrezovanja z <kbd>d</kbd>)
+- <kbd>y</kbd> = *yank* -  kopiraj
+- <kbd>d</kbd> -  izreži (tj. kopiraj in izbriši)
+- <kbd>p</kbd> = *paste* -  prilepi
+- <kbd>u</kbd> = *undo* -  pojdi korak nazaj v zgodovini urejanja
+- <kbd>gg</kbd> -  na začetek datoteke
+- <kbd>Shift+g</kbd>  -  na konec datoteke
+- <kbd>0</kbd> -  na začetek trenutne vrstice (v urejevalnem načinu deluje le splošni <kbd>Home</kbd>, kar je običajno <kbd>Fn+levo</kbd>)
+- <kbd>$</kbd> -  na konec trenutne vrstice (v urejevalnem načinu deluje le splošni <kbd>End</kbd>, kar je običajno <kbd>Fn+desno</kbd>)
+- <kbd>Tab</kbd> - premikaj se med urejevanimi datotekami
 
-Dodajanje v več vrstic hkrati (a navpično poravnano): na mesto urejanja v prvi vrstici, **Ctrl+v**, označi stolpec (gor/dol), **Shift+i**, dodaj, **Esc**, **Esc**
+Dodajanje v več vrstic hkrati (a navpično poravnano): na mesto urejanja v prvi vrstici, <kbd>Ctrl+v</kbd>, označi stolpec (gor/dol), <kbd>Shift+i</kbd>, dodaj, <kbd>Esc</kbd>, <kbd>Esc</kbd>
 
 Ukazi:
 
@@ -338,51 +338,51 @@ Ukazi:
 
 Uporablja podobne bližnjice kot VIM:
 
-- **r** = *rename* -  preimenuj predmet
-- **y** = *yank* -  kopiraj
-- **d** -  izreži
-- **p** = *paste* -  prilepi
-- **c** = *clear* -  prekliči ukaze (kopiraj, izreži prilepi, ... za izbrane predmete)
-- **Space** -  izberi/odizberi predmet
-- **v** = *invert* -  obrni izbor
-- **u** = *unselect* -  odizberi vse
-- **gg** -  premakni se na vrh seznama predmetov
-- **Shift+g** -  premakni se na dno seznama predmetov
-- **s** = *sort* -  razvrsti
-- **s** - razvrsti po ...
-- **z** - nastavi
-    - **zh** = *hidden* -  skrij/prikaži skrite datoteke
-    - **zr** = *reverse* -  razvrsti predmete v obratnem vrstnem redu
-    - **zt** = *time* - prikaži čas datotek/map
-    - **zs** = *size* - prikaži velikost datotek
-- **Super+w** - odpri trenutno mesto v terminalu
+- <kbd>r</kbd> = *rename* -  preimenuj predmet
+- <kbd>y</kbd> = *yank* -  kopiraj
+- <kbd>d</kbd> -  izreži
+- <kbd>p</kbd> = *paste* -  prilepi
+- <kbd>c</kbd> = *clear* -  prekliči ukaze (kopiraj, izreži prilepi, ... za izbrane predmete)
+- <kbd>Space</kbd> -  izberi/odizberi predmet
+- <kbd>v</kbd> = *invert* -  obrni izbor
+- <kbd>u</kbd> = *unselect* -  odizberi vse
+- <kbd>gg</kbd> -  premakni se na vrh seznama predmetov
+- <kbd>Shift+g</kbd> -  premakni se na dno seznama predmetov
+- <kbd>s</kbd> = *sort* -  razvrsti
+- <kbd>s</kbd> - razvrsti po ...
+- <kbd>z</kbd> - nastavi
+    - <kbd>**zh</kbd>** = *hidden* -  skrij/prikaži skrite datoteke
+    - <kbd>**zr</kbd>** = *reverse* -  razvrsti predmete v obratnem vrstnem redu
+    - <kbd>**zt</kbd>** = *time* - prikaži čas datotek/map
+    - <kbd>**zs</kbd>** = *size* - prikaži velikost datotek
+- <kbd>**Super+w</kbd>** - odpri trenutno mesto v terminalu
 
-- **$** -  odpre ukazno vrstico, kjer lahko uporabljaš ukaze terminala (le tako lahko npr. brišeš) - **ta bližnjica ni privzeto nastavljena?**
+- <kbd>$</kbd> -  odpre ukazno vrstico, kjer lahko uporabljaš ukaze terminala (le tako lahko npr. brišeš) - **ta bližnjica ni privzeto nastavljena**
 
 - `/iskalni_niz` - išči
-    - **n** / **Shift+n** - premikaj se naprej/nazaj po zadetkih iskanja
+    - <kbd>n</kbd> / <kbd>Shift+n</kbd> - premikaj se naprej/nazaj po zadetkih iskanja
 
 ### NCMPCPP
 
-- **1** -  na sezname predvajanja (*Playlist*)
-- **2** -  na seznam vseh skladb (*Browse*)
-- **3** -  na iskalnik (*Search engine*)
-- **4** -  na knjižnico (*Media library*)
-- **5** -  na urejevalnik seznamov predvajanja (*Playlist editor*)
-- **6** -  na urejevalnik oznak skladb (*Tag editor*)
-- **7** -  na izhodne programe za zvok (*Outputs*)
-- **8** -  na prikazovalnik zvoka (*Music visualizer*)
-- **=** -  na uro (*Clock*)
-- **e** = *edit* -  odpri preprost urejevalnik oznak skladbe (*tiny tag editor*)
-- **l** = *lyrics* -  naloži besedilo pesmi
-- **>**/**<** -  pojdi na naslednjo/prejšnjo skladbo na seznamu
-- **f**/**b** = *forward*/*backward* -  išči naprej/nazaj v pesmi
-- **r** = *repeat mode* -  preklopi na način ponavljanja
-- **z** -  preklopi na naključni način
-- **y** -  preklopi na način ene skladbe (po eni sladbi prekine predvajanje)
-- **u** = *update* -  posodobi knjižnico
-- **i** -  pokaži podatke o skladbi
-- **:** -  odpri ukazno vrstico
+- <kbd>1</kbd> -  na sezname predvajanja (*Playlist*)
+- <kbd>2</kbd> -  na seznam vseh skladb (*Browse*)
+- <kbd>3</kbd> -  na iskalnik (*Search engine*)
+- <kbd>4</kbd> -  na knjižnico (*Media library*)
+- <kbd>5</kbd> -  na urejevalnik seznamov predvajanja (*Playlist editor*)
+- <kbd>6</kbd> -  na urejevalnik oznak skladb (*Tag editor*)
+- <kbd>7</kbd> -  na izhodne programe za zvok (*Outputs*)
+- <kbd>8</kbd> -  na prikazovalnik zvoka (*Music visualizer*)
+- <kbd>=</kbd> -  na uro (*Clock*)
+- <kbd>e</kbd> = *edit* -  odpri preprost urejevalnik oznak skladbe (*tiny tag editor*)
+- <kbd>l</kbd> = *lyrics* -  naloži besedilo pesmi
+- <kbd>>**/**<</kbd> -  pojdi na naslednjo/prejšnjo skladbo na seznamu
+- <kbd>f**/**b</kbd> = *forward*/*backward* -  išči naprej/nazaj v pesmi
+- <kbd>r</kbd> = *repeat mode* -  preklopi na način ponavljanja
+- <kbd>z</kbd> -  preklopi na naključni način
+- <kbd>y</kbd> -  preklopi na način ene skladbe (po eni sladbi prekine predvajanje)
+- <kbd>u</kbd> = *update* -  posodobi knjižnico
+- <kbd>i</kbd> -  pokaži podatke o skladbi
+- <kbd>:</kbd> -  odpri ukazno vrstico
 
 ### YT-DLP
 
