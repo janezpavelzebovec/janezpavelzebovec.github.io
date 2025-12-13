@@ -260,6 +260,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Sheehan Quirke](https://www.youtube.com/@SheehanQuirke) – *estetika*?
 - [SpaceX](https://www.youtube.com/@SpaceX) – vesoljsko podjetje
 - [The Woke Critic](https://www.youtube.com/@thewokecritic) - ocene filmov (predvsem kritika novejših trnedov v filmih) na zabaven način
+- [Tom Ayling](https://www.youtube.com/@tomwayling) – preprodajalec knjig
 
 #### Zanimivosti
 
@@ -274,6 +275,8 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 #### Zabava
 
 - [Alan Becker](https://www.youtube.com/@alanbecker) – animirani posnetki človečkov, ki živijo na zaslonu
+- [Brio shorts](https://www.youtube.com/@Brioanimations)
+- [Creature Comforts](https://www.youtube.com/@CreatureComfortsOfficial)
 - [Fun World History](https://www.youtube.com/@FunWorldHistory)
 - [Klemen Slakonja](https://www.youtube.com/@slakonjaklemen) - glasbenik
 - [Loic Suberville](https://www.youtube.com/@loic.suberville)
@@ -288,9 +291,11 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Cool Worlds](https://www.youtube.com/@CoolWorldsLab) – vesoljeslovje, *eksoplaneti*, vesoljska *tehnologija*
 - [Dialect](https://www.youtube.com/@dialectphilosophy)
 - [Dr Ben Miles](https://www.youtube.com/@DrBenMiles)
-- [SmarterEveryDay](https://www.youtube.com/@smartereveryday) – strojništvo, fizika
-- [StarTalk](https://www.youtube.com/@StarTalk) - *astrofizika*, naravoslovje na splošno (Neil deGrasse Tyson)
+- [Smarter Every Day](https://www.youtube.com/@smartereveryday) – strojništvo, fizika
+- [Star Talk](https://www.youtube.com/@StarTalk) - *astrofizika*, naravoslovje na splošno (Neil deGrasse Tyson)
+    - [Star Talk Plus](https://www.youtube.com/@StarTalkPlus)
 - [Steve Mould](https://www.youtube.com/@SteveMould)
+- [T. Folse Nuclear](https://www.youtube.com/@tfolsenuclear)
 - [Veritasium](https://www.youtube.com/@veritasium)
     - [2veritasium](https://www.youtube.com/@derek)
     - [Sciencium](https://www.youtube.com/@sciencium)
@@ -346,6 +351,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Imperial](https://www.youtube.com/@IMPERIALYT)
 - [Lost in Time](https://www.youtube.com/@LostInTimeVids)
 - [Manuel Bravo](https://www.youtube.com/@ManuelBravo/videos) - poudarek na cerkveni, rimski in egipčanski *arhitekturi*
+- [World War Two](https://www.youtube.com/@WorldWarTwo) – 2. svetovna vojna
 
 #### Modroslovje, krščanstvo
 
@@ -353,20 +359,29 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Ben Shapiro](https://www.youtube.com/@BenShapiro) – Jud, desničar
 - [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava
 - [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom)
+- [Jaiden Forrest](https://www.youtube.com/@JaidenForrest)
 - [Luke Smith](https://www.youtube.com/@LukeSmithxyz) - programstvo (Linux), modroslovje (*filozofija*), pravoslavstvo?
 - [Mikhaila Peterson](https://www.youtube.com/@mikhaila)
+- [Remnant777](https://www.youtube.com/@Remnant777) – kritik levice
 - [Sahar TV](https://www.youtube.com/@OfficialSaharTV) – Jud, zagovornik Izraela v vojni proti palestinski oblasti
+- [Turning Point USA](https://www.youtube.com/@turningpointusa)
 
 ##### Krščanstvo
 
 - [Answers in Genesis Canada](https://www.youtube.com/@AnswersCanada) – zagovornik krščanstva skozi znanost (ima precej vprašljivih razlag, a dosti stvari je še vedno zanimivih)
 - [Hochelaga](https://www.youtube.com/@hochelaga) – Sveto pismo
 
+#### Glasba
+
+- [Emmanuel House Münster](https://www.youtube.com/@emmanuelhousemuenster)
+
 #### Književnost
 
 - [Glumpuddle](https://www.youtube.com/@Glumpuddle) - Zgodbe iz Narnije
+- [In Deep Geek](https://www.youtube.com/@InDeepGeek)
 - [Ink and Fantasy](https://www.youtube.com/@InkandFantasy) - tudi književnost na splošno
 - [Middle Earth Tales](https://www.youtube.com/@middleearthtales)
+- [Nerd of the Rings](https://www.youtube.com/@NerdoftheRings)
 
 #### Strojništvo
 
