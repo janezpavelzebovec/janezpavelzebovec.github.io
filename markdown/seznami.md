@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-11-22
+date: 2025-12-13
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -14,65 +14,15 @@ Za seznam programov glej stran [Programje](./programje).
 
 - [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
 - [Odysee](https://odysee.com/)
-- [Thoughty2](https://www.youtube.com/@Thoughty2) - večinoma zgodovinske zanimivosti
-- [UsefulCharts](https://www.youtube.com/@UsefulCharts) - zgodovinski in drugi prikazi
-
-YouTube:
-
-- [Artifexian](https://www.youtube.com/@Artifexian) - ustvarjanje izmišljenega sveta z znanstveno podlago
-- [Atomic Frontier](https://www.youtube.com/@AtomicFrontier) - znanstvene zanimivosti
-- [Fearless & Far](https://www.youtube.com/@fearlessandfar) - potovanja k domorodnim plemenom
-- [Fern](https://www.youtube.com/@fern-tv) – *dokumentarni filmi*
-- [Jedi Brooks](https://www.youtube.com/@jedibrooks7235) - *kritik* današnjega slabega pisanja zgodb v filmih
-- [The Woke Critic](https://www.youtube.com/@thewokecritic) - ocene filmov (predvsem kritika novejših trnedov v filmih) na zabaven način
-
-### Zabava
-
-YouTube:
-
-- [Klemen Slakonja](https://www.youtube.com/@slakonjaklemen) - glasbenik
 
 ### Naravoslovje
-
-You Tube:
-
-- [Be Smart](https://www.youtube.com/@besmart/featured)
-- [Dialect](https://www.youtube.com/@dialectphilosophy)
-- [Dr Ben Miles](https://www.youtube.com/@DrBenMiles)
-- [SmarterEveryDay](https://www.youtube.com/@smartereveryday)
-- [StarTalk](https://www.youtube.com/@StarTalk) - *astrofizika*, naravoslovje na splošno (Neil deGrasse Tyson)
-- [Veritasium](https://www.youtube.com/@veritasium)
-    - [2veritasium](https://www.youtube.com/@derek)
-    - [Sciencium](https://www.youtube.com/@sciencium)
-
-#### Računstvo
-
-Glej tudi stran [Računstvo](knjiznica/racunstvo).
-
-- [Desmos - calculator](https://www.desmos.com/calculator)
-
-You Tube:
-
-- [3Blue1Brown](https://www.youtube.com/@3blue1brown)
-- [Jeffrey Chasnov](https://www.youtube.com/@Jeff-math)
-- [Numberphile](https://www.youtube.com/numberphile)
-
-#### *Fizika*
 
 - [The Physics Hypertextbook](https://physics.info/)
     - [Frequently Used Equations](https://physics.info/equations/) - pogoste enačbe
 
-##### Vesoljeslovje
+#### Vesoljeslovje
 
 - [ESky](https://www.glyphweb.com/esky) - *enciklopedija* nebesnih teles
-
-You Tube:
-
-- [Archaeoastronomy Database](https://www.youtube.com/@ArchaeoastronomyDatabase) - tudi zgodovinsko zvezdoslovje
-
-###### Čas
-
-- [Time and Date](https://www.timeanddate.com/)
 
 #### Živoslovje
 
@@ -80,44 +30,46 @@ You Tube:
 - [Observable - Tree of Life](https://observablehq.com/@d3/tree-of-life) - drevo življenja
 - [PlantNet](https://plantnet.org/) - prepoznava (in popis) rastlin
 
-You Tube:
+### Računstvo
 
-- [XVIVO Scientific Animation](https://www.youtube.com/@XVIVOScientificAnimation)
+Glej tudi stran [Računstvo](knjiznica/racunstvo).
 
-### Okolje
+- [Desmos - calculator](https://www.desmos.com/calculator)
 
-- [Climate Trace](https://climatetrace.org/explore) – podatki o onesnaževanju po svetu
-- [Planet Wild](https://www.youtube.com/@planet-wild) - naravovarstvo in obnavljanje življenjskih prostorov v večjem obsegu
-- [The New York Times - How 2016 Became Earth’s Hottest Year on Record](https://www.nytimes.com/interactive/2017/01/18/science/earth/2016-hottest-year-on-record.html)
+### Racunalnistvo
 
-#### Snovoslovje
+- [AI 2027](https://ai-2027.com/)
 
-- [IUPAC](https://iupac.org/)
-    - [Periodic Table of Elements](https://iupac.org/what-we-do/periodic-table-of-elements/)
-- [Periodic Table](https://www.periodictable.co.za/)
+#### Programiranje
 
-### Jezikoslovje
+Glej tudi strani [Programje](programje) in [Linux](Linux).
 
-Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
+- [Codeberg](https://codeberg.org/) - deljenje programov, programersko sodelovanje; odprtokodna in preprosta različica [GitHuba](https://github.com/)
+- [Geeks for Geeks](https://www.geeksforgeeks.org/) - priročnik za programiranje
+- [GitHub](https://github.com/) - deljenje programov, programersko sodelovanje; za odprtokodno, preprosto rešitev glej [Codeberg](https://codeberg.org/)
+- [Suckless](https://suckless.org/) - zveza ustvarjalcev kakovostne odprtokodne in *minimalistične* programske opreme
+    - [Suckless - Philosphy](https://suckless.org/philosophy/) - predstavitev njihove miselnosti
+- [W3Schools](https://www.w3schools.com/) - priročnik za programiranje
 
-- [Etymonline - Online Etymology Dictionary](https://www.etymonline.com/) - svetovni izvoroslovni slovar
-- [Fran](https://www.fran.si/) - slovarji Inštituta za slovenski jezik Frana Ramovša ZRC SAZU
-- [Franja](https://franja.si/) - večjezični portal Inštituta za slovenski jezik Frana Ramovša ZRC SAZU
-- [Glossika Phonics](https://www.youtube.com/@GlossikaPhonics) - izgovorjava v mednarodni glasoslovni abecedi z *animacijami*
-- [Omniglot](https://www.omniglot.com/) - *enciklopedija* pisav in jezikov
+##### Spletne strani
 
-You Tube:
+- [CSS-Tricks](https://css-tricks.com/)
+    - [Dark Mode in CSS Guide](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)
+- [MDN](https://developer.mozilla.org/) - priročnik za spletne strani
+- [web.dev](https://web.dev/)
+- [Web Dev Simplified Blog](https://blog.webdevsimplified.com/)
 
-- [Mark Van Stone](https://www.youtube.com/@markvanstone2012) - majevska pisava
-- [NativLang](https://www.youtube.com/@NativLang)
+Primerih dobrih spletnih strani:
+
+- [Suckless - The Web Sucks](https://suckless.org/sucks/web/)
+- [Motherfucking Website](https://motherfuckingwebsite.com/) - povsem preprosta spletna stran
+- [Better Motherfucking Website](http://bettermotherfuckingwebsite.com/) - zelo preprosta spletna stran
+- [Best Motherfucking website](https://bestmotherfucking.website/) - preprosta spletna stran
+- [Perfect Motherfucking Website](https://perfectmotherfuckingwebsite.com/) - preprosta spletna stran
 
 ### Zemljepisje
 
 - [Map Projection Explorer](https://www.geo-projections.com/) - prikazovalnik različnih preslikav zemljevidov sveta
-
-You Tube:
-
-- [Atlas Pro](https://www.youtube.com/@AtlasPro1) - zemljepisje in živoslovje
 
 #### Zemljevidi
 
@@ -203,7 +155,6 @@ Državni podatki za prenos ali gostovani
 - [Portal Prostor – Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp/)
     - [Temeljne karte](https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE) – gostovani (na voljo za uporabo v npr. JOSMu, na volju tudi za prenos v različnih oblikah): *topografska* zemljevida, franciscejski *kataster*, lidar, ...
 
-
 ### Zgodovina
 
 Glej tudi stran [Zgodovina](knjiznica/zgodovina).
@@ -216,13 +167,6 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Plemiška dediščina na Slovenskem](https://plemiska-dediscina.zrc-sazu.si/)
 - [Rapalska meja](https://www.rapalskameja.si/) – medvojno obdobje
 - [Virtualna arhivska knjižnica](https://vac.sjas.gov.si/) - arhivi Republike Slovenije
-
-You Tube:
-
-- [History for GRANITE](https://www.youtube.com/@HistoryforGRANITE) - egipčanske piramide
-- [IMPERIAL](https://www.youtube.com/@IMPERIALYT)
-- [Lost in Time](https://www.youtube.com/@LostInTimeVids)
-- [Manuel Bravo](https://www.youtube.com/@ManuelBravo/videos) - poudarek na cerkveni, rimski in egipčanski *arhitekturi*
 
 #### Zgodovinski zemljevidi
 
@@ -244,14 +188,6 @@ You Tube:
 
 - [Luka Smith](https://lukesmith.xyz/) - zagovornik odrtokodnosti, Linuxa, spreobrnjenec v pravoslavstvo
 
-You Tube:
-
-- [Alexander Grace](https://www.youtube.com/@alexandergrace5350) - kritik *feminizma*, pospornik prave moškosti
-- [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava
-- [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom)
-- [hochelaga](https://www.youtube.com/@hochelaga) - Sveto pismo
-- [Luke Smith](https://www.youtube.com/@LukeSmithxyz) - programstvo (Linux), modroslovje (*filozofija*), pravoslavstvo?
-
 ### Rodoslovje
 
 Glej tudi stran [Rodoslovje](knjiznica/rodoslovje).
@@ -266,11 +202,15 @@ Glej tudi stran [Rodoslovje](knjiznica/rodoslovje).
 
 - [The Encyclopedia of Arda](https://www.glyphweb.com/arda) - *enciklopedija* Tolkienovega sveta
 
-You Tube:
+### Jezikoslovje
 
-- [Glumpuddle](https://www.youtube.com/@Glumpuddle) - Zgodbe iz Narnije
-- [Ink and Fantasy](https://www.youtube.com/@InkandFantasy) - tudi književnost na splošno
-- [Middle Earth Tales](https://www.youtube.com/@middleearthtales)
+Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
+
+- [Etymonline - Online Etymology Dictionary](https://www.etymonline.com/) - svetovni izvoroslovni slovar
+- [Fran](https://www.fran.si/) - slovarji Inštituta za slovenski jezik Frana Ramovša ZRC SAZU
+- [Franja](https://franja.si/) - večjezični portal Inštituta za slovenski jezik Frana Ramovša ZRC SAZU
+- [Glossika Phonics](https://www.youtube.com/@GlossikaPhonics) - izgovorjava v mednarodni glasoslovni abecedi z *animacijami*
+- [Omniglot](https://www.omniglot.com/) - *enciklopedija* pisav in jezikov
 
 ### Glasba
 
@@ -293,81 +233,6 @@ You Tube:
 - Two Steps From Hell: [Spotify](https://open.spotify.com/artist/2qvP9yerCZCS0U1gZU8wYp),
 [You Tube](https://www.youtube.com/@TwoStepsFromHell-Official) - mogočna
 
-### Strojništvo
-
-- [Animagraffs](https://www.youtube.com/@animagraffs)
-- [Sabin Civil Engineering](https://www.youtube.com/@SabinCivil) - gradbeništvo
-
-#### Zvezna računala, zvezdoslovne ure
-
-- [Mark Frank](https://www.youtube.com/@MarkFrankclocks) - zvezdoslovna ura
-- [Spencer Connor](https://www.youtube.com/@EngineeringCommonsLLC) - zvezdoslovna ura
-
-### Obrt
-(ročno delo, izdelovanje naprav, ...)
-
-You Tube:
-
-- [ALEX LAB](https://www.youtube.com/@ALEXLAB) - izdelava Iron Manove obleke
-    - [ALEX LAB researches](https://www.youtube.com/@alexlabresearches)
-- [Andi's workshop](https://www.youtube.com/@andiswerkstatt-ow4uw/featured) - 
-- [Clay Hayes](https://www.youtube.com/@clayhayeshunter)
-- [Four Keys Book Arts](https://www.youtube.com/@FourKeysBookArts) - vezava, izdelava knjig
-- [H Carpenter](https://www.youtube.com/@HCarpenter) - tesarstvo
-- [Hacksmith Industries](https://www.youtube.com/@hacksmith)
-- [Northmen](https://www.youtube.com/@northmenguild) - tesarstvo, kovaštvo
-- [SK Bushcraft](https://www.youtube.com/@skbushcraft) - gradnja zavetij v naravi
-- [Stuff Made Here](https://www.youtube.com/@StuffMadeHere) - naprave
-
-### Racunalnistvo
-
-- [AI 2027](https://ai-2027.com/)
-
-You Tube:
-
-- [AI In Context](https://www.youtube.com/@AI_In_Context)
-- [Techlore](https://www.youtube.com/@techlore) – predstavitev orodij (*programov*), nevarnosti Googla, ...
-
-#### Programiranje
-
-Glej tudi strani [Programje](programje) in [Linux](Linux).
-
-- [Codeberg](https://codeberg.org/) - deljenje programov, programersko sodelovanje; odprtokodna in preprosta različica [GitHuba](https://github.com/)
-- [Geeks for Geeks](https://www.geeksforgeeks.org/) - priročnik za programiranje
-- [GitHub](https://github.com/) - deljenje programov, programersko sodelovanje; za odprtokodno, preprosto rešitev glej [Codeberg](https://codeberg.org/)
-- [Suckless](https://suckless.org/) - zveza ustvarjalcev kakovostne odprtokodne in *minimalistične* programske opreme
-    - [Suckless - Philosphy](https://suckless.org/philosophy/) - predstavitev njihove miselnosti
-- [W3Schools](https://www.w3schools.com/) - priročnik za programiranje
-
-You Tube:
-
-- [Chris Titus Tech](https://www.youtube.com/@ChrisTitusTech)
-- [Computerphile](https://www.youtube.com/@Computerphile)
-- [DistroTube](https://www.youtube.com/@DistroTube) - Linux
-- [NetworkChuck](https://www.youtube.com/@NetworkChuck) - predvsem omrežne, spletne zadeve
-- [RootJunky](https://www.youtube.com/@Rootjunkycom/videos) - vlamljanje v Android
-- [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP)
-
-##### Spletne strani
-
-- [CSS-Tricks](https://css-tricks.com/)
-    - [Dark Mode in CSS Guide](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)
-- [MDN](https://developer.mozilla.org/) - priročnik za spletne strani
-- [web.dev](https://web.dev/)
-- [Web Dev Simplified Blog](https://blog.webdevsimplified.com/)
-
-Dobre spletne strani:
-
-- [Suckless - The Web Sucks](https://suckless.org/sucks/web/)
-- [Motherfucking Website](https://motherfuckingwebsite.com/) - povsem preprosta spletna stran
-- [Better Motherfucking Website](http://bettermotherfuckingwebsite.com/) - zelo preprosta spletna stran
-- [Best Motherfucking website](https://bestmotherfucking.website/) - preprosta spletna stran
-- [Perfect Motherfucking Website](https://perfectmotherfuckingwebsite.com/) - preprosta spletna stran
-
-You Tube:
-
-- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
-
 ### Dostop do sicer plačljivih vsebin
 
 - [Internet Archive](https://web.archive.org/) - arhiv digitalnih virov (spletnih strani, knjig, ...)
@@ -381,9 +246,184 @@ You Tube:
 - [Partis](https://www.partis.si/)
 - [Sloflix](https://www.sloflix.com/)
 
-### Urjenje telesa
+------------------------------------------------------------------------------------------------------------------------------
 
+### You Tube
+
+- [Artifexian](https://www.youtube.com/@Artifexian) - ustvarjanje izmišljenega sveta z znanstveno podlago
+- [Atomic Frontier](https://www.youtube.com/@AtomicFrontier) - znanstvene zanimivosti
+- [Design Theory](https://www.youtube.com/@Design.Theory) – oblikovanje
+- [Enrico Tartarotti](https://www.youtube.com/@enricotartarotti) – o oblikovanju, tehnologiji in dušeslovju povezanem s tem
+- [Fearless & Far](https://www.youtube.com/@fearlessandfar) - potovanja k domorodnim plemenom
+- [Fern](https://www.youtube.com/@fern-tv) – *dokumentarni filmi*
+- [Jedi Brooks](https://www.youtube.com/@jedibrooks7235) - *kritik* današnjega slabega pisanja zgodb v filmih
+- [Sheehan Quirke](https://www.youtube.com/@SheehanQuirke) – *estetika*?
+- [SpaceX](https://www.youtube.com/@SpaceX) – vesoljsko podjetje
+- [The Woke Critic](https://www.youtube.com/@thewokecritic) - ocene filmov (predvsem kritika novejših trnedov v filmih) na zabaven način
+
+#### Zanimivosti
+
+- [Good News](Good News) – dobre novice iz sveta
+- [Imperial](https://www.youtube.com/@IMPERIALYT) – zgodovina in *politika*
+- [Johnny Harris](https://www.youtube.com/@johnnyharris) – "neodvisni novinar" – razno iz sveta / o svetu
+- [Ruhi Cenet Documentaries](https://www.youtube.com/@ruhicenetdocs) – potovanja v najrazličnejše konce sveta
+- [Thoughty2](https://www.youtube.com/@Thoughty2) - večinoma zgodovinske zanimivosti
+- [Tom Scott](https://www.youtube.com/@TomScottGo)
+- [UsefulCharts](https://www.youtube.com/@UsefulCharts) - zgodovinski in drugi prikazi
+
+#### Zabava
+
+- [Alan Becker](https://www.youtube.com/@alanbecker) – animirani posnetki človečkov, ki živijo na zaslonu
+- [Fun World History](https://www.youtube.com/@FunWorldHistory)
+- [Klemen Slakonja](https://www.youtube.com/@slakonjaklemen) - glasbenik
+- [Loic Suberville](https://www.youtube.com/@loic.suberville)
+- [Nutshell Animations](https://www.youtube.com/@NutshellAnimations)
+- [Two Set Violin](https://www.youtube.com/@twosetviolin)
+- [Vsauce](https://www.youtube.com/@Vsauce)
+
+#### Naravoslovje
+
+- [Ali the Dazzling](https://www.youtube.com/@alithedazzling) – računstvo, naravoslovje; doktor elektrotehnike, zaposlen pri NASA)
+- [Be Smart](https://www.youtube.com/@besmart/featured)
+- [Cool Worlds](https://www.youtube.com/@CoolWorldsLab) – vesoljeslovje, *eksoplaneti*, vesoljska *tehnologija*
+- [Dialect](https://www.youtube.com/@dialectphilosophy)
+- [Dr Ben Miles](https://www.youtube.com/@DrBenMiles)
+- [SmarterEveryDay](https://www.youtube.com/@smartereveryday) – strojništvo, fizika
+- [StarTalk](https://www.youtube.com/@StarTalk) - *astrofizika*, naravoslovje na splošno (Neil deGrasse Tyson)
+- [Steve Mould](https://www.youtube.com/@SteveMould)
+- [Veritasium](https://www.youtube.com/@veritasium)
+    - [2veritasium](https://www.youtube.com/@derek)
+    - [Sciencium](https://www.youtube.com/@sciencium)
+
+##### Vesoljeslovje
+
+- [Archaeoastronomy Database](https://www.youtube.com/@ArchaeoastronomyDatabase) - tudi zgodovinsko zvezdoslovje
+
+###### Čas
+
+- [Time and Date](https://www.timeanddate.com/)
+
+##### Živoslovje
+
+- [XVIVO Scientific Animation](https://www.youtube.com/@XVIVOScientificAnimation)
+
+##### Okolje
+
+- [Climate Trace](https://climatetrace.org/explore) – podatki o onesnaževanju po svetu
+- [Planet Wild](https://www.youtube.com/@planet-wild) - naravovarstvo in obnavljanje življenjskih prostorov v večjem obsegu
+- [The New York Times - How 2016 Became Earth’s Hottest Year on Record](https://www.nytimes.com/interactive/2017/01/18/science/earth/2016-hottest-year-on-record.html)
+
+##### Snovoslovje
+
+- [IUPAC](https://iupac.org/)
+    - [Periodic Table of Elements](https://iupac.org/what-we-do/periodic-table-of-elements/)
+- [Periodic Table](https://www.periodictable.co.za/)
+
+#### Računstvo
+
+- [3Blue1Brown](https://www.youtube.com/@3blue1brown)
+- [Jeffrey Chasnov](https://www.youtube.com/@Jeff-math)
+- [Numberphile](https://www.youtube.com/numberphile)
+
+#### Jezikoslovje
+
+- [Interslavic language - Medžuslovjansky jezyk](https://www.youtube.com/@interslavicofficial) – medslovanščina
+- [Mark Van Stone](https://www.youtube.com/@markvanstone2012) - majevska pisava
+- [NativLang](https://www.youtube.com/@NativLang)
+- [Rob Words](https://www.youtube.com/@RobWords) – angleščina
+
+#### Zemljepisje
+
+- [Atlas Pro](https://www.youtube.com/@AtlasPro1) - zemljepisje in živoslovje
+- [Map Your Grid](https://www.youtube.com/@MapYourGrid) – skupnosti za vnašanje podatkov *infrastrukture* v OSM
+- [Minds Behind Maps](https://www.youtube.com/@mindsbehindmaps)
+- [OpenStreetMap US](https://www.youtube.com/@openstreetmapus5936)
+
+#### Zgodovina
+
+- [History](https://www.youtube.com/@HISTORY)
+- [History for GRANITE](https://www.youtube.com/@HistoryforGRANITE) - egipčanske piramide
+- [Imperial](https://www.youtube.com/@IMPERIALYT)
+- [Lost in Time](https://www.youtube.com/@LostInTimeVids)
+- [Manuel Bravo](https://www.youtube.com/@ManuelBravo/videos) - poudarek na cerkveni, rimski in egipčanski *arhitekturi*
+
+#### Modroslovje, krščanstvo
+
+- [Alexander Grace](https://www.youtube.com/@alexandergrace5350) - kritik *feminizma*, pospornik prave moškosti
+- [Ben Shapiro](https://www.youtube.com/@BenShapiro) – Jud, desničar
+- [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava
+- [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom)
+- [Luke Smith](https://www.youtube.com/@LukeSmithxyz) - programstvo (Linux), modroslovje (*filozofija*), pravoslavstvo?
+- [Mikhaila Peterson](https://www.youtube.com/@mikhaila)
+- [Sahar TV](https://www.youtube.com/@OfficialSaharTV) – Jud, zagovornik Izraela v vojni proti palestinski oblasti
+
+##### Krščanstvo
+
+- [Answers in Genesis Canada](https://www.youtube.com/@AnswersCanada) – zagovornik krščanstva skozi znanost (ima precej vprašljivih razlag, a dosti stvari je še vedno zanimivih)
+- [Hochelaga](https://www.youtube.com/@hochelaga) – Sveto pismo
+
+#### Književnost
+
+- [Glumpuddle](https://www.youtube.com/@Glumpuddle) - Zgodbe iz Narnije
+- [Ink and Fantasy](https://www.youtube.com/@InkandFantasy) - tudi književnost na splošno
+- [Middle Earth Tales](https://www.youtube.com/@middleearthtales)
+
+#### Strojništvo
+
+- [Animagraffs](https://www.youtube.com/@animagraffs) – zelo podrobni *dokumentarni* posnetki razlage delovanja posameznih naprav v celoti
+- [Brick Technology](https://www.youtube.com/@BrickTechnology) – izdelovanje napravic / vozil iz tehnokock
+- [Sabin Civil Engineering](https://www.youtube.com/@SabinCivil) - gradbeništvo
+
+##### Zvezna računala, zvezdoslovne ure
+
+- [Mark Frank](https://www.youtube.com/@MarkFrankclocks) - zvezdoslovna ura
+- [Spencer Connor](https://www.youtube.com/@EngineeringCommonsLLC) - zvezdoslovna ura
+
+#### Obrt
+(ročno delo, izdelovanje naprav, ...)
+
+- [Alex Lab](https://www.youtube.com/@ALEXLAB) - izdelava Iron Manove obleke
+    - [Alex Lab researches](https://www.youtube.com/@alexlabresearches)
+- [Andi's workshop](https://www.youtube.com/@andiswerkstatt-ow4uw/featured) - 
+- [Clay Hayes](https://www.youtube.com/@clayhayeshunter)
+- [Colin Furze](https://www.youtube.com/@colinfurze)
+- [Four Keys Book Arts](https://www.youtube.com/@FourKeysBookArts) - vezava, izdelava knjig
+- [H Carpenter](https://www.youtube.com/@HCarpenter) - tesarstvo
+- [Hacksmith Industries](https://www.youtube.com/@hacksmith)
+- [Northmen](https://www.youtube.com/@northmenguild) - tesarstvo, kovaštvo
+- [SK Bushcraft](https://www.youtube.com/@skbushcraft) - gradnja zavetij v naravi
+- [Stuff Made Here](https://www.youtube.com/@StuffMadeHere) - naprave
+
+#### Racunalnistvo
+
+- [AI In Context](https://www.youtube.com/@AI_In_Context) – umetna inteligenca
+- [Bryce Vandergrift](https://www.youtube.com/@brycevandegrift)
+- [Chris Titus Tech](https://www.youtube.com/@ChrisTitusTech)
+- [Computerphile](https://www.youtube.com/@Computerphile)
+- [Core Dumpped](https://www.youtube.com/@CoreDumpped)
+- [Distro Tube](https://www.youtube.com/@DistroTube) – Linux
+- [Network Chuck](https://www.youtube.com/@NetworkChuck)
+- [Techlore](https://www.youtube.com/@techlore) – predstavitev orodij (*programov*), nevarnosti Googla, ...
+- [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP) – Linux
+
+##### Programiranje
+
+- [Chris Titus Tech](https://www.youtube.com/@ChrisTitusTech)
+- [Computerphile](https://www.youtube.com/@Computerphile)
+- [DistroTube](https://www.youtube.com/@DistroTube) - Linux
+- [NetworkChuck](https://www.youtube.com/@NetworkChuck) - predvsem omrežne, spletne zadeve
+- [RootJunky](https://www.youtube.com/@Rootjunkycom/videos) - vlamljanje v Android
+- [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP)
+
+###### Spletne strani
+
+- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
+
+#### Urjenje telesa
+
+- [Grant Stevens](https://www.youtube.com/@grantstevensma) – borilne veščine
 - [larsandersen23](https://www.youtube.com/@larsandersen23) - lokostrelstvo
+- [Magnus Midtbø](https://www.youtube.com/@magmidt) – plezanje, telesni izzivi
 - [Mover's Odyssey](https://www.youtube.com/@moversodyssey) - strokovne razlage, napotki, skice
 - [Sondre Berg](https://www.youtube.com/@Sondre_Berg) - "ulična vadba" (*kalistenika*)
 - [The Bioneer](https://www.youtube.com/@TheBioneer) - uporabna moč
