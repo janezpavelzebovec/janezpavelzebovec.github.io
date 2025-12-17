@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-12-13
+date: 2025-12-17
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -178,14 +178,19 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Old Maps Online](https://www.oldmapsonline.org/)
 - [Open Historical Map](https://www.openhistoricalmap.org/) - prosto dostopen in urejevan zemljevid
 - [Rapalska meja – Karta ZDRM](https://www.rapalskameja.si/zdrm_karta/) – zemljevid rapalske meje in (predvsem vojaški) *objekti* tistega obdobja
+- [Time Travel](https://time-travel.app/) – uporablja podatke OpenHistoricalMap in OpenStreetMap in jih združuje z Wikipedijo, 
 
 ##### Državni zgodovinski zemljevidi RS
 
 - [EZKN](https://geohub.gov.si/ghapp/ezkn/) – zemljiški zemljevidi (Franciscejski *kataster*, *reambulančni*, ...)
 - [GisKD](https://geohub.gov.si/ghapp/giskd/) – pregledovalnik podatkov kulturne dediščine, arheoloških podatkov, poplavljenih območij l. 2023
+- [Računalniški muzej – Temeljni topografski načrt RS](https://ttn.muzej.si/) (2008)
 
 ### Modroslovje, krščanstvo
 
+- [Long Now](https://longnow.org/) – družba, ki bi razmišljaja na ravni *civilizacije*, oz. daljne preteklosti in prihodnosti
+    - [The 10,000-year clock](https://longnow.org/clock/) – mehanska ura, ki naj bi z zelo malo vzdrževanja in občasnim navitjem delala 10 tisoč let
+        - [načrti za uro](https://static.longnow.org/media/ClockPlans01.pdf)
 - [Luka Smith](https://lukesmith.xyz/) - zagovornik odrtokodnosti, Linuxa, spreobrnjenec v pravoslavstvo
 
 ### Rodoslovje
@@ -364,6 +369,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Mikhaila Peterson](https://www.youtube.com/@mikhaila)
 - [Remnant777](https://www.youtube.com/@Remnant777) – kritik levice
 - [Sahar TV](https://www.youtube.com/@OfficialSaharTV) – Jud, zagovornik Izraela v vojni proti palestinski oblasti
+- [The Long Now Foundation](https://www.youtube.com/@longnow)
 - [Turning Point USA](https://www.youtube.com/@turningpointusa)
 
 ##### Krščanstvo
