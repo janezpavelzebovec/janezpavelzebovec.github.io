@@ -29,11 +29,12 @@ Popolnoma zgrešen (a zelo pogost) pristop k prevajanju, oz. kovanju slovenskih 
 Če torej povzamemo nekaj pravil visoke slovenščine:
 
 - **Visoka slovenščina je jezik, ki izvira le iz sebe, torej naj bo tak, kot bi bil brez prevzemanja iz, oz. posnemanja drugih jezikov.**
-- **To ni le knjižni, oz. zborni jezik, pač pa vključuje tudi vsa slovenska narečj.**
-- **Od drugih jezikov se ne prevzema niti izrazov, niti jezikovnih pravil (besedotvornih, skladenjskih, oblikoslovnih, povednih, ...). Izjema je lahko v majhni meri (!) zgolj slovnica.**
-- **Novi izrazi naj ne bodo dobesedni prevodi tujih izrazov. Izraze naj se koje po njihovi trenutni rabi.**
-- **Prevzeti izrazi naj se v zapisu jasno ločijo od domačih, podobno kot je uveljavljeno označevanje latinskih poimenovanj v živoslovju, zdravstvu – torej v poševnem tisku, podčrtano, v navednicah.**
-- Še pod vprašajem: **Visoko slovenščino se zapisuje v slovenskem črkopisu – gajici; zato naj se vsi tuji izrazi, ki so zapisani v slovenščini, pišejo po gajici, podobno kot Hrvatje počnejo v svojem črkopisu. Naj bo zapis v slovenščini vedno berljiv Slovencu.** Kjer pomen zapisanega zato postane preveč dvomljiv, se lahko nadomesti (ali dopolni v oklepaju) z izrazom v tujem črkopisu, a po omenjenih pravilih. Npr.: *Linux* > Linuks, *John Ronald Reuel Tolkien* > Džon Ronald Roel Tolkin.
+- **Visoka slovenščina vključuje tudi vsa narečja**, ni le knjižni, oz. zborni jezik.
+- **Od drugih jezikov se ne prevzema niti izrazov, niti jezikovnih pravil** (besedotvornih, skladenjskih, oblikoslovnih, povednih, ...). Izjema je lahko v majhni meri (!) zgolj slovnica.
+- **Novi izrazi naj ne bodo dobesedni prevodi tujih izrazov.**
+- **Izraze naj se koje po njihovi trenutni rabi.**
+- **Prevzeti izrazi naj se v zapisu jasno ločijo od domačih**, podobno kot je uveljavljeno označevanje latinskih poimenovanj v živoslovju, zdravstvu – torej v poševnem tisku, podčrtano, v navednicah.
+- Še pod vprašajem: **Visoko slovenščino se zapisuje v slovenskem črkopisu – gajici**; zato naj se vsi tuji izrazi, ki so zapisani v slovenščini, pišejo po gajici, podobno kot Hrvatje počnejo v svojem črkopisu. Naj bo zapis v slovenščini vedno berljiv Slovencu. Kjer pomen zapisanega zato postane preveč dvomljiv, se lahko nadomesti (ali dopolni v oklepaju) z izrazom v tujem črkopisu, a po omenjenih pravilih. Npr.: *Linux* > Linuks, *John Ronald Reuel Tolkien* > Džon Ronald Roel Tolkin.
 
 ## Obstoječa slovenščina
 
