@@ -362,6 +362,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 
 - [Alexander Grace](https://www.youtube.com/@alexandergrace5350) - kritik *feminizma*, pospornik prave moškosti
 - [Ben Shapiro](https://www.youtube.com/@BenShapiro) – Jud, desničar
+- [Brian Holdsworth](https://www.youtube.com/@BrianHoldsworth)
 - [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava
 - [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom)
 - [Jaiden Forrest](https://www.youtube.com/@JaidenForrest)
