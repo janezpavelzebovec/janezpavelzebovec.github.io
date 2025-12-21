@@ -137,7 +137,7 @@ var baseMaps = {
 var overlayMaps = {
     "Slovenske cerkve": cerkve,
     "Slovenske župnijske cerkve": zupnijske_cerkve,
-    "Slo. župnije z vsem kar pod njih spada": zupnije,
+    "Slo. župnije z vsem kar spada pod njih": zupnije,
     "Slovenski gradovi": gradovi,
 };
 
