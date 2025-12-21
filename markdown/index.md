@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2025-11-24
+date: 2025-12-19
 description: Moja osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran
 ---
@@ -13,23 +13,17 @@ To je moja spletna stran, namenjena mojim zanimanjem in potrebam, dobrodošli pa
 - [Moj rodovnik](/moj_rodovnik) - moje družinsko drevo, na katerem delava z bratrancem <small>(s poudarkom na prednikih; za živeče osebe in umrle v zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh ostalih podatkov)</small>
 - [Programje](/programje) - predstavitev miselnosti in seznam dobrih računalniških orodij
 - [Moji seznami](/seznami) - priporočila, predvsem spletne povezave <small>*(tole bi bilo treba malo bolj urediti)*</small>
-- [Moja polica](/moja_polica) – seznam mojih knjig
+- [Moja polica](/moja_polica) – seznam večine mojih knjig
 
 Tu je tudi [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih načeloma lahko preberete tudi drugje.
 
 To spletno mesto je dostopno tudi:
 
+- [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) pod domeno [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/),
 - [preko GitHuba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) pod domeno [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
-- [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) pod domeno [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/).
 
 Spletno mesto je dostopno v obliki *Markdown* pod naslovom *https://janezpavelzebovec.net/markdown/*[stran].
 Na dnu vsake strani je tudi povezava do pripadajoče strani v Markdownu.
-
-Bližnjice na tem spletnem mestu:
-
-- <kbd>B</kbd> – preklopi barvni način strani (temni/svetli)
-- <kbd>M</kbd> – odpre stran v Markdownu
-- <kbd>D</kbd> – povezava na domačo stran
 
 ---
 
@@ -40,7 +34,7 @@ Stiki:
 - [Matrix](https://matrix.to/#/@janezpavelzebovec:matrix.org) ([Element](https://element.io/))
 - [Discord](https://discord.com/): [janezpavel](https://discordapp.com/users/789883011084058666)
 
-Še nekateri stiki, ki le obstajajo, a se ne uporabljajo:
+Še nekateri stiki, ki sicer obstajajo, a jih ne uporabljam:
 
 - [Facebook](https://www.facebook.com/janezpavel.zebovec)
 - [Instagram](https://www.instagram.com/janezpavelzebovec/)
