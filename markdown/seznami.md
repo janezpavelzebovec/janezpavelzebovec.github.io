@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-12-17
+date: 2025-12-22
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -75,6 +75,7 @@ Primerih dobrih spletnih strani:
 
 Za zgodovinske zemljevide glej tudi razdelek [Zgodovinski zemljevidi](#Zgodovinski_zemljevidi).
 
+- [ArcGIS](https://www.arcgis.com/apps/mapviewer/) – večinoma razni slogi zemljevida Esri
 - [David Rumsey Map Collection](https://www.davidrumsey.com/) - predvsem zgodovinski zemljevidi
 - [Flurnamen](https://maps.flurnamen.at/) - ledinska imena
 - [GeoFabrik Tools](https://tools.geofabrik.de/)
@@ -90,6 +91,11 @@ Druge zbirke zemljepisnih podatkov:
 
 - [Kočevski rog - lokacije](https://www.google.com/maps/d/u/0/viewer?mid=12iNVSpmmL8bA2B3qieBjdweF2t8&femb=1&ll=45.666989008977595%2C15.028848286105609&z=14)
 - [Župnije v nadškofiji Ljubljana](https://www.google.com/maps/d/viewer?mid=17_9jBIaZns8lH4PIv7GnIJ8DnoU&hl=sl&ll=46.066899841485196%2C14.912383489615394&z=10)
+
+Spletni zemljevidi za razvijalce spletnih strani:
+
+- [Alex Urquhart: Free Tiles](https://github.com/alexurquhart/free-tiles) (GitHub)
+- [Leaflet Provider](https://leaflet-extras.github.io/leaflet-providers/preview/index.html)
 
 ##### Zemljevidi, ki temeljijo na [OSM](https://www.openstreetmap.org/)
 
@@ -152,6 +158,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 Državni podatki za prenos ali gostovani
 
 - [ArcGIS REST Services Directory](https://geohub.gov.si/ags/rest/services)
+- [Javni spletni servisi GURS - WMS](https://ipi.eprostor.gov.si/wms-si-gurs-dts/wms)
 - [Portal Prostor – Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp/)
     - [Temeljne karte](https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE) – gostovani (na voljo za uporabo v npr. JOSMu, na volju tudi za prenos v različnih oblikah): *topografska* zemljevida, franciscejski *kataster*, lidar, ...
 
