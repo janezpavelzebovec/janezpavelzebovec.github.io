@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-12-22
+date: 2025-12-26
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -9,6 +9,18 @@ author: Janez Pavel Žebovec
 # Moji seznami
 
 Za seznam programov glej stran [Programje](./programje).
+
+Seznami na zunanjih spletnih mestih:
+
+- [W3Schools](https://www.w3profile.com/JanezPavelZebovec), kjer se deloma spoznavam s programiranjem
+- [prebrane knjige](https://www.goodreads.com/review/list/148184173-janez-pavel-ebovec?shelf=readi) - seveda tu niso navedene vse
+- [pogledani filmi](https://www.imdb.com/list/ls521309978/) - seveda tu niso navedeni vsi
+
+Moja *priporočila* (precej nepopolna)
+
+- [dobre knjige](https://www.goodreads.com/review/list/148184173-h-rnamae-p-n?shelf=dobre-knjige&visible_control=batchEdit)
+- [dobre skladbe/glasba](https://soundcloud.com/janez-pavel-zebovec/sets/good-music) ([tudi na Spotify](https://open.spotify.com/playlist/4ZSRzMCXUwssvjSRL1lRVn?si=bkhqqx9iTU6FecmLCyzkow))
+- [dobri filmi](https://www.imdb.com/list/ls527692757/)
 
 ## Splet
 
@@ -174,6 +186,7 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Plemiška dediščina na Slovenskem](https://plemiska-dediscina.zrc-sazu.si/)
 - [Rapalska meja](https://www.rapalskameja.si/) – medvojno obdobje
 - [Virtualna arhivska knjižnica](https://vac.sjas.gov.si/) - arhivi Republike Slovenije
+- [Zgodovina na dlani](https://zgodovinanadlani.si/)
 
 #### Zgodovinski zemljevidi
 
