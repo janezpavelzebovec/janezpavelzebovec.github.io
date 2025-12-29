@@ -288,7 +288,7 @@ var cerkve = createOverpassLayer(`
       way["amenity"="place_of_worship"]["building"="church"](area.a);
     );
     out center tags;`,
-    "#ff0000");
+    "#FF66CC");
 
 var zupnijske_cerkve = createOverpassLayer(`
     [out:json][timeout:60];
@@ -298,7 +298,7 @@ var zupnijske_cerkve = createOverpassLayer(`
       way["amenity"="place_of_worship"]["building"="church"]["church:type"="parish"](area.a);
     );
     out center tags;`,
-    "#7b1e1e");
+    "#9900CC");
 
 var zupnije = createOverpassLayer(`
     [out:json][timeout:60];
@@ -308,7 +308,7 @@ var zupnije = createOverpassLayer(`
       way["parish"](area.a);
     );
     out center tags;`,
-    "#0000ff");
+    "#CC00CC");
 
 var gradovi = createOverpassLayer(`
     [out:json][timeout:60];
@@ -320,12 +320,22 @@ var gradovi = createOverpassLayer(`
     out center tags;`,
     "#000000");
 
+var naducilisca = createOverpassLayer(`
+    [out:json][timeout:60];
+    area["ISO3166-1"="SI"]->.a;
+    (
+      node["building"="university"](area.a);
+      way["building"="university"](area.a);
+    );
+    out center tags;`,
+    "#3333FF");
+
 // ===== LAYERS CONTROL =====
 var baseMaps = {
     "OpenStreetMap": osm,
     "OpenStreetMap HOT": osmHOT,
     "CyclOSM": CyclOSM,
-    "Stadia Alidade Satellite": Stadia_AlidadeSatellite,
+    //"Stadia Alidade Satellite": Stadia_AlidadeSatellite,
     "Thunderforest Transport": Thunderforest_Transport,
     "Thunderforest Landscape": Thunderforest_Landscape,
     "OpenTopoMap": openTopoMap,
@@ -352,13 +362,14 @@ var overlayMaps = {
     "OpenSeaMap": OpenSeaMap,
     "WaymarkedTrails – hiking": WaymarkedTrails_hiking,
     "WaymarkedTrails – cycling": WaymarkedTrails_cycling,
-    "Stadia_StamenTerrainLabels": Stadia_StamenTerrainLabels,
-    "Stadia_StamenTerrainLines": Stadia_StamenTerrainLines,
+    //"Stadia_StamenTerrainLabels": Stadia_StamenTerrainLabels,
+    //"Stadia_StamenTerrainLines": Stadia_StamenTerrainLines,
 
-    "Slovenske cerkve": cerkve,
-    "Slovenske župnijske cerkve": zupnijske_cerkve,
+    "Slo. cerkve": cerkve,
+    "Slo. župnijske cerkve": zupnijske_cerkve,
     "Slo. župnije z vsem kar spada pod njih": zupnije,
-    "Slovenski gradovi": gradovi,
+    "Slo. gradovi": gradovi,
+    "Slo. nadučilišča": naducilisca,
 };
 
 L.control.layers(baseMaps, overlayMaps).addTo(map);

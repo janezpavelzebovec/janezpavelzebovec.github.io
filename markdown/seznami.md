@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-12-26
+date: 2025-12-27
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -445,6 +445,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Core Dumpped](https://www.youtube.com/@CoreDumpped)
 - [Distro Tube](https://www.youtube.com/@DistroTube) – Linux
 - [Network Chuck](https://www.youtube.com/@NetworkChuck)
+- [SysHack](https://www.youtube.com/@SysHackkk) – razkriva slabe plati Windowsa, zagovarja prehod na Linux
 - [Techlore](https://www.youtube.com/@techlore) – predstavitev orodij (*programov*), nevarnosti Googla, ...
 - [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP) – Linux
 

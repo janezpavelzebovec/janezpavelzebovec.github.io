@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2025-11-02
+date: 2025-12-29
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -82,6 +82,9 @@ Zagon novega *operacijskega sistema*:
     - `sudo make clean install` – izgradi program
     - `cd ..` – premakni se nazaj v nadmapo
 - `startx` – zažene strežnik X, oz. DWM (brez **~/.xinitrc** ne bo delovalo)
+
+### Tipkovnica
+
 - `sudo dpkg-reconfigure keyboard-configuration` – zaženi programček za nastavitev tipkovnice
     - izberi *model* svoje tipkovnice
     - izberi običajno slovensko tipkovnico "*Slovenian*"
@@ -89,6 +92,10 @@ Zagon novega *operacijskega sistema*:
     - za *Compose key* pa *Right Alt (AltGr)* ali pa nič, če ne rabiš
 - `sudo systemctl restart keyboard-setup.service` – znova zaženeš sistem za uporabo tipkovnice
 - nastavi slovensko tipkovnico v terminalu s `setxkbmap si`in to dodaj v ~./xinitrc
+
+### Zvok
+
+- `sudo apt install alsa-utils pulseaudio pulsemixer` – namesti programe za predvajanje zvoka (**pulsemixer** je program za uravnavanje glasnosti, izbiranje izhoda)
 
 ## Namestitev dodatnih orodij
 
@@ -291,7 +298,7 @@ Uporablja se za risanje najrazličnejših grafov
 
 ---
 
-## Kaj mora Janez Pavel še dodat v vodič:
+## Kaj je treba še dodati v vodič:
 
 - namesti udisks2 (za udisksctl) za nameščanje ključka
     - povezava mape ~/USB

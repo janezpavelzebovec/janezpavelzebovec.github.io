@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2025-12-26
+date: 2025-12-29
 description: Moja osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran
 ---
@@ -16,6 +16,8 @@ To je moja spletna stran, namenjena mojim zanimanjem in potrebam, dobrodošli pa
 - [Moja polica](/moja_polica) – seznam večine mojih knjig
 
 Tu je tudi [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/področja mojih zanimanj ali izobraževanja, torej zadeve, ki si jih načeloma lahko preberete tudi drugje.
+
+Na [Zemljevidu](/zemljevid/) je na voljo več prostodostopnih zemljevidov (večinoma so iz podatkov OpenStreetMap), ter nekaj izbranih prekrivnih slojev iz podatkov OSM.
 
 ---
 
@@ -37,23 +39,23 @@ Nekaj mest spleta, kjer sem bolj dejaven:
 - [Open Street Map](https://www.openstreetmap.org/user/JanezPavelZebovec), kjer prispevam k najboljšemu prostodostopnemu zemljevidu;
 - [Open Historical Map](https://www.openhistoricalmap.org/user/JanezPavelZebovec), ki je kakor zgoraj omenjeni Open Street Map, vendar za zgodovinsko zemljepisje;
 - [Codeberg](https://codeberg.org/), kjer je nekaj mojih pregramčkov in ta spletna stran;
-- [GitHub](https://github.com/janezpavelzebovec), ki ga bom počasi celoma zamenjal s Codebergom, verjetno pa bo ostal še kot pomožno mesto teh zadev;
+- [Git Hub](https://github.com/janezpavelzebovec), ki ga bom počasi celoma zamenjal s Codebergom, verjetno pa bo ostal še kot pomožno mesto teh zadev;
 - [Geneanet](https://gw.geneanet.org/japaze1_w), [WikiTree](https://www.wikitree.com/wiki/%C5%BDebovec-1) in [Geni](https://www.geni.com/people/Janez-Pavel-%C5%BDebovec), kjer popisujem predvsem častivredne korenine svojih prednikov in njihovih potomcev (glej tudi [Moj rodovnik](./mojrodovnik));
 - [Wikipedija](https://sl.wikipedia.org/wiki/Uporabnik:H%C3%AErnamae_P%C3%AEn_Iono%C3%ABryn) – prispevam k člankom, ki se mi zdijo pomembnejši ali zanimivejši (vendar nisem več dosti dejaven);
 - [Codeberg Translate](https://translate.codeberg.org/user/JanezPavelZebovec/) – prevajam CoMaps
-- [TranslateWiki](https://translatewiki.net/wiki/User:JanezPavelZebovec) – naredil sem nekaj prevodov OpenStreetMap in OpenHistoricalMap
+- [Translate Wiki](https://translatewiki.net/wiki/User:JanezPavelZebovec) – naredil sem nekaj prevodov OpenStreetMap in OpenHistoricalMap
 
 Druga spletna mesta:
 
 - [Soundcloud](https://soundcloud.com/janez-pavel-zebovec) – glasba
-- [GitLab](https://gitlab.com/JanezPavelZebovec)
+- [Git Lab](https://gitlab.com/JanezPavelZebovec)
 
 ---
 
 To spletno mesto je dostopno tudi:
 
 - [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) na naslovu [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/),
-- [preko GitHuba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) na naslovu [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
+- [preko Git Huba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) na naslovu [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
 
-Spletno mesto je dostopno tudi v obliki *Markdown* v razdelku **https://janezpavelzebovec.net/markdown/**.
+Spletno mesto je dostopno tudi v obliki [Markdown](https://daringfireball.net/projects/markdown/) v razdelku **https://janezpavelzebovec.net/markdown/**.
 Na dnu vsake strani je povezava do pripadajoče strani v Markdownu.
