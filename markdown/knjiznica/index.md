@@ -1,6 +1,6 @@
 ---
 title: Knjižnica
-date: 2025-07-18
+date: 2025-12-30
 description: Knjižnica znanj mojih zanimanj
 keywords: knjižnica, znanje
 ---
@@ -34,7 +34,7 @@ Opomba: strani z oznako ^N^ še niso posodobljene, zato trenutno niso dostopne.
             - ^N^ [Gotica](/knjiznica/jezikoslovje/pisave/gotica)
             - ^N^ [Glagolica](/knjiznica/jezikoslovje/pisave/glagolica)
             - [Cirilica](/knjiznica/jezikoslovje/pisave/cirilica) (kirilica)
-            - ^N^ [Slovenske zgodovinske pisave](/knjiznica/jezikoslovje/pisave/slovenske_zgodovinske_pisave)
+            - [Slovenske zgodovinske pisave](/knjiznica/jezikoslovje/pisave/slovenske_pisave)
             - ^N^ [Ogamska pisava](/knjiznica/jezikoslovje/pisave/ogamska_pisava)
             - [Shawova abeceda](/knjiznica/jezikoslovje/pisave/shawova_abeceda)
     - [Krščanstvo in modroslovje](/knjiznica/krscanstvo) (*religija*, *filozofija*)
