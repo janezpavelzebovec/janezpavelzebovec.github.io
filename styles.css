@@ -78,7 +78,7 @@ main {
     /*max-width: var(--vsebina);*/
     height: 100%;
 	margin:auto;
-    padding: 1em;
+    /*padding: 1em;*/
     padding-top: 0;
     padding-bottom: 100vh;
     flex: 1;
@@ -256,4 +256,264 @@ button {
     #naVrh {
         display: none;
     }
+}
+
+/* PISAVE ========================================================================== */
+table.metelcica3 tbody td:nth-child(3) {
+    font-family: 'metelcica';
+    font-size: 1rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+
+@font-face {
+    font-family: 'Glasopisnica';
+    src: url('fonts/glasopisnica/Glasopisnica.woff2') format('woff2'),
+         url('fonts/glasopisnica/Glasopisnica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Glasopisnica {
+    font-family: 'Glasopisnica';
+    font-size: 2rem;
+    font-variant-ligatures: normal;
+}
+@font-face {
+    font-family: 'PisanaGotica';
+    src: url('fonts/pisana_gotica/pisana_gotica-webfont.woff2') format('woff2'),
+         url('fonts/pisana_gotica/pisana_gotica-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.PisanaGotica {
+    font-family: 'PisanaGotica';
+    font-size: 1.5rem;
+    font-variant-ligatures: normal;
+}
+
+@font-face {
+    font-family: 'Croatica';
+    src: url('fonts/Croatica/Croatica.woff2') format('woff2'),
+         url('fonts/Croatica/Croatica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Croatica {
+    font-family: 'Croatica';
+    font-size: 1rem;
+    font-variant-ligatures: normal;
+}
+
+@font-face {
+    font-family: 'Glagolica';
+    src: url('fonts/Glagolica_Missal/GlagolicaMissalDPG.woff2') format('woff2'),
+         url('fonts/Glagolica_Missal/GlagolicaMissalDPG.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Glagolica {
+    font-family: 'Glagolica';
+    font-size: 1rem;
+    font-variant-ligatures: normal;
+}
+
+@font-face {
+    font-family: 'Valmarska';
+    src: url('fonts/valmarska/ValmaricEldamar.woff2') format('woff2'),
+         url('fonts/valmarska/ValmaricEldamar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Valmarska {
+    font-family: 'Valmarska';
+    font-size: 1.5rem;
+    font-variant-ligatures: normal;
+}
+
+@font-face {
+    font-family: 'Tengvar';
+    src: url('fonts/Tengwar/tengwar_slo-webfont.woff2') format('woff2'),
+         url('fonts/Tengwar/tengwar_slo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Tengvar {
+    font-family: 'Tengvar';
+    font-size: 1.5rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'TengvarA';
+    src: url('fonts/tengwar-annatar-font/TengwarAnnatar.woff2') format('woff2'),
+         url('fonts/tengwar-annatar-font/TengwarAnnatar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TengvarA';
+    src: url('fonts/tengwar-annatar-font/TengwarAnnatar-Italic.woff2') format('woff2'),
+         url('fonts/tengwar-annatar-font/TengwarAnnatar-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'TengvarA';
+    src: url('fonts/tengwar-annatar-font/TengwarAnnatar-Bold.woff2') format('woff2'),
+         url('fonts/tengwar-annatar-font/TengwarAnnatar-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TengvarA';
+    src: url('fonts/tengwar-annatar-font/TengwarAnnatar-BoldItalic.woff2') format('woff2'),
+         url('fonts/tengwar-annatar-font/TengwarAnnatar-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+.TengvarA {
+    font-family: 'TengvarA';
+    font-size: 1.8rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+.TengvarAM { /*manjša velikost za primere ali drugo rabo v besedilu*/
+    font-family: 'TengvarA';
+    font-size: 1.4rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiLD';
+    src: url('fonts/Sarati/SaratiEldamarLTR.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarLTR.woff') format('woff');
+         /*url('fonts/Sarati/sarael__.ttf') format('ttf');*/
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiLD {
+    font-family: 'SaratiLD';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiLDč';
+    src: url('fonts/Sarati/SaratiEldamarLTRBar.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarLTRBar.woff') format('woff');
+         /*url('fonts/Sarati/saraelb_.ttf') format('ttf');*/
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiLDč {
+    font-family: 'SaratiLDč';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiDL';
+    src: url('fonts/Sarati/SaratiEldamarRTL.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarRTL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiDL {
+    font-family: 'SaratiDL';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiDLč';
+    src: url('fonts/Sarati/SaratiEldamarRTLBar.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarRTLBar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiDLč {
+    font-family: 'SaratiDLč';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiN';
+    src: url('fonts/Sarati/SaratiEldamarVertical.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarVertical.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiN {
+    font-family: 'SaratiN';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'SaratiNč';
+    src: url('fonts/Sarati/SaratiEldamarVerticalBar.woff2') format('woff2'),
+         url('fonts/Sarati/SaratiEldamarVerticalBar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.SaratiNč {
+    font-family: 'SaratiLD';
+    font-size: 2rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'Kirt';
+    src: url('fonts/cirth_erebor/Erebor/CirthErebor.woff2') format('woff2'),
+         url('fonts/Sarati/CirthErebor.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Kirt {
+    font-family: 'Kirt';
+    font-size: 1rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+@font-face {
+    font-family: 'RuneT';
+    src: url('fonts/Rune_Tolkien/RuneTolkien.woff2') format('woff2'),
+         url('fonts/Rune_Tolkien/RuneTolkien.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.RuneT {
+    font-family: 'RuneT';
+    font-size: 1rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+
+@font-face {
+    font-family: 'metelcica';
+    src: url('./fonts/metelcica/metelcica-webfont.eot');
+    src: url('./fonts/metelcica/metelcica-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/metelcica/metelcica-webfont.woff2') format('woff2'),
+         url('./fonts/metelcica/metelcica-webfont.woff') format('woff'),
+         url('./fonts/metelcica/metelcica-webfont.ttf') format('truetype'),
+         url('./fonts/metelcica/metelcica-webfont.svg#metel_icaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.metelcica {
+    font-family: 'metelcica';
+    font-size: 1rem;
+    font-variant-ligatures: discretionary-ligatures;
+}
+@font-face {
+    font-family: 'Dinotopia';
+    src: url('fonts/dinotopia/dinotopia_james_gurney-webfont.woff2') format('woff2'),
+         url('fonts/dinotopia/dinotopia_james_gurney-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Dinotopia {
+    font-family: 'Dinotopia';
+    font-size: 1.5rem;
+    font-variant-ligatures: discretionary-ligatures;
 }

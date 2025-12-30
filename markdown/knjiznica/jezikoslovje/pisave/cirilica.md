@@ -105,6 +105,8 @@ Kjer so za določen jezik navedene dve izgovorni vrednosti ([...], [...]), je pr
 - *ы* se pojavlja le v priponah besed, ki vsebujejo samoglasnike *a*, *o* ali *у*;
 - *ю* se v enozložnih besedah prečrkuje v *yu* ali *yü* glede na izgovorjavo; v večzložnih besedah se prečrkuje v *yu* ko mu sledi *a*, *o* ali *u*, vendar v *yü*, ko mu sledi *i*, *e*, *ö* ali *ü*;
 
+---
+
 ## Zunanji viri in povezave
 
 - [r12a - Cyrillic orthographies](https://r12a.github.io/scripts/cyrl/);

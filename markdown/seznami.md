@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-12-27
+date: 2025-12-30
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -153,7 +153,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [BBBike - Extract](https://extract.bbbike.org/) - prenos kolesarskih zemljevidov
 - [Project OSMR](https://project-osrm.org/) – iskanje najkrajše poti
 
-##### Državni zemljevidi Republike Slovenije
+##### Uradni zemljevidi
 
 - [Atlas okolja](https://gis.arso.gov.si/evode/profile.aspx) - posnetki LiDAR, satelitski posnetki, pregledna zemljevida in pomorski zemljevid
 - [Geoportal AKOS](https://gis.akos-rs.si/) - zemljevid z omrežji (vodovodno, električno, poštno, želežniško, *mobilno*, *radijsko* ...), zemljiški zemljevid
@@ -161,6 +161,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [INSPIRE](https://eprostor.gov.si/imps) - brskalnik po državnih zemljevidih
 - [Javni pregledovalnik grafičnih podatkov MKGP](https://rkg.gov.si/GERK/WebViewer)
 - [NAP – Nacionalna točka dostopa](https://www.nap.si/) - dostop do prometnih podatkov in podatkov o polnilnih mestih za el. vozila (Ministrstvo za infrastrukturo)
+- [Planinska zveza Slovenije – poti](https://poti.pzs.si/)
 - [Promet.si](https://promet.si/) – DARS-ov prometni zemljevid, ki ima tudi svojo *aplikacijo* (s trenutnimi zastoji, zaprtimi cestami, hitrostmi, ...); podatke črpa predvsem od GURS-a (zgradbe, ceste, ...) in OSM-ja (točke zanimivosti/storitve, podjetja, ...), pa tudi še nekaterih vir;
 - [Portal Prostor](https://www.e-prostor.gov.si/)
     - [Portal Prostor – Javni vpogled](https://ipi.eprostor.gov.si/jv/) - najboljši državni zemljevid? (zemljišča, stavbe, državna napeljava, ceste, železnice, zgodovinske satelitske slike, pregledni zemljevidi, ...)
@@ -276,12 +277,12 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 ### You Tube
 
 - [Artifexian](https://www.youtube.com/@Artifexian) - ustvarjanje izmišljenega sveta z znanstveno podlago
-- [Atomic Frontier](https://www.youtube.com/@AtomicFrontier) - znanstvene zanimivosti
+- [Atomic Frontier](https://www.youtube.com/@AtomicFrontier) – znanstvene zanimivosti
 - [Design Theory](https://www.youtube.com/@Design.Theory) – oblikovanje
 - [Enrico Tartarotti](https://www.youtube.com/@enricotartarotti) – o oblikovanju, tehnologiji in dušeslovju povezanem s tem
-- [Fearless & Far](https://www.youtube.com/@fearlessandfar) - potovanja k domorodnim plemenom
+- [Fearless & Far](https://www.youtube.com/@fearlessandfar) – potovanja k domorodnim plemenom
 - [Fern](https://www.youtube.com/@fern-tv) – *dokumentarni filmi*
-- [Jedi Brooks](https://www.youtube.com/@jedibrooks7235) - *kritik* današnjega slabega pisanja zgodb v filmih
+- [Jedi Brooks](https://www.youtube.com/@jedibrooks7235) – *kritik* današnjega slabega pisanja zgodb v filmih
 - [Sheehan Quirke](https://www.youtube.com/@SheehanQuirke) – *estetika*?
 - [SpaceX](https://www.youtube.com/@SpaceX) – vesoljsko podjetje
 - [The Woke Critic](https://www.youtube.com/@thewokecritic) - ocene filmov (predvsem kritika novejših trnedov v filmih) na zabaven način
@@ -340,6 +341,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 ##### Okolje
 
 - [Climate Trace](https://climatetrace.org/explore) – podatki o onesnaževanju po svetu
+- [Not Just Bikes](https://www.youtube.com/@NotJustBikes) – prometna ureditev mest
 - [Planet Wild](https://www.youtube.com/@planet-wild) - naravovarstvo in obnavljanje življenjskih prostorov v večjem obsegu
 - [The New York Times - How 2016 Became Earth’s Hottest Year on Record](https://www.nytimes.com/interactive/2017/01/18/science/earth/2016-hottest-year-on-record.html)
 
