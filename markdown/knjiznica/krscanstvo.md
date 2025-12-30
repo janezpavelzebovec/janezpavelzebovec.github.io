@@ -1,6 +1,6 @@
 ---
 title: Krščanstvo
-date: 2025-07-21
+date: 2025-12-30
 description:
 keywords: krščanstvo, modroslovje
 author: Janez Pavel Žebovec
@@ -23,6 +23,39 @@ author: Janez Pavel Žebovec
 8. Ne pričaj po krivem!
 9. Ne želi svojega bližnjega žene!
 10. Ne želi svojega bližnjega blaga!
+
+## Veroizpoved
+
+Verujem v enega Boga,  
+Očeta vsemogočnega,  
+Stvarnika nebes in zemlje,  
+vseh vidnih in nevidnih stvari.  
+In v enega gospoda Jezusa Kristusa,  
+edinorojenega Sina Božjega,  
+ki je iz Očeta rojen pred vsemi veki  
+in je Bog od Boga, luč od luči, pravi Bog od pravega Boga,  
+rojen, ne ustvarjen, enega bistva z Očetom,  
+in je po njem vse ustvarjeno,  
+ki je zaradi nas ljudi in zaradi našega zveličanja  
+prišel iz nebes.  
+In se je utelesil po Svetem Duhu  
+iz Marije Device in postal človek.  
+Bil je tudi križan za nas, pod Poncijem Pilatom je trpel  
+umrl in bil v grob položen.  
+In tretji dan je od mrtvih vstal, po pričevanju Pisma.  
+In je šel v nebesa, sedi na desnici Očetovi.  
+In bo spet prišel v slavi,  
+sodit žive in mrtve,  
+in Njegovemu kraljestvu ne bo konca.  
+In v svetega Duha, Gospoda, ki oživlja;  
+ki izhaja iz Očeta (in Sina),  
+ki ga z Očetom in Sinom molimo in slavimo;  
+ki je govoril po prerokih.  
+In eno, sveto, katoliško in apostolsko Cerkev.  
+Priznavam en krst v odpuščanje grehov.  
+In pričakujem vstajenje (od) mrtvih  
+in življenje v prihodnjem veku.  
+Amen.  
 
 ## Sveto pismo
 

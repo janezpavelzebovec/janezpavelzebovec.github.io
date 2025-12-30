@@ -259,7 +259,7 @@ button {
 }
 
 /* PISAVE ========================================================================== */
-table.metelcica3 tbody td:nth-child(3) {
+.metelcica3 table tbody td:nth-child(3) {
     font-family: 'metelcica';
     font-size: 1rem;
     font-variant-ligatures: discretionary-ligatures;

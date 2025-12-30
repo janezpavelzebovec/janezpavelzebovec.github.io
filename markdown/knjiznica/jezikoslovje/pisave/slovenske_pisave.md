@@ -9,8 +9,7 @@ author: Janez Pavel Žebovec
 # Slovenske pisave
 
 </div>
-
-{.metelcica3}
+<div class="metelcica3">
 
 | izgovor | bohoričica (~1550–1839) | metelčica (1825–1833) | dajnčica (1824–1839) | slovenska gajica (1839–) |
 | -------       | ----------    | --------- | --------  | ------    |
@@ -48,6 +47,7 @@ author: Janez Pavel Žebovec
 | /ž/ [ʒ]       | **SH sh**     | **Ž ž**   | **X x**   | Ž ž       |
 | /šč/ [ʃtʃ]    |               | **Ć ć**   | **Ȣч ȣч** | Šč šč     |
 
+</div>
 <div class="content">
 
 Bohoričico je v njeni prvi, nedosledni obliki uporabljal Primož Trubar, najprej v *Abecedniku* in *Katekizmu* leta 1550. Adam Bohorič je v *Zimskih uricah* leta 1584 določil pravopisna pravila zanjo
