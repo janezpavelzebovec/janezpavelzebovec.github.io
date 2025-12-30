@@ -11,6 +11,7 @@ author: Janez Pavel Žebovec
 </div>
 
 {.metelcica3}
+
 | izgovor | bohoričica (~1550–1839) | metelčica (1825–1833) | dajnčica (1824–1839) | slovenska gajica (1839–) |
 | -------       | ----------    | --------- | --------  | ------    |
 | /a/           | A a           | A a       | A a       | A a       |
