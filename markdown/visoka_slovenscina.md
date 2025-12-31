@@ -163,14 +163,20 @@ Tu je seznam mojih (precej dokončnih) predlogov za nove besede:
 
 #### Besede v nastajanju
 
-Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge zamisli:
+Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge zamisli, ali pa sploh še nimajo ustreznice, a se zelo uporabljane in potrebne:
 
 - **(napihljivi) mehur** < *balon*
 - svetlo(bo)stav(ba)? < *fotosinteza*
 - **številčno, (računalniško)** < *digitalno*, *digitalizirati*
 - **mnógovôz** < *avtobus*
-- ? < *plaža*
+- *plaža*
 - **slikonôs** < *televizija* <small>(< ang. *television*; fran. *télévision* < *tē̃le* = *daleč, v daljavi* + lat. *vīsiō* = *pogled, gledanje*)</small>
+- *park*
+- *piknik*
+- omika, družba, narod (?) < *kultura* 
+- *šport*
+- *savna*
+- (računalniški) *program*
 
 ------------------------------------------------------------------------------------------------
 

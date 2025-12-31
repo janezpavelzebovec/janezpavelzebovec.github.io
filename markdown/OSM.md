@@ -1,27 +1,34 @@
 ---
 title: Oznake v OSM
-date: 2025-11-30
+date: 2025-12-31
 description: Nekaj izbranih oznak za označevanje v OpenStretMap
 keywords: OpenStreetMap
 ---
 
+Splošna verska zgradba: `building=religious`
+
 # Župnija
 
 ```
-name=Župnija Preska
+name=Župnija *
+deanery=Dekanija *
+diocese=Škofija *
+
 religion=christian
 denomination=roman_catholic
-deanery=Ljubljana - Šentvid
-diocese=Škofija Ljubljana
+
+parish:website=http://*
+parish:wikidata=Q*
+parish:wikipedia=sl:*
 
 ```
 
-Lahko tudi `boundary=religious_administration`
+Lahko tudi `boundary=religious_administration` za mejo župnije
 
 ## Župnijska cerkev
 
 ```
-name=Župnijska cerkev Janeza Krstnika
+name=Župnijska cerkev sv. *
 
 amenity=place_of_worship
 building=church
@@ -29,52 +36,25 @@ religion=christian
 denomination=roman_catholic
 church:type=parish
 
-parish=Župnija Preska
-deanery=Dekanija Ljubljana - Šentvid
-diocese=Nadškofija Ljubljana
+parish=Župnija *
+deanery=Dekanija *
+diocese=Nadškofija *
 
-parish:website=http://zupnija-preska.rkc.si/
-parish:wikidata=Q60355770
-parish:wikipedia=sl:Župnija Preska
+parish:website=http://*
+parish:wikidata=Q*
+parish:wikipedia=sl:*
+
+wikidata=Q*
+wikipedia=sl:
 ```
 
-## Župnišče
-
-```
-addr:city=Kraj
-addr:housenumber=42
-addr:postcode=1000
-addr:street=cesta
-
-name=Župnišče župnije
-short_name=Župnišče
-
-building=church-office
-office=parish
-
-parish=Župnija
-deanery=Dekanija
-diocese=Škofija
-
-website=http://www.
-phone=1
-contact:email=@
-parish:wikidata=Q
-parish:wikipedia=sl:Župnija
-```
-
-Morda za oskrbovano župnijo iz druge župnije:
-
-```
-administered_by=Župnija
-```
+Zadnji dve le, če ima sama cerkev zapis na Wikipediji/Wikidata.
 
 ## Podružnična cerkev
 
 ```
-name=Cerkev Sv. Bride
-short_name=Sv. Brida
-full_name=Podružnična cerkev sv. Lucije, mučenke
+name=Podružnična cerkev sv. *
+short_name=Sv. *
 
 amenity=place_of_worship
 building=church
@@ -82,12 +62,55 @@ religion=christian
 denomination=roman_catholic
 church:type=filial
 
-parish=Župnija Ankaran
-deanery=Dekanija Dekani
-diocese=Škofija Koper
+parish=Župnija *
+deanery=Dekanija *
+diocese=Nadškofija *
+
+parish:website=http://*
+
+wikidata=Q*
+wikipedia=sl:
+```
+
+Zadnji dve le, če ima sama cerkev zapis na Wikipediji/Wikidata.
+
+## Župnišče
+
+```
+addr:city=*
+addr:housenumber=*
+addr:postcode=****
+addr:street=*
+
+name=Župnišče župnije *
+short_name=Župnišče
+
+building=rectory
+office=parish
+
+parish=Župnija *
+deanery=Dekanija *
+diocese=Škofija *
+
+website=http://*
+phone=*
+contact:email=*
+parish:wikidata=Q*
+parish:wikipedia=sl:*
+```
+
+Namesto `building=rectory` se uporablja tudi `building=presbytery`
+
+Za župnijo, ki jo oskrbuje/upravlja druga župnija:
+
+```
+operator=Župnija *
+operator:type=religious
 ```
 
 ## Kapela
+
+Večja kapela (ne obpotna kapelica), v katero lahko gre več oseb, se lahko vanjo stopi.
 
 ```
 name=Cerkev Sv. Bride
@@ -97,9 +120,9 @@ building=chapel
 religion=christian
 denomination=roman_catholic
 
-parish=Župnija Ankaran
-deanery=Dekanija Dekani
-diocese=Škofija Koper
+parish=Župnija *
+deanery=Dekanija *
+diocese=Škofija *
 ```
 
 
@@ -138,13 +161,24 @@ tower:type=bell_tower
 man_made=tower
 ```
 
-## Pokopališče okoli cerkve
+## Pokopališče
+
+```
+landuse=cemetry
+
+parish=Župnija *
+deanery=Dekanija *
+diocese=Škofija *
+```
+### Pokopališče okoli cerkve
 
 ```
 amenity=grave_yard
 landuse=cemetry
 
-parish=Župnija Ankaran
+parish=Župnija *
+deanery=Dekanija *
+diocese=Škofija *
 ```
 
 ## Parkirišče

@@ -1,12 +1,14 @@
 ---
 title: Linux
-date: 2025-09-17
+date: 2025-12-30
 description:
 keywords: programska oprema, Linux, programi
 author: Janez Pavel Žebovec
 ---
 
 # Linux
+
+Glej [Vodič skozi namestitev Linuxa](/vodic_skozi_namestitev_Linuxa) za namestitev in ureditev okolja, kot ga imam jaz.
 
 - `sudo shutdown` - ugasni se
 - `sudo reboot` - ponovno se zaženi
