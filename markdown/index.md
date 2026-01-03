@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2025-12-29
+date: 2026-01-02
 description: Moja osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran
 ---
@@ -41,7 +41,7 @@ Nekaj mest spleta, kjer sem bolj dejaven:
 - [Codeberg](https://codeberg.org/), kjer je nekaj mojih pregramčkov in ta spletna stran;
 - [Git Hub](https://github.com/janezpavelzebovec), ki ga bom počasi celoma zamenjal s Codebergom, verjetno pa bo ostal še kot pomožno mesto teh zadev;
 - [Geneanet](https://gw.geneanet.org/japaze1_w), [WikiTree](https://www.wikitree.com/wiki/%C5%BDebovec-1) in [Geni](https://www.geni.com/people/Janez-Pavel-%C5%BDebovec), kjer popisujem predvsem častivredne korenine svojih prednikov in njihovih potomcev (glej tudi [Moj rodovnik](./mojrodovnik));
-- [Wikipedija](https://sl.wikipedia.org/wiki/Uporabnik:H%C3%AErnamae_P%C3%AEn_Iono%C3%ABryn) – prispevam k člankom, ki se mi zdijo pomembnejši ali zanimivejši (vendar nisem več dosti dejaven);
+- [Wikipedija](https://sl.wikipedia.org/wiki/Uporabnik:JanezPavelZebovec) – prispevam k člankom, ki se mi zdijo pomembnejši ali zanimivejši (vendar nisem več dosti dejaven);
 - [Codeberg Translate](https://translate.codeberg.org/user/JanezPavelZebovec/) – prevajam CoMaps
 - [Translate Wiki](https://translatewiki.net/wiki/User:JanezPavelZebovec) – naredil sem nekaj prevodov OpenStreetMap in OpenHistoricalMap
 

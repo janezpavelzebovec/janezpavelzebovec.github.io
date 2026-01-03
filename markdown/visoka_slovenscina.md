@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2025-12-19
+date: 2026-01-01
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 ---
@@ -174,9 +174,15 @@ Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge za
 - *park*
 - *piknik*
 - omika, družba, narod (?) < *kultura* 
-- *šport*
+- (vadba, zabava, urjenje) < *šport*
 - *savna*
 - (računalniški) *program*
+- *film*
+- *kino*
+- (ladja za prevoz vozil) < *trajekt*
+- *policija*
+- *bazen*
+- – (zgradba za voz) < *garaža*
 
 ------------------------------------------------------------------------------------------------
 

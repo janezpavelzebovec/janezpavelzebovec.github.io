@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2025-12-30
+date: 2026-01-02
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -24,6 +24,8 @@ Moja *priporočila* (precej nepopolna)
 
 ## Splet
 
+- [Društvo za elektronsko in računalniško pismenost](https://derp.si/)
+- [Kiberpipa](https://kiberpipa.org/) – društvo *tehnoloških* (predvsem računalniških) navdušencev
 - [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
 - [Odysee](https://odysee.com/)
 
