@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2025-12-30
+date: 2026-01-05
 description:
 keywords: programska oprema, Linux, programi
 author: Janez Pavel Žebovec
@@ -183,10 +183,11 @@ Zagonski ključek je običajno potreben pri nameščanju operacijskega sistema.
 
 ### Spreminjanje izvirne datoteke
 
-- `diff izvorna_datoteka spremenjena_datoteka > spremembe.patch` - ustvari datoteko s spremembami (*patch*)
+- `diff izvorna_datoteka spremenjena_datoteka > spremembe.diff` - ustvari datoteko s spremembami (*patch*)
     - `-u` = *unified diff* - bolj berljiva oblika datoteke s spremembami
 - `git diff > spremembe.patch` - ustvari datoteko s spremembami
-- `patch < spremembe.patch` - uporabi popravke iz datoteke `.patch` ali `.diff` na izvirni datoteki v trenutni mapi
+- `patch < spremembe.diff` - uporabi popravke iz datoteke `.patch` ali `.diff` na izvirni datoteki v trenutni mapi
+    - običajno je priporočljivo uporabiti *argument* `-p`, ki poskrbi za začetne poševnice pri imenih datotek za spremembo, torej: `patch -p1 < spremembe.diff`
 
 #### Git
 
