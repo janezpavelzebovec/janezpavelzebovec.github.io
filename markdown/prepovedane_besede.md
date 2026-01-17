@@ -1,0 +1,2 @@
+eksitacija > vzbuditev
+

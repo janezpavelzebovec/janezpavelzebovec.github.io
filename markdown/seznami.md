@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-01-02
+date: 2026-01-12
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -200,6 +200,7 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Map Warper](https://mapwarper.net/) - predvsem zgodovinski zemljevidi, uvažanje zemljevidov in njihovo *geopozicioniranje*
 - [Old Maps Online](https://www.oldmapsonline.org/)
 - [Open Historical Map](https://www.openhistoricalmap.org/) - prosto dostopen in urejevan zemljevid
+    - [OpenHistoricalMap – VTiles](https://vtiles.openhistoricalmap.org/)
 - [Rapalska meja – Karta ZDRM](https://www.rapalskameja.si/zdrm_karta/) – zemljevid rapalske meje in (predvsem vojaški) *objekti* tistega obdobja
 - [Time Travel](https://time-travel.app/) – uporablja podatke OpenHistoricalMap in OpenStreetMap in jih združuje z Wikipedijo, 
 
@@ -418,7 +419,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 
 - [Animagraffs](https://www.youtube.com/@animagraffs) – zelo podrobni *dokumentarni* posnetki razlage delovanja posameznih naprav v celoti
 - [Brick Technology](https://www.youtube.com/@BrickTechnology) – izdelovanje napravic / vozil iz tehnokock
-- [Sabin Civil Engineering](https://www.youtube.com/@SabinCivil) - gradbeništvo
+- [Practical Engineering](https://www.youtube.com/@PracticalEngineeringChannel)
 
 ##### Zvezna računala, zvezdoslovne ure
 
