@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2025-06-15
+date: 2026-01-18
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -158,6 +158,46 @@ $$ p \rightarrow n + e_0^{+} + \nu_e $$
 Razpad gama; delec razpada je foton $\nu$:
 $$ X^{+} \rightarrow X + \nu $$
 
+-----------------------------------------------------------------------
+
+## Nadučilišče
+
+Newtonovi zakoni:
+
+1. Če je vsota učinkov okolice (sil) enaka nič, telo miruje ali se giblje premo in enakomerno: $\sum_{i} \vec F_i = 0$
+2. Pospešek je sorazmeren s silo in ima smer sile: $\sum_{i} \vec F_i = m \vec a$
+3. Če deluje prvo telo na drugo z neko silo, deluje drugo telo na prvo z nasprotno enako silo: $\vec F_{1,2} = \vec F_{2,1}$
+
+### Mehanika
+
+$$ \vec v = \vec r '(t) = \frac{d \vec r}{dt} $$
+$$ \vec a = \vec v '(t) = \frac{d \vec v}{dt} $$
+
+### Energije
+
+$$ W = \vec F \vec s $$
+
+*Potencialna energija* ima naravno izhodišče ($W_{p, g} = 0$) neskončno daleč stran, kjer gre teža proti nič ($r_1 \rightarrow \infty$):
+
+$$ W_{p, g} = - A_g = - \int_{\vec r_1}^{\vec r_2} \vec F_g \cdot d\vec{r} = - \int_{r_1}^{r_2} \left(- \frac{G m_1 m_2}{r^2} \right) \frac{r_{1,2}}{r} dr = \int_{r_1}^{r_2} \frac{G m_1 m_2}{r^3} r dr = - \frac{G m_1 m_2}{r} \Big|_{r_1}^{r_2} =  - \frac{G m_1 m_2}{r_2} $$
+
+Za "ravno Zemljo" ($\Delta h << r_Z$):
+
+$$ W_{p, g} = m g h $$
+
+### Vrtenje
+
+$$ \phi = \frac{l}{r} $$
+$$ \omega = \phi '(t) = \frac{d \phi}{dt} $$
+$$ \gamma = \frac{N}{\Delta t} = \frac{1}{t_o} $$
+
+Keplerjevi zakoni:
+
+1. Tiri planetov so *elipse*, Sonce je v gorišču.
+2. Ploščinska hitrost *planetov* je stalna.
+3. $\frac{r^3}{t_0^2}$ = stalno
+
+---
 ## Zunanje povezave in viri
 
 - [The International System of Units (SI; 2019)](https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507);

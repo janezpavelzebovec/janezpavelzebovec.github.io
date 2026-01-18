@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-01-12
+date: 2026-01-18
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -28,6 +28,7 @@ Moja *priporočila* (precej nepopolna)
 - [Kiberpipa](https://kiberpipa.org/) – društvo *tehnoloških* (predvsem računalniških) navdušencev
 - [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
 - [Odysee](https://odysee.com/)
+- [Statistični urad Republike Slovenije](https://www.stat.si/)
 
 ### Naravoslovje
 
@@ -186,6 +187,7 @@ Glej tudi stran [Zgodovina](knjiznica/zgodovina).
 - [Homocumolat - [tag] Nostalgija](https://homocumolat.com/tag/nostalgija/) - stare slike
 - [Kamra](https://www.kamra.si/) - zgodovinske slike Slovenije
 - [Map Warper](https://mapwarper.net/) - prevsem zgodovinski zemljevidi, *geopozicioniranje* zemljevidov
+- [Miniaturna železnica – Proge: Emonika](https://www.miniaturna-zeleznica.eu/Proge/Emonika/)
 - [Plemiška dediščina na Slovenskem](https://plemiska-dediscina.zrc-sazu.si/)
 - [Rapalska meja](https://www.rapalskameja.si/) – medvojno obdobje
 - [Virtualna arhivska knjižnica](https://vac.sjas.gov.si/) - arhivi Republike Slovenije
@@ -310,6 +312,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Klemen Slakonja](https://www.youtube.com/@slakonjaklemen) - glasbenik
 - [Loic Suberville](https://www.youtube.com/@loic.suberville)
 - [Nutshell Animations](https://www.youtube.com/@NutshellAnimations)
+- [Parody Cuts](https://www.youtube.com/@ParodyCuts) – *parodije* filmov Gospodar prstanov in Harry Potter
 - [Two Set Violin](https://www.youtube.com/@twosetviolin)
 - [Vsauce](https://www.youtube.com/@Vsauce)
 
