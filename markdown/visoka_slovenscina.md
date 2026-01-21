@@ -195,7 +195,6 @@ Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpav
 - [Fran - Slovarji Inštituta za slovenski jezik Frana Ramovša ZRC SAZU](https://www.fran.si/)
     - [Fran - Predlagajte nove slovenske ustreznice](https://www.fran.si/ustreznice)
 - [Lugos – Slovenjenje — Pojmovnik izrazov](https://wiki.lugos.si/doku.php?id=slovenjenje:pojmovnik) – angleško-slovenski slovarček izrazov v računalništvu
-
 - [Delo - dr. Borut Vrščaj: Razmišljanje o slovenščini in angleščini – in križarskih vojnah](https://www.delo.si/mnenja/pisma-bralcev/razmisljanje-o-slovenscini-in-anglescini-in-krizarskih-vojnah/) ([arhivirano](https://web.archive.org/web/20240112202949/https%3A%2F%2Fwww.delo.si%2Fmnenja%2Fpisma-bralcev%2Frazmisljanje-o-slovenscini-in-anglescini-in-krizarskih-vojnah%2F))
 - [Delo - Majda M. Lesjak: Koliko je danes v resnici še vredna slovenščina?](https://www.delo.si/mnenja/gostujoce-pero/koliko-je-danes-v-resnici-se-vredna-slovenscina/) ([arhivirano](https://web.archive.org/web/20240112203130/https%3A%2F%2Fwww.delo.si%2Fmnenja%2Fgostujoce-pero%2Fkoliko-je-danes-v-resnici-se-vredna-slovenscina%2F))
 - [RTV SLO - Jezikovni spletovalec: Top jezikovna lista nadrealista](https://www.rtvslo.si/kultura/jezikovni-spletovalec/jezikovni-spletovalec-top-jezikovna-lista-nadrealista/442574)

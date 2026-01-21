@@ -14,7 +14,25 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi in so zato v visoki s
 - *eksitacija* > vzbuditev
 - *problem* > težava
 - *sediment* > usedlina
+- *simetrija*, *simetričnost* > somernost
 - *solvatacija* > raztapljanje
+
+## Računstvo
+
+- *formula* > (stalna) enačba
+- *iteracija* > ponovitev, ponavljanje
+- *komponenta* > del
+- *kvocient* > količnik
+
+Lastnosti *operacij*:
+
+- *asociativnost* > družilnost
+- *distributivnost* > razčlenljivost
+- *idempotenca* > nespremenljivost
+- *komutativnost* > zamenljivost
+- *refleksivnost* > povratnost
+- *simetričnost* > vzajemnost
+- *tranzitivnost* > prehodnost
 
 ## Naravoslovje
 
@@ -24,7 +42,7 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi in so zato v visoki s
 
 ## Računalništvo
 
-- *ekran* > zaslon
+- *ekran*, *monitor* > zaslon
 
 ## Jezikoslovje
 

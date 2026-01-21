@@ -70,7 +70,7 @@
             <ul>
             <li><a href="#Racunstvo">Računstvo</a>
             <ul>
-            <li><a href="#Logika">Logika</a></li>
+            <li><a href="#Logika"><em>Logika</em></a></li>
             <li><a href="#Mnozice_stevil">Množice števil</a>
             <ul>
             <li><a href="#Naravna_stevila">Naravna števila</a></li>
@@ -100,9 +100,9 @@
             zaporedje</a></li>
             <li><a href="#Geometrijsko_zaporedje"><em>Geometrijsko</em>
             zaporedje</a></li>
+            <li><a href="#Stevilske_vrste">Številske vrste</a></li>
             </ul></li>
-            <li><a href="#Dvoclenik_binom">Dvočlenik
-            (<em>binom</em>)</a>
+            <li><a href="#Dvoclenik">Dvočlenik</a>
             <ul>
             <li><a href="#Dvoclenski_izrek_binomski_izrek">Dvočlenski
             izrek (<em>binomski</em> izrek)</a></li>
@@ -115,6 +115,7 @@
             <li><a href="#Kotne_funkcije">Kotne funkcije</a></li>
             <li><a href="#Limita">Limita</a></li>
             <li><a href="#Odvod_in_integral">Odvod in integral</a></li>
+            <li><a href="#Taylorjeva_vrsta">Taylorjeva vrsta</a></li>
             </ul></li>
             <li><a href="#Stoznice">Stožnice</a>
             <ul>
@@ -135,7 +136,6 @@
             </ul></li>
             </ul>
             <h1 id="Racunstvo">Računstvo</h1>
-            <h2 id="Logika">Logika</h2>
             <table style="width:100%;">
             <colgroup>
             <col style="width: 10%" />
@@ -179,6 +179,7 @@
             </tr>
             </tbody>
             </table>
+            <h2 id="Logika"><em>Logika</em></h2>
             <table style="width:100%;">
             <colgroup>
             <col style="width: 14%" />
@@ -400,6 +401,13 @@
             je ta verjetnost <span class="math inline">\(P(E) = \frac
             {1}{n}\)</span>.</p>
             <h2 id="Zaporedja">Zaporedja</h2>
+            <p>Če je <span class="math inline">\(a_n\)</span> zaporedje
+            s <em>pozitivnimi</em> členi, velja, da če sta zaporedji
+            <span class="math inline">\(\frac{a_{n+1}}{a_n}\)</span> in
+            <span class="math inline">\(\sqrt[n]{a_n}\)</span>
+            <em>konvergentni</em>, je: <span class="math display">\[
+            \lim_{x \to 0} \sqrt[n]{a_n} = \lim_{x \to 0} \frac
+            {a_{n+1}}{a_n} \]</span></p>
             <h3 id="Aritmeticno_zaporedje"><em>Aritmetično</em>
             zaporedje</h3>
             <p>Splošni člen: <span class="math display">\[ a_n = (n -
@@ -420,14 +428,100 @@
             <ul>
             <li><p><span class="math inline">\(|k| &lt; 1\)</span> -
             <em>konvergentno</em> zaporedje, vsota neskončnega zaporedja
-            je končna; <span class="math display">\[ |k| &lt; 1; \lim_{n
-            \to \infty} S_n = \sum_{i=1}^{\infty} a_1 k^{i-1} =
-            \frac{a_1}{1-k} \]</span></p></li>
+            je končna;</p></li>
             <li><p><span class="math inline">\(|k| \ge 1\)</span> -
             <em>divergentno</em> zaporedje, vsota neskončnega zaporedja
             je neskončna</p></li>
             </ul>
-            <h2 id="Dvoclenik_binom">Dvočlenik (<em>binom</em>)</h2>
+            <h3 id="Stevilske_vrste">Številske vrste</h3>
+            <p>Da vrsta <em>konvergira</em>, morajo njeni členi
+            <em>konvergirati</em> proti 0.</p>
+            <p><span class="math display">\[ |k| &lt; 1; \lim_{n \to
+            \infty} S_n = \sum_{i=1}^{\infty} a_1 k^{i-1} =
+            \frac{a_1}{1-k} \]</span> <span class="math display">\[ a +
+            ak + ak^2 + ak^3 + ... = \frac{a}{a-k}; \lvert k \rvert &lt;
+            1 \]</span> <span class="math display">\[
+            \sum_{n=1}^{\infty} \frac{1}{n} = \infty \]</span> <span
+            class="math inline">\(\sum_{n=1}^{\infty}
+            \frac{1}{n^r}\)</span> za <span class="math inline">\(r &gt;
+            1\)</span> <em>konvergira</em></p>
+            <h4 id="Pogoji_za_konvergenco_divergenco">Pogoji za
+            <em>konvergenco</em> / <em>divergenco</em></h4>
+            <p>Za vrsto z ne nujno <em>pozitivnimi</em> členi velja:</p>
+            <ul>
+            <li>vrsta <em>konvergira absolutno</em>, če
+            <em>konvergira</em> <span class="math inline">\(\sum \lvert
+            a_n \rvert\)</span></li>
+            <li>vrsta <em>konvergira</em> pogojno, če
+            <em>konvergira</em>, a ne <em>absolutno</em>
+            <ul>
+            <li>Primer: <em>alternirajoča</em> vrsta:
+            <ul>
+            <li>Leibnizev pogoj: če <em>absolutne</em> vrednosti členov
+            padajo proti nič, je vrsta <em>konvergenta</em></li>
+            </ul></li>
+            </ul></li>
+            </ul>
+            <h5 id="Primerjalni_pogoj">Primerjalni pogoj</h5>
+            <p><span class="math inline">\(\sum a_n\)</span> in <span
+            class="math inline">\(\sum b_n\)</span> sta vrsti s
+            <em>pozitivnimi členi</em> in velja <span
+            class="math inline">\(a_n \leq b_n\)</span>. Potem za vse
+            <span class="math inline">\(n\)</span> od nekod dalje
+            velja:</p>
+            <ul>
+            <li>če je <span class="math inline">\(\sum b_n\)</span>
+            <em>kovergentna</em>, potem je tudi <span
+            class="math inline">\(\sum a_n\)</span>
+            <em>kovergentna</em></li>
+            <li>če je <span class="math inline">\(\sum b_n\)</span>
+            <em>divergentna</em>, potem je tudi <span
+            class="math inline">\(\sum a_n\)</span>
+            <em>divergentna</em></li>
+            </ul>
+            <h5 id="Kolicniski_pogoj">Količniški pogoj</h5>
+            <p><span class="math inline">\(\sum a_n\)</span> je vrsta s
+            <em>pozitivnimi</em> členi in obstaja <span
+            class="math inline">\(D = \lim_{n \to \infty}
+            \frac{a_{n+1}}{a_n}\)</span></p>
+            <ul>
+            <li><span class="math inline">\(D &lt; 1\)</span>: vrsta je
+            <em>konvergentna</em></li>
+            <li><span class="math inline">\(D &gt; 1\)</span>: vrsta je
+            <em>divergentna</em></li>
+            <li><span class="math inline">\(D = 1\)</span>: vrsta je ali
+            <em>konvergentna</em> ali <em>divergentna</em></li>
+            </ul>
+            <h5 id="Korenski_pogoj">Korenski pogoj</h5>
+            <p><span class="math inline">\(\sum a_n\)</span> je vrsta s
+            <em>pozitivnimi</em> členi, obstaja <span
+            class="math inline">\(C = \lim_{n \to \infty}
+            \sqrt[n]{a_n}\)</span></p>
+            <ul>
+            <li><span class="math inline">\(C &lt; 1\)</span>: vrsta je
+            <em>konvergentna</em></li>
+            <li><span class="math inline">\(C &gt; 1\)</span>: vrsta je
+            <em>divergentna</em></li>
+            <li><span class="math inline">\(C = 1\)</span>: vrsta je
+            <em>konvergentna</em> ali <em>divergentna</em></li>
+            </ul>
+            <h5 id="Raabejev_pogoj">Raabejev pogoj</h5>
+            <p>Ta pogoj je lahko uporaben, če data količniški in
+            korenski 1.</p>
+            <p><span class="math inline">\(\sum a_n\)</span> je vrsta s
+            pozitivnimi členi in obstaja</p>
+            <p><span class="math display">\[ R = \lim_{ n \to \infty} n
+            \left( \frac{a_n}{a_{n+1}} - 1 \right) \]</span></p>
+            <ul>
+            <li><span class="math inline">\(R &gt; 1\)</span>: vrsta je
+            <em>konvergentna</em></li>
+            <li><span class="math inline">\(R &lt; 1\)</span>: vrsta je
+            <em>divergentna</em></li>
+            <li><span class="math inline">\(R = 1\)</span>: vrsta je
+            <em>konvergentna</em> ali <em>divergentna</em></li>
+            </ul>
+            <h2 id="Dvoclenik">Dvočlenik</h2>
+            <p><em>Binom</em></p>
             <p>Dvočlenik je <span
             class="math inline">\(a+b\)</span>.</p>
             <h3 id="Dvoclenski_izrek_binomski_izrek">Dvočlenski izrek
@@ -620,7 +714,22 @@
             </tr>
             </tbody>
             </table>
-            <p><span class="math display">\[ \sin^2x + \cos^2x = 1
+            <p><span class="math display">\[ \sin^2 x + \cos^2 x = 1
+            \]</span> <span class="math display">\[ \cos^2 x = \frac{1 +
+            \cos 2x}{2} \]</span></p>
+            <h4 id="Hiperbolicne"><em>Hiperbolične</em></h4>
+            <p><span class="math display">\[ \sinh x =
+            \frac{\mathrm{e}^x - \mathrm{e}^{-x}}{2} \]</span> <span
+            class="math display">\[ \cosh x = \frac{\mathrm{e}^x +
+            \mathrm{e}^{-x}}{2} \]</span> <span class="math display">\[
+            \tanh x = \frac{\mathrm{e}^x  \mathrm{e}^{-x}}{\mathrm{e}^x
+            + \mathrm{e}^{-x}} \]</span></p>
+            <p><span class="math display">\[ \cosh^2x - \sinh^2x = 1
+            \]</span> <span class="math display">\[ \sinh (x + y) =
+            \sinh x \cosh y + \cosh x \sinh y \]</span> <span
+            class="math display">\[ \cosh (x + y) = \cosh x \cosh y +
+            \sinh x \sinh y \]</span> <span class="math display">\[
+            \tanh (x + y) = \frac{\tanh x \tanh y}{1 + \tan x \tan y}
             \]</span></p>
             <h3 id="Limita">Limita</h3>
             <p>Računanje z limitami:</p>
@@ -640,6 +749,18 @@
             = f \left( \lim_{n \to \infty} (a_n) \right) \]</span> <span
             class="math display">\[ \lim_{n \to \infty} f(a_n^{b_n}) =
             \mathrm{e}^{\lim_{n \to \infty} (a_n - 1) b_n} \]</span></p>
+            <p><strong>L’Hospitalovo pravilo</strong>: Naj bosta
+            funkciji <span class="math inline">\(f\)</span> in <span
+            class="math inline">\(g\)</span> odvedljivi na neki okolici
+            točke <span class="math inline">\(x_0\)</span> (ne nujno v
+            <span class="math inline">\(x_0\)</span>) in naj gresta obe
+            hkrati proti 0 ali pa obe hkrati proti <span
+            class="math inline">\(\pm \infty\)</span> pri <span
+            class="math inline">\(x \to x_0\)</span>. Če obstaja limita
+            <span class="math inline">\(\lim_{x \to x_0}
+            \frac{f&#39;(x)}{g&#39;(x)}\)</span>, obstaja tudi njen
+            enaka limita <span class="math inline">\(\lim_{x \to 0}
+            \frac{f(x)}{g(x)}\)</span>.</p>
             <p>Osnovne limite:</p>
             <p><span class="math display">\[ \lim_{n \to \infty} C = C
             \]</span> <span class="math display">\[ \lim_{n \to \infty}
@@ -651,12 +772,24 @@
             \end{cases} \]</span> <span class="math display">\[ \lim_{n
             \to \infty} \left( 1 + \frac {r}{n} \right)^n = e^r; r \in
             \mathbb{R} \]</span> <span class="math display">\[ \lim_{x
-            \to 0} \frac {\sin x}{x} = 1 \]</span></p>
+            \to \infty} {\left( 1 + f(x) \right)}^{\frac{1}{f(x)}} = e
+            \]</span> <span class="math display">\[ \lim_{x \to 0} \frac
+            {\sin x}{x} = 1; \lim_{x \to \infty} \frac {\sin x}{x} = 0
+            \]</span> <span class="math display">\[ \lim_{x \to \infty}
+            \sqrt[x]{x^r} = \lim_{x \to \infty} x^{\frac{r}{x}} = 1
+            \]</span></p>
             <h3 id="Odvod_in_integral">Odvod in integral</h3>
             <p>Odvod funkcije je funkcija naklonov te funkcije.
             Opredelitev odvoda:</p>
             <p><span class="math display">\[ f&#39;(x) = \lim_{h \to 0}
             \frac {f(x + h) - f(x)}{h} \]</span></p>
+            <p><strong>Langrangeev izrek</strong>: če je zvezna funkcija
+            <span class="math inline">\(f: [a, b] \rightarrow
+            \mathbb{R}\)</span> odvedljiva na intervalu (a, b), obstaja
+            <span class="math inline">\(c \in (a, b)\)</span>, za
+            katerega velja:</p>
+            <p><span class="math display">\[ \frac{f(b) - f(a)}{b - a} =
+            f&#39;(c) \]</span></p>
             <p>Integral je obratna funkcija odvoda.</p>
             <p>V spodnji preglednici so neosnovni (oz. <em>bolj</em>
             neosnovni) integrali sivo obarvani.</p>
@@ -793,7 +926,7 @@
             <td><span class="math display">\[ \tan x + C \]</span></td>
             </tr>
             <tr class="odd">
-            <td><span class="math display">\[ cot x \]</span></td>
+            <td><span class="math display">\[ \cot x \]</span></td>
             <td><span class="math display">\[ - \frac {1}{\sin^2 x}
             \]</span></td>
             <td></td>
@@ -861,10 +994,29 @@
             <p>Integracija po delih:</p>
             <p><span class="math display">\[ \int u v&#39; = u v - \int
             v u&#39; \]</span></p>
-            <p>Prostornina telesa zavrtene zvezne funkcije okoli osi
-            x:</p>
-            <p><span class="math display">\[ V = \pi \int_a^b (f(x))^2
+            <p>Prostornina telesa vrtenine zvezne funkcije <span
+            class="math inline">\(f\)</span> okoli osi x:</p>
+            <p><span class="math display">\[ V = \pi \int_a^b f(x)^2
             \mathrm{d}x \]</span></p>
+            <p>Površina vrtenine:</p>
+            <p><span class="math display">\[ P = 2 \pi \int_{x_1}^{x_2}
+            f(x) \sqrt{1 + f&#39;(x)^2} dx \]</span></p>
+            <p>Ploščina lika med krivuljama je določeni integral
+            zgornjega roba lika <em>minus</em> spodnji rob lika (včasih
+            se bolj splača <em>integrirati</em> po osi y namesto po
+            x).</p>
+            <p>Ploščina lika, omejenega s krivuljo v polarnih
+            koordinatah:</p>
+            <p><span class="math display">\[ S = \frac{1}{2}
+            \int_{\phi_1}^{\phi_2} r^2 d \phi \]</span></p>
+            <h3 id="Taylorjeva_vrsta">Taylorjeva vrsta</h3>
+            <p>Za izračun vrednosti <span
+            class="math inline">\(n\)</span>-krat odvedljivega
+            veččlenika (<em>polinoma</em>) v okolici točke <span
+            class="math inline">\(a\)</span>:</p>
+            <p><span class="math display">\[ T_n f(x; a) = f(a) +
+            f&#39;(a) (x - a) + \frac{f&#39;&#39;(a)}{s!} (x - a)^2 +
+            ... + \frac{f^{(n)} (a)}{n!} (x - a)^n \]</span></p>
             <h2 id="Stoznice">Stožnice</h2>
             <p>Stožnice se tako imenujejo zato, ker jih lahko dobimo s
             presekom dvojnega stožca z ravnino. Stožnice so krivulje II.

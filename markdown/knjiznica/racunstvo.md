@@ -8,11 +8,11 @@ author: Janez Pavel Žebovec
 
 # Računstvo
 
-## Logika
-
 | ne | ali | in | torej / če ..., potem | če in samo če ..., potem | je enako | podmnožica | unija | prazna množica | presek |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | $$\neg$$ | $$\lor$$ | $$\land$$ | $$\implies$$ | $$\iff$$ | $$\Leftrightarrow$$ $$=$$ | $$\subset$$ | $$\cup$$ | $$\emptyset$$ | $$\cap$$ |
+
+## *Logika*
 
 | $A$ | $B$ | $\neg A$ | $A \land B$ | $A \lor B$ | $A \implies B$ | $A \iff B$ |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -151,6 +151,9 @@ Za *elementarni* dogodek v popolnem *sistemu* dogodkov (kjer so vsi dog. enako v
 
 ## Zaporedja
 
+Če je $a_n$ zaporedje s *pozitivnimi* členi, velja, da če sta zaporedji  $\frac{a_{n+1}}{a_n}$ in $\sqrt[n]{a_n}$ *konvergentni*, je:
+$$ \lim_{x \to 0} \sqrt[n]{a_n} = \lim_{x \to 0} \frac {a_{n+1}}{a_n} $$
+
 ### *Aritmetično* zaporedje
 
 Splošni člen: $$ a_n = (n - 1)d $$
@@ -167,11 +170,64 @@ $$ S_n = n a_1 $$
 #### Neskončna *geometrijska* vrsta
 
 - $|k| < 1$ - *konvergentno* zaporedje, vsota neskončnega zaporedja je končna;
-$$ |k| < 1; \lim_{n \to \infty} S_n = \sum_{i=1}^{\infty} a_1 k^{i-1} = \frac{a_1}{1-k} $$
 
 - $|k| \ge 1$ - *divergentno* zaporedje, vsota neskončnega zaporedja je neskončna
 
-## Dvočlenik (*binom*)
+### Številske vrste
+
+Da vrsta *konvergira*, morajo njeni členi *konvergirati* proti 0.
+
+$$ |k| < 1; \lim_{n \to \infty} S_n = \sum_{i=1}^{\infty} a_1 k^{i-1} = \frac{a_1}{1-k} $$
+$$ a + ak + ak^2 + ak^3 + ... = \frac{a}{a-k}; \lvert k \rvert < 1 $$
+$$ \sum_{n=1}^{\infty} \frac{1}{n} = \infty $$
+$\sum_{n=1}^{\infty} \frac{1}{n^r}$ za $r > 1$ *konvergira*
+
+#### Pogoji za *konvergenco* / *divergenco*
+
+Za vrsto z ne nujno *pozitivnimi* členi velja:
+
+- vrsta *konvergira absolutno*, če *konvergira* $\sum \lvert a_n \rvert$
+- vrsta *konvergira* pogojno, če *konvergira*, a ne *absolutno*
+    - Primer: *alternirajoča* vrsta:
+        - Leibnizev pogoj: če *absolutne* vrednosti členov padajo proti nič, je vrsta *konvergenta*
+
+##### Primerjalni pogoj
+
+$\sum a_n$ in $\sum b_n$ sta vrsti s *pozitivnimi členi* in velja $a_n \leq b_n$. Potem za vse $n$ od nekod dalje velja:
+
+- če je $\sum b_n$ *kovergentna*, potem je tudi $\sum a_n$ *kovergentna*
+- če je $\sum b_n$ *divergentna*, potem je tudi $\sum a_n$ *divergentna* 
+
+##### Količniški pogoj
+
+$\sum a_n$ je vrsta s *pozitivnimi* členi in obstaja $D = \lim_{n \to \infty} \frac{a_{n+1}}{a_n}$
+
+- $D < 1$: vrsta je *konvergentna*
+- $D > 1$: vrsta je *divergentna*
+- $D = 1$: vrsta je ali *konvergentna* ali *divergentna*
+
+##### Korenski pogoj
+
+$\sum a_n$ je vrsta s *pozitivnimi* členi, obstaja $C = \lim_{n \to \infty} \sqrt[n]{a_n}$
+
+- $C < 1$: vrsta je *konvergentna*
+- $C > 1$: vrsta je *divergentna*
+- $C = 1$: vrsta je *konvergentna* ali *divergentna*
+
+##### Raabejev pogoj
+
+Ta pogoj je lahko uporaben, če data količniški in korenski 1.
+
+$\sum a_n$ je vrsta s pozitivnimi členi in obstaja
+
+$$ R = \lim_{ n \to \infty} n \left( \frac{a_n}{a_{n+1}} - 1 \right) $$
+
+- $R > 1$: vrsta je *konvergentna*
+- $R < 1$: vrsta je *divergentna*
+- $R = 1$: vrsta je *konvergentna* ali *divergentna*
+
+## Dvočlenik
+*Binom*
 
 Dvočlenik je $a+b$.
 
@@ -283,7 +339,19 @@ $$ \log_a u = \frac{\log_b u}{\log_b a} $$
 | tan | $$ 0 $$ | $$ \frac{\sqrt{3}}{3} $$ | $$ 1 $$ | $$ \sqrt{3} $$ |  |
 | cot |  | $$ \sqrt{3} $$ | $$ 1 $$ | $$ \frac{\sqrt{3}}{3} $$ |$$ 0 $$ |
 
-$$ \sin^2x + \cos^2x = 1 $$ 
+$$ \sin^2 x + \cos^2 x = 1 $$
+$$ \cos^2 x = \frac{1 + \cos 2x}{2} $$
+
+#### *Hiperbolične*
+
+$$ \sinh x = \frac{\mathrm{e}^x - \mathrm{e}^{-x}}{2} $$
+$$ \cosh x = \frac{\mathrm{e}^x + \mathrm{e}^{-x}}{2} $$
+$$ \tanh x = \frac{\mathrm{e}^x  \mathrm{e}^{-x}}{\mathrm{e}^x + \mathrm{e}^{-x}} $$
+
+$$ \cosh^2x - \sinh^2x = 1 $$
+$$ \sinh (x + y) = \sinh x \cosh y + \cosh x \sinh y $$
+$$ \cosh (x + y) = \cosh x \cosh y + \sinh x \sinh y $$
+$$ \tanh (x + y) = \frac{\tanh x \tanh y}{1 + \tan x \tan y} $$
 
 ### Limita
 
@@ -299,6 +367,8 @@ Limita in druge funkcije:
 $$ \lim_{n \to \infty} f(a_n) = f \left( \lim_{n \to \infty} (a_n) \right) $$
 $$ \lim_{n \to \infty} f(a_n^{b_n}) = \mathrm{e}^{\lim_{n \to \infty} (a_n - 1) b_n} $$
 
+**L'Hospitalovo pravilo**: Naj bosta funkciji $f$ in $g$ odvedljivi na neki okolici točke $x_0$ (ne nujno v $x_0$) in naj gresta obe hkrati proti 0 ali pa obe hkrati proti $\pm \infty$ pri $x \to x_0$. Če obstaja limita $\lim_{x \to x_0} \frac{f'(x)}{g'(x)}$, obstaja tudi njen enaka limita $\lim_{x \to 0} \frac{f(x)}{g(x)}$.
+
 Osnovne limite:
 
 $$ \lim_{n \to \infty} C = C $$
@@ -309,13 +379,19 @@ $$ \lim_{n \to \infty} a^n = \begin{cases}
     1; a = 1
 \end{cases} $$
 $$ \lim_{n \to \infty} \left( 1 + \frac {r}{n} \right)^n = e^r; r \in \mathbb{R} $$
-$$ \lim_{x \to 0} \frac {\sin x}{x} = 1 $$
+$$ \lim_{x \to \infty} {\left( 1 + f(x) \right)}^{\frac{1}{f(x)}} = e $$
+$$ \lim_{x \to 0} \frac {\sin x}{x} = 1; \lim_{x \to \infty} \frac {\sin x}{x} = 0 $$ 
+$$ \lim_{x \to \infty} \sqrt[x]{x^r} = \lim_{x \to \infty} x^{\frac{r}{x}} = 1 $$
 
 ### Odvod in integral
 
 Odvod funkcije je funkcija naklonov te funkcije. Opredelitev odvoda:
 
 $$ f'(x) = \lim_{h \to 0} \frac {f(x + h) - f(x)}{h} $$
+
+**Langrangeev izrek**: če je zvezna funkcija $f: [a, b] \rightarrow \mathbb{R}$ odvedljiva na intervalu (a, b), obstaja $c \in (a, b)$, za katerega velja:
+
+$$ \frac{f(b) - f(a)}{b - a} = f'(c) $$
 
 Integral je obratna funkcija odvoda.
 
@@ -341,7 +417,7 @@ V spodnji preglednici so neosnovni (oz. *bolj* neosnovni) integrali sivo obarvan
 | $$ \cos a x $$ | | $$ \frac {1}{a} \sin a x + C $$ |
 | $$ \tan x $$ | $$ \frac {1}{cos^2x} $$ | |
 | $$ \frac {1}{\cos^2 x} $$ | | $$ \tan x + C $$ |
-| $$ cot x $$ | $$ - \frac {1}{\sin^2 x} $$ |
+| $$ \cot x $$ | $$ - \frac {1}{\sin^2 x} $$ |
 | $$ \frac {1}{\sin^2 x} $$ | | $$ - \cot x + C $$ |
 | $$ \arcsin x $$ | $$ \frac {1}{\sqrt {1 - x^2}} $$ | |
 | $$ \frac {1}{\sqrt {1 - x^2}}$$ | | $$ \arcsin x + C $$ |
@@ -359,9 +435,25 @@ Integracija po delih:
 
 $$ \int u v' = u v - \int v u' $$
 
-Prostornina telesa zavrtene zvezne funkcije okoli osi x:
+Prostornina telesa vrtenine zvezne funkcije $f$ okoli osi x:
 
-$$ V = \pi \int_a^b (f(x))^2 \mathrm{d}x $$
+$$ V = \pi \int_a^b f(x)^2 \mathrm{d}x $$
+
+Površina vrtenine:
+
+$$ P = 2 \pi \int_{x_1}^{x_2} f(x) \sqrt{1 + f'(x)^2} dx $$
+
+Ploščina lika med krivuljama je določeni integral zgornjega roba lika *minus* spodnji rob lika (včasih se bolj splača *integrirati* po osi y namesto po x).
+
+Ploščina lika, omejenega s krivuljo v polarnih koordinatah:
+
+$$ S = \frac{1}{2} \int_{\phi_1}^{\phi_2} r^2 d \phi $$
+
+### Taylorjeva vrsta
+
+Za izračun vrednosti $n$-krat odvedljivega veččlenika (*polinoma*) v okolici točke $a$:
+
+$$ T_n f(x; a) = f(a) + f'(a) (x - a) + \frac{f''(a)}{s!} (x - a)^2 + ... + \frac{f^{(n)} (a)}{n!} (x - a)^n $$
 
 ## Stožnice
 
