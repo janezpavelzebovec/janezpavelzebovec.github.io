@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-01-01
+date: 2026-01-21
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 ---
@@ -38,10 +38,12 @@ Popolnoma zgrešen (a zelo pogost) pristop k prevajanju, oz. kovanju slovenskih 
 
 ## Obstoječa slovenščina
 
+Za seznam drugih prepovedanih izrazov v visoki slovenščini (izrazi, ki imajo v slovenščini že popolno uveljavljeno domačo ustreznico) glej stran [Prepovedane besede](/prepovedane_besede).
+
 Tu so navedene nekatere sprejete (a ne nujno – več – uveljavljene/uporabljane).
 
 - **hranilnica** < *banka*
-- **ljudovlada** < *republika*, *demokracija* <small>(it./nem. < frc. < lat.; nem. < frc. < lat. < gr.))</small>
+- **ljudovlada** (ustrezneje *ljudstvovlada*? – neuveljavljeno) < *republika*, *demokracija* <small>(it./nem. < frc. < lat.; nem. < frc. < lat. < gr.))</small>
 - **pogon** (gonilna sila, gibalo, pogonski stroj) < *motor*
 - **potno usmerjanje** < *navigacija*
 - **veljava** < *valuta* <small>(nem. < it.)</small>
@@ -192,6 +194,8 @@ Predlogi so dobrodošli na [osebno@janezpavelzebovec.net](mailto:osebno@janezpav
 
 - [Fran - Slovarji Inštituta za slovenski jezik Frana Ramovša ZRC SAZU](https://www.fran.si/)
     - [Fran - Predlagajte nove slovenske ustreznice](https://www.fran.si/ustreznice)
+- [Lugos – Slovenjenje — Pojmovnik izrazov](https://wiki.lugos.si/doku.php?id=slovenjenje:pojmovnik) – angleško-slovenski slovarček izrazov v računalništvu
+
 - [Delo - dr. Borut Vrščaj: Razmišljanje o slovenščini in angleščini – in križarskih vojnah](https://www.delo.si/mnenja/pisma-bralcev/razmisljanje-o-slovenscini-in-anglescini-in-krizarskih-vojnah/) ([arhivirano](https://web.archive.org/web/20240112202949/https%3A%2F%2Fwww.delo.si%2Fmnenja%2Fpisma-bralcev%2Frazmisljanje-o-slovenscini-in-anglescini-in-krizarskih-vojnah%2F))
 - [Delo - Majda M. Lesjak: Koliko je danes v resnici še vredna slovenščina?](https://www.delo.si/mnenja/gostujoce-pero/koliko-je-danes-v-resnici-se-vredna-slovenscina/) ([arhivirano](https://web.archive.org/web/20240112203130/https%3A%2F%2Fwww.delo.si%2Fmnenja%2Fgostujoce-pero%2Fkoliko-je-danes-v-resnici-se-vredna-slovenscina%2F))
 - [RTV SLO - Jezikovni spletovalec: Top jezikovna lista nadrealista](https://www.rtvslo.si/kultura/jezikovni-spletovalec/jezikovni-spletovalec-top-jezikovna-lista-nadrealista/442574)

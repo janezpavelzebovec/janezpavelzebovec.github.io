@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2025-06-19
+date: 2026-01-21
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
@@ -25,7 +25,7 @@ author: Janez Pavel Žebovec
 
 Računamo lahko v različnih množicah števil - to je stvar izbire. Tako lahko račun v neki množici nima rešitve (ki jo hočemo v tej množici), ima pa jo v neki drugi množici, vendar nas ta rešitev ne zanima, zato razglasimo, da račun v izbrani množici nima rešitve (tako je običajno npr. s koreni negativnih števil).
 
-$$ \href{#Naravna_stevila}{\mathbb{N}} < \href{#Cela_stevila}{\mathbb{Z}} < \href{#Racionalna_stevila}{\mathbb{Q}} < \href{#Realna_stevila}{\mathbb{R}} < \href{#Kompleksna_stevila}{\mathbb{C}} $$
+$$ \href{#Naravna_stevila}{\mathbb{N}} < \href{#Cela_stevila}{\mathbb{Z}} < \href{#Razlozna_stevila}{\mathbb{Q}} < \href{#Stvarna_stevila}{\mathbb{R}} < \href{#Skupna_stevila}{\mathbb{C}} $$
 
 ### Naravna števila
 
@@ -56,6 +56,20 @@ To so števila, ki jih lahko predstavimo na običajni številski premici (npr. 0
 Skupna števila imajo stvarno sestavino (*realno komponento*) *a* in umišljeno sestavino (*imaginarno komponento*) *b*. Umišljena *komponenta* se označuje z i.
 
 $$ \mathbb{C} = \left\{a + b\mathrm{i}; (a, b \in \mathbb{R} ) \land (\mathrm{i}^2 = -1 \Leftrightarrow \sqrt{-1} = \sqrt{\mathrm{i^2}})\right\} $$
+$$ \lvert z \rvert = \sqrt{a^2 + b^2} $$
+$$ {\lvert z \rvert}^2 = z \overline{z} $$
+
+*Polarni* zapis:
+
+$$ z = \lvert  z \rvert (\cos \phi + \mathrm{i} \sin \phi) $$
+
+Eulerjev zapis:
+
+$$ z = \lvert z \rvert \mathrm{e}^{\mathrm{i} \phi} $$
+
+De Moivrova enačba:
+
+$$ z^n = {\lvert  z \rvert}^n (\cos n \phi + \mathrm{i} \sin n \phi) = {\lvert z \rvert}^n \mathrm{e}^{\mathrm{i} n \phi} $$
 
 ## Računske *operacije*
 
@@ -262,7 +276,7 @@ $$ \log_a u = \frac{\log_b u}{\log_b a} $$
 
 ### Kotne funkcije
 
-| fun. \\ kot | $$ 0 $$ | $$ \frac{\pi}{6} = 30 ° $$ | $$ \frac{\pi}{4} = 45 ° $$ | $$ \frac{\pi}{3} = 60 ° $$ | $$ \frac{\pi}{2} = 90 ° $$ |
+| fun. \\ kot | $$ 0 $$ | $$ 30 ° = \frac{\pi}{6} \approx 0,5 $$ | $$ 45 ° = \frac{\pi}{4} \approx 0.8 $$ | $$ 60 ° = \frac{\pi}{3} \approx 1,0 $$ | $$ 90 ° = \frac{\pi}{2} \approx 1,6 $$ |
 | --- | --- | --- | --- | --- | --- |
 | sin | $$ 0 $$ | $$ \frac{1}{2} $$ | $$ \frac{\sqrt{2}}{2} $$ | $$ \frac{\sqrt{3}}{2} $$ | $$ 1 $$ |
 | cos | $$ 1 $$ | $$ \frac{\sqrt{3}}{2} $$ | $$ \frac{\sqrt{2}}{2} $$ | $$ \frac{1}{2} $$ | $$ 0 $$ |
@@ -273,7 +287,19 @@ $$ \sin^2x + \cos^2x = 1 $$
 
 ### Limita
 
+Računanje z limitami:
+
 $$ \lim_{n \to \infty} (a_n \pm b_n) = \lim_{n \to \infty} a_n \pm \lim_{n \to \infty}b_n $$
+$$ \lim_{n \to \infty} (a_n \cdot b_n) = \lim_{n \to \infty} a_n \cdot \lim_{n \to \infty}b_n $$
+$$ \lim_{n \to \infty} \left( \frac{a_n}{b_n} \right) = \frac{\lim_{n \to \infty} a_n}{\lim_{n \to \infty}b_n} $$
+$$ \lim_{n \to \infty} (c \cdot a_n) = c \cdot \lim_{n \to \infty}a_n; c \in \mathbb{R} $$
+
+Limita in druge funkcije:
+
+$$ \lim_{n \to \infty} f(a_n) = f \left( \lim_{n \to \infty} (a_n) \right) $$
+$$ \lim_{n \to \infty} f(a_n^{b_n}) = \mathrm{e}^{\lim_{n \to \infty} (a_n - 1) b_n} $$
+
+Osnovne limite:
 
 $$ \lim_{n \to \infty} C = C $$
 $$ \lim_{n \to \infty} \frac{1}{n} = 0 $$
@@ -282,7 +308,7 @@ $$ \lim_{n \to \infty} a^n = \begin{cases}
     \infty; a > 1 \\
     1; a = 1
 \end{cases} $$
-$$ \lim_{n \to \infty} \left( 1 + \frac {1}{n} \right)^n = e $$
+$$ \lim_{n \to \infty} \left( 1 + \frac {r}{n} \right)^n = e^r; r \in \mathbb{R} $$
 $$ \lim_{x \to 0} \frac {\sin x}{x} = 1 $$
 
 ### Odvod in integral

@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-01-18
+date: 2026-01-20
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -136,6 +136,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [TagInfo](https://taginfo.openstreetmap.org/) - statistika oznak v Open Street Mapu
 - [Točen.si](https://tocen.si/#/) – točni časi prihodov avtobusov z njihovimi trenutnimi položaji
 - [Velo Planner](https://veloplanner.com/routes) - kolesarske poti in načrtovanje kolesarjenja
+- [WaterwayMap](https://waterwaymap.org/)
 - [Waymarked Trails](https://waymarkedtrails.org/) - označeno poti,
     - [Waymarked Trails - Cycling](https://cycling.waymarkedtrails.org/) - kolesarske poti
     - [Waymarked Trails - Hiking](https://hiking.waymarkedtrails.org/) - pohodniške poti

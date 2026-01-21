@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-01-18
+date: 2026-01-20
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -170,7 +170,9 @@ Newtonovi zakoni:
 
 ### Mehanika
 
+$$ \overline{\vec v} = \frac{\vec s}{\Delta t} $$
 $$ \vec v = \vec r '(t) = \frac{d \vec r}{dt} $$
+$$ \overline{\vec a} = \frac{\Delta \vec v}{\Delta t} $$
 $$ \vec a = \vec v '(t) = \frac{d \vec v}{dt} $$
 
 ### Energije
@@ -187,15 +189,27 @@ $$ W_{p, g} = m g h $$
 
 ### Vrtenje
 
-$$ \phi = \frac{l}{r} $$
-$$ \omega = \phi '(t) = \frac{d \phi}{dt} $$
-$$ \gamma = \frac{N}{\Delta t} = \frac{1}{t_o} $$
+| | |
+| --- | --- |
+| kot | $$ \phi = \frac{l}{r} $$ |
+| kotna hitrost [$\frac{1}{s}$] | $$ \vec \omega = \vec \phi '(t) = \frac{\vec {d \phi}}{dt} $$ |
+| kotni pospešek [$\frac{1}{s^2}$] | $$ \vec \alpha = \vec \omega '(t) = \frac{\vec {d \omega}}{dt} $$ |
+| *frekvenca* [Hz] | $$ \gamma = \frac{N}{\Delta t} = \frac{1}{t_o} $$ |
+
+$$ \omega = \frac{2 \pi}{t_o} = 2 \pi \gamma $$
 
 Keplerjevi zakoni:
 
 1. Tiri planetov so *elipse*, Sonce je v gorišču.
 2. Ploščinska hitrost *planetov* je stalna.
 3. $\frac{r^3}{t_0^2}$ = stalno
+
+### Računanje z negotovostmi
+
+Negotovosti se sešteva, kadar so medsebojno povezane/odvisne; če ne, seštevamo njihove kvadrate.
+
+- seštevanje/odštevanje količin: seštevanje *absolutnih* napak
+- množenje/deljenje količin: seštevanje *relativnih* napak
 
 ---
 ## Zunanje povezave in viri
