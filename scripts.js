@@ -25,6 +25,15 @@
   }
 })();
 
+document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(heading => {
+  if (heading.id) {
+    heading.style.cursor = 'pointer';
+    heading.addEventListener('click', () => {
+      window.location.hash = heading.id;
+    });
+  }
+});
+
 document.addEventListener("keydown", function(event) {
   // Preveri, da je Shift pritisnjen, Ctrl/Alt/Meta pa ne
   if (!event.shiftKey || event.ctrlKey || event.altKey || event.metaKey) return;

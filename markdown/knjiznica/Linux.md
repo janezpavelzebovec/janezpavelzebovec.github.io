@@ -14,7 +14,6 @@ Glej [Vodič skozi namestitev Linuxa](/vodic_skozi_namestitev_Linuxa) za namesti
 - `sudo reboot` - ponovno se zaženi
     - `sudo shutdown -r now` - potem, ko se ugasneš, se znova prižgi (precej enako zgornjemu)
 - `startx` - zažene strežnik X, oz. privzeti grafični prikaz (to je lahko DWM, GNOME, KDE,...); prebere datoteko `~/xinitrc`, kjer so ukazi, ki naj se izvršijo med zagonom, tudi ukaz za zagon grafičnega okolja (`startx &`)
-
 - `locale` - preveri lokalizacijo sistema (jezik, enote, ...)
 - `chmod` - spreminjanje dovoljenj datotek
     - `chmod +x datoteka` - dodeli datoteki izvšilne pravice, da jo lahko recimo zaženeš kot ukaz v terminalu
@@ -147,7 +146,6 @@ Zagonski ključek je običajno potreben pri nameščanju operacijskega sistema.
 
 - `tar -xvzf mapa.tar.gz` - razširi stisnjeno mapo *.tar.gz* (*.tar* - arhivska; *.gz* - stisnjena)
 - `convert {imena_slik} ime_PDF-ja` - združi več slik JPG v en PDF
-
 - `pdfjam {imena_PDF-jev} -o ime_nove_datoteke.pdf` -  združi več PDF-jev v enega
     - `-o` - ugane vrsto datotek za pretvorbo po končnicah teh datotek
     - `--paper velikost_strani` -  določi velikost strani v PDF-ju (npr. `--paper a4paper` za A4)
@@ -210,8 +208,6 @@ Npr. za sinhronizacijo z [GitHubom](https://github.com/), [Codebergom](https://c
 - `ssh -T git@github.com` - preveri povezavo prek SSH (prek ključa)
 - `ssh-add ~/.ssh/id_ed25519` - dodaj ključ
 - `ssh-add -l` - preveri ključe, dodane v `agent`
-
-
 - `git diff > spremembe.patch` - ustvari datoteko s spremembami
 
 ## Strežnik
@@ -228,7 +224,6 @@ Sinhronizacija s strežnikom (npr. pri Hetznerju):
 
 - `ssh up_ime@tvoj_naslov_IP` - predstavi strežniku svojo napravo (za uporabniško ime uporabi tisto s K-jem, *K{deset števk}*)
 - `ssh-add ~/.ssh/id_ed25519` - dodaj ključ v `ssh-agent`
-
 - `curl {možnosti} URL` - pridobivanje podatkov od oddaljenega strežnika ali pošiljanje podatkov oddaljenemu strežniku
     - `-L` - sledi preusmeritvam, dokler ne dospe do cilja
 
@@ -298,7 +293,6 @@ Za tipko *Mod1* se običajno uporablja/nastavi tipka *Super*.
 - <kbd>Mod1+t</kbd> = *tiles* -  pojdi v prikaz oken v mozaičnem načinu
 - <kbd>Mod1+Tab</kbd> - premikaj se med okni
 - <kbd>Mod1+a</kbd> - odpre meni
-
 - <kbd>Mod1+Shift+Enter</kbd> - odpre terminal
 - <kbd>Ctrl++/-</kbd> - povečaj/pomanjšaj velikost pisave
 
@@ -359,9 +353,7 @@ Uporablja podobne bližnjice kot VIM:
     - <kbd>**zt</kbd>** = *time* - prikaži čas datotek/map
     - <kbd>**zs</kbd>** = *size* - prikaži velikost datotek
 - <kbd>**Super+w</kbd>** - odpri trenutno mesto v terminalu
-
 - <kbd>$</kbd> -  odpre ukazno vrstico, kjer lahko uporabljaš ukaze terminala (le tako lahko npr. brišeš) - **ta bližnjica ni privzeto nastavljena**
-
 - `/iskalni_niz` - išči
     - <kbd>n</kbd> / <kbd>Shift+n</kbd> - premikaj se naprej/nazaj po zadetkih iskanja
 
