@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-01-21
+date: 2026-01-26
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 ---
@@ -140,6 +140,7 @@ Drugi predlogi:
 
 - **navléčnik**, **návlec** < *pulover* <small>(< nem. *Pullover* < ang. *pull = *(po)vleči* + *over* = *čez/preko*)</small>
 - **privzgíb** < *pull up* <small>(< ang. *pull up* = *povleči (se) gor*)</small>
+- **raznospôlništvo, raznospôlnik** < *LGBTQ..., kvir*
 
 ### Moji predlogi
 
@@ -152,6 +153,7 @@ Tu je seznam mojih (precej dokončnih) predlogov za nove besede:
 - **naravoslôvje**, stvárnoslovje?, tvarnoslovje? < *fizika* <small>(< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
 - **prostóroslôvje** < *geometrija*
 - **rázspôlnik, razspôlništvo** < *LGBTQ ...* (kot motnja v spolnem razvoju, ko posameznik nima pravilno razvitih spolnih značilnostih zaradi prirojenih motenj ali **samorazspoljenja**, ki je pogosto družbeno pogojeno)
+- **prespǒljenje, prêspolnik** < *transseksualnost, transseksualec*
 - **rod otrok blaginje** < *babyboom generacija*
 - **vóz** (**sámogôn**) < *avtomobil/avto* <small>(< nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*)</small>
 - **sámovoz** < *avtonomni avtomobil/avto*

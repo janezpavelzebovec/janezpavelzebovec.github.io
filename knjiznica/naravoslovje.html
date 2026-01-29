@@ -52,6 +52,16 @@
     <script src="/scripts.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+    <script>
+        MathJax = {
+            tex: {
+                macros: {
+                    d: "\\mathop{}\\!\\mathrm{d}", // diferencial odvoda
+                    p: "\\mathop{}\\!\\partial" // delta delnega odvoda
+                }
+            }
+        }
+    </script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="ac7911af-065e-4a16-8a66-255ee9f70989"></script>
 
 </head>
@@ -63,7 +73,7 @@
             <path d="m100.16 175.85-9.097-9.097-6.06 6.059-6.059 6.06-3.037-3.039-3.038-3.038 18.16-18.16h-50.008l26.54-26.546 26.54-26.545-1.536-1.497-1.536-1.496-26.527 26.523-26.527 26.522-1.482-1.516c-3.775-3.864-5.546-5.696-7.092-7.336-16.688-17.704-26.211-31.284-28.698-40.924-1.21-4.691-0.863-10.232 0.99-15.79 1.699-5.097 4.565-10.096 8.84-15.423 3.371-4.2 7.977-8.867 12.227-12.39 7.033-5.829 14.255-9.477 20.998-10.607 4.438-0.744 8.947-0.517 13.093 0.659 11.322 3.209 25.58 12.759 42.257 28.304 0.478 0.444 0.891 0.809 0.92 0.81 0.028 0 7.213-7.173 15.966-15.94l15.916-15.94-109.05-0.035 15.156-15.156h53.013l-7.578-7.578-7.577-7.579 7.577-7.578 7.578-7.578 9.097 9.097 9.098 9.097 6.059-6.059 6.06-6.059 6.074 6.076-18.16 18.16h50.009l-26.54 26.545-26.54 26.544 1.535 1.495 1.536 1.495 26.528-26.52 26.529-26.52 1.601 1.635c6.117 6.25 9.362 9.693 13.283 14.098 13.381 15.03 20.977 26.846 22.66 35.248 0.485 2.426 0.556 5.402 0.196 8.275-0.764 6.103-3.472 12.418-8.059 18.795-3.846 5.346-9.652 11.442-15.036 15.786-3.795 3.062-6.921 5.088-10.666 6.912-4.634 2.257-9.022 3.433-13.549 3.632-5.12 0.225-9.614-0.74-15.578-3.344-9.785-4.273-21.875-12.95-35.046-25.152a173.77 173.77 0 0 0-1.525-1.4l-0.33-0.295-15.969 15.97-15.968 15.968h109.1l-15.156 15.156-53.064 0.035 15.13 15.2-7.54 7.539-7.54 7.54zm-32.637-65.878 17.354-17.355-0.496-0.461c-8.602-7.999-17.792-15.358-25.3-20.257-3.967-2.589-6.638-4.163-9.11-5.37-3.704-1.807-7.106-2.842-10.411-3.167-1.054-0.104-3.329-0.086-4.339 0.034-3.886 0.46-7.383 2.025-10.692 4.783-0.834 0.695-2.495 2.348-3.246 3.23-2.748 3.226-4.266 6.306-4.772 9.681-0.15 1-0.15 2.947-2e-3 4.006 0.422 3 1.703 6.037 3.815 9.045 0.582 0.828 2.105 2.79 3.522 4.534 5.168 6.363 11.203 13.127 18.443 20.67 2.292 2.389 7.783 7.982 7.835 7.982 0.023 0 7.854-7.81 17.399-17.355zm97.251 11.61c4.751-0.494 8.898-2.598 12.753-6.47 6.556-6.586 8.053-13.493 4.506-20.802-0.88-1.813-1.786-3.207-3.58-5.508-5.066-6.5-12.265-14.668-20.39-23.131-1.632-1.702-7.416-7.615-7.739-7.913l-0.177-0.165-17.357 17.357c-9.546 9.546-17.35 17.376-17.34 17.4 0.028 0.069 2.703 2.513 4.557 4.161 9.126 8.119 17.582 14.485 25.825 19.443 5.566 3.349 10.079 5.089 14.502 5.591 0.956 0.109 3.55 0.13 4.44 0.038z" fill="currentColor" stroke-width=".066768"/>
         </svg></a>
 
-        <p id="datum">Zadnja posodobitev te strani: <time datetime="2026-01-20">2026-01-20</time></p>
+        <p id="datum">Zadnja posodobitev te strani: <time datetime="2026-01-29">2026-01-29</time></p>
     </header>
     <main>
         <div class="content">
@@ -86,9 +96,14 @@
             </ul></li>
             <li><a href="#Naducilisce">Nadučilišče</a>
             <ul>
-            <li><a href="#Mehanika">Mehanika</a></li>
-            <li><a href="#Energije">Energije</a></li>
+            <li><a href="#Mehanika"><em>Mehanika</em></a></li>
+            <li><a href="#Energije"><em>Energije</em></a></li>
+            <li><a href="#Gibalna_kolicina">Gibalna količina</a></li>
             <li><a href="#Vrtenje">Vrtenje</a></li>
+            <li><a href="#Ravnovesje">Ravnovesje</a></li>
+            <li><a href="#Deformacije"><em>Deformacije</em></a></li>
+            <li><a href="#Nihanje">Nihanje</a></li>
+            <li><a href="#Tekocine">Tekočine</a></li>
             <li><a href="#Racunanje_z_negotovostmi">Računanje z
             negotovostmi</a></li>
             </ul></li>
@@ -653,45 +668,195 @@
             \]</span></p>
             <hr />
             <h2 id="Naducilisce">Nadučilišče</h2>
-            <p>Newtonovi zakoni:</p>
+            <p><strong>Newtonovi zakoni</strong> (veljajo le v
+            <em>inercialnih</em> opazovalnih <em>sistemih</em>):</p>
             <ol type="1">
             <li>Če je vsota učinkov okolice (sil) enaka nič, telo miruje
             ali se giblje premo in enakomerno: <span
             class="math inline">\(\sum_{i} \vec F_i = 0\)</span></li>
             <li>Pospešek je sorazmeren s silo in ima smer sile: <span
-            class="math inline">\(\sum_{i} \vec F_i = m \vec
-            a\)</span></li>
+            class="math inline">\(\sum_{i} \vec F_i = m
+            \vec{a}\)</span></li>
             <li>Če deluje prvo telo na drugo z neko silo, deluje drugo
             telo na prvo z nasprotno enako silo: <span
-            class="math inline">\(\vec F_{1,2} = \vec
+            class="math inline">\(\vec F_{1,2} = - \vec
             F_{2,1}\)</span></li>
             </ol>
-            <h3 id="Mehanika">Mehanika</h3>
-            <p><span class="math display">\[ \overline{\vec v} =
-            \frac{\vec s}{\Delta t} \]</span> <span
-            class="math display">\[ \vec v = \vec r &#39;(t) = \frac{d
-            \vec r}{dt} \]</span> <span class="math display">\[
-            \overline{\vec a} = \frac{\Delta \vec v}{\Delta t} \]</span>
-            <span class="math display">\[ \vec a = \vec v &#39;(t) =
-            \frac{d \vec v}{dt} \]</span></p>
-            <h3 id="Energije">Energije</h3>
-            <p><span class="math display">\[ W = \vec F \vec s
+            <p>Sila je učinek okolice, teles v okolici. V
+            <em>inercialnih</em> opazovalnih <em>sistemih</em> ni
+            “skrivnostnih” sil brez določenega telesa – vsaka sila ima
+            svoje izvorno telo.</p>
+            <p><em>Masa</em> je lastnost telesa, da se upira
+            pospešovanju – vztrajnost (<em>inercija</em>). Teža je sila
+            okolice, sorazmerna z <em>maso</em> (težnostni pospešek je
+            neodvisen od <em>mase</em>).</p>
+            <table>
+            <tbody>
+            <tr class="odd">
+            <td>lepenje</td>
+            <td><span class="math display">\[ F_{l, max} = k_l F_N
+            \]</span></td>
+            </tr>
+            <tr class="even">
+            <td>trenje</td>
+            <td><span class="math display">\[ F_{tr} = k_{tr} F_N
+            \]</span></td>
+            </tr>
+            <tr class="odd">
+            <td>količnik trenja/lepenja</td>
+            <td><span class="math display">\[ k_l \geq k_{tr}
+            \]</span></td>
+            </tr>
+            <tr class="even">
+            <td>Hookov zakon</td>
+            <td><span class="math display">\[ \vec F_{vzmet} =
+            -k_{vzmeti} \vec{x} \]</span></td>
+            </tr>
+            </tbody>
+            </table>
+            <p>Težišče: <span class="math display">\[ \vec r^* =
+            \frac{\sum m_i \vec r_i}{\sum m_i} = \frac{\int \d m \vec
+            r}{\int \d m}; M = \int \d m \]</span></p>
+            <h3 id="Mehanika"><em>Mehanika</em></h3>
+            <ul>
+            <li>Opis gibanja: <em>kinematika</em></li>
+            <li>Napoved gibanja: <em>dinamika</em></li>
+            </ul>
+            <table>
+            <colgroup>
+            <col style="width: 50%" />
+            <col style="width: 50%" />
+            </colgroup>
+            <tbody>
+            <tr class="odd">
+            <td>položajni <em>vektor</em></td>
+            <td><span class="math display">\[ \vec r = \int_{t&#39;}^t
+            \vec v \d t \]</span></td>
+            </tr>
+            <tr class="even">
+            <td>pot [<span class="math inline">\(m\)</span>]</td>
+            <td><span class="math display">\[ s = \int_{\vec
+            r&#39;}^{\vec r} \lvert \d \vec r \rvert = \int_{\vec
+            r&#39;}^{\vec r} \d s \]</span></td>
+            </tr>
+            <tr class="odd">
+            <td>hitrost (spreminja <em>vektor</em> položaja) [<span
+            class="math inline">\(\frac{m}{s}\)</span>]</td>
+            <td><span class="math display">\[ \vec v = \vec r &#39;(t) =
+            \frac{\d \vec r}{\d t} = \vec v&#39; + \int_{t&#39;}^t \vec
+            a \d t \]</span> <span class="math display">\[
+            \overline{\vec v} = \frac{\Delta \vec{r}}{\Delta t}
+            =  \frac{\vec s}{\Delta t} \]</span></td>
+            </tr>
+            <tr class="even">
+            <td>pospešek (spreminja smer in velikost hitrost) [<span
+            class="math inline">\(\frac{m}{s^2}\)</span>]</td>
+            <td><span class="math display">\[ \vec a = \vec v &#39;(t) =
+            \frac{\d \vec v}{\d t} \]</span> <span
+            class="math display">\[ \overline{\vec a} = \frac{\Delta
+            \vec v}{\Delta t} \]</span></td>
+            </tr>
+            </tbody>
+            </table>
+            <p>Stalen pospešek: <span class="math display">\[ \Delta v =
+            at \]</span> <span class="math display">\[ v^2 = v&#39;^2 +
+            2 a (x - x&#39;) \]</span></p>
+            <h4 id="Navor">Navor</h4>
+            <p><span class="math display">\[ \vec M = \vec r \times \vec
+            F = m \vec \alpha r^2 = J \vec \alpha \]</span></p>
+            <h3 id="Energije"><em>Energije</em></h3>
+            <table>
+            <colgroup>
+            <col style="width: 50%" />
+            <col style="width: 50%" />
+            </colgroup>
+            <tbody>
+            <tr class="odd">
+            <td>delo (sprememba <em>energije</em>) [<span
+            class="math inline">\(\frac{kg m^2}{s^2} = Nm =
+            J\)</span>]</td>
+            <td><span class="math display">\[ A = \vec F \vec s = \Delta
+            W \]</span></td>
+            </tr>
+            <tr class="even">
+            <td>moč [<span class="math inline">\(\frac{J}{s} =
+            W\)</span>]</td>
+            <td><span class="math display">\[ P = \frac{\d A}{\d t}
+            \]</span> <span class="math display">\[ \overline{P} =
+            \frac{A}{\Delta t} \]</span></td>
+            </tr>
+            </tbody>
+            </table>
+            <p><span class="math display">\[ P = \frac{\d A}{\d t} =
+            \frac{\d F s}{\d t} = F \frac{\d s}{\d t} = F v
             \]</span></p>
+            <p><span class="math inline">\(W = W_k + W_p = M_Z
+            \frac{v^2}{2} - G \frac{M_S M_Z}{r}\)</span> (npr. v
+            osončju):</p>
+            <ul>
+            <li><span class="math inline">\(W &lt; 0\)</span>: vezan
+            <em>sistem</em> (<em>elipsa</em>)</li>
+            <li><span class="math inline">\(W = 0\)</span>
+            (<em>parabola</em>)</li>
+            <li><span class="math inline">\(W &gt; 0\)</span>: prost
+            <em>sistem</em> (<em>hiperbola</em>)</li>
+            </ul>
+            <h4 id="Kineticna_energija"><em>Kinetična energija</em></h4>
+            <p><span class="math display">\[ \Delta W_k = A = \int_{\vec
+            r_1}^{\vec r_2} \vec F \d \vec r
+            = \int_{\vec r_1}^{\vec r_2} m \vec a \d \vec r
+            = \int_{\vec r_1}^{\vec r_2} m \frac{\d \vec v \d \vec r}{\d
+            t \d t}
+            = m \int_{\vec v&#39;}^{v} \vec v \d \vec v
+            = m \int \vec v \d \vec v
+            = m \int \left( v_x \d v_x + v_y \d v_y + v_z \d v_z \right)
+            = \frac{1}{2} m \left( v_x&#39; + v_y&#39; + v_z&#39;
+            \right) \Big|_{v&#39;}^{v} = \frac{1}{2} m v^2
+            \Big|_{v&#39;}^{v}
+            = \frac{1}{2} m (v^2 - v&#39;^2) \]</span></p>
+            <h4 id="Potencialna_teznostna_energija"><em>Potencialna</em>
+            težnostna <em>energija</em></h4>
             <p><em>Potencialna energija</em> ima naravno izhodišče
             (<span class="math inline">\(W_{p, g} = 0\)</span>)
             neskončno daleč stran, kjer gre teža proti nič (<span
             class="math inline">\(r_1 \rightarrow \infty\)</span>):</p>
-            <p><span class="math display">\[ W_{p, g} = - A_g = -
-            \int_{\vec r_1}^{\vec r_2} \vec F_g \cdot d\vec{r} = -
-            \int_{r_1}^{r_2} \left(- \frac{G m_1 m_2}{r^2} \right)
-            \frac{r_{1,2}}{r} dr = \int_{r_1}^{r_2} \frac{G m_1
-            m_2}{r^3} r dr = - \frac{G m_1 m_2}{r} \Big|_{r_1}^{r_2}
-            =  - \frac{G m_1 m_2}{r_2} \]</span></p>
+            <p><span class="math display">\[ \vec F_g = -G \frac{m_1
+            m_2}{r^2} \frac{r_{1,2}}{r} \]</span> <span
+            class="math display">\[ W_{p, g} = - A_g
+            = - \int_{\vec r_1}^{\vec r_2} \vec F_g \cdot d\vec{r}
+            = - \int_{r_1}^{r_2} \left(- \frac{G m_1 m_2}{r^2} \right)
+            \frac{r_{1,2}}{r} dr
+            = \int_{r_1}^{r_2} \frac{G m_1 m_2}{r^3} r dr
+            = - \frac{G m_1 m_2}{r} \Big|_{r_1}^{r_2}
+            = - \frac{G m_1 m_2}{r_2} \]</span></p>
             <p>Za “ravno Zemljo” (<span class="math inline">\(\Delta h
             &lt;&lt; r_Z\)</span>):</p>
-            <p><span class="math display">\[ W_{p, g} = m g h
+            <p><span class="math display">\[ g = \frac{G M_Z}{r_Z^2}
+            \]</span> <span class="math display">\[ W_{p, g} = m g h
             \]</span></p>
+            <h4 id="Potencialna_proznostna_energija">Potencialna
+            prožnostna energija</h4>
+            <p><span class="math display">\[ \Delta W_{pr} = -A_{vzmeti}
+            = - \int_{x&#39;}^x F x \d x = \int_{x&#39;}^{x} k x \d x =
+            \frac{1}{2} k (x^2 - x&#39;^2) = \frac{1}{2} k x^2
+            \]</span></p>
+            <h3 id="Gibalna_kolicina">Gibalna količina</h3>
+            <p><span class="math display">\[ \vec G = m \vec v \]</span>
+            <span class="math display">\[ \vec F = m \vec a = m \frac{\d
+            \vec v}{\d t} = \frac{\d (m \vec v)}{\d t} = \frac{\d \vec
+            G}{\d t} \]</span> <span class="math display">\[
+            \int_{t&#39;}^{t} \vec F \d t = \int_{t&#39;}^t \frac{\d
+            \vec G}{\d t} \d t = \vec G \Big|_{t&#39;}^t = \vec G - \vec
+            G&#39; = \Delta \vec G \]</span></p>
+            <ul>
+            <li>Neprožni trk: ohranja se gibalna količina</li>
+            <li>Prožni trk: ohranjata se gobalna količina in
+            <em>kinetična energija</em></li>
+            </ul>
             <h3 id="Vrtenje">Vrtenje</h3>
+            <p>Kot <span class="math inline">\(\phi\)</span> ni
+            <em>vektor</em>, je pa njegov <em>diferencial</em> <span
+            class="math inline">\(\vec{d \phi}\)</span>.</p>
             <table>
             <colgroup>
             <col style="width: 50%" />
@@ -707,13 +872,15 @@
             <td>kotna hitrost [<span
             class="math inline">\(\frac{1}{s}\)</span>]</td>
             <td><span class="math display">\[ \vec \omega = \vec \phi
-            &#39;(t) = \frac{\vec {d \phi}}{dt} \]</span></td>
+            &#39;(t) = \frac{\vec {\d \phi}}{dt} \]</span> <span
+            class="math display">\[ \overline \omega = \frac{\Delta
+            \phi}{\Delta t} \]</span></td>
             </tr>
             <tr class="odd">
             <td>kotni pospešek [<span
             class="math inline">\(\frac{1}{s^2}\)</span>]</td>
             <td><span class="math display">\[ \vec \alpha = \vec \omega
-            &#39;(t) = \frac{\vec {d \omega}}{dt} \]</span></td>
+            &#39;(t) = \frac{\vec {\d \omega}}{\d t} \]</span></td>
             </tr>
             <tr class="even">
             <td><em>frekvenca</em> [Hz]</td>
@@ -722,8 +889,20 @@
             </tr>
             </tbody>
             </table>
-            <p><span class="math display">\[ \omega = \frac{2 \pi}{t_o}
-            = 2 \pi \gamma \]</span></p>
+            <p><span class="math display">\[ \phi = \phi_0 + \omega_0 t
+            + \frac{\alpha}{2} t^2 \]</span> <span
+            class="math display">\[ \omega = \frac{2 \pi}{t_o} = 2 \pi
+            \gamma = \omega_0 + \alpha t \]</span> <span
+            class="math display">\[ a_r = \omega v = \frac{v^2}{r} =
+            \omega^2 r \]</span> <span class="math display">\[ l = r
+            \phi\]</span> <span class="math display">\[ \vec{v} =
+            \frac{\d \vec{r}}{\d t} = r \frac{\vec{\d \phi}}{\d t} =
+            \vec r \times \vec{\omega} \]</span> <span
+            class="math display">\[ \vec{a_t} = \frac{\vec{\d v}}{\d t}
+            = r \frac{\vec{\d \omega}}{t} = \vec r \times \vec{\alpha}
+            \]</span></p>
+            <p><span class="math display">\[ \vec F_{Coriolis} = -2 m
+            (\vec{\omega} \times \vec{v}) \]</span></p>
             <p>Keplerjevi zakoni:</p>
             <ol type="1">
             <li>Tiri planetov so <em>elipse</em>, Sonce je v
@@ -732,8 +911,151 @@
             <li><span class="math inline">\(\frac{r^3}{t_0^2}\)</span> =
             stalno</li>
             </ol>
+            <p>Vztrajnostni <em>moment</em> [<span
+            class="math inline">\(kg m^2\)</span>] je porazdelitev
+            <em>mase</em> glede na os vrtenja: <span
+            class="math display">\[ W_{k, rot} = \frac{1}{2} \sum_i m_i
+            v_i^2 = \frac{1}{2} \int \d m v^2 = \frac{1}{2} \int \d m
+            r^2 \omega^2 = \frac{1}{2} \omega^2 \int \d m r^2 =
+            \frac{1}{2} J \omega^2 \]</span> <span
+            class="math display">\[ J_{točka, cev} = m r^2 \]</span>
+            <span class="math display">\[ J_{valj} = \frac{1}{2} m r^4
+            \]</span> <span class="math display">\[ J_{krogla} =
+            \frac{2}{5} m r^2 \]</span></p>
+            <p>Steinerjev izrek: če je težišče telesa izmaknjeno od osi
+            vrtenja, je vztrajnostni <em>moment</em> telesa enak vsoti
+            tistega, ki bi bil, če bi bila os v težišču in tistega, če
+            telo vzamemo kot točko (težišče) ki kroži na neki razdalji
+            os osi: <span class="math display">\[ J = J^* + m r^2
+            \]</span></p>
+            <p><span class="math display">\[ A = \Delta W_k =
+            \frac{1}{2} J (\Delta \omega)^2 = \int \vec M \vec{\d \phi}
+            \]</span> <span class="math display">\[ P = \frac{\d A}{\d
+            t} = \frac{\vec M \vec{\d \phi}}{\d t} = \vec M \vec \omega
+            \]</span> <span class="math display">\[ \vec M = J \vec
+            \alpha \]</span></p>
+            <p>Vrtilna količina je gibalna količina porazdeljena po
+            vrtečem se telesu: <span class="math display">\[ \vec \Gamma
+            = \vec r \times \vec G = \int \d m \vec r \times \vec v = J
+            \vec \omega \]</span> <span class="math display">\[ \vec M =
+            \vec r \times \vec F = \vec r \times \frac{\d \vec G}{\d t}
+            = \frac{\d \vec \Gamma}{\d t} \]</span> <span
+            class="math display">\[ \vec \Gamma = \vec \Gamma_{tirna} +
+            \vec \Gamma_{lastna}^* \]</span> <span
+            class="math display">\[ \vec \Gamma_{tirna}^* = \int \d m
+            \vec r_T \times \vec v_T \]</span> <span
+            class="math display">\[ \sum \vec r^* \times \vec F_{zun} =
+            \vec r^* \times \sum \vec F_{zun} \]</span></p>
+            <h3 id="Ravnovesje">Ravnovesje</h3>
+            <ul>
+            <li><em>labilno</em> r. (npr. na vrhu hriba)</li>
+            <li><em>indiferentno</em> r. (npr. na ravnini)</li>
+            <li><em>stabilno</em> r. (npr. na dnu doline)</li>
+            </ul>
+            <h3 id="Deformacije"><em>Deformacije</em></h3>
+            <table>
+            <colgroup>
+            <col style="width: 50%" />
+            <col style="width: 50%" />
+            </colgroup>
+            <tbody>
+            <tr class="odd">
+            <td>napetost, prožnostni <em>modul</em>,
+            <em>deformacija</em> (?)</td>
+            <td><span class="math inline">\(\frac{\vec F}{\vec S} = k
+            \frac{\vec F}{\vec S}\)</span></td>
+            </tr>
+            <tr class="even">
+            <td>nateg (prožnost E [<span
+            class="math inline">\(\frac{N}{m^2}\)</span>)</td>
+            <td><span class="math inline">\(\frac{F_x}{S_x} = E
+            \frac{\Delta x}{\d x}\)</span></td>
+            </tr>
+            <tr class="odd">
+            <td>strižna <em>deformacija</em></td>
+            <td><span class="math inline">\(\frac{F_y}{S_x} = G
+            \frac{\Delta y}{\d x}\)</span></td>
+            </tr>
+            <tr class="even">
+            <td>vsestransko stiskanje (stisljivost <span
+            class="math inline">\(\chi\)</span> [<span
+            class="math inline">\(\frac{m^2}{N}\)</span>])</td>
+            <td><span class="math inline">\(\frac{F}{S} = K \frac{\Delta
+            V}{V} = - K \chi \Delta p\)</span></td>
+            </tr>
+            <tr class="odd">
+            <td>Pasonov količik</td>
+            <td><span class="math inline">\(\frac{\Delta y}{\d y}
+            \frac{\Delta z}{\d z} = - \mu \frac{\Delta}{\d
+            x}\)</span></td>
+            </tr>
+            </tbody>
+            </table>
+            <p><span class="math display">\[ K = \frac{E}{3 (1 - 2 \mu}
+            \]</span> <span class="math display">\[ G = \frac{E}{2 (1 +
+            \mu)} \]</span></p>
+            <p>Vzvoj (<em>torzija</em>; npr. zvijanje palice okoli njene
+            osi): <span class="math display">\[ M = - D \phi \]</span>
+            <span class="math display">\[ D = \frac{1}{2} \pi G
+            \frac{R_0^4}{l} [\frac{N m^4}{m^2 m} = N m] \]</span></p>
+            <h3 id="Nihanje">Nihanje</h3>
+            <p><span class="math display">\[ \gamma = \frac{N}{\Delta t}
+            = \frac{1}{t_0} \]</span> <span class="math display">\[
+            \omega = \frac{2 \pi}{t_0} = 2 \pi \gamma \]</span></p>
+            <p><span class="math display">\[ x(t) = A \sin (\omega t +
+            \delta) \]</span> <span class="math display">\[ v(t) =
+            \frac{\d x}{\d t} = v_0 \cos (\omega t + \delta) = \omega A
+            cos(\omega t + \delta) \]</span> <span
+            class="math display">\[ a(t) = \frac{\d v}{\d t} = a_0 \sin
+            (\omega t + \delta) = - \omega^2 A \sin (\omega t + \delta)
+            = - \omega^2 x(t) \]</span></p>
+            <p><span class="math display">\[ F = m a = -m \omega^2 x = -
+            k x \]</span> <span class="math display">\[ W = W_k + W_p =
+            \frac{1}{2} m \omega^2 \left( \cos^2 (\omega t + \delta) +
+            \sin^2 (\omega t + \delta) \right) = \frac{1}{2} m \omega^2
+            \]</span></p>
+            <p>Matematično nihalo: <span class="math display">\[
+            \omega_0 = \sqrt{\frac{g}{l}} \]</span></p>
+            <p>Vzmetno nihalo: <span class="math display">\[ \omega_0 =
+            \sqrt{\frac{k}{m}} \]</span></p>
+            <p>Vzvojno nihalo: <span class="math display">\[ \omega_0 =
+            \sqrt{\frac{D}{J}} \]</span></p>
+            <h4 id="Duseno_nihanje">Dušeno nihanje</h4>
+            <p><span class="math display">\[ W = W_0 \mathrm{e}^{-2
+            \beta t} \]</span> <span class="math display">\[ \omega
+            &#39;^2 = \omega^2 - \beta^2 \]</span></p>
+            <ul>
+            <li>nad<em>kritično</em> dušenje: <span
+            class="math inline">\(\beta &gt; \omega\)</span> <span
+            class="math display">\[ s = s_0 \mathrm{e}^{- \beta t} \cosh
+            (\omega t + \delta) \]</span></li>
+            <li><em>kritično</em> dušenje: <span
+            class="math inline">\(\beta = \omega\)</span> <span
+            class="math display">\[ s = s_0 \mathrm{e}^{- \beta t} + s_2
+            t \mathrm{e}^{- \beta t} \]</span></li>
+            <li>pod<em>kritično</em> dušenje: <span
+            class="math inline">\(\beta &lt; \omega\)</span> <span
+            class="math display">\[ s = s_0 \mathrm{e}^{- \beta t} \cos
+            (\omega t + \delta) \]</span></li>
+            </ul>
+            <h4 id="Vsiljeno_nihanje">Vsiljeno nihanje</h4>
+            <p><span class="math display">\[ \tan \delta = \frac{2 \beta
+            \omega}{\omega_0^2 - \omega^2} \]</span></p>
+            <h3 id="Tekocine">Tekočine</h3>
+            <p>Tlak [<span class="math inline">\(\frac{N}{m^2} =
+            Pa\)</span>]: <span class="math display">\[ p = \frac{\d
+            F}{\d S} \]</span></p>
+            <p><em>Hidravlika</em>: <span class="math display">\[
+            \frac{F_2}{F_1} = \frac{S_2}{S_1} \]</span></p>
+            <p>Vzgon – nasprotno enak teži izpodrinjene tekočine: <span
+            class="math display">\[ \Delta p = \rho  g h \]</span> <span
+            class="math display">\[ \vec F_{vzg} = \int p_{hidrostat.}
+            \d \vec S \]</span></p>
             <h3 id="Racunanje_z_negotovostmi">Računanje z
             negotovostmi</h3>
+            <p>Meritve brez negotovosti ne obstajajo (posebno če so
+            zvezne narave), zato so merski podatki brez negotovosti
+            nepopolni, torej precej neuporabni ali vsaj nezaželjeni.</p>
             <p>Negotovosti se sešteva, kadar so medsebojno
             povezane/odvisne; če ne, seštevamo njihove kvadrate.</p>
             <ul>
@@ -746,9 +1068,11 @@
             <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in
             viri</h2>
             <ul>
+            <li><a href="https://www.feynmanlectures.caltech.edu/">The
+            Feynman Lectures on Physics</a></li>
             <li><a
             href="https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507">The
-            International System of Units (SI; 2019)</a>;</li>
+            International System of Units (SI; 2019)</a></li>
             </ul>
         </div> 
     </main>

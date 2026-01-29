@@ -52,6 +52,16 @@
     <script src="/scripts.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+    <script>
+        MathJax = {
+            tex: {
+                macros: {
+                    d: "\\mathop{}\\!\\mathrm{d}", // diferencial odvoda
+                    p: "\\mathop{}\\!\\partial" // delta delnega odvoda
+                }
+            }
+        }
+    </script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="ac7911af-065e-4a16-8a66-255ee9f70989"></script>
 
 </head>

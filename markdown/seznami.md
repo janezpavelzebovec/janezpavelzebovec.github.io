@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-01-20
+date: 2026-01-26
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -24,11 +24,25 @@ Moja *priporočila* (precej nepopolna)
 
 ## Splet
 
-- [Društvo za elektronsko in računalniško pismenost](https://derp.si/)
-- [Kiberpipa](https://kiberpipa.org/) – društvo *tehnoloških* (predvsem računalniških) navdušencev
 - [Kvarkadabra - časopis za tolmačenje znanosti](https://kvarkadabra.net/)
+- [Na prostem, zadruga za odprto kodo](https://www.na-prostem.si/)
 - [Odysee](https://odysee.com/)
 - [Statistični urad Republike Slovenije](https://www.stat.si/)
+
+### Nepridobitne organizacije
+
+- [Društvo za elektronsko in računalniško pismenost](https://derp.si/)
+- [Duh časa](https://www.duh-casa.si/)
+- [Kiberpipa](https://kiberpipa.org/) – društvo *tehnoloških* (predvsem računalniških) navdušencev
+- [Kompot](https://kompot.si/)
+- [Lugos](https://www.lugos.si/) – Društvo uporabnikov Linuxa Slovenije
+    - [Lugos – Wiki](https://wiki.lugos.si/)
+
+### Osebne spletne strani
+
+- [Anton Luka Šijanec](https://sijanec.eu/)
+- [Filip Žebovec](https://filipzebovec.net/)
+- [Mitja Jež](https://mitja.jež.si/)
 
 ### Naravoslovje
 
