@@ -217,3 +217,8 @@ Tretja moška sklanjatev ima v vseh sklonih ničto končnico (npr. *KD, NUK*).
 (npr. *perut, nit, plavut*)
 
 Tretja ženska sklanjatev ima v vseh sklonih ničto končnico (npr. *mami, Karmen*, ženski priimki).
+
+---
+## Zunanje povezave in viri
+
+- [Pravopis 8.0](https://pravopis8.fran.si/)

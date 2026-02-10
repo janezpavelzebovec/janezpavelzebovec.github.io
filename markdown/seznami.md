@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-01-26
+date: 2026-01-31
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -42,6 +42,7 @@ Moja *priporočila* (precej nepopolna)
 
 - [Anton Luka Šijanec](https://sijanec.eu/)
 - [Filip Žebovec](https://filipzebovec.net/)
+- [Jure Smolar](https://jure-smolar.com/)
 - [Mitja Jež](https://mitja.jež.si/)
 
 ### Naravoslovje
@@ -142,8 +143,10 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid
 - [Open Infrastructure Map](https://openinframap.org/) – *infrastrukturni* zemljevid (elektrika, plinovodi, vodovod, *telekomunikacija*)
 - [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim
+- [OpenStreetBrowser](https://www.openstreetbrowser.org/)
 - [Open Topo Map](https://opentopomap.org/) - *topografski* zemljevid
 - [OsmAnd](https://osmand.net/map/) – spletna različica dlančniškega orodja, ki se jo da povezati s slednjim, tako da si tudi v brskalniku (npr. na računalniku) lahko gleduješ shranjene točke in sledi
+- [OsmApp](https://osmapp.org/)
 - [OSM Buildings](https://osmbuildings.org/) - trorazsežnostni prikaz zgradb
 - [Overpass Turbo](https://overpass-turbo.eu/) - iskalnik značilnosti
 - [ShadeMap](https://shademap.app/) - zemljevid senc po svetu v poljubnem trenutku

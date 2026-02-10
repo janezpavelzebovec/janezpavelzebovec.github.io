@@ -42,6 +42,8 @@ Za 5 najbolj splošnih besed se uporabljajo sledeče črke kot bližnjice (kraj�
 | the | 𐑞 | /ð/ |
 | to | 𐑑 | /t/ |
 
+---
+
 ## Zunanje povezave in viri
 
 - [Shavian](https://shavian.info) (uradna stran)

@@ -1,12 +1,14 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2025-12-29
+date: 2026-01-31
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
 ---
 
 # Vodič skozi namestitev Linuxa
+
+Nekatere moje nastavitvene in druge datoteke Linuxa se nahajajo na [Codebergu: My Linux Configs](https://codeberg.org/JanezPavelZebovec/My_Linux_configs).
 
 Tukaj so navedeni koraki, po katerih prideš do skoraj enakega okolja kot je moje.
 
@@ -287,6 +289,10 @@ Zagon novega *operacijskega sistema*:
 
 	{ MODKEY,           	XK_v,           selpaste,       {.i =  0} },
     ```
+
+### Drugi programčki, bližnjice
+
+`sudo apt install imagemagick xclip` – namesti programa za zajem posnetka zaslona (za bližnjice glej [~/.config/sxhkd/sxhkdrc](https://codeberg.org/JanezPavelZebovec/My_Linux_configs/src/branch/main/~/.config/sxhkd/sxhkdrc))
 
 ### Knjižnice za Python
 

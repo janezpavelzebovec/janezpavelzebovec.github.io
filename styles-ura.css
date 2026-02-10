@@ -1,10 +1,10 @@
 :root {
-    --barvaPoudarka: rgba(153, 178, 255, 1);
-    --barvaOzadja: #121212;
-    --barvaOzadjaNaprej: rgba(36, 36, 36, 1);
+    --barvaPoudarka:  #458588; /*rgba(153, 178, 255, 1);*/
+    --barvaOzadja: #282828; /*#121212;*/
+    --barvaOzadjaNaprej:  #504945; /*rgba(36, 36, 36, 1);*/
     --barvaOzadjaProsojno: rgba(0, 0, 0, 0.8);
-    --barvaOspredja: white;
-    --barvaNazaj: rgba(255, 255, 255, 0.5);
+    --barvaOspredja:  #fbf1c7; /*white;*/
+    --barvaNazaj:  #a89984; /*rgba(255, 255, 255, 0.5);*/
 
     --bar-width: 2rem;
     --bar-height: 0.18rem;

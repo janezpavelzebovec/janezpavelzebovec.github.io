@@ -1,0 +1,21 @@
+.MJXc-display, .MathJax_Display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+}
+
+.CtxtMenu_ContextMenu, .CtxtMenu_Menu, .CtxtMenu_Info, .CtxtMenu_MousePost, .CtxtMenu_InfoContent {
+    background-color: var(--bOzadjeNaprej) !important;
+    color: var(--bOspredje) !important;
+    border: 1px solid var(--bOspredjeNazaj) !important;
+    margin:0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+}
+.CtxtMenu_MenuClose span, .CtxtMenu_MenuClose /*gumbek za zapiranje okenčkov*/ {
+    background-color: var(--bOzadjeNaprej) !important;
+    border: none !important;
+}

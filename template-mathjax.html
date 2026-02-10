@@ -12,56 +12,13 @@
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
     <link rel="icon" type="image/png" sizes="192x192" href="/images/icon.png"/>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background: #121212;
-            color: #eee;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        main {
-            flex: 1;
-            width: 100%;
-            margin: auto;
-            padding: 1em;
-            padding-top: 0;
-            font-size: 1.1em;
-        }
-        .content {
-            max-width: var(--vsebina);
-            margin:auto;
-        }
-        header {
-            min-height: 4em;
-            align-items: center;
-            justify-content: space-around;
-        }
-        #domov {
-            width: 3em;
-            aspect-ratio: 1 / 1;
-            display: block;
-            padding: 0.5em;
-            border-radius: 50%;
-        }
-    </style>
-
     <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'"/>
+    <link rel="stylesheet" href="/styles-mathjax.css"/>
     <script src="/scripts.js" defer></script>
+    <script src="/scripts-mathjax.js" defer></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
-    <script>
-        MathJax = {
-            tex: {
-                macros: {
-                    d: "\\mathop{}\\!\\mathrm{d}", // diferencial odvoda
-                    p: "\\mathop{}\\!\\partial" // delta delnega odvoda
-                }
-            }
-        }
-    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
     <script defer src="https://cloud.umami.is/script.js" data-website-id="ac7911af-065e-4a16-8a66-255ee9f70989"></script>
 
 </head>
