@@ -8,7 +8,8 @@
 @font-face {
     font-family: 'Glasopisnica';
     src: url('fonts/glasopisnica/Glasopisnica.woff2') format('woff2'),
-         url('fonts/glasopisnica/Glasopisnica.woff') format('woff');
+         url('fonts/glasopisnica/Glasopisnica.woff') format('woff'),
+         url('fonts/glasopisnica/Glasopisnica.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }

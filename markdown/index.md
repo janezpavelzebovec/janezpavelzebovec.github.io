@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-02-01
+date: 2026-02-10
 description: Moja osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 ---
@@ -23,9 +23,9 @@ Tu je tudi moja [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/podro�
 ## Stiki
 
 - spletni poštni naslov: [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net) (nekdanji naslov, ki ga umikam iz rabe: [janezpavel.zebovec@gmail.com](mailto:janezpavel.zebovec@gmail.com))
-- [Matrix](https://matrix.org/): [janezpavelzebovec](https://matrix.to/#/@janezpavelzebovec:matrix.org) (moje prednostno omrežje za klepete)
+- [Matrix](https://matrix.org/): [@janezpavelzebovec:matrix.org](https://matrix.to/#/@janezpavelzebovec:matrix.org) (moje prednostno omrežje za klepete)
 - [Discord](https://discord.com/): [janezpavel](https://discordapp.com/users/789883011084058666) (trenutno najbolj uporabljano omrežje, vendar bi ga bilo lepo zapustiti in preiti popolnoma na Matrix)
-- [Telegram](telegram.org): [janezpavelzebovec](https://t.me/janezpavelzebovec) (uporabljam zgolj izjemoma)
+- [Telegram](telegram.org): [@janezpavelzebovec](https://t.me/janezpavelzebovec) (uporabljam zgolj izjemoma)
 
 Še nekatera družbena omrežja, kjer sem sicer registriram, a jih ne uporabljam:
 
@@ -55,7 +55,7 @@ Tu je tudi moja [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/podro�
     - [Translate Wiki](https://translatewiki.net/wiki/User:JanezPavelZebovec) – sodelujem pri prevodu spletni strani [OpenStreetMap.org](https://www.openstreetmap.org/)
         in [OpenHistoricalMap.org](https://www.openhistoricalmap.org/)
     - [Transifex](https://app.transifex.com/user/profile/JanezPavelZebovec/) – sodelujem pri prevodu spletnega urejevalnika OpenStreetMapa (ID)
-    - [Hosted Weblate](https://hosted.weblate.org/user/janezpavelzebovec/) – sodelujem pri prevodu [OsmAnd](https://osmand.net/)
+    - [Hosted Weblate](https://hosted.weblate.org/user/janezpavelzebovec/) – sodelujem pri prevodu [OsmAnd](https://osmand.net/), nekaj malega tudi pri [F-Droidu](https://f-droid.org/)
     - [Element Translations](https://translate.element.io/user/JanezPavelZebovec/) – začel sem sodelovati pri prevodu [Elementa](https://element.io/), posebej dlančniškega orodja
 
 Druga spletna mesta:
@@ -66,7 +66,7 @@ Druga spletna mesta:
 
 ## O spletišču
 
-Moje spletišče je gostovano pri nemškem podjetju [Hetzner](https://www.hetzner.com/), kjer imam tudi zakupljeno domeno.
+Moje spletišče je gostovano pri nemškem podjetju [Hetzner](https://www.hetzner.com/), kjer imam tudi zakupljeno *domeno*.
 
 Dostopno je tudi:
 
@@ -75,8 +75,13 @@ Dostopno je tudi:
 
 To spletišče je večinoma napisano v Markdownu in nato pretvorjeno v HTML,
 zato so spletne strani dostopne tudi v izvornem Markdownu v razdelku *https://janezpavelzebovec.net/markdown/*.
-Na dnu vsake strani je povezava do pripadajoče strani v Markdownu (če je bila tako ustvarjena).
+Na dnu vsake take strani je povezava do pripadajoče strani v Markdownu.
 
-Stran [Moj rodovnik](/moj_rodovnik) je samodejno ustvarjena z [Grampsom](https://gramps-project.org/).
+Datum zadnje spremembe strani, ki je naveden na vrhu, se nanaša na vsebinsko spremembo, ne na slogovno ali kak zanemarljiv (npr. slovničen) popravek.
 
-Predlogi za izboljšave so dobrodošli, vkolikor so premišljeni in se sladajo z načeli preprostosti (tudi v preprostosti je za to spletišče verjetno še nekaj možnih izboljšav).
+Uporabljen je barvni slog [Gruvbox](https://github.com/morhetz/gruvbox) Pavla Pertseva.
+
+Stran [Moj rodovnik](/moj_rodovnik) je ustvarjena z [Grampsom](https://gramps-project.org/).
+
+Predlogi za izboljšave so seveda dobrodošli, vkolikor so dobro premišljeni in se sladajo z načeli preprostosti
+(tudi v preprostosti je za to spletišče verjetno še nekaj prostora za izboljšave).

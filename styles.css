@@ -59,7 +59,8 @@ body {
     align-items: center;
 }
 
-.content, #kazalo {
+.content, nav {
+    width: 100%;
     max-width: var(--vsebina);
     margin: auto;
 }
@@ -71,11 +72,13 @@ header {
 footer {
     text-align: center;
     padding: 1em;
+    margin-bottom: 100vh;
 }
 
 hr {
     width: var(--vsebina);
     color: var(--bOspredjeNazaj);
+    margin-top: 2em;
 }
 
 a {

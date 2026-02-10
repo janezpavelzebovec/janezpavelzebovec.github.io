@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-01-31
+date: 2026-02-10
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -406,17 +406,21 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 
 #### Modroslovje, krščanstvo
 
+Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
+
 - [Alexander Grace](https://www.youtube.com/@alexandergrace5350) - kritik *feminizma*, pospornik prave moškosti
 - [Ben Shapiro](https://www.youtube.com/@BenShapiro) – Jud, desničar
 - [Brian Holdsworth](https://www.youtube.com/@BrianHoldsworth)
 - [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava
+- [The Crucible](https://www.youtube.com/@The_Crucible) – Andrew Wilson
 - [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom)
 - [Jaiden Forrest](https://www.youtube.com/@JaidenForrest)
+- [The Long Now Foundation](https://www.youtube.com/@longnow)
 - [Luke Smith](https://www.youtube.com/@LukeSmithxyz) - programstvo (Linux), modroslovje (*filozofija*), pravoslavstvo?
 - [Mikhaila Peterson](https://www.youtube.com/@mikhaila)
+- [Nicholas Bowling](https://www.youtube.com/@NicholasBowling) – ameriški ulični pridigar, nekdanji katolik
 - [Remnant777](https://www.youtube.com/@Remnant777) – kritik levice
 - [Sahar TV](https://www.youtube.com/@OfficialSaharTV) – Jud, zagovornik Izraela v vojni proti palestinski oblasti
-- [The Long Now Foundation](https://www.youtube.com/@longnow)
 - [Turning Point USA](https://www.youtube.com/@turningpointusa)
 
 ##### Krščanstvo

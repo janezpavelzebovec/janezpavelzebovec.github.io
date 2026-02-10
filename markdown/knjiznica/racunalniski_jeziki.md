@@ -30,7 +30,7 @@ Prazne vrstice je lepo puščati tudi med naslovi in besedilom, seznami in besed
         ```
     - `# Naslov {#moj_ID}` - naslov z določenim ID-jem; HTML: `<h1 id="moj_ID">Naslov</h1>`;
 
-Pri poudarki je priporočljivo uporabljati zvezdice, čeprav so običajno podprti tudi podčrtaji.
+Pri poudarkih je priporočljivo uporabljati zvezdice, čeprav so običajno podprti tudi podčrtaji.
 
 - `*besedilo*` = `_besedilo_` (enojen podčrtaj) - poudarek (torej ležeče); HTML: `<em>besedilo</em>`;
 - `**besedilo**` = `__besedilo__` (dvojen podčrtaj) - močan poudarek (torej krepko); HTML: `<strong>besedilo</strong>`;
