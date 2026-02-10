@@ -176,16 +176,6 @@ var gursDOF025 = L.tileLayer(
   }
 );
 
-var gursDOF025_2024 = L.tileLayer(
-  "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3ADOF025_2024@DOF025%3A3794@jpeg/{z}/{x}/{y}.jpeg",
-  { tms: true, maxZoom: 20, minZoom: 8, attribution: "© GURS 2024" }
-);
-
-var gursDOF025_2023 = L.tileLayer(
-  "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3ADOF025_2023@DOF025%3A3794@jpeg/{z}/{x}/{y}.jpeg",
-  { tms: true, maxZoom: 20, minZoom: 8, attribution: "© GURS 2023" }
-);
-
 var gursDOF010_Poplave = L.tileLayer(
   "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3ADOF010_2023_Poplave@EPSG%3A3857@png/{z}/{x}/{y}.png",
   { tms: true, maxZoom: 21, minZoom: 8, attribution: "© GURS - Poplave 2023" }
@@ -193,9 +183,168 @@ var gursDOF010_Poplave = L.tileLayer(
 
 var gursHillshade = L.tileLayer(
   "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3AHillshade@EPSG%3A3857@jpeg/{z}/{x}/{y}.jpeg",
-  { tms: true, maxZoom: 19, minZoom: 8, attribution: "© GURS LIDAR", opacity: 0.6 }
+  { tms: true, maxZoom: 18, minZoom: 8, attribution: "© GURS LIDAR", opacity: 0.6 }
 );
 
+// DOF025 po letih - vse prek WMS
+var gursDOF025_2024 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:DOF025_2024",
+    format: "image/jpeg",
+    transparent: false,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS 2024"
+  }
+);
+
+var gursDOF025_2023 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:DOF025_2023",
+    format: "image/jpeg",
+    transparent: false,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS 2023"
+  }
+);
+
+var gursDOF025_2022 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:DOF025_2022",
+    format: "image/jpeg",
+    transparent: false,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS 2022"
+  }
+);
+
+var gursDOF025_2021 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:DOF025_2021",
+    format: "image/jpeg",
+    transparent: false,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS 2021"
+  }
+);
+
+var gursDOF025_2020 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:DOF025_2020",
+    format: "image/jpeg",
+    transparent: false,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS 2020"
+  }
+);
+
+var gursDOF025_2019 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:DOF025_2019",
+    format: "image/jpeg",
+    transparent: false,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS 2019"
+  }
+);
+
+var gursDOF025_2018 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:DOF025_2018",
+    format: "image/jpeg",
+    transparent: false,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS 2018"
+  }
+);
+
+var gursDOF025_2017 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:DOF025_2017",
+    format: "image/jpeg",
+    transparent: false,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS 2017"
+  }
+);
+
+var gursHillshadeWMS = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:Hillshade",
+    format: "image/jpeg",
+    transparent: true,
+    crs: L.CRS.EPSG3857,
+    opacity: 0.6,
+    attribution: "© GURS LIDAR"
+  }
+);
+
+// Dobrova 2021
+var gursDobrova2021 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:Ob-Dobrova-DOF-poko-2021",
+    format: "image/png",
+    transparent: true,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS - Dobrova 2021"
+  }
+);
+
+// Dobrova 2016
+var gursDobrova2016 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:Ob-Dobrova-DOF-poko-2016",
+    format: "image/png",
+    transparent: true,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS - Dobrova 2016"
+  }
+);
+
+// Domžale 2020
+var gursDomzale2020 = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:Ko-Prodnik-DOF-poko-domzale-2020",
+    format: "image/png",
+    transparent: true,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS - Domžale 2020"
+  }
+);
+
+var gursVectorMap = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2/wms",
+  {
+    layers: "level2:Vector_Map",
+    format: "image/png",
+    transparent: true,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS"
+  }
+);
+
+// Administrativne meje
+var gursAdmin = L.tileLayer.wms(
+  "https://gis.level2.si/geoserver/level2-vector/wms",
+  {
+    layers: "level2-vector:admin",
+    format: "image/png",
+    transparent: true,
+    crs: L.CRS.EPSG3857,
+    attribution: "© GURS"
+  }
+);
 // Google Maps
 
 googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
@@ -275,10 +424,21 @@ var naducilisca = createOverpassLayer(`
 // ===== LAYERS CONTROL =====
 var baseMaps = {
     "GURS ortofoto 25 cm": gursDOF025,
-    //"GURS DOF 25 cm, 2024": gursDOF025_2024,
-    //"GURS DOF 25 cm, 2023": gursDOF025_2023,
+    "GURS DOF 25 cm, 2024": gursDOF025_2024,
+    "GURS DOF 25 cm, 2023": gursDOF025_2023,
+    "GURS DOF 25 cm, 2022": gursDOF025_2022,
+    "GURS DOF 25 cm, 2021": gursDOF025_2021,
+    "GURS DOF 25 cm, 2020": gursDOF025_2020,
+    "GURS DOF 25 cm, 2019": gursDOF025_2019,
+    "GURS DOF 25 cm, 2018": gursDOF025_2018,
+    "GURS DOF 25 cm, 2017": gursDOF025_2017,
     "GURS DOF 10 cm": gursDOF010_Poplave,
     "GURS LIDAR senčenje": gursHillshade,
+    //"GURS LIDAR senćenje": gursHillshadeWMS,
+    "GURS upravne meje": gursAdmin,
+    "GURS pokopališča Dobrova 2021": gursDobrova2021,
+    "GURS pokopališča Dobrova 2016": gursDobrova2016,
+    "GURS pokopališče Domžale 2020": gursDomzale2020,
 
     "OpenStreetMap": osm,
     "OpenStreetMap HOT": osmHOT,
@@ -312,6 +472,12 @@ var baseMaps = {
 };
 
 var overlayMaps = {
+    "GURS LIDAR senčenje": gursHillshade,
+    "GURS – ceste, imena": gursVectorMap,
+    "GURS pokopališča Dobrova 2021": gursDobrova2021,
+    "GURS pokopališča Dobrova 2016": gursDobrova2016,
+    "GURS pokopališče Domžale 2020": gursDomzale2020,
+
     "OpenRailwayMap": OpenRailwayMap,
     "OpenSeaMap": OpenSeaMap,
     "WaymarkedTrails – hiking": WaymarkedTrails_hiking,
