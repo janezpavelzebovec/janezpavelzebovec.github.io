@@ -1,0 +1,32 @@
+:root { 
+    --vsebina: 50em;
+
+    color-scheme: dark;
+    --tema: dark;
+
+    --bOzadje: #282828;
+    --bOzadjeNaprej: #504945;
+    --bOspredje: #fbf1c7;
+    --bOspredjeNazaj: #d5c4a1;
+    --bPoudarek: #458588;
+    --bNazaj: #a89984;
+
+    --bKodaOzadje: None;
+    --bKodaOspredje: #b8bb26;
+}
+
+.light {
+    color-scheme: light;
+    --tema: light;
+
+    --bOzadje: #f9f5d7;
+    --bOzadjeNaprej: #ebdbb2;
+    --bOspredje: #282828;
+    --bOspredjeNazaj: #504945;
+    --bPoudarek: #458588; 
+    --bNazaj: #7c6f64;
+
+    /*za kodo*/
+    --bKodaOzadje: None;
+    --bKodaOspredje: #98971a;
+}

@@ -1,7 +1,31 @@
+@import "../colorscheme.css";
+
 body {
     height: 100vh;
     width: 100vw;
-    margin: auto;}
+    margin: auto;
+    background-color: var(--bOzadje) !important;
+    color: var(--bOspredje) !important;
+}
+
 #map {
     height: 100%;
-    width: 100%}
+    width: 100%
+}
+
+.leaflet-control-zoom a,
+.leaflet-control-layers,
+.leaflet-bar,
+.leaflet-control-attribution{
+    background-color: var(--bOzadje) !important;
+    color: var(--bOspredje) !important;
+    border-color: var(--bOzadjeNaprej) !important;
+}
+
+.leaflet-control-zoom a:hover {
+    background-color: var(--bOzadjeNaprej) !important;
+}
+
+.leaflet-control-layers-separator {
+    border-color: var(--bOzadjeNaprej);
+}

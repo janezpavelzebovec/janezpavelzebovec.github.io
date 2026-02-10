@@ -70,15 +70,40 @@ var WaymarkedTrails_cycling = L.tileLayer('https://tile.waymarkedtrails.org/cycl
 	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Map style: &copy; <a href="https://waymarkedtrails.org">waymarkedtrails.org</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 });
 
-var Thunderforest_Transport = L.tileLayer('https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}{r}.png?apikey={apikey}', {
+var Thunderforest_OCM = L.tileLayer('https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=bf4be265791c4465964813ef6735e9fa', {
 	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	apikey: '<your apikey>',
 	maxZoom: 22
 });
-
-var Thunderforest_Landscape = L.tileLayer('https://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}{r}.png?apikey={apikey}', {
+var Thunderforest_Transport = L.tileLayer('https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=bf4be265791c4465964813ef6735e9fa', {
 	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	apikey: '<your apikey>',
+	maxZoom: 22
+});
+var Thunderforest_Landscape = L.tileLayer('https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=bf4be265791c4465964813ef6735e9fa', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	maxZoom: 22
+});
+var Thunderforest_Outdoors = L.tileLayer('https://tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=bf4be265791c4465964813ef6735e9fa', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	maxZoom: 22
+});
+var Thunderforest_TransportDark = L.tileLayer('https://tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey=bf4be265791c4465964813ef6735e9fa', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	maxZoom: 22
+});
+var Thunderforest_Pioneer = L.tileLayer('https://tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=bf4be265791c4465964813ef6735e9fa', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	maxZoom: 22
+});
+var Thunderforest_Mobile = L.tileLayer('https://tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=bf4be265791c4465964813ef6735e9fa', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	maxZoom: 22
+});
+var Thunderforest_Neighbourhood = L.tileLayer('https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=bf4be265791c4465964813ef6735e9fa', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	maxZoom: 22
+});
+var Thunderforest_Atlas = L.tileLayer('https://tile.thunderforest.com/atlas/{z}/{x}/{y}.png?apikey=bf4be265791c4465964813ef6735e9fa', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	maxZoom: 22
 });
 
@@ -94,12 +119,6 @@ var OpenRailwayMap = L.tileLayer('https://{s}.tiles.openrailwaymap.org/standard/
 	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Map style: &copy; <a href="https://www.OpenRailwayMap.org">OpenRailwayMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 });
 var Stadia_StamenTerrainLabels = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain_labels/{z}/{x}/{y}{r}.{ext}', {
-	minZoom: 0,
-	maxZoom: 18,
-	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	ext: 'png'
-});
-var Stadia_StamenTerrainLines = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain_lines/{z}/{x}/{y}{r}.{ext}', {
 	minZoom: 0,
 	maxZoom: 18,
 	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -153,106 +172,29 @@ var esriNational = L.tileLayer(
 // GURS – ORTOFOTO (TMS, EPSG:3857)
 var gursDOF025 = L.tileLayer(
   "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3ADOF025_latest@EPSG%3A3857@jpeg/{z}/{x}/{y}.jpeg",
-  {
-    tms: true,
-    maxZoom: 20,
-    minZoom: 8,
-    attribution: "© GURS"
+  { tms: true, maxZoom: 20, minZoom: 8, attribution: "© GURS"
   }
 );
 
-var gursDTS = L.tileLayer.wms(
-  "https://ipi.eprostor.gov.si/wms-si-gurs-dts/wms?",
-  {
-    layers: "DTS",
-    format: "image/png",
-    transparent: true,
-    maxZoom: 19,
-    attribution: "© GURS"
-  }
+var gursDOF025_2024 = L.tileLayer(
+  "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3ADOF025_2024@DOF025%3A3794@jpeg/{z}/{x}/{y}.jpeg",
+  { tms: true, maxZoom: 20, minZoom: 8, attribution: "© GURS 2024" }
 );
 
-var gursKN = L.tileLayer.wms(
-  "https://ipi.eprostor.gov.si/wms-si-gurs-kn/wms?",
-  {
-    layers: "KN",
-    format: "image/png",
-    transparent: true,
-    maxZoom: 19,
-    attribution: "© GURS"
-  }
-);
-var gursRPE = L.tileLayer.wms(
-  "https://ipi.eprostor.gov.si/wms-si-gurs-rpe/wms",
-  {
-    layers: "RPE",
-    format: "image/png",
-    transparent: true,
-    maxZoom: 19,
-    attribution: "© GURS"
-  }
-);
-var gursGJI = L.tileLayer.wms(
-  "https://ipi.eprostor.gov.si/wms-si-gurs-kgi/wms",
-  {
-    layers: "KGI",
-    format: "image/png",
-    transparent: true,
-    maxZoom: 19,
-    attribution: "© GURS"
-  }
-);
-/*var gursTopo = L.tileLayer.wms(
-  "https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/GH_MDP_TOPO_KARTA_SI/MapServer/WMSServer",
-  {
-    layers: "0",
-    format: "image/png",
-    transparent: false,
-    attribution: "© GURS"
-  }
+var gursDOF025_2023 = L.tileLayer(
+  "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3ADOF025_2023@DOF025%3A3794@jpeg/{z}/{x}/{y}.jpeg",
+  { tms: true, maxZoom: 20, minZoom: 8, attribution: "© GURS 2023" }
 );
 
-// ===== GURS – LIDAR (TMS, EPSG:3857) =====
-var gursLidar = L.tileLayer(
-  "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3ALIDAR_TLA_ZGRADBE@EPSG%3A3857@png/{z}/{x}/{y}.png",
-  {
-    tms: true,
-    minZoom: 8,
-    maxZoom: 19,
-    attribution: "© GURS"
-  }
+var gursDOF010_Poplave = L.tileLayer(
+  "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3ADOF010_2023_Poplave@EPSG%3A3857@png/{z}/{x}/{y}.png",
+  { tms: true, maxZoom: 21, minZoom: 8, attribution: "© GURS - Poplave 2023" }
 );
 
-// ===== GURS – TOPOGRAFSKA KARTA (WMS, EPSG:3794 → 3857) =====
-var gursTopoWMS = L.tileLayer.wms(
-  "https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/GH_MDP_TOPO_KARTA_SI/MapServer/WMSServer",
-  {
-    layers: "0",
-    format: "image/png",
-    transparent: false,
-    attribution: "© GURS"
-  }
+var gursHillshade = L.tileLayer(
+  "https://gis.level2.si/geoserver/gwc/service/tms/1.0.0/level2%3AHillshade@EPSG%3A3857@jpeg/{z}/{x}/{y}.jpeg",
+  { tms: true, maxZoom: 19, minZoom: 8, attribution: "© GURS LIDAR", opacity: 0.6 }
 );
-
-var gursTopo = L.tileLayer.wms(
-  "https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/GH_MDP_TOPO_KARTA_SI/MapServer/WMSServer",
-  {
-    layers: "GH_MDP_TOPO_KARTA_SI",
-    format: "image/png",
-    transparent: false,
-    attribution: "© GURS"
-  }
-);
-
-var gursLidar = L.tileLayer.wms(
-  "https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE/LIDAR_TlaZgradbe_SI/MapServer/WMSServer",
-  {
-    layers: "0",
-    format: "image/png",
-    transparent: true,
-    attribution: "© GURS"
-  }
-);*/
 
 // Google Maps
 
@@ -332,25 +274,37 @@ var naducilisca = createOverpassLayer(`
 
 // ===== LAYERS CONTROL =====
 var baseMaps = {
+    "GURS ortofoto 25 cm": gursDOF025,
+    //"GURS DOF 25 cm, 2024": gursDOF025_2024,
+    //"GURS DOF 25 cm, 2023": gursDOF025_2023,
+    "GURS DOF 10 cm": gursDOF010_Poplave,
+    "GURS LIDAR senčenje": gursHillshade,
+
     "OpenStreetMap": osm,
     "OpenStreetMap HOT": osmHOT,
     "CyclOSM": CyclOSM,
-    //"Stadia Alidade Satellite": Stadia_AlidadeSatellite,
+
+    "Thunderforest OpenCycleMap": Thunderforest_OCM,
     "Thunderforest Transport": Thunderforest_Transport,
     "Thunderforest Landscape": Thunderforest_Landscape,
+    "Thunderforest Outdoors": Thunderforest_Outdoors,
+    "Thunderforest Transport Dark": Thunderforest_TransportDark,
+    "Thunderforest Pioneer": Thunderforest_Pioneer,
+    "Thunderforest Mobile Atlas": Thunderforest_Mobile,
+    "Thunderforest Neighbourhood": Thunderforest_Neighbourhood,
+    "Thunderforest Atlas": Thunderforest_Atlas,
+
     "OpenTopoMap": openTopoMap,
+
     "Esri Imagery": esriWorldImagery,
     "Esri Ocean Base": esriOcean,
     "Esri Topo Map": esriTopo,
     "Esri Street Map": esriStreet,
     "Esri Navigation Charts": esriNavigation,
-    "GURS ortofoto 25 cm": gursDOF025,
-    //"GURS LIDAR senčenje": gursLidar,
-    //"GURS topografska karta": gursTopo,
-    //"GURS DTS": gursDTS,
-    //"Kataster": gursKN,
-    //"RPE": gursRPE,
-    //"GJI": gursGJI,
+    "Esri National": esriNational,
+
+    "Stadia Alidade Satellite": Stadia_AlidadeSatellite,
+
     "G***le Streets": googleStreets,
     "G***le Hybrid": googleHybrid,
     "G***le Satellite": googleSat,
@@ -362,7 +316,8 @@ var overlayMaps = {
     "OpenSeaMap": OpenSeaMap,
     "WaymarkedTrails – hiking": WaymarkedTrails_hiking,
     "WaymarkedTrails – cycling": WaymarkedTrails_cycling,
-    //"Stadia_StamenTerrainLabels": Stadia_StamenTerrainLabels,
+
+    "Stadia Stamen Terrain Label": Stadia_StamenTerrainLabels,
     //"Stadia_StamenTerrainLines": Stadia_StamenTerrainLines,
 
     "Slo. cerkve": cerkve,
