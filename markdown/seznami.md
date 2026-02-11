@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-02-10
+date: 2026-02-11
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -38,11 +38,17 @@ Moja *priporočila* (precej nepopolna)
 - [Lugos](https://www.lugos.si/) – Društvo uporabnikov Linuxa Slovenije
     - [Lugos – Wiki](https://wiki.lugos.si/)
 
+### Dobra podjetja
+
+- [Fairphone](https://fairphone.com/) – dlančniki, tudi slušalke (Nizozemska); popravljivost, okoljevarstvo, zeleni viri, pravični trg
+- [Framework](https://frame.work/) – prenosni računalniki, tudi namizni računalnik (ZDA); popravljivost
+
 ### Osebne spletne strani
 
 - [Anton Luka Šijanec](https://sijanec.eu/)
 - [Filip Žebovec](https://filipzebovec.net/)
 - [Jure Smolar](https://jure-smolar.com/)
+- [Matija Šuklje](https://matija.suklje.name/)
 - [Mitja Jež](https://mitja.jež.si/)
 
 ### Naravoslovje
@@ -115,6 +121,7 @@ Za zgodovinske zemljevide glej tudi razdelek [Zgodovinski zemljevidi](#Zgodovins
     - [Geopedia - GURS - Prostorski podatki](https://www.geopedia.world/#T276_x1614235.3818404947_y5798283.654628612_s11_b2852)
 - [Mapillary](https://www.mapillary.com/app) - ulični posnetki
 - [Open Street Map](https://www.openstreetmap.org/) - prosto dostopen in urejevan zemljevid (glej tudi [Zemljevidi, ki temeljijo na OSM](#Zemljevidi_ki_temeljijo_na_Open_Street_Map))
+- [WikiMapia](https://wikimapia.org/) – še en bolj precej poskus odprtega zemljevida, ki sta ga začela dva Rusa leta 2006
 - [Windy](https://www.windy.com) - vremenski zemljevidi
 
 Druge zbirke zemljepisnih podatkov:
@@ -127,19 +134,22 @@ Spletni zemljevidi za razvijalce spletnih strani:
 - [Alex Urquhart: Free Tiles](https://github.com/alexurquhart/free-tiles) (GitHub)
 - [Leaflet Provider](https://leaflet-extras.github.io/leaflet-providers/preview/index.html)
 
-##### Zemljevidi, ki temeljijo na [OSM](https://www.openstreetmap.org/)
+##### OpenStreetMap
 
+Zemljevidi ki temeljijo na podatkih [OpenStreetMap](https://www.openstreetmap.org/).
 Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services)
 
-- [BrezAvta.si](https://brezavta.si/) - iskanje povezav javnega prometa (avtobus, kolo, avto, skuter)
+- [BRouter](https://brouter.de/) – iskalec potnih povezav glede na vrsto gibanja
+    - [BRouter-Web](https://brouter.de/brouter-web/) – spletni zemljevid
 - [Cycle Travel](https://cycle.travel/map) - kolesarski zemljevid, načrtovanje kolesarjenja tudi glede na površino
 - [CyclOSM](https://www.cyclosm.org/) - kolesarski zemljevid
 - [F4 Map](https://www.f4map.com/) - 3R prikaz, podrobni 3R prikazi stavb,
-    - [F4 Map - Demo](https://demo.f4map.com/)
+    - [F4 Map - Demo](https://demo.f4map.com/) – ogled zemljevida
 - [Geofabrik Tools – OSM Inspector](https://tools.geofabrik.de/osmi/) – izlušči ceste, naslove, vodovja, javni promet, ... in težave pri teh elementih
 - [Health Sites](https://healthsites.io/) – zemljevid zdravstvenih ustanov, storitev
 - [Historic Place – Map](https://gk.historic.place/historische_objekte/) – zgodovinski predmeti na OSM (domača stran [Historic Place](https://gk.historic.place/)) 
 - [Komoot](https://www.komoot.com/plan) - načrtovanje kolesarske, pohodniške poti
+- [MapMagic – Map](https://mapmagic.app/map)
 - [Open Cycle Map](https://www.opencyclemap.org/) - kolesarski zemljevid
 - [Open Infrastructure Map](https://openinframap.org/) – *infrastrukturni* zemljevid (elektrika, plinovodi, vodovod, *telekomunikacija*)
 - [Open Railway Map](https://openrailwaymap.org/) - železniško omrežje s postajami in drugim
@@ -151,19 +161,26 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [Overpass Turbo](https://overpass-turbo.eu/) - iskalnik značilnosti
 - [ShadeMap](https://shademap.app/) - zemljevid senc po svetu v poljubnem trenutku
 - [TagInfo](https://taginfo.openstreetmap.org/) - statistika oznak v Open Street Mapu
-- [Točen.si](https://tocen.si/#/) – točni časi prihodov avtobusov z njihovimi trenutnimi položaji
 - [Velo Planner](https://veloplanner.com/routes) - kolesarske poti in načrtovanje kolesarjenja
-- [WaterwayMap](https://waterwaymap.org/)
+- [WaterwayMap](https://waterwaymap.org/) – zemljevid 
 - [Waymarked Trails](https://waymarkedtrails.org/) - označeno poti,
     - [Waymarked Trails - Cycling](https://cycling.waymarkedtrails.org/) - kolesarske poti
     - [Waymarked Trails - Hiking](https://hiking.waymarkedtrails.org/) - pohodniške poti
 - [Wireless Bike Map](https://www.wirelessbikemap.com/) - kolesarski zemljevid
 
+##### Slovenski promet
+
+Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
+
+- [BrezAvta.si](https://brezavta.si/) - iskanje povezav javnega prometa (avtobus, kolo, avto, skuter)
+- [Jaka Černetič: IJPP Tracker](https://tracker.cernetic.cc/) – avtobusi in vlaki v omrežju Integriranega javnega potniškega prometa (IJPP)
+- [Točen.si](https://tocen.si/#/) – točni časi prihodov avtobusov z njihovimi trenutnimi položaji
+
 ###### Druga spletna mesta za urejanje OSM, oz. projekti OSM
 
 - [How did you contribute to OpenStreetMap?](https://hdyc.neis-one.org/) – *statistika* urejanj po urejevalcih (in državah)
 - [Humanitarian OpenStreetMap Team (HOT)](https://www.hotosm.org/) – *kartiranje* območij ob (naravnih) nesrečah, revnih območij / območij v razvoju
-- [MapRoulette](https://maproulette.org/) – razni projekti, običajno za popravljanje nedoslednosti pri označevanju
+- [MapRoulette](https://maproulette.org/) – razni projekti, običajno za popravljanje nedoslednosti pri označevanju 
 - [OSMCha](https://osmcha.org/) – pregledovanje kakovosti urejanj
 - [OSM Perfect Intersection Editor](https://osmpie.org/) – urejanje cest, križišč
 - [OSM Relation Analyzer](https://ra.osmsurround.org/)
@@ -182,7 +199,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 - [INSPIRE](https://eprostor.gov.si/imps) - brskalnik po državnih zemljevidih
 - [Javni pregledovalnik grafičnih podatkov MKGP](https://rkg.gov.si/GERK/WebViewer)
 - [NAP – Nacionalna točka dostopa](https://www.nap.si/) - dostop do prometnih podatkov in podatkov o polnilnih mestih za el. vozila (Ministrstvo za infrastrukturo)
-- [Planinska zveza Slovenije – poti](https://poti.pzs.si/)
+- [Planinska zveza Slovenije](https://poti.pzs.si/)
 - [Promet.si](https://promet.si/) – DARS-ov prometni zemljevid, ki ima tudi svojo *aplikacijo* (s trenutnimi zastoji, zaprtimi cestami, hitrostmi, ...); podatke črpa predvsem od GURS-a (zgradbe, ceste, ...) in OSM-ja (točke zanimivosti/storitve, podjetja, ...), pa tudi še nekaterih vir;
 - [Portal Prostor](https://www.e-prostor.gov.si/)
     - [Portal Prostor – Javni vpogled](https://ipi.eprostor.gov.si/jv/) - najboljši državni zemljevid? (zemljišča, stavbe, državna napeljava, ceste, železnice, zgodovinske satelitske slike, pregledni zemljevidi, ...)
@@ -304,6 +321,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Design Theory](https://www.youtube.com/@Design.Theory) – oblikovanje
 - [Enrico Tartarotti](https://www.youtube.com/@enricotartarotti) – o oblikovanju, tehnologiji in dušeslovju povezanem s tem
 - [Fearless & Far](https://www.youtube.com/@fearlessandfar) – potovanja k domorodnim plemenom
+- [FEDx Talks](https://www.youtube.com/@TEDx) – krajši govori o različnih temah
 - [Fern](https://www.youtube.com/@fern-tv) – *dokumentarni filmi*
 - [Jedi Brooks](https://www.youtube.com/@jedibrooks7235) – *kritik* današnjega slabega pisanja zgodb v filmih
 - [Sheehan Quirke](https://www.youtube.com/@SheehanQuirke) – *estetika*?

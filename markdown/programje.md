@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2025-10-23
+date: 2026-02-11
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -116,6 +116,7 @@ F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android
 | [Aurora Store](https://auroraoss.com/) | nameščevalnik orodij (*aplikacij*) iz Trgovine Play | [Aurora Store](https://f-droid.org/en/packages/com.aurora.store/) | :) | brez prijave; ne potrebuje nameščenih [Googlovih storitev](https://play.google.com/store/apps/details?id=com.google.android.gms&hl=en_US) |
 | [Brave](https://brave.com/) | spletni brskalnik | | [Brave Private Web Browser, VPN](https://play.google.com/store/apps/details?id=com.brave.browser) | privzeto preprečevanje oglasov |
 | [CoMaps](https://www.comaps.app/) | zemljevid [Open Street Map](https://www.openstreetmap.org/) | [CoMaps](https://f-droid.org/packages/app.comaps.fdroid/) | [CoMaps](https://play.google.com/store/apps/details?id=app.comaps.google/) | različica *OrganicMaps*, pri katerem so v zadnjem času posamezniki sprejeli vprašljive odločitve ; bolj (povsem) osredotočena na skupnost razvijalcev |
+| [DAVx5](https://www.davx5.com/) | orodje za usklajevanje (*sinhroniziranje*) podatkov kot so koledarji, stiki, ... | [DAVx5](https://f-droid.org/packages/at.bitfire.davdroid/) | [DAVx⁵ – CalDAV CardDAV WebDAV](https://play.google.com/store/apps/details?id=at.bitfire.davdroid) | |
 | [Discord]() | hitro dopisovanje | | [Discord - Talk, Play, Hang Out](https://play.google.com/store/apps/details?id=com.discord) | |
 | [Etar](https://github.com/Etar-Group/Etar-Calendar) | koledar | [Etar](https://f-droid.org/en/packages/ws.xsoh.etar/) | [Etar - OpenSource Calendar](https://play.google.com/store/apps/details?id=ws.xsoh.etar) | |
 | [F-Droid](https://f-droid.org/) | knjižnica odprtokodnih orodij | [F-Droid](https://f-droid.org/) | | |

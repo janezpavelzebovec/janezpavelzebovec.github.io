@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-01-21
+date: 2026-02-11
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
@@ -19,7 +19,7 @@ author: Janez Pavel Žebovec
 | P | P | N | P | P | P | P |
 | P | N | N | N | P | N | N |
 | N | P | P | N | P | P | N |
-| N | N | P | N | P | P | P |
+| N | N | P | N | N | P | P |
 
 ## Množice števil
 
