@@ -1,6 +1,6 @@
 ---
 title: Janez Pavel Žebovec
-date: 2026-02-10
+date: 2026-02-14
 description: Moja osebna spletna stran
 keywords: Janez Pavel Žebovec, osebna spletna stran, osebno spletišče
 ---
@@ -12,7 +12,8 @@ To je moje spletišče, namenjeno mojim zanimanjem in potrebam, dobrodošli pa s
 - [Glasopisnica](/Glasopisnica/) – moja pisava <small>*(v delu - tako pisava sama, kot tudi spletna stran)*</small>
 - [Moj rodovnik](/moj_rodovnik) – moje družinsko drevo, na katerem delava z bratrancem <small>(s poudarkom na prednikih; za živeče osebe in umrle v zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh ostalih podatkov)</small>
 - [Programje](/programje) – predstavitev miselnosti in seznam dobrih računalniških orodij
-- [Zemljevid](/zemljevid/) – skupek nekaj prostih zemljevidov, ki so večinoma iz podatkov OpenStreetMap, pa tudi GURS-ov zračni posnetek, ter prepovedani  G\*\*\*lovi zemljevidi zgolj za primerjavo
+- [Vodič skozi namestitev Linuxa](/vodic_skozi_namestitev_linuxa) – operacijski sitem, kakor ga imam urejenega jaz
+- [Zemljevid](/zemljevid/) – skupek nekaj prostih zemljevidov, ki so večinoma iz podatkov OpenStreetMap, pa tudi GURS-ov zračni posnetek, <small>ter prepovedani  G\*\*\*lovi zemljevidi zgolj za primerjavo</small>
 - [Moji seznami](/seznami) – priporočila, predvsem spletne povezave
 - [Moja polica](/moja_polica) – seznam večine mojih knjig
 
@@ -25,7 +26,7 @@ Tu je tudi moja [Knjižnica](/knjiznica/), kjer so zbrana nekatera znanja/podro�
 - spletni poštni naslov: [osebno@janezpavelzebovec.net](mailto:osebno@janezpavelzebovec.net) (nekdanji naslov, ki ga umikam iz rabe: [janezpavel.zebovec@gmail.com](mailto:janezpavel.zebovec@gmail.com))
 - [Matrix](https://matrix.org/): [@janezpavelzebovec:matrix.org](https://matrix.to/#/@janezpavelzebovec:matrix.org) (moje prednostno omrežje za klepete)
 - [Discord](https://discord.com/): [janezpavel](https://discordapp.com/users/789883011084058666) (trenutno najbolj uporabljano omrežje, vendar bi ga bilo lepo zapustiti in preiti popolnoma na Matrix)
-- [Telegram](telegram.org): [@janezpavelzebovec](https://t.me/janezpavelzebovec) (uporabljam zgolj izjemoma)
+- [Telegram](telegram.org): [@janezpavelzebovec](https://t.me/janezpavelzebovec) (uporabljam bolj izjemoma)
 
 Še nekatera družbena omrežja, kjer sem sicer registriram, a jih ne uporabljam:
 
@@ -73,7 +74,7 @@ Dostopno je tudi:
 - [preko Codeberga](https://codeberg.org/JanezPavelZebovec/pages) na naslovu [janezpavelzebovec.codeberg.page](https://janezpavelzebovec.codeberg.page/),
 - [preko Git Huba](https://github.com/janezpavelzebovec/janezpavelzebovec.github.io) na naslovu [janezpavelzebovec.github.io](https://janezpavelzebovec.github.io)
 
-To spletišče je večinoma napisano v Markdownu in nato pretvorjeno v HTML,
+To spletišče je večinoma napisano v [Markdownu](https://en.wikipedia.org/wiki/Markdown) in nato s [Pandocom](https://pandoc.org/) pretvorjeno v [HTML](https://sl.wikipedia.org/wiki/HTML),
 zato so spletne strani dostopne tudi v izvornem Markdownu v razdelku *https://janezpavelzebovec.net/markdown/*.
 Na dnu vsake take strani je povezava do pripadajoče strani v Markdownu.
 
@@ -82,6 +83,8 @@ Datum zadnje spremembe strani, ki je naveden na vrhu, se nanaša na vsebinsko sp
 Uporabljen je barvni slog [Gruvbox](https://github.com/morhetz/gruvbox) Pavla Pertseva.
 
 Stran [Moj rodovnik](/moj_rodovnik) je ustvarjena z [Grampsom](https://gramps-project.org/).
+
+*Analitika* spletišča je na voljo [preko storitve Umami](https://cloud.umami.is/analytics/eu/share/FhDonlJniEyIGdQY) (pri čemer je treba upoštevati, da sem jaz reden obiskovalec).
 
 Predlogi za izboljšave so seveda dobrodošli, vkolikor so dobro premišljeni in se sladajo z načeli preprostosti
 (tudi v preprostosti je za to spletišče verjetno še nekaj prostora za izboljšave).

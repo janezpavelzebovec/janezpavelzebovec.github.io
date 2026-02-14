@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-01-31
+date: 2026-02-13
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -28,13 +28,13 @@ Izberi **Graphical install** ali **Install**
 - Državo lahko izbereš svojo (*Slovenia*, predvidevam)
 - Tipkovnico izbereš tako kot jo imaš (*Slovenian*, predvidevam)
 - Izberi *hostname*, kar je ime tvoje naprave (kot bo vidno v omrežju in tebi)
-- Ime domene (*Domain name*) lahko pustiš prazno, če ne vzpostavljaš strežnika
+- Ime domene (*Domain name*) pusti prazno (razen če vzpostavljaš strežnik – pa tudi v tem primeru se da to nasataviti kasneje)
 - Geslo skrbnika (*Root password*) pusti prazno, če hočeš biti edini uporabnik in s pravicami skrbnika (*root*a)
 - Izberi svoje uporabniško ime (*Full name for the new user*)
 - Izberi geslo (tega novoustvarjenega uporabnika, ki bo imel skrbniške pravice, če nisi predhodno izbral gesla skrbnika)
 - *Partitioning method* izberi *Guided – use entire disk*, če hočeš imeti na napravi le Linux (ostale podatke na disku bo izbrisalo!)
 - Pazljivo izberi pravi disk, na katerega boš namestil Linux (da ne izbereš recimo zagonskega ključka, ker bo potem Linux namestilo na ključek)
-- Izberi privzeto *Partitioning scheme*, to je *All files in one partition*
+- Izberi ločena *particija* za **\home** (to pomeni, da ločiš svoje datoteke – hranjene v \home – od datotek operacijskega sistema, ki jih praviloma ne urejaš neposredno)
 - Potrdi
 - Zdaj bo namestilo *operacijski sistem*, ter preneslo in maestilo vse potrebne *pakete/programe*
 - Zavrni *Scan extra installation media*, če nočeš namestiti Linuxa na dodatno napravo
@@ -312,3 +312,35 @@ Uporablja se za risanje najrazličnejših grafov
     - ponovni zagon sxhkd: `pkill -usr1 -x sxhkd`
 
 - `chmod +x pot/do/programčka` – podeli datoteki izvršilne pravice
+
+## Namestitev strežnika
+
+Vsi koraki razen zadnjega so enaki.
+V *Software Selection* (med zadnjimi koraki) naj bosta izbrana le *Standard System Utilities* in *SSH server*. Za strežnik namreč ne potrebuješ namitnega okolja.
+
+Po prvem zagonu novega *operacijskega sistema*:
+
+- `sudo apt update && sudo apt upgrade`
+- `sudo apt install htop` – nenujen program za pregled procesov, ki tečejo trenutno na računalniku
+- `sudo apt install screenfetch` – nenujen program za pregled osnovnih lastnosti računalnika (OS,*kernel*, število nameščenih paketov, *disk*, CPU, GPU, RAM)
+- `sudo apt install nginx` – namesti strežnik
+    - `sudo systemctl enable nginx` – omogoči samodejni zagon strežnika ob zagonu operacijskega sistema
+    - `sudo systemctl status nginx` – izpiše stanje strežnik (npr. ali teče / je omogočen)
+- `sudo apt install ufw` – namesti požarni zid
+    - `sudo ufw enable` – omogoči požarni zid
+    - `sudo ufw status` – izpiše stanje požarnega zidu
+    - `sudo ufw allow ssh` – dovoli SSH (*Secure Shell*, vrata 22; omogoči oddaljeno upravljanje strežnika)
+    - `sudo ufw allow http` – dovoli HTTP (*HyperText Transfer Protocol*, vrata 80; protokol za nešifriran prenos spletnih strani)
+    - `sudo ufw allow https` – dovoli HTTPS (*HTTP Secure*, vrata 443; šifriran/varen HTTP)
+- `hostname -I` – izpiše naslove IP (IPv4 in IPv6; običajen IP je oblike *000.000.0.00* in je na začetku izpisa)
+- `ssh up-ime@naslov-ip` oz. `ssh up-ime@ime-naprave` – tako se lahko povežeš s strežnikom z oddaljenega računalnika (recimo osebnega), zahtevalo bo geslo strežnika
+- `sudo apt install git` – namesti git
+- `git clone https://github.com/K0p1-Git/cloudflare-ddns-updater.git` – prenese program za posodabljanje dinamičnega IP-ja
+- `cp cloudflare-template.sh cloudflare.sh` – podvoji predlogo programa in izpolni potrebna polja v novi datoteki
+- `sudo apt install curl` – namesti curl (potrebuje ga program zgoraj)
+- `./cloudflare.sh` – zaženi program
+- `crontab -e` – uredi crontab (program za sinhronizacijo)
+    - na konec datoteke ddodaj `*/1 * * * * /bin/bash /user/cloudflare.sh`, shrani in zapri
+- `systemctl restart cron` – ponovno zažene cron
+
+- `nslookup moja-domena` – izpiše, na kateri naslov IP kaže domena in če je zavarovana

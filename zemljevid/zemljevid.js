@@ -345,6 +345,9 @@ var gursAdmin = L.tileLayer.wms(
     attribution: "© GURS"
   }
 );
+
+
+
 // Google Maps
 
 googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
@@ -472,11 +475,6 @@ var baseMaps = {
 };
 
 var overlayMaps = {
-    "GURS LIDAR senčenje": gursHillshade,
-    "GURS – ceste, imena": gursVectorMap,
-    "GURS pokopališča Dobrova 2021": gursDobrova2021,
-    "GURS pokopališča Dobrova 2016": gursDobrova2016,
-    "GURS pokopališče Domžale 2020": gursDomzale2020,
 
     "OpenRailwayMap": OpenRailwayMap,
     "OpenSeaMap": OpenSeaMap,
@@ -493,7 +491,17 @@ var overlayMaps = {
     "Slo. nadučilišča": naducilisca,
 };
 
-L.control.layers(baseMaps, overlayMaps).addTo(map);
+L.control.layers(baseMaps, overlayMaps, {
+    collapsed: false
+}).addTo(map);
+
+L.control.opacity(
+    overlayMaps,
+    {
+        label: "🎚️ Prosojnost slojev",
+        collapsed: false
+    }
+).addTo(map);
 
 /*
 function loadChurches() {
