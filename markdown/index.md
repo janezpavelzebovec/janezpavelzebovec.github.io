@@ -12,7 +12,7 @@ To je moje spletišče, namenjeno mojim zanimanjem in potrebam, dobrodošli pa s
 - [Glasopisnica](/Glasopisnica/) – moja pisava <small>*(v delu - tako pisava sama, kot tudi spletna stran)*</small>
 - [Moj rodovnik](/moj_rodovnik) – moje družinsko drevo, na katerem delava z bratrancem <small>(s poudarkom na prednikih; za živeče osebe in umrle v zadnjih 20 letih so zaradi zasebnosti vidna le imena in priimki brez vseh ostalih podatkov)</small>
 - [Programje](/programje) – predstavitev miselnosti in seznam dobrih računalniških orodij
-- [Vodič skozi namestitev Linuxa](/vodic_skozi_namestitev_linuxa) – operacijski sitem, kakor ga imam urejenega jaz
+- [Vodič skozi namestitev Linuxa](/vodic_skozi_namestitev_linuxa) – vodič namestitev operacijskega sistema, kot ga imam jaz
 - [Zemljevid](/zemljevid/) – skupek nekaj prostih zemljevidov, ki so večinoma iz podatkov OpenStreetMap, pa tudi GURS-ov zračni posnetek, <small>ter prepovedani  G\*\*\*lovi zemljevidi zgolj za primerjavo</small>
 - [Moji seznami](/seznami) – priporočila, predvsem spletne povezave
 - [Moja polica](/moja_polica) – seznam večine mojih knjig
