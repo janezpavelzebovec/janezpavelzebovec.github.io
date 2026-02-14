@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-01-21
+date: 2026-02-14
 description: Prepovedane tujke v visoki slovenščini
 keywords: visoka slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
@@ -8,14 +8,18 @@ author: Janez Pavel Žebovec
 
 # Prepovedane besede
 
-Prevzete besede, ki so popolnoma nadomestljive z domačimi in so zato v visoki slovenščini prepovedane.
+Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne sveže skovanimi) in so zato v visoki slovenščini prepovedane.
 
 - *definicija* > opredelitev, določitev/določba
 - *eksitacija* > vzbuditev
+- *konkaven* > vbočen, vbokel
+- *konveksen* > izbočen, izbokel
 - *problem* > težava
 - *sediment* > usedlina
 - *simetrija*, *simetričnost* > somernost
 - *solvatacija* > raztapljanje
+- *šola* > učilišče
+- *univerza* > vseučilišče
 
 ## Računstvo
 

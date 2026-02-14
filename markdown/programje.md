@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-02-11
+date: 2026-02-14
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -12,7 +12,7 @@ Večina ljudi se dandanes zadovolji s slabo programsko opremo, s tem pa se ne le
 
 Žalostno dejstvo je tudi to, da mnogi vsakodnevni uporabniki računalnika kljub redni rabi ostajajo računalniško nepismeni - pa ne gre le za omejeno, neizkoriščeno rabo računalniške zmogljivosti (te ni zares za grjati), temveč za napačno rabo uporabljanih zmogljivosti.
 
-## Programi
+## Računalnik
 
 Večinoma so tu programi, ki jih sam uporabljam, nekateri pa za določene naloge primerljivo dobri tem, ki jih sam uporabljam (spletni brskalniki za primer).
 
@@ -70,11 +70,6 @@ Moji izbrani programi po namembnosti:
 
 - [better-osm-org](https://github.com/deevroman/better-osm-org): dodane zmogljivosti k urejevalniku OSM v brskalniku
 
-### Spletne storitve
-
-Glej tudi: [Moje seznami](/seznami).
-
-- [Umami](https://umami.is/): odprtokodna analitika spletnega mesta
 
 ### Programi za Linux
 
@@ -104,7 +99,7 @@ Sucklessove programe je priporočljivo namestiti kar iz vira - neposredno s [Suc
 
 Večino navedenih programov zgoraj uporabljam tudi sam - več ali manj (kar je odvisno tudi od namembnosti). 
 
-### Orodja za Android
+## Dlančnik
 
 F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android.com/) iz knjižnice [Free and Open Source Software](https://freeopensourcesoftware.org/).
 
@@ -137,7 +132,7 @@ F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android
 | [Windy](https://windy.app/) | vremenski zemljevid | | [Windy.com - Weather Forecast](https://play.google.com/store/apps/details?id=com.windyty.android) | potrebuje spletno povezavo |
 | WriterPlus | urejevalnik označevalskega (MarkDown - .md) besedila | | [Writer Plus (Write On the Go)](https://play.google.com/store/apps/details?id=co.easy4u.writer) | |
 
-#### Moja izbrana orodja za dlančnik po namembnosti
+### Moja izbrana orodja za dlančnik po namembnosti
 
 - GrapheneOS: *operacijski sistem*
 
@@ -158,6 +153,18 @@ F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android
 - [Thunderbird](https://thunderbird.net/): elektronska pošta
 - [Track & Graph](https://samamco.github.io/track-and-graph/): beleženje
 - [Windy](https://windy.app/): vremenski zemljevid
+
+### Operacijski sistemi
+
+- [/e/OS](https://e.foundation/e-os/)
+- [GrapheneOS](https://grapheneos.org/) – najbolj zaščiten/varen za dlančnike
+- [LineageOS](https://lineageos.org/)
+
+## Druge storitve
+
+Glej tudi: [Moje seznami](/seznami).
+
+- [Umami](https://umami.is/): odprtokodna analitika spletnega mesta
 
 ---
 
