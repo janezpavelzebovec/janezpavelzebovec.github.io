@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>Programje</title>
+    <meta name="author" content="Janez Pavel Žebovec">
     <meta name="description" content="Pogled na programje s seznamom
 dobrih programov"/>
     <meta name="keywords" content="programska oprema, programi, Linux"/>
@@ -12,42 +13,6 @@ dobrih programov"/>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
     <link rel="icon" type="image/png" sizes="192x192" href="/images/icon.png"/>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background: #121212;
-            color: #eee;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        main {
-            flex: 1;
-            width: 100%;
-            margin: auto;
-            padding: 1em;
-            padding-top: 0;
-            font-size: 1.1em;
-        }
-        .content {
-            max-width: var(--vsebina);
-            margin:auto;
-        }
-        header {
-            min-height: 4em;
-            align-items: center;
-            justify-content: space-around;
-        }
-        #domov {
-            width: 3em;
-            aspect-ratio: 1 / 1;
-            display: block;
-            padding: 0.5em;
-            border-radius: 50%;
-        }
-    </style>
 
     <link rel="stylesheet" href="/styles.css"/>
     <script src="/scripts.js" defer></script>
@@ -57,34 +22,39 @@ dobrih programov"/>
 </head>
 <body>
     <header>
-    <a href="/" aria-label="Domov"><?xml version="1.0" encoding="UTF-8"?>
-        <svg
-            id="domov"
-            alt="JPŽ"
+    <a id="domov" href="/" aria-label="Domov"><?xml encoding="UTF-8"?>
+        <svg alt="JPŽ"
             viewBox="0 0 200.29 184.95"
             xmlns="http://www.w3.org/2000/svg">
             <path d="m100.16 175.85-9.097-9.097-6.06 6.059-6.059 6.06-3.037-3.039-3.038-3.038 18.16-18.16h-50.008l26.54-26.546 26.54-26.545-1.536-1.497-1.536-1.496-26.527 26.523-26.527 26.522-1.482-1.516c-3.775-3.864-5.546-5.696-7.092-7.336-16.688-17.704-26.211-31.284-28.698-40.924-1.21-4.691-0.863-10.232 0.99-15.79 1.699-5.097 4.565-10.096 8.84-15.423 3.371-4.2 7.977-8.867 12.227-12.39 7.033-5.829 14.255-9.477 20.998-10.607 4.438-0.744 8.947-0.517 13.093 0.659 11.322 3.209 25.58 12.759 42.257 28.304 0.478 0.444 0.891 0.809 0.92 0.81 0.028 0 7.213-7.173 15.966-15.94l15.916-15.94-109.05-0.035 15.156-15.156h53.013l-7.578-7.578-7.577-7.579 7.577-7.578 7.578-7.578 9.097 9.097 9.098 9.097 6.059-6.059 6.06-6.059 6.074 6.076-18.16 18.16h50.009l-26.54 26.545-26.54 26.544 1.535 1.495 1.536 1.495 26.528-26.52 26.529-26.52 1.601 1.635c6.117 6.25 9.362 9.693 13.283 14.098 13.381 15.03 20.977 26.846 22.66 35.248 0.485 2.426 0.556 5.402 0.196 8.275-0.764 6.103-3.472 12.418-8.059 18.795-3.846 5.346-9.652 11.442-15.036 15.786-3.795 3.062-6.921 5.088-10.666 6.912-4.634 2.257-9.022 3.433-13.549 3.632-5.12 0.225-9.614-0.74-15.578-3.344-9.785-4.273-21.875-12.95-35.046-25.152a173.77 173.77 0 0 0-1.525-1.4l-0.33-0.295-15.969 15.97-15.968 15.968h109.1l-15.156 15.156-53.064 0.035 15.13 15.2-7.54 7.539-7.54 7.54zm-32.637-65.878 17.354-17.355-0.496-0.461c-8.602-7.999-17.792-15.358-25.3-20.257-3.967-2.589-6.638-4.163-9.11-5.37-3.704-1.807-7.106-2.842-10.411-3.167-1.054-0.104-3.329-0.086-4.339 0.034-3.886 0.46-7.383 2.025-10.692 4.783-0.834 0.695-2.495 2.348-3.246 3.23-2.748 3.226-4.266 6.306-4.772 9.681-0.15 1-0.15 2.947-2e-3 4.006 0.422 3 1.703 6.037 3.815 9.045 0.582 0.828 2.105 2.79 3.522 4.534 5.168 6.363 11.203 13.127 18.443 20.67 2.292 2.389 7.783 7.982 7.835 7.982 0.023 0 7.854-7.81 17.399-17.355zm97.251 11.61c4.751-0.494 8.898-2.598 12.753-6.47 6.556-6.586 8.053-13.493 4.506-20.802-0.88-1.813-1.786-3.207-3.58-5.508-5.066-6.5-12.265-14.668-20.39-23.131-1.632-1.702-7.416-7.615-7.739-7.913l-0.177-0.165-17.357 17.357c-9.546 9.546-17.35 17.376-17.34 17.4 0.028 0.069 2.703 2.513 4.557 4.161 9.126 8.119 17.582 14.485 25.825 19.443 5.566 3.349 10.079 5.089 14.502 5.591 0.956 0.109 3.55 0.13 4.44 0.038z" fill="currentColor" stroke-width=".066768"/>
         </svg></a>
 
-        <p id="datum">Zadnja posodobitev te strani: <time datetime="2025-10-21">2025-10-21</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-02-15">2026-02-15</time></p>
     </header>
+    <nav>
+        <ul>
+        <li><a href="#Programje">Programje</a>
+        <ul>
+        <li><a href="#Racunalnik">Računalnik</a>
+        <ul>
+        <li><a href="#Razsiritve_za_brskalnik">Razširitve za
+        brskalnik</a></li>
+        <li><a href="#Programi_za_Linux">Programi za Linux</a></li>
+        </ul></li>
+        <li><a href="#Dlancnik">Dlančnik</a>
+        <ul>
+        <li><a href="#Operacijski_sistemi">Operacijski sistemi</a></li>
+        <li><a href="#Moj_izbor_za_dlancnik">Moj izbor za
+        dlančnik</a></li>
+        </ul></li>
+        <li><a href="#Druge_storitve">Druge storitve</a></li>
+        <li><a href="#Zunanje_povezave_in_viri">Zunanje povezave in
+        viri</a></li>
+        </ul></li>
+        </ul>
+    </nav>
     <main>
         <div class="content">
-            <ul>
-            <li><a href="#Programje">Programje</a>
-            <ul>
-            <li><a href="#Programi">Programi</a>
-            <ul>
-            <li><a href="#Razsiritve_za_brskalnik">Razširitve za
-            brskalnik</a></li>
-            <li><a href="#Spletne_storitve">Spletne storitve</a></li>
-            <li><a href="#Programi_za_Linux">Programi za Linux</a></li>
-            <li><a href="#Orodja_za_Android">Orodja za Android</a></li>
-            </ul></li>
-            <li><a href="#Zunanje_povezave_in_viri">Zunanje povezave in
-            viri</a></li>
-            </ul></li>
-            </ul>
             <h1 id="Programje">Programje</h1>
             <p>Večina ljudi se dandanes zadovolji s slabo programsko
             opremo, s tem pa se ne le trpinčijo, temveč jo tudi
@@ -103,7 +73,7 @@ dobrih programov"/>
             neizkoriščeno rabo računalniške zmogljivosti (te ni zares za
             grjati), temveč za napačno rabo uporabljanih
             zmogljivosti.</p>
-            <h2 id="Programi">Programi</h2>
+            <h2 id="Racunalnik">Računalnik</h2>
             <p>Večinoma so tu programi, ki jih sam uporabljam, nekateri
             pa za določene naloge primerljivo dobri tem, ki jih sam
             uporabljam (spletni brskalniki za primer).</p>
@@ -377,12 +347,6 @@ dobrih programov"/>
             href="https://github.com/deevroman/better-osm-org">better-osm-org</a>:
             dodane zmogljivosti k urejevalniku OSM v brskalniku</li>
             </ul>
-            <h3 id="Spletne_storitve">Spletne storitve</h3>
-            <p>Glej tudi: <a href="/seznami">Moje seznami</a>.</p>
-            <ul>
-            <li><a href="https://umami.is/">Umami</a>: odprtokodna
-            analitika spletnega mesta</li>
-            </ul>
             <h3 id="Programi_za_Linux">Programi za Linux</h3>
             <p>Sucklessove programe je priporočljivo namestiti kar iz
             vira - neposredno s <a
@@ -551,7 +515,7 @@ dobrih programov"/>
             </table>
             <p>Večino navedenih programov zgoraj uporabljam tudi sam -
             več ali manj (kar je odvisno tudi od namembnosti).</p>
-            <h3 id="Orodja_za_Android">Orodja za Android</h3>
+            <h2 id="Dlancnik">Dlančnik</h2>
             <p>F-Droid ponuja nameščanje odprtokodnih orodij za <a
             href="https://www.android.com/">Android</a> iz knjižnice <a
             href="https://freeopensourcesoftware.org/">Free and Open
@@ -639,6 +603,16 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=app.comaps.google/">CoMaps</a></td>
             </tr>
             <tr class="odd">
+            <td><a href="https://www.davx5.com/">DAVx5</a></td>
+            <td>orodje za usklajevanje (<em>sinhroniziranje</em>)
+            podatkov kot so koledarji, stiki, …</td>
+            <td><a
+            href="https://f-droid.org/packages/at.bitfire.davdroid/">DAVx5</a></td>
+            <td><a
+            href="https://play.google.com/store/apps/details?id=at.bitfire.davdroid">DAVx⁵
+            – CalDAV CardDAV WebDAV</a></td>
+            </tr>
+            <tr class="even">
             <td><a href="">Discord</a></td>
             <td>hitro dopisovanje</td>
             <td></td>
@@ -646,7 +620,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=com.discord">Discord
             - Talk, Play, Hang Out</a></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td><a
             href="https://github.com/Etar-Group/Etar-Calendar">Etar</a></td>
             <td>koledar</td>
@@ -656,13 +630,13 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=ws.xsoh.etar">Etar
             - OpenSource Calendar</a></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td><a href="https://f-droid.org/">F-Droid</a></td>
             <td>knjižnica odprtokodnih orodij</td>
             <td><a href="https://f-droid.org/">F-Droid</a></td>
             <td></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td><a
             href="https://github.com/gsantner/markor/tree/master">Markor</a></td>
             <td>urejevalnik golega besedila</td>
@@ -670,7 +644,7 @@ dobrih programov"/>
             href="https://f-droid.org/packages/net.gsantner.markor/">Markor</a></td>
             <td></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td><a href="https://newpipe.net/">NewPipe</a></td>
             <td>nadomestek YouTuba (prikazuje njegove vsebine)</td>
             <td><a
@@ -678,7 +652,7 @@ dobrih programov"/>
             - Lightweight YouTube frontend</a></td>
             <td></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td><a href="https://odysee.com/">Odysee</a></td>
             <td>videoposnetki (kot YT, a boljše)</td>
             <td><a
@@ -686,7 +660,7 @@ dobrih programov"/>
             <td><a
             href="https://play.google.com/store/apps/details?id=com.odysee.app">Odysee</a></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td><a
             href="https://github.com/OlauncherCF/OlauncherCF">OLauncher
             Clutter Free</a></td>
@@ -698,7 +672,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=app.olauncher">Olauncher.
             Minimal AF Launcher</a></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td><a href="https://organicmaps.app/">Organic Maps</a></td>
             <td>zemljevid <a href="https://www.openstreetmap.org/">Open
             Street Map</a></td>
@@ -709,7 +683,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=app.organicmaps">Organic
             Maps: Hike Bike Drive</a></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td><a href="https://osmand.net/">OSMAnd</a></td>
             <td>zemljevid <a href="https://www.openstreetmap.org/">Open
             Street Map</a> z dodatki</td>
@@ -719,7 +693,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=net.osmand">OsmAnd
             — Maps &amp; GPS Offline</a></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td><a href="https://phyphox.org/">PhyFox</a></td>
             <td>za razne fizikalne poskuse z uporabo tipal, zvočnika in
             mikrofona dlančnika</td>
@@ -728,14 +702,14 @@ dobrih programov"/>
             <td><a
             href="https://play.google.com/store/apps/details?id=de.rwth_aachen.phyphox">phyphox</a></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td><a href="https://plantnet.org/">PlantNet</a></td>
             <td>prepoznava in popis rastlin</td>
             <td></td>
             <td><a
             href="https://play.google.com/store/apps/details?id=org.plantnet">PlantNet</a></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td><a
             href="https://www.unrealengine.com/en-US/realityscan">RealityScan</a></td>
             <td>3R skeniranje s pomočjo kamere</td>
@@ -744,7 +718,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=com.epicgames.realityscan">RealityScan
             - 3D Scanning App</a></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td><a href="https://signal.org/">Signal</a></td>
             <td>dopisovanje</td>
             <td><a href=""></a></td>
@@ -752,7 +726,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms">Signal
             Private Messenger</a></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td>Sky Wiki</td>
             <td>pripomoček za opazovanje (zvezdnega) neba</td>
             <td></td>
@@ -760,7 +734,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=com.bluestreaklabs.skywiki">SkyWiki
             - world of astronomy</a></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td><a href="https://soundcloud.com/">Sound Cloud</a></td>
             <td>poslušanje glasbe (nekak nadomestek Spotifyja)</td>
             <td></td>
@@ -768,7 +742,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=com.soundcloud.android">SoundCloud:
             Play Music &amp; Songs</a></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td><a href="https://thunderbird.net/">Thunderbird</a></td>
             <td>elektronska pošta</td>
             <td><a
@@ -778,7 +752,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=net.thunderbird.android">Thunderbird:
             Free Your Inbox</a></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td><a
             href="https://samamco.github.io/track-and-graph/">Track
             &amp; Graph</a></td>
@@ -790,7 +764,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=com.samco.trackandgraph">Track
             &amp; Graph</a></td>
             </tr>
-            <tr class="even">
+            <tr class="odd">
             <td><a href="https://windy.app/">Windy</a></td>
             <td>vremenski zemljevid</td>
             <td></td>
@@ -798,7 +772,7 @@ dobrih programov"/>
             href="https://play.google.com/store/apps/details?id=com.windyty.android">Windy.com
             - Weather Forecast</a></td>
             </tr>
-            <tr class="odd">
+            <tr class="even">
             <td>WriterPlus</td>
             <td>urejevalnik označevalskega (MarkDown - .md)
             besedila</td>
@@ -809,45 +783,57 @@ dobrih programov"/>
             </tr>
             </tbody>
             </table>
-            <h4 id="Moja_izbrana_orodja_po_namembnosti">Moja izbrana
-            orodja po namembnosti</h4>
+            <h3 id="Operacijski_sistemi">Operacijski sistemi</h3>
             <ul>
-            <li><a href="https://github.com/woheller69/Arity">Arity</a>:
-            računalo</li>
-            <li><a
+            <li><a href="https://e.foundation/e-os/">/e/OS</a></li>
+            <li><a href="https://grapheneos.org/">GrapheneOS</a> –
+            najbolj zaščiten/varen za dlančnike</li>
+            <li><a href="https://lineageos.org/">LineageOS</a></li>
+            </ul>
+            <h3 id="Moj_izbor_za_dlancnik">Moj izbor za dlančnik</h3>
+            <p>OS: - <a href="https://disroot.org/">GrapheneOS</a>:
+            <em>operacijski sistem</em></p>
+            <p>Orodja: - <a
+            href="https://github.com/woheller69/Arity">Arity</a>:
+            računalo - <a
             href="https://github.com/Dimowner/AudioRecorder">Audio
-            Recorder</a>: snemalnik zvoka</li>
-            <li><a href="https://auroraoss.com/">Aurora Store</a>:
-            nameščevalnik orodij iz Trgovine Play</li>
-            <li><a href="https://brave.com/">Brave</a>: spletni
-            brskalnik</li>
-            <li><a href="https://www.comaps.app/">CoMaps</a>: zemljevid
-            <a href="https://www.openstreetmap.org/">Open Street
-            Map</a></li>
-            <li><a href="">Discord</a>: hitro dopisovanje</li>
-            <li>Fran</li>
-            <li><a
-            href="https://github.com/Etar-Group/Etar-Calendar">Etar</a></li>
-            <li>Every Door: manjša urejanja OSM na terenu</li>
-            <li><a href="https://f-droid.org/">F-Droid</a>: knjižnica
-            odprtokodnih orodij</li>
-            <li><a
+            Recorder</a>: snemalnik zvoka - <a
+            href="https://auroraoss.com/">Aurora Store</a>:
+            nameščevalnik orodij iz Trgovine Play - <a
+            href="https://brave.com/">Brave</a>: spletni brskalnik - <a
+            href="https://www.comaps.app/">CoMaps</a>: zemljevid <a
+            href="https://www.openstreetmap.org/">Open Street Map</a>,
+            predvsem za potno usmerjanje zaradi učinkovitosti - <a
+            href="https://www.davx5.com/">DAVx5</a> – usklajevanje
+            <em>koledarja</em> z <a
+            href="https://disroot.org/">Disroot</a> na spletu - <a
+            href="">Discord</a>: hitro dopisovanje (ker pač nimajo vsi
+            računa Matrix/Element, veliko pa jih ima to) - <a
+            href="https://github.com/Etar-Group/Etar-Calendar">Etar</a>:
+            <em>koledar</em> - <a href="https://every-door.app/">Every
+            Door</a>: manjša urejanja OSM na terenu - <a
+            href="https://f-droid.org/">F-Droid</a>: knjižnica
+            odprtokodnih orodij - <a
             href="https://github.com/gsantner/markor/tree/master">Markor</a>:
-            urejevalnik golega besedila</li>
-            <li><a href="https://osmand.net/">OSMAnd</a>: zemljevid <a
-            href="https://www.openstreetmap.org/">Open Street Map</a> z
-            dodatki</li>
-            <li><a href="https://newpipe.net/">NewPipe</a>: YouTube,
-            SoundCloud</li>
-            <li>Sky Wiki: sončni vzhodi/zahodi, opazovanje zvezdnega
-            neba</li>
-            <li><a href="https://thunderbird.net/">Thunderbird</a>:
-            elektronska pošta</li>
-            <li><a
+            urejevalnik golega besedila - <a
+            href="https://osmand.net/">OSMAnd</a>: zemljevid <a
+            href="https://www.openstreetmap.org/">Open Street Map</a> za
+            naprednejše opravke - <a
+            href="https://newpipe.net/">NewPipe</a>: YouTube, SoundCloud
+            - Sky Wiki: sončni vzhodi/zahodi, opazovanje zvezdnega neba
+            - <a href="https://thunderbird.net/">Thunderbird</a>:
+            elektronska pošta - <a
             href="https://samamco.github.io/track-and-graph/">Track
-            &amp; Graph</a>: beleženje</li>
-            <li><a href="https://windy.app/">Windy</a>: vremenski
-            zemljevid</li>
+            &amp; Graph</a>: beleženje - <a
+            href="https://windy.app/">Windy</a>: vremenski zemljevid</p>
+            <h2 id="Druge_storitve">Druge storitve</h2>
+            <p>Glej tudi: <a href="/seznami">Moje seznami</a>.</p>
+            <ul>
+            <li><a href="https://disroot.org/">Disroot</a> – brezplačne
+            spletne storitev za sinhronizacijo koledarjev, pošte,
+            stikov, ..</li>
+            <li><a href="https://umami.is/">Umami</a>: odprtokodna
+            analitika spletnega mesta</li>
             </ul>
             <hr />
             <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in
@@ -880,24 +866,16 @@ dobrih programov"/>
             preprostosti
             <ul>
             <li><a href="https://www.youtube.com/c/lukesmithxyz">YouTube
-            - Luke Smith</a> - Luketova stran na YouTubu</li>
+            - Luke Smith</a></li>
             <li><a href="https://github.com/LukeSmithxyz/">GitHub - Luke
-            Smith</a> - Luketova stran na GitHubu</li>
+            Smith</a></li>
             </ul></li>
             </ul>
         </div>
     </main>
-    <hr>
     <footer>
         <button id="stikaloTeme">Preklopi barvni način strani</button>
-        <br><a id="linkMD" href="/markdown/programje.md">Oglej si stran v Markdownu</a>
+        <br><a id="linkMD" href="/markdown/programje.md">Stran v Markdownu</a>
     </footer>
-    </script><script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1FD0790Y"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-TR1FD0790Y');
-    </script>
 </body>
 </html>

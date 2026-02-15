@@ -495,13 +495,13 @@ L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
 }).addTo(map);
 
-L.control.opacity(
+/*L.control.opacity(
     overlayMaps,
     {
         label: "🎚️ Prosojnost slojev",
         collapsed: false
     }
-).addTo(map);
+).addTo(map);*/
 
 /*
 function loadChurches() {

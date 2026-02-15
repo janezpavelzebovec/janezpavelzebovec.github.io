@@ -1,6 +1,6 @@
 ---
 title: Programje
-date: 2026-02-14
+date: 2026-02-15
 description: Pogled na programje s seznamom dobrih programov
 keywords: programska oprema, programi, Linux
 author: Janez Pavel Žebovec
@@ -132,38 +132,41 @@ F-Droid ponuja nameščanje odprtokodnih orodij za [Android](https://www.android
 | [Windy](https://windy.app/) | vremenski zemljevid | | [Windy.com - Weather Forecast](https://play.google.com/store/apps/details?id=com.windyty.android) | potrebuje spletno povezavo |
 | WriterPlus | urejevalnik označevalskega (MarkDown - .md) besedila | | [Writer Plus (Write On the Go)](https://play.google.com/store/apps/details?id=co.easy4u.writer) | |
 
-### Moja izbrana orodja za dlančnik po namembnosti
-
-- GrapheneOS: *operacijski sistem*
-
-- [Arity](https://github.com/woheller69/Arity): računalo
-- [Audio Recorder](https://github.com/Dimowner/AudioRecorder): snemalnik zvoka
-- [Aurora Store](https://auroraoss.com/): nameščevalnik orodij iz Trgovine Play
-- [Brave](https://brave.com/): spletni brskalnik
-- [CoMaps](https://www.comaps.app/): zemljevid [Open Street Map](https://www.openstreetmap.org/)
-- [Discord](): hitro dopisovanje
-- Fran
-- [Etar](https://github.com/Etar-Group/Etar-Calendar)
-- Every Door: manjša urejanja OSM na terenu
-- [F-Droid](https://f-droid.org/): knjižnica odprtokodnih orodij
-- [Markor](https://github.com/gsantner/markor/tree/master): urejevalnik golega besedila
-- [OSMAnd](https://osmand.net/): zemljevid [Open Street Map](https://www.openstreetmap.org/) z dodatki
-- [NewPipe](https://newpipe.net/): YouTube, SoundCloud
-- Sky Wiki: sončni vzhodi/zahodi, opazovanje zvezdnega neba
-- [Thunderbird](https://thunderbird.net/): elektronska pošta
-- [Track & Graph](https://samamco.github.io/track-and-graph/): beleženje
-- [Windy](https://windy.app/): vremenski zemljevid
-
 ### Operacijski sistemi
 
 - [/e/OS](https://e.foundation/e-os/)
 - [GrapheneOS](https://grapheneos.org/) – najbolj zaščiten/varen za dlančnike
 - [LineageOS](https://lineageos.org/)
 
+### Moj izbor za dlančnik
+
+OS:
+- [GrapheneOS](https://disroot.org/): *operacijski sistem*
+
+Orodja:
+- [Arity](https://github.com/woheller69/Arity): računalo
+- [Audio Recorder](https://github.com/Dimowner/AudioRecorder): snemalnik zvoka
+- [Aurora Store](https://auroraoss.com/): nameščevalnik orodij iz Trgovine Play
+- [Brave](https://brave.com/): spletni brskalnik
+- [CoMaps](https://www.comaps.app/): zemljevid [Open Street Map](https://www.openstreetmap.org/), predvsem za potno usmerjanje zaradi učinkovitosti
+- [DAVx5](https://www.davx5.com/) – usklajevanje *koledarja* z [Disroot](https://disroot.org/) na spletu
+- [Discord](): hitro dopisovanje (ker pač nimajo vsi računa Matrix/Element, veliko pa jih ima to)
+- [Etar](https://github.com/Etar-Group/Etar-Calendar): *koledar*
+- [Every Door](https://every-door.app/): manjša urejanja OSM na terenu
+- [F-Droid](https://f-droid.org/): knjižnica odprtokodnih orodij
+- [Markor](https://github.com/gsantner/markor/tree/master): urejevalnik golega besedila
+- [OSMAnd](https://osmand.net/): zemljevid [Open Street Map](https://www.openstreetmap.org/) za naprednejše opravke
+- [NewPipe](https://newpipe.net/): YouTube, SoundCloud
+- Sky Wiki: sončni vzhodi/zahodi, opazovanje zvezdnega neba
+- [Thunderbird](https://thunderbird.net/): elektronska pošta
+- [Track & Graph](https://samamco.github.io/track-and-graph/): beleženje
+- [Windy](https://windy.app/): vremenski zemljevid
+
 ## Druge storitve
 
 Glej tudi: [Moje seznami](/seznami).
 
+- [Disroot](https://disroot.org/) – brezplačne spletne storitev za sinhronizacijo koledarjev, pošte, stikov, ..
 - [Umami](https://umami.is/): odprtokodna analitika spletnega mesta
 
 ---
@@ -178,5 +181,5 @@ Glej tudi: [Moje seznami](/seznami).
 - [GitHub](https://github.com/) - spletno mesto za odprtokodne programe
 - [Codeberg](https://codeberg.org/) - boljše spletno mesto za odprtokodne programe
 - [Luke Madison Smith](https://lukesmith.xyz/) - bister mož, zagovornik Linuxa, odprtokodnosti, preprostosti
-    - [YouTube - Luke Smith](https://www.youtube.com/c/lukesmithxyz) - Luketova stran na YouTubu
-    - [GitHub - Luke Smith](https://github.com/LukeSmithxyz/) - Luketova stran na GitHubu
+    - [YouTube - Luke Smith](https://www.youtube.com/c/lukesmithxyz)
+    - [GitHub - Luke Smith](https://github.com/LukeSmithxyz/)

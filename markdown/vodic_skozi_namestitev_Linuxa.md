@@ -343,4 +343,4 @@ Po prvem zagonu novega *operacijskega sistema*:
     - na konec datoteke ddodaj `*/1 * * * * /bin/bash /user/cloudflare.sh`, shrani in zapri
 - `systemctl restart cron` – ponovno zažene cron
 
-- `nslookup moja-domena` – izpiše, na kateri naslov IP kaže domena in če je zavarovana
+- `nslookup moja-domena`
