@@ -1,6 +1,6 @@
 ---
 title: Računalniški jeziki
-date: 2025-08-08
+date: 2026-02-17
 description: Skladnje, oz. zapisovanja, ki jih računalnik zna ustrezno upoštevati
 keywords: programiranje, programski jeziki
 author: Janez Pavel Žebovec
@@ -126,21 +126,6 @@ Za odstavke znotraj elementa seznama jih zamakni noter in med temi odstavki pust
 Z nazaj nagnjeno poševnico `\` lahko ubežiš določenim znakom, če nočeš, da opredeljujejo Markdownove elemente:
 
 - `\` - ubežna nazaj nagnjena poševnica,
-- `` ` `` - znak za kodo,
-    - znakom za kodo ubežiš tudi tako, da jih obdaš s še več znaki: 
-        
-        ``` `` `besedilo, obdano z znaki kode` `` ```, oz. znotraj povedi lahko tudi tako: ``` ``blabla `besedilo, obdano z znaki kode` blabla`` ```
-
-        Za večji blok kode pa:
-        
-        `````markdown
-        ````
-        ```jezik
-        koda
-        ```
-        ````
-        `````
-
 - `*` - zvezdica za poudarke, sezname, ločilne črte,
 - `_` - podčrtaj,
 - `{}` - zaviti oklepaji za ID-je naslovov,
@@ -152,6 +137,52 @@ Z nazaj nagnjeno poševnico `\` lahko ubežiš določenim znakom, če nočeš, d
 - `.` - pika za številkami za razvrščene sezname,
 - `!` klicaj pred vstavljenimi slikami,
 - `|` - navpičnica v preglednicah
+
+## LaTeX
+
+V glavi *dokumenta* določiš vrsto dokumenta, lahko tudi lastne velikosti strani in pisave
+(npr. velikost strani A4, velikost pisave 12 in vrsta članka):
+
+    \documentclass[a4paper,12pt]{article}
+
+Izbira vrste *dokumenta* vpliva na privzet slog (npr. pri članku se vsebina začne že na isti strani kot naslov,
+pri poročilu pa na naslednji strani, za naslovnico). Na voljo so:
+
+- `article` - članek
+- `report` – poročilo
+- `book` – knjiga
+- `slides` – prosojnice
+- `proc` (*proceedings*) – zapisnik, postopek
+
+Podatki o *dokumentu*:
+
+    \title{Naslov dokumenta}
+    \author{ime avtorja}
+    \date{datum nastanka}
+
+Za trenutni datum ob pretvorbi v npr. PDF uporabi `\date{\today}`.
+
+Če želiš ustvariti naslovnico (v primeru razen članka je to ločena stran), kličeš
+
+    \maketitle
+
+Vsebina *dokumenta* je obdana z
+
+    \begin{document}
+    Vsa moja vsebina (besedilo).
+    \end{document}
+
+Karkoli pred tem vpliva na celoten *dokument*, karkoli za tem pa je prezrto.
+
+Poglavja:
+
+    \section{Naslov odseka/poglavja}
+    \subsection{Naslov pododseka/podpoglavja}
+    \subsubsection{Naslov podpododseka/podpodpoglavja}
+    \paragraph{Naslov odstavka}
+    \subparagraph{Nasov pododstavka}
+
+V *dokumentu* vrst `book` in `report` obstaja še `\chapter{Naslov poglavja}`.
 
 ---
 

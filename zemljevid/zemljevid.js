@@ -367,6 +367,7 @@ googleTerrain = L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
     subdomains:['mt0','mt1','mt2','mt3']
 });
 //==============================================================================
+
 var map = L.map('map', {
     center: [46.1, 14.8],
     zoom: 9,

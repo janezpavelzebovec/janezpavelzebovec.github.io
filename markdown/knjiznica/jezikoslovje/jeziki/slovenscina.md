@@ -222,3 +222,4 @@ Tretja ženska sklanjatev ima v vseh sklonih ničto končnico (npr. *mami, Karme
 ## Zunanje povezave in viri
 
 - [Pravopis 8.0](https://pravopis8.fran.si/)
+- [CJVT](https://viri.cjvt.si/slv/) – slovar sopomenk, *kolokacije* in drugo

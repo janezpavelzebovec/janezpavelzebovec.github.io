@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-02-14
+date: 2026-02-17
 description: Prepovedane tujke v visoki slovenščini
 keywords: visoka slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
@@ -12,14 +12,21 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 
 - *definicija* > opredelitev, določitev/določba
 - *eksitacija* > vzbuditev
+- *horizontalno*, *horizontala* > vodoravno, vodoravnica
+- *karcinogen* > rakotvoren
 - *konkaven* > vbočen, vbokel
 - *konveksen* > izbočen, izbokel
+- *longitudinalno* > vzdolžno
+- *ortogonalen* > pravokoten
+- *paralelen* > vzporeden
 - *problem* > težava
 - *sediment* > usedlina
 - *simetrija*, *simetričnost* > somernost
 - *solvatacija* > raztapljanje
 - *šola* > učilišče
+- *transverzalno* > prečno
 - *univerza* > vseučilišče
+- *vertikalno*, *vertikala* > navpično, navpičnica
 
 ## Računstvo
 

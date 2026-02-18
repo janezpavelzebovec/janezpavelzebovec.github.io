@@ -1,6 +1,6 @@
 ---
 title: Župnije Slovenije na OSM
-date: 2025-11-30
+date: 2026-02-16
 description: Seznam že vnešenih župnij v OSM
 keywords: OpenStreetMap, župnija, Slovenija
 ---
@@ -44,18 +44,23 @@ Projekt na OSM Wiki: [WikiProject Slovenia/Župnije](https://wiki.openstreetmap.
 - Boštanj
 - Bovec (2025-12-07)
 - Branik (2025-12-08)
+- Brdo pri Lukovici (2026-02-16)
+- Brestanica
+
+Izven zaporedja:
+
 - Domžale
 - ~Dovje (le še znamenja s spletne strani – glej https://zupnija-dovje.si/znamenja/)
-- Anceljnovo
-- Lengarjevo
-- Brolhovo
-- Farovško
-- Bvaščeva skala
-- Sedučnik
-- Križanje
-- Borovlje
-- Škrlatica
-- Peričnik
+    - Anceljnovo
+    - Lengarjevo
+    - Brolhovo
+    - Farovško
+    - Bvaščeva skala
+    - Sedučnik
+    - Križanje
+    - Borovlje
+-    Škrlatica
+-    Peričnik
 - Frankolovo
 - Preska
 
@@ -96,6 +101,9 @@ Podatki o župnijah, ki so navedeni na Družini, a drugi viri navajajo drugače
 - Župnija Boštanj: piše, da je cerkev sv. Miklavža porušena, vendar obstaja kapela sv. Miklavža – neporušena
 - Župnija Bovec: Leta 2017 so se župniji Bovec priključile župnije [Srpenica](https://www.druzina.si/zupnija/zupnijska-cerkev-sv-florijana-srpenica), [Soča](https://www.druzina.si/zupnija/zupnijska-cerkev-sv-jozefa-soca) in [Log pod Mangartom](https://www.druzina.si/zupnija/zupnijska-cerkev-sv-stefana-log-pod-mangartom) (glej <https://sl.wikipedia.org/wiki/%C5%BDupnija_Bovec>); ali pod ž. Bovec spada tudi Sv. Lenart pod Ravnim Lazom? 
 - Župnija Branik: spletna stran [zupnija-branik.rkc.si](https://zupnija-branik.rkc.si/); leta 2017 ji je bila pridružena [Župnija Brje](https://www.druzina.si/zupnija/zupnijska-cerkev-sv-cirila-in-metoda-brje)
+- Župnija Brdo pri Lukovici: leta 2026 sta se ji pridružili župniji [Češnjice](https://www.druzina.si/zupnija/zupnijska-cerkev-karmelske-matere-bozja-cesnjice) in [Zlato Polje](https://www.druzina.si/zupnija/zupnijska-cerkev-sv-marije-magdalene-zlato-polje)
+- Župnija Babno Polje: leta 2026 pridružena župniji Stari Trg pri Ložu
+- Župnija Šentožbolt: leta 2026 pridružena župniji Blagovica
 
 ## Dodatni podatki
 

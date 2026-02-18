@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-01-26
+date: 2026-02-18
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 ---
@@ -46,6 +46,7 @@ Tu so navedene nekatere sprejete (a ne nujno – več – uveljavljene/uporablja
 - **ljudovlada** (ustrezneje *ljudstvovlada*? – neuveljavljeno) < *republika*, *demokracija* <small>(it./nem. < frc. < lat.; nem. < frc. < lat. < gr.))</small>
 - **pogon** (gonilna sila, gibalo, pogonski stroj) < *motor*
 - **potno usmerjanje** < *navigacija*
+- **ravnik** < *ekvator*
 - **veljava** < *valuta* <small>(nem. < it.)</small>
 - **stálnica** < *konstanta* (nasploh in npr. matematična, fizikalna)
 
@@ -157,6 +158,7 @@ Tu je seznam mojih (precej dokončnih) predlogov za nove besede:
 - **rod otrok blaginje** < *babyboom generacija*
 - **vóz** (**sámogôn**) < *avtomobil/avto* <small>(< nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*)</small>
 - **sámovoz** < *avtonomni avtomobil/avto*
+- **síto** < *filter*
 - **snôvoslôvje** < *kemija*
 - **sprejémnik zvóka, zvókosprejémnik** < *mikrofon*
 - **tresávec** < *vibrant*
