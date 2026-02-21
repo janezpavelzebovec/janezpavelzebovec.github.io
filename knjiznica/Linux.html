@@ -5,48 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>Linux</title>
+    <meta name="author" content="Janez Pavel Žebovec">
     <meta name="description" content=""/>
     <meta name="keywords" content="programska oprema, Linux, programi"/>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
     <link rel="icon" type="image/png" sizes="192x192" href="/images/icon.png"/>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background: #121212;
-            color: #eee;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        main {
-            flex: 1;
-            width: 100%;
-            margin: auto;
-            /*padding: 1em;*/
-            padding-top: 0;
-            font-size: 1.1em;
-        }
-        .content {
-            max-width: var(--vsebina);
-            margin:auto;
-        }
-        header {
-            min-height: 4em;
-            align-items: center;
-            justify-content: space-around;
-        }
-        #domov {
-            width: 3em;
-            aspect-ratio: 1 / 1;
-            display: block;
-            padding: 0.5em;
-            border-radius: 50%;
-        }
-    </style>
 
     <link rel="stylesheet" href="/styles.css"/>
     <script src="/scripts.js" defer></script>
@@ -56,103 +21,102 @@
 </head>
 <body>
     <header>
-    <a id="domov" href="/" aria-label="Domov"><?xml version="1.0" encoding="UTF-8"?>
+    <a id="domov" href="/" aria-label="Domov"><?xml encoding="UTF-8"?>
         <svg alt="JPŽ"
             viewBox="0 0 200.29 184.95"
             xmlns="http://www.w3.org/2000/svg">
             <path d="m100.16 175.85-9.097-9.097-6.06 6.059-6.059 6.06-3.037-3.039-3.038-3.038 18.16-18.16h-50.008l26.54-26.546 26.54-26.545-1.536-1.497-1.536-1.496-26.527 26.523-26.527 26.522-1.482-1.516c-3.775-3.864-5.546-5.696-7.092-7.336-16.688-17.704-26.211-31.284-28.698-40.924-1.21-4.691-0.863-10.232 0.99-15.79 1.699-5.097 4.565-10.096 8.84-15.423 3.371-4.2 7.977-8.867 12.227-12.39 7.033-5.829 14.255-9.477 20.998-10.607 4.438-0.744 8.947-0.517 13.093 0.659 11.322 3.209 25.58 12.759 42.257 28.304 0.478 0.444 0.891 0.809 0.92 0.81 0.028 0 7.213-7.173 15.966-15.94l15.916-15.94-109.05-0.035 15.156-15.156h53.013l-7.578-7.578-7.577-7.579 7.577-7.578 7.578-7.578 9.097 9.097 9.098 9.097 6.059-6.059 6.06-6.059 6.074 6.076-18.16 18.16h50.009l-26.54 26.545-26.54 26.544 1.535 1.495 1.536 1.495 26.528-26.52 26.529-26.52 1.601 1.635c6.117 6.25 9.362 9.693 13.283 14.098 13.381 15.03 20.977 26.846 22.66 35.248 0.485 2.426 0.556 5.402 0.196 8.275-0.764 6.103-3.472 12.418-8.059 18.795-3.846 5.346-9.652 11.442-15.036 15.786-3.795 3.062-6.921 5.088-10.666 6.912-4.634 2.257-9.022 3.433-13.549 3.632-5.12 0.225-9.614-0.74-15.578-3.344-9.785-4.273-21.875-12.95-35.046-25.152a173.77 173.77 0 0 0-1.525-1.4l-0.33-0.295-15.969 15.97-15.968 15.968h109.1l-15.156 15.156-53.064 0.035 15.13 15.2-7.54 7.539-7.54 7.54zm-32.637-65.878 17.354-17.355-0.496-0.461c-8.602-7.999-17.792-15.358-25.3-20.257-3.967-2.589-6.638-4.163-9.11-5.37-3.704-1.807-7.106-2.842-10.411-3.167-1.054-0.104-3.329-0.086-4.339 0.034-3.886 0.46-7.383 2.025-10.692 4.783-0.834 0.695-2.495 2.348-3.246 3.23-2.748 3.226-4.266 6.306-4.772 9.681-0.15 1-0.15 2.947-2e-3 4.006 0.422 3 1.703 6.037 3.815 9.045 0.582 0.828 2.105 2.79 3.522 4.534 5.168 6.363 11.203 13.127 18.443 20.67 2.292 2.389 7.783 7.982 7.835 7.982 0.023 0 7.854-7.81 17.399-17.355zm97.251 11.61c4.751-0.494 8.898-2.598 12.753-6.47 6.556-6.586 8.053-13.493 4.506-20.802-0.88-1.813-1.786-3.207-3.58-5.508-5.066-6.5-12.265-14.668-20.39-23.131-1.632-1.702-7.416-7.615-7.739-7.913l-0.177-0.165-17.357 17.357c-9.546 9.546-17.35 17.376-17.34 17.4 0.028 0.069 2.703 2.513 4.557 4.161 9.126 8.119 17.582 14.485 25.825 19.443 5.566 3.349 10.079 5.089 14.502 5.591 0.956 0.109 3.55 0.13 4.44 0.038z" fill="currentColor" stroke-width=".066768"/>
         </svg></a>
 
-        <p id="datum">Zadnja posodobitev te strani: <time datetime="2026-01-05">2026-01-05</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-01-05">2026-01-05</time></p>
     </header>
+    <nav>
+        <ul>
+        <li><a href="#Linux">Linux</a>
+        <ul>
+        <li><a href="#Upravljanje_programov">Upravljanje programov</a>
+        <ul>
+        <li><a href="#Namescanje_programov_iz_vira">Nameščanje programov
+        iz vira</a></li>
+        </ul></li>
+        <li><a href="#Mape_in_datoteke_v_Linuxu">Mape in datoteke v
+        Linuxu</a></li>
+        <li><a href="#Zunanje_naprave">Zunanje naprave</a>
+        <ul>
+        <li><a href="#Ustvarjanje_zagonskega_kljucka">Ustvarjanje
+        zagonskega ključka</a></li>
+        </ul></li>
+        <li><a href="#Omrezna_povezava">Omrežna povezava</a>
+        <ul>
+        <li><a href="#NetworkManager">NetworkManager</a></li>
+        <li><a href="#NMCLI_Network_Manager_Client">NMCLI (Network
+        Manager Client)</a></li>
+        <li><a href="#Eduroam">Eduroam</a></li>
+        </ul></li>
+        <li><a
+        href="#Pretvarjanje_zdruzevanje_datotek">Pretvarjanje/združevanje
+        datotek</a>
+        <ul>
+        <li><a href="#Spreminjanje_izvirne_datoteke">Spreminjanje
+        izvirne datoteke</a></li>
+        </ul></li>
+        <li><a href="#Streznik">Strežnik</a></li>
+        <li><a href="#Programi">Programi</a>
+        <ul>
+        <li><a href="#Terminal_jezik_Bash">Terminal (jezik
+        Bash)</a></li>
+        <li><a href="#ST_Simple_Terminal">ST (Simple Terminal)</a></li>
+        <li><a href="#DWM_Dynamic_Window_Manager">DWM (Dynamic Window
+        Manager)</a></li>
+        <li><a href="#VIM">VIM</a></li>
+        <li><a href="#LF">LF</a></li>
+        <li><a href="#NCMPCPP">NCMPCPP</a></li>
+        <li><a href="#YT_DLP">YT-DLP</a></li>
+        <li><a href="#JOSM">JOSM</a></li>
+        </ul></li>
+        <li><a href="#Zunanje_povezave_in_viri">Zunanje povezave in
+        viri</a></li>
+        </ul></li>
+        </ul>
+    </nav>
     <main>
         <div class="content">
-            <ul>
-            <li><a href="#Linux">Linux</a>
-            <ul>
-            <li><a href="#Upravljanje_programov">Upravljanje
-            programov</a>
-            <ul>
-            <li><a href="#Namescanje_programov_iz_vira">Nameščanje
-            programov iz vira</a></li>
-            </ul></li>
-            <li><a href="#Mape_in_datoteke_v_Linuxu">Mape in datoteke v
-            Linuxu</a></li>
-            <li><a href="#Zunanje_naprave">Zunanje naprave</a>
-            <ul>
-            <li><a href="#Ustvarjanje_zagonskega_kljucka">Ustvarjanje
-            zagonskega ključka</a></li>
-            </ul></li>
-            <li><a href="#Omrezna_povezava">Omrežna povezava</a>
-            <ul>
-            <li><a href="#NetworkManager">NetworkManager</a></li>
-            <li><a href="#NMCLI_Network_Manager_Client">NMCLI (Network
-            Manager Client)</a></li>
-            <li><a href="#Eduroam">Eduroam</a></li>
-            </ul></li>
-            <li><a
-            href="#Pretvarjanje_zdruzevanje_datotek">Pretvarjanje/združevanje
-            datotek</a>
-            <ul>
-            <li><a href="#Spreminjanje_izvirne_datoteke">Spreminjanje
-            izvirne datoteke</a></li>
-            </ul></li>
-            <li><a href="#Streznik">Strežnik</a></li>
-            <li><a href="#Programi">Programi</a>
-            <ul>
-            <li><a href="#Terminal_jezik_Bash">Terminal (jezik
-            Bash)</a></li>
-            <li><a href="#ST_Simple_Terminal">ST (Simple
-            Terminal)</a></li>
-            <li><a href="#DWM_Dynamic_Window_Manager">DWM (Dynamic
-            Window Manager)</a></li>
-            <li><a href="#VIM">VIM</a></li>
-            <li><a href="#LF">LF</a></li>
-            <li><a href="#NCMPCPP">NCMPCPP</a></li>
-            <li><a href="#YT_DLP">YT-DLP</a></li>
-            <li><a href="#JOSM">JOSM</a></li>
-            </ul></li>
-            <li><a href="#Zunanje_povezave_in_viri">Zunanje povezave in
-            viri</a></li>
-            </ul></li>
-            </ul>
             <h1 id="Linux">Linux</h1>
             <p>Glej <a href="/vodic_skozi_namestitev_Linuxa">Vodič skozi
             namestitev Linuxa</a> za namestitev in ureditev okolja, kot
             ga imam jaz.</p>
             <ul>
-            <li><p><code>sudo shutdown</code> - ugasni se</p></li>
-            <li><p><code>sudo reboot</code> - ponovno se zaženi</p>
+            <li><code>sudo shutdown</code> - ugasni se</li>
+            <li><code>sudo reboot</code> - ponovno se zaženi
             <ul>
             <li><code>sudo shutdown -r now</code> - potem, ko se
             ugasneš, se znova prižgi (precej enako zgornjemu)</li>
             </ul></li>
-            <li><p><code>startx</code> - zažene strežnik X, oz. privzeti
+            <li><code>startx</code> - zažene strežnik X, oz. privzeti
             grafični prikaz (to je lahko DWM, GNOME, KDE,…); prebere
             datoteko <code>~/xinitrc</code>, kjer so ukazi, ki naj se
             izvršijo med zagonom, tudi ukaz za zagon grafičnega okolja
-            (<code>startx &amp;</code>)</p></li>
-            <li><p><code>locale</code> - preveri lokalizacijo sistema
-            (jezik, enote, …)</p></li>
-            <li><p><code>chmod</code> - spreminjanje dovoljenj
-            datotek</p>
+            (<code>startx &amp;</code>)</li>
+            <li><code>locale</code> - preveri lokalizacijo sistema
+            (jezik, enote, …)</li>
+            <li><code>chmod</code> - spreminjanje dovoljenj datotek
             <ul>
             <li><code>chmod +x datoteka</code> - dodeli datoteki
             izvšilne pravice, da jo lahko recimo zaženeš kot ukaz v
             terminalu</li>
             </ul></li>
-            <li><p><code>python 3 datoteka.py</code> - zaženi Python
-            datoteko</p></li>
-            <li><p><code>live server</code> - zažene lokalni strežnik,
-            brez dodatnih opredelitev odpre <em>index.html</em> v mapi,
-            kjer je bil ukaz izveden</p>
+            <li><code>python 3 datoteka.py</code> - zaženi Python
+            datoteko</li>
+            <li><code>live server</code> - zažene lokalni strežnik, brez
+            dodatnih opredelitev odpre <em>index.html</em> v mapi, kjer
+            je bil ukaz izveden
             <ul>
             <li><code>live server --open=pot/do/datoteke</code> - zažene
             lokalni strežnik in odpre izbrano datoteko</li>
             </ul></li>
-            <li><p><code>sudo dmidecode -t system</code> - izpiše
-            lastnosti računalniške opreme (diski, spomin, model
-            računalnika, …)</p></li>
+            <li><code>sudo dmidecode -t system</code> - izpiše lastnosti
+            računalniške opreme (diski, spomin, model računalnika,
+            …)</li>
             </ul>
             <h2 id="Upravljanje_programov">Upravljanje programov</h2>
             <ul>
@@ -508,49 +472,47 @@
             href="https://github.com/">GitHubom</a>, <a
             href="https://codeberg.org/">Codebergom</a>, …</p>
             <ul>
-            <li><p><code>git clone URL</code> - podvoji
-            <em>repozitorij</em> na URL-ju na svoj računalnik</p></li>
-            <li><p><code>git init</code> - ustvari mapo Gita</p></li>
-            <li><p><code>git checkout -b main</code> =
+            <li><code>git clone URL</code> - podvoji
+            <em>repozitorij</em> na URL-ju na svoj računalnik</li>
+            <li><code>git init</code> - ustvari mapo Gita</li>
+            <li><code>git checkout -b main</code> =
             <code>git branch main</code> +
             <code>git checkout main</code> - ustvari novo vejo z imenom
-            <em>main</em> in se nanjo priklopi</p></li>
-            <li><p><code>git add {datoteke}</code> - dodaj datoteke v
-            Git pred objavo</p></li>
-            <li><p><code>git commit</code> - ustvari objavo</p>
+            <em>main</em> in se nanjo priklopi</li>
+            <li><code>git add {datoteke}</code> - dodaj datoteke v Git
+            pred objavo</li>
+            <li><code>git commit</code> - ustvari objavo
             <ul>
             <li><code>-m "opomba" = *message*</code> -
             opomba/povzetek/sporočilo objave</li>
             </ul></li>
-            <li><p><code>git remote add origin URL</code> - opredeli
-            mesto objave (spletni naslov <em>repozitorija</em>; to je
-            potrebno le prvič)</p></li>
-            <li><p><code>git push -u origin main</code> - poveži
+            <li><code>git remote add origin URL</code> - opredeli mesto
+            objave (spletni naslov <em>repozitorija</em>; to je potrebno
+            le prvič)</li>
+            <li><code>git push -u origin main</code> - poveži
             <em>repozitorij</em> na računalniku in oddaljeni repozitorij
             (npr. na GitHubu, Codebergu), oz. objavi spremembe (vprašalo
-            te bo za up. ime in geslo)</p>
+            te bo za up. ime in geslo)
             <ul>
             <li><code>-u</code> = <em>upstream remote</em></li>
             <li><code>main</code> - nastavi vejo, na kateri objavljamo
             (<em>main</em> je ime glavne veje)</li>
             </ul></li>
-            <li><p><code>git status</code> - preveri stanje Gita -
-            primerja vsebino glede na oddaljeni
-            <em>repozitorij</em></p></li>
-            <li><p><code>git log</code> - izpiši zgodovino
-            objav</p></li>
-            <li><p><code>git pull</code> - prejme spremebe, narejene na
-            oddaljenem repozitoriju</p></li>
-            <li><p><code>git remote -v</code> - izpiše, kateri URL-ji se
-            uporabljajo za <code>remote</code></p></li>
-            <li><p><code>ssh -T git@github.com</code> - preveri povezavo
-            prek SSH (prek ključa)</p></li>
-            <li><p><code>ssh-add ~/.ssh/id_ed25519</code> - dodaj
-            ključ</p></li>
-            <li><p><code>ssh-add -l</code> - preveri ključe, dodane v
-            <code>agent</code></p></li>
-            <li><p><code>git diff &gt; spremembe.patch</code> - ustvari
-            datoteko s spremembami</p></li>
+            <li><code>git status</code> - preveri stanje Gita - primerja
+            vsebino glede na oddaljeni <em>repozitorij</em></li>
+            <li><code>git log</code> - izpiši zgodovino objav</li>
+            <li><code>git pull</code> - prejme spremebe, narejene na
+            oddaljenem repozitoriju</li>
+            <li><code>git remote -v</code> - izpiše, kateri URL-ji se
+            uporabljajo za <code>remote</code></li>
+            <li><code>ssh -T git@github.com</code> - preveri povezavo
+            prek SSH (prek ključa)</li>
+            <li><code>ssh-add ~/.ssh/id_ed25519</code> - dodaj
+            ključ</li>
+            <li><code>ssh-add -l</code> - preveri ključe, dodane v
+            <code>agent</code></li>
+            <li><code>git diff &gt; spremembe.patch</code> - ustvari
+            datoteko s spremembami</li>
             </ul>
             <h2 id="Streznik">Strežnik</h2>
             <p>Sinhronizacija s strežnikom (npr. pri Hetznerju):</p>
@@ -580,14 +542,14 @@
             Javni ključ moraš shraniti na strežniku v datoteko
             <em>.ssh/authorized_keys</em>.</p>
             <ul>
-            <li><p><code>ssh up_ime@tvoj_naslov_IP</code> - predstavi
+            <li><code>ssh up_ime@tvoj_naslov_IP</code> - predstavi
             strežniku svojo napravo (za uporabniško ime uporabi tisto s
-            K-jem, <em>K{deset števk}</em>)</p></li>
-            <li><p><code>ssh-add ~/.ssh/id_ed25519</code> - dodaj ključ
-            v <code>ssh-agent</code></p></li>
-            <li><p><code>curl {možnosti} URL</code> - pridobivanje
-            podatkov od oddaljenega strežnika ali pošiljanje podatkov
-            oddaljenemu strežniku</p>
+            K-jem, <em>K{deset števk}</em>)</li>
+            <li><code>ssh-add ~/.ssh/id_ed25519</code> - dodaj ključ v
+            <code>ssh-agent</code></li>
+            <li><code>curl {možnosti} URL</code> - pridobivanje podatkov
+            od oddaljenega strežnika ali pošiljanje podatkov oddaljenemu
+            strežniku
             <ul>
             <li><code>-L</code> - sledi preusmeritvam, dokler ne dospe
             do cilja</li>
@@ -684,39 +646,39 @@
             <p>Za tipko <em>Mod1</em> se običajno uporablja/nastavi
             tipka <em>Super</em>.</p>
             <ul>
-            <li><p><kbd>Ctrl+Shift+Q</kbd> – zaustavi DWM</p></li>
-            <li><p><kbd>F11</kbd> - celozaslonski način</p></li>
-            <li><p><kbd>Mod1+Shift+c</kbd> = <em>close</em> - zapri
-            trenutno okno</p></li>
-            <li><p><kbd>Mod1+Enter</kbd> - nastavi prvo okno pod glavnim
-            kot glavno</p></li>
-            <li><p><kbd>Mod1+j/k</kbd> - premikni se po oknih
-            naprej/nazaj</p></li>
-            <li><p><kbd>Mod1+Tab</kbd> - premikaj se med okni</p></li>
-            <li><p><kbd>Mod1+l/h</kbd> - povečaj/zmanjšaj širino
-            stranskih oken</p></li>
-            <li><p><kbd>Mod1+i/d</kbd> - povečaj/zmanjšaj število oken
-            kot glavna</p></li>
-            <li><p><kbd>Mod1+[0 - 9]</kbd> - preklopi delovno površino
-            (pod 0 so vsa odprta okna)</p></li>
-            <li><p><kbd>Mod1+Shift+[0 - 9]</kbd> - dodeli oknu drugo
-            oznako (tj. delovno površino; <kbd>Mod1+Shift+0</kbd> dodeli
-            oknu vse oznake 1 - 9)</p>
+            <li><kbd>Ctrl+Shift+Q</kbd> – zaustavi DWM</li>
+            <li><kbd>F11</kbd> - celozaslonski način</li>
+            <li><kbd>Mod1+Shift+c</kbd> = <em>close</em> - zapri
+            trenutno okno</li>
+            <li><kbd>Mod1+Enter</kbd> - nastavi prvo okno pod glavnim
+            kot glavno</li>
+            <li><kbd>Mod1+j/k</kbd> - premikni se po oknih
+            naprej/nazaj</li>
+            <li><kbd>Mod1+Tab</kbd> - premikaj se med okni</li>
+            <li><kbd>Mod1+l/h</kbd> - povečaj/zmanjšaj širino stranskih
+            oken</li>
+            <li><kbd>Mod1+i/d</kbd> - povečaj/zmanjšaj število oken kot
+            glavna</li>
+            <li><kbd>Mod1+[0 - 9]</kbd> - preklopi delovno površino (pod
+            0 so vsa odprta okna)</li>
+            <li><kbd>Mod1+Shift+[0 - 9]</kbd> - dodeli oknu drugo oznako
+            (tj. delovno površino; <kbd>Mod1+Shift+0</kbd> dodeli oknu
+            vse oznake 1 - 9)
             <ul>
             <li><kbd>od1+Shift+Ctrl+[0 - 9]</kbd> - dodeli oknu dodatno
             oznako poleg trenutne</li>
             </ul></li>
-            <li><p><kbd>MMod1+b</kbd> = <em>bar</em> - prikaži/skrij
-            zgornjo pasico</p></li>
-            <li><p><kbd>Mod1+m</kbd> - pojdi v način celozaslonskih
-            oken</p></li>
-            <li><p><kbd>Mod1+t</kbd> = <em>tiles</em> - pojdi v prikaz
-            oken v mozaičnem načinu</p></li>
-            <li><p><kbd>Mod1+Tab</kbd> - premikaj se med okni</p></li>
-            <li><p><kbd>Mod1+a</kbd> - odpre meni</p></li>
-            <li><p><kbd>Mod1+Shift+Enter</kbd> - odpre terminal</p></li>
-            <li><p><kbd>Ctrl++/-</kbd> - povečaj/pomanjšaj velikost
-            pisave</p></li>
+            <li><kbd>MMod1+b</kbd> = <em>bar</em> - prikaži/skrij
+            zgornjo pasico</li>
+            <li><kbd>Mod1+m</kbd> - pojdi v način celozaslonskih
+            oken</li>
+            <li><kbd>Mod1+t</kbd> = <em>tiles</em> - pojdi v prikaz oken
+            v mozaičnem načinu</li>
+            <li><kbd>Mod1+Tab</kbd> - premikaj se med okni</li>
+            <li><kbd>Mod1+a</kbd> - odpre meni</li>
+            <li><kbd>Mod1+Shift+Enter</kbd> - odpre terminal</li>
+            <li><kbd>Ctrl++/-</kbd> - povečaj/pomanjšaj velikost
+            pisave</li>
             </ul>
             <h3 id="VIM">VIM</h3>
             <p>Bližnjice:</p>
@@ -787,24 +749,22 @@
             <h3 id="LF">LF</h3>
             <p>Uporablja podobne bližnjice kot VIM:</p>
             <ul>
-            <li><p><kbd>r</kbd> = <em>rename</em> - preimenuj
-            predmet</p></li>
-            <li><p><kbd>y</kbd> = <em>yank</em> - kopiraj</p></li>
-            <li><p><kbd>d</kbd> - izreži</p></li>
-            <li><p><kbd>p</kbd> = <em>paste</em> - prilepi</p></li>
-            <li><p><kbd>c</kbd> = <em>clear</em> - prekliči ukaze
-            (kopiraj, izreži prilepi, … za izbrane predmete)</p></li>
-            <li><p><kbd>Space</kbd> - izberi/odizberi predmet</p></li>
-            <li><p><kbd>v</kbd> = <em>invert</em> - obrni izbor</p></li>
-            <li><p><kbd>u</kbd> = <em>unselect</em> - odizberi
-            vse</p></li>
-            <li><p><kbd>gg</kbd> - premakni se na vrh seznama
-            predmetov</p></li>
-            <li><p><kbd>Shift+g</kbd> - premakni se na dno seznama
-            predmetov</p></li>
-            <li><p><kbd>s</kbd> = <em>sort</em> - razvrsti</p></li>
-            <li><p><kbd>s</kbd> - razvrsti po …</p></li>
-            <li><p><kbd>z</kbd> - nastavi</p>
+            <li><kbd>r</kbd> = <em>rename</em> - preimenuj predmet</li>
+            <li><kbd>y</kbd> = <em>yank</em> - kopiraj</li>
+            <li><kbd>d</kbd> - izreži</li>
+            <li><kbd>p</kbd> = <em>paste</em> - prilepi</li>
+            <li><kbd>c</kbd> = <em>clear</em> - prekliči ukaze (kopiraj,
+            izreži prilepi, … za izbrane predmete)</li>
+            <li><kbd>Space</kbd> - izberi/odizberi predmet</li>
+            <li><kbd>v</kbd> = <em>invert</em> - obrni izbor</li>
+            <li><kbd>u</kbd> = <em>unselect</em> - odizberi vse</li>
+            <li><kbd>gg</kbd> - premakni se na vrh seznama
+            predmetov</li>
+            <li><kbd>Shift+g</kbd> - premakni se na dno seznama
+            predmetov</li>
+            <li><kbd>s</kbd> = <em>sort</em> - razvrsti</li>
+            <li><kbd>s</kbd> - razvrsti po …</li>
+            <li><kbd>z</kbd> - nastavi
             <ul>
             <li><kbd><strong>zh</kbd></strong> = <em>hidden</em> -
             skrij/prikaži skrite datoteke</li>
@@ -815,13 +775,12 @@
             <li><kbd><strong>zs</kbd></strong> = <em>size</em> - prikaži
             velikost datotek</li>
             </ul></li>
-            <li><p><kbd><strong>Super+w</kbd></strong> - odpri trenutno
-            mesto v terminalu</p></li>
-            <li><p><kbd>$</kbd> - odpre ukazno vrstico, kjer lahko
+            <li><kbd><strong>Super+w</kbd></strong> - odpri trenutno
+            mesto v terminalu</li>
+            <li><kbd>$</kbd> - odpre ukazno vrstico, kjer lahko
             uporabljaš ukaze terminala (le tako lahko npr. brišeš) -
-            <strong>ta bližnjica ni privzeto
-            nastavljena</strong></p></li>
-            <li><p><code>/iskalni_niz</code> - išči</p>
+            <strong>ta bližnjica ni privzeto nastavljena</strong></li>
+            <li><code>/iskalni_niz</code> - išči
             <ul>
             <li><kbd>n</kbd> / <kbd>Shift+n</kbd> - premikaj se
             naprej/nazaj po zadetkih iskanja</li>
@@ -1014,17 +973,9 @@
             </ul>
         </div>
     </main>
-    <hr>
     <footer>
         <button id="stikaloTeme">Preklopi barvni način strani</button>
-        <br><a id="linkMD" href="/markdown/knjiznica/Linux.md">Oglej si stran v Markdownu</a>
+        <br><a id="linkMD" href="/markdown/knjiznica/Linux.md">Stran v Markdownu</a>
     </footer>
-    </script><script async src="https://www.googletagmanager.com/gtag/js?id=G-TR1FD0790Y"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-TR1FD0790Y');
-    </script>
 </body>
 </html>

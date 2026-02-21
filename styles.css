@@ -25,13 +25,14 @@ body {
     color: var(--bOspredje);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 .content, nav {
-    width: 100%;
+    /*width: 100%;*/
     max-width: var(--vsebina);
     margin: auto;
+    padding: 1em;
 }
 
 header {
@@ -45,7 +46,8 @@ footer {
 }
 
 hr {
-    width: var(--vsebina);
+    width: 100%;
+    max-width: var(--vsebina);
     color: var(--bOspredjeNazaj);
     margin-top: 2em;
 }
@@ -158,6 +160,7 @@ button {
 }
 
 #datum {
+    color: var(--bOspredjeNazaj);
     font-size: small;
     text-align: center;
     padding-bottom: 1em;
@@ -186,13 +189,30 @@ button {
 
 @media print{
 	body{
-		max-width:none
+		max-width:none;
+        background: white;
+        color: black;
 	}
-    #stikaloTeme {
+    .content, nav {
+        max-width: 75ch;
+    }
+    #domov, svg, a {
+        color: black;
+    }
+    #datum {
+        color: lightgray;
+    }
+    #stikaloTeme, #linkMD {
         display: none;
     }
-    #naVrh {
-        display: none;
+    footer {
+        margin-bottom: 0;
+    }
+    table th, table td {
+        border-color: black;
+    }
+    tr:hover {
+        background-color: None;
     }
 }
 
