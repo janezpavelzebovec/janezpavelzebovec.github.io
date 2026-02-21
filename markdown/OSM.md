@@ -1,5 +1,5 @@
 ---
-title: Oznake v OSM
+title: OpenStreetMap
 date: 2025-12-31
 description: Nekaj izbranih oznak za označevanje v OpenStretMap
 keywords: OpenStreetMap

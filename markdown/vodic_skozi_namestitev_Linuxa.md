@@ -302,8 +302,6 @@ Uporablja se za risanje najrazličnejših grafov
 
 - `sudo apt install python3-matplotlib` – namestitev knjižnice
 
----
-
 ## Kaj je treba še dodati v vodič:
 
 - namesti udisks2 (za udisksctl) za nameščanje ključka
@@ -312,6 +310,8 @@ Uporablja se za risanje najrazličnejših grafov
     - ponovni zagon sxhkd: `pkill -usr1 -x sxhkd`
 
 - `chmod +x pot/do/programčka` – podeli datoteki izvršilne pravice
+
+---
 
 ## Namestitev strežnika
 

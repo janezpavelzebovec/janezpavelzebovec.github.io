@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-02-11
+date: 2026-02-21
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -324,6 +324,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [FEDx Talks](https://www.youtube.com/@TEDx) – krajši govori o različnih temah
 - [Fern](https://www.youtube.com/@fern-tv) – *dokumentarni filmi*
 - [Jedi Brooks](https://www.youtube.com/@jedibrooks7235) – *kritik* današnjega slabega pisanja zgodb v filmih
+- [Josh the Intern](https://www.youtube.com/@joshtheintern) – raziskuje razne odmaknjene kraje po svetu, večinoma *arheološka* območja, ki jih najde na Google Earth
 - [Sheehan Quirke](https://www.youtube.com/@SheehanQuirke) – *estetika*?
 - [SpaceX](https://www.youtube.com/@SpaceX) – vesoljsko podjetje
 - [The Woke Critic](https://www.youtube.com/@thewokecritic) - ocene filmov (predvsem kritika novejših trnedov v filmih) na zabaven način

@@ -1,6 +1,6 @@
 ---
 title: Slovenske pisave
-date: 2025-12-30
+date: 2026-02-21
 description: Pisave, v katerih se je skozi zgodovino zapisoval slovenski jezik
 keywords: slovenščina, pisave, slovenske zgodovinske pisave
 author: Janez Pavel Žebovec
@@ -8,7 +8,6 @@ author: Janez Pavel Žebovec
 
 # Slovenske pisave
 
-</div>
 <div class="metelcica3">
 
 | izgovor | bohoričica (~1550–1839) | metelčica (1825–1833) | dajnčica (1824–1839) | slovenska gajica (1839–) |
@@ -41,14 +40,13 @@ author: Janez Pavel Žebovec
 | /š/ [ʃ]       | **SH/ŞH ſh**  | **Š š**   | **Ȣ ȣ**   | Š š       |
 | /t/           | T t           | T t       | T t       | T t       |
 | /u/           | **V**/U u     | U u       | U u       | U u       |
-| /ü/ [ʏ]       |               |           | **Y y**   | Ü ü       |
+| /ü/ [ʏ]       |               |           | **Y y**   | (Ü ü)     |
 | /v/ (/w/)     | V v           | V v       | V v       | V v       |
 | /z/           | **S s**       | **Z z**   | Z z       | Z z       |
 | /ž/ [ʒ]       | **SH sh**     | **Ž ž**   | **X x**   | Ž ž       |
-| /šč/ [ʃtʃ]    |               | **Ć ć**   | **Ȣч ȣч** | Šč šč     |
+| /šč/ [ʃtʃ]    | SHzh/ŞHzh ſhzh| **Ć ć**   | Ȣч ȣч     | Šč šč     |
 
 </div>
-<div class="content">
 
 Bohoričico je v njeni prvi, nedosledni obliki uporabljal Primož Trubar, najprej v *Abecedniku* in *Katekizmu* leta 1550. Adam Bohorič je v *Zimskih uricah* leta 1584 določil pravopisna pravila zanjo
 
