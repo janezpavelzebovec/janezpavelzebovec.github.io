@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-02-17
+date: 2026-02-24
 description: Prepovedane tujke v visoki slovenščini
 keywords: visoka slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
@@ -19,6 +19,7 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 - *longitudinalno* > vzdolžno
 - *ortogonalen* > pravokoten
 - *paralelen* > vzporeden
+- *privaten*, *privat* > zaseben
 - *problem* > težava
 - *sediment* > usedlina
 - *simetrija*, *simetričnost* > somernost

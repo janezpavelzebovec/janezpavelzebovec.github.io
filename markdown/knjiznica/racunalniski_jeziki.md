@@ -140,6 +140,8 @@ Z nazaj nagnjeno poševnico `\` lahko ubežiš določenim znakom, če nočeš, d
 
 ## LaTeX
 
+`\usepackage[slovene]{babel}` – uporabi slovenske oznake slik (*Slika* namesto *Figure*)
+
 V glavi *dokumenta* določiš vrsto dokumenta, lahko tudi lastne velikosti strani in pisave
 (npr. velikost strani A4, velikost pisave 12 in vrsta članka):
 
@@ -184,6 +186,71 @@ Poglavja:
 
 V *dokumentu* vrst `book` in `report` obstaja še `\chapter{Naslov poglavja}`.
 
+    Zadeva z imenom \label{ime}
+    Sklicujem se na zadevo \ref{ime}
+    Citiram \cite{ime_članka}
+
+`\\` – v novo vrstico, ne pa v nov odstavek
+`\,` – majhen pozitivni presledek
+    
+    \vspace{10mm}
+    \\[10mm]
+
+    {\it ležeče}
+    {\bf krepko}
+    {\large veliko}
+    {\LARGE ogromno}
+
+    \begin{itemize}
+        \item prvi
+        \item drugi
+    \end{itemize}
+
+    \begin{enumerate}
+        \item prvi
+        \item drugi
+    \end{enumerate}
+
+    $vrstična enačba$
+    $$
+        razdelek enačb
+    $$
+
+    \begin{equation}
+        Enačba, na katero se lahko sklicujem
+    \end{equation}
+
+    \begin{eqnarray}
+        Večvrstična enačba
+        zadeve $=$ zaadeve sedno od sredinsko poravnanega enačaja
+    |end{
+
+`\!` – majhen negativni presledek
+`\rm` – navadno besedilo (*roman*)
+`\quad` – razmik znotraj vrstice
+
+`\dots` – tri pike
+`\approx` – je približno
+`\sim` – je podobno
+`\times` – vektorski produkt
+
+    \beegin{figure}[h]
+    \begin{center}
+        \includegraphics[width=6cm]{naslov_slike_1.png}\\
+        \includegraphics[width=6cm]{naslov_slike_2.png}
+    \caption{Opis slike}
+    \end{center}
+    \end{figure}
+
+    \begin{figure}
+        \subfigure{\includegraphics{naslov_slike_1.png}
+        \subfigure{\includegraphics{naslov_slike_2.png}
+    \end{figure}
+
+    \begin{thebibliography}
+        \bibitem{članek} Naslov in podatki članka
+    |end{thebibliography}
+    
 ---
 
 ## Zunanje povezave in viri

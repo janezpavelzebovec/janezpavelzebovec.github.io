@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-02-21
+date: 2026-03-01
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -28,6 +28,7 @@ Moja *priporočila* (precej nepopolna)
 - [Na prostem, zadruga za odprto kodo](https://www.na-prostem.si/)
 - [Odysee](https://odysee.com/)
 - [Statistični urad Republike Slovenije](https://www.stat.si/)
+- [Yewtu.be](https://yewtu.be/) – odjemalec YouTuba
 
 ### Nepridobitne organizacije
 
@@ -75,6 +76,7 @@ Glej tudi stran [Računstvo](knjiznica/racunstvo).
 ### Racunalnistvo
 
 - [AI 2027](https://ai-2027.com/)
+- [Exodus](https://reports.exodus-privacy.eu.org/) – pregled zasebnosti, dovoljenj, ki jih potrebujejo dlančniška orodja
 
 #### Programiranje
 
@@ -178,6 +180,7 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 
 ###### Druga spletna mesta za urejanje OSM, oz. projekti OSM
 
+- [WikiBelize](https://wikibelize.org/)
 - [How did you contribute to OpenStreetMap?](https://hdyc.neis-one.org/) – *statistika* urejanj po urejevalcih (in državah)
 - [Humanitarian OpenStreetMap Team (HOT)](https://www.hotosm.org/) – *kartiranje* območij ob (naravnih) nesrečah, revnih območij / območij v razvoju
 - [MapRoulette](https://maproulette.org/) – razni projekti, običajno za popravljanje nedoslednosti pri označevanju 
@@ -278,7 +281,7 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 - [Glossika Phonics](https://www.youtube.com/@GlossikaPhonics) - izgovorjava v mednarodni glasoslovni abecedi z *animacijami*
 - [Omniglot](https://www.omniglot.com/) - *enciklopedija* pisav in jezikov
 
-### Glasba
+### Glasbeniki
 
 - 2 Cellos: [Spotify](https://open.spotify.com/artist/6Fi8CHfO8WGtu3yO8c2Mc4),
 [You Tube](https://www.youtube.com/@2CELLOSlive)
@@ -433,6 +436,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Charlie Kirk](https://www.youtube.com/@RealCharlieKirk) - zagovornik Trumpa, prepovedi splava
 - [The Crucible](https://www.youtube.com/@The_Crucible) – Andrew Wilson
 - [Daily Dose Of Wisdom](https://www.youtube.com/@Daily_Dose_Of_Wisdom)
+- [The Fallen State](https://www.youtube.com/@TheFallenStateTV) – *intervuji* z raznimi osebnostmi, večinoma s strani *liberalcev*
 - [Jaiden Forrest](https://www.youtube.com/@JaidenForrest)
 - [The Long Now Foundation](https://www.youtube.com/@longnow)
 - [Luke Smith](https://www.youtube.com/@LukeSmithxyz) - programstvo (Linux), modroslovje (*filozofija*), pravoslavstvo?
@@ -449,7 +453,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 
 #### Glasba
 
-- [Emmanuel House Münster](https://www.youtube.com/@emmanuelhousemuenster)
+- [Adam Neely](https://www.youtube.com/@AdamNeely)
 
 #### Književnost
 

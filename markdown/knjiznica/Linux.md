@@ -1,6 +1,6 @@
 ---
 title: Linux
-date: 2026-01-05
+date: 2026-02-21
 description:
 keywords: programska oprema, Linux, programi
 author: Janez Pavel Žebovec
@@ -98,6 +98,14 @@ Zagonski ključek je običajno potreben pri nameščanju operacijskega sistema.
 - `sudo dd if=pot/do/datoteke.iso of=/dev/sdb` Dodatne možnosti (*parametri*) ukaza:
     - `status='progres` – sproti kaže napredek pri zapisovanju operacijskega sistema an ključek
     - `oflag=sync`
+
+#### Ventoy
+
+- `sudo bash VentoyWeb.sh`
+- v brskalniku odpri <http://127.0.0.1:24680> in namesto Ventoy na izbrani zunanji pogon
+- `sudo partprobe /dev/sda` (sda oz. kakršno ime ima tvoj pogon) – znova preveri *particijsko* preglednico pogona, da izpiše tudi novo ustvarjene *particije*
+- kopiraj sliko v eno od dveh particij, ki se imenuje *Ventoy*
+- odklopi pogon
 
 ## Omrežna povezava
 

@@ -1,6 +1,6 @@
 ---
 title: Naravoslovje
-date: 2026-01-29
+date: 2026-03-02
 description: Naravni zakoni
 keywords: naravoslovje, fizika
 author: Janez Pavel Žebovec
@@ -375,6 +375,29 @@ $$ \frac{F_2}{F_1} = \frac{S_2}{S_1} $$
 Vzgon – nasprotno enak teži izpodrinjene tekočine:
 $$ \Delta p = \rho  g h $$
 $$ \vec F_{vzg} = \int p_{hidrostat.} \d \vec S $$
+
+Bernoullijeva enačba:
+$$ A_{tek.} = - \Delta p V = \Delta W_k + \Delta W_pg = \rho V \Delta (\frac{v_2}{2} + \rho V g \Delta h $$
+$$ \frac{1}{2} \rho v_1^2 + \rho g h_1 + p_1 = stalno $$
+
+$$ \frac{S_1}{S_2} = \frac{v_1}{v_2} $$
+
+*Gradient* hitrosti zaradi strižnih sil:
+$$ \frac{F}{S} = \eta \frac{\d v_y}{\d x}
+
+Upor:
+
+- *linerani* zakon (Stokes): $F_u^{(1)} = 6 \pi R \eta v$
+- kvadratni zakon: $F_u^{(2)} = \frac{1}{2} \rho v^2 \pi R^2 C_u$
+
+#### *Laminaren* in *turbolentni* tok
+
+Reynoldsovo število:
+$$ {Re} = \frac{\rho}{\eta} 2R v $$
+
+- ${Re} < 0.1$: *laminaren* tok, *linearni* zakon upora
+- $0,1 < {Re} < 10^3$: mešani tok
+- $10^3 < {Re}$: *turbolentni* tok, kvadratni zakon upora
 
 ### Računanje z negotovostmi
 

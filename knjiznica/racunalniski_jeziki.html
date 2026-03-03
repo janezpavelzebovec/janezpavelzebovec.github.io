@@ -222,6 +222,9 @@ računalnik zna ustrezno upoštevati"/>
             <li><code>|</code> - navpičnica v preglednicah</li>
             </ul>
             <h2 id="LaTeX">LaTeX</h2>
+            <p><code>\usepackage[slovene]{babel}</code> – uporabi
+            slovenske oznake slik (<em>Slika</em> namesto
+            <em>Figure</em>)</p>
             <p>V glavi <em>dokumenta</em> določiš vrsto dokumenta, lahko
             tudi lastne velikosti strani in pisave (npr. velikost strani
             A4, velikost pisave 12 in vrsta članka):</p>
@@ -262,6 +265,64 @@ Vsa moja vsebina (besedilo).
             <p>V <em>dokumentu</em> vrst <code>book</code> in
             <code>report</code> obstaja še
             <code>\chapter{Naslov poglavja}</code>.</p>
+            <pre><code>Zadeva z imenom \label{ime}
+Sklicujem se na zadevo \ref{ime}
+Citiram \cite{ime_članka}</code></pre>
+            <p><code>\\</code> – v novo vrstico, ne pa v nov odstavek
+            <code>\,</code> – majhen pozitivni presledek</p>
+            <pre><code>\vspace{10mm}
+\\[10mm]
+
+{\it ležeče}
+{\bf krepko}
+{\large veliko}
+{\LARGE ogromno}
+
+\begin{itemize}
+    \item prvi
+    \item drugi
+\end{itemize}
+
+\begin{enumerate}
+    \item prvi
+    \item drugi
+\end{enumerate}
+
+$vrstična enačba$
+$$
+    razdelek enačb
+$$
+
+\begin{equation}
+    Enačba, na katero se lahko sklicujem
+\end{equation}
+
+\begin{eqnarray}
+    Večvrstična enačba
+    zadeve $=$ zaadeve sedno od sredinsko poravnanega enačaja
+|end{</code></pre>
+            <p><code>\!</code> – majhen negativni presledek
+            <code>\rm</code> – navadno besedilo (<em>roman</em>)
+            <code>\quad</code> – razmik znotraj vrstice</p>
+            <p><code>\dots</code> – tri pike <code>\approx</code> – je
+            približno <code>\sim</code> – je podobno <code>\times</code>
+            – vektorski produkt</p>
+            <pre><code>\beegin{figure}[h]
+\begin{center}
+    \includegraphics[width=6cm]{naslov_slike_1.png}\\
+    \includegraphics[width=6cm]{naslov_slike_2.png}
+\caption{Opis slike}
+\end{center}
+\end{figure}
+
+\begin{figure}
+    \subfigure{\includegraphics{naslov_slike_1.png}
+    \subfigure{\includegraphics{naslov_slike_2.png}
+\end{figure}
+
+\begin{thebibliography}
+    \bibitem{članek} Naslov in podatki članka
+|end{thebibliography}</code></pre>
             <hr />
             <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in
             viri</h2>
