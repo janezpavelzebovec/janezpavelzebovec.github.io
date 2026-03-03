@@ -1,6 +1,6 @@
 ---
 title: Računalniški jeziki
-date: 2026-02-17
+date: 2026-03-03
 description: Skladnje, oz. zapisovanja, ki jih računalnik zna ustrezno upoštevati
 keywords: programiranje, programski jeziki
 author: Janez Pavel Žebovec
@@ -250,6 +250,50 @@ V *dokumentu* vrst `book` in `report` obstaja še `\chapter{Naslov poglavja}`.
     \begin{thebibliography}
         \bibitem{članek} Naslov in podatki članka
     |end{thebibliography}
+
+## Python
+
+    import knjižnica
+    import knjižnca as mojVzdevekKnjižnice
+    import knjižnica.podknjižnica
+
+    np.savetxt(ime_datoteke,
+        podatki,
+        delimiter=' '
+        header='Moj naslov'
+    )
+    np.loadtxt()
+
+### Matplotlib
+
+    import numpy as np
+    import matplotlib as mpl
+    import matplotlib.pyplot as plt
+
+    plt.plot(x, y,
+        lebel='Ime izrisa',
+        linewidth=0.5
+    )
+    plt.hlines()
+    plt.vlines()
+    plt.xticks()
+    plt.yticks()
+    plt.fill_between()
+    plt.axvspan()
+
+    plt.xscale('log')
+    plt.yscale('lof')
+
+    plt.title('Naslov grafa')
+    plt.xlabel('Ime osi X')
+    plt.ylabel('Ime osi Y')
+    plt.legend()
+
+    plt.savefig('Ime_datoteke_z_grafom.pdf')
+
+### Scipy
+
+    import scipy.optimize as opt
     
 ---
 
