@@ -30,7 +30,7 @@ računalnik zna ustrezno upoštevati"/>
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-02-17">2026-02-17</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-03-03">2026-03-03</time></p>
     </header>
     <nav>
         <ul>
@@ -38,6 +38,11 @@ računalnik zna ustrezno upoštevati"/>
         <ul>
         <li><a href="#MD_Markdown">MD (Markdown)</a></li>
         <li><a href="#LaTeX">LaTeX</a></li>
+        <li><a href="#Python">Python</a>
+        <ul>
+        <li><a href="#Matplotlib">Matplotlib</a></li>
+        <li><a href="#Scipy">Scipy</a></li>
+        </ul></li>
         <li><a href="#Zunanje_povezave_in_viri">Zunanje povezave in
         viri</a></li>
         </ul></li>
@@ -268,8 +273,8 @@ Vsa moja vsebina (besedilo).
             <pre><code>Zadeva z imenom \label{ime}
 Sklicujem se na zadevo \ref{ime}
 Citiram \cite{ime_članka}</code></pre>
-            <p><code>\\</code> – v novo vrstico, ne pa v nov odstavek
-            <code>\,</code> – majhen pozitivni presledek</p>
+            <p><code>\\</code>– v novo vrstico, ne pa v nov odstavek
+            <code>\</code>– majhen pozitivni presledek</p>
             <pre><code>\vspace{10mm}
 \\[10mm]
 
@@ -323,6 +328,51 @@ $$
 \begin{thebibliography}
     \bibitem{članek} Naslov in podatki članka
 |end{thebibliography}</code></pre>
+            <h2 id="Python">Python</h2>
+            <pre><code>import knjižnica
+import knjižnca as mojVzdevekKnjižnice
+import knjižnica.podknjižnica
+
+np.savetxt(ime_datoteke,
+    podatki,
+    delimiter=&#39; &#39;
+    header=&#39;Moj naslov&#39;
+)
+np.loadtxt()</code></pre>
+            <h3 id="Matplotlib">Matplotlib</h3>
+            <pre><code>import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots(st_vrstic, st_stolpcev) # več grafov na list
+
+ax2 = ax.twinx() # dvojna os y
+
+plt.plot(x, y,
+    lebel=&#39;Ime izrisa&#39;,
+    linewidth=0.5
+)
+plt.hlines()
+plt.vlines()
+plt.xticks()
+plt.yticks()
+plt.fill_between()
+plt.axvspan()
+
+plt.xscale(&#39;log&#39;)
+plt.yscale(&#39;lof&#39;)
+plt.axis(&#39;equal&#39;) # enako velike enote osi
+
+plt.title(&#39;Naslov grafa&#39;)
+plt.xlabel(&#39;Ime osi X&#39;)
+plt.ylabel(&#39;Ime osi Y&#39;)
+plt.legend()
+
+plt.savefig(&#39;Ime_datoteke_z_grafom.pdf&#39;)</code></pre>
+            <h3 id="Scipy">Scipy</h3>
+            <pre><code>import scipy.optimize as opt
+
+opt.curve_fit(fun, x, y, ugibanje)</code></pre>
             <hr />
             <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in
             viri</h2>

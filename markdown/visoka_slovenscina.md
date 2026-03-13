@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-02-18
+date: 2026-03-08
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 ---
@@ -45,7 +45,6 @@ Tu so navedene nekatere sprejete (a ne nujno – več – uveljavljene/uporablja
 - **hranilnica** < *banka*
 - **ljudovlada** (ustrezneje *ljudstvovlada*? – neuveljavljeno) < *republika*, *demokracija* <small>(it./nem. < frc. < lat.; nem. < frc. < lat. < gr.))</small>
 - **pogon** (gonilna sila, gibalo, pogonski stroj) < *motor*
-- **potno usmerjanje** < *navigacija*
 - **ravnik** < *ekvator*
 - **veljava** < *valuta* <small>(nem. < it.)</small>
 - **stálnica** < *konstanta* (nasploh in npr. matematična, fizikalna)
@@ -153,17 +152,19 @@ Tu je seznam mojih (precej dokončnih) predlogov za nove besede:
 - **gôn** < *energija* <small>(< nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč)</small>
 - **naravoslôvje**, stvárnoslovje?, tvarnoslovje? < *fizika* <small>(< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
 - **prostóroslôvje** < *geometrija*
+- **pótno usmérjanje** < *navigacija*
 - **rázspôlnik, razspôlništvo** < *LGBTQ ...* (kot motnja v spolnem razvoju, ko posameznik nima pravilno razvitih spolnih značilnostih zaradi prirojenih motenj ali **samorazspoljenja**, ki je pogosto družbeno pogojeno)
 - **prespǒljenje, prêspolnik** < *transseksualnost, transseksualec*
 - **rod otrok blaginje** < *babyboom generacija*
 - **vóz** (**sámogôn**) < *avtomobil/avto* <small>(< nem. *Auto/Automobil*; fran. *auto/automobile* < gr. *autós* = *sam*, lat. *mōbilis* = *premičen*)</small>
-- **sámovoz** < *avtonomni avtomobil/avto*
+- **sámovóz** < *avtonomni avtomobil/avto*
 - **síto** < *filter*
 - **snôvoslôvje** < *kemija*
 - **sprejémnik zvóka, zvókosprejémnik** < *mikrofon*
 - **tresávec** < *vibrant*
 - **vêlecésta** < *avtocesta*
 - **vesóljeslôvje** < *kozmologija*
+- **vrh** < *ekstrem* (*funkcije*)
 - **zemlják** < *krompir*
 - **zemljevidopis** < *kartografija*
 
@@ -171,11 +172,12 @@ Tu je seznam mojih (precej dokončnih) predlogov za nove besede:
 
 Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge zamisli, ali pa sploh še nimajo ustreznice, a se zelo uporabljane in potrebne:
 
+- uštevilčiti, vračunalčiti? < *digitalizirati*
 - **(napihljivi) mehur** < *balon*
 - svetlo(bo)stav(ba)? < *fotosinteza*
 - **številčno, (računalniško)** < *digitalno*, *digitalizirati*
 - **mnógovôz** < *avtobus*
-- *plaža*
+- kopališko obrežje? (s peskom?) < *plaža*
 - **slikonôs** < *televizija* <small>(< ang. *television*; fran. *télévision* < *tē̃le* = *daleč, v daljavi* + lat. *vīsiō* = *pogled, gledanje*)</small>
 - *park*
 - *piknik*

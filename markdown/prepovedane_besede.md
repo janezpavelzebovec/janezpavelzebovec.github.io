@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-02-24
+date: 2026-03-12
 description: Prepovedane tujke v visoki slovenščini
 keywords: visoka slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
@@ -13,6 +13,7 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 - *definicija* > opredelitev, določitev/določba
 - *eksitacija* > vzbuditev
 - *horizontalno*, *horizontala* > vodoravno, vodoravnica
+- *integracija*, *integriranost* > vključitev, (združitev); povezanost, vključenost, združenost
 - *karcinogen* > rakotvoren
 - *konkaven* > vbočen, vbokel
 - *konveksen* > izbočen, izbokel
@@ -32,9 +33,11 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 ## Računstvo
 
 - *formula* > (stalna) enačba
+- *funkcija* > preslikava
 - *iteracija* > ponovitev, ponavljanje
 - *komponenta* > del
 - *kvocient* > količnik
+- *produkt* > zmnožek
 
 Lastnosti *operacij*:
 
@@ -48,16 +51,20 @@ Lastnosti *operacij*:
 
 ## Naravoslovje
 
+- *biologija* > živoslovje
 - *gravitacija* > težnost
     - sila *gravitacije* > težnost
+- *koeficinet* > (stalni) količnik
 - *torzija* > vzvoj
 
 ## Računalništvo
 
-- *ekran*, *monitor* > zaslon
+- *ekran*, *monitor* > (računalniški/...) zaslon
+- *font* > (slog/družina/vrsta) pisave
 
 ## Jezikoslovje
 
+- *inklinacija* > naklon
 - *ligvistika* > jezikoslovje
 
 ### Skloni

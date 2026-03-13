@@ -190,8 +190,8 @@ V *dokumentu* vrst `book` in `report` obstaja še `\chapter{Naslov poglavja}`.
     Sklicujem se na zadevo \ref{ime}
     Citiram \cite{ime_članka}
 
-`\\` – v novo vrstico, ne pa v nov odstavek
-`\,` – majhen pozitivni presledek
+`\\`– v novo vrstico, ne pa v nov odstavek
+`\`– majhen pozitivni presledek
     
     \vspace{10mm}
     \\[10mm]
@@ -270,6 +270,10 @@ V *dokumentu* vrst `book` in `report` obstaja še `\chapter{Naslov poglavja}`.
     import matplotlib as mpl
     import matplotlib.pyplot as plt
 
+    fig, ax = plt.subplots(st_vrstic, st_stolpcev) # več grafov na list
+
+    ax2 = ax.twinx() # dvojna os y
+
     plt.plot(x, y,
         lebel='Ime izrisa',
         linewidth=0.5
@@ -283,6 +287,7 @@ V *dokumentu* vrst `book` in `report` obstaja še `\chapter{Naslov poglavja}`.
 
     plt.xscale('log')
     plt.yscale('lof')
+    plt.axis('equal') # enako velike enote osi
 
     plt.title('Naslov grafa')
     plt.xlabel('Ime osi X')
@@ -294,6 +299,8 @@ V *dokumentu* vrst `book` in `report` obstaja še `\chapter{Naslov poglavja}`.
 ### Scipy
 
     import scipy.optimize as opt
+
+    opt.curve_fit(fun, x, y, ugibanje)
     
 ---
 
