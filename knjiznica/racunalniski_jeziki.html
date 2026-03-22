@@ -30,7 +30,7 @@ računalnik zna ustrezno upoštevati"/>
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-03-03">2026-03-03</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-03-17">2026-03-17</time></p>
     </header>
     <nav>
         <ul>
@@ -42,6 +42,7 @@ računalnik zna ustrezno upoštevati"/>
         <ul>
         <li><a href="#Matplotlib">Matplotlib</a></li>
         <li><a href="#Scipy">Scipy</a></li>
+        <li><a href="#SymPy">SymPy</a></li>
         </ul></li>
         <li><a href="#Zunanje_povezave_in_viri">Zunanje povezave in
         viri</a></li>
@@ -372,7 +373,18 @@ plt.savefig(&#39;Ime_datoteke_z_grafom.pdf&#39;)</code></pre>
             <h3 id="Scipy">Scipy</h3>
             <pre><code>import scipy.optimize as opt
 
-opt.curve_fit(fun, x, y, ugibanje)</code></pre>
+popt, pcov = opt.curve_fit(fun, X, Y, Ugibanje_vseh_parametrov,  sigma=utezi_negotovosti)</code></pre>
+            <h3 id="SymPy">SymPy</h3>
+            <p>Simbolno računanje (poenostavljanje, razširjanje enačb s
+            spremenljivkami)</p>
+            <pre><code>impoert sympy as sp
+
+sp.simplify(izraz) # poenostavljanje
+
+sp.diff(izraz, po, red_odvoda) # odvajanje
+sp.diff(izrat, (po, red), (po, red)) # mešani odvod
+
+sp.oo # neskočno</code></pre>
             <hr />
             <h2 id="Zunanje_povezave_in_viri">Zunanje povezave in
             viri</h2>

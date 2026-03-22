@@ -1,6 +1,6 @@
 ---
 title: Vodič skozi namestitev Linuxa
-date: 2026-02-13
+date: 2026-03-15
 description: Namestitev Linux Debiana, kot ga uporabljam jaz sam
 keywords: Linux, namestitev operacijskega sistema
 author: Janez Pavel Žebovec
@@ -294,13 +294,18 @@ Zagon novega *operacijskega sistema*:
 
 `sudo apt install imagemagick xclip` – namesti programa za zajem posnetka zaslona (za bližnjice glej [~/.config/sxhkd/sxhkdrc](https://codeberg.org/JanezPavelZebovec/My_Linux_configs/src/branch/main/~/.config/sxhkd/sxhkdrc))
 
-### Knjižnice za Python
+### Računalniški jeziki in njihove knjižnice
 
-#### Matplotlib
-
-Uporablja se za risanje najrazličnejših grafov
-
-- `sudo apt install python3-matplotlib` – namestitev knjižnice
+- Python
+    - `sudo apt install python3-matplotlib` – Matplotlib (za risanje raznih grafov)
+    - `sudo apt install python3-uncertainties` – računanje z negotovostmi
+    - `sudo apt install python3-scipy`
+- Latex
+    - `sudo apt install texlive-fonts-recommended` – paket priporočenih pisav
+    - `sudo apt install texlive-latex-extra`
+    - `sudo apt install texlive-latex-base`
+    - `sudo apt install texlive-lang-european` – evropski jezikovni paket
+    - `sudo apt install texlive-science` – znanstveni paket
 
 ## Kaj je treba še dodati v vodič:
 

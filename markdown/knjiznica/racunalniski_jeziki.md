@@ -1,6 +1,6 @@
 ---
 title: Računalniški jeziki
-date: 2026-03-03
+date: 2026-03-17
 description: Skladnje, oz. zapisovanja, ki jih računalnik zna ustrezno upoštevati
 keywords: programiranje, programski jeziki
 author: Janez Pavel Žebovec
@@ -300,7 +300,20 @@ V *dokumentu* vrst `book` in `report` obstaja še `\chapter{Naslov poglavja}`.
 
     import scipy.optimize as opt
 
-    opt.curve_fit(fun, x, y, ugibanje)
+    popt, pcov = opt.curve_fit(fun, X, Y, Ugibanje_vseh_parametrov,  sigma=utezi_negotovosti)
+
+### SymPy
+
+Simbolno računanje (poenostavljanje, razširjanje enačb s spremenljivkami)
+
+    impoert sympy as sp
+
+    sp.simplify(izraz) # poenostavljanje
+
+    sp.diff(izraz, po, red_odvoda) # odvajanje
+    sp.diff(izrat, (po, red), (po, red)) # mešani odvod
+
+    sp.oo # neskočno
     
 ---
 

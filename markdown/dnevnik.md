@@ -1,6 +1,6 @@
 ---
 title: Dnevnik
-date: 2026-03-06
+date: 2026-03-16
 description: Tu beležim svoj napredek pri projektih in nekatere druge stvari
 ---
 
@@ -22,4 +22,6 @@ Glej tudi dnevniške zapise [na OSM-ju](https://www.openstreetmap.org/user/Janez
 - 2025-10-14–2026-01-16: prevod [CoMapsa](https://www.comaps.app/) v slovenščino
 - 2026-01-23: bolj zares sem začel delati na prilagoditvi obtoječega uvoza GURS-ovih zgradb in naslovov v OpenStreetMap za uvoz v [OpenHistoricalMap](https://www.openhistoricalmap.org/)
 - 2026-02-24–2026-02-25: [moj prevod](https://github.com/gsantner/markor/pull/2745) [Markorja](https://github.com/gsantner/markor) v slovenščino
-- 2'26-03-06: [moj prevod](https://github.com/gsantner/markor/pull/2745) [Markorja](https://github.com/gsantner/markor) v slovenščino je bil sprejet
+- 2026-03-06: [moj prevod](https://github.com/gsantner/markor/pull/2745) [Markorja](https://github.com/gsantner/markor) v slovenščino je bil sprejet
+- 2026-03-09: v OpenHistoricalMap sem uvozil vse GURS-ove naslove Slovenije
+- 2026-03-16: v OpenHistoricalMap sem uvozil prvo občino zgradb (ročno) – Medvode

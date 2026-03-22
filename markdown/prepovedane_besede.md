@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-03-12
+date: 2026-03-17
 description: Prepovedane tujke v visoki slovenščini
 keywords: visoka slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
@@ -10,14 +10,19 @@ author: Janez Pavel Žebovec
 
 Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne sveže skovanimi) in so zato v visoki slovenščini prepovedane.
 
+- *agronomija* > kmetijstvo
+- *atmosfera* > ozračje
 - *definicija* > opredelitev, določitev/določba
+- *ekran* > (računalniški/dlančniški/drugi) zaslon
 - *eksitacija* > vzbuditev
 - *horizontalno*, *horizontala* > vodoravno, vodoravnica
 - *integracija*, *integriranost* > vključitev, (združitev); povezanost, vključenost, združenost
 - *karcinogen* > rakotvoren
+- *koeficient* > (stalni?) količnik
 - *konkaven* > vbočen, vbokel
 - *konveksen* > izbočen, izbokel
 - *longitudinalno* > vzdolžno
+- *monitor* > (računalniški) zaslon
 - *ortogonalen* > pravokoten
 - *paralelen* > vzporeden
 - *privaten*, *privat* > zaseben
@@ -29,6 +34,21 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 - *transverzalno* > prečno
 - *univerza* > vseučilišče
 - *vertikalno*, *vertikala* > navpično, navpičnica
+
+Imena mesecev:
+
+- *januar* > prosinec
+- *februar* > svečan
+- *marec* > sušec
+- *april* > mali traven
+- *maj* > veliki traven
+- *junij* > rožnik
+- *julij* > mali srpan
+- *avgust* > veliki srpan
+- *september* > kimavec
+- *oktober* > vinotok
+- *november* > listopad
+- *december* > gruden
 
 ## Računstvo
 
@@ -54,7 +74,6 @@ Lastnosti *operacij*:
 - *biologija* > živoslovje
 - *gravitacija* > težnost
     - sila *gravitacije* > težnost
-- *koeficinet* > (stalni) količnik
 - *torzija* > vzvoj
 
 ## Računalništvo
