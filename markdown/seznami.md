@@ -171,6 +171,11 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
     - [Waymarked Trails - Hiking](https://hiking.waymarkedtrails.org/) - pohodniške poti
 - [Wireless Bike Map](https://www.wirelessbikemap.com/) - kolesarski zemljevid
 
+##### OpenHistoricalMap
+Zemljevidi ki temeljijo na podatkih [OpenHistoricalMap](https://www.openhistoricalmap.org/).
+
+- [WikiBelize](https://wikibelize.org/)
+
 ##### Slovenski promet
 
 Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
@@ -203,6 +208,7 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 - [INSPIRE](https://eprostor.gov.si/imps) - brskalnik po državnih zemljevidih
 - [Javni pregledovalnik grafičnih podatkov MKGP](https://rkg.gov.si/GERK/WebViewer)
 - [NAP – Nacionalna točka dostopa](https://www.nap.si/) - dostop do prometnih podatkov in podatkov o polnilnih mestih za el. vozila (Ministrstvo za infrastrukturo)
+- [PIS](https://pis.eprostor.gov.si/pis-gr-jv/) – prostorsko načrtovanje, graditev objektov, območja varovanja in omejitev, nevarnosti in vplivi, evidenca stavbnih zemljišč, stanovanja, javne objave
 - [Planinska zveza Slovenije](https://poti.pzs.si/)
 - [Promet.si](https://promet.si/) – DARS-ov prometni zemljevid, ki ima tudi svojo *aplikacijo* (s trenutnimi zastoji, zaprtimi cestami, hitrostmi, ...); podatke črpa predvsem od GURS-a (zgradbe, ceste, ...) in OSM-ja (točke zanimivosti/storitve, podjetja, ...), pa tudi še nekaterih vir;
 - [Portal Prostor](https://www.e-prostor.gov.si/)
@@ -216,6 +222,8 @@ Državni podatki za prenos ali gostovani
 - [Javni spletni servisi GURS - WMS](https://ipi.eprostor.gov.si/wms-si-gurs-dts/wms)
 - [Portal Prostor – Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp/)
     - [Temeljne karte](https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE) – gostovani (na voljo za uporabo v npr. JOSMu, na volju tudi za prenos v različnih oblikah): *topografska* zemljevida, franciscejski *kataster*, lidar, ...
+- [RKG](https://rkg.gov.si/vstop/)
+    - [RKG – Raba](https://rkg.gov.si/arhiv/RABA/?C=N;O=D) – vrste/rabe zemljišč (arhiv od leta 2002)
 
 ### Zgodovina
 

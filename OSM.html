@@ -30,32 +30,30 @@ označevanje v OpenStretMap"/>
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2025-12-31">2025-12-31</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-03-23">2026-03-23</time></p>
     </header>
     <nav>
+        <ul>
+        <li><a href="#Poti">Poti</a>
+        <ul>
+        <li><a href="#Plocniki">Pločniki</a></li>
+        <li><a href="#Prehodi">Prehodi</a></li>
+        <li><a href="#Poti_ki_niso_plocniki">Poti, ki niso
+        pločniki</a></li>
+        </ul></li>
+        <li><a href="#Verski_gradniki">Verski gradniki</a>
         <ul>
         <li><a href="#Zupnija">Župnija</a>
         <ul>
         <li><a href="#Zupnijska_cerkev">Župnijska cerkev</a></li>
         <li><a href="#Podruznicna_cerkev">Podružnična cerkev</a></li>
         <li><a href="#Zupnisce">Župnišče</a></li>
-        <li><a href="#Kapela">Kapela</a>
-        <ul>
-        <li><a href="#Bolnisnicna_kapela">Bolnišnična kapela</a></li>
-        <li><a href="#Pokopaliska_kapela">Pokopališka kapela</a></li>
-        <li><a href="#Pokopaliska_vezica">Pokopališka vežica</a></li>
+        <li><a href="#Kapela">Kapela</a></li>
+        <li><a href="#Zvonik">Zvonik</a></li>
+        <li><a href="#Pokopalisce">Pokopališče</a></li>
         </ul></li>
-        <li><a href="#Zvonik">Zvonik</a>
-        <ul>
-        <li><a href="#Samostojec">Samostoječ</a></li>
-        </ul></li>
-        <li><a href="#Pokopalisce">Pokopališče</a>
-        <ul>
-        <li><a href="#Pokopalisce_okoli_cerkve">Pokopališče okoli
-        cerkve</a></li>
         </ul></li>
         <li><a href="#Parkirisce">Parkirišče</a></li>
-        </ul></li>
         <li><a href="#Spomeniki">Spomeniki</a>
         <ul>
         <li><a href="#NOB">NOB</a></li>
@@ -68,9 +66,46 @@ označevanje v OpenStretMap"/>
     </nav>
     <main>
         <div class="content">
+            <h1 id="Poti">Poti</h1>
+            <pre><code>segregated=yes/no
+oneway=yes/no
+surface=asphalt/gravel/fine_gravel/...</code></pre>
+            <h2 id="Plocniki">Pločniki</h2>
+            <p>Za pešce in kolesarje:</p>
+            <pre><code>highway=path
+foot=designated
+bicycle=designated
+footway=sidewalk</code></pre>
+            <p>Samo za pešce:</p>
+            <pre><code>highway=footway
+foot=designated
+footway=sidewalk</code></pre>
+            <h2 id="Prehodi">Prehodi</h2>
+            <pre><code>crossing=traffic_signals/uncontrolled
+crossing:island=yes/no
+crossing:markings=zebra</code></pre>
+            <p>Za pešce in kolesarje:</p>
+            <pre><code>highway=path
+foot=designated
+bicycle=designated
+cycleway=crossing
+footway=crossing</code></pre>
+            <p>Samo za kolesarje:</p>
+            <pre><code>highway=cycleway
+bicycle=designated
+cycleway=crossing</code></pre>
+            <h2 id="Poti_ki_niso_plocniki">Poti, ki niso pločniki</h2>
+            <p>Za pešce in kolesarje:</p>
+            <pre><code>highway=path
+foot=designated
+bicycle=designated</code></pre>
+            <p>Zgolj kolesarska steza:</p>
+            <pre><code>highway=cycleway
+bicycle=designated</code></pre>
+            <h1 id="Verski_gradniki">Verski gradniki</h1>
             <p>Splošna verska zgradba:
             <code>building=religious</code></p>
-            <h1 id="Zupnija">Župnija</h1>
+            <h2 id="Zupnija">Župnija</h2>
             <pre><code>name=Župnija *
 deanery=Dekanija *
 diocese=Škofija *
@@ -84,7 +119,7 @@ parish:wikipedia=sl:*
 </code></pre>
             <p>Lahko tudi <code>boundary=religious_administration</code>
             za mejo župnije</p>
-            <h2 id="Zupnijska_cerkev">Župnijska cerkev</h2>
+            <h3 id="Zupnijska_cerkev">Župnijska cerkev</h3>
             <pre><code>name=Župnijska cerkev sv. *
 
 amenity=place_of_worship
@@ -105,7 +140,7 @@ wikidata=Q*
 wikipedia=sl:</code></pre>
             <p>Zadnji dve le, če ima sama cerkev zapis na
             Wikipediji/Wikidata.</p>
-            <h2 id="Podruznicna_cerkev">Podružnična cerkev</h2>
+            <h3 id="Podruznicna_cerkev">Podružnična cerkev</h3>
             <pre><code>name=Podružnična cerkev sv. *
 short_name=Sv. *
 
@@ -125,7 +160,7 @@ wikidata=Q*
 wikipedia=sl:</code></pre>
             <p>Zadnji dve le, če ima sama cerkev zapis na
             Wikipediji/Wikidata.</p>
-            <h2 id="Zupnisce">Župnišče</h2>
+            <h3 id="Zupnisce">Župnišče</h3>
             <pre><code>addr:city=*
 addr:housenumber=*
 addr:postcode=****
@@ -151,7 +186,7 @@ parish:wikipedia=sl:*</code></pre>
             <p>Za župnijo, ki jo oskrbuje/upravlja druga župnija:</p>
             <pre><code>operator=Župnija *
 operator:type=religious</code></pre>
-            <h2 id="Kapela">Kapela</h2>
+            <h3 id="Kapela">Kapela</h3>
             <p>Večja kapela (ne obpotna kapelica), v katero lahko gre
             več oseb, se lahko vanjo stopi.</p>
             <pre><code>name=Cerkev Sv. Bride
@@ -164,36 +199,36 @@ denomination=roman_catholic
 parish=Župnija *
 deanery=Dekanija *
 diocese=Škofija *</code></pre>
-            <h3 id="Bolnisnicna_kapela">Bolnišnična kapela</h3>
+            <h4 id="Bolnisnicna_kapela">Bolnišnična kapela</h4>
             <pre><code>building:part=chapel
 chapel:type=hospital</code></pre>
-            <h3 id="Pokopaliska_kapela">Pokopališka kapela</h3>
+            <h4 id="Pokopaliska_kapela">Pokopališka kapela</h4>
             <pre><code>chapel:type=grave_yard</code></pre>
-            <h3 id="Pokopaliska_vezica">Pokopališka vežica</h3>
+            <h4 id="Pokopaliska_vezica">Pokopališka vežica</h4>
             <pre><code>amenity=place_of_mourning</code></pre>
-            <h2 id="Zvonik">Zvonik</h2>
+            <h3 id="Zvonik">Zvonik</h3>
             <pre><code>building:part=tower
 man_made=tower
 tower:type=bell_tower</code></pre>
-            <h3 id="Samostojec">Samostoječ</h3>
+            <h4 id="Samostojec">Samostoječ</h4>
             <pre><code>building=tower
 tower:type=bell_tower
 man_made=tower</code></pre>
-            <h2 id="Pokopalisce">Pokopališče</h2>
+            <h3 id="Pokopalisce">Pokopališče</h3>
             <pre><code>landuse=cemetry
 
 parish=Župnija *
 deanery=Dekanija *
 diocese=Škofija *</code></pre>
-            <h3 id="Pokopalisce_okoli_cerkve">Pokopališče okoli
-            cerkve</h3>
+            <h4 id="Pokopalisce_okoli_cerkve">Pokopališče okoli
+            cerkve</h4>
             <pre><code>amenity=grave_yard
 landuse=cemetry
 
 parish=Župnija *
 deanery=Dekanija *
 diocese=Škofija *</code></pre>
-            <h2 id="Parkirisce">Parkirišče</h2>
+            <h1 id="Parkirisce">Parkirišče</h1>
             <pre><code>amenity=parking
 fee=no/yes
 parking=surface/street_side

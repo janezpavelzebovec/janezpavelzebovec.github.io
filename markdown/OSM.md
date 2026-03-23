@@ -1,13 +1,85 @@
 ---
 title: OpenStreetMap
-date: 2025-12-31
+date: 2026-03-23
 description: Nekaj izbranih oznak za označevanje v OpenStretMap
 keywords: OpenStreetMap
 ---
 
+# Poti
+
+```
+segregated=yes/no
+oneway=yes/no
+surface=asphalt/gravel/fine_gravel/...
+```
+
+## Pločniki
+
+Za pešce in kolesarje:
+
+```
+highway=path
+foot=designated
+bicycle=designated
+footway=sidewalk
+```
+
+Samo za pešce:
+
+```
+highway=footway
+foot=designated
+footway=sidewalk
+```
+
+## Prehodi
+
+```
+crossing=traffic_signals/uncontrolled
+crossing:island=yes/no
+crossing:markings=zebra
+```
+
+Za pešce in kolesarje:
+
+```
+highway=path
+foot=designated
+bicycle=designated
+cycleway=crossing
+footway=crossing
+```
+
+Samo za kolesarje:
+
+```
+highway=cycleway
+bicycle=designated
+cycleway=crossing
+```
+
+## Poti, ki niso pločniki
+
+Za pešce in kolesarje:
+
+```
+highway=path
+foot=designated
+bicycle=designated
+```
+
+Zgolj kolesarska steza:
+
+```
+highway=cycleway
+bicycle=designated
+```
+
+# Verski gradniki
+
 Splošna verska zgradba: `building=religious`
 
-# Župnija
+## Župnija
 
 ```
 name=Župnija *
@@ -25,7 +97,7 @@ parish:wikipedia=sl:*
 
 Lahko tudi `boundary=religious_administration` za mejo župnije
 
-## Župnijska cerkev
+### Župnijska cerkev
 
 ```
 name=Župnijska cerkev sv. *
@@ -50,7 +122,7 @@ wikipedia=sl:
 
 Zadnji dve le, če ima sama cerkev zapis na Wikipediji/Wikidata.
 
-## Podružnična cerkev
+### Podružnična cerkev
 
 ```
 name=Podružnična cerkev sv. *
@@ -74,7 +146,7 @@ wikipedia=sl:
 
 Zadnji dve le, če ima sama cerkev zapis na Wikipediji/Wikidata.
 
-## Župnišče
+### Župnišče
 
 ```
 addr:city=*
@@ -108,7 +180,7 @@ operator=Župnija *
 operator:type=religious
 ```
 
-## Kapela
+### Kapela
 
 Večja kapela (ne obpotna kapelica), v katero lahko gre več oseb, se lahko vanjo stopi.
 
@@ -126,26 +198,26 @@ diocese=Škofija *
 ```
 
 
-### Bolnišnična kapela
+#### Bolnišnična kapela
 
 ```
 building:part=chapel
 chapel:type=hospital
 ```
 
-### Pokopališka kapela
+#### Pokopališka kapela
 
 ```
 chapel:type=grave_yard
 ```
 
-### Pokopališka vežica
+#### Pokopališka vežica
 
 ```
 amenity=place_of_mourning
 ```
 
-## Zvonik
+### Zvonik
 
 ```
 building:part=tower
@@ -153,7 +225,7 @@ man_made=tower
 tower:type=bell_tower
 ```
 
-### Samostoječ
+#### Samostoječ
 
 ```
 building=tower
@@ -161,7 +233,7 @@ tower:type=bell_tower
 man_made=tower
 ```
 
-## Pokopališče
+### Pokopališče
 
 ```
 landuse=cemetry
@@ -170,7 +242,7 @@ parish=Župnija *
 deanery=Dekanija *
 diocese=Škofija *
 ```
-### Pokopališče okoli cerkve
+#### Pokopališče okoli cerkve
 
 ```
 amenity=grave_yard
@@ -181,7 +253,7 @@ deanery=Dekanija *
 diocese=Škofija *
 ```
 
-## Parkirišče
+# Parkirišče
 
 ```
 amenity=parking
