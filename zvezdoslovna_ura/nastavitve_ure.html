@@ -32,11 +32,6 @@
                 <td><button onclick="uporabiTČas()">trenutni</button></td>
             </tr>
             <tr>
-                <td><label for="vnosČPas">časovni pas:</label></td>
-                <td><select id="vnosČPas" name="Izbira časovnega pasu" autocomplete="on"></select></td>
-                <td><button onclick="uporabiTČPas()">trenutni</button> <button onclick="uporabiLjubljana()">Ljubljana</button></td>
-            </tr>
-            <tr>
                 <td rowspan="2"><label>položaj:</label></td>
                 <td><input id="vnosPolŠ" name="Izbira zemljepisne širine" type="number" max="90" min="-90" style="width:15ch" /> ° z. širine</td>
                 <td rowspan="2"><button onclick="uporabiTPol()">trenutni</button> <button onclick="uporabiGEOSS()">GEOSS</button></td>
@@ -72,6 +67,11 @@
         <hr/>
         Sledeče nastavitve vplivajo zgolj na Pisno:
         <table>
+            <tr>
+                <td><label for="vnosČPas">časovni pas:</label></td>
+                <td><select id="vnosČPas" name="Izbira časovnega pasu" autocomplete="on"></select></td>
+                <td><button onclick="uporabiTČPas()">trenutni</button> <button onclick="uporabiLjubljana()">Ljubljana</button></td>
+            </tr>
             <tr>
                 <td><label for="vnosDecStop">št. dec. mest za stopinje</label></td>
                 <td><input id="vnosDecStop" name="Določitev števila decimalnih mest za stopnije" type="number" class="inputSt" /> decimalk </td>

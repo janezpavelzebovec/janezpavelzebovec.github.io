@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-03-22
+date: 2026-03-31
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -47,6 +47,7 @@ Moja *priporočila* (precej nepopolna)
 ### Osebne spletne strani
 
 - [Anton Luka Šijanec](https://sijanec.eu/)
+- [Branko cestnik](https://branenacesti.blogspot.com/)
 - [Filip Žebovec](https://filipzebovec.net/)
 - [Jure Smolar](https://jure-smolar.com/)
 - [Matija Šuklje](https://matija.suklje.name/)
@@ -116,6 +117,7 @@ Za zgodovinske zemljevide glej tudi razdelek [Zgodovinski zemljevidi](#Zgodovins
 - [ArcGIS](https://www.arcgis.com/apps/mapviewer/) – večinoma razni slogi zemljevida Esri
 - [David Rumsey Map Collection](https://www.davidrumsey.com/) - predvsem zgodovinski zemljevidi
 - [Flurnamen](https://maps.flurnamen.at/) - ledinska imena
+- [Geo3D Viewer](https://geo3d.pgi.gov.pl/Global_Library/index.html) – zbirka prostih svetovnih geoloških podatkov
 - [GeoFabrik Tools](https://tools.geofabrik.de/)
 - [Geology](https://geology.com/world)
 - [GeoNames](https://www.geonames.org/v3/)
@@ -174,7 +176,8 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 ##### OpenHistoricalMap
 Zemljevidi ki temeljijo na podatkih [OpenHistoricalMap](https://www.openhistoricalmap.org/).
 
-- [WikiBelize](https://wikibelize.org/)
+- [OpenHistory](https://openhistory.app/) – povezano z Wikidata and Wikipedijo za prikaz dogodkov, oblasti, krajev
+- [WikiBelize](https://wikibelize.org/) – zgodovinsko zemljepisje, osredotočeno na Belize
 
 ##### Slovenski promet
 
@@ -186,10 +189,10 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 
 ###### Druga spletna mesta za urejanje OSM, oz. projekti OSM
 
-- [WikiBelize](https://wikibelize.org/)
-- [How did you contribute to OpenStreetMap?](https://hdyc.neis-one.org/) – *statistika* urejanj po urejevalcih (in državah)
 - [Humanitarian OpenStreetMap Team (HOT)](https://www.hotosm.org/) – *kartiranje* območij ob (naravnih) nesrečah, revnih območij / območij v razvoju
 - [MapRoulette](https://maproulette.org/) – razni projekti, običajno za popravljanje nedoslednosti pri označevanju 
+- [ResultMap](https://resultmaps.neis-one.org/)
+    - [How did you contribute to OpenStreetMap?](https://hdyc.neis-one.org/) – *statistika* urejanj po urejevalcih (in državah)
 - [OSMCha](https://osmcha.org/) – pregledovanje kakovosti urejanj
 - [OSM Perfect Intersection Editor](https://osmpie.org/) – urejanje cest, križišč
 - [OSM Relation Analyzer](https://ra.osmsurround.org/)
@@ -476,6 +479,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 
 - [Animagraffs](https://www.youtube.com/@animagraffs) – zelo podrobni *dokumentarni* posnetki razlage delovanja posameznih naprav v celoti
 - [Brick Technology](https://www.youtube.com/@BrickTechnology) – izdelovanje napravic / vozil iz tehnokock
+- [Driver61](https://www.youtube.com/@Driver61) – snovanje dirkalnikov, predvsem formul
 - [Practical Engineering](https://www.youtube.com/@PracticalEngineeringChannel)
 
 ##### Zvezna računala, zvezdoslovne ure

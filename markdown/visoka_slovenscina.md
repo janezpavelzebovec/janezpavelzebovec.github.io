@@ -1,6 +1,6 @@
 ---
 title: Visoka slovenščina
-date: 2026-03-08
+date: 2026-03-23
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
 ---
@@ -127,6 +127,8 @@ Izvori besed, ki so pri nekaterih besedah, niso tam zato, ker bi prevzete besede
 
 Malo uporabljani predlogi, a večinoma poznani:
 
+- **kultura izbrisa** < *cancel culture*
+- **prebujenstvo, prebujenski**, < *woke*
 - **pregledna plošča** < ang. *dashboard*
 - **sébek** < *selfi*
 - **všéček** < *lajk*
