@@ -19,6 +19,7 @@
     <script src="/scripts-mathjax.js" defer></script>
 
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <!--<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
 
     <script defer src="https://cloud.umami.is/script.js" data-website-id="ac7911af-065e-4a16-8a66-255ee9f70989"></script>
 
@@ -34,7 +35,7 @@
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-02-11">2026-02-11</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-04-11">2026-04-11</time></p>
     </header>
     <nav>
         <ul>
@@ -102,6 +103,7 @@
         <li><a href="#Krogla">Krogla</a></li>
         </ul></li>
         <li><a href="#Vektorji"><em>Vektorji</em></a></li>
+        <li><a href="#Matrike"><em>Matrike</em></a></li>
         </ul></li>
         </ul>
     </nav>
@@ -687,8 +689,11 @@
             </tbody>
             </table>
             <p><span class="math display">\[ \sin^2 x + \cos^2 x = 1
-            \]</span> <span class="math display">\[ \cos^2 x = \frac{1 +
-            \cos 2x}{2} \]</span></p>
+            \]</span> <span class="math display">\[ \sin(x + y) =\sin x
+            \cos y + \cos x \sin y\]</span> <span
+            class="math display">\[ \cos(x + y) = \cos x \cos y - \sin x
+            \sin y \]</span> <span class="math display">\[ \cos^2 x =
+            \frac{1 + \cos 2x}{2} \]</span></p>
             <h4 id="Hiperbolicne"><em>Hiperbolične</em></h4>
             <p><span class="math display">\[ \sinh x =
             \frac{\mathrm{e}^x - \mathrm{e}^{-x}}{2} \]</span> <span
@@ -1127,10 +1132,8 @@
             <p><span class="math display">\[ S = \frac{e f}{2}
             \]</span></p>
             <h3 id="Krogla">Krogla</h3>
-            <p>Krogla s polmerom <em>r</em>.</p>
-            <p>Površina krogle je enaka obsegu kroga krat premer, kar je
-            enako plašču valja, visokega in širokega za premer
-            krogle.</p>
+            <p>Površina krogle je enaka plašču valja, visokega in
+            širokega za premer krogle.</p>
             <p><span class="math display">\[ P = 2 \pi r \cdot 2 r = 4
             \pi r^2 \]</span> <span class="math display">\[ V = \frac {4
             \pi r^3}{3} \]</span></p>
@@ -1142,6 +1145,42 @@
             a_2 \cdot b_2 +  a_3 \cdot b_3 \]</span> <span
             class="math display">\[ |\vec{a}| = \sqrt{a_1^2 + a_2^2 +
             a_3^2} \]</span></p>
+            <h2 id="Matrike"><em>Matrike</em></h2>
+            <ul>
+            <li>Seštevanje/odštevanje <em>matrik</em>: po
+            <em>komponentah</em></li>
+            <li>Množenje s <em>skalarjem</em> (oz. matrika velikosti
+            1x1): po <em>komponentah</em></li>
+            <li>Množenje <em>matrik</em>: <span class="math display">\[
+            \begin{bmatrix}a &amp; b &amp; c\\d &amp; e &amp;
+            f\end{bmatrix} \begin{bmatrix}g &amp; h\\i &amp; j\\k &amp;
+            l\end{bmatrix} = \begin{bmatrix}ag + bi + ck &amp; ah + bj +
+            cl\\dg + ei + fk &amp; dh + ej + fl\end{bmatrix}
+            \]</span></li>
+            </ul>
+            <p>Vsi <em>elemeti diagonale identične matrike</em> so enaki
+            1, ostali pa enaki 0. <span class="math display">\[ IA = AI
+            = A \]</span></p>
+            <p><em>Inverz diagonalne matrike</em>: po
+            <em>komponentah</em></p>
+            <p><em>Komutator dveh matrik</em> A in B: <span
+            class="math display">\[ [A, B] = AB - BA \]</span></p>
+            <p><strong>Gauss-Jordanova <em>eliminacija</em></strong> – z
+            njo pridemo do <em>inverza matrike</em> (če ta obstaja);
+            <em>operacije</em>, ki jih lahko uporabimo:</p>
+            <ul>
+            <li>i-to vrstico pomnožimo z neničelnim številom <span
+            class="math inline">\(\alpha\)</span></li>
+            <li>i-ti vrstici prištejemo <span
+            class="math inline">\(\beta\)</span>-kratnik j-te
+            vrstice</li>
+            <li>zamenjamo i-to in j-to vrstico</li>
+            </ul>
+            <p>Sled (ang. <em>trace</em>) je vsota prekotniških
+            (<em>diagonalnih</em>) členov: <span class="math display">\[
+            \mathrm{tr} (A) = A_{11} + A_{22} + ... + A_{nn} \]</span>
+            <span class="math display">\[ \mathrm{tr} (A + B) =
+            \mathrm{tr} (A) + \mathrm{tr} (B) \]</span></p>
         </div> 
     </main>
     <footer>

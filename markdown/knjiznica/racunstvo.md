@@ -1,10 +1,12 @@
 ---
 title: Računstvo
-date: 2026-02-11
+date: 2026-04-11
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
 ---
+
+\require{color}
 
 # Računstvo
 
@@ -340,6 +342,8 @@ $$ \log_a u = \frac{\log_b u}{\log_b a} $$
 | cot |  | $$ \sqrt{3} $$ | $$ 1 $$ | $$ \frac{\sqrt{3}}{3} $$ |$$ 0 $$ |
 
 $$ \sin^2 x + \cos^2 x = 1 $$
+$$ \sin(x + y) =\sin x \cos y + \cos x \sin y$$
+$$ \cos(x + y) = \cos x \cos y - \sin x \sin y $$
 $$ \cos^2 x = \frac{1 + \cos 2x}{2} $$
 
 #### *Hiperbolične*
@@ -573,9 +577,7 @@ $$ S = \frac{e f}{2} $$
 
 ### Krogla
 
-Krogla s polmerom *r*.
-
-Površina krogle je enaka obsegu kroga krat premer, kar je enako plašču valja, visokega in širokega za premer krogle.
+Površina krogle je enaka plašču valja, visokega in širokega za premer krogle.
 
 $$ P = 2 \pi r \cdot 2 r = 4 \pi r^2 $$
 $$ V = \frac {4 \pi r^3}{3} $$
@@ -586,3 +588,28 @@ $$\vec{a} = (a_1, a_2, a_3) $$
 
 $$ \vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1 \cdot b_1 + a_2 \cdot b_2 +  a_3 \cdot b_3 $$
 $$ |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2} $$
+
+## *Matrike*
+
+- Seštevanje/odštevanje *matrik*: po *komponentah*
+- Množenje s *skalarjem* (oz. matrika velikosti 1x1): po *komponentah*
+- Množenje *matrik*:
+$$ \begin{bmatrix}a & b & c\\d & e & f\end{bmatrix} \begin{bmatrix}g & h\\i & j\\k & l\end{bmatrix} = \begin{bmatrix}ag + bi + ck & ah + bj + cl\\dg + ei + fk & dh + ej + fl\end{bmatrix} $$
+
+Vsi *elemeti diagonale identične matrike* so enaki 1, ostali pa enaki 0.
+$$ IA = AI = A $$
+
+*Inverz diagonalne matrike*: po *komponentah*
+
+*Komutator dveh matrik* A in B:
+$$ [A, B] = AB - BA $$
+
+**Gauss-Jordanova *eliminacija*** – z njo pridemo do *inverza matrike* (če ta obstaja); *operacije*, ki jih lahko uporabimo:
+
+- i-to vrstico pomnožimo z neničelnim številom $\alpha$
+- i-ti vrstici prištejemo $\beta$-kratnik j-te vrstice
+- zamenjamo i-to in j-to vrstico
+
+Sled (ang. *trace*) je vsota prekotniških (*diagonalnih*) členov:
+$$ \mathrm{tr} (A) = A_{11} + A_{22} + ... + A_{nn} $$
+$$ \mathrm{tr} (A + B) = \mathrm{tr} (A) + \mathrm{tr} (B) $$

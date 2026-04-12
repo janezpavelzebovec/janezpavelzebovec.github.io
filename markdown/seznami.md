@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-03-31
+date: 2026-04-11
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -176,8 +176,13 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 ##### OpenHistoricalMap
 Zemljevidi ki temeljijo na podatkih [OpenHistoricalMap](https://www.openhistoricalmap.org/).
 
+- [Boundary Viewer](https://www.danvk.org/ohm/) – ogledovalnik meja
 - [OpenHistory](https://openhistory.app/) – povezano z Wikidata and Wikipedijo za prikaz dogodkov, oblasti, krajev
 - [WikiBelize](https://wikibelize.org/) – zgodovinsko zemljepisje, osredotočeno na Belize
+
+##### Statistika OHM
+
+- [OpenHistoricalMap Quality and Coverage Stats](http://ohm-quality.s3-website-us-east-1.amazonaws.com/)
 
 ##### Slovenski promet
 
@@ -193,6 +198,7 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 - [MapRoulette](https://maproulette.org/) – razni projekti, običajno za popravljanje nedoslednosti pri označevanju 
 - [ResultMap](https://resultmaps.neis-one.org/)
     - [How did you contribute to OpenStreetMap?](https://hdyc.neis-one.org/) – *statistika* urejanj po urejevalcih (in državah)
+    - [Overview of OpenStreetMap Contributors aka Who's around me?](https://resultmaps.neis-one.org/oooc?zoom=8&lat=46&lon=15&layers=B00TFFT#9/46.1304/14.8645) – zemljevid urejevalcev
 - [OSMCha](https://osmcha.org/) – pregledovanje kakovosti urejanj
 - [OSM Perfect Intersection Editor](https://osmpie.org/) – urejanje cest, križišč
 - [OSM Relation Analyzer](https://ra.osmsurround.org/)
@@ -456,12 +462,18 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 - [Nicholas Bowling](https://www.youtube.com/@NicholasBowling) – ameriški ulični pridigar, nekdanji katolik
 - [Remnant777](https://www.youtube.com/@Remnant777) – kritik levice
 - [Sahar TV](https://www.youtube.com/@OfficialSaharTV) – Jud, zagovornik Izraela v vojni proti palestinski oblasti
+- [Truthly](https://www.youtube.com/@truthlyTV)
 - [Turning Point USA](https://www.youtube.com/@turningpointusa)
 
 ##### Krščanstvo
 
 - [Answers in Genesis Canada](https://www.youtube.com/@AnswersCanada) – zagovornik krščanstva skozi znanost (ima precej vprašljivih razlag, a dosti stvari je še vedno zanimivih)
 - [Hochelaga](https://www.youtube.com/@hochelaga) – Sveto pismo
+
+###### Dokazi za Boga
+
+- [ YouTube – Truthly: Every Scientifically Prroven Euharistic Miracle](https://www.youtube.com/watch?v=RHO8L9477aU) – znanstvene preiskave evharističnih čudežev
+
 
 #### Glasba
 
