@@ -1,7 +1,7 @@
 ---
-title: Seznami
-date: 2026-03-17
-description: Prepovedane tujke v visoki slovenščini
+title: Prepovedane besede v visoki slovenščini
+date: 2026-04-12
+description: Prepovedane besede, prevzete besede, v visoki slovenščini
 keywords: visoka slovenščina, visoka slovenščina, potujčenje
 author: Janez Pavel Žebovec
 ---
@@ -23,6 +23,7 @@ Prevzete besede, ki so popolnoma nadomestljive z domačimi (priznanimi, ne svež
 - *konveksen* > izbočen, izbokel
 - *longitudinalno* > vzdolžno
 - *monitor* > (računalniški) zaslon
+- *ornament* > okras(ek)
 - *ortogonalen* > pravokoten
 - *paralelen* > vzporeden
 - *privaten*, *privat* > zaseben

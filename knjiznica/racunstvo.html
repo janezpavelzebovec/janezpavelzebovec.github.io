@@ -35,7 +35,7 @@
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-04-11">2026-04-11</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-04-13">2026-04-13</time></p>
     </header>
     <nav>
         <ul>
@@ -103,7 +103,11 @@
         <li><a href="#Krogla">Krogla</a></li>
         </ul></li>
         <li><a href="#Vektorji"><em>Vektorji</em></a></li>
-        <li><a href="#Matrike"><em>Matrike</em></a></li>
+        <li><a href="#Matrike"><em>Matrike</em></a>
+        <ul>
+        <li><a href="#Linearne_transformacije"><em>Linearne
+        transformacije</em></a></li>
+        </ul></li>
         </ul></li>
         </ul>
     </nav>
@@ -1138,20 +1142,36 @@
             \pi r^2 \]</span> <span class="math display">\[ V = \frac {4
             \pi r^3}{3} \]</span></p>
             <h2 id="Vektorji"><em>Vektorji</em></h2>
-            <p><span class="math display">\[\vec{a} = (a_1, a_2, a_3)
-            \]</span></p>
-            <p><span class="math display">\[ \vec{a} \cdot \vec{b} =
-            |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1 \cdot b_1 +
-            a_2 \cdot b_2 +  a_3 \cdot b_3 \]</span> <span
+            <p><span class="math inline">\(\vec{i}\)</span>, <span
+            class="math inline">\(\vec{j}\)</span> in <span
+            class="math inline">\(\vec{k}\)</span> so <em>bazni
+            vektorji</em>, tvorijo <em>bazo koordinatnega</em> prostora,
+            morajo biti <em>linerano</em> neodvisni (enega ne moremo
+            izraziti z ostalimi), večinoma pravokotni drug na drugega.
+            <span class="math display">\[\vec{a} = (a_1, a_2, a_3) = a_1
+            \vec{i} + a_2 \vec{j} + a_3 \vec{k} \]</span></p>
+            <ul>
+            <li>seštevanje/odštevanje: po <em>komponentah</em></li>
+            <li>množenje: <span class="math display">\[ \vec{a} \cdot
+            \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1
+            \cdot b_1 + a_2 \cdot b_2 +  a_3 \cdot b_3 \]</span>
+            <ul>
+            <li>množenje/deljenje s <em>skalarjem</em>: po
+            <em>komponentah</em></li>
+            </ul></li>
+            <li><em>absolutna</em> vrednost / dolžina: <span
             class="math display">\[ |\vec{a}| = \sqrt{a_1^2 + a_2^2 +
-            a_3^2} \]</span></p>
+            a_3^2} \]</span></li>
+            </ul>
             <h2 id="Matrike"><em>Matrike</em></h2>
             <ul>
             <li>Seštevanje/odštevanje <em>matrik</em>: po
             <em>komponentah</em></li>
             <li>Množenje s <em>skalarjem</em> (oz. matrika velikosti
             1x1): po <em>komponentah</em></li>
-            <li>Množenje <em>matrik</em>: <span class="math display">\[
+            <li>Množenje <em>matrik</em> (ne velja zamenljivost /
+            <em>komutativnost</em>, velja pa družilnost /
+            <em>asociativnost</em>): <span class="math display">\[
             \begin{bmatrix}a &amp; b &amp; c\\d &amp; e &amp;
             f\end{bmatrix} \begin{bmatrix}g &amp; h\\i &amp; j\\k &amp;
             l\end{bmatrix} = \begin{bmatrix}ag + bi + ck &amp; ah + bj +
@@ -1163,6 +1183,13 @@
             = A \]</span></p>
             <p><em>Inverz diagonalne matrike</em>: po
             <em>komponentah</em></p>
+            <p><em>determinanta matrike</em>: <span
+            class="math display">\[ \mathrm{det} \left( \begin{bmatrix}a
+            &amp; b\\c &amp; d\end{bmatrix} \right) = ad + bc - ad - bc
+            \]</span> <span class="math display">\[ \mathrm{det} \left(
+            \begin{bmatrix}a &amp; b &amp; c\\d &amp; e &amp; f\\g &amp;
+            h &amp; i\end{bmatrix} \right) = aei + bfg + cdh - ceg - bdi
+            - afh \]</span></p>
             <p><em>Komutator dveh matrik</em> A in B: <span
             class="math display">\[ [A, B] = AB - BA \]</span></p>
             <p><strong>Gauss-Jordanova <em>eliminacija</em></strong> – z
@@ -1181,6 +1208,44 @@
             \mathrm{tr} (A) = A_{11} + A_{22} + ... + A_{nn} \]</span>
             <span class="math display">\[ \mathrm{tr} (A + B) =
             \mathrm{tr} (A) + \mathrm{tr} (B) \]</span></p>
+            <h3 id="Linearne_transformacije"><em>Linearne
+            transformacije</em></h3>
+            <p><em>linearna transformacija</em> preoblikuje
+            <em>koordinatni</em> prostor tako, da ohrani
+            <em>koordinatno</em> mrežo (prejšnje navpičnice, vodoravnice
+            in poševnice) ravne, vzporedne in enakomerno razmaknjene,
+            ter ne premakne izhodišča. Opišemo jo lahko s preprosto
+            <em>matriko</em>, ki nam pravzaprav pove <em>koordinate
+            transformiranih baznih vektorjev</em> v
+            <em>netransformiranem</em> prostoru. Če torej
+            <em>matriko</em>/<em>vektor</em> množimo s to
+            <em>transormacijsko matriko</em>, dobimo <em>transformirano
+            matriko</em>/<em>vektor</em>.</p>
+            <p><span class="math display">\[ \vec{i} \to (a\vec{i},
+            c\vec{j});\, \vec{j} \to (b\vec{i}, d\vec{j}) \]</span>
+            <span class="math display">\[
+            \begin{bmatrix}x\\y\end{bmatrix} \to \begin{bmatrix}a &amp;
+            b\\c &amp; d\end{bmatrix} \cdot
+            \begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}ax &amp;
+            by\\cx &amp; dy\end{bmatrix} \]</span></p>
+            <p><em>Kompozicija transformacij</em> (več zaporednih –
+            zaporedje je pomembno) = zmnožek njihovih
+            <em>transformacijskih matrik</em> (zaporedje v levo): <span
+            class="math display">\[ f(x) = \begin{bmatrix}a &amp; b\\c
+            &amp; d\end{bmatrix}; g(x) = \begin{bmatrix}e &amp; h\\l
+            &amp; m\end{bmatrix} \]</span> <span class="math display">\[
+            f(g(x)) = \begin{bmatrix}a &amp; b\\c &amp; d\end{bmatrix}
+            \left( \begin{bmatrix}e &amp; h\\l &amp; m\end{bmatrix}
+            \begin{bmatrix}x\\y\end{bmatrix} \right) = \left(
+            \begin{bmatrix}a &amp; b\\c &amp; d\end{bmatrix}
+            \begin{bmatrix}e &amp; h\\l &amp; m\end{bmatrix} \right)
+            \begin{bmatrix}x\\y\end{bmatrix} \]</span></p>
+            <p><em>Determinanta transformacijske matrike</em> nam pove,
+            za kakšen količnik se spremeni ploščina/prostornina ob
+            <em>transformaciji</em>. Če je <em>determinanta
+            negativna</em>, to pomeni, da se je <em>vektor normale</em>
+            ploščine obrnil (zamenjal predznak), kar se zgodi, če
+            “zamenjamo” <em>bazna vektorja</em> med sabo.</p>
         </div> 
     </main>
     <footer>

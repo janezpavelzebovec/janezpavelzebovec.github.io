@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-04-11
+date: 2026-04-13
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
@@ -584,22 +584,31 @@ $$ V = \frac {4 \pi r^3}{3} $$
 
 ## *Vektorji*
 
-$$\vec{a} = (a_1, a_2, a_3) $$
+$\vec{i}$, $\vec{j}$ in $\vec{k}$ so *bazni vektorji*, tvorijo *bazo koordinatnega* prostora, morajo biti *linerano* neodvisni (enega ne moremo izraziti z ostalimi), večinoma pravokotni drug na drugega.
+$$\vec{a} = (a_1, a_2, a_3) = a_1 \vec{i} + a_2 \vec{j} + a_3 \vec{k} $$
 
+- seštevanje/odštevanje: po *komponentah*
+- množenje:
 $$ \vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1 \cdot b_1 + a_2 \cdot b_2 +  a_3 \cdot b_3 $$
+    - množenje/deljenje s *skalarjem*: po *komponentah*
+- *absolutna* vrednost / dolžina:
 $$ |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2} $$
 
 ## *Matrike*
 
 - Seštevanje/odštevanje *matrik*: po *komponentah*
 - Množenje s *skalarjem* (oz. matrika velikosti 1x1): po *komponentah*
-- Množenje *matrik*:
+- Množenje *matrik* (ne velja zamenljivost / *komutativnost*, velja pa družilnost / *asociativnost*):
 $$ \begin{bmatrix}a & b & c\\d & e & f\end{bmatrix} \begin{bmatrix}g & h\\i & j\\k & l\end{bmatrix} = \begin{bmatrix}ag + bi + ck & ah + bj + cl\\dg + ei + fk & dh + ej + fl\end{bmatrix} $$
 
 Vsi *elemeti diagonale identične matrike* so enaki 1, ostali pa enaki 0.
 $$ IA = AI = A $$
 
 *Inverz diagonalne matrike*: po *komponentah*
+
+*determinanta matrike*:
+$$ \mathrm{det} \left( \begin{bmatrix}a & b\\c & d\end{bmatrix} \right) = ad + bc - ad - bc $$
+$$ \mathrm{det} \left( \begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix} \right) = aei + bfg + cdh - ceg - bdi - afh $$
 
 *Komutator dveh matrik* A in B:
 $$ [A, B] = AB - BA $$
@@ -613,3 +622,16 @@ $$ [A, B] = AB - BA $$
 Sled (ang. *trace*) je vsota prekotniških (*diagonalnih*) členov:
 $$ \mathrm{tr} (A) = A_{11} + A_{22} + ... + A_{nn} $$
 $$ \mathrm{tr} (A + B) = \mathrm{tr} (A) + \mathrm{tr} (B) $$
+
+### *Linearne transformacije*
+
+*linearna transformacija* preoblikuje *koordinatni* prostor tako, da ohrani *koordinatno* mrežo (prejšnje navpičnice, vodoravnice in poševnice) ravne, vzporedne in enakomerno razmaknjene, ter ne premakne izhodišča. Opišemo jo lahko s preprosto *matriko*, ki nam pravzaprav pove *koordinate transformiranih baznih vektorjev* v *netransformiranem* prostoru. Če torej *matriko*/*vektor* množimo s to *transormacijsko matriko*, dobimo *transformirano matriko*/*vektor*.
+
+$$ \vec{i} \to (a\vec{i}, c\vec{j});\, \vec{j} \to (b\vec{i}, d\vec{j}) $$
+$$ \begin{bmatrix}x\\y\end{bmatrix} \to \begin{bmatrix}a & b\\c & d\end{bmatrix} \cdot \begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}ax & by\\cx & dy\end{bmatrix} $$
+
+*Kompozicija transformacij* (več zaporednih – zaporedje je pomembno) = zmnožek njihovih *transformacijskih matrik* (zaporedje v levo):
+$$ f(x) = \begin{bmatrix}a & b\\c & d\end{bmatrix}; g(x) = \begin{bmatrix}e & h\\l & m\end{bmatrix} $$
+$$ f(g(x)) = \begin{bmatrix}a & b\\c & d\end{bmatrix} \left( \begin{bmatrix}e & h\\l & m\end{bmatrix} \begin{bmatrix}x\\y\end{bmatrix} \right) = \left( \begin{bmatrix}a & b\\c & d\end{bmatrix} \begin{bmatrix}e & h\\l & m\end{bmatrix} \right) \begin{bmatrix}x\\y\end{bmatrix} $$
+
+*Determinanta transformacijske matrike* nam pove, za kakšen količnik se spremeni ploščina/prostornina ob *transformaciji*. Če je *determinanta negativna*, to pomeni, da se je *vektor normale* ploščine obrnil (zamenjal predznak), kar se zgodi, če "zamenjamo " *bazna vektorja* med sabo.

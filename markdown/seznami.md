@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-04-11
+date: 2026-04-13
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -335,6 +335,18 @@ Glej tudi stran [Jezikoslovje](knjiznica/jezikoslovje).
 
 ------------------------------------------------------------------------------------------------------------------------------
 
+### Odysee
+
+- [3Blue1Brown](https://odysee.com/@3Blue1Brown:b) – računstvo
+- [DistroTube](https://odysee.com/@DistroTube:2) – Linux
+- [Johnny Harris](https://odysee.com/@johnnyharris:e) – novinarski slog o svetu
+- [Luke Smith](https://odysee.com/@Luke:7) – Linux, odprtokodno programje; modroslovje, pravoslavje
+- [Nwtwork Chuck](https://odysee.com/@NetworkChuck:f) – splet
+- [Programmers are also human](https://odysee.com/@ProgrammersAreAlsoHuman:3) – komedije iz sveta programiranja
+- [Veritasium](https://odysee.com/@veritasium:f) – večinsko naravoslovni znanstveno-dukumentarni posnetki
+
+---
+
 ### You Tube
 
 - [Artifexian](https://www.youtube.com/@Artifexian) - ustvarjanje izmišljenega sveta z znanstveno podlago
@@ -472,8 +484,7 @@ Tu so tudi nekateri z manj ali bolj vprašljivimi stališči.
 
 ###### Dokazi za Boga
 
-- [ YouTube – Truthly: Every Scientifically Prroven Euharistic Miracle](https://www.youtube.com/watch?v=RHO8L9477aU) – znanstvene preiskave evharističnih čudežev
-
+- [YouTube – Truthly: Every Scientifically Prroven Euharistic Miracle](https://www.youtube.com/watch?v=RHO8L9477aU) – znanstvene preiskave evharističnih čudežev
 
 #### Glasba
 

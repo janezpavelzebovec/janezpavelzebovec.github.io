@@ -1,8 +1,9 @@
 ---
 title: Visoka slovenščina
-date: 2026-03-23
+date: 2026-04-12
 description: O slovenščini, kakršna bi morala biti
 keywords: slovenščina, prevzete besede, tujke, nova slovenščina, propad slovenščine, potujčevanje
+author: Janez Pavel Žebovec
 ---
 
 # Visoka slovenščina
@@ -44,6 +45,7 @@ Tu so navedene nekatere sprejete (a ne nujno – več – uveljavljene/uporablja
 
 - **hranilnica** < *banka*
 - **ljudovlada** (ustrezneje *ljudstvovlada*? – neuveljavljeno) < *republika*, *demokracija* <small>(it./nem. < frc. < lat.; nem. < frc. < lat. < gr.))</small>
+- **krajepis** < *topografija*
 - **pogon** (gonilna sila, gibalo, pogonski stroj) < *motor*
 - **ravnik** < *ekvator*
 - **veljava** < *valuta* <small>(nem. < it.)</small>
@@ -146,13 +148,14 @@ Drugi predlogi:
 
 ### Moji predlogi
 
-Tu je seznam mojih (precej dokončnih) predlogov za nove besede:
+Tu je seznam mojih predlogov za nove slovenske ustreznice (nekatere so že obstoječe, z dodanim pomenom, druge so tvorjene nanovo):
 
 - **dlánčnik** < "pametni" *telefon* <small>(podobno je tudi nem. *Handy*)</small>
 - **dáljnoglás** < *telefon* <small>(< nem. *Telephon*; fran. *téléphone*; ang. *telephone* < gr. *tē̃le* = *daleč, v daljavi*; *phōnḗ* = *glas, zvok*)</small>
 - **gmôta** (**gmôtnost**) < *masa*
 - **gôn** < *energija* <small>(< nem. *Energie* < fran. *énergie* < poznolat. *energīa*; gr. *enérgeia* = delo, delovanje, moč)</small>
 - **naravoslôvje**, stvárnoslovje?, tvarnoslovje? < *fizika* <small>(< nem. *Physik* < lat. *physica* < gr. *physikḗ* = *naravoslovje, naraven, ki zadeva naravo* < gr. *phýsis* = *narava, stvarstvo, rast, rojstvo* < gr. glagol *phýomai* = *nastanem*; phýō = *storim, da kaj nastane, rodim*)</small>
+- **preslikáva** < *funkcija*
 - **prostóroslôvje** < *geometrija*
 - **pótno usmérjanje** < *navigacija*
 - **rázspôlnik, razspôlništvo** < *LGBTQ ...* (kot motnja v spolnem razvoju, ko posameznik nima pravilno razvitih spolnih značilnostih zaradi prirojenih motenj ali **samorazspoljenja**, ki je pogosto družbeno pogojeno)
@@ -167,12 +170,13 @@ Tu je seznam mojih (precej dokončnih) predlogov za nove besede:
 - **vêlecésta** < *avtocesta*
 - **vesóljeslôvje** < *kozmologija*
 - **vrh** < *ekstrem* (*funkcije*)
+- **vrstno približevanje** < *konvergenca* (računsko)
 - **zemlják** < *krompir*
 - **zemljevidopis** < *kartografija*
 
 #### Besede v nastajanju
 
-Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge zamisli, ali pa sploh še nimajo ustreznice, a se zelo uporabljane in potrebne:
+Te skovanke so (še) precej okorne in potrebne dodatnega premisleka ali druge zamisli, ali pa sploh še nimajo ustreznice, a se dosti uporabljane in torej potrebne ustreznice:
 
 - uštevilčiti, vračunalčiti? < *digitalizirati*
 - **(napihljivi) mehur** < *balon*
