@@ -1,6 +1,6 @@
 ---
 title: Računstvo
-date: 2026-04-13
+date: 2026-04-16
 description: računska teorija, enačbe
 keywords: računstvo, matematika
 author: Janez Pavel Žebovec
@@ -593,6 +593,8 @@ $$ \vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot cos \phi = a_1 \cdot 
     - množenje/deljenje s *skalarjem*: po *komponentah*
 - *absolutna* vrednost / dolžina:
 $$ |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2} $$
+-*Vektorski produkt* prestavlja ploščino paralelograma, ki ga zmnožena *vektorja* oklepata. Smer zmnožka je odvisna od zaporedja množenja in pri tem velja desno pravilo (tudi "pravilo desnega vijaka, ki pomeni, da če prvi *vektor* zasučemo okoli skupnega izhodišča proti drugemu *vektorju*, se vijak zavrti v smer *vektorja* zmnožka).
+$$ \vec{a} \times \vec{b} = \mathrm{det} \left( \begin{bmatrix}a_1 & b_1\\a_2 & b_2\\a_3 & b_3\end{bmatrix} \right) $$
 
 ## *Matrike*
 
@@ -600,17 +602,12 @@ $$ |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2} $$
 - Množenje s *skalarjem* (oz. matrika velikosti 1x1): po *komponentah*
 - Množenje *matrik* (ne velja zamenljivost / *komutativnost*, velja pa družilnost / *asociativnost*):
 $$ \begin{bmatrix}a & b & c\\d & e & f\end{bmatrix} \begin{bmatrix}g & h\\i & j\\k & l\end{bmatrix} = \begin{bmatrix}ag + bi + ck & ah + bj + cl\\dg + ei + fk & dh + ej + fl\end{bmatrix} $$
-
+- *transpozicija*: stolpci postanejo vrstice in vrstice stolpci
 Vsi *elemeti diagonale identične matrike* so enaki 1, ostali pa enaki 0.
 $$ IA = AI = A $$
 
 *Inverz diagonalne matrike*: po *komponentah*
-
-*determinanta matrike*:
-$$ \mathrm{det} \left( \begin{bmatrix}a & b\\c & d\end{bmatrix} \right) = ad + bc - ad - bc $$
-$$ \mathrm{det} \left( \begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix} \right) = aei + bfg + cdh - ceg - bdi - afh $$
-
-*Komutator dveh matrik* A in B:
+***Komutator** dveh matrik* A in B:
 $$ [A, B] = AB - BA $$
 
 **Gauss-Jordanova *eliminacija*** – z njo pridemo do *inverza matrike* (če ta obstaja); *operacije*, ki jih lahko uporabimo:
@@ -619,9 +616,51 @@ $$ [A, B] = AB - BA $$
 - i-ti vrstici prištejemo $\beta$-kratnik j-te vrstice
 - zamenjamo i-to in j-to vrstico
 
-Sled (ang. *trace*) je vsota prekotniških (*diagonalnih*) členov:
+**Sled** (ang. *trace*) je vsota prekotniških (*diagonalnih*) členov:
 $$ \mathrm{tr} (A) = A_{11} + A_{22} + ... + A_{nn} $$
 $$ \mathrm{tr} (A + B) = \mathrm{tr} (A) + \mathrm{tr} (B) $$
+
+**Vrstična *kanonična forma***:
+
+- v vsaki vrstici je prvo neničelno število 1 (to je tudi t. i. *pivot*)
+- v dani vrstici je prva 1 desno od prve 1 v vrstici nad njo
+- od nekod dalje so lahko vrstice ničelne
+
+*Rank matrike* je enak številu njenih *pivotov* v VKF. *Matriko* lahko pretvorimo v vrstično *kanonično formo* z uporabo vrstičnih *operacij* Gauss-Jordanove *eliminacije*.
+
+Primer:
+$$ \begin{bmatrix}0 & 0 & 1 & a & b & c\\0 & 0 & 0 & 0 & 1 &d\\0 & 0 & 0 & 0 & 0 & 0\end{bmatrix} $$
+
+*Dimenzija* prostora rešitev *homogenega sistema lienarnih* enačb je enaka razliki med številom vrstic in njenim *rangom*. Spremenljivke, ki nimajo *pivota*, vzamemo za *parameter*.
+
+Tak *sistem* pa je pravzaprav podvrsta *nehomogenega*.
+
+Primer:
+
+$$ x - 2y + 3z - 4u = 4 \\ y - z + u = -3 \\ x + 3y - 3u = 1 $$
+$$ \begin{bmatrix}1 & -1 & 3 & -4 & | & 4\\0 & 1 & -1 & 1 & | & -3\\1 & 3 & 0 & -3 & | & 1\end{bmatrix} \to \begin{bmatrix}1 & -2 & 3 & -4 & | & 4\\0 & 1 & -1 & 1 & | & -3\\0 & 0 & 1 & -2 & | & 6\end{bmatrix} $$
+Tako dobimo poenostavljen *sistem* enačb (u vzamemo za *parameter*):
+$$ x - 2y + 3z - 4u = 4 \\ y -z + u = -3 \\ z - 2u = 6 $$
+
+***Determinanta matrike*** predstavlja tudi količnik, za katerega se spremeni ploščina (*vektorski produkt*), če matriko vzamemo kot *transformacijo*. Če je *determinanta negativna*, je to zato, ker sta se *bazna vektorja* pri *transformaciji* zamenjala.
+$$ \mathrm{det} \left( \begin{bmatrix}a & b\\c & d\end{bmatrix} \right) = ad + bc - ad - bc $$
+$$ \mathrm{det} \left( \begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix} \right) = aei + bfg + cdh - ceg - bdi - afh $$
+$$ \begin{bmatrix}a_1\\a_2\\a_3\end{bmatrix} \times \begin{bmatrix}b_1\\b_2\\b_3\end{bmatrix} = \mathrm{det} \left( \begin{bmatrix}\vec{i} & a_1 & b_1\\\vec{j} & a_2 & b_2\\\vec{k} & a_3 & b_3\end{bmatrix} \right) = \vec{i}(a_2b_3 - a_3b_2) + \vec{j}(a_3b_1 - a_1b_3) + \vec{k}(a_1b_2 - a_2b_1) $$
+
+Za izračun *determinante* lahko uporabimo tudi Gaussovo *metodo/algoritem*:
+
+- če vrstici prištejemo večkratnik druge vrstice, se *determinanta* ne spremeni
+- če vrstico pomnožimo s $k$, se *determinanta* pomnoži s $k$.
+- če zamenjamo dve vrstici, se spremeni preznak *determinante*
+- iste *operacije* lahko uporabimo tudi na stolpcih
+
+*Determinanta* zgornje trikotne *matrike* je vedno zmnožek prekotniških členov (ker je zmnožek vseh ostalih prekotnic enak nič). Zato je dovolj, da z Gaussovim *algoritmom matriko* poenostavimo le do zgornje trikotne oblike.
+
+Če ima *matrika* veliko ničel, se splača uporabiti **razvoj po stolpcu ali vrstici**. 
+
+**Cramberjevo pravilo** za izračun *matrike*:
+$$ A^{-1} = \frac{1}{\mathrm{det}(A)} \mathrm{co}(A)^{T} $$
+*Kofaktor* $\mathrm{co}(A)$ dobimo tako, da izračunamo *kofaktorje* po vseh vrsticah in stolpcih.
 
 ### *Linearne transformacije*
 

@@ -35,7 +35,7 @@
             </svg>
         </a>
 
-        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-04-13">2026-04-13</time></p>
+        <p id="datum">Zadnja sprememba te strani: <time datetime="2026-04-16">2026-04-16</time></p>
     </header>
     <nav>
         <ul>
@@ -1161,7 +1161,16 @@
             </ul></li>
             <li><em>absolutna</em> vrednost / dolžina: <span
             class="math display">\[ |\vec{a}| = \sqrt{a_1^2 + a_2^2 +
-            a_3^2} \]</span></li>
+            a_3^2} \]</span> -<em>Vektorski produkt</em> prestavlja
+            ploščino paralelograma, ki ga zmnožena <em>vektorja</em>
+            oklepata. Smer zmnožka je odvisna od zaporedja množenja in
+            pri tem velja desno pravilo (tudi “pravilo desnega vijaka,
+            ki pomeni, da če prvi <em>vektor</em> zasučemo okoli
+            skupnega izhodišča proti drugemu <em>vektorju</em>, se vijak
+            zavrti v smer <em>vektorja</em> zmnožka). <span
+            class="math display">\[ \vec{a} \times \vec{b} =
+            \mathrm{det} \left( \begin{bmatrix}a_1 &amp; b_1\\a_2 &amp;
+            b_2\\a_3 &amp; b_3\end{bmatrix} \right) \]</span></li>
             </ul>
             <h2 id="Matrike"><em>Matrike</em></h2>
             <ul>
@@ -1177,21 +1186,15 @@
             l\end{bmatrix} = \begin{bmatrix}ag + bi + ck &amp; ah + bj +
             cl\\dg + ei + fk &amp; dh + ej + fl\end{bmatrix}
             \]</span></li>
+            <li><em>transpozicija</em>: stolpci postanejo vrstice in
+            vrstice stolpci Vsi <em>elemeti diagonale identične
+            matrike</em> so enaki 1, ostali pa enaki 0. <span
+            class="math display">\[ IA = AI = A \]</span></li>
             </ul>
-            <p>Vsi <em>elemeti diagonale identične matrike</em> so enaki
-            1, ostali pa enaki 0. <span class="math display">\[ IA = AI
-            = A \]</span></p>
             <p><em>Inverz diagonalne matrike</em>: po
-            <em>komponentah</em></p>
-            <p><em>determinanta matrike</em>: <span
-            class="math display">\[ \mathrm{det} \left( \begin{bmatrix}a
-            &amp; b\\c &amp; d\end{bmatrix} \right) = ad + bc - ad - bc
-            \]</span> <span class="math display">\[ \mathrm{det} \left(
-            \begin{bmatrix}a &amp; b &amp; c\\d &amp; e &amp; f\\g &amp;
-            h &amp; i\end{bmatrix} \right) = aei + bfg + cdh - ceg - bdi
-            - afh \]</span></p>
-            <p><em>Komutator dveh matrik</em> A in B: <span
-            class="math display">\[ [A, B] = AB - BA \]</span></p>
+            <em>komponentah</em> <em><strong>Komutator</strong> dveh
+            matrik</em> A in B: <span class="math display">\[ [A, B] =
+            AB - BA \]</span></p>
             <p><strong>Gauss-Jordanova <em>eliminacija</em></strong> – z
             njo pridemo do <em>inverza matrike</em> (če ta obstaja);
             <em>operacije</em>, ki jih lahko uporabimo:</p>
@@ -1203,11 +1206,93 @@
             vrstice</li>
             <li>zamenjamo i-to in j-to vrstico</li>
             </ul>
-            <p>Sled (ang. <em>trace</em>) je vsota prekotniških
-            (<em>diagonalnih</em>) členov: <span class="math display">\[
-            \mathrm{tr} (A) = A_{11} + A_{22} + ... + A_{nn} \]</span>
-            <span class="math display">\[ \mathrm{tr} (A + B) =
-            \mathrm{tr} (A) + \mathrm{tr} (B) \]</span></p>
+            <p><strong>Sled</strong> (ang. <em>trace</em>) je vsota
+            prekotniških (<em>diagonalnih</em>) členov: <span
+            class="math display">\[ \mathrm{tr} (A) = A_{11} + A_{22} +
+            ... + A_{nn} \]</span> <span class="math display">\[
+            \mathrm{tr} (A + B) = \mathrm{tr} (A) + \mathrm{tr} (B)
+            \]</span></p>
+            <p><strong>Vrstična <em>kanonična forma</em></strong>:</p>
+            <ul>
+            <li>v vsaki vrstici je prvo neničelno število 1 (to je tudi
+            t. i. <em>pivot</em>)</li>
+            <li>v dani vrstici je prva 1 desno od prve 1 v vrstici nad
+            njo</li>
+            <li>od nekod dalje so lahko vrstice ničelne</li>
+            </ul>
+            <p><em>Rank matrike</em> je enak številu njenih
+            <em>pivotov</em> v VKF. <em>Matriko</em> lahko pretvorimo v
+            vrstično <em>kanonično formo</em> z uporabo vrstičnih
+            <em>operacij</em> Gauss-Jordanove <em>eliminacije</em>.</p>
+            <p>Primer: <span class="math display">\[ \begin{bmatrix}0
+            &amp; 0 &amp; 1 &amp; a &amp; b &amp; c\\0 &amp; 0 &amp; 0
+            &amp; 0 &amp; 1 &amp;d\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+            &amp; 0\end{bmatrix} \]</span></p>
+            <p><em>Dimenzija</em> prostora rešitev <em>homogenega
+            sistema lienarnih</em> enačb je enaka razliki med številom
+            vrstic in njenim <em>rangom</em>. Spremenljivke, ki nimajo
+            <em>pivota</em>, vzamemo za <em>parameter</em>.</p>
+            <p>Tak <em>sistem</em> pa je pravzaprav podvrsta
+            <em>nehomogenega</em>.</p>
+            <p>Primer:</p>
+            <p><span class="math display">\[ x - 2y + 3z - 4u = 4 \\ y -
+            z + u = -3 \\ x + 3y - 3u = 1 \]</span> <span
+            class="math display">\[ \begin{bmatrix}1 &amp; -1 &amp; 3
+            &amp; -4 &amp; | &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1 &amp; |
+            &amp; -3\\1 &amp; 3 &amp; 0 &amp; -3 &amp; | &amp;
+            1\end{bmatrix} \to \begin{bmatrix}1 &amp; -2 &amp; 3 &amp;
+            -4 &amp; | &amp; 4\\0 &amp; 1 &amp; -1 &amp; 1 &amp; | &amp;
+            -3\\0 &amp; 0 &amp; 1 &amp; -2 &amp; | &amp; 6\end{bmatrix}
+            \]</span> Tako dobimo poenostavljen <em>sistem</em> enačb (u
+            vzamemo za <em>parameter</em>): <span
+            class="math display">\[ x - 2y + 3z - 4u = 4 \\ y -z + u =
+            -3 \\ z - 2u = 6 \]</span></p>
+            <p><strong><em>Determinanta matrike</em></strong>
+            predstavlja tudi količnik, za katerega se spremeni ploščina
+            (<em>vektorski produkt</em>), če matriko vzamemo kot
+            <em>transformacijo</em>. Če je <em>determinanta
+            negativna</em>, je to zato, ker sta se <em>bazna
+            vektorja</em> pri <em>transformaciji</em> zamenjala. <span
+            class="math display">\[ \mathrm{det} \left( \begin{bmatrix}a
+            &amp; b\\c &amp; d\end{bmatrix} \right) = ad + bc - ad - bc
+            \]</span> <span class="math display">\[ \mathrm{det} \left(
+            \begin{bmatrix}a &amp; b &amp; c\\d &amp; e &amp; f\\g &amp;
+            h &amp; i\end{bmatrix} \right) = aei + bfg + cdh - ceg - bdi
+            - afh \]</span> <span class="math display">\[
+            \begin{bmatrix}a_1\\a_2\\a_3\end{bmatrix} \times
+            \begin{bmatrix}b_1\\b_2\\b_3\end{bmatrix} = \mathrm{det}
+            \left( \begin{bmatrix}\vec{i} &amp; a_1 &amp; b_1\\\vec{j}
+            &amp; a_2 &amp; b_2\\\vec{k} &amp; a_3 &amp;
+            b_3\end{bmatrix} \right) = \vec{i}(a_2b_3 - a_3b_2) +
+            \vec{j}(a_3b_1 - a_1b_3) + \vec{k}(a_1b_2 - a_2b_1)
+            \]</span></p>
+            <p>Za izračun <em>determinante</em> lahko uporabimo tudi
+            Gaussovo <em>metodo/algoritem</em>:</p>
+            <ul>
+            <li>če vrstici prištejemo večkratnik druge vrstice, se
+            <em>determinanta</em> ne spremeni</li>
+            <li>če vrstico pomnožimo s <span
+            class="math inline">\(k\)</span>, se <em>determinanta</em>
+            pomnoži s <span class="math inline">\(k\)</span>.</li>
+            <li>če zamenjamo dve vrstici, se spremeni preznak
+            <em>determinante</em></li>
+            <li>iste <em>operacije</em> lahko uporabimo tudi na
+            stolpcih</li>
+            </ul>
+            <p><em>Determinanta</em> zgornje trikotne <em>matrike</em>
+            je vedno zmnožek prekotniških členov (ker je zmnožek vseh
+            ostalih prekotnic enak nič). Zato je dovolj, da z Gaussovim
+            <em>algoritmom matriko</em> poenostavimo le do zgornje
+            trikotne oblike.</p>
+            <p>Če ima <em>matrika</em> veliko ničel, se splača uporabiti
+            <strong>razvoj po stolpcu ali vrstici</strong>.</p>
+            <p><strong>Cramberjevo pravilo</strong> za izračun
+            <em>matrike</em>: <span class="math display">\[ A^{-1} =
+            \frac{1}{\mathrm{det}(A)} \mathrm{co}(A)^{T} \]</span>
+            <em>Kofaktor</em> <span
+            class="math inline">\(\mathrm{co}(A)\)</span> dobimo tako,
+            da izračunamo <em>kofaktorje</em> po vseh vrsticah in
+            stolpcih.</p>
             <h3 id="Linearne_transformacije"><em>Linearne
             transformacije</em></h3>
             <p><em>linearna transformacija</em> preoblikuje
