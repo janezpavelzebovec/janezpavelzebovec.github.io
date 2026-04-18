@@ -1,6 +1,6 @@
 ---
 title: Seznami
-date: 2026-04-13
+date: 2026-04-18
 description: Priporočila oz. seznami raznih zadev.
 keywords: priporočila
 author: Janez Pavel Žebovec
@@ -177,6 +177,7 @@ Glej tudi [OSM Wiki: List of OSM-based services](https://wiki.openstreetmap.org/
 Zemljevidi ki temeljijo na podatkih [OpenHistoricalMap](https://www.openhistoricalmap.org/).
 
 - [Boundary Viewer](https://www.danvk.org/ohm/) – ogledovalnik meja
+- [The Mennonite Map](https://themennonitemap.org/) – zemljevid naselbin?
 - [OpenHistory](https://openhistory.app/) – povezano z Wikidata and Wikipedijo za prikaz dogodkov, oblasti, krajev
 - [WikiBelize](https://wikibelize.org/) – zgodovinsko zemljepisje, osredotočeno na Belize
 
@@ -199,6 +200,7 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 - [ResultMap](https://resultmaps.neis-one.org/)
     - [How did you contribute to OpenStreetMap?](https://hdyc.neis-one.org/) – *statistika* urejanj po urejevalcih (in državah)
     - [Overview of OpenStreetMap Contributors aka Who's around me?](https://resultmaps.neis-one.org/oooc?zoom=8&lat=46&lon=15&layers=B00TFFT#9/46.1304/14.8645) – zemljevid urejevalcev
+- [OpenStreetMap Welcome Tool](https://welcome.osm.be/europe/slovenia/list)
 - [OSMCha](https://osmcha.org/) – pregledovanje kakovosti urejanj
 - [OSM Perfect Intersection Editor](https://osmpie.org/) – urejanje cest, križišč
 - [OSM Relation Analyzer](https://ra.osmsurround.org/)
@@ -228,6 +230,7 @@ Podatke OSM združujejo z API-ji o položajih avtobusov in podobno.
 Državni podatki za prenos ali gostovani
 
 - [ArcGIS REST Services Directory](https://geohub.gov.si/ags/rest/services)
+- [Inspire – Kataster nepremičnin](https://eprostor.gov.si/imps/srv/slv/catalog.search#/metadata/9a8fd241-9162-407c-94e7-c98e05766881)
 - [Javni spletni servisi GURS - WMS](https://ipi.eprostor.gov.si/wms-si-gurs-dts/wms)
 - [Portal Prostor – Javni geodetski podatki](https://ipi.eprostor.gov.si/jgp/)
     - [Temeljne karte](https://geohub.gov.si/ags/rest/services/TEMELJNE_KARTE) – gostovani (na voljo za uporabo v npr. JOSMu, na volju tudi za prenos v različnih oblikah): *topografska* zemljevida, franciscejski *kataster*, lidar, ...
